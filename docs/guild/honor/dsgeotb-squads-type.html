@@ -1,0 +1,115 @@
+<meta charset="UTF-8">
+<meta name="robots" content="noindex"><link rel="stylesheet" type="text/css" href="../../toons.css">
+<style type="text/css">
+.toT { text-align:center; font-size: 60%; }
+.toI {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    margin: 0 2.5px;
+}
+.toIs {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin: 0 2.5px;
+}
+.opponent {
+    border: 2px solid grey;
+}
+.hardCounter {
+    border: 2px solid red;
+}
+.softCounter {
+    border: 2px solid blue;
+}
+.squad {
+    border: 2px solid black;
+}
+.verbage {
+    font-size: 70%;
+}
+</style><style type="text/css">
+body {
+ background-image: url("../../i/more_faded_logo.jpg");
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+</style><style type="text/css">
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  padding: 8px;
+}
+
+tr:nth-child(even) {background: #dddddd}
+tr:nth-child(odd) {background: #ffffff}
+
+.toggleable {
+    display: none;
+}
+</style><link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.1.5/css/fixedHeader.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.6/css/fixedColumns.dataTables.min.css" />
+<script type="text/javascript" language="javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedheader/3.1.5/js/dataTables.fixedHeader.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedcolumns/3.2.6/js/dataTables.fixedColumns.min.js"></script><title>BRG Alliance Guild Reports: BRG Honor Above All Else DS Geo TB Squads By Type</title>
+<div style="display: flex; align-items:baseline"><img src="../../i/simple_logo_48.jpg"/>&nbsp;<h1>Alliance Guild Reports: BRG Honor Above All Else DS Geo TB Squads By Type</h1></div>
+
+<div style="background-color: #f0f0f0; border: solid red; padding: 10px; border-radius: 10px">
+<a href="../../alliance/index.html">Alliance</a> |
+<a href="../../alliance/characters.html">Characters</a> |
+
+<div style="float:right;"><a href="../../r">Resources</a></div>
+<a href="index.html">Back</a>
+</div>
+<br/>    <script>
+    $(document).ready( function () {
+        $('#squads').DataTable({
+        "paging":   false,
+        "info":     false,
+        
+        
+        
+        fixedColumns: { leftColumns: 1 }, scrollX: true,
+        
+        });
+    } );
+    </script><a href="dsgeotb-squads-section.html">Squads by Section</a>&nbsp;|&nbsp;
+<a href="dsgeotb-squads-type.html">Squads by Type</a>&nbsp;|&nbsp;
+<a href="dsgeotb-squads-chart.html">Squads Chart</a>
+<p>
+Teams shown in <span style="background-color: yellow;">yellow</span> need additional gear.  You can
+<button onclick="$('.not-viable').text('&nbsp;').css('background-color', '')">remove not ready</button><br/>
+
+<table id="squads" class="display" style="font-size:85%">
+    <thead>
+        <tr>
+        <th>Player</th>
+        <th>Count</th>
+        <th align="center">Geos-Special</th><th align="center">Geos</th><th align="center">Troopers</th><th align="center">DR</th><th align="center">FO</th><th align="center">SLKR</th><th align="center">SEE</th><th align="center">BH</th><th align="center">zEP</th><th align="center">NS</th><th align="center">Traya</th><th align="center">Grievous</th><th align="center">Nute</th><th align="center">Dooku+Asajj</th><th align="center">Dooku+Sep</th><th align="center">Chimaera</th><th align="center">Executrix</th>
+        </tr>
+    </thead>
+    <tbody><tr><td><a href="../../player/dsgeotb/337228443.html">Shadowtrap</a></td><td>13</td><td nowrap style="font-size:75%" data-order="108k">108k - zzGBA R5, Poggle R1, Geo Soldier G12, Sun Fac R3, Geo Spy R1</td><td nowrap style="font-size:75%" data-order="108k">108k - zzGBA R5, Poggle R1, Geo Soldier G12, Sun Fac R3, Geo Spy R1</td><td nowrap style="font-size:75%" data-order="123k">123k - zVeers R3, zStarck R3, zzGideon G13, zzPiett R8, Range Trooper G13</td><td nowrap style="font-size:75%" data-order="128k">128k - zzzDR R7, zzHK-47 G12, zBSF R5, zzMalak R5, Sith Empire Trooper G8</td><td data-order="0"></td><td nowrap style="font-size:75%" data-order="156k">156k - zzzzzzSL Kylo R7, zzKRU R7, zFOST R5, zHux R5, FOE R5</td><td nowrap style="font-size:75%" data-order="175k">175k - zzzzzzSEE R7, zzzVader R7, zzEP R7, zSidious R7, zWat Tambor R7</td><td nowrap style="font-size:75%" data-order="153k">153k - zzBossk R7, zDengar R5, zzJango R7, zIG-88 R5, zBoba R8</td><td data-order="0"></td><td nowrap style="font-size:75%" data-order="103k">103k - zzMT G12, zzAV R3, Zombie G12, zDaka G12, Spirit G11</td><td nowrap style="font-size:75%" data-order="111k">111k - zzTraya R1, zDN G13, zSion R2, zDooku R6, Sith Empire Trooper G8</td><td nowrap style="font-size:75%" data-order="131k">131k - zzGG R7, zB2 R3, zB1 R5, zDroideka R4, zMagnaGuard R5</td><td nowrap style="font-size:75%" data-order="120k">120k - zNute G12, zB1 R5, zB2 R3, zDroideka R4, zMagnaGuard R5</td><td nowrap style="font-size:75%" data-order="54k">54k - zDooku R6, zzAV R3</td><td data-order="0"></td><td nowrap style="font-size:75%" data-order="156k">156k - Chimaera HT</td><td data-order="0"></td></tr>
+<tr><td><a href="../../player/dsgeotb/741411986.html">J Croft</a></td><td>9</td><td nowrap class="not-viable" style="font-size:75%; background-color: yellow;" data-order="71k">71k - GBA G9, Poggle G8, Geo Soldier G11, Sun Fac G8, Geo Spy G8</td><td nowrap style="font-size:75%" data-order="71k">71k - GBA G9, Poggle G8, Geo Soldier G11, Sun Fac G8, Geo Spy G8</td><td nowrap class="not-viable" style="font-size:75%; background-color: yellow;" data-order="76k">76k - zVeers G10, Starck G8, zzGideon G8, Stormtrooper G10, Shoretrooper G8</td><td data-order="0"></td><td nowrap style="font-size:75%" data-order="101k">101k - zHux G12, zzKRU R5, zKylo R5, FOST G9, FOE G10</td><td data-order="0"></td><td data-order="0"></td><td nowrap style="font-size:75%" data-order="107k">107k - zzJango R5, Dengar G9, Cad G11, zGreedo G11, zBoba R5</td><td nowrap style="font-size:75%" data-order="119k">119k - zzEP R5, zzVader R5, zzTarkin R5, Sith Empire Trooper G8, zBSF G12</td><td nowrap style="font-size:75%" data-order="100k">100k - zzMT G12, zzAV R5, Zombie G9, zDaka R5, Spirit G8</td><td data-order="0"></td><td nowrap style="font-size:75%" data-order="78k">78k - zzGG G12, B2 G9, B1 G8, Droideka G9, MagnaGuard G9</td><td nowrap class="not-viable" style="font-size:75%; background-color: yellow;" data-order="68k">68k - Nute G8, B1 G8, B2 G9, Droideka G9, MagnaGuard G9</td><td nowrap style="font-size:75%" data-order="52k">52k - zDooku R5, zzAV R5</td><td data-order="0"></td><td nowrap style="font-size:75%" data-order="69k">69k - Chimaera HT</td><td nowrap style="font-size:75%" data-order="252k">252k - Executrix Soldier SF, Spy SF, Sun Fac SF, Slave I</td></tr>
+<tr><td><a href="../../player/dsgeotb/378192553.html">Ashla Bogan</a></td><td>11</td><td nowrap style="font-size:75%" data-order="101k">101k - zzGBA R5, Poggle G12, Geo Soldier G12, Sun Fac G12, Geo Spy G12</td><td nowrap style="font-size:75%" data-order="101k">101k - zzGBA R5, Poggle G12, Geo Soldier G12, Sun Fac G12, Geo Spy G12</td><td nowrap class="not-viable" style="font-size:75%; background-color: yellow;" data-order="92k">92k - zVeers G11, zStarck G9, zzPiett 5* G10, zDT G12, zStormtrooper G11</td><td nowrap style="font-size:75%" data-order="133k">133k - zzzDR R8, zzHK-47 R8, zBSF R8, Sith Empire Trooper G8, Sith Assassin G10</td><td nowrap style="font-size:75%" data-order="100k">100k - zHux G12, zzKRU R3, zKylo G9, FOO G10, zPhasma G12</td><td data-order="0"></td><td data-order="0"></td><td nowrap style="font-size:75%" data-order="146k">146k - zzBossk R7, zDengar G12, zzJango R6, zIG-88 R7, zBoba R7</td><td nowrap style="font-size:75%" data-order="180k">180k - zzEP R7, zzzVader R9, zzzDR R8, zzThrawn R9, zBSF R8</td><td nowrap style="font-size:75%" data-order="143k">143k - zzMT R8, zzAV R8, Zombie R8, zDaka R8, Spirit G8</td><td nowrap class="not-viable" style="font-size:75%; background-color: yellow;" data-order="93k">93k - Traya G8, zzDN R6, Sion G8, zDooku G12, Sith Empire Trooper G8</td><td nowrap style="font-size:75%" data-order="87k">87k - zzGG G12, zB2 G8, B1 G9, Nute G9, zMagnaGuard G9</td><td nowrap class="not-viable" style="font-size:75%; background-color: yellow;" data-order="77k">77k - Nute G9, B1 G9, zB2 G8, Droideka G8, zMagnaGuard G9</td><td nowrap style="font-size:75%" data-order="56k">56k - zDooku G12, zzAV R8</td><td data-order="0"></td><td nowrap style="font-size:75%" data-order="171k">171k - Chimaera HT</td><td nowrap style="font-size:75%" data-order="298k">298k - Executrix Soldier SF, Spy SF, Sun Fac SF, Slave I</td></tr>
+<tr><td><a href="../../player/dsgeotb/292677973.html">микаким</a></td><td>12</td><td nowrap style="font-size:75%" data-order="94k">94k - zzGBA G12, Poggle G12, Geo Soldier G12, Sun Fac G12, Geo Spy G12</td><td nowrap style="font-size:75%" data-order="94k">94k - zzGBA G12, Poggle G12, Geo Soldier G12, Sun Fac G12, Geo Spy G12</td><td nowrap class="not-viable" style="font-size:75%; background-color: yellow;" data-order="105k">105k - zVeers G12, zStarck R3, zzPiett R5, zDT G12, Shoretrooper G8</td><td nowrap style="font-size:75%" data-order="138k">138k - zzzDR R6, zzHK-47 R5, zBSF R4, zzMalak R5, Sith Empire Trooper R3</td><td data-order="0"></td><td nowrap style="font-size:75%" data-order="158k">158k - zzzzzzSL Kylo R8, zzKRU R7, zFOST R5, zHux R5, FOE R5</td><td data-order="0"></td><td nowrap style="font-size:75%" data-order="111k">111k - zzBossk R4, Dengar G9, zzJango G12, zGreedo G12, zBoba G12</td><td nowrap style="font-size:75%" data-order="156k">156k - zzEP R7, zzzVader R7, zzzDR R6, zzMalak R5, zzThrawn R3</td><td nowrap style="font-size:75%" data-order="117k">117k - zzMT R3, zzAV R5, Zombie R3, zDaka G12, Spirit R3</td><td nowrap style="font-size:75%" data-order="125k">125k - zzTraya R5, zzDN R3, zSion R3, zDooku R4, Sith Empire Trooper R3</td><td nowrap style="font-size:75%" data-order="120k">120k - zzGG R6, zB2 R3, zB1 G12, zDroideka R3, zMagnaGuard R3</td><td nowrap class="not-viable" style="font-size:75%; background-color: yellow;" data-order="106k">106k - Nute G10, zB1 G12, zB2 R3, zDroideka R3, zMagnaGuard R3</td><td nowrap style="font-size:75%" data-order="54k">54k - zDooku R4, zzAV R5</td><td data-order="0"></td><td nowrap style="font-size:75%" data-order="137k">137k - Chimaera HT</td><td nowrap style="font-size:75%" data-order="255k">255k - Executrix Soldier SF, Spy SF, Sun Fac SF, Slave I</td></tr>
+    </tbody>
+    <tfoot>
+    <tr>
+    <td>Viable Count</td>
+    <td>0</td>
+    <td>3</td><td>4</td><td>1</td><td>3</td><td>2</td><td>2</td><td>1</td><td>4</td><td>3</td><td>4</td><td>2</td><td>4</td><td>1</td><td>4</td><td>0</td><td>4</td><td>3</td>
+    </tr>
+    </tfoot>
+</table>
+<br/><br/>
+<font size="-2">Generated 2023-05-08 05:52:29 +0000</font>
+<script data-goatcounter="https://gorgatron.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>

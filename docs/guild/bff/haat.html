@@ -1,0 +1,106 @@
+<style type="text/css">
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  padding: 8px;
+}
+
+tr:nth-child(even) {background: #dddddd}
+tr:nth-child(odd) {background: #ffffff}
+
+.toggleable {
+    display: none;
+}
+</style><link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.1.5/css/fixedHeader.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.6/css/fixedColumns.dataTables.min.css" />
+<script type="text/javascript" language="javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedheader/3.1.5/js/dataTables.fixedHeader.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedcolumns/3.2.6/js/dataTables.fixedColumns.min.js"></script>    <script>
+    $(document).ready( function () {
+        $('#schedule').DataTable({
+        "paging":   false,
+        "info":     false,
+        
+        
+        
+        
+        
+        });
+    } );
+    </script><title>BRG Alliance Guild Reports: HAAT Schedule</title>
+<div style="display: flex; align-items:baseline"><img src="../../i/simple_logo_48.jpg"/>&nbsp;<h1>Alliance Guild Reports: HAAT Schedule</h1></div>
+
+<div style="background-color: #f0f0f0; border: solid red; padding: 10px; border-radius: 10px">
+<a href="../../alliance/index.html">Alliance</a> |
+<div style="float:right;"><a href="../../r">Resources</a></div>
+<a href="index.html">Back</a>
+</div>
+<br/><p>
+Information about the teams: <a href="https://gaming-fans.com/star-wars-goh/swgoh-guides/aat-raid-guide/aat-phase-1-teams-strategy/">gaming fans</a>
+<br/>
+You may need to do some research on how to play these teams, especially the Ackbar/NS teams
+have particular ways that you use them.
+<br/>
+Note: some teams may overlap.
+<br/>
+<br/>
+<button onclick="$('.not-viable').text('&nbsp;').css('background-color', '')">remove not ready</button><br/>
+
+
+<table id="schedule" class="display" style="font-size: 75%">
+    <thead>
+        <tr>
+        <th>Player</th>
+        <th>Team Count</th><th>P1</th><th>P1</th><th>P2+</th><th>P2+</th>        </tr>
+    </thead>
+    <tbody><tr><td nowrap>arcabryn</td><td>4</td><td nowrap data-order="137670">(JTR: FULL) zJTR R7, zBB-8 R7, zC-3PO G12, zzzCLS R3, zFinn R5</td><td nowrap data-order="12040">(Kylo P1) Kylo G8</td><td nowrap data-order="134640">(JTR: 2-4) zJTR R7, zFinn R5, zBB-8 R7, RT R5, Scav Rey R7</td><td nowrap data-order="117119">(NS: 2-4) zzMT G12, zDaka G12, zzAV R7, Spirit R4, Zombie R3</td></tr>
+<tr><td nowrap>F2Black</td><td>1</td><td nowrap data-order="12814">(Kylo P1) Kylo G8</td><td nowrap data-order="0">&nbsp;</td><td nowrap data-order="75971" class="not-viable" style="background-color: yellow;">(JTR: 2-4) zJTR G12, Finn G10, BB-8 G10, RT 5* G8, Scav Rey G11</td><td nowrap data-order="0">&nbsp;</td></tr>
+<tr><td nowrap>Fish Salami</td><td>2</td><td nowrap data-order="55385">(CLS P1) zzzCLS R7, zHan G12</td><td nowrap data-order="14346">(Kylo P1) Kylo G9</td><td nowrap data-order="0">&nbsp;</td><td nowrap data-order="0">&nbsp;</td></tr>
+<tr><td nowrap>Wutdafuhk</td><td>4</td><td nowrap data-order="146024">(JTR: FULL) zzzJTR G12, zzBB-8 R5, zzC-3PO R5, zzzCLS R5, zzWampa R5</td><td nowrap data-order="29167">(Kylo P1) zKylo R7</td><td nowrap data-order="109575">(JTR: 2-4) zzzJTR G12, zFinn G12, zzBB-8 R5, RT G12, Scav Rey G12</td><td nowrap data-order="101447">(NS: 2-4) zzMT G12, zDaka G12, zzAV R3, Spirit G9, Zombie G12</td></tr>
+<tfoot><tr><td></td><td>11</td><td>7</td><td></td><td>4</td><td></td></tr></tfoot>
+    </tbody>
+</table><br/>
+<br/>
+Here are all the toons used across all the potential teams:
+<br/>
+<br/>    <script>
+    $(document).ready( function () {
+        $('#toons').DataTable({
+        "paging":   false,
+        "info":     false,
+        
+        
+        
+        fixedColumns: { leftColumns: 1 }, scrollX: true,
+        
+        });
+    } );
+    </script><table id="toons" class="display" style="font-size:85%">
+    <thead>
+        <tr>
+        <th>Player</th>
+        <th>AV</th><th>Ackbar</th><th>BB-8</th><th>C-3PO</th><th>CLS</th><th>Daka</th><th>Finn</th><th>HYoda</th><th>Han</th><th>Initiate</th><th>JTR</th><th>Kylo</th><th>MT</th><th>Poe</th><th>RT</th><th>Scav Rey</th><th>Spirit</th><th>Thrawn</th><th>Wampa</th><th>Young Han</th><th>Zombie</th>
+        </tr>
+    </thead>
+    <tbody><tr><td><a href="../../player/tw-squads/985214928.html">Wutdafuhk</a></td><td nowrap data-order="26701" style="background-color: yellow;">26k R3 zz</td><td nowrap data-order="17652" style="background-color: yellow;">17k G12 </td><td nowrap data-order="28704">28k R5 zz</td><td nowrap data-order="30256">30k R5 zz</td><td nowrap data-order="31758">31k R5 zzz</td><td nowrap data-order="19824" style="background-color: yellow;">19k G12 z</td><td nowrap data-order="19824" style="background-color: yellow;">19k G12 z</td><td nowrap data-order="28642">28k R5 zz</td><td nowrap data-order="25662">25k R5 z</td><td nowrap data-order="13377" style="background-color: yellow;">13k G7 </td><td nowrap data-order="26574" style="background-color: yellow;">26k G12 zzz</td><td nowrap data-order="29167">29k R7 z</td><td nowrap data-order="23038" style="background-color: yellow;">23k G12 zz</td><td nowrap data-order="17559" style="background-color: yellow;">17k G12 </td><td nowrap data-order="16659" style="background-color: yellow;">16k G12 </td><td nowrap data-order="17814" style="background-color: yellow;">17k G12 </td><td nowrap data-order="14118" style="background-color: yellow;">14k G9 </td><td nowrap data-order="30394">30k R6 zz</td><td nowrap data-order="28732">28k R5 zz</td><td nowrap data-order="16029" style="background-color: yellow;">16k G10 </td><td nowrap data-order="17766" style="background-color: yellow;">17k G12 </td></tr>
+<tr><td><a href="../../player/tw-squads/393679868.html">arcabryn</a></td><td nowrap data-order="32157">32k R7 zz</td><td nowrap data-order="14230" style="background-color: yellow;">14k G9 </td><td nowrap data-order="29463">29k R7 z</td><td nowrap data-order="22336" style="background-color: yellow;">22k G12 z</td><td nowrap data-order="29841" style="background-color: yellow;">29k R3 zzz</td><td nowrap data-order="19245" style="background-color: yellow;">19k G12 z</td><td nowrap data-order="25591">25k R5 z</td><td nowrap data-order="17968" style="background-color: yellow;">17k G12 </td><td nowrap data-order="24799" style="background-color: yellow;">24k R4 z</td><td nowrap data-order="10137" style="background-color: yellow;">10k G7 </td><td nowrap data-order="30439">30k R7 z</td><td nowrap data-order="12040" style="background-color: yellow;">12k G8 </td><td nowrap data-order="22804" style="background-color: yellow;">22k G12 zz</td><td nowrap data-order="22554">22k R5 </td><td nowrap data-order="22423">22k R5 </td><td nowrap data-order="26724">26k R7 </td><td nowrap data-order="21523" style="background-color: yellow;">21k R4 </td><td nowrap data-order="14757" style="background-color: yellow;">14k G9 </td><td data-order="0"></td><td data-order="0"></td><td nowrap data-order="21390" style="background-color: yellow;">21k R3 </td></tr>
+<tr><td><a href="../../player/tw-squads/919188671.html">Fish Salami</a></td><td nowrap data-order="4656" style="background-color: yellow;">4656 G1 </td><td nowrap data-order="3970" style="background-color: yellow;">3970 G6 </td><td nowrap data-order="10501" style="background-color: yellow;">10k G9 </td><td data-order="0"></td><td nowrap data-order="35374">35k R7 zzz</td><td nowrap data-order="2499" style="background-color: yellow;">2499 G4 </td><td nowrap data-order="3034" style="background-color: yellow;">3034 G4 </td><td data-order="0"></td><td nowrap data-order="20011" style="background-color: yellow;">20k G12 z</td><td nowrap data-order="451" style="background-color: yellow;">451 G1 </td><td data-order="0"></td><td nowrap data-order="14346" style="background-color: yellow;">14k G9 </td><td nowrap data-order="2640" style="background-color: yellow;">2640 G6 </td><td data-order="0"></td><td nowrap data-order="451" style="background-color: yellow;">451 G1 </td><td nowrap data-order="1009" style="background-color: yellow;">1009 G3 </td><td nowrap data-order="2082" style="background-color: yellow;">2082 G3 </td><td nowrap data-order="21039" style="background-color: yellow;">21k G12 z</td><td nowrap data-order="26433">26k R5 z</td><td nowrap data-order="771" style="background-color: yellow;">771 G2 </td><td nowrap data-order="1911" style="background-color: yellow;">1911 G2 </td></tr>
+<tr><td><a href="../../player/tw-squads/157242719.html">F2Black</a></td><td nowrap data-order="26257">26k R5 z</td><td nowrap data-order="12838" style="background-color: yellow;">12k G8 </td><td nowrap data-order="15415" style="background-color: yellow;">15k G10 </td><td nowrap data-order="21499" style="background-color: yellow;">21k G12 z</td><td data-order="0"></td><td nowrap data-order="7906" style="background-color: yellow;">7906 G8 </td><td nowrap data-order="15028" style="background-color: yellow;">15k G10 </td><td data-order="0"></td><td nowrap data-order="13804" style="background-color: yellow;">13k G9 </td><td data-order="0"></td><td nowrap data-order="20947" style="background-color: yellow;">20k G12 z</td><td nowrap data-order="12814" style="background-color: yellow;">12k G8 </td><td nowrap data-order="6853" style="background-color: yellow;">6853 G8 </td><td nowrap data-order="6577" style="background-color: yellow;">6577 G8 </td><td nowrap data-order="7606" style="background-color: yellow;">7606 G8 </td><td nowrap data-order="16975" style="background-color: yellow;">16k G11 </td><td nowrap data-order="6301" style="background-color: yellow;">6301 G8 </td><td nowrap data-order="11325" style="background-color: yellow;">11k G8 </td><td data-order="0"></td><td data-order="0"></td><td nowrap data-order="451" style="background-color: yellow;">451 G1 </td></tr>
+    </tbody>
+    <tfoot>
+    <tr>
+    <td></td>
+    <td>2</td><td>0</td><td>2</td><td>1</td><td>2</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td><td>2</td><td>0</td><td>0</td>
+    </tr>
+    </tfoot>
+</table>
+<br/><br/>
+<font size="-2">Generated 2022-04-29 04:46:32 +0000</font>
+<script data-goatcounter="https://gorgatron.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>

@@ -1,0 +1,89 @@
+<meta charset="UTF-8">
+<meta name="robots" content="noindex"><style type="text/css">
+body {
+ background-image: url("../../i/more_faded_logo.jpg");
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+</style><style type="text/css">
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  padding: 8px;
+}
+
+tr:nth-child(even) {background: #dddddd}
+tr:nth-child(odd) {background: #ffffff}
+
+.toggleable {
+    display: none;
+}
+</style><link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.1.5/css/fixedHeader.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.6/css/fixedColumns.dataTables.min.css" />
+<script type="text/javascript" language="javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedheader/3.1.5/js/dataTables.fixedHeader.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedcolumns/3.2.6/js/dataTables.fixedColumns.min.js"></script><title>BRG Alliance Guild Reports: DS Geo TB Progress Tracker</title>
+<div style="display: flex; align-items:baseline"><img src="../../i/simple_logo_48.jpg"/>&nbsp;<h1>Alliance Guild Reports: DS Geo TB Progress Tracker</h1></div>
+
+<div style="background-color: #f0f0f0; border: solid red; padding: 10px; border-radius: 10px">
+<a href="../../alliance/index.html">Alliance</a> |
+<a href="../../alliance/characters.html">Characters</a> |
+
+<div style="float:right;"><a href="../../r">Resources</a></div>
+<a href="index.html">SithStrikeTeam</a>
+</div>
+<br/><h2>DS Geo TB Progress Tracker SithStrikeTeam</h2>
+
+<p>
+Progress on top performing DS Geo TB Teams to G12 (a good starting place for DS TB):
+<ul>
+<li>GG + Sep Droids
+<li>Geos
+<li>Imperial Troopers
+<li>Dooku + Assaj (good points in P2 middle)
+</ul>
+
+<p>
+<button onclick="$('.complete').hide(); $('.working').show()">hide completed</button>
+<button onclick="$('.complete').show(); $('.working').hide()">hide incomplete</button>
+<button onclick="$('.complete').show(); $('.working').show()">show all</button>
+
+<br/>
+    
+<link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.0.0/css/buttons.dataTables.min.css" />
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/buttons/2.0.0/js/dataTables.buttons.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/buttons/2.0.0/js/buttons.html5.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script><script>
+$(document).ready(function() {
+    var urlParams = new URLSearchParams(window.location.search)
+    var show = urlParams.get('show')
+    if (show == "working") {
+        $('.complete').hide()
+    } else if (show == "complete") {
+        $('.working').hide()
+    }
+});
+</script><table class="stripe" id="stats"><thead><th>Player</th><th>Ally Code</th><th>Starting Gear Needed</th><th>Progress</th><th>Current Gear Needed</th><th>Team</th></thead><tr class="complete" style="background-color: #ceebfd;"><td>Tahl Rexick</td><td>834776681</td><td>0</td><td>0</td><td>0</td><td><b>Grievous</b>: GG, B2, B1, Droideka, MagnaGuard</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Tahl Rexick</td><td>834776681</td><td>0</td><td>0</td><td>0</td><td><b>Dooku+Asajj</b>: Dooku, AV</td></tr><tr class="working" style=""><td>Tahl Rexick</td><td>834776681</td><td>5</td><td>0</td><td>5</td><td><b>Geos</b>: <b>GBA G10</b>, <b>Poggle G11</b>, Geo Soldier, <b>Sun Fac G11</b>, <b>Geo Spy G11</b></td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Kale Raxl</td><td>428441352</td><td>0</td><td>0</td><td>0</td><td><b>Grievous</b>: GG, B2, B1, Droideka, MagnaGuard</td></tr><tr class="working" style=""><td>Kale Raxl</td><td>428441352</td><td>3</td><td>0</td><td>3</td><td><b>Troopers</b>: Veers, Piett, <b>Starck G11</b>, <b>Dark Trooper G10</b>, Range Trooper</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Kale Raxl</td><td>428441352</td><td>0</td><td>0</td><td>0</td><td><b>Dooku+Asajj</b>: Dooku, AV</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Kale Raxl</td><td>428441352</td><td>0</td><td>0</td><td>0</td><td><b>Geos</b>: GBA, Poggle, Geo Soldier, Sun Fac, Geo Spy</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>TMONEY</td><td>673871277</td><td>0</td><td>0</td><td>0</td><td><b>Grievous</b>: GG, B2, B1, Droideka, MagnaGuard</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>TMONEY</td><td>673871277</td><td>0</td><td>0</td><td>0</td><td><b>Geos</b>: GBA, Poggle, Geo Soldier, Sun Fac, Geo Spy</td></tr><tr class="working" style=""><td>TMONEY</td><td>673871277</td><td>6</td><td>0</td><td>6</td><td><b>Dooku+Asajj</b>: <b>Dooku G6 6&#9733;</b>, AV</td></tr><tr class="working" style=""><td>Kizz</td><td>346434263</td><td>9</td><td>0</td><td>9</td><td><b>Grievous</b>: GG, <b>B2 G9</b>, B1, <b>Nute G10</b>, <b>MagnaGuard G8</b></td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Kizz</td><td>346434263</td><td>0</td><td>0</td><td>0</td><td><b>Dooku+Asajj</b>: Dooku, AV</td></tr><tr class="working" style=""><td>Kizz</td><td>346434263</td><td>8</td><td>0</td><td>8</td><td><b>Geos</b>: GBA, Poggle, <b>Geo Soldier G11</b>, <b>Sun Fac G8</b>, <b>Geo Spy G9</b></td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Kai Dannik</td><td>378913252</td><td>0</td><td>0</td><td>0</td><td><b>Grievous</b>: GG, B2, B1, Droideka, MagnaGuard</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Kai Dannik</td><td>378913252</td><td>0</td><td>0</td><td>0</td><td><b>Dooku+Asajj</b>: Dooku, AV</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Kai Dannik</td><td>378913252</td><td>0</td><td>0</td><td>0</td><td><b>Geos</b>: GBA, Poggle, Geo Soldier, Sun Fac, Geo Spy</td></tr></table><script>var config = {
+    "paging":   false,
+    "info":     false,
+    bFilter: false,
+    fixedHeader: true,
+    dom: 'Bfrtip',
+    buttons: [
+        'copyHtml5',
+        'excelHtml5',
+        'csvHtml5',
+    ],
+}
+
+table = $('#stats').DataTable(config);</script><br/>
+<font size="-2">Generated 2024-05-12 16:11:44 +0000</font>
+<script data-goatcounter="https://gorgatron.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>

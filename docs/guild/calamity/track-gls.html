@@ -1,0 +1,83 @@
+<meta charset="UTF-8">
+<meta name="robots" content="noindex"><style type="text/css">
+body {
+ background-image: url("../../i/more_faded_logo.jpg");
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+</style><style type="text/css">
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  padding: 8px;
+}
+
+tr:nth-child(even) {background: #dddddd}
+tr:nth-child(odd) {background: #ffffff}
+
+.toggleable {
+    display: none;
+}
+</style><link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.1.5/css/fixedHeader.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.6/css/fixedColumns.dataTables.min.css" />
+<script type="text/javascript" language="javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedheader/3.1.5/js/dataTables.fixedHeader.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedcolumns/3.2.6/js/dataTables.fixedColumns.min.js"></script><title>BRG Alliance Guild Reports: Upcoming GLs Progress Tracker</title>
+<div style="display: flex; align-items:baseline"><img src="../../i/simple_logo_48.jpg"/>&nbsp;<h1>Alliance Guild Reports: Upcoming GLs Progress Tracker</h1></div>
+
+<div style="background-color: #f0f0f0; border: solid red; padding: 10px; border-radius: 10px">
+<a href="../../alliance/index.html">Alliance</a> |
+<a href="../../alliance/characters.html">Characters</a> |
+
+<div style="float:right;"><a href="../../r">Resources</a></div>
+<a href="index.html">BRG Order of Calamity</a>
+</div>
+<br/><h2>Upcoming GLs Progress Tracker BRG Order of Calamity</h2>
+
+<p>
+Progress on close GL unlocks.
+
+<p>
+<button onclick="$('.complete').hide(); $('.working').show()">hide completed</button>
+<button onclick="$('.complete').show(); $('.working').hide()">hide incomplete</button>
+<button onclick="$('.complete').show(); $('.working').show()">show all</button>
+
+<br/>
+    
+<link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.0.0/css/buttons.dataTables.min.css" />
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/buttons/2.0.0/js/dataTables.buttons.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/buttons/2.0.0/js/buttons.html5.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script><script>
+$(document).ready(function() {
+    var urlParams = new URLSearchParams(window.location.search)
+    var show = urlParams.get('show')
+    if (show == "working") {
+        $('.complete').hide()
+    } else if (show == "complete") {
+        $('.working').hide()
+    }
+});
+</script><table class="stripe" id="stats"><thead><th>Player</th><th>Ally Code</th><th>Starting Gear Needed</th><th>Progress</th><th>Current Gear Needed</th><th>Team</th></thead><tr class="complete" style="background-color: #ceebfd;"><td>ridingred</td><td>273374852</td><td>59</td><td>59</td><td>0</td><td><b>Supreme Leader Kylo Ren</b>: KRU, Kylo, FOST, FOE, FOO, FOTP, Phasma, Hux, FOSFTP, Sith Trooper, Vet Han, EP, <b>Finalizer 0&#9733;</b></td></tr><tr class="working" style=""><td>DarthKrillin</td><td>143828918</td><td>40</td><td>3</td><td>37</td><td><b>Rey</b>: <b>JTR G4</b>, R2-D2, C-3PO, <b>BB-8 G1</b>, RT, <b>Scav Rey R5</b>, Finn, Poe, Vet Chewbacca, Vet Han, Resistance Pilot, Holdo, Rose, RH Poe, RH Finn</td></tr><tr class="working" style=""><td>DarthKrillin</td><td>143828918</td><td>7</td><td>0</td><td>7</td><td><b>Supreme Leader Kylo Ren</b>: <b>KRU R5</b>, <b>Kylo R5</b>, FOST, FOE, FOO, FOTP, Phasma, Hux, FOSFTP, Sith Trooper, Vet Han, <b>EP R4</b>, <b>Finalizer 0&#9733;</b></td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Puke Clodhopper</td><td>138652831</td><td>29</td><td>29</td><td>0</td><td><b>Jedi Master Luke Skywalker</b>: Old Ben, JTR, C-3PO, Mon Mothma, Chewpio, JKL, R2-D2, Han, Chewbacca, Rebel Y-wing, Leia, HYoda, Wedge, Biggs, Lando</td></tr><tr class="working" style=""><td>Fishtenors</td><td>165252752</td><td>20</td><td>2</td><td>18</td><td><b>Rey</b>: <b>JTR G12</b>, R2-D2, C-3PO, <b>BB-8 G12</b>, RT, <b>Scav Rey R5</b>, Finn, Poe, Vet Chewbacca, Vet Han, Resistance Pilot, Holdo, Rose, RH Poe, RH Finn</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Fishtenors</td><td>165252752</td><td>4</td><td>4</td><td>0</td><td><b>Supreme Leader Kylo Ren</b>: KRU, Kylo, FOST, FOE, FOO, FOTP, Phasma, Hux, FOSFTP, Sith Trooper, Vet Han, EP, Finalizer</td></tr><tr class="working" style=""><td>obi 1 ish</td><td>279813349</td><td>51</td><td>5</td><td>46</td><td><b>Jedi Master Luke Skywalker</b>: <b>Old Ben R3</b>, <b>JTR R3</b>, <b>C-3PO R3</b>, <b>Mon Mothma G1 5&#9733;</b>, <b>Chewpio R4</b>, <b>JKL R4</b>, <b>R2-D2 G10</b>, <b>Han R4</b>, <b>Chewbacca R4</b>, <b>Rebel Y-wing 5&#9733;</b>, Leia, <b>HYoda R3</b>, Wedge, Biggs, <b>Lando R4</b></td></tr><tr class="working" style=""><td>obi 1 ish</td><td>279813349</td><td>7</td><td>0</td><td>7</td><td><b>Supreme Leader Kylo Ren</b>: <b>KRU R5</b>, <b>Kylo R5</b>, FOST, FOE, FOO, FOTP, Phasma, Hux, FOSFTP, Sith Trooper, Vet Han, <b>EP R4</b>, <b>Finalizer 4&#9733;</b></td></tr><tr class="working" style=""><td>Reese</td><td>287575889</td><td>59</td><td>9</td><td>50</td><td><b>Rey</b>: JTR, R2-D2, <b>C-3PO 0&#9733;</b>, <b>BB-8 R2</b>, RT, <b>Scav Rey R5</b>, Finn, <b>Poe G12</b>, <b>Vet Chewbacca G12</b>, Vet Han, <b>Resistance Pilot G11</b>, <b>Holdo G12</b>, <b>Rose R2</b>, <b>RH Poe G10 5&#9733;</b>, <b>RH Finn G7 5&#9733;</b></td></tr><tr class="working" style=""><td>ono</td><td>581795111</td><td>54</td><td>5</td><td>49</td><td><b>Sith Eternal Emperor</b>: EP, Vader, <b>RG G12</b>, Piett, <b>Krennic G9 4&#9733;</b>, <b>Sidious G12</b>, Darth Maul, <b>Dooku G12</b>, <b>Sith Marauder G11 5&#9733;</b>, <b>Imperial TIE Bomber 4&#9733;</b>, <b>JKA R2</b>, Thrawn, <b>Tarkin G12</b>, Veers, <b>Starck G12</b></td></tr><tr class="working" style=""><td>Mol Eliza</td><td>982474393</td><td>24</td><td>2</td><td>22</td><td><b>Rey</b>: <b>JTR G12</b>, R2-D2, <b>C-3PO 0&#9733;</b>, <b>BB-8 G8</b>, RT, <b>Scav Rey R5</b>, Finn, Poe, Vet Chewbacca, Vet Han, Resistance Pilot, Holdo, Rose, RH Poe, RH Finn</td></tr><tr class="working" style=""><td>Mol Eliza</td><td>982474393</td><td>15</td><td>1</td><td>14</td><td><b>Supreme Leader Kylo Ren</b>: <b>KRU R5</b>, <b>Kylo R5</b>, FOST, FOE, FOO, FOTP, Phasma, Hux, FOSFTP, Sith Trooper, Vet Han, <b>EP G10</b>, <b>Finalizer 0&#9733;</b></td></tr><tr class="complete" style="background-color: #ceebfd;"><td>SharpChaos</td><td>947247942</td><td>0</td><td>0</td><td>0</td><td><b>Rey</b>: JTR, R2-D2, C-3PO, BB-8, RT, Scav Rey, Finn, Poe, Vet Chewbacca, Vet Han, Resistance Pilot, Holdo, Rose, RH Poe, RH Finn</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>SharpChaos</td><td>947247942</td><td>46</td><td>46</td><td>0</td><td><b>Jedi Master Kenobi</b>: GK, Bo-Katan, Aayla, Mace, Negotiator, GG, Wat Tambor, MagnaGuard, Clone Sergeant, QGJ, GMY, Jango, Shaak Ti, Cad, Cody</td></tr><tr class="working" style=""><td>SharpChaos</td><td>947247942</td><td>59</td><td>5</td><td>54</td><td><b>Jedi Master Luke Skywalker</b>: <b>Old Ben G12</b>, JTR, <b>C-3PO R3</b>, <b>Mon Mothma G7 4&#9733;</b>, <b>Chewpio G10 6&#9733;</b>, JKL, <b>R2-D2 R3</b>, <b>Han R3</b>, <b>Chewbacca R3</b>, <b>Rebel Y-wing 5&#9733;</b>, <b>Leia G11</b>, <b>HYoda R3</b>, <b>Wedge G12</b>, <b>Biggs G12</b>, <b>Lando R3</b></td></tr><tr class="complete" style="background-color: #ceebfd;"><td>SharpChaos</td><td>947247942</td><td>0</td><td>0</td><td>0</td><td><b>Supreme Leader Kylo Ren</b>: KRU, Kylo, FOST, FOE, FOO, FOTP, Phasma, Hux, FOSFTP, Sith Trooper, Vet Han, EP, Finalizer</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Zhil Axfow</td><td>527857189</td><td>17</td><td>17</td><td>0</td><td><b>Jedi Master Luke Skywalker</b>: Old Ben, JTR, C-3PO, Mon Mothma, Chewpio, JKL, R2-D2, Han, Chewbacca, <b>Rebel Y-wing 5&#9733;</b>, Leia, HYoda, Wedge, Biggs, Lando</td></tr><tr class="working" style=""><td>Zhil Axfow</td><td>527857189</td><td>6</td><td>0</td><td>6</td><td><b>Supreme Leader Kylo Ren</b>: <b>KRU R5</b>, <b>Kylo R5</b>, FOST, FOE, FOO, FOTP, Phasma, Hux, FOSFTP, Sith Trooper, Vet Han, <b>EP R5</b>, <b>Finalizer 4&#9733;</b></td></tr></table><script>var config = {
+    "paging":   false,
+    "info":     false,
+    bFilter: false,
+    fixedHeader: true,
+    dom: 'Bfrtip',
+    buttons: [
+        'copyHtml5',
+        'excelHtml5',
+        'csvHtml5',
+    ],
+}
+
+table = $('#stats').DataTable(config);</script><br/>
+<font size="-2">Generated 2024-02-16 03:03:27 +0000</font>
+<script data-goatcounter="https://gorgatron.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>

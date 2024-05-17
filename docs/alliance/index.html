@@ -1,0 +1,81 @@
+<meta charset="UTF-8">
+<meta name="robots" content="noindex"><style type="text/css">
+body {
+ background-image: url("../i/more_faded_logo.jpg");
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+</style><style type="text/css">
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  padding: 8px;
+}
+
+tr:nth-child(even) {background: #dddddd}
+tr:nth-child(odd) {background: #ffffff}
+
+.toggleable {
+    display: none;
+}
+</style><link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.1.5/css/fixedHeader.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.6/css/fixedColumns.dataTables.min.css" />
+<script type="text/javascript" language="javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedheader/3.1.5/js/dataTables.fixedHeader.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedcolumns/3.2.6/js/dataTables.fixedColumns.min.js"></script>    <script>
+    $(document).ready( function () {
+        $('#data').DataTable({
+        "paging":   false,
+        "info":     false,
+        
+        
+        
+        
+        
+        });
+    } );
+    </script><script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script src="../j/graph.js"></script><script>
+c1 = new Chart("alliance-gp-stats.json", "alliance", "total")
+c1.id = "alliance-gp-chart"
+c1.title = "Alliance Total GP"
+c1.tightScale = true
+c1.round = 100000000
+c1.height = 400
+c1.display()
+
+c3 = new Chart("alliance-player-counts.json", "alliance", "players")
+c3.id = "alliance-player-chart"
+c3.title = "Alliance Total Players"
+c3.tightScale = true
+c3.round = 100
+c3.height = 400
+c3.display()
+
+c2 = new Chart("alliance-guilds-gp-stats.json", null, "total")
+c2.id = "guild-gp-chart"
+c2.title = "Guild Total GP"
+c2.tightScale = true
+c2.round = 10000000
+c2.display()
+</script><title>BRG Alliance Guild Reports: Alliance Guild Index</title>
+<div style="display: flex; align-items:baseline"><img src="../i/simple_logo_48.jpg"/>&nbsp;<h1>Alliance Guild Reports: Alliance Guild Index</h1></div>
+
+<div style="background-color: #f0f0f0; border: solid red; padding: 10px; border-radius: 10px">
+<a href="index.html">Alliance</a> |
+<a href="characters.html">Characters</a> |
+
+<div style="float:right;"><a href="../r">Resources</a></div>
+<a href="players.html">Player</a> | <a href="characters.html">Characters</a> | <a href="history.html">History</a> | <a href="transfers.html">Transfers</a>
+</div>
+<br/><table id="data"><thead><tr><th>Guild</th><th>Members</th><th>Units GP</th><th>Ships GP</th><th>Total GP</th><th>GLs</th></tr></thead><tr><td data-order="BRG Ahsokas Legion"><a href="../guild/ahsoka/index.html">BRG Ahsokas Legion</a></td><td data-order="50"><a href="../player/ahsoka.html">50</a></td><td data-order="220081842">220m</td><td data-order="164339663">164m</td><td data-order="384421505">384m</td><td data-order="188">188</td></tr><tr><td data-order="BRG A Guild Far Far Away"><a href="../guild/away/index.html">BRG A Guild Far Far Away</a></td><td data-order="47"><a href="../player/away.html">47</a></td><td data-order="232639040">232m</td><td data-order="163271609">163m</td><td data-order="395910649">395m</td><td data-order="206">206</td></tr><tr><td data-order="BRG Beskar Bolls"><a href="../guild/bolls/index.html">BRG Beskar Bolls</a></td><td data-order="47"><a href="../player/bolls.html">47</a></td><td data-order="173026423">173m</td><td data-order="128770982">128m</td><td data-order="301797405">301m</td><td data-order="120">120</td></tr><tr><td data-order="BRG Order of Calamity"><a href="../guild/calamity/index.html">BRG Order of Calamity</a></td><td data-order="0"><a href="../player/calamity.html">0</a></td><td data-order="0">0</td><td data-order="0">0</td><td data-order="0">0</td><td data-order="0">0</td></tr><tr><td data-order="BRG Dark Force Alignment"><a href="../guild/darkforce/index.html">BRG Dark Force Alignment</a></td><td data-order="49"><a href="../player/darkforce.html">49</a></td><td data-order="141745214">141m</td><td data-order="103523682">103m</td><td data-order="245268896">245m</td><td data-order="48">48</td></tr><tr><td data-order="BRG Deathless Mages"><a href="../guild/deathless/index.html">BRG Deathless Mages</a></td><td data-order="50"><a href="../player/deathless.html">50</a></td><td data-order="185080422">185m</td><td data-order="134413038">134m</td><td data-order="319493460">319m</td><td data-order="99">99</td></tr><tr><td data-order="BRG Doomed Heroes"><a href="../guild/doomed/index.html">BRG Doomed Heroes</a></td><td data-order="50"><a href="../player/doomed.html">50</a></td><td data-order="293626721">293m</td><td data-order="198491663">198m</td><td data-order="492118384">492m</td><td data-order="315">315</td></tr><tr><td data-order="BRG Druidia"><a href="../guild/druida/index.html">BRG Druidia</a></td><td data-order="43"><a href="../player/druida.html">43</a></td><td data-order="196667362">196m</td><td data-order="140675796">140m</td><td data-order="337343158">337m</td><td data-order="162">162</td></tr><tr><td data-order="BRG D-S-R"><a href="../guild/dsr/index.html">BRG D-S-R</a></td><td data-order="49"><a href="../player/dsr.html">49</a></td><td data-order="270782728">270m</td><td data-order="185137825">185m</td><td data-order="455920553">455m</td><td data-order="285">285</td></tr><tr><td data-order="BRG Exile"><a href="../guild/exile/index.html">BRG Exile</a></td><td data-order="49"><a href="../player/exile.html">49</a></td><td data-order="259393839">259m</td><td data-order="176385489">176m</td><td data-order="435779328">435m</td><td data-order="220">220</td></tr><tr><td data-order="BRG Fallen Order of Ahch To"><a href="../guild/fallen/index.html">BRG Fallen Order of Ahch To</a></td><td data-order="50"><a href="../player/fallen.html">50</a></td><td data-order="84723660">84m</td><td data-order="62549383">62m</td><td data-order="147273043">147m</td><td data-order="15">15</td></tr><tr><td data-order="BRG Frozenshard exiles"><a href="../guild/frozenshard/index.html">BRG Frozenshard exiles</a></td><td data-order="46"><a href="../player/frozenshard.html">46</a></td><td data-order="155830352">155m</td><td data-order="114768672">114m</td><td data-order="270599024">270m</td><td data-order="78">78</td></tr><tr><td data-order="Guardians of The Mist Beyond"><a href="../guild/guardians/index.html">Guardians of The Mist Beyond</a></td><td data-order="47"><a href="../player/guardians.html">47</a></td><td data-order="165941629">165m</td><td data-order="121760037">121m</td><td data-order="287701666">287m</td><td data-order="81">81</td></tr><tr><td data-order="BRG-HappyAccidents"><a href="../guild/happyaccidents/index.html">BRG-HappyAccidents</a></td><td data-order="46"><a href="../player/happyaccidents.html">46</a></td><td data-order="171376175">171m</td><td data-order="122587929">122m</td><td data-order="293964104">293m</td><td data-order="91">91</td></tr><tr><td data-order="BRG The HighCouncil "><a href="../guild/high-council/index.html">BRG The HighCouncil </a></td><td data-order="45"><a href="../player/high-council.html">45</a></td><td data-order="107482689">107m</td><td data-order="79688110">79m</td><td data-order="187170799">187m</td><td data-order="43">43</td></tr><tr><td data-order="[BRG] Holocron Cafe"><a href="../guild/holocron/index.html">[BRG] Holocron Cafe</a></td><td data-order="47"><a href="../player/holocron.html">47</a></td><td data-order="147407324">147m</td><td data-order="105589372">105m</td><td data-order="252996696">252m</td><td data-order="52">52</td></tr><tr><td data-order="BRG Hope"><a href="../guild/hope/index.html">BRG Hope</a></td><td data-order="47"><a href="../player/hope.html">47</a></td><td data-order="227630154">227m</td><td data-order="159699053">159m</td><td data-order="387329207">387m</td><td data-order="187">187</td></tr><tr><td data-order="[BRG]DropItLikeIt'sHoth"><a href="../guild/hoth/index.html">[BRG]DropItLikeIt'sHoth</a></td><td data-order="42"><a href="../player/hoth.html">42</a></td><td data-order="207522077">207m</td><td data-order="142854296">142m</td><td data-order="350376373">350m</td><td data-order="170">170</td></tr><tr><td data-order="BRG Korpisoturit"><a href="../guild/korpisoturit/index.html">BRG Korpisoturit</a></td><td data-order="50"><a href="../player/korpisoturit.html">50</a></td><td data-order="249372768">249m</td><td data-order="171558556">171m</td><td data-order="420931324">420m</td><td data-order="218">218</td></tr><tr><td data-order="BRG Knights of the Dragon"><a href="../guild/kotd/index.html">BRG Knights of the Dragon</a></td><td data-order="50"><a href="../player/kotd.html">50</a></td><td data-order="305268485">305m</td><td data-order="205509203">205m</td><td data-order="510777688">510m</td><td data-order="339">339</td></tr><tr><td data-order="BRG LazerFaces"><a href="../guild/lazerfaces/index.html">BRG LazerFaces</a></td><td data-order="46"><a href="../player/lazerfaces.html">46</a></td><td data-order="240621963">240m</td><td data-order="168247285">168m</td><td data-order="408869248">408m</td><td data-order="218">218</td></tr><tr><td data-order="BRG Laxed Out Pros"><a href="../guild/lop/index.html">BRG Laxed Out Pros</a></td><td data-order="50"><a href="../player/lop.html">50</a></td><td data-order="234035862">234m</td><td data-order="159923765">159m</td><td data-order="393959627">393m</td><td data-order="179">179</td></tr><tr><td data-order="BRG Mandalorians Inc"><a href="../guild/mandalorians/index.html">BRG Mandalorians Inc</a></td><td data-order="50"><a href="../player/mandalorians.html">50</a></td><td data-order="220754673">220m</td><td data-order="151755654">151m</td><td data-order="372510327">372m</td><td data-order="151">151</td></tr><tr><td data-order="BRG Mandos"><a href="../guild/mandos_periperi/index.html">BRG Mandos</a></td><td data-order="50"><a href="../player/mandos_periperi.html">50</a></td><td data-order="189526748">189m</td><td data-order="143176001">143m</td><td data-order="332702749">332m</td><td data-order="142">142</td></tr><tr><td data-order="BRG Noble Struggle"><a href="../guild/noble/index.html">BRG Noble Struggle</a></td><td data-order="50"><a href="../player/noble.html">50</a></td><td data-order="174731246">174m</td><td data-order="124655673">124m</td><td data-order="299386919">299m</td><td data-order="89">89</td></tr><tr><td data-order="BRG De Prime Odor"><a href="../guild/odor/index.html">BRG De Prime Odor</a></td><td data-order="50"><a href="../player/odor.html">50</a></td><td data-order="283675658">283m</td><td data-order="192288381">192m</td><td data-order="475964039">475m</td><td data-order="282">282</td></tr><tr><td data-order="BRG S?ND PEOPLE"><a href="../guild/sandpeople/index.html">BRG S?ND PEOPLE</a></td><td data-order="50"><a href="../player/sandpeople.html">50</a></td><td data-order="302437828">302m</td><td data-order="205342386">205m</td><td data-order="507780214">507m</td><td data-order="327">327</td></tr><tr><td data-order="BRG Space Dragons"><a href="../guild/space-dragons/index.html">BRG Space Dragons</a></td><td data-order="38"><a href="../player/space-dragons.html">38</a></td><td data-order="171624783">171m</td><td data-order="118543363">118m</td><td data-order="290168146">290m</td><td data-order="106">106</td></tr><tr><td data-order="SithStrikeTeam"><a href="../guild/strike/index.html">SithStrikeTeam</a></td><td data-order="6"><a href="../player/strike.html">6</a></td><td data-order="18418199">18.4m</td><td data-order="12014593">12.0m</td><td data-order="30432792">30.4m</td><td data-order="5">5</td></tr><tr><td data-order="BRG Knights of Templar"><a href="../guild/templar/index.html">BRG Knights of Templar</a></td><td data-order="44"><a href="../player/templar.html">44</a></td><td data-order="211697347">211m</td><td data-order="144827769">144m</td><td data-order="356525116">356m</td><td data-order="137">137</td></tr><tr><td data-order="BRG The Wampa Den"><a href="../guild/twd/index.html">BRG The Wampa Den</a></td><td data-order="50"><a href="../player/twd.html">50</a></td><td data-order="279210633">279m</td><td data-order="194224050">194m</td><td data-order="473434683">473m</td><td data-order="272">272</td></tr><tr><td data-order="BRG Umbaran Mercenaries"><a href="../guild/umbaran/index.html">BRG Umbaran Mercenaries</a></td><td data-order="49"><a href="../player/umbaran.html">49</a></td><td data-order="212289420">212m</td><td data-order="147766147">147m</td><td data-order="360055567">360m</td><td data-order="144">144</td></tr><tr><td data-order="BRG Vaders Wake"><a href="../guild/vaders-wake/index.html">BRG Vaders Wake</a></td><td data-order="50"><a href="../player/vaders-wake.html">50</a></td><td data-order="224105387">224m</td><td data-order="162980634">162m</td><td data-order="387086021">387m</td><td data-order="195">195</td></tr><tr><td data-order="BRG Guardians of Vrogus Vas"><a href="../guild/vrogus/index.html">BRG Guardians of Vrogus Vas</a></td><td data-order="50"><a href="../player/vrogus.html">50</a></td><td data-order="165780617">165m</td><td data-order="115446138">115m</td><td data-order="281226755">281m</td><td data-order="74">74</td></tr><tr><td data-order="BRG Wayward Knights"><a href="../guild/wk/index.html">BRG Wayward Knights</a></td><td data-order="46"><a href="../player/wk.html">46</a></td><td data-order="215495472">215m</td><td data-order="150742552">150m</td><td data-order="366238024">366m</td><td data-order="184">184</td></tr><tr><td data-order="BRG xScoundrels"><a href="../guild/xscoundrels/index.html">BRG xScoundrels</a></td><td data-order="49"><a href="../player/xscoundrels.html">49</a></td><td data-order="110056341">110m</td><td data-order="85266990">85m</td><td data-order="195323331">195m</td><td data-order="35">35</td></tr><tr><td data-order="BRG Younglings In The Temple"><a href="../guild/youngling/index.html">BRG Younglings In The Temple</a></td><td data-order="47"><a href="../player/youngling.html">47</a></td><td data-order="147885335">147m</td><td data-order="110908414">110m</td><td data-order="258793749">258m</td><td data-order="60">60</td></tr><tr><td data-order="BRG Rule of Two"><a href="../guild/zeros/index.html">BRG Rule of Two</a></td><td data-order="45"><a href="../player/zeros.html">45</a></td><td data-order="173640601">173m</td><td data-order="118597321">118m</td><td data-order="292237922">292m</td><td data-order="98">98</td></tr><tfoot><tr><td>38</td><td>1724</td><td>7371m</td><td>5188m</td><td>12559m</td><td>5615</td></tr></tfoot></table><div id="alliance-gp-chart"></div><div id="alliance-player-chart"></div><div id="guild-gp-chart"></div><br/>
+<font size="-2">Generated 2024-05-12 16:12:38 +0000</font>
+<script data-goatcounter="https://gorgatron.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>

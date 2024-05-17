@@ -1,0 +1,94 @@
+<meta charset="UTF-8">
+<meta name="robots" content="noindex"><style type="text/css">
+body {
+ background-image: url("../../i/more_faded_logo.jpg");
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+</style><style type="text/css">
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  padding: 8px;
+}
+
+tr:nth-child(even) {background: #dddddd}
+tr:nth-child(odd) {background: #ffffff}
+
+.toggleable {
+    display: none;
+}
+</style><link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.1.5/css/fixedHeader.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.6/css/fixedColumns.dataTables.min.css" />
+<script type="text/javascript" language="javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedheader/3.1.5/js/dataTables.fixedHeader.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedcolumns/3.2.6/js/dataTables.fixedColumns.min.js"></script><title>BRG Alliance Guild Reports: CPIT Vader Progress Tracker</title>
+<div style="display: flex; align-items:baseline"><img src="../../i/simple_logo_48.jpg"/>&nbsp;<h1>Alliance Guild Reports: CPIT Vader Progress Tracker</h1></div>
+
+<div style="background-color: #f0f0f0; border: solid red; padding: 10px; border-radius: 10px">
+<a href="../../alliance/index.html">Alliance</a> |
+<a href="../../alliance/characters.html">Characters</a> |
+
+<div style="float:right;"><a href="../../r">Resources</a></div>
+<a href="index.html">BRG SΔND PEOPLE</a>
+</div>
+<br/><h2>CPIT Vader Progress Tracker BRG SΔND PEOPLE</h2>
+
+<p>
+Progress on the closest CPIT Vader team (either P1 or P2).
+
+<p>
+This will show one of a couple Vader teams usable in CPIT that each player
+is close to.  Note that the third team is somewhat off-meta and much less
+useful than the other two.
+
+<ul>
+<li><b>P1</b> Vader, KRU, C-3PO, Wat, (BB8 or Shaak) - 8-11%, depending on relics/mods
+<li><b>P2:</b> Vader, Nute, Thrawn, Traya, Wat - requires special modding, can do around 12%
+<li><b>P2:</b> (off meta) Vader, EP, Thrawn, Wat Tambor, Malak
+</ul>
+
+<p>
+<button onclick="$('.complete').hide(); $('.working').show()">hide completed</button>
+<button onclick="$('.complete').show(); $('.working').hide()">hide incomplete</button>
+<button onclick="$('.complete').show(); $('.working').show()">show all</button>
+
+<br/>
+    
+<link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.0.0/css/buttons.dataTables.min.css" />
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/buttons/2.0.0/js/dataTables.buttons.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/buttons/2.0.0/js/buttons.html5.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script><script>
+$(document).ready(function() {
+    var urlParams = new URLSearchParams(window.location.search)
+    var show = urlParams.get('show')
+    if (show == "working") {
+        $('.complete').hide()
+    } else if (show == "complete") {
+        $('.working').hide()
+    }
+});
+</script><table class="stripe" id="stats"><thead><th>Player</th><th>Ally Code</th><th>Starting Gear Needed</th><th>Progress</th><th>Current Gear Needed</th><th>Team</th></thead><tr class="complete" style="background-color: #ceebfd;"><td>n3rfT1000</td><td>645985434</td><td>0</td><td>0</td><td>0</td><td><b>Vader+Nute 12%</b>: Vader, Nute, Thrawn, Wat Tambor, Traya</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Hungieman</td><td>955832764</td><td>0</td><td>0</td><td>0</td><td><b>Vader+Nute 12%</b>: Vader, Nute, Thrawn, Wat Tambor, Traya</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Eul0gy</td><td>544915298</td><td>0</td><td>0</td><td>0</td><td><b>Vader+Nute 12%</b>: Vader, Nute, Thrawn, Wat Tambor, Traya</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Falch</td><td>931281728</td><td>0</td><td>0</td><td>0</td><td><b>Vader P1 10%</b>: Vader, KRU, Wat Tambor, C-3PO, Shaak Ti</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Cloudcrusher</td><td>146729256</td><td>0</td><td>0</td><td>0</td><td><b>Vader P1 10%</b>: Vader, KRU, Wat Tambor, C-3PO, Shaak Ti</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>MINI Darthfrankie</td><td>556495658</td><td>0</td><td>0</td><td>0</td><td><b>Vader P1 10%</b>: Vader, KRU, Wat Tambor, C-3PO, BB-8</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>HamSandwich</td><td>815129121</td><td>0</td><td>0</td><td>0</td><td><b>Vader+Wat 8%</b>: Vader, EP, Thrawn, Wat Tambor, Piett</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Drac241</td><td>415687331</td><td>27</td><td>27</td><td>0</td><td><b>Vader+Nute 12%</b>: Vader, Nute, Thrawn, Wat Tambor, Traya</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>MINI Icarus Sunwalker</td><td>383743765</td><td>0</td><td>0</td><td>0</td><td><b>Vader P1 10%</b>: Vader, KRU, Wat Tambor, C-3PO, BB-8</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Sunara</td><td>765594667</td><td>0</td><td>0</td><td>0</td><td><b>Vader P1 10%</b>: Vader, KRU, Wat Tambor, C-3PO, BB-8</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Chronos of Baldar</td><td>655695421</td><td>0</td><td>0</td><td>0</td><td><b>Vader P1 10%</b>: Vader, KRU, Wat Tambor, C-3PO, BB-8</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>BertFett</td><td>247537167</td><td>0</td><td>0</td><td>0</td><td><b>Vader P1 10%</b>: Vader, KRU, Wat Tambor, C-3PO, Shaak Ti</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Selzer</td><td>397193926</td><td>0</td><td>0</td><td>0</td><td><b>Vader P1 10%</b>: Vader, KRU, Wat Tambor, C-3PO, BB-8</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>jms101649</td><td>881219594</td><td>0</td><td>0</td><td>0</td><td><b>Vader P1 10%</b>: Vader, KRU, Wat Tambor, C-3PO, BB-8</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>ĐëąđŔābbîțť</td><td>935821558</td><td>0</td><td>0</td><td>0</td><td><b>Vader P1 10%</b>: Vader, KRU, Wat Tambor, C-3PO, Shaak Ti</td></tr><tr class="working" style=""><td>Mastermoe187</td><td>659412735</td><td>15</td><td>0</td><td>15</td><td><b>Vader+Nute 12%</b>: Vader, <b>Nute G12</b>, Thrawn, <b>Wat Tambor R2</b>, <b>Traya G12</b></td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Maxpowerrs</td><td>414317555</td><td>0</td><td>0</td><td>0</td><td><b>Vader P1 10%</b>: Vader, KRU, Wat Tambor, C-3PO, BB-8</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Kerfuffle</td><td>418562174</td><td>0</td><td>0</td><td>0</td><td><b>Vader+Wat 8%</b>: Vader, EP, Thrawn, Wat Tambor, Piett</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>woie</td><td>839713375</td><td>0</td><td>0</td><td>0</td><td><b>Vader P1 10%</b>: Vader, KRU, Wat Tambor, C-3PO, BB-8</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Marvell Chapel</td><td>193356299</td><td>0</td><td>0</td><td>0</td><td><b>Vader+Wat 8%</b>: Vader, EP, Thrawn, Wat Tambor, Piett</td></tr><tr class="working" style=""><td>HanSpray</td><td>891296679</td><td>17</td><td>0</td><td>17</td><td><b>Vader+Nute 12%</b>: Vader, <b>Nute G11</b>, <b>Thrawn R1</b>, Wat Tambor, <b>Traya G12</b></td></tr><tr class="complete" style="background-color: #ceebfd;"><td>rearviewmirror</td><td>867635926</td><td>0</td><td>0</td><td>0</td><td><b>Vader+Nute 12%</b>: Vader, Nute, Thrawn, Wat Tambor, Traya</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>rhoyalvendetta</td><td>281799924</td><td>0</td><td>0</td><td>0</td><td><b>Vader P1 10%</b>: Vader, KRU, Wat Tambor, C-3PO, BB-8</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Tmel65</td><td>971375216</td><td>0</td><td>0</td><td>0</td><td><b>Vader+Nute 12%</b>: Vader, Nute, Thrawn, Wat Tambor, Traya</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>marco87</td><td>217197326</td><td>0</td><td>0</td><td>0</td><td><b>Vader P1 10%</b>: Vader, KRU, Wat Tambor, C-3PO, Shaak Ti</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Neighbs</td><td>784263715</td><td>0</td><td>0</td><td>0</td><td><b>Vader P1 10%</b>: Vader, KRU, Wat Tambor, C-3PO, Shaak Ti</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>BigBoss</td><td>172826376</td><td>0</td><td>0</td><td>0</td><td><b>Vader P1 10%</b>: Vader, KRU, Wat Tambor, C-3PO, BB-8</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Wilf Willson</td><td>559593336</td><td>0</td><td>0</td><td>0</td><td><b>Vader P1 10%</b>: Vader, KRU, Wat Tambor, C-3PO, Shaak Ti</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>AlexMcHeals</td><td>855568483</td><td>0</td><td>0</td><td>0</td><td><b>Vader P1 10%</b>: Vader, KRU, Wat Tambor, C-3PO, Shaak Ti</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>ZuluJedi</td><td>799391413</td><td>0</td><td>0</td><td>0</td><td><b>Vader P1 10%</b>: Vader, KRU, Wat Tambor, C-3PO, BB-8</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Violanna</td><td>657947228</td><td>0</td><td>0</td><td>0</td><td><b>Vader P1 10%</b>: Vader, KRU, Wat Tambor, C-3PO, BB-8</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Graxus</td><td>225995516</td><td>0</td><td>0</td><td>0</td><td><b>Vader+Wat 8%</b>: Vader, EP, Thrawn, Wat Tambor, Piett</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Kurnus</td><td>513145386</td><td>0</td><td>0</td><td>0</td><td><b>Vader P1 10%</b>: Vader, KRU, Wat Tambor, C-3PO, Shaak Ti</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>MINI Monty</td><td>249555371</td><td>0</td><td>0</td><td>0</td><td><b>Vader+Nute 12%</b>: Vader, Nute, Thrawn, Wat Tambor, Traya</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>GeO</td><td>966821199</td><td>0</td><td>0</td><td>0</td><td><b>Vader+Nute 12%</b>: Vader, Nute, Thrawn, Wat Tambor, Traya</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>J Bone1435</td><td>132696323</td><td>0</td><td>0</td><td>0</td><td><b>Vader P1 10%</b>: Vader, KRU, Wat Tambor, C-3PO, BB-8</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>NerfHearder</td><td>198199934</td><td>0</td><td>0</td><td>0</td><td><b>Vader P1 10%</b>: Vader, KRU, Wat Tambor, C-3PO, BB-8</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Fahrenheit</td><td>291528579</td><td>0</td><td>0</td><td>0</td><td><b>Vader P1 10%</b>: Vader, KRU, Wat Tambor, C-3PO, Shaak Ti</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Edge</td><td>562656168</td><td>0</td><td>0</td><td>0</td><td><b>Vader+Nute 12%</b>: Vader, Nute, Thrawn, Wat Tambor, Traya</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>HevelDevil</td><td>267989348</td><td>0</td><td>0</td><td>0</td><td><b>Vader+Nute 12%</b>: Vader, Nute, Thrawn, Wat Tambor, Traya</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>WolfArcher12</td><td>968334669</td><td>0</td><td>0</td><td>0</td><td><b>Vader+Wat 8%</b>: Vader, EP, Thrawn, Wat Tambor, Piett</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>plindboe</td><td>443356677</td><td>0</td><td>0</td><td>0</td><td><b>Vader P1 10%</b>: Vader, KRU, Wat Tambor, C-3PO, BB-8</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Tally</td><td>318178387</td><td>0</td><td>0</td><td>0</td><td><b>Vader+Wat 8%</b>: Vader, EP, Thrawn, Wat Tambor, Piett</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Bennyhammer</td><td>966812487</td><td>0</td><td>0</td><td>0</td><td><b>Vader P1 10%</b>: Vader, KRU, Wat Tambor, C-3PO, BB-8</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Dack Mason</td><td>726829863</td><td>0</td><td>0</td><td>0</td><td><b>Vader+Wat 8%</b>: Vader, EP, Thrawn, Wat Tambor, Piett</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>ⱠordɎes</td><td>774115838</td><td>0</td><td>0</td><td>0</td><td><b>Vader+Nute 12%</b>: Vader, Nute, Thrawn, Wat Tambor, Traya</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Home One</td><td>886581815</td><td>0</td><td>0</td><td>0</td><td><b>Vader P1 10%</b>: Vader, KRU, Wat Tambor, C-3PO, BB-8</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>DarthRess</td><td>813899319</td><td>0</td><td>0</td><td>0</td><td><b>Vader P1 10%</b>: Vader, KRU, Wat Tambor, C-3PO, Shaak Ti</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>HooDs</td><td>129611985</td><td>0</td><td>0</td><td>0</td><td><b>Vader P1 10%</b>: Vader, KRU, Wat Tambor, C-3PO, BB-8</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Yestare</td><td>613161642</td><td>0</td><td>0</td><td>0</td><td><b>Vader+Nute 12%</b>: Vader, Nute, Thrawn, Wat Tambor, Traya</td></tr></table><script>var config = {
+    "paging":   false,
+    "info":     false,
+    bFilter: false,
+    fixedHeader: true,
+    dom: 'Bfrtip',
+    buttons: [
+        'copyHtml5',
+        'excelHtml5',
+        'csvHtml5',
+    ],
+}
+
+table = $('#stats').DataTable(config);</script><br/>
+<font size="-2">Generated 2023-05-15 01:47:35 +0000</font>
+<script data-goatcounter="https://gorgatron.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>

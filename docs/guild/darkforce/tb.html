@@ -1,0 +1,391 @@
+<meta charset="UTF-8">
+<meta name="robots" content="noindex"><style type="text/css">
+body {
+ background-image: url("../../i/more_faded_logo.jpg");
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+</style><style type="text/css">
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  padding: 8px;
+}
+
+tr:nth-child(even) {background: #dddddd}
+tr:nth-child(odd) {background: #ffffff}
+
+.toggleable {
+    display: none;
+}
+</style><link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.1.5/css/fixedHeader.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.6/css/fixedColumns.dataTables.min.css" />
+<script type="text/javascript" language="javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedheader/3.1.5/js/dataTables.fixedHeader.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedcolumns/3.2.6/js/dataTables.fixedColumns.min.js"></script><title>BRG Alliance Guild Reports: TB Explorer</title>
+<div style="display: flex; align-items:baseline"><img src="../../i/simple_logo_48.jpg"/>&nbsp;<h1>Alliance Guild Reports: TB Explorer</h1></div>
+
+<div style="background-color: #f0f0f0; border: solid red; padding: 10px; border-radius: 10px">
+<a href="../../alliance/index.html">Alliance</a> |
+<a href="../../alliance/characters.html">Characters</a> |
+
+<div style="float:right;"><a href="../../r">Resources</a></div>
+<a href="index.html">BRG Dark Force Alignment</a>
+</div>
+<br/><h2 id="name">TB Explorer BRG Dark Force Alignment: <span id="tb-name"></span></h2>
+
+<a href="#" onclick="$('#instructions').toggle()">instructions</a>
+<div id="instructions" style="display: none">
+<p>
+Select the phases that you want to view from the list.  Pick what the columns
+you need.  The pieces marked in <span style="background-color: yellow">yellow</span>
+show you how many GP you have available to deploy (after people play the estimated
+missions) and the estimated territory points from doing missions.
+
+<p>
+The suggested squads are shown below.  Some players may not use these squads.
+Some players may not hit the estimated number of waves.  You need to take this
+into account when making your plans.  Also be aware that the automatic TB
+plans have some other multipliers in effect that lower the numbers.  These
+numbers are useful for manual planning where you can choose how to use them.
+
+<p>
+You can export the tables as CSV or Excel if you want to further process them.
+Consider turning on the gp or waves columns if you want to do custom processing.
+</div>
+    
+<p>
+    <form name="params" action="tb.html" method="get">
+    <b>Stat:</b>
+    <select id="configurationName" name="c" onchange="document.params.submit()">
+    </select>
+    <b>Display:</b>
+    <input type="hidden" name="tb" id="tb" />
+    <select id="display" name="d" onchange="document.params.submit()">
+        <option>squad name</option>
+        <option>squad details</option>
+        <option>none</option>
+    </select>
+    <input type="checkbox" id="player-summary" name="player-summary" onchange="document.params.submit()" /> show player summary
+    <input type="checkbox" id="mission-gp" name="mission-gp" onchange="document.params.submit()" /> show mission gp
+    <input type="checkbox" id="waves" name="waves" onchange="document.params.submit()" /> show estimated waves
+    <input type="checkbox" id="bonus" name="bonus" onchange="document.params.submit()" /> show bonus TP
+</form>
+
+<p>
+    <b>GP Available for deploy: </b><span id="deploy-gp" style="background-color: yellow"></span>
+</p>
+
+<link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.0.0/css/buttons.dataTables.min.css" />
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/buttons/2.0.0/js/dataTables.buttons.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/buttons/2.0.0/js/buttons.html5.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+
+<style type="text/css">
+#sections td:nth-child(5) {
+    background-color: yellow;
+}
+</style>
+
+<table id="sections" class="stripe">
+    <thead><tr>
+        <th>Section</th>
+        <th>1 Star</th>
+        <th>2 Star</th>
+        <th>3 Star</th>
+        <th>Estimated Mission TP</th>
+        <th>Mission Deploy GP</th>
+        <th>Estimated Bonus TP</th>
+        <th>Estimated Waves</th>
+    </tr></thead>
+</table>
+
+<p>
+    
+<table id="stats" class="stripe">
+    <thead><tr>
+        <th>Player</th>
+    </tr></thead>
+</table>
+
+<script>
+    var urlParams = new URLSearchParams(window.location.search)
+    var tbName = urlParams.get('tb') ?? "ls"
+
+    var configurationName = urlParams.get('c')
+    var display = urlParams.get('d') || 'squad details'
+    
+    var showPlayerSummary = urlParams.get('player-summary')
+    var showMissionGP = urlParams.get('mission-gp')
+    var showWaves = urlParams.get('waves')
+    var showBonus = urlParams.get('bonus')
+
+    var tb = null
+    
+    var table = null
+    var data = []
+    var sectionData = []
+    
+    jQuery.ajax({
+        type: 'GET',
+        async: true,
+        url: tbName + '-geo-tb.json',
+        success: function (d1) {
+            tb = d1
+            setup()
+        }
+    })
+    
+    function addColumn(title) {
+        var t = document.getElementById("stats")
+        var header = t.createTHead()
+        var row = header.rows[0]
+        var cell = row.insertCell(-1)
+        cell.innerHTML = title
+    }
+        
+    function setup() {
+        if (!configurationName) {
+            for (i = 0; i < tb.configurationNames.length; i ++) {
+                n = tb.configurationNames[i]
+                if (n.indexOf(",") != -1) {
+                    configurationName = n
+                    break
+                }
+            }
+            if (!configurationName) {
+                configurationName = tb.configurationNames[0]
+            }
+        }
+        configuration = tb.configurations[configurationName]
+        
+        document.getElementById('tb-name').appendChild(document.createTextNode(tb.name))
+        
+        // set up the combo box
+        tb.configurationNames.forEach(name => {
+            option = document.createElement("option")
+            option.value = name
+            option.innerHTML = name
+            document.getElementById("configurationName").appendChild(option)
+        })
+        
+        document.getElementById("tb").value = tbName
+        document.getElementById("configurationName").value = configurationName
+        document.getElementById("display").value = display
+        document.getElementById("player-summary").checked = showPlayerSummary
+        document.getElementById("mission-gp").checked = showMissionGP
+        document.getElementById("waves").checked = showWaves
+        document.getElementById("bonus").checked = showBonus
+                
+        // set up the section table
+        var fleet = false
+        var missionTotalGP = 0
+        var playerWaves = { }
+        var playerMissionBonus = { }
+        var playerMissionDeploy = { }
+        
+        configuration.sections.forEach(section => {
+            var row = [section.name]
+            section.thresholds.forEach(t => {
+                row.push(Math.round(t / 1000))
+            })
+            var waves = 0
+            var gp = 0
+            var bonus = 0
+            section.missions.forEach(mission => {
+                mission.plays.forEach((play, playerIndex) => {
+                    if (play != null) {
+                        squad = tb.players[playerIndex].s[play.s]
+                        waves += play.w
+                        gp += squad.gp
+                        bonus += play.gp
+                        
+                        playerWaves[playerIndex] = (playerWaves[playerIndex] ?? 0) + play.w
+                        playerMissionBonus[playerIndex] = (playerMissionBonus[playerIndex] ?? 0) + play.gp
+                        playerMissionDeploy[playerIndex] = (playerMissionDeploy[playerIndex] ?? 0) + squad.gp
+                        
+                        if (squad.f) {
+                            fleet = true
+                        }
+                    }
+                })
+            })
+            
+            missionTotalGP += gp
+            
+            row.push(Math.round((gp + bonus * 1000) / 100000) / 10)
+            
+            row.push(Math.round(gp / 100000) / 10)
+            row.push(Math.round(bonus / 100) / 10)
+            row.push(waves)
+            
+            sectionData.push(row)
+        })
+                
+        // compute the total gp
+        var deployGP = 0
+        tb.players.forEach(player => {
+            if (fleet) {
+                deployGP += player.sgp
+            } else {
+                deployGP += player.gp
+            }
+        })
+        deployGP -= missionTotalGP
+        
+        document.getElementById('deploy-gp').appendChild(document.createTextNode("" + Math.round(deployGP / 100000) / 10))
+        
+        // build the columns
+        
+        if (showPlayerSummary) {
+            addColumn("Deployable GP (m)")
+            addColumn("Mission TP (m)")
+            addColumn("Total Waves")
+        }
+        
+        configuration.sections.forEach(section => {
+            section.missions.forEach(mission => {
+                if (display != "none") {
+                    addColumn(section.name + ": " + mission.name)
+                }
+                if (showMissionGP) {
+                    addColumn(section.name + ": " + mission.name + " gp (k)")
+                }
+                if (showBonus) {
+                    addColumn(section.name + ": " + mission.name + " bonus (k)")
+                }
+                if (showWaves) {
+                    addColumn(section.name + ": " + mission.name + " waves")
+                }
+            })
+        })
+        
+        // build the data
+        tb.players.forEach((player, playerIndex) => {
+            var row = [[player.n, player.c]]
+            
+            if (showPlayerSummary) {
+                var m = playerMissionBonus[playerIndex] * 1000 + playerMissionDeploy[playerIndex]
+                var gp = fleet ? player.sgp : player.gp
+                if (m) {
+                    // we have a mission bonus, show that
+                    row.push(Math.round((gp - playerMissionDeploy[playerIndex]) / 100000) / 10)
+                    row.push(Math.round(m / 10000) / 100)
+                } else {
+                    // no mission bonus, just gp
+                    row.push(Math.round(gp / 100000) / 10)
+                    row.push("")
+                }
+                row.push(playerWaves[playerIndex] ?? "")
+            }
+            
+            configuration.sections.forEach(section => {
+                section.missions.forEach(mission => {
+                    play = mission.plays[playerIndex]
+                    
+                    if (display == "squad details") {
+                        if (play) {
+                            squad = player.s[play.s]
+                            row.push(squad.d + " (" + Math.round(squad.gp/1000) + "k)")
+                        } else {
+                            row.push("")
+                        }
+                    } else if (display == "squad name") {
+                        if (play) {
+                            squad = player.s[play.s]
+                            row.push(squad.n)
+                        } else {
+                            row.push("")
+                        }
+                    }
+                    if (play) {
+                        if (showMissionGP) {
+                            squad = player.s[play.s]
+                            row.push(Math.round(squad.gp / 1000))
+                        }
+                        if (showBonus) {
+                            row.push(play.gp)
+                        }
+                        if (showWaves) {
+                            row.push(play.w)
+                        }
+                    } else {
+                        if (showMissionGP) {
+                            row.push("")
+                        }
+                        if (showBonus) {
+                            row.push("")
+                        }
+                        if (showWaves) {
+                            row.push("")
+                        }
+                    }
+                })
+            })
+            
+            data.push(row)
+        })
+
+        sectionTable = $('#sections').DataTable({
+            "paging":   false,
+            "info":     false,
+            bFilter: false,
+            data: sectionData,
+            dom: 'Bfrtip',
+            buttons: [
+                'copyHtml5',
+                'excelHtml5',
+                'csvHtml5',
+            ],
+            columnDefs: [
+                {
+                    targets: 4,
+                    searchable: true,
+                    render: function (data, type, row, meta) {
+                        return '<b>' + row[4] + "</b>"
+                    }
+                },
+            ]
+        })
+        
+        var config = {
+            "paging":   false,
+            "info":     false,
+            bFilter: false,
+            fixedHeader: true,
+            data: data,
+            dom: 'Bfrtip',
+            buttons: [
+                'copyHtml5',
+                'excelHtml5',
+                'csvHtml5',
+            ],
+            columnDefs: [
+                {
+                    targets: 0,
+                    searchable: true,
+                    render: function (data, type, row, meta) {
+                        return '<a href="https://swgoh.gg/p/' + row[0][1] + '/characters/">' + row[0][0] + "</a>"
+                    }
+                },
+                {
+                    targets: '_all',
+                    searchable: false,
+                },
+            ]
+        }
+        
+        table = $('#stats').DataTable(config);
+    }
+    
+</script><br/>
+<font size="-2">Generated 2024-05-12 16:10:34 +0000</font>
+<script data-goatcounter="https://gorgatron.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>

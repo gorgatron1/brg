@@ -1,0 +1,1128 @@
+<style type="text/css">
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  padding: 8px;
+}
+
+tr:nth-child(even) {background: #dddddd}
+tr:nth-child(odd) {background: #ffffff}
+
+.toggleable {
+    display: none;
+}
+</style><link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.1.5/css/fixedHeader.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.6/css/fixedColumns.dataTables.min.css" />
+<script type="text/javascript" language="javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedheader/3.1.5/js/dataTables.fixedHeader.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedcolumns/3.2.6/js/dataTables.fixedColumns.min.js"></script><script src="https://cdn.datatables.net/plug-ins/1.10.25/sorting/absolute.js"></script><title>BRG Alliance Guild Reports: Challenge Rancor Schedule</title>
+<div style="display: flex; align-items:baseline"><img src="../../i/simple_logo_48.jpg"/>&nbsp;<h1>Alliance Guild Reports: Challenge Rancor Schedule</h1></div>
+
+<div style="background-color: #f0f0f0; border: solid red; padding: 10px; border-radius: 10px">
+<a href="../../alliance/index.html">Alliance</a> |
+<a href="../../alliance/characters.html">Characters</a> |
+
+<div style="float:right;"><a href="../../r">Resources</a></div>
+<a href="index.html">Back</a>
+</div>
+<br/><script>
+function CopyToClipboard(id)
+{
+document.getElementById(id).style.display = 'block';
+var r = document.createRange();
+r.selectNode(document.getElementById(id));
+window.getSelection().removeAllRanges();
+window.getSelection().addRange(r);
+document.execCommand('copy');
+window.getSelection().removeAllRanges();
+document.getElementById(id).style.display = 'none';
+}
+</script><b>Thanks to jraenar#4239 (Porgs) for contributing advice for the teams and phases!</b>
+
+<p>
+This page is full of information about the Challenge Rancor Raid.  Links in the
+header of the table give more information about the teams, where available.
+<a href="https://www.youtube.com/watch?v=7uczv4W7AVk&feature=youtu.be">Darth Kermit's full raid video</a> is always good places to look as well.  Be aware that the raid
+rules changed in April of 2021, so videos and materials about the raid from before
+that time are suspect.
+
+<p>
+Note that the damage estimates are used to build teams, give planners a rough estimate of available damage and give players something to shoot for.  These numbers are usually at the high end of what you will get, but if you consistently fall short, you should ask your guild mates about how to play it!
+<br/>
+<br/>
+Note: some teams may overlap between phases, but teams marked in
+<span style="background-color: #ceebfd">blue</span>
+do not overlap.  Within a phase, teams that are not ready may overlap
+to give an idea of what teams each player <i>could</i> have.
+<p>
+<b>Click on a name to filter to only that player.</b>  Click <a href="?">here</a> to show all players again.
+<p>
+Teams shown in <span style="background-color: #ceebfd">blue</span> are suggested teams to play that phase.  A team might not be suggested because it has units that are preferred in later phases or the suggested team would have been used in an earlier phase.
+Teams shown in <span style="background-color: yellow;">yellow</span> need additional gear.
+Counts are shown with <i># ready / # not ready</i>.  Teams that need gear indicate the number of gear levels with <tt>[#]</tt>.  You can
+<button onclick="$('.not-viable').text('&nbsp;').css('background-color', '')">remove not ready</button><br/>
+
+<p>
+An <b>Estimated Score</b> is given for each phase.  This adds up
+the nominal score for each of the suggested play teams.  Performance
+may vary depending on mods and RNG.  The rating right below gives
+a simple interpretation of the score.  Different teams played will give different results -- this is merely meant as a guide.  Good luck!<h2>Breakdown By Player and Phase and Team</h2><h3 id="p1">P1</h3>Prefer these teams for phase 1 (marked with a &#11088; in the table):
+
+<ul>
+<li>Vader, KRU, C-3PO, Wat, (BB8 or Shaak) - 8-11%, depending on relics/mods
+<li>SEE, Malak, (any 3 Sith, only need to check on SEE+Malak being R5 because of Sith requirements for SEE) - 4-6%
+<li>Padme, JKA, Ahsoka, GK, GMY (can sub last three with zBarriss, Sarge, R2, C-3PO, if using on other teams) - 3%
+</ul>
+
+<p>
+Vader also has a preferred P2 team.  SEE is really only useful in this phase.  Padme is best in this phase.<p><b>Estimated Score: 26</b><br/>Youngling: probably not going to make it<pre id="p1-farm" style="display: none !important;">Trav https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=146343631#p1
+gear levels: 1 -- Padme R6, JKA R5, GK R5, Ahsoka R4, GMY R5
+
+Bobmaloogax5 https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=993486218#p1
+gear levels: 1 -- Padme R5, JKA R4, GK R5, Ahsoka R5, GMY R7
+
+B https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=948356963#p1
+gear levels: 2 -- Padme R5, JKA R5, GK R7, Ahsoka R5, GMY R3
+
+Danja https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=583496927#p1
+gear levels: 2 -- Padme R5, JKA R3, GK R5, Ahsoka R7, CAT R5
+
+KingKrille https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=295729596#p1
+gear levels: 3 -- Padme R5, JKA R4, GK R5, Ahsoka R3, GMY R5
+
+j13hall13 https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=662956843#p1
+gear levels: 6 -- Padme R5, JKA R7, GK R5, Ahsoka G12, GMY R5
+
+DarthTalon https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=387869794#p1
+gear levels: 6 -- Padme R4, JKA R7, GK R4, Ahsoka R1, C-3PO R5
+
+YeeterSkeeter https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=819259195#p1
+gear levels: 8 -- Padme R3, JKA R3, GK R3, Ahsoka R3, C-3PO R5
+
+Schmidty2318 https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=419954121#p1
+gear levels: 8 -- Padme R3, JKA R7, GK R3, Ahsoka R3, C-3PO R3
+
+Megared https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=155754252#p1
+gear levels: 9 -- Padme R4, JKA R7, GK R7, Ahsoka G12, C-3PO R3
+
+Tantema Garnik https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=788233588#p1
+gear levels: 9 -- DR R5, Malak R7, BSF R5, HK-47 R5, Sith Marauder G9
+
+Zar Anduli https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=889632856#p1
+gear levels: 10 -- Padme R3, JKA R3, GK R3, Ahsoka R3, GMY R3
+
+wookieguy69 https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=912381174#p1
+gear levels: 12 -- Vader R7, KRU R3, Wat Tambor 5* G10, C-3PO R5, Shaak Ti R3
+
+blactastic https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=281334117#p1
+gear levels: 12 -- Padme R3, JKA R3, GK R5, Ahsoka R3, C-3PO G12
+
+Kenn Skirata https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=446373369#p1
+gear levels: 13 -- Padme R8, JKA R7, GK R3, Ahsoka R3, C-3PO G9
+
+Gloom Walker https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=516227655#p1
+gear levels: 13 -- Padme G12, JKA R5, GK R6, Ahsoka R4, C-3PO G12
+
+Stahzo https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=647615227#p1
+gear levels: 18 -- Padme G12, JKA G12, GK R7, Ahsoka G12, GMY R5
+
+Untamed Sloth https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=741217131#p1
+gear levels: 22 -- Padme G13, JKA R1, GK G13, Ahsoka R1, C-3PO R1
+
+The JLS https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=647474141#p1
+gear levels: 22 -- Padme G12, JKA G12, GK R5, Ahsoka R5, GMY G8
+
+Millz https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=332392187#p1
+gear levels: 24 -- Padme G12, JKA G12, GK R5, Ahsoka G12, C-3PO G12
+
+Sam https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=218527368#p1
+gear levels: 27 -- Padme G12, JKA R3, GK G12, Ahsoka G12, GMY G11
+
+MatejC https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=759526265#p1
+gear levels: 27 -- Padme G12, JKA R3, GK 6* G11, Ahsoka G12, GMY G12
+
+Dark Shawi https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=144245956#p1
+gear levels: 28 -- Padme G8, JKA 6* G7, GK R4, Ahsoka G12, GMY R7
+
+MINI Techno Union https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=648966762#p1
+gear levels: 29 -- Padme G8, JKA R7, GK G12, Ahsoka G12, GMY G11
+
+Jannah Longo https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=482599677#p1
+gear levels: 29 -- Padme G12, JKA G12, GK G12, Ahsoka G12, R2-D2 G13
+
+MrPickles https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=237175899#p1
+gear levels: 30 -- Padme 6* G7, JKA G12, GK G11, Ahsoka G12, GMY R5
+
+Naga Sadów https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=936392725#p1
+gear levels: 33 -- Padme G7, JKA G12, GK G8, Ahsoka G12, GMY R5
+
+FunkyWizard https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=217482916#p1
+gear levels: 33 -- Padme G9, JKA G12, GK G12, Ahsoka G12, GMY G12
+
+BbqBeru https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=298712984#p1
+gear levels: 36 -- Padme 6* G10, JKA G11, GK 5* G11, Ahsoka G11, GMY G11
+
+Valektra Jetberg https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=661932482#p1
+gear levels: 39 -- Padme 6* G7, JKA 6* G8, GK G7, Ahsoka G12, R2-D2 R4
+
+TRICKSHOT https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=436272696#p1
+gear levels: 39 -- Vader R6, KRU G9, Wat Tambor 4* G9, C-3PO 6* G6, BB-8 G9
+
+Gerehe Zosma https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=441557869#p1
+gear levels: 43 -- Padme G8, JKA 5* G9, GK G10, Ahsoka G8, GMY G12
+
+Abra https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=184464142#p1
+gear levels: 44 -- Padme G9, JKA G10, GK G8, Ahsoka G8, GMY G11
+
+Peepeepoopooman https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=827513585#p1
+gear levels: 46 -- Padme G5, JKA 6* G8, GK G8, Ahsoka G11, R2-D2 G12
+
+Sneaky Soy Boy 123 https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=494765873#p1
+gear levels: 53 -- Padme G1, JKA 6* G9, GK G7, Ahsoka G8, GMY G12
+
+</pre><pre id="p1-attack-player" style="display: none !important;">https://gorgatron1.github.io/brg/guild/holocron/rancor.html#p1
+
+Bski
+Padme 3%: Padme R5, JKA R7, GK R7, Ahsoka R5, GMY R6
+
+j13hall13
+SLKR 8%: SL Kylo R7, Hux R5, Sith Trooper R5, KRU R7, FOST R5
+
+Jose Longo
+Padme 3%: Padme R5, JKA R5, GK R5, Ahsoka R5, GMY R5
+
+Millz
+DR/Malak 3%: DR R7, Malak R5, BSF R5, HK-47 R5, Sith Marauder R7
+
+Millz20
+Padme 3%: Padme R5, JKA R5, GK R8, Ahsoka R5, GMY R8
+
+SirSchuSchu
+Padme 3%: Padme R5, JKA R5, GK R8, Ahsoka R5, GMY R7
+
+Willey
+Padme 3%: Padme R5, JKA R5, GK R5, Ahsoka R6, GMY R5
+
+</pre><pre id="p1-attack-team" style="display: none !important;">https://gorgatron1.github.io/brg/guild/holocron/rancor.html#p1
+
+DR/Malak 3%: DR Malak BSF HK-47 Sith Marauder
+    Millz 
+
+Padme 3%: Padme JKA GK Ahsoka GMY
+    Millz20 Jose Longo Bski SirSchuSchu Willey 
+
+SLKR 8%: SL Kylo, Hux Sith Trooper, KRU FOST
+    j13hall13 
+
+</pre><pre id="p1-attack-csv" style="display: none !important;">phase,name,allycode,team-name,team,percent,gp
+p1,j13hall13,662956843,SLKR 8%,SL Kylo R7 Hux R5 Sith Trooper R5 KRU R7 FOST R5,8,159239
+p1,Millz20,684712353,Padme 3%,Padme R5 JKA R5 GK R8 Ahsoka R5 GMY R8,3,147580
+p1,Jose Longo,633696187,Padme 3%,Padme R5 JKA R5 GK R5 Ahsoka R5 GMY R5,3,136053
+p1,Millz,332392187,DR/Malak 3%,DR R7 Malak R5 BSF R5 HK-47 R5 Sith Marauder R7,3,148197
+p1,SirSchuSchu,863647631,Padme 3%,Padme R5 JKA R5 GK R8 Ahsoka R5 GMY R7,3,143268
+p1,Willey,136186513,Padme 3%,Padme R5 JKA R5 GK R5 Ahsoka R6 GMY R5,3,134951
+p1,Bski,938232767,Padme 3%,Padme R5 JKA R7 GK R7 Ahsoka R5 GMY R6,3,142226
+</pre><a href="#" onclick="CopyToClipboard('p1-farm'); return false;">Copy Farming Info</a> | <a href="#" onclick="CopyToClipboard('p1-attack-player'); return false;">Copy Attack Info (by player)</a> | <a href="#" onclick="CopyToClipboard('p1-attack-team'); return false;">Copy Attack Info (by team)</a> | <a href="#" onclick="CopyToClipboard('p1-attack-csv'); return false;">Copy Attack Info (CSV)</a><script>$(document).ready(function () {
+    sortType = $.fn.dataTable.absoluteOrderNumber({ value: "", position: "bottom"});
+    $('#schedule-p1').DataTable({
+        "paging": false,
+        "info": false,
+        "fixedHeader": true,
+        "columnDefs": [
+            {
+                targets: 0,
+                type: "html",
+            },
+            {
+                targets: 1,
+                type: "num",
+            },
+            {
+                targets: "_all",
+                type: sortType,
+            },
+        ],
+    });
+});</script><table id="schedule-p1" style="font-size: 75%;"><thead><th>Player</th><th>Counts</th><th>Farming Suggestion</th><th>Vader P1 10%&#11088;</th><th>Padme 3%&#11088;</th><th>SEE P1 5%&#11088;</th><th>SLKR 8%</th><th>Rey+Clones 7%</th><th>DR/Malak 3%</th><th>Padme-b 2%</th></thead><thead><th>Links</th><th /><th /><th><a href="../../alliance/crancor/VADER1.html">info ...</a></th><th><a href="../../alliance/crancor/PADME1.html">info ...</a></th><th><a href="../../alliance/crancor/SEE1.html">info ...</a></th><th /><th /><th><a href="https://www.youtube.com/watch?v=LJZJmeq0Tfg">info ...</a></th><th /></thead><thead><th>Counts</th><th>11<span class="not-viable">/77</span></th><th /><th>0<span class="not-viable">/13</span></th><th>5<span class="not-viable">/34</span></th><th>0<span class="not-viable">/1</span></th><th>4<span class="not-viable">/0</span></th><th>1<span class="not-viable">/1</span></th><th>1<span class="not-viable">/12</span></th><th>0<span class="not-viable">/16</span></th></thead><tr><td data-filter="684712353" data-order="Millz20"><a href="?filter=684712353">Millz20</a></td><td data-order="1">1<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="147580" style="background-color: #ceebfd">Padme R5, JKA R5, GK R8, Ahsoka R5, GMY R8</td><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="516227655" data-order="Gloom Walker"><a href="?filter=516227655">Gloom Walker</a></td><td data-order="0">0<span class="not-viable">/4</span></td><td class="not-viable" data-order="-13" style="background-color: #ffda00;">&#11088;Padme G12, JKA R5, GK R6, Ahsoka R4, C-3PO G12 <tt>[13]</tt></td><td class="not-viable" data-order="-27" style="background-color: #ffb200;">&#11088;Vader R7, KRU G9, Wat Tambor 4* G8, C-3PO G12, Shaak Ti R3 <tt>[27]</tt></td><td class="not-viable" data-order="-13" style="background-color: #ffda00;">&#11088;Padme G12, JKA R5, GK R6, Ahsoka R4, C-3PO G12 <tt>[13]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-18" style="background-color: #ffcc00;">DR R6, Malak R7, BSF R5, HK-47 R4, Sith Marauder G1 <tt>[18]</tt></td><td class="not-viable" data-order="-30" style="background-color: #ffaa00;">Padme G12, JKA R5, Clone Sergeant G9, R2-D2 G9, Barriss G12 <tt>[30]</tt></td></tr><tr><td data-filter="647474141" data-order="The JLS"><a href="?filter=647474141">The JLS</a></td><td data-order="0">0<span class="not-viable">/2</span></td><td class="not-viable" data-order="-22" style="background-color: #ffc000;">&#11088;Padme G12, JKA G12, GK R5, Ahsoka R5, GMY G8 <tt>[22]</tt></td><td data-order="" /><td class="not-viable" data-order="-22" style="background-color: #ffc000;">&#11088;Padme G12, JKA G12, GK R5, Ahsoka R5, GMY G8 <tt>[22]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-40" style="background-color: #ff8d00;">Padme G12, JKA G12, Clone Sergeant G12, R2-D2 G9, Barriss G5 <tt>[40]</tt></td></tr><tr><td data-filter="332392187" data-order="Millz"><a href="?filter=332392187">Millz</a></td><td data-order="2">2<span class="not-viable">/1</span></td><td class="not-viable" data-order="-24" style="background-color: #ffbb00;">&#11088;Padme G12, JKA G12, GK R5, Ahsoka G12, C-3PO G12 <tt>[24]</tt></td><td data-order="" /><td class="not-viable" data-order="-24" style="background-color: #ffbb00;">&#11088;Padme G12, JKA G12, GK R5, Ahsoka G12, C-3PO G12 <tt>[24]</tt></td><td data-order="" /><td data-order="162440" style="">SL Kylo R8, Hux R5, Sith Trooper R5, KRU R7, FOST R5</td><td data-order="" /><td data-order="148197" style="background-color: #ceebfd">DR R7, Malak R5, BSF R5, HK-47 R5, Sith Marauder R7</td><td data-order="" /></tr><tr><td data-filter="889632856" data-order="Zar Anduli"><a href="?filter=889632856">Zar Anduli</a></td><td data-order="0">0<span class="not-viable">/2</span></td><td class="not-viable" data-order="-10" style="background-color: #ffe200;">&#11088;Padme R3, JKA R3, GK R3, Ahsoka R3, GMY R3 <tt>[10]</tt></td><td data-order="" /><td class="not-viable" data-order="-10" style="background-color: #ffe200;">&#11088;Padme R3, JKA R3, GK R3, Ahsoka R3, GMY R3 <tt>[10]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-30" style="background-color: #ffaa00;">Padme R3, JKA R3, Clone Sergeant G10, R2-D2 G10, Barriss G8 <tt>[30]</tt></td></tr><tr><td data-filter="146343631" data-order="Trav"><a href="?filter=146343631">Trav</a></td><td data-order="0">0<span class="not-viable">/3</span></td><td class="not-viable" data-order="-1" style="background-color: #fffc00;">&#11088;Padme R6, JKA R5, GK R5, Ahsoka R4, GMY R5 <tt>[1]</tt></td><td class="not-viable" data-order="-28" style="background-color: #ffaf00;">&#11088;Vader R7, KRU 6* G9, Wat Tambor 4* G9, C-3PO R5, BB-8 6* G8 <tt>[28]</tt></td><td class="not-viable" data-order="-1" style="background-color: #fffc00;">&#11088;Padme R6, JKA R5, GK R5, Ahsoka R4, GMY R5 <tt>[1]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-20" style="background-color: #ffc600;">Padme R6, JKA R5, Clone Sergeant G11, R2-D2 G12, Barriss G11 <tt>[20]</tt></td></tr><tr><td data-filter="633696187" data-order="Jose Longo"><a href="?filter=633696187">Jose Longo</a></td><td data-order="1">1<span class="not-viable">/2</span></td><td data-order="-10000" /><td class="not-viable" data-order="-23" style="background-color: #ffbd00;">&#11088;Vader R5, KRU G9, Wat Tambor 4* G5, C-3PO R4, Shaak Ti R5 <tt>[23]</tt></td><td data-order="136053" style="background-color: #ceebfd">Padme R5, JKA R5, GK R5, Ahsoka R5, GMY R5</td><td data-order="" /><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-23" style="background-color: #ffbd00;">DR R5, Malak G10, BSF R5, HK-47 G12, Sith Marauder 6* G9 <tt>[23]</tt></td><td data-order="" /></tr><tr><td data-filter="936392725" data-order="Naga Sadów"><a href="?filter=936392725">Naga Sadów</a></td><td data-order="0">0<span class="not-viable">/2</span></td><td class="not-viable" data-order="-33" style="background-color: #ffa100;">&#11088;Padme G7, JKA G12, GK G8, Ahsoka G12, GMY R5 <tt>[33]</tt></td><td data-order="" /><td class="not-viable" data-order="-33" style="background-color: #ffa100;">&#11088;Padme G7, JKA G12, GK G8, Ahsoka G12, GMY R5 <tt>[33]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-14" style="background-color: #ffd700;">DR R7, Malak R7, BSF R4, HK-47 G11, Sith Marauder G12 <tt>[14]</tt></td><td data-order="" /></tr><tr><td data-filter="295729596" data-order="KingKrille"><a href="?filter=295729596">KingKrille</a></td><td data-order="0">0<span class="not-viable">/2</span></td><td class="not-viable" data-order="-3" style="background-color: #fff600;">&#11088;Padme R5, JKA R4, GK R5, Ahsoka R3, GMY R5 <tt>[3]</tt></td><td data-order="" /><td class="not-viable" data-order="-3" style="background-color: #fff600;">&#11088;Padme R5, JKA R4, GK R5, Ahsoka R3, GMY R5 <tt>[3]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-29" style="background-color: #ffac00;">Padme R5, JKA R4, Clone Sergeant G6, R2-D2 G12, Barriss G8 <tt>[29]</tt></td></tr><tr><td data-filter="741217131" data-order="Untamed Sloth"><a href="?filter=741217131">Untamed Sloth</a></td><td data-order="0">0<span class="not-viable">/2</span></td><td class="not-viable" data-order="-22" style="background-color: #ffc000;">&#11088;Padme G13, JKA R1, GK G13, Ahsoka R1, C-3PO R1 <tt>[22]</tt></td><td data-order="" /><td class="not-viable" data-order="-22" style="background-color: #ffc000;">&#11088;Padme G13, JKA R1, GK G13, Ahsoka R1, C-3PO R1 <tt>[22]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-32" style="background-color: #ffa400;">DR R2, Malak 6* G7, BSF G13, HK-47 G13, Sith Marauder G10 <tt>[32]</tt></td><td data-order="" /></tr><tr><td data-filter="648966762" data-order="MINI Techno Union"><a href="?filter=648966762">MINI Techno Union</a></td><td data-order="0">0<span class="not-viable">/2</span></td><td class="not-viable" data-order="-29" style="background-color: #ffac00;">&#11088;Padme G8, JKA R7, GK G12, Ahsoka G12, GMY G11 <tt>[29]</tt></td><td class="not-viable" data-order="-35" style="background-color: #ff9b00;">&#11088;Vader R7, KRU 2* G8, Wat Tambor 4* G9, C-3PO 6* G8, Shaak Ti G12 <tt>[35]</tt></td><td class="not-viable" data-order="-29" style="background-color: #ffac00;">&#11088;Padme G8, JKA R7, GK G12, Ahsoka G12, GMY G11 <tt>[29]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="583496927" data-order="Danja"><a href="?filter=583496927">Danja</a></td><td data-order="0">0<span class="not-viable">/3</span></td><td class="not-viable" data-order="-2" style="background-color: #fff900;">&#11088;Padme R5, JKA R3, GK R5, Ahsoka R7, CAT R5 <tt>[2]</tt></td><td class="not-viable" data-order="-30" style="background-color: #ffaa00;">&#11088;Vader R3, KRU G9, Wat Tambor 4* G7, C-3PO R3, Shaak Ti G12 <tt>[30]</tt></td><td class="not-viable" data-order="-2" style="background-color: #fff900;">&#11088;Padme R5, JKA R3, GK R5, Ahsoka R7, CAT R5 <tt>[2]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-21" style="background-color: #ffc300;">Padme R5, JKA R3, Clone Sergeant G9, R2-D2 R7, Barriss G8 <tt>[21]</tt></td></tr><tr><td data-filter="482599677" data-order="Jannah Longo"><a href="?filter=482599677">Jannah Longo</a></td><td data-order="0">0<span class="not-viable">/1</span></td><td class="not-viable" data-order="-29" style="background-color: #ffac00;">&#11088;Padme G12, JKA G12, GK G12, Ahsoka G12, R2-D2 G13 <tt>[29]</tt></td><td data-order="" /><td class="not-viable" data-order="-29" style="background-color: #ffac00;">&#11088;Padme G12, JKA G12, GK G12, Ahsoka G12, R2-D2 G13 <tt>[29]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="152667675" data-order="Bakufett"><a href="?filter=152667675">Bakufett</a></td><td data-order="0">0<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="193362682" data-order="Mulleg"><a href="?filter=193362682">Mulleg</a></td><td data-order="0">0<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="759526265" data-order="MatejC"><a href="?filter=759526265">MatejC</a></td><td data-order="0">0<span class="not-viable">/1</span></td><td class="not-viable" data-order="-27" style="background-color: #ffb200;">&#11088;Padme G12, JKA R3, GK 6* G11, Ahsoka G12, GMY G12 <tt>[27]</tt></td><td data-order="" /><td class="not-viable" data-order="-27" style="background-color: #ffb200;">&#11088;Padme G12, JKA R3, GK 6* G11, Ahsoka G12, GMY G12 <tt>[27]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="788233588" data-order="Tantema Garnik"><a href="?filter=788233588">Tantema Garnik</a></td><td data-order="0">0<span class="not-viable">/1</span></td><td class="not-viable" data-order="-9" style="background-color: #ffe500;">DR R5, Malak R7, BSF R5, HK-47 R5, Sith Marauder G9 <tt>[9]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-9" style="background-color: #ffe500;">DR R5, Malak R7, BSF R5, HK-47 R5, Sith Marauder G9 <tt>[9]</tt></td><td data-order="" /></tr><tr><td data-filter="827513585" data-order="Peepeepoopooman"><a href="?filter=827513585">Peepeepoopooman</a></td><td data-order="0">0<span class="not-viable">/1</span></td><td class="not-viable" data-order="-46" style="background-color: #ff7c00;">&#11088;Padme G5, JKA 6* G8, GK G8, Ahsoka G11, R2-D2 G12 <tt>[46]</tt></td><td data-order="" /><td class="not-viable" data-order="-46" style="background-color: #ff7c00;">&#11088;Padme G5, JKA 6* G8, GK G8, Ahsoka G11, R2-D2 G12 <tt>[46]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="938232767" data-order="Bski"><a href="?filter=938232767">Bski</a></td><td data-order="2">2<span class="not-viable">/4</span></td><td data-order="-10000" /><td class="not-viable" data-order="-13" style="background-color: #ffda00;">&#11088;Vader R7, KRU R7, Wat Tambor 5* G11, C-3PO G12, BB-8 R7 <tt>[13]</tt></td><td data-order="142226" style="background-color: #ceebfd">Padme R5, JKA R7, GK R7, Ahsoka R5, GMY R6</td><td class="not-viable" data-order="-10" style="background-color: #ffe200;">&#11088;SEE R7, Malak 5* G8, EP R7, Sith Marauder R7, Vader R7 <tt>[10]</tt></td><td data-order="167102" style="">SL Kylo R7, Hux R7, Sith Trooper R7, KRU R7, FOST R5</td><td class="not-viable" data-order="-17" style="background-color: #ffce00;">Rey R7, Fives R7, Rex R5, C-3PO G12, HYoda G7 <tt>[17]</tt></td><td class="not-viable" data-order="-25" style="background-color: #ffb800;">DR G11, Malak 5* G8, BSF R3, HK-47 G12, Sith Marauder R7 <tt>[25]</tt></td><td data-order="" /></tr><tr><td data-filter="441557869" data-order="Gerehe Zosma"><a href="?filter=441557869">Gerehe Zosma</a></td><td data-order="0">0<span class="not-viable">/1</span></td><td class="not-viable" data-order="-43" style="background-color: #ff8500;">&#11088;Padme G8, JKA 5* G9, GK G10, Ahsoka G8, GMY G12 <tt>[43]</tt></td><td data-order="" /><td class="not-viable" data-order="-43" style="background-color: #ff8500;">&#11088;Padme G8, JKA 5* G9, GK G10, Ahsoka G8, GMY G12 <tt>[43]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="494765873" data-order="Sneaky Soy Boy 123"><a href="?filter=494765873">Sneaky Soy Boy 123</a></td><td data-order="0">0<span class="not-viable">/2</span></td><td class="not-viable" data-order="-53" style="background-color: #ff6800;">&#11088;Padme G1, JKA 6* G9, GK G7, Ahsoka G8, GMY G12 <tt>[53]</tt></td><td data-order="" /><td class="not-viable" data-order="-53" style="background-color: #ff6800;">&#11088;Padme G1, JKA 6* G9, GK G7, Ahsoka G8, GMY G12 <tt>[53]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-56" style="background-color: #ff6000;">Padme G1, JKA 6* G9, Clone Sergeant G7, R2-D2 G9, Barriss G8 <tt>[56]</tt></td></tr><tr><td data-filter="237175899" data-order="MrPickles"><a href="?filter=237175899">MrPickles</a></td><td data-order="0">0<span class="not-viable">/3</span></td><td class="not-viable" data-order="-30" style="background-color: #ffaa00;">&#11088;Padme 6* G7, JKA G12, GK G11, Ahsoka G12, GMY R5 <tt>[30]</tt></td><td data-order="" /><td class="not-viable" data-order="-30" style="background-color: #ffaa00;">&#11088;Padme 6* G7, JKA G12, GK G11, Ahsoka G12, GMY R5 <tt>[30]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-24" style="background-color: #ffbb00;">DR R6, Malak G12, BSF G12, HK-47 G12, Sith Marauder G12 <tt>[24]</tt></td><td class="not-viable" data-order="-42" style="background-color: #ff8800;">Padme 6* G7, JKA G12, Clone Sergeant G10, R2-D2 G11, Barriss G8 <tt>[42]</tt></td></tr><tr><td data-filter="819259195" data-order="YeeterSkeeter"><a href="?filter=819259195">YeeterSkeeter</a></td><td data-order="1">1<span class="not-viable">/1</span></td><td class="not-viable" data-order="-8" style="background-color: #ffe800;">&#11088;Padme R3, JKA R3, GK R3, Ahsoka R3, C-3PO R5 <tt>[8]</tt></td><td data-order="" /><td class="not-viable" data-order="-8" style="background-color: #ffe800;">&#11088;Padme R3, JKA R3, GK R3, Ahsoka R3, C-3PO R5 <tt>[8]</tt></td><td data-order="" /><td data-order="161507" style="">SL Kylo R7, Hux R6, Sith Trooper R5, KRU R7, FOST R5</td><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="863647631" data-order="SirSchuSchu"><a href="?filter=863647631">SirSchuSchu</a></td><td data-order="1">1<span class="not-viable">/2</span></td><td data-order="-10000" /><td class="not-viable" data-order="-18" style="background-color: #ffcc00;">&#11088;Vader R7, KRU G9, Wat Tambor 5* G11, C-3PO R3, Shaak Ti R7 <tt>[18]</tt></td><td data-order="143268" style="background-color: #ceebfd">Padme R5, JKA R5, GK R8, Ahsoka R5, GMY R7</td><td data-order="" /><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-25" style="background-color: #ffb800;">DR R5, Malak 5* G11, BSF R5, HK-47 G12, Sith Marauder 5* G6 <tt>[25]</tt></td><td data-order="" /></tr><tr><td data-filter="993486218" data-order="Bobmaloogax5"><a href="?filter=993486218">Bobmaloogax5</a></td><td data-order="0">0<span class="not-viable">/2</span></td><td class="not-viable" data-order="-1" style="background-color: #fffc00;">&#11088;Padme R5, JKA R4, GK R5, Ahsoka R5, GMY R7 <tt>[1]</tt></td><td data-order="" /><td class="not-viable" data-order="-1" style="background-color: #fffc00;">&#11088;Padme R5, JKA R4, GK R5, Ahsoka R5, GMY R7 <tt>[1]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-27" style="background-color: #ffb200;">Padme R5, JKA R4, Clone Sergeant G8, R2-D2 G10, Barriss G10 <tt>[27]</tt></td></tr><tr><td data-filter="662956843" data-order="j13hall13"><a href="?filter=662956843">j13hall13</a></td><td data-order="1">1<span class="not-viable">/3</span></td><td class="not-viable" data-order="-6" style="background-color: #ffee00;">&#11088;Padme R5, JKA R7, GK R5, Ahsoka G12, GMY R5 <tt>[6]</tt></td><td data-order="" /><td class="not-viable" data-order="-6" style="background-color: #ffee00;">&#11088;Padme R5, JKA R7, GK R5, Ahsoka G12, GMY R5 <tt>[6]</tt></td><td data-order="" /><td data-order="159239" style="background-color: #ceebfd">SL Kylo R7, Hux R5, Sith Trooper R5, KRU R7, FOST R5</td><td data-order="" /><td class="not-viable" data-order="-16" style="background-color: #ffd100;">DR R5, Malak R7, BSF R3, HK-47 G12, Sith Marauder G10 <tt>[16]</tt></td><td class="not-viable" data-order="-39" style="background-color: #ff9000;">Padme R5, JKA R7, Clone Sergeant G2, R2-D2 G9, Barriss G4 <tt>[39]</tt></td></tr><tr><td data-filter="281334117" data-order="blactastic"><a href="?filter=281334117">blactastic</a></td><td data-order="0">0<span class="not-viable">/1</span></td><td class="not-viable" data-order="-12" style="background-color: #ffdd00;">&#11088;Padme R3, JKA R3, GK R5, Ahsoka R3, C-3PO G12 <tt>[12]</tt></td><td data-order="" /><td class="not-viable" data-order="-12" style="background-color: #ffdd00;">&#11088;Padme R3, JKA R3, GK R5, Ahsoka R3, C-3PO G12 <tt>[12]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="647615227" data-order="Stahzo"><a href="?filter=647615227">Stahzo</a></td><td data-order="0">0<span class="not-viable">/3</span></td><td class="not-viable" data-order="-18" style="background-color: #ffcc00;">&#11088;Padme G12, JKA G12, GK R7, Ahsoka G12, GMY R5 <tt>[18]</tt></td><td class="not-viable" data-order="-29" style="background-color: #ffac00;">&#11088;Vader R7, KRU G11, Wat Tambor 5* G11, C-3PO G12, BB-8 G9 <tt>[29]</tt></td><td class="not-viable" data-order="-18" style="background-color: #ffcc00;">&#11088;Padme G12, JKA G12, GK R7, Ahsoka G12, GMY R5 <tt>[18]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-34" style="background-color: #ff9e00;">Padme G12, JKA G12, Clone Sergeant G9, R2-D2 G12, Barriss G11 <tt>[34]</tt></td></tr><tr><td data-filter="136186513" data-order="Willey"><a href="?filter=136186513">Willey</a></td><td data-order="1">1<span class="not-viable">/1</span></td><td data-order="-10000" /><td data-order="" /><td data-order="134951" style="background-color: #ceebfd">Padme R5, JKA R5, GK R5, Ahsoka R6, GMY R5</td><td data-order="" /><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-12" style="background-color: #ffdd00;">DR R7, Malak R6, BSF R5, HK-47 R5, Sith Marauder 5* G6 <tt>[12]</tt></td><td data-order="" /></tr><tr><td data-filter="661932482" data-order="Valektra Jetberg"><a href="?filter=661932482">Valektra Jetberg</a></td><td data-order="0">0<span class="not-viable">/2</span></td><td class="not-viable" data-order="-39" style="background-color: #ff9000;">&#11088;Padme 6* G7, JKA 6* G8, GK G7, Ahsoka G12, R2-D2 R4 <tt>[39]</tt></td><td data-order="" /><td class="not-viable" data-order="-39" style="background-color: #ff9000;">&#11088;Padme 6* G7, JKA 6* G8, GK G7, Ahsoka G12, R2-D2 R4 <tt>[39]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-43" style="background-color: #ff8500;">Padme 6* G7, JKA 6* G8, Clone Sergeant G4, R2-D2 R4, Barriss G11 <tt>[43]</tt></td></tr><tr><td data-filter="912381174" data-order="wookieguy69"><a href="?filter=912381174">wookieguy69</a></td><td data-order="0">0<span class="not-viable">/3</span></td><td class="not-viable" data-order="-12" style="background-color: #ffdd00;">&#11088;Vader R7, KRU R3, Wat Tambor 5* G10, C-3PO R5, Shaak Ti R3 <tt>[12]</tt></td><td class="not-viable" data-order="-12" style="background-color: #ffdd00;">&#11088;Vader R7, KRU R3, Wat Tambor 5* G10, C-3PO R5, Shaak Ti R3 <tt>[12]</tt></td><td class="not-viable" data-order="-16" style="background-color: #ffd100;">&#11088;Padme R3, JKA G12, GK R3, Ahsoka G12, C-3PO R5 <tt>[16]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-31" style="background-color: #ffa700;">Padme R3, JKA G12, Clone Sergeant G7, R2-D2 R7, Barriss G6 <tt>[31]</tt></td></tr><tr><td data-filter="552172719" data-order="canth reed"><a href="?filter=552172719">canth reed</a></td><td data-order="0">0<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="218527368" data-order="Sam"><a href="?filter=218527368">Sam</a></td><td data-order="0">0<span class="not-viable">/1</span></td><td class="not-viable" data-order="-27" style="background-color: #ffb200;">&#11088;Padme G12, JKA R3, GK G12, Ahsoka G12, GMY G11 <tt>[27]</tt></td><td data-order="" /><td class="not-viable" data-order="-27" style="background-color: #ffb200;">&#11088;Padme G12, JKA R3, GK G12, Ahsoka G12, GMY G11 <tt>[27]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="419954121" data-order="Schmidty2318"><a href="?filter=419954121">Schmidty2318</a></td><td data-order="0">0<span class="not-viable">/3</span></td><td class="not-viable" data-order="-8" style="background-color: #ffe800;">&#11088;Padme R3, JKA R7, GK R3, Ahsoka R3, C-3PO R3 <tt>[8]</tt></td><td class="not-viable" data-order="-24" style="background-color: #ffbb00;">&#11088;Vader R7, KRU G8, Wat Tambor 4* G9, C-3PO R3, Shaak Ti R2 <tt>[24]</tt></td><td class="not-viable" data-order="-8" style="background-color: #ffe800;">&#11088;Padme R3, JKA R7, GK R3, Ahsoka R3, C-3PO R3 <tt>[8]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-22" style="background-color: #ffc000;">DR R3, Malak R3, BSF G12, HK-47 G12, Sith Marauder G12 <tt>[22]</tt></td><td data-order="" /></tr><tr><td data-filter="278185814" data-order="Gundam Viver"><a href="?filter=278185814">Gundam Viver</a></td><td data-order="0">0<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="436272696" data-order="TRICKSHOT"><a href="?filter=436272696">TRICKSHOT</a></td><td data-order="0">0<span class="not-viable">/2</span></td><td class="not-viable" data-order="-39" style="background-color: #ff9000;">&#11088;Vader R6, KRU G9, Wat Tambor 4* G9, C-3PO 6* G6, BB-8 G9 <tt>[39]</tt></td><td class="not-viable" data-order="-39" style="background-color: #ff9000;">&#11088;Vader R6, KRU G9, Wat Tambor 4* G9, C-3PO 6* G6, BB-8 G9 <tt>[39]</tt></td><td class="not-viable" data-order="-41" style="background-color: #ff8a00;">&#11088;Padme G7, JKA G12, GK 6* G11, Ahsoka G8, R2-D2 G11 <tt>[41]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="217482916" data-order="FunkyWizard"><a href="?filter=217482916">FunkyWizard</a></td><td data-order="0">0<span class="not-viable">/1</span></td><td class="not-viable" data-order="-33" style="background-color: #ffa100;">&#11088;Padme G9, JKA G12, GK G12, Ahsoka G12, GMY G12 <tt>[33]</tt></td><td data-order="" /><td class="not-viable" data-order="-33" style="background-color: #ffa100;">&#11088;Padme G9, JKA G12, GK G12, Ahsoka G12, GMY G12 <tt>[33]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="966819857" data-order="DereckRM13"><a href="?filter=966819857">DereckRM13</a></td><td data-order="0">0<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="214666834" data-order="Brizz"><a href="?filter=214666834">Brizz</a></td><td data-order="0">0<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="715466673" data-order="BigCon"><a href="?filter=715466673">BigCon</a></td><td data-order="0">0<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="298712984" data-order="BbqBeru"><a href="?filter=298712984">BbqBeru</a></td><td data-order="0">0<span class="not-viable">/1</span></td><td class="not-viable" data-order="-36" style="background-color: #ff9900;">&#11088;Padme 6* G10, JKA G11, GK 5* G11, Ahsoka G11, GMY G11 <tt>[36]</tt></td><td data-order="" /><td class="not-viable" data-order="-36" style="background-color: #ff9900;">&#11088;Padme 6* G10, JKA G11, GK 5* G11, Ahsoka G11, GMY G11 <tt>[36]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="964856849" data-order="Bountyy"><a href="?filter=964856849">Bountyy</a></td><td data-order="0">0<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="446373369" data-order="Kenn Skirata"><a href="?filter=446373369">Kenn Skirata</a></td><td data-order="0">0<span class="not-viable">/1</span></td><td class="not-viable" data-order="-13" style="background-color: #ffda00;">&#11088;Padme R8, JKA R7, GK R3, Ahsoka R3, C-3PO G9 <tt>[13]</tt></td><td data-order="" /><td class="not-viable" data-order="-13" style="background-color: #ffda00;">&#11088;Padme R8, JKA R7, GK R3, Ahsoka R3, C-3PO G9 <tt>[13]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="669656989" data-order="Mol Eliza"><a href="?filter=669656989">Mol Eliza</a></td><td data-order="0">0<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="812752189" data-order="lucathepuka"><a href="?filter=812752189">lucathepuka</a></td><td data-order="0">0<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="184464142" data-order="Abra"><a href="?filter=184464142">Abra</a></td><td data-order="0">0<span class="not-viable">/1</span></td><td class="not-viable" data-order="-44" style="background-color: #ff8200;">&#11088;Padme G9, JKA G10, GK G8, Ahsoka G8, GMY G11 <tt>[44]</tt></td><td data-order="" /><td class="not-viable" data-order="-44" style="background-color: #ff8200;">&#11088;Padme G9, JKA G10, GK G8, Ahsoka G8, GMY G11 <tt>[44]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="948356963" data-order="B"><a href="?filter=948356963">B</a></td><td data-order="0">0<span class="not-viable">/1</span></td><td class="not-viable" data-order="-2" style="background-color: #fff900;">&#11088;Padme R5, JKA R5, GK R7, Ahsoka R5, GMY R3 <tt>[2]</tt></td><td data-order="" /><td class="not-viable" data-order="-2" style="background-color: #fff900;">&#11088;Padme R5, JKA R5, GK R7, Ahsoka R5, GMY R3 <tt>[2]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="387869794" data-order="DarthTalon"><a href="?filter=387869794">DarthTalon</a></td><td data-order="1">1<span class="not-viable">/3</span></td><td class="not-viable" data-order="-6" style="background-color: #ffee00;">&#11088;Padme R4, JKA R7, GK R4, Ahsoka R1, C-3PO R5 <tt>[6]</tt></td><td class="not-viable" data-order="-12" style="background-color: #ffdd00;">&#11088;Vader R7, KRU G12, Wat Tambor G12, C-3PO R5, BB-8 R7 <tt>[12]</tt></td><td class="not-viable" data-order="-6" style="background-color: #ffee00;">&#11088;Padme R4, JKA R7, GK R4, Ahsoka R1, C-3PO R5 <tt>[6]</tt></td><td data-order="" /><td data-order="" /><td data-order="171762" style="">Rey R7, Fives R7, Rex R7, C-3PO R5, HYoda R6</td><td data-order="" /><td class="not-viable" data-order="-14" style="background-color: #ffd700;">Padme R4, JKA R7, Clone Sergeant G11, R2-D2 R7, Barriss G12 <tt>[14]</tt></td></tr><tr><td data-filter="155754252" data-order="Megared"><a href="?filter=155754252">Megared</a></td><td data-order="0">0<span class="not-viable">/4</span></td><td class="not-viable" data-order="-9" style="background-color: #ffe500;">&#11088;Padme R4, JKA R7, GK R7, Ahsoka G12, C-3PO R3 <tt>[9]</tt></td><td class="not-viable" data-order="-22" style="background-color: #ffc000;">&#11088;Vader R7, KRU G12, Wat Tambor 4* G5, C-3PO R3, Shaak Ti R4 <tt>[22]</tt></td><td class="not-viable" data-order="-9" style="background-color: #ffe500;">&#11088;Padme R4, JKA R7, GK R7, Ahsoka G12, C-3PO R3 <tt>[9]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-29" style="background-color: #ffac00;">DR G11, Malak G10, BSF G12, HK-47 G10, Sith Marauder R5 <tt>[29]</tt></td><td class="not-viable" data-order="-25" style="background-color: #ffb800;">Padme R4, JKA R7, Clone Sergeant G10, R2-D2 G12, Barriss G8 <tt>[25]</tt></td></tr><tr><td data-filter="144245956" data-order="Dark Shawi"><a href="?filter=144245956">Dark Shawi</a></td><td data-order="0">0<span class="not-viable">/2</span></td><td class="not-viable" data-order="-28" style="background-color: #ffaf00;">&#11088;Padme G8, JKA 6* G7, GK R4, Ahsoka G12, GMY R7 <tt>[28]</tt></td><td data-order="" /><td class="not-viable" data-order="-28" style="background-color: #ffaf00;">&#11088;Padme G8, JKA 6* G7, GK R4, Ahsoka G12, GMY R7 <tt>[28]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-41" style="background-color: #ff8a00;">Padme G8, JKA 6* G7, Clone Sergeant G11, R2-D2 G12, Barriss G11 <tt>[41]</tt></td></tr><tfoot><th>Counts</th><th>11<span class="not-viable">/77</span></th><th /><th>0<span class="not-viable">/13</span></th><th>5<span class="not-viable">/34</span></th><th>0<span class="not-viable">/1</span></th><th>4<span class="not-viable">/0</span></th><th>1<span class="not-viable">/1</span></th><th>1<span class="not-viable">/12</span></th><th>0<span class="not-viable">/16</span></th></tfoot></table><h3 id="p2">P2</h3>Prefer these teams for phase 2 (marked with a &#11088; in the table).  Note that the first team makes use of the Devour to trigger Fives and the other teams may need a sacrifice character to eat the devour.
+
+<p>
+The door/topple triggers once per phase -- the best scores require the use of the door.  Plan accordingly.
+
+<ul>
+<li>Shaak, ARC, 501st Echo, Rex, Fives - (depends on Devour being available) 5-6%
+<li>Veers, Piett, Gideon, Range, Dark (sub Starck for one of last three if needed) - 4-7%
+<li>Vader, Nute, Thrawn, Traya, Wat - requires special modding, can do around 12%
+</ul>
+
+<p>Note that the teams for P2 and P3 are the same but different teams are recommended.<p><b>Estimated Score: 54</b><br/>Youngling: probably not going to make it<pre id="p2-farm" style="display: none !important;">KingKrille https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=295729596#p2
+gear levels: 8 -- Shaak Ti R3, Fives R3, Rex R5, Echo (501st) R3, ARC Trooper R3
+
+SirSchuSchu https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=863647631#p2
+gear levels: 8 -- Shaak Ti R7, Fives R3, Rex R3, Echo (501st) R3, ARC Trooper R3
+
+Gloom Walker https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=516227655#p2
+gear levels: 8 -- Shaak Ti R3, Fives R5, Rex R5, Echo (501st) R5, ARC Trooper G12
+
+MINI Techno Union https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=648966762#p2
+gear levels: 14 -- Shaak Ti G12, Fives R3, Rex R3, Echo (501st) R3, ARC Trooper R3
+
+Jose Longo https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=633696187#p2
+gear levels: 16 -- Shaak Ti R5, Fives R5, Rex R7, Echo (501st) G12, ARC Trooper G8
+
+Naga Sadów https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=936392725#p2
+gear levels: 18 -- Veers R2, Piett R5, Gideon G12, Starck G12, Dark Trooper R2
+
+Gundam Viver https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=278185814#p2
+gear levels: 19 -- Veers R2, Piett R2, Gideon R2, Range Trooper G12, Dark Trooper R1
+
+Stahzo https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=647615227#p2
+gear levels: 19 -- Vader R7, Nute G12, Thrawn R5, Wat Tambor 5* G11, Traya G12
+
+Willey https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=136186513#p2
+gear levels: 21 -- Vader R7, Nute G12, Thrawn R6, Wat Tambor 5* G9, Traya G12
+
+j13hall13 https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=662956843#p2
+gear levels: 24 -- Shaak Ti G12, Fives R5, Rex G12, Echo (501st) G12, ARC Trooper G12
+
+wookieguy69 https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=912381174#p2
+gear levels: 25 -- Shaak Ti R3, Fives R1, Rex G12, Echo (501st) G12, ARC Trooper G11
+
+Zar Anduli https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=889632856#p2
+gear levels: 26 -- Shaak Ti R3, Fives G12, Rex G12, Echo (501st) G12, ARC Trooper G12
+
+Peepeepoopooman https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=827513585#p2
+gear levels: 26 -- Veers G12, Piett R5, Gideon G11, Starck G11, Dark Trooper G12
+
+blactastic https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=281334117#p2
+gear levels: 27 -- Veers G12, Piett R8, Gideon G11, Starck G11, Dark Trooper G11
+
+Schmidty2318 https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=419954121#p2
+gear levels: 27 -- Vader R7, Nute G10, Thrawn R6, Wat Tambor 4* G9, Traya G8
+
+Megared https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=155754252#p2
+gear levels: 29 -- Veers R3, Piett R5, Gideon G8, Starck G12, Dark Trooper 5* G7
+
+Danja https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=583496927#p2
+gear levels: 30 -- Shaak Ti G12, Fives G12, Rex G12, Echo (501st) G12, ARC Trooper G12
+
+Untamed Sloth https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=741217131#p2
+gear levels: 30 -- Shaak Ti G12, Fives G12, Rex G12, Echo (501st) G12, ARC Trooper G12
+
+Mol Eliza https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=669656989#p2
+gear levels: 35 -- Aurra 5* G8, Greef G5, Bossk 6* G6, Jango R6, Boba R7
+
+MrPickles https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=237175899#p2
+gear levels: 35 -- Shaak Ti G9, Fives G10, Rex G12, Echo (501st) G12, ARC Trooper G12
+
+</pre><pre id="p2-attack-player" style="display: none !important;">https://gorgatron1.github.io/brg/guild/holocron/rancor.html#p2
+
+B
+Shaak 6%: Shaak Ti R5, Fives R5, Rex R5, Echo (501st) R5, ARC Trooper R5
+
+Bobmaloogax5
+Shaak 6%: Shaak Ti R5, Fives R5, Rex R5, Echo (501st) R5, ARC Trooper R5
+
+Bski
+Shaak 6%: Shaak Ti R7, Fives R7, Rex R5, Echo (501st) R5, ARC Trooper R5
+
+DarthTalon
+Shaak 6%: Shaak Ti R7, Fives R7, Rex R7, Echo (501st) R7, ARC Trooper R7
+
+Millz
+SLKR+FO 9%: SL Kylo R8, Hux R5, FOST R5, Sith Trooper R5, Thrawn R6
+
+Millz20
+Shaak 6%: Shaak Ti R7, Fives R5, Rex R5, Echo (501st) R5, ARC Trooper R5
+
+Trav
+Shaak 6%: Shaak Ti R7, Fives R7, Rex R7, Echo (501st) R6, ARC Trooper R7
+
+YeeterSkeeter
+SLKR+FO 9%: SL Kylo R7, Hux R6, FOST R5, Sith Trooper R5, Thrawn R5
+
+</pre><pre id="p2-attack-team" style="display: none !important;">https://gorgatron1.github.io/brg/guild/holocron/rancor.html#p2
+
+SLKR+FO 9%: SL Kylo, Hux FOST Sith Trooper, Thrawn
+    YeeterSkeeter Millz 
+
+Shaak 6%: Shaak Ti, Fives Rex Echo (501st), ARC Trooper
+    Bobmaloogax5 B Millz20 Bski Trav DarthTalon 
+
+</pre><pre id="p2-attack-csv" style="display: none !important;">phase,name,allycode,team-name,team,percent,gp
+p2,B,948356963,Shaak 6%,Shaak Ti R5 Fives R5 Rex R5 Echo (501st) R5 ARC Trooper R5,6,134778
+p2,YeeterSkeeter,819259195,SLKR+FO 9%,SL Kylo R7 Hux R6 FOST R5 Sith Trooper R5 Thrawn R5,9,152402
+p2,Millz20,684712353,Shaak 6%,Shaak Ti R7 Fives R5 Rex R5 Echo (501st) R5 ARC Trooper R5,6,138495
+p2,Trav,146343631,Shaak 6%,Shaak Ti R7 Fives R7 Rex R7 Echo (501st) R6 ARC Trooper R7,6,150364
+p2,Millz,332392187,SLKR+FO 9%,SL Kylo R8 Hux R5 FOST R5 Sith Trooper R5 Thrawn R6,9,160146
+p2,Bobmaloogax5,993486218,Shaak 6%,Shaak Ti R5 Fives R5 Rex R5 Echo (501st) R5 ARC Trooper R5,6,134490
+p2,Bski,938232767,Shaak 6%,Shaak Ti R7 Fives R7 Rex R5 Echo (501st) R5 ARC Trooper R5,6,142614
+p2,DarthTalon,387869794,Shaak 6%,Shaak Ti R7 Fives R7 Rex R7 Echo (501st) R7 ARC Trooper R7,6,151513
+</pre><a href="#" onclick="CopyToClipboard('p2-farm'); return false;">Copy Farming Info</a> | <a href="#" onclick="CopyToClipboard('p2-attack-player'); return false;">Copy Attack Info (by player)</a> | <a href="#" onclick="CopyToClipboard('p2-attack-team'); return false;">Copy Attack Info (by team)</a> | <a href="#" onclick="CopyToClipboard('p2-attack-csv'); return false;">Copy Attack Info (CSV)</a><script>$(document).ready(function () {
+    sortType = $.fn.dataTable.absoluteOrderNumber({ value: "", position: "bottom"});
+    $('#schedule-p2').DataTable({
+        "paging": false,
+        "info": false,
+        "fixedHeader": true,
+        "columnDefs": [
+            {
+                targets: 0,
+                type: "html",
+            },
+            {
+                targets: 1,
+                type: "num",
+            },
+            {
+                targets: "_all",
+                type: sortType,
+            },
+        ],
+    });
+});</script><table id="schedule-p2" style="font-size: 75%;"><thead><th>Player</th><th>Counts</th><th>Farming Suggestion</th><th>Shaak 6%&#11088;</th><th>Imperial Troopers 5%&#11088;</th><th>Vader+Nute 12%&#11088;</th><th>SLKR+NS 11%</th><th>SLKR+FO 9%</th><th>Vader+Wat 8%</th><th>BH 2%</th></thead><thead><th>Links</th><th /><th /><th><a href="../../alliance/crancor/SHAAK23.html">info ...</a></th><th><a href="https://www.youtube.com/watch?v=KEFUkww8oxo">info ...</a></th><th><a href="https://www.youtube.com/watch?v=LHYzr39r7EE">info ...</a></th><th><a href="../../alliance/crancor/SLKRNS23.html">info ...</a></th><th><a href="../../alliance/crancor/SLKR23.html">info ...</a></th><th /><th /></thead><thead><th>Counts</th><th>9<span class="not-viable">/67</span></th><th /><th>6<span class="not-viable">/16</span></th><th>0<span class="not-viable">/16</span></th><th>0<span class="not-viable">/12</span></th><th>0<span class="not-viable">/1</span></th><th>3<span class="not-viable">/1</span></th><th>0<span class="not-viable">/13</span></th><th>0<span class="not-viable">/8</span></th></thead><tr><td data-filter="684712353" data-order="Millz20"><a href="?filter=684712353">Millz20</a></td><td data-order="1">1<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="138495" style="background-color: #ceebfd">Shaak Ti R7, Fives R5, Rex R5, Echo (501st) R5, ARC Trooper R5</td><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="516227655" data-order="Gloom Walker"><a href="?filter=516227655">Gloom Walker</a></td><td data-order="0">0<span class="not-viable">/4</span></td><td class="not-viable" data-order="-8" style="background-color: #ffe800;">&#11088;Shaak Ti R3, Fives R5, Rex R5, Echo (501st) R5, ARC Trooper G12 <tt>[8]</tt></td><td class="not-viable" data-order="-8" style="background-color: #ffe800;">&#11088;Shaak Ti R3, Fives R5, Rex R5, Echo (501st) R5, ARC Trooper G12 <tt>[8]</tt></td><td class="not-viable" data-order="-46" style="background-color: #ff7c00;">&#11088;Veers G12, Piett G10, Gideon G8, Starck G5, Dark Trooper 6* G9 <tt>[46]</tt></td><td class="not-viable" data-order="-30" style="background-color: #ffaa00;">&#11088;Vader R7, Nute G5, Thrawn R6, Wat Tambor 4* G8, Traya G11 <tt>[30]</tt></td><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-10" style="background-color: #ffe200;">Vader R7, EP R5, Thrawn R6, Wat Tambor 4* G8, Malak R7 <tt>[10]</tt></td><td data-order="" /></tr><tr><td data-filter="647474141" data-order="The JLS"><a href="?filter=647474141">The JLS</a></td><td data-order="0">0<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="332392187" data-order="Millz"><a href="?filter=332392187">Millz</a></td><td data-order="1">1<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="160146" style="background-color: #ceebfd">SL Kylo R8, Hux R5, FOST R5, Sith Trooper R5, Thrawn R6</td><td data-order="" /><td data-order="" /></tr><tr><td data-filter="889632856" data-order="Zar Anduli"><a href="?filter=889632856">Zar Anduli</a></td><td data-order="0">0<span class="not-viable">/2</span></td><td class="not-viable" data-order="-26" style="background-color: #ffb500;">&#11088;Shaak Ti R3, Fives G12, Rex G12, Echo (501st) G12, ARC Trooper G12 <tt>[26]</tt></td><td class="not-viable" data-order="-26" style="background-color: #ffb500;">&#11088;Shaak Ti R3, Fives G12, Rex G12, Echo (501st) G12, ARC Trooper G12 <tt>[26]</tt></td><td class="not-viable" data-order="-26" style="background-color: #ffb500;">&#11088;Veers G12, Piett R8, Gideon G12, Range Trooper G12, Starck G10 <tt>[26]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="146343631" data-order="Trav"><a href="?filter=146343631">Trav</a></td><td data-order="1">1<span class="not-viable">/2</span></td><td data-order="-10000" /><td data-order="150364" style="background-color: #ceebfd">Shaak Ti R7, Fives R7, Rex R7, Echo (501st) R6, ARC Trooper R7</td><td data-order="" /><td class="not-viable" data-order="-28" style="background-color: #ffaf00;">&#11088;Vader R7, Nute G11, Thrawn G12, Wat Tambor 4* G9, Traya G12 <tt>[28]</tt></td><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-24" style="background-color: #ffbb00;">Vader R7, EP R5, Thrawn G12, Wat Tambor 4* G9, Starck G9 <tt>[24]</tt></td><td data-order="" /></tr><tr><td data-filter="633696187" data-order="Jose Longo"><a href="?filter=633696187">Jose Longo</a></td><td data-order="0">0<span class="not-viable">/4</span></td><td class="not-viable" data-order="-16" style="background-color: #ffd100;">&#11088;Shaak Ti R5, Fives R5, Rex R7, Echo (501st) G12, ARC Trooper G8 <tt>[16]</tt></td><td class="not-viable" data-order="-16" style="background-color: #ffd100;">&#11088;Shaak Ti R5, Fives R5, Rex R7, Echo (501st) G12, ARC Trooper G8 <tt>[16]</tt></td><td class="not-viable" data-order="-47" style="background-color: #ff7900;">&#11088;Veers G7, Piett G12, Gideon G8, Starck G9, Dark Trooper 6* G7 <tt>[47]</tt></td><td class="not-viable" data-order="-42" style="background-color: #ff8800;">&#11088;Vader R5, Nute G9, Thrawn G9, Wat Tambor 4* G5, Traya G7 <tt>[42]</tt></td><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-34" style="background-color: #ff9e00;">Vader R5, EP G12, Thrawn G9, Wat Tambor 4* G5, Piett G12 <tt>[34]</tt></td><td data-order="" /></tr><tr><td data-filter="936392725" data-order="Naga Sadów"><a href="?filter=936392725">Naga Sadów</a></td><td data-order="0">0<span class="not-viable">/3</span></td><td class="not-viable" data-order="-18" style="background-color: #ffcc00;">&#11088;Veers R2, Piett R5, Gideon G12, Starck G12, Dark Trooper R2 <tt>[18]</tt></td><td class="not-viable" data-order="-30" style="background-color: #ffaa00;">&#11088;Shaak Ti G12, Fives G12, Rex G12, Echo (501st) G12, ARC Trooper G12 <tt>[30]</tt></td><td class="not-viable" data-order="-18" style="background-color: #ffcc00;">&#11088;Veers R2, Piett R5, Gideon G12, Starck G12, Dark Trooper R2 <tt>[18]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-28" style="background-color: #ffaf00;">Aurra G11, Greef G12, Bossk G12, Jango G12, Boba R2 <tt>[28]</tt></td></tr><tr><td data-filter="295729596" data-order="KingKrille"><a href="?filter=295729596">KingKrille</a></td><td data-order="0">0<span class="not-viable">/1</span></td><td class="not-viable" data-order="-8" style="background-color: #ffe800;">&#11088;Shaak Ti R3, Fives R3, Rex R5, Echo (501st) R3, ARC Trooper R3 <tt>[8]</tt></td><td class="not-viable" data-order="-8" style="background-color: #ffe800;">&#11088;Shaak Ti R3, Fives R3, Rex R5, Echo (501st) R3, ARC Trooper R3 <tt>[8]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="741217131" data-order="Untamed Sloth"><a href="?filter=741217131">Untamed Sloth</a></td><td data-order="0">0<span class="not-viable">/2</span></td><td class="not-viable" data-order="-30" style="background-color: #ffaa00;">&#11088;Shaak Ti G12, Fives G12, Rex G12, Echo (501st) G12, ARC Trooper G12 <tt>[30]</tt></td><td class="not-viable" data-order="-30" style="background-color: #ffaa00;">&#11088;Shaak Ti G12, Fives G12, Rex G12, Echo (501st) G12, ARC Trooper G12 <tt>[30]</tt></td><td class="not-viable" data-order="-48" style="background-color: #ff7700;">&#11088;Veers G9, Piett G8, Gideon G9, Range Trooper G8, Starck G8 <tt>[48]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="648966762" data-order="MINI Techno Union"><a href="?filter=648966762">MINI Techno Union</a></td><td data-order="0">0<span class="not-viable">/3</span></td><td class="not-viable" data-order="-14" style="background-color: #ffd700;">&#11088;Shaak Ti G12, Fives R3, Rex R3, Echo (501st) R3, ARC Trooper R3 <tt>[14]</tt></td><td class="not-viable" data-order="-14" style="background-color: #ffd700;">&#11088;Shaak Ti G12, Fives R3, Rex R3, Echo (501st) R3, ARC Trooper R3 <tt>[14]</tt></td><td class="not-viable" data-order="-22" style="background-color: #ffc000;">&#11088;Veers R3, Piett R8, Gideon G9, Starck R3, Dark Trooper G9 <tt>[22]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-9" style="background-color: #ffe500;">Vader R7, EP R7, Thrawn R6, Wat Tambor 4* G9, Piett R8 <tt>[9]</tt></td><td data-order="" /></tr><tr><td data-filter="583496927" data-order="Danja"><a href="?filter=583496927">Danja</a></td><td data-order="0">0<span class="not-viable">/3</span></td><td class="not-viable" data-order="-30" style="background-color: #ffaa00;">&#11088;Shaak Ti G12, Fives G12, Rex G12, Echo (501st) G12, ARC Trooper G12 <tt>[30]</tt></td><td class="not-viable" data-order="-30" style="background-color: #ffaa00;">&#11088;Shaak Ti G12, Fives G12, Rex G12, Echo (501st) G12, ARC Trooper G12 <tt>[30]</tt></td><td data-order="" /><td class="not-viable" data-order="-42" style="background-color: #ff8800;">&#11088;Vader R3, Nute G6, Thrawn G8, Wat Tambor 4* G7, Traya G11 <tt>[42]</tt></td><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-40" style="background-color: #ff8d00;">Vader R3, EP G12, Thrawn G8, Wat Tambor 4* G7, Starck G7 <tt>[40]</tt></td><td data-order="" /></tr><tr><td data-filter="482599677" data-order="Jannah Longo"><a href="?filter=482599677">Jannah Longo</a></td><td data-order="0">0<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="152667675" data-order="Bakufett"><a href="?filter=152667675">Bakufett</a></td><td data-order="0">0<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="193362682" data-order="Mulleg"><a href="?filter=193362682">Mulleg</a></td><td data-order="0">0<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="759526265" data-order="MatejC"><a href="?filter=759526265">MatejC</a></td><td data-order="0">0<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="788233588" data-order="Tantema Garnik"><a href="?filter=788233588">Tantema Garnik</a></td><td data-order="0">0<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="827513585" data-order="Peepeepoopooman"><a href="?filter=827513585">Peepeepoopooman</a></td><td data-order="0">0<span class="not-viable">/1</span></td><td class="not-viable" data-order="-26" style="background-color: #ffb500;">&#11088;Veers G12, Piett R5, Gideon G11, Starck G11, Dark Trooper G12 <tt>[26]</tt></td><td data-order="" /><td class="not-viable" data-order="-26" style="background-color: #ffb500;">&#11088;Veers G12, Piett R5, Gideon G11, Starck G11, Dark Trooper G12 <tt>[26]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="938232767" data-order="Bski"><a href="?filter=938232767">Bski</a></td><td data-order="2">2<span class="not-viable">/2</span></td><td data-order="-10000" /><td data-order="142614" style="background-color: #ceebfd">Shaak Ti R7, Fives R7, Rex R5, Echo (501st) R5, ARC Trooper R5</td><td class="not-viable" data-order="-18" style="background-color: #ffcc00;">&#11088;Veers R4, Piett R8, Gideon 5* G9, Range Trooper G12, Starck R3 <tt>[18]</tt></td><td data-order="" /><td data-order="" /><td data-order="165287" style="">SL Kylo R7, Hux R7, FOST R5, Sith Trooper R7, Thrawn R6</td><td data-order="" /><td class="not-viable" data-order="-14" style="background-color: #ffd700;">Aurra G10, Greef G12, Bossk R5, Jango R6, Boba R8 <tt>[14]</tt></td></tr><tr><td data-filter="441557869" data-order="Gerehe Zosma"><a href="?filter=441557869">Gerehe Zosma</a></td><td data-order="0">0<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="494765873" data-order="Sneaky Soy Boy 123"><a href="?filter=494765873">Sneaky Soy Boy 123</a></td><td data-order="0">0<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="237175899" data-order="MrPickles"><a href="?filter=237175899">MrPickles</a></td><td data-order="0">0<span class="not-viable">/1</span></td><td class="not-viable" data-order="-35" style="background-color: #ff9b00;">&#11088;Shaak Ti G9, Fives G10, Rex G12, Echo (501st) G12, ARC Trooper G12 <tt>[35]</tt></td><td class="not-viable" data-order="-35" style="background-color: #ff9b00;">&#11088;Shaak Ti G9, Fives G10, Rex G12, Echo (501st) G12, ARC Trooper G12 <tt>[35]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="819259195" data-order="YeeterSkeeter"><a href="?filter=819259195">YeeterSkeeter</a></td><td data-order="1">1<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="152402" style="background-color: #ceebfd">SL Kylo R7, Hux R6, FOST R5, Sith Trooper R5, Thrawn R5</td><td data-order="" /><td data-order="" /></tr><tr><td data-filter="863647631" data-order="SirSchuSchu"><a href="?filter=863647631">SirSchuSchu</a></td><td data-order="0">0<span class="not-viable">/4</span></td><td class="not-viable" data-order="-8" style="background-color: #ffe800;">&#11088;Shaak Ti R7, Fives R3, Rex R3, Echo (501st) R3, ARC Trooper R3 <tt>[8]</tt></td><td class="not-viable" data-order="-8" style="background-color: #ffe800;">&#11088;Shaak Ti R7, Fives R3, Rex R3, Echo (501st) R3, ARC Trooper R3 <tt>[8]</tt></td><td class="not-viable" data-order="-20" style="background-color: #ffc600;">&#11088;Veers G12, Piett R3, Gideon G11, Starck R2, Dark Trooper R3 <tt>[20]</tt></td><td class="not-viable" data-order="-21" style="background-color: #ffc300;">&#11088;Vader R7, Nute G12, Thrawn G12, Wat Tambor 5* G11, Traya R3 <tt>[21]</tt></td><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-15" style="background-color: #ffd400;">Vader R7, EP R5, Thrawn G12, Wat Tambor 5* G11, Piett R3 <tt>[15]</tt></td><td data-order="" /></tr><tr><td data-filter="993486218" data-order="Bobmaloogax5"><a href="?filter=993486218">Bobmaloogax5</a></td><td data-order="1">1<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="134490" style="background-color: #ceebfd">Shaak Ti R5, Fives R5, Rex R5, Echo (501st) R5, ARC Trooper R5</td><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="662956843" data-order="j13hall13"><a href="?filter=662956843">j13hall13</a></td><td data-order="0">0<span class="not-viable">/7</span></td><td class="not-viable" data-order="-24" style="background-color: #ffbb00;">&#11088;Shaak Ti G12, Fives R5, Rex G12, Echo (501st) G12, ARC Trooper G12 <tt>[24]</tt></td><td class="not-viable" data-order="-24" style="background-color: #ffbb00;">&#11088;Shaak Ti G12, Fives R5, Rex G12, Echo (501st) G12, ARC Trooper G12 <tt>[24]</tt></td><td class="not-viable" data-order="-32" style="background-color: #ffa400;">&#11088;Veers G12, Piett 6* G11, Starck G12, Range Trooper G12, Dark Trooper G11 <tt>[32]</tt></td><td class="not-viable" data-order="-29" style="background-color: #ffac00;">&#11088;Vader R7, Nute G11, Thrawn G12, Wat Tambor 5* G8, Traya G12 <tt>[29]</tt></td><td class="not-viable" data-order="-40" style="background-color: #ff8d00;">SL Kylo R7, Zombie G1, Daka G1, Hux R5, Thrawn G12 <tt>[40]</tt></td><td class="not-viable" data-order="-6" style="background-color: #ffee00;">SL Kylo R7, Hux R5, FOST R5, Sith Trooper R5, Thrawn G12 <tt>[6]</tt></td><td class="not-viable" data-order="-16" style="background-color: #ffd100;">Vader R7, EP R7, Thrawn G12, Wat Tambor 5* G8, Malak R7 <tt>[16]</tt></td><td class="not-viable" data-order="-57" style="background-color: #ff5d00;">Aurra G2, Greef G1, Bossk G12, Jango G8, The Mandalorian G10 <tt>[57]</tt></td></tr><tr><td data-filter="281334117" data-order="blactastic"><a href="?filter=281334117">blactastic</a></td><td data-order="0">0<span class="not-viable">/2</span></td><td class="not-viable" data-order="-27" style="background-color: #ffb200;">&#11088;Veers G12, Piett R8, Gideon G11, Starck G11, Dark Trooper G11 <tt>[27]</tt></td><td class="not-viable" data-order="-34" style="background-color: #ff9e00;">&#11088;Shaak Ti G12, Fives G11, Rex G11, Echo (501st) G11, ARC Trooper G11 <tt>[34]</tt></td><td class="not-viable" data-order="-27" style="background-color: #ffb200;">&#11088;Veers G12, Piett R8, Gideon G11, Starck G11, Dark Trooper G11 <tt>[27]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="647615227" data-order="Stahzo"><a href="?filter=647615227">Stahzo</a></td><td data-order="0">0<span class="not-viable">/3</span></td><td class="not-viable" data-order="-19" style="background-color: #ffc900;">&#11088;Vader R7, Nute G12, Thrawn R5, Wat Tambor 5* G11, Traya G12 <tt>[19]</tt></td><td data-order="" /><td class="not-viable" data-order="-29" style="background-color: #ffac00;">&#11088;Veers G11, Piett R7, Gideon G12, Starck G11, Dark Trooper 5* G9 <tt>[29]</tt></td><td class="not-viable" data-order="-19" style="background-color: #ffc900;">&#11088;Vader R7, Nute G12, Thrawn R5, Wat Tambor 5* G11, Traya G12 <tt>[19]</tt></td><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-7" style="background-color: #ffeb00;">Vader R7, EP R7, Thrawn R5, Wat Tambor 5* G11, Piett R7 <tt>[7]</tt></td><td data-order="" /></tr><tr><td data-filter="136186513" data-order="Willey"><a href="?filter=136186513">Willey</a></td><td data-order="0">0<span class="not-viable">/2</span></td><td class="not-viable" data-order="-21" style="background-color: #ffc300;">&#11088;Vader R7, Nute G12, Thrawn R6, Wat Tambor 5* G9, Traya G12 <tt>[21]</tt></td><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-21" style="background-color: #ffc300;">&#11088;Vader R7, Nute G12, Thrawn R6, Wat Tambor 5* G9, Traya G12 <tt>[21]</tt></td><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-9" style="background-color: #ffe500;">Vader R7, EP R7, Thrawn R6, Wat Tambor 5* G9, Malak R6 <tt>[9]</tt></td><td data-order="" /></tr><tr><td data-filter="661932482" data-order="Valektra Jetberg"><a href="?filter=661932482">Valektra Jetberg</a></td><td data-order="0">0<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="912381174" data-order="wookieguy69"><a href="?filter=912381174">wookieguy69</a></td><td data-order="0">0<span class="not-viable">/4</span></td><td class="not-viable" data-order="-25" style="background-color: #ffb800;">&#11088;Shaak Ti R3, Fives R1, Rex G12, Echo (501st) G12, ARC Trooper G11 <tt>[25]</tt></td><td class="not-viable" data-order="-25" style="background-color: #ffb800;">&#11088;Shaak Ti R3, Fives R1, Rex G12, Echo (501st) G12, ARC Trooper G11 <tt>[25]</tt></td><td class="not-viable" data-order="-34" style="background-color: #ff9e00;">&#11088;Veers G12, Piett R3, Gideon G9, Starck G10, Dark Trooper G9 <tt>[34]</tt></td><td class="not-viable" data-order="-27" style="background-color: #ffb200;">&#11088;Vader R7, Nute G11, Thrawn G12, Wat Tambor 5* G10, Traya G12 <tt>[27]</tt></td><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-22" style="background-color: #ffc000;">Vader R7, EP G12, Thrawn G12, Wat Tambor 5* G10, Piett R3 <tt>[22]</tt></td><td data-order="" /></tr><tr><td data-filter="552172719" data-order="canth reed"><a href="?filter=552172719">canth reed</a></td><td data-order="0">0<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="218527368" data-order="Sam"><a href="?filter=218527368">Sam</a></td><td data-order="0">0<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="419954121" data-order="Schmidty2318"><a href="?filter=419954121">Schmidty2318</a></td><td data-order="0">0<span class="not-viable">/5</span></td><td class="not-viable" data-order="-27" style="background-color: #ffb200;">&#11088;Vader R7, Nute G10, Thrawn R6, Wat Tambor 4* G9, Traya G8 <tt>[27]</tt></td><td class="not-viable" data-order="-31" style="background-color: #ffa700;">&#11088;Shaak Ti R2, Fives G12, Rex G12, Echo (501st) G12, ARC Trooper G8 <tt>[31]</tt></td><td class="not-viable" data-order="-48" style="background-color: #ff7700;">&#11088;Veers G12, Piett G8, Gideon G8, Starck G7, Dark Trooper 5* G7 <tt>[48]</tt></td><td class="not-viable" data-order="-27" style="background-color: #ffb200;">&#11088;Vader R7, Nute G10, Thrawn R6, Wat Tambor 4* G9, Traya G8 <tt>[27]</tt></td><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-11" style="background-color: #ffdf00;">Vader R7, EP R7, Thrawn R6, Wat Tambor 4* G9, Malak R3 <tt>[11]</tt></td><td class="not-viable" data-order="-23" style="background-color: #ffbd00;">Aurra R3, Greef G12, Bossk R3, Jango G11, The Mandalorian G12 <tt>[23]</tt></td></tr><tr><td data-filter="278185814" data-order="Gundam Viver"><a href="?filter=278185814">Gundam Viver</a></td><td data-order="0">0<span class="not-viable">/3</span></td><td class="not-viable" data-order="-19" style="background-color: #ffc900;">&#11088;Veers R2, Piett R2, Gideon R2, Range Trooper G12, Dark Trooper R1 <tt>[19]</tt></td><td class="not-viable" data-order="-36" style="background-color: #ff9900;">&#11088;Shaak Ti G9, Fives G11, Rex G12, Echo (501st) G12, ARC Trooper G10 <tt>[36]</tt></td><td class="not-viable" data-order="-19" style="background-color: #ffc900;">&#11088;Veers R2, Piett R2, Gideon R2, Range Trooper G12, Dark Trooper R1 <tt>[19]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-30" style="background-color: #ffaa00;">Aurra G12, Greef G12, Bossk R2, Jango 5* G9, The Mandalorian G12 <tt>[30]</tt></td></tr><tr><td data-filter="436272696" data-order="TRICKSHOT"><a href="?filter=436272696">TRICKSHOT</a></td><td data-order="0">0<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="217482916" data-order="FunkyWizard"><a href="?filter=217482916">FunkyWizard</a></td><td data-order="0">0<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="966819857" data-order="DereckRM13"><a href="?filter=966819857">DereckRM13</a></td><td data-order="0">0<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="214666834" data-order="Brizz"><a href="?filter=214666834">Brizz</a></td><td data-order="0">0<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="715466673" data-order="BigCon"><a href="?filter=715466673">BigCon</a></td><td data-order="0">0<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="298712984" data-order="BbqBeru"><a href="?filter=298712984">BbqBeru</a></td><td data-order="0">0<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="964856849" data-order="Bountyy"><a href="?filter=964856849">Bountyy</a></td><td data-order="0">0<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="446373369" data-order="Kenn Skirata"><a href="?filter=446373369">Kenn Skirata</a></td><td data-order="0">0<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="669656989" data-order="Mol Eliza"><a href="?filter=669656989">Mol Eliza</a></td><td data-order="0">0<span class="not-viable">/1</span></td><td class="not-viable" data-order="-35" style="background-color: #ff9b00;">Aurra 5* G8, Greef G5, Bossk 6* G6, Jango R6, Boba R7 <tt>[35]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-35" style="background-color: #ff9b00;">Aurra 5* G8, Greef G5, Bossk 6* G6, Jango R6, Boba R7 <tt>[35]</tt></td></tr><tr><td data-filter="812752189" data-order="lucathepuka"><a href="?filter=812752189">lucathepuka</a></td><td data-order="0">0<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="184464142" data-order="Abra"><a href="?filter=184464142">Abra</a></td><td data-order="0">0<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="948356963" data-order="B"><a href="?filter=948356963">B</a></td><td data-order="1">1<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="134778" style="background-color: #ceebfd">Shaak Ti R5, Fives R5, Rex R5, Echo (501st) R5, ARC Trooper R5</td><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="387869794" data-order="DarthTalon"><a href="?filter=387869794">DarthTalon</a></td><td data-order="1">1<span class="not-viable">/3</span></td><td data-order="-10000" /><td data-order="151513" style="background-color: #ceebfd">Shaak Ti R7, Fives R7, Rex R7, Echo (501st) R7, ARC Trooper R7</td><td data-order="" /><td class="not-viable" data-order="-18" style="background-color: #ffcc00;">&#11088;Vader R7, Nute G12, Thrawn R6, Wat Tambor G12, Traya G12 <tt>[18]</tt></td><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-6" style="background-color: #ffee00;">Vader R7, EP R7, Thrawn R6, Wat Tambor G12, Piett R7 <tt>[6]</tt></td><td class="not-viable" data-order="-9" style="background-color: #ffe500;">Aurra R4, Greef G10, Bossk R5, Jango R7, Boba R8 <tt>[9]</tt></td></tr><tr><td data-filter="155754252" data-order="Megared"><a href="?filter=155754252">Megared</a></td><td data-order="0">0<span class="not-viable">/5</span></td><td class="not-viable" data-order="-29" style="background-color: #ffac00;">&#11088;Veers R3, Piett R5, Gideon G8, Starck G12, Dark Trooper 5* G7 <tt>[29]</tt></td><td class="not-viable" data-order="-41" style="background-color: #ff8a00;">&#11088;Shaak Ti R4, Fives G9, Rex G8, Echo (501st) G8, ARC Trooper G7 <tt>[41]</tt></td><td class="not-viable" data-order="-29" style="background-color: #ffac00;">&#11088;Veers R3, Piett R5, Gideon G8, Starck G12, Dark Trooper 5* G7 <tt>[29]</tt></td><td class="not-viable" data-order="-32" style="background-color: #ffa400;">&#11088;Vader R7, Nute G10, Thrawn R6, Wat Tambor 4* G5, Traya G7 <tt>[32]</tt></td><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-13" style="background-color: #ffda00;">Vader R7, EP R7, Thrawn R6, Wat Tambor 4* G5, Piett R5 <tt>[13]</tt></td><td class="not-viable" data-order="-34" style="background-color: #ff9e00;">Aurra 5* G8, Greef G8, Bossk G12, Jango G12, Boba R3 <tt>[34]</tt></td></tr><tr><td data-filter="144245956" data-order="Dark Shawi"><a href="?filter=144245956">Dark Shawi</a></td><td data-order="0">0<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tfoot><th>Counts</th><th>9<span class="not-viable">/67</span></th><th /><th>6<span class="not-viable">/16</span></th><th>0<span class="not-viable">/16</span></th><th>0<span class="not-viable">/12</span></th><th>0<span class="not-viable">/1</span></th><th>3<span class="not-viable">/1</span></th><th>0<span class="not-viable">/13</span></th><th>0<span class="not-viable">/8</span></th></tfoot></table><h3 id="p3">P3</h3>Prefer these teams for phase 3 (marked with a &#11088; in the table).
+
+<p>
+The door/topple triggers once per phase -- the best scores require the use of the door.  Plan accordingly.
+
+<ul>
+<li>SLKR, Daka, Zombie, Thrawn, Hux - 10-12%
+<li>SLKR, Daka, Zombie, Hyoda, Armorer - 11-13%
+<li>SLKR, FOST, Red, Thrawn, Hux - 8-10%
+<li>Veers, Piett, Gideon, Range, Dark (sub Starck for one of last three if needed) - 4-7%
+</ul><p><b>Estimated Score: 9</b><br/>Youngling: probably not going to make it<pre id="p3-farm" style="display: none !important;">j13hall13 https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=662956843#p3
+gear levels: 6 -- SL Kylo R7, Hux R5, FOST R5, Sith Trooper R5, Thrawn G12
+
+KingKrille https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=295729596#p3
+gear levels: 8 -- Shaak Ti R3, Fives R3, Rex R5, Echo (501st) R3, ARC Trooper R3
+
+Willey https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=136186513#p3
+gear levels: 9 -- Vader R7, EP R7, Thrawn R6, Wat Tambor 5* G9, Malak R6
+
+Naga Sadów https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=936392725#p3
+gear levels: 18 -- Veers R2, Piett R5, Gideon G12, Starck G12, Dark Trooper R2
+
+Gundam Viver https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=278185814#p3
+gear levels: 19 -- Veers R2, Piett R2, Gideon R2, Range Trooper G12, Dark Trooper R1
+
+SirSchuSchu https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=863647631#p3
+gear levels: 20 -- Veers G12, Piett R3, Gideon G11, Starck R2, Dark Trooper R3
+
+MINI Techno Union https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=648966762#p3
+gear levels: 22 -- Veers R3, Piett R8, Gideon G9, Starck R3, Dark Trooper G9
+
+Peepeepoopooman https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=827513585#p3
+gear levels: 26 -- Veers G12, Piett R5, Gideon G11, Starck G11, Dark Trooper G12
+
+Zar Anduli https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=889632856#p3
+gear levels: 26 -- Veers G12, Piett R8, Gideon G12, Range Trooper G12, Starck G10
+
+blactastic https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=281334117#p3
+gear levels: 27 -- Veers G12, Piett R8, Gideon G11, Starck G11, Dark Trooper G11
+
+Stahzo https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=647615227#p3
+gear levels: 29 -- Veers G11, Piett R7, Gideon G12, Starck G11, Dark Trooper 5* G9
+
+Megared https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=155754252#p3
+gear levels: 29 -- Veers R3, Piett R5, Gideon G8, Starck G12, Dark Trooper 5* G7
+
+Danja https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=583496927#p3
+gear levels: 30 -- Shaak Ti G12, Fives G12, Rex G12, Echo (501st) G12, ARC Trooper G12
+
+wookieguy69 https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=912381174#p3
+gear levels: 34 -- Veers G12, Piett R3, Gideon G9, Starck G10, Dark Trooper G9
+
+Mol Eliza https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=669656989#p3
+gear levels: 35 -- Aurra 5* G8, Greef G5, Bossk 6* G6, Jango R6, Boba R7
+
+MrPickles https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=237175899#p3
+gear levels: 35 -- Shaak Ti G9, Fives G10, Rex G12, Echo (501st) G12, ARC Trooper G12
+
+Gloom Walker https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=516227655#p3
+gear levels: 46 -- Veers G12, Piett G10, Gideon G8, Starck G5, Dark Trooper 6* G9
+
+Jose Longo https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=633696187#p3
+gear levels: 47 -- Veers G7, Piett G12, Gideon G8, Starck G9, Dark Trooper 6* G7
+
+Schmidty2318 https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=419954121#p3
+gear levels: 48 -- Veers G12, Piett G8, Gideon G8, Starck G7, Dark Trooper 5* G7
+
+Untamed Sloth https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=741217131#p3
+gear levels: 48 -- Veers G9, Piett G8, Gideon G9, Range Trooper G8, Starck G8
+
+</pre><pre id="p3-attack-player" style="display: none !important;">https://gorgatron1.github.io/brg/guild/holocron/rancor.html#p3
+
+Bski
+SLKR+FO 9%: SL Kylo R7, Hux R7, FOST R5, Sith Trooper R7, Thrawn R6
+
+</pre><pre id="p3-attack-team" style="display: none !important;">https://gorgatron1.github.io/brg/guild/holocron/rancor.html#p3
+
+SLKR+FO 9%: SL Kylo, Hux FOST Sith Trooper, Thrawn
+    Bski 
+
+</pre><pre id="p3-attack-csv" style="display: none !important;">phase,name,allycode,team-name,team,percent,gp
+p3,Bski,938232767,SLKR+FO 9%,SL Kylo R7 Hux R7 FOST R5 Sith Trooper R7 Thrawn R6,9,165287
+</pre><a href="#" onclick="CopyToClipboard('p3-farm'); return false;">Copy Farming Info</a> | <a href="#" onclick="CopyToClipboard('p3-attack-player'); return false;">Copy Attack Info (by player)</a> | <a href="#" onclick="CopyToClipboard('p3-attack-team'); return false;">Copy Attack Info (by team)</a> | <a href="#" onclick="CopyToClipboard('p3-attack-csv'); return false;">Copy Attack Info (CSV)</a><script>$(document).ready(function () {
+    sortType = $.fn.dataTable.absoluteOrderNumber({ value: "", position: "bottom"});
+    $('#schedule-p3').DataTable({
+        "paging": false,
+        "info": false,
+        "fixedHeader": true,
+        "columnDefs": [
+            {
+                targets: 0,
+                type: "html",
+            },
+            {
+                targets: 1,
+                type: "num",
+            },
+            {
+                targets: "_all",
+                type: sortType,
+            },
+        ],
+    });
+});</script><table id="schedule-p3" style="font-size: 75%;"><thead><th>Player</th><th>Counts</th><th>Farming Suggestion</th><th>SLKR+NS 11%&#11088;</th><th>SLKR+FO 9%&#11088;</th><th>Imperial Troopers 5%&#11088;</th><th>Vader+Nute 12%</th><th>Vader+Wat 8%</th><th>Shaak 6%</th><th>BH 2%</th></thead><thead><th>Links</th><th /><th /><th><a href="../../alliance/crancor/SLKRNS23.html">info ...</a></th><th><a href="../../alliance/crancor/SLKR23.html">info ...</a></th><th><a href="https://www.youtube.com/watch?v=KEFUkww8oxo">info ...</a></th><th><a href="https://www.youtube.com/watch?v=LHYzr39r7EE">info ...</a></th><th /><th><a href="../../alliance/crancor/SHAAK23.html">info ...</a></th><th /></thead><thead><th>Counts</th><th>9<span class="not-viable">/67</span></th><th /><th>0<span class="not-viable">/1</span></th><th>3<span class="not-viable">/1</span></th><th>0<span class="not-viable">/16</span></th><th>0<span class="not-viable">/12</span></th><th>0<span class="not-viable">/13</span></th><th>6<span class="not-viable">/16</span></th><th>0<span class="not-viable">/8</span></th></thead><tr><td data-filter="684712353" data-order="Millz20"><a href="?filter=684712353">Millz20</a></td><td data-order="1">1<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="138495" style="">Shaak Ti R7, Fives R5, Rex R5, Echo (501st) R5, ARC Trooper R5</td><td data-order="" /></tr><tr><td data-filter="516227655" data-order="Gloom Walker"><a href="?filter=516227655">Gloom Walker</a></td><td data-order="0">0<span class="not-viable">/4</span></td><td class="not-viable" data-order="-46" style="background-color: #ff7c00;">&#11088;Veers G12, Piett G10, Gideon G8, Starck G5, Dark Trooper 6* G9 <tt>[46]</tt></td><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-46" style="background-color: #ff7c00;">&#11088;Veers G12, Piett G10, Gideon G8, Starck G5, Dark Trooper 6* G9 <tt>[46]</tt></td><td class="not-viable" data-order="-30" style="background-color: #ffaa00;">Vader R7, Nute G5, Thrawn R6, Wat Tambor 4* G8, Traya G11 <tt>[30]</tt></td><td class="not-viable" data-order="-10" style="background-color: #ffe200;">Vader R7, EP R5, Thrawn R6, Wat Tambor 4* G8, Malak R7 <tt>[10]</tt></td><td class="not-viable" data-order="-8" style="background-color: #ffe800;">Shaak Ti R3, Fives R5, Rex R5, Echo (501st) R5, ARC Trooper G12 <tt>[8]</tt></td><td data-order="" /></tr><tr><td data-filter="647474141" data-order="The JLS"><a href="?filter=647474141">The JLS</a></td><td data-order="0">0<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="332392187" data-order="Millz"><a href="?filter=332392187">Millz</a></td><td data-order="1">1<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="160146" style="">SL Kylo R8, Hux R5, FOST R5, Sith Trooper R5, Thrawn R6</td><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="889632856" data-order="Zar Anduli"><a href="?filter=889632856">Zar Anduli</a></td><td data-order="0">0<span class="not-viable">/2</span></td><td class="not-viable" data-order="-26" style="background-color: #ffb500;">&#11088;Veers G12, Piett R8, Gideon G12, Range Trooper G12, Starck G10 <tt>[26]</tt></td><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-26" style="background-color: #ffb500;">&#11088;Veers G12, Piett R8, Gideon G12, Range Trooper G12, Starck G10 <tt>[26]</tt></td><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-26" style="background-color: #ffb500;">Shaak Ti R3, Fives G12, Rex G12, Echo (501st) G12, ARC Trooper G12 <tt>[26]</tt></td><td data-order="" /></tr><tr><td data-filter="146343631" data-order="Trav"><a href="?filter=146343631">Trav</a></td><td data-order="1">1<span class="not-viable">/2</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-28" style="background-color: #ffaf00;">Vader R7, Nute G11, Thrawn G12, Wat Tambor 4* G9, Traya G12 <tt>[28]</tt></td><td class="not-viable" data-order="-24" style="background-color: #ffbb00;">Vader R7, EP R5, Thrawn G12, Wat Tambor 4* G9, Starck G9 <tt>[24]</tt></td><td data-order="150364" style="">Shaak Ti R7, Fives R7, Rex R7, Echo (501st) R6, ARC Trooper R7</td><td data-order="" /></tr><tr><td data-filter="633696187" data-order="Jose Longo"><a href="?filter=633696187">Jose Longo</a></td><td data-order="0">0<span class="not-viable">/4</span></td><td class="not-viable" data-order="-47" style="background-color: #ff7900;">&#11088;Veers G7, Piett G12, Gideon G8, Starck G9, Dark Trooper 6* G7 <tt>[47]</tt></td><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-47" style="background-color: #ff7900;">&#11088;Veers G7, Piett G12, Gideon G8, Starck G9, Dark Trooper 6* G7 <tt>[47]</tt></td><td class="not-viable" data-order="-42" style="background-color: #ff8800;">Vader R5, Nute G9, Thrawn G9, Wat Tambor 4* G5, Traya G7 <tt>[42]</tt></td><td class="not-viable" data-order="-34" style="background-color: #ff9e00;">Vader R5, EP G12, Thrawn G9, Wat Tambor 4* G5, Piett G12 <tt>[34]</tt></td><td class="not-viable" data-order="-16" style="background-color: #ffd100;">Shaak Ti R5, Fives R5, Rex R7, Echo (501st) G12, ARC Trooper G8 <tt>[16]</tt></td><td data-order="" /></tr><tr><td data-filter="936392725" data-order="Naga Sadów"><a href="?filter=936392725">Naga Sadów</a></td><td data-order="0">0<span class="not-viable">/3</span></td><td class="not-viable" data-order="-18" style="background-color: #ffcc00;">&#11088;Veers R2, Piett R5, Gideon G12, Starck G12, Dark Trooper R2 <tt>[18]</tt></td><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-18" style="background-color: #ffcc00;">&#11088;Veers R2, Piett R5, Gideon G12, Starck G12, Dark Trooper R2 <tt>[18]</tt></td><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-30" style="background-color: #ffaa00;">Shaak Ti G12, Fives G12, Rex G12, Echo (501st) G12, ARC Trooper G12 <tt>[30]</tt></td><td class="not-viable" data-order="-28" style="background-color: #ffaf00;">Aurra G11, Greef G12, Bossk G12, Jango G12, Boba R2 <tt>[28]</tt></td></tr><tr><td data-filter="295729596" data-order="KingKrille"><a href="?filter=295729596">KingKrille</a></td><td data-order="0">0<span class="not-viable">/1</span></td><td class="not-viable" data-order="-8" style="background-color: #ffe800;">Shaak Ti R3, Fives R3, Rex R5, Echo (501st) R3, ARC Trooper R3 <tt>[8]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-8" style="background-color: #ffe800;">Shaak Ti R3, Fives R3, Rex R5, Echo (501st) R3, ARC Trooper R3 <tt>[8]</tt></td><td data-order="" /></tr><tr><td data-filter="741217131" data-order="Untamed Sloth"><a href="?filter=741217131">Untamed Sloth</a></td><td data-order="0">0<span class="not-viable">/2</span></td><td class="not-viable" data-order="-48" style="background-color: #ff7700;">&#11088;Veers G9, Piett G8, Gideon G9, Range Trooper G8, Starck G8 <tt>[48]</tt></td><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-48" style="background-color: #ff7700;">&#11088;Veers G9, Piett G8, Gideon G9, Range Trooper G8, Starck G8 <tt>[48]</tt></td><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-30" style="background-color: #ffaa00;">Shaak Ti G12, Fives G12, Rex G12, Echo (501st) G12, ARC Trooper G12 <tt>[30]</tt></td><td data-order="" /></tr><tr><td data-filter="648966762" data-order="MINI Techno Union"><a href="?filter=648966762">MINI Techno Union</a></td><td data-order="0">0<span class="not-viable">/3</span></td><td class="not-viable" data-order="-22" style="background-color: #ffc000;">&#11088;Veers R3, Piett R8, Gideon G9, Starck R3, Dark Trooper G9 <tt>[22]</tt></td><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-22" style="background-color: #ffc000;">&#11088;Veers R3, Piett R8, Gideon G9, Starck R3, Dark Trooper G9 <tt>[22]</tt></td><td data-order="" /><td class="not-viable" data-order="-9" style="background-color: #ffe500;">Vader R7, EP R7, Thrawn R6, Wat Tambor 4* G9, Piett R8 <tt>[9]</tt></td><td class="not-viable" data-order="-14" style="background-color: #ffd700;">Shaak Ti G12, Fives R3, Rex R3, Echo (501st) R3, ARC Trooper R3 <tt>[14]</tt></td><td data-order="" /></tr><tr><td data-filter="583496927" data-order="Danja"><a href="?filter=583496927">Danja</a></td><td data-order="0">0<span class="not-viable">/3</span></td><td class="not-viable" data-order="-30" style="background-color: #ffaa00;">Shaak Ti G12, Fives G12, Rex G12, Echo (501st) G12, ARC Trooper G12 <tt>[30]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-42" style="background-color: #ff8800;">Vader R3, Nute G6, Thrawn G8, Wat Tambor 4* G7, Traya G11 <tt>[42]</tt></td><td class="not-viable" data-order="-40" style="background-color: #ff8d00;">Vader R3, EP G12, Thrawn G8, Wat Tambor 4* G7, Starck G7 <tt>[40]</tt></td><td class="not-viable" data-order="-30" style="background-color: #ffaa00;">Shaak Ti G12, Fives G12, Rex G12, Echo (501st) G12, ARC Trooper G12 <tt>[30]</tt></td><td data-order="" /></tr><tr><td data-filter="482599677" data-order="Jannah Longo"><a href="?filter=482599677">Jannah Longo</a></td><td data-order="0">0<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="152667675" data-order="Bakufett"><a href="?filter=152667675">Bakufett</a></td><td data-order="0">0<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="193362682" data-order="Mulleg"><a href="?filter=193362682">Mulleg</a></td><td data-order="0">0<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="759526265" data-order="MatejC"><a href="?filter=759526265">MatejC</a></td><td data-order="0">0<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="788233588" data-order="Tantema Garnik"><a href="?filter=788233588">Tantema Garnik</a></td><td data-order="0">0<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="827513585" data-order="Peepeepoopooman"><a href="?filter=827513585">Peepeepoopooman</a></td><td data-order="0">0<span class="not-viable">/1</span></td><td class="not-viable" data-order="-26" style="background-color: #ffb500;">&#11088;Veers G12, Piett R5, Gideon G11, Starck G11, Dark Trooper G12 <tt>[26]</tt></td><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-26" style="background-color: #ffb500;">&#11088;Veers G12, Piett R5, Gideon G11, Starck G11, Dark Trooper G12 <tt>[26]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="938232767" data-order="Bski"><a href="?filter=938232767">Bski</a></td><td data-order="2">2<span class="not-viable">/2</span></td><td data-order="-10000" /><td data-order="" /><td data-order="165287" style="background-color: #ceebfd">SL Kylo R7, Hux R7, FOST R5, Sith Trooper R7, Thrawn R6</td><td class="not-viable" data-order="-18" style="background-color: #ffcc00;">&#11088;Veers R4, Piett R8, Gideon 5* G9, Range Trooper G12, Starck R3 <tt>[18]</tt></td><td data-order="" /><td data-order="" /><td data-order="142614" style="">Shaak Ti R7, Fives R7, Rex R5, Echo (501st) R5, ARC Trooper R5</td><td class="not-viable" data-order="-14" style="background-color: #ffd700;">Aurra G10, Greef G12, Bossk R5, Jango R6, Boba R8 <tt>[14]</tt></td></tr><tr><td data-filter="441557869" data-order="Gerehe Zosma"><a href="?filter=441557869">Gerehe Zosma</a></td><td data-order="0">0<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="494765873" data-order="Sneaky Soy Boy 123"><a href="?filter=494765873">Sneaky Soy Boy 123</a></td><td data-order="0">0<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="237175899" data-order="MrPickles"><a href="?filter=237175899">MrPickles</a></td><td data-order="0">0<span class="not-viable">/1</span></td><td class="not-viable" data-order="-35" style="background-color: #ff9b00;">Shaak Ti G9, Fives G10, Rex G12, Echo (501st) G12, ARC Trooper G12 <tt>[35]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-35" style="background-color: #ff9b00;">Shaak Ti G9, Fives G10, Rex G12, Echo (501st) G12, ARC Trooper G12 <tt>[35]</tt></td><td data-order="" /></tr><tr><td data-filter="819259195" data-order="YeeterSkeeter"><a href="?filter=819259195">YeeterSkeeter</a></td><td data-order="1">1<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="152402" style="">SL Kylo R7, Hux R6, FOST R5, Sith Trooper R5, Thrawn R5</td><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="863647631" data-order="SirSchuSchu"><a href="?filter=863647631">SirSchuSchu</a></td><td data-order="0">0<span class="not-viable">/4</span></td><td class="not-viable" data-order="-20" style="background-color: #ffc600;">&#11088;Veers G12, Piett R3, Gideon G11, Starck R2, Dark Trooper R3 <tt>[20]</tt></td><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-20" style="background-color: #ffc600;">&#11088;Veers G12, Piett R3, Gideon G11, Starck R2, Dark Trooper R3 <tt>[20]</tt></td><td class="not-viable" data-order="-21" style="background-color: #ffc300;">Vader R7, Nute G12, Thrawn G12, Wat Tambor 5* G11, Traya R3 <tt>[21]</tt></td><td class="not-viable" data-order="-15" style="background-color: #ffd400;">Vader R7, EP R5, Thrawn G12, Wat Tambor 5* G11, Piett R3 <tt>[15]</tt></td><td class="not-viable" data-order="-8" style="background-color: #ffe800;">Shaak Ti R7, Fives R3, Rex R3, Echo (501st) R3, ARC Trooper R3 <tt>[8]</tt></td><td data-order="" /></tr><tr><td data-filter="993486218" data-order="Bobmaloogax5"><a href="?filter=993486218">Bobmaloogax5</a></td><td data-order="1">1<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="134490" style="">Shaak Ti R5, Fives R5, Rex R5, Echo (501st) R5, ARC Trooper R5</td><td data-order="" /></tr><tr><td data-filter="662956843" data-order="j13hall13"><a href="?filter=662956843">j13hall13</a></td><td data-order="0">0<span class="not-viable">/7</span></td><td class="not-viable" data-order="-6" style="background-color: #ffee00;">&#11088;SL Kylo R7, Hux R5, FOST R5, Sith Trooper R5, Thrawn G12 <tt>[6]</tt></td><td class="not-viable" data-order="-40" style="background-color: #ff8d00;">&#11088;SL Kylo R7, Zombie G1, Daka G1, Hux R5, Thrawn G12 <tt>[40]</tt></td><td class="not-viable" data-order="-6" style="background-color: #ffee00;">&#11088;SL Kylo R7, Hux R5, FOST R5, Sith Trooper R5, Thrawn G12 <tt>[6]</tt></td><td class="not-viable" data-order="-32" style="background-color: #ffa400;">&#11088;Veers G12, Piett 6* G11, Starck G12, Range Trooper G12, Dark Trooper G11 <tt>[32]</tt></td><td class="not-viable" data-order="-29" style="background-color: #ffac00;">Vader R7, Nute G11, Thrawn G12, Wat Tambor 5* G8, Traya G12 <tt>[29]</tt></td><td class="not-viable" data-order="-16" style="background-color: #ffd100;">Vader R7, EP R7, Thrawn G12, Wat Tambor 5* G8, Malak R7 <tt>[16]</tt></td><td class="not-viable" data-order="-24" style="background-color: #ffbb00;">Shaak Ti G12, Fives R5, Rex G12, Echo (501st) G12, ARC Trooper G12 <tt>[24]</tt></td><td class="not-viable" data-order="-57" style="background-color: #ff5d00;">Aurra G2, Greef G1, Bossk G12, Jango G8, The Mandalorian G10 <tt>[57]</tt></td></tr><tr><td data-filter="281334117" data-order="blactastic"><a href="?filter=281334117">blactastic</a></td><td data-order="0">0<span class="not-viable">/2</span></td><td class="not-viable" data-order="-27" style="background-color: #ffb200;">&#11088;Veers G12, Piett R8, Gideon G11, Starck G11, Dark Trooper G11 <tt>[27]</tt></td><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-27" style="background-color: #ffb200;">&#11088;Veers G12, Piett R8, Gideon G11, Starck G11, Dark Trooper G11 <tt>[27]</tt></td><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-34" style="background-color: #ff9e00;">Shaak Ti G12, Fives G11, Rex G11, Echo (501st) G11, ARC Trooper G11 <tt>[34]</tt></td><td data-order="" /></tr><tr><td data-filter="647615227" data-order="Stahzo"><a href="?filter=647615227">Stahzo</a></td><td data-order="0">0<span class="not-viable">/3</span></td><td class="not-viable" data-order="-29" style="background-color: #ffac00;">&#11088;Veers G11, Piett R7, Gideon G12, Starck G11, Dark Trooper 5* G9 <tt>[29]</tt></td><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-29" style="background-color: #ffac00;">&#11088;Veers G11, Piett R7, Gideon G12, Starck G11, Dark Trooper 5* G9 <tt>[29]</tt></td><td class="not-viable" data-order="-19" style="background-color: #ffc900;">Vader R7, Nute G12, Thrawn R5, Wat Tambor 5* G11, Traya G12 <tt>[19]</tt></td><td class="not-viable" data-order="-7" style="background-color: #ffeb00;">Vader R7, EP R7, Thrawn R5, Wat Tambor 5* G11, Piett R7 <tt>[7]</tt></td><td data-order="" /><td data-order="" /></tr><tr><td data-filter="136186513" data-order="Willey"><a href="?filter=136186513">Willey</a></td><td data-order="0">0<span class="not-viable">/2</span></td><td class="not-viable" data-order="-9" style="background-color: #ffe500;">Vader R7, EP R7, Thrawn R6, Wat Tambor 5* G9, Malak R6 <tt>[9]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-21" style="background-color: #ffc300;">Vader R7, Nute G12, Thrawn R6, Wat Tambor 5* G9, Traya G12 <tt>[21]</tt></td><td class="not-viable" data-order="-9" style="background-color: #ffe500;">Vader R7, EP R7, Thrawn R6, Wat Tambor 5* G9, Malak R6 <tt>[9]</tt></td><td data-order="" /><td data-order="" /></tr><tr><td data-filter="661932482" data-order="Valektra Jetberg"><a href="?filter=661932482">Valektra Jetberg</a></td><td data-order="0">0<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="912381174" data-order="wookieguy69"><a href="?filter=912381174">wookieguy69</a></td><td data-order="0">0<span class="not-viable">/4</span></td><td class="not-viable" data-order="-34" style="background-color: #ff9e00;">&#11088;Veers G12, Piett R3, Gideon G9, Starck G10, Dark Trooper G9 <tt>[34]</tt></td><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-34" style="background-color: #ff9e00;">&#11088;Veers G12, Piett R3, Gideon G9, Starck G10, Dark Trooper G9 <tt>[34]</tt></td><td class="not-viable" data-order="-27" style="background-color: #ffb200;">Vader R7, Nute G11, Thrawn G12, Wat Tambor 5* G10, Traya G12 <tt>[27]</tt></td><td class="not-viable" data-order="-22" style="background-color: #ffc000;">Vader R7, EP G12, Thrawn G12, Wat Tambor 5* G10, Piett R3 <tt>[22]</tt></td><td class="not-viable" data-order="-25" style="background-color: #ffb800;">Shaak Ti R3, Fives R1, Rex G12, Echo (501st) G12, ARC Trooper G11 <tt>[25]</tt></td><td data-order="" /></tr><tr><td data-filter="552172719" data-order="canth reed"><a href="?filter=552172719">canth reed</a></td><td data-order="0">0<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="218527368" data-order="Sam"><a href="?filter=218527368">Sam</a></td><td data-order="0">0<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="419954121" data-order="Schmidty2318"><a href="?filter=419954121">Schmidty2318</a></td><td data-order="0">0<span class="not-viable">/5</span></td><td class="not-viable" data-order="-48" style="background-color: #ff7700;">&#11088;Veers G12, Piett G8, Gideon G8, Starck G7, Dark Trooper 5* G7 <tt>[48]</tt></td><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-48" style="background-color: #ff7700;">&#11088;Veers G12, Piett G8, Gideon G8, Starck G7, Dark Trooper 5* G7 <tt>[48]</tt></td><td class="not-viable" data-order="-27" style="background-color: #ffb200;">Vader R7, Nute G10, Thrawn R6, Wat Tambor 4* G9, Traya G8 <tt>[27]</tt></td><td class="not-viable" data-order="-11" style="background-color: #ffdf00;">Vader R7, EP R7, Thrawn R6, Wat Tambor 4* G9, Malak R3 <tt>[11]</tt></td><td class="not-viable" data-order="-31" style="background-color: #ffa700;">Shaak Ti R2, Fives G12, Rex G12, Echo (501st) G12, ARC Trooper G8 <tt>[31]</tt></td><td class="not-viable" data-order="-23" style="background-color: #ffbd00;">Aurra R3, Greef G12, Bossk R3, Jango G11, The Mandalorian G12 <tt>[23]</tt></td></tr><tr><td data-filter="278185814" data-order="Gundam Viver"><a href="?filter=278185814">Gundam Viver</a></td><td data-order="0">0<span class="not-viable">/3</span></td><td class="not-viable" data-order="-19" style="background-color: #ffc900;">&#11088;Veers R2, Piett R2, Gideon R2, Range Trooper G12, Dark Trooper R1 <tt>[19]</tt></td><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-19" style="background-color: #ffc900;">&#11088;Veers R2, Piett R2, Gideon R2, Range Trooper G12, Dark Trooper R1 <tt>[19]</tt></td><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-36" style="background-color: #ff9900;">Shaak Ti G9, Fives G11, Rex G12, Echo (501st) G12, ARC Trooper G10 <tt>[36]</tt></td><td class="not-viable" data-order="-30" style="background-color: #ffaa00;">Aurra G12, Greef G12, Bossk R2, Jango 5* G9, The Mandalorian G12 <tt>[30]</tt></td></tr><tr><td data-filter="436272696" data-order="TRICKSHOT"><a href="?filter=436272696">TRICKSHOT</a></td><td data-order="0">0<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="217482916" data-order="FunkyWizard"><a href="?filter=217482916">FunkyWizard</a></td><td data-order="0">0<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="966819857" data-order="DereckRM13"><a href="?filter=966819857">DereckRM13</a></td><td data-order="0">0<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="214666834" data-order="Brizz"><a href="?filter=214666834">Brizz</a></td><td data-order="0">0<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="715466673" data-order="BigCon"><a href="?filter=715466673">BigCon</a></td><td data-order="0">0<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="298712984" data-order="BbqBeru"><a href="?filter=298712984">BbqBeru</a></td><td data-order="0">0<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="964856849" data-order="Bountyy"><a href="?filter=964856849">Bountyy</a></td><td data-order="0">0<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="446373369" data-order="Kenn Skirata"><a href="?filter=446373369">Kenn Skirata</a></td><td data-order="0">0<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="669656989" data-order="Mol Eliza"><a href="?filter=669656989">Mol Eliza</a></td><td data-order="0">0<span class="not-viable">/1</span></td><td class="not-viable" data-order="-35" style="background-color: #ff9b00;">Aurra 5* G8, Greef G5, Bossk 6* G6, Jango R6, Boba R7 <tt>[35]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-35" style="background-color: #ff9b00;">Aurra 5* G8, Greef G5, Bossk 6* G6, Jango R6, Boba R7 <tt>[35]</tt></td></tr><tr><td data-filter="812752189" data-order="lucathepuka"><a href="?filter=812752189">lucathepuka</a></td><td data-order="0">0<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="184464142" data-order="Abra"><a href="?filter=184464142">Abra</a></td><td data-order="0">0<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="948356963" data-order="B"><a href="?filter=948356963">B</a></td><td data-order="1">1<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="134778" style="">Shaak Ti R5, Fives R5, Rex R5, Echo (501st) R5, ARC Trooper R5</td><td data-order="" /></tr><tr><td data-filter="387869794" data-order="DarthTalon"><a href="?filter=387869794">DarthTalon</a></td><td data-order="1">1<span class="not-viable">/3</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-18" style="background-color: #ffcc00;">Vader R7, Nute G12, Thrawn R6, Wat Tambor G12, Traya G12 <tt>[18]</tt></td><td class="not-viable" data-order="-6" style="background-color: #ffee00;">Vader R7, EP R7, Thrawn R6, Wat Tambor G12, Piett R7 <tt>[6]</tt></td><td data-order="151513" style="">Shaak Ti R7, Fives R7, Rex R7, Echo (501st) R7, ARC Trooper R7</td><td class="not-viable" data-order="-9" style="background-color: #ffe500;">Aurra R4, Greef G10, Bossk R5, Jango R7, Boba R8 <tt>[9]</tt></td></tr><tr><td data-filter="155754252" data-order="Megared"><a href="?filter=155754252">Megared</a></td><td data-order="0">0<span class="not-viable">/5</span></td><td class="not-viable" data-order="-29" style="background-color: #ffac00;">&#11088;Veers R3, Piett R5, Gideon G8, Starck G12, Dark Trooper 5* G7 <tt>[29]</tt></td><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-29" style="background-color: #ffac00;">&#11088;Veers R3, Piett R5, Gideon G8, Starck G12, Dark Trooper 5* G7 <tt>[29]</tt></td><td class="not-viable" data-order="-32" style="background-color: #ffa400;">Vader R7, Nute G10, Thrawn R6, Wat Tambor 4* G5, Traya G7 <tt>[32]</tt></td><td class="not-viable" data-order="-13" style="background-color: #ffda00;">Vader R7, EP R7, Thrawn R6, Wat Tambor 4* G5, Piett R5 <tt>[13]</tt></td><td class="not-viable" data-order="-41" style="background-color: #ff8a00;">Shaak Ti R4, Fives G9, Rex G8, Echo (501st) G8, ARC Trooper G7 <tt>[41]</tt></td><td class="not-viable" data-order="-34" style="background-color: #ff9e00;">Aurra 5* G8, Greef G8, Bossk G12, Jango G12, Boba R3 <tt>[34]</tt></td></tr><tr><td data-filter="144245956" data-order="Dark Shawi"><a href="?filter=144245956">Dark Shawi</a></td><td data-order="0">0<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tfoot><th>Counts</th><th>9<span class="not-viable">/67</span></th><th /><th>0<span class="not-viable">/1</span></th><th>3<span class="not-viable">/1</span></th><th>0<span class="not-viable">/16</span></th><th>0<span class="not-viable">/12</span></th><th>0<span class="not-viable">/13</span></th><th>6<span class="not-viable">/16</span></th><th>0<span class="not-viable">/8</span></th></tfoot></table><h3 id="p4">P4</h3>Prefer these teams for phase 4 (marked with a &#11088; in the table).
+
+<ul>
+<li>Rey, Jawa Scav, Armorer, Jawas (can do 4 Jawas) - 8%
+<li>JKR, Rey, 3x Jedi or Resistance Bros - 5-10% depending on comp, relics, mods
+<li>JKL, JML, 3x Jedi - 4-8% depending on comp, relics, mods
+<li>CLS, Han, Chewie, Chewpio, R2 - 1-2%
+<li>GG, B1, B2, Deka, Magna (sub any other droid except GG) - 1-2%
+<li>JMK, CAT, GK, Ahsoka, GAS - 8%
+<li>Dooku, Jango, (any seps you feel like, none necessary) - 1%
+</ul>
+
+This is the last phase -- hit it with everything you have!<p><b>Estimated Score: 31</b><br/>Youngling: probably not going to make it<pre id="p4-farm" style="display: none !important;">SirSchuSchu https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=863647631#p4
+gear levels: 4 -- CLS R5, Chewbacca R5, Han R5, Chewpio R3, C-3PO R3
+
+Millz20 https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=684712353#p4
+gear levels: 6 -- GG R7, B1 G12, Droideka R5, B2 R5, MagnaGuard R5
+
+Schmidty2318 https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=419954121#p4
+gear levels: 8 -- CLS R5, Chewbacca R3, Han R3, Chewpio R3, C-3PO R3
+
+B https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=948356963#p4
+gear levels: 10 -- GG R3, B1 R3, Droideka R3, B2 R3, MagnaGuard R3
+
+KingKrille https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=295729596#p4
+gear levels: 11 -- GG R3, B1 R2, Droideka R2, B2 R2, HK-47 R5
+
+Megared https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=155754252#p4
+gear levels: 12 -- GG G12, B1 R5, Droideka G12, B2 R6, MagnaGuard R5
+
+Valektra Jetberg https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=661932482#p4
+gear levels: 12 -- JKR G12, Rey R8, RH Finn R5, RH Poe R5, BS G12
+
+Trav https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=146343631#p4
+gear levels: 13 -- CLS R6, Chewbacca R4, Han G12, Chewpio G12, C-3PO R5
+
+Jose Longo https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=633696187#p4
+gear levels: 17 -- CLS R6, Chewbacca R5, Han G12, Chewpio G8, C-3PO R4
+
+Untamed Sloth https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=741217131#p4
+gear levels: 18 -- CLS R3, Chewbacca R1, Han R1, Chewpio R1, C-3PO R1
+
+Naga Sadów https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=936392725#p4
+gear levels: 19 -- CLS R3, Chewbacca R2, Han R3, Chewpio G12, C-3PO G12
+
+Gloom Walker https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=516227655#p4
+gear levels: 20 -- GG G12, B1 R4, Droideka G12, B2 G12, HK-47 R4
+
+Stahzo https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=647615227#p4
+gear levels: 24 -- GG G12, B1 G12, Droideka G12, B2 G12, MagnaGuard R5
+
+j13hall13 https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=662956843#p4
+gear levels: 24 -- GG R5, B1 G12, Droideka G12, B2 G12, Chewpio G12
+
+Zar Anduli https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=889632856#p4
+gear levels: 25 -- CLS R5, Chewbacca G12, Han G12, Chewpio G11, C-3PO G12
+
+Mol Eliza https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=669656989#p4
+gear levels: 25 -- Dooku G11, Jango R6, Geo Soldier G12, Poggle G12, Sun Fac G12
+
+TRICKSHOT https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=436272696#p4
+gear levels: 28 -- Dooku G8, Jango G12, Geo Soldier R5, Poggle G12, GBA G12
+
+blactastic https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=281334117#p4
+gear levels: 28 -- CLS R3, Chewbacca G11, Han G12, Chewpio G11, C-3PO G12
+
+Bobmaloogax5 https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=993486218#p4
+gear levels: 30 -- CLS G12, Chewbacca G11, Han G11, Chewpio 4* G10, C-3PO R3
+
+Peepeepoopooman https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=827513585#p4
+gear levels: 30 -- Dooku G12, Jango G7, AV R5, GBA G11, Geo Spy G12
+
+Abra https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=184464142#p4
+gear levels: 32 -- Dooku G10, Jango G12, GBA G12, Geo Spy G12, Sun Fac G12
+
+Sneaky Soy Boy 123 https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=494765873#p4
+gear levels: 32 -- Dooku G10, Jango G8, Poggle G12, GBA R3, Geo Spy G12
+
+Dark Shawi https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=144245956#p4
+gear levels: 33 -- Dooku G12, Jango G5, AV G12, GBA R3, Sun Fac G12
+
+Gundam Viver https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=278185814#p4
+gear levels: 35 -- Dooku G10, Jango 5* G9, Poggle G12, GBA G12, Sun Fac G12
+
+The JLS https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=647474141#p4
+gear levels: 37 -- Dooku G9, Jango 6* G8, AV G12, GBA G12, Geo Spy G12
+
+MrPickles https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=237175899#p4
+gear levels: 38 -- GG R4, B1 G7, Droideka G9, B2 G7, HK-47 G12
+
+FunkyWizard https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=217482916#p4
+gear levels: 38 -- GG G11, B1 G8, Droideka G11, B2 G11, MagnaGuard G11
+
+Sam https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=218527368#p4
+gear levels: 39 -- CLS G12, Chewbacca G12, Han G12, Chewpio 3* G7, R2-D2 G8
+
+MatejC https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=759526265#p4
+gear levels: 40 -- CLS G12, Chewbacca G9, Han G10, Chewpio 5* G11, R2-D2 G8
+
+Gerehe Zosma https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=441557869#p4
+gear levels: 40 -- CLS G11, Chewbacca G11, Han G11, Chewpio 4* G9, R2-D2 G8
+
+Kenn Skirata https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=446373369#p4
+gear levels: 41 -- CLS R3, Chewbacca G7, Han G9, Chewpio G8, C-3PO G9
+
+MINI Techno Union https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=648966762#p4
+gear levels: 42 -- GG 6* G9, B1 5* G8, Droideka 6* G7, B2 5* G8, IG-88 R3
+
+BbqBeru https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=298712984#p4
+gear levels: 43 -- Dooku 6* G8, Jango G11, Geo Soldier G10, GBA G9, Geo Spy G9
+
+YeeterSkeeter https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=819259195#p4
+gear levels: 43 -- CLS G10, Chewbacca G7, Han G6, Chewpio 4* G6, C-3PO R5
+
+DereckRM13 https://gorgatron1.github.io/brg/guild/holocron/rancor.html?filter=966819857#p4
+gear levels: 50 -- CLS G9, Chewbacca 5* G9, Han G7, Chewpio 3* G7, R2-D2 G8
+
+</pre><pre id="p4-attack-player" style="display: none !important;">https://gorgatron1.github.io/brg/guild/holocron/rancor.html#p4
+
+Bski
+GG (2%): GG R7, B1 R5, Droideka R5, B2 R5, MagnaGuard R5
+JKR + Rey (7%): JKR R5, Rey R7, RH Finn R5, RH Poe R5, GAS R7
+Seps (1%): Dooku R6, Jango R6, Poggle R7, AV R5, GBA R5
+
+Danja
+Rebels (2%): CLS R5, Chewbacca R6, Han R6, Chewpio R5, R2-D2 R7
+
+DarthTalon
+JKR + Rey (7%): JKR R5, Rey R7, RH Finn R5, RH Poe R5, JKL R7
+Rebels (2%): CLS R6, Chewbacca R6, Han R7, Chewpio R5, R2-D2 R7
+
+Mulleg
+Rebels (2%): CLS R5, Chewbacca R5, Han R5, Chewpio R5, C-3PO R5
+
+wookieguy69
+JKL + JML (6%): JKL R7, JMLS R7, HYoda R5, GAS R8, Old Ben R5
+Rebels (2%): CLS R5, Chewbacca R6, Han R6, Chewpio R5, R2-D2 R7
+
+</pre><pre id="p4-attack-team" style="display: none !important;">https://gorgatron1.github.io/brg/guild/holocron/rancor.html#p4
+
+GG (2%): GG B1 Droideka B2 MagnaGuard
+    Bski 
+
+JKL + JML (6%): JKL JMLS HYoda GAS Old Ben
+    wookieguy69 
+
+JKR + Rey (7%): JKR Rey RH Finn, RH Poe, GAS
+    DarthTalon Bski 
+
+Rebels (2%): CLS Chewbacca Han Chewpio R2-D2
+    DarthTalon wookieguy69 Danja Mulleg 
+
+Seps (1%): Dooku Jango Poggle AV GBA
+    Bski 
+
+</pre><pre id="p4-attack-csv" style="display: none !important;">phase,name,allycode,team-name,team,percent,gp
+p4,Bski,938232767,JKR + Rey (7%),JKR R5 Rey R7 RH Finn R5 RH Poe R5 GAS R7,7,170740
+p4,Bski,938232767,GG (2%),GG R7 B1 R5 Droideka R5 B2 R5 MagnaGuard R5,2,135711
+p4,Bski,938232767,Seps (1%),Dooku R6 Jango R6 Poggle R7 AV R5 GBA R5,1,140849
+p4,DarthTalon,387869794,JKR + Rey (7%),JKR R5 Rey R7 RH Finn R5 RH Poe R5 JKL R7,7,164896
+p4,DarthTalon,387869794,Rebels (2%),CLS R6 Chewbacca R6 Han R7 Chewpio R5 R2-D2 R7,2,150365
+p4,Mulleg,193362682,Rebels (2%),CLS R5 Chewbacca R5 Han R5 Chewpio R5 C-3PO R5,2,140697
+p4,Danja,583496927,Rebels (2%),CLS R5 Chewbacca R6 Han R6 Chewpio R5 R2-D2 R7,2,142354
+p4,wookieguy69,912381174,JKL + JML (6%),JKL R7 JMLS R7 HYoda R5 GAS R8 Old Ben R5,6,169449
+p4,wookieguy69,912381174,Rebels (2%),CLS R5 Chewbacca R6 Han R6 Chewpio R5 R2-D2 R7,2,142969
+</pre><a href="#" onclick="CopyToClipboard('p4-farm'); return false;">Copy Farming Info</a> | <a href="#" onclick="CopyToClipboard('p4-attack-player'); return false;">Copy Attack Info (by player)</a> | <a href="#" onclick="CopyToClipboard('p4-attack-team'); return false;">Copy Attack Info (by team)</a> | <a href="#" onclick="CopyToClipboard('p4-attack-csv'); return false;">Copy Attack Info (CSV)</a><script>$(document).ready(function () {
+    sortType = $.fn.dataTable.absoluteOrderNumber({ value: "", position: "bottom"});
+    $('#schedule-p4').DataTable({
+        "paging": false,
+        "info": false,
+        "fixedHeader": true,
+        "columnDefs": [
+            {
+                targets: 0,
+                type: "html",
+            },
+            {
+                targets: 1,
+                type: "num",
+            },
+            {
+                targets: "_all",
+                type: sortType,
+            },
+        ],
+    });
+});</script><table id="schedule-p4" style="font-size: 75%;"><thead><th>Player</th><th>Counts</th><th>Farming Suggestion</th><th>Rey+Jawa (8%)&#11088;</th><th>JKR + Rey (7%)&#11088;</th><th>JKL + JML (6%)&#11088;</th><th>Rebels (2%)&#11088;</th><th>GG (2%)&#11088;</th><th>Seps (1%)</th></thead><thead><th>Links</th><th /><th /><th /><th /><th /><th><a href="https://www.youtube.com/watch?v=Ru3B6xiPeig">info ...</a></th><th><a href="https://www.youtube.com/watch?v=BuC3_he3BQE">info ...</a></th><th><a href="https://www.youtube.com/watch?v=IjZNkeiy2-8">info ...</a></th></thead><thead><th>Counts</th><th>9<span class="not-viable">/79</span></th><th /><th>0<span class="not-viable">/1</span></th><th>2<span class="not-viable">/1</span></th><th>1<span class="not-viable">/0</span></th><th>4<span class="not-viable">/22</span></th><th>1<span class="not-viable">/19</span></th><th>1<span class="not-viable">/36</span></th></thead><tr><td data-filter="684712353" data-order="Millz20"><a href="?filter=684712353">Millz20</a></td><td data-order="0">0<span class="not-viable">/2</span></td><td class="not-viable" data-order="-6" style="background-color: #ffee00;">&#11088;GG R7, B1 G12, Droideka R5, B2 R5, MagnaGuard R5 <tt>[6]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-6" style="background-color: #ffee00;">&#11088;GG R7, B1 G12, Droideka R5, B2 R5, MagnaGuard R5 <tt>[6]</tt></td><td class="not-viable" data-order="-12" style="background-color: #ffdd00;">Dooku G12, Jango G12, GG R7, B2 R5, AV R5 <tt>[12]</tt></td></tr><tr><td data-filter="516227655" data-order="Gloom Walker"><a href="?filter=516227655">Gloom Walker</a></td><td data-order="0">0<span class="not-viable">/3</span></td><td class="not-viable" data-order="-20" style="background-color: #ffc600;">&#11088;GG G12, B1 R4, Droideka G12, B2 G12, HK-47 R4 <tt>[20]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-22" style="background-color: #ffc000;">&#11088;CLS R3, Chewbacca R3, Han G12, Chewpio G12, C-3PO G12 <tt>[22]</tt></td><td class="not-viable" data-order="-20" style="background-color: #ffc600;">&#11088;GG G12, B1 R4, Droideka G12, B2 G12, HK-47 R4 <tt>[20]</tt></td><td class="not-viable" data-order="-17" style="background-color: #ffce00;">Dooku G8, Jango G12, B1 R4, GBA R5, Geo Spy R5 <tt>[17]</tt></td></tr><tr><td data-filter="647474141" data-order="The JLS"><a href="?filter=647474141">The JLS</a></td><td data-order="0">0<span class="not-viable">/1</span></td><td class="not-viable" data-order="-37" style="background-color: #ff9600;">Dooku G9, Jango 6* G8, AV G12, GBA G12, Geo Spy G12 <tt>[37]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-37" style="background-color: #ff9600;">Dooku G9, Jango 6* G8, AV G12, GBA G12, Geo Spy G12 <tt>[37]</tt></td></tr><tr><td data-filter="332392187" data-order="Millz"><a href="?filter=332392187">Millz</a></td><td data-order="0">0<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="889632856" data-order="Zar Anduli"><a href="?filter=889632856">Zar Anduli</a></td><td data-order="0">0<span class="not-viable">/2</span></td><td class="not-viable" data-order="-25" style="background-color: #ffb800;">&#11088;CLS R5, Chewbacca G12, Han G12, Chewpio G11, C-3PO G12 <tt>[25]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-25" style="background-color: #ffb800;">&#11088;CLS R5, Chewbacca G12, Han G12, Chewpio G11, C-3PO G12 <tt>[25]</tt></td><td data-order="" /><td class="not-viable" data-order="-31" style="background-color: #ffa700;">Dooku G11, Jango G12, GBA G12, Geo Spy G12, Sun Fac G12 <tt>[31]</tt></td></tr><tr><td data-filter="146343631" data-order="Trav"><a href="?filter=146343631">Trav</a></td><td data-order="0">0<span class="not-viable">/3</span></td><td class="not-viable" data-order="-13" style="background-color: #ffda00;">&#11088;CLS R6, Chewbacca R4, Han G12, Chewpio G12, C-3PO R5 <tt>[13]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-13" style="background-color: #ffda00;">&#11088;CLS R6, Chewbacca R4, Han G12, Chewpio G12, C-3PO R5 <tt>[13]</tt></td><td class="not-viable" data-order="-33" style="background-color: #ffa100;">&#11088;GG G9, B1 G12, Droideka G12, B2 G12, Chewpio G12 <tt>[33]</tt></td><td class="not-viable" data-order="-34" style="background-color: #ff9e00;">Dooku G9, Jango G11, Droideka G12, AV G12, GBA G12 <tt>[34]</tt></td></tr><tr><td data-filter="633696187" data-order="Jose Longo"><a href="?filter=633696187">Jose Longo</a></td><td data-order="0">0<span class="not-viable">/3</span></td><td class="not-viable" data-order="-17" style="background-color: #ffce00;">&#11088;CLS R6, Chewbacca R5, Han G12, Chewpio G8, C-3PO R4 <tt>[17]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-17" style="background-color: #ffce00;">&#11088;CLS R6, Chewbacca R5, Han G12, Chewpio G8, C-3PO R4 <tt>[17]</tt></td><td class="not-viable" data-order="-19" style="background-color: #ffc900;">&#11088;GG G12, B1 G12, Droideka R5, B2 G12, MagnaGuard R4 <tt>[19]</tt></td><td class="not-viable" data-order="-8" style="background-color: #ffe800;">Dooku G12, Jango R5, Droideka R5, AV R4, MagnaGuard R4 <tt>[8]</tt></td></tr><tr><td data-filter="936392725" data-order="Naga Sadów"><a href="?filter=936392725">Naga Sadów</a></td><td data-order="0">0<span class="not-viable">/2</span></td><td class="not-viable" data-order="-19" style="background-color: #ffc900;">&#11088;CLS R3, Chewbacca R2, Han R3, Chewpio G12, C-3PO G12 <tt>[19]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-19" style="background-color: #ffc900;">&#11088;CLS R3, Chewbacca R2, Han R3, Chewpio G12, C-3PO G12 <tt>[19]</tt></td><td data-order="" /><td class="not-viable" data-order="-36" style="background-color: #ff9900;">Dooku G11, Jango G12, B2 G10, Nute G10, Geo Spy G11 <tt>[36]</tt></td></tr><tr><td data-filter="295729596" data-order="KingKrille"><a href="?filter=295729596">KingKrille</a></td><td data-order="0">0<span class="not-viable">/2</span></td><td class="not-viable" data-order="-11" style="background-color: #ffdf00;">&#11088;GG R3, B1 R2, Droideka R2, B2 R2, HK-47 R5 <tt>[11]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-11" style="background-color: #ffdf00;">&#11088;GG R3, B1 R2, Droideka R2, B2 R2, HK-47 R5 <tt>[11]</tt></td><td class="not-viable" data-order="-19" style="background-color: #ffc900;">Dooku G12, Jango G12, GG R3, AV R2, GBA R3 <tt>[19]</tt></td></tr><tr><td data-filter="741217131" data-order="Untamed Sloth"><a href="?filter=741217131">Untamed Sloth</a></td><td data-order="0">0<span class="not-viable">/3</span></td><td class="not-viable" data-order="-18" style="background-color: #ffcc00;">&#11088;CLS R3, Chewbacca R1, Han R1, Chewpio R1, C-3PO R1 <tt>[18]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-18" style="background-color: #ffcc00;">&#11088;CLS R3, Chewbacca R1, Han R1, Chewpio R1, C-3PO R1 <tt>[18]</tt></td><td class="not-viable" data-order="-35" style="background-color: #ff9b00;">&#11088;GG G12, B1 G11, Droideka G7, B2 G12, HK-47 G13 <tt>[35]</tt></td><td class="not-viable" data-order="-35" style="background-color: #ff9b00;">Dooku G7, Jango G12, AV G12, GBA G12, Geo Spy G12 <tt>[35]</tt></td></tr><tr><td data-filter="648966762" data-order="MINI Techno Union"><a href="?filter=648966762">MINI Techno Union</a></td><td data-order="0">0<span class="not-viable">/2</span></td><td class="not-viable" data-order="-42" style="background-color: #ff8800;">&#11088;GG 6* G9, B1 5* G8, Droideka 6* G7, B2 5* G8, IG-88 R3 <tt>[42]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-42" style="background-color: #ff8800;">&#11088;GG 6* G9, B1 5* G8, Droideka 6* G7, B2 5* G8, IG-88 R3 <tt>[42]</tt></td><td class="not-viable" data-order="-22" style="background-color: #ffc000;">Dooku R6, Jango G11, Poggle G12, GBA R2, Geo Spy G12 <tt>[22]</tt></td></tr><tr><td data-filter="583496927" data-order="Danja"><a href="?filter=583496927">Danja</a></td><td data-order="1">1<span class="not-viable">/2</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="142354" style="background-color: #ceebfd">CLS R5, Chewbacca R6, Han R6, Chewpio R5, R2-D2 R7</td><td class="not-viable" data-order="-27" style="background-color: #ffb200;">&#11088;GG G12, B1 G12, Droideka G11, B2 G11, MagnaGuard R4 <tt>[27]</tt></td><td class="not-viable" data-order="-20" style="background-color: #ffc600;">Dooku G11, Jango G12, B1 G12, AV R6, MagnaGuard R4 <tt>[20]</tt></td></tr><tr><td data-filter="482599677" data-order="Jannah Longo"><a href="?filter=482599677">Jannah Longo</a></td><td data-order="0">0<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="152667675" data-order="Bakufett"><a href="?filter=152667675">Bakufett</a></td><td data-order="0">0<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="193362682" data-order="Mulleg"><a href="?filter=193362682">Mulleg</a></td><td data-order="1">1<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="140697" style="background-color: #ceebfd">CLS R5, Chewbacca R5, Han R5, Chewpio R5, C-3PO R5</td><td data-order="" /><td data-order="" /></tr><tr><td data-filter="759526265" data-order="MatejC"><a href="?filter=759526265">MatejC</a></td><td data-order="0">0<span class="not-viable">/2</span></td><td class="not-viable" data-order="-40" style="background-color: #ff8d00;">&#11088;CLS G12, Chewbacca G9, Han G10, Chewpio 5* G11, R2-D2 G8 <tt>[40]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-40" style="background-color: #ff8d00;">&#11088;CLS G12, Chewbacca G9, Han G10, Chewpio 5* G11, R2-D2 G8 <tt>[40]</tt></td><td data-order="" /><td class="not-viable" data-order="-36" style="background-color: #ff9900;">Dooku 6* G8, Jango G10, Poggle G12, GBA G12, Geo Spy G12 <tt>[36]</tt></td></tr><tr><td data-filter="788233588" data-order="Tantema Garnik"><a href="?filter=788233588">Tantema Garnik</a></td><td data-order="0">0<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="827513585" data-order="Peepeepoopooman"><a href="?filter=827513585">Peepeepoopooman</a></td><td data-order="0">0<span class="not-viable">/1</span></td><td class="not-viable" data-order="-30" style="background-color: #ffaa00;">Dooku G12, Jango G7, AV R5, GBA G11, Geo Spy G12 <tt>[30]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-30" style="background-color: #ffaa00;">Dooku G12, Jango G7, AV R5, GBA G11, Geo Spy G12 <tt>[30]</tt></td></tr><tr><td data-filter="938232767" data-order="Bski"><a href="?filter=938232767">Bski</a></td><td data-order="3">3<span class="not-viable">/1</span></td><td data-order="-10000" /><td data-order="" /><td data-order="170740" style="background-color: #ceebfd">JKR R5, Rey R7, RH Finn R5, RH Poe R5, GAS R7</td><td data-order="" /><td class="not-viable" data-order="-30" style="background-color: #ffaa00;">&#11088;CLS G12, Chewbacca G12, Han G12, Chewpio G12, R2-D2 G12 <tt>[30]</tt></td><td data-order="135711" style="background-color: #ceebfd">GG R7, B1 R5, Droideka R5, B2 R5, MagnaGuard R5</td><td data-order="140849" style="background-color: #ceebfd">Dooku R6, Jango R6, Poggle R7, AV R5, GBA R5</td></tr><tr><td data-filter="441557869" data-order="Gerehe Zosma"><a href="?filter=441557869">Gerehe Zosma</a></td><td data-order="0">0<span class="not-viable">/2</span></td><td class="not-viable" data-order="-40" style="background-color: #ff8d00;">&#11088;CLS G11, Chewbacca G11, Han G11, Chewpio 4* G9, R2-D2 G8 <tt>[40]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-40" style="background-color: #ff8d00;">&#11088;CLS G11, Chewbacca G11, Han G11, Chewpio 4* G9, R2-D2 G8 <tt>[40]</tt></td><td data-order="" /><td class="not-viable" data-order="-34" style="background-color: #ff9e00;">Dooku 6* G8, Jango G12, GBA G12, Geo Spy G12, Sun Fac G12 <tt>[34]</tt></td></tr><tr><td data-filter="494765873" data-order="Sneaky Soy Boy 123"><a href="?filter=494765873">Sneaky Soy Boy 123</a></td><td data-order="0">0<span class="not-viable">/1</span></td><td class="not-viable" data-order="-32" style="background-color: #ffa400;">Dooku G10, Jango G8, Poggle G12, GBA R3, Geo Spy G12 <tt>[32]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-32" style="background-color: #ffa400;">Dooku G10, Jango G8, Poggle G12, GBA R3, Geo Spy G12 <tt>[32]</tt></td></tr><tr><td data-filter="237175899" data-order="MrPickles"><a href="?filter=237175899">MrPickles</a></td><td data-order="0">0<span class="not-viable">/3</span></td><td class="not-viable" data-order="-38" style="background-color: #ff9300;">&#11088;GG R4, B1 G7, Droideka G9, B2 G7, HK-47 G12 <tt>[38]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-44" style="background-color: #ff8200;">&#11088;CLS G10, Chewbacca G9, Han G9, Chewpio G7, R2-D2 G11 <tt>[44]</tt></td><td class="not-viable" data-order="-38" style="background-color: #ff9300;">&#11088;GG R4, B1 G7, Droideka G9, B2 G7, HK-47 G12 <tt>[38]</tt></td><td class="not-viable" data-order="-15" style="background-color: #ffd400;">Dooku G12, Jango G12, GG R4, Geo Soldier R3, Sun Fac R5 <tt>[15]</tt></td></tr><tr><td data-filter="819259195" data-order="YeeterSkeeter"><a href="?filter=819259195">YeeterSkeeter</a></td><td data-order="0">0<span class="not-viable">/1</span></td><td class="not-viable" data-order="-43" style="background-color: #ff8500;">&#11088;CLS G10, Chewbacca G7, Han G6, Chewpio 4* G6, C-3PO R5 <tt>[43]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-43" style="background-color: #ff8500;">&#11088;CLS G10, Chewbacca G7, Han G6, Chewpio 4* G6, C-3PO R5 <tt>[43]</tt></td><td data-order="" /><td data-order="" /></tr><tr><td data-filter="863647631" data-order="SirSchuSchu"><a href="?filter=863647631">SirSchuSchu</a></td><td data-order="0">0<span class="not-viable">/3</span></td><td class="not-viable" data-order="-4" style="background-color: #fff300;">&#11088;CLS R5, Chewbacca R5, Han R5, Chewpio R3, C-3PO R3 <tt>[4]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-4" style="background-color: #fff300;">&#11088;CLS R5, Chewbacca R5, Han R5, Chewpio R3, C-3PO R3 <tt>[4]</tt></td><td class="not-viable" data-order="-4" style="background-color: #fff300;">&#11088;GG R7, B1 R5, Droideka R3, B2 R3, MagnaGuard R5 <tt>[4]</tt></td><td class="not-viable" data-order="-6" style="background-color: #ffee00;">Dooku G12, Jango R7, GG R7, B1 R5, MagnaGuard R5 <tt>[6]</tt></td></tr><tr><td data-filter="993486218" data-order="Bobmaloogax5"><a href="?filter=993486218">Bobmaloogax5</a></td><td data-order="0">0<span class="not-viable">/2</span></td><td class="not-viable" data-order="-30" style="background-color: #ffaa00;">&#11088;CLS G12, Chewbacca G11, Han G11, Chewpio 4* G10, C-3PO R3 <tt>[30]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-30" style="background-color: #ffaa00;">&#11088;CLS G12, Chewbacca G11, Han G11, Chewpio 4* G10, C-3PO R3 <tt>[30]</tt></td><td data-order="" /><td class="not-viable" data-order="-21" style="background-color: #ffc300;">Dooku G12, Jango G9, Geo Soldier R5, AV G12, GBA R5 <tt>[21]</tt></td></tr><tr><td data-filter="662956843" data-order="j13hall13"><a href="?filter=662956843">j13hall13</a></td><td data-order="0">0<span class="not-viable">/3</span></td><td class="not-viable" data-order="-24" style="background-color: #ffbb00;">&#11088;GG R5, B1 G12, Droideka G12, B2 G12, Chewpio G12 <tt>[24]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-26" style="background-color: #ffb500;">&#11088;CLS R3, Chewbacca G12, Han G12, Chewpio G12, C-3PO G12 <tt>[26]</tt></td><td class="not-viable" data-order="-24" style="background-color: #ffbb00;">&#11088;GG R5, B1 G12, Droideka G12, B2 G12, Chewpio G12 <tt>[24]</tt></td><td class="not-viable" data-order="-24" style="background-color: #ffbb00;">Dooku G6, Jango G8, GG R5, GBA R5, Geo Spy R3 <tt>[24]</tt></td></tr><tr><td data-filter="281334117" data-order="blactastic"><a href="?filter=281334117">blactastic</a></td><td data-order="0">0<span class="not-viable">/3</span></td><td class="not-viable" data-order="-28" style="background-color: #ffaf00;">&#11088;CLS R3, Chewbacca G11, Han G12, Chewpio G11, C-3PO G12 <tt>[28]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-28" style="background-color: #ffaf00;">&#11088;CLS R3, Chewbacca G11, Han G12, Chewpio G11, C-3PO G12 <tt>[28]</tt></td><td class="not-viable" data-order="-31" style="background-color: #ffa700;">&#11088;GG G12, B1 G11, Droideka G9, B2 G9, IG-88 R5 <tt>[31]</tt></td><td class="not-viable" data-order="-32" style="background-color: #ffa400;">Dooku G10, Jango G12, GG G12, GBA G12, Geo Spy G12 <tt>[32]</tt></td></tr><tr><td data-filter="647615227" data-order="Stahzo"><a href="?filter=647615227">Stahzo</a></td><td data-order="0">0<span class="not-viable">/3</span></td><td class="not-viable" data-order="-24" style="background-color: #ffbb00;">&#11088;GG G12, B1 G12, Droideka G12, B2 G12, MagnaGuard R5 <tt>[24]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-30" style="background-color: #ffaa00;">&#11088;CLS R6, Chewbacca G12, Han G12, Chewpio 4* G6, C-3PO G12 <tt>[30]</tt></td><td class="not-viable" data-order="-24" style="background-color: #ffbb00;">&#11088;GG G12, B1 G12, Droideka G12, B2 G12, MagnaGuard R5 <tt>[24]</tt></td><td class="not-viable" data-order="-13" style="background-color: #ffda00;">Dooku G12, Jango G11, GBA R5, MagnaGuard R5, Sun Fac R5 <tt>[13]</tt></td></tr><tr><td data-filter="136186513" data-order="Willey"><a href="?filter=136186513">Willey</a></td><td data-order="0">0<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="661932482" data-order="Valektra Jetberg"><a href="?filter=661932482">Valektra Jetberg</a></td><td data-order="0">0<span class="not-viable">/3</span></td><td class="not-viable" data-order="-12" style="background-color: #ffdd00;">&#11088;JKR G12, Rey R8, RH Finn R5, RH Poe R5, BS G12 <tt>[12]</tt></td><td class="not-viable" data-order="-44" style="background-color: #ff8200;">&#11088;Rey R8, Dathcha G7, Nebit G7, Jawa Engineer G7, Jawa Scavenger G7 <tt>[44]</tt></td><td class="not-viable" data-order="-12" style="background-color: #ffdd00;">&#11088;JKR G12, Rey R8, RH Finn R5, RH Poe R5, BS G12 <tt>[12]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-34" style="background-color: #ff9e00;">Dooku G12, Jango G8, Poggle G12, GBA G12, Sun Fac G12 <tt>[34]</tt></td></tr><tr><td data-filter="912381174" data-order="wookieguy69"><a href="?filter=912381174">wookieguy69</a></td><td data-order="2">2<span class="not-viable">/2</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="169449" style="background-color: #ceebfd">JKL R7, JMLS R7, HYoda R5, GAS R8, Old Ben R5</td><td data-order="142969" style="background-color: #ceebfd">CLS R5, Chewbacca R6, Han R6, Chewpio R5, R2-D2 R7</td><td class="not-viable" data-order="-13" style="background-color: #ffda00;">&#11088;GG G12, B1 R4, Droideka R3, B2 R3, MagnaGuard R3 <tt>[13]</tt></td><td class="not-viable" data-order="-18" style="background-color: #ffcc00;">Dooku G11, Jango G12, Droideka R3, B1 R4, GBA R3 <tt>[18]</tt></td></tr><tr><td data-filter="552172719" data-order="canth reed"><a href="?filter=552172719">canth reed</a></td><td data-order="0">0<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="218527368" data-order="Sam"><a href="?filter=218527368">Sam</a></td><td data-order="0">0<span class="not-viable">/2</span></td><td class="not-viable" data-order="-39" style="background-color: #ff9000;">&#11088;CLS G12, Chewbacca G12, Han G12, Chewpio 3* G7, R2-D2 G8 <tt>[39]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-39" style="background-color: #ff9000;">&#11088;CLS G12, Chewbacca G12, Han G12, Chewpio 3* G7, R2-D2 G8 <tt>[39]</tt></td><td data-order="" /><td class="not-viable" data-order="-34" style="background-color: #ff9e00;">Dooku 6* G10, Jango G10, GBA G12, Geo Spy G12, Sun Fac G12 <tt>[34]</tt></td></tr><tr><td data-filter="419954121" data-order="Schmidty2318"><a href="?filter=419954121">Schmidty2318</a></td><td data-order="0">0<span class="not-viable">/3</span></td><td class="not-viable" data-order="-8" style="background-color: #ffe800;">&#11088;CLS R5, Chewbacca R3, Han R3, Chewpio R3, C-3PO R3 <tt>[8]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-8" style="background-color: #ffe800;">&#11088;CLS R5, Chewbacca R3, Han R3, Chewpio R3, C-3PO R3 <tt>[8]</tt></td><td class="not-viable" data-order="-16" style="background-color: #ffd100;">&#11088;GG R1, B1 R3, Droideka G12, B2 R3, Chewpio R3 <tt>[16]</tt></td><td class="not-viable" data-order="-25" style="background-color: #ffb800;">Dooku G8, Jango G11, GG R1, B2 R3, B1 R3 <tt>[25]</tt></td></tr><tr><td data-filter="278185814" data-order="Gundam Viver"><a href="?filter=278185814">Gundam Viver</a></td><td data-order="0">0<span class="not-viable">/1</span></td><td class="not-viable" data-order="-35" style="background-color: #ff9b00;">Dooku G10, Jango 5* G9, Poggle G12, GBA G12, Sun Fac G12 <tt>[35]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-35" style="background-color: #ff9b00;">Dooku G10, Jango 5* G9, Poggle G12, GBA G12, Sun Fac G12 <tt>[35]</tt></td></tr><tr><td data-filter="436272696" data-order="TRICKSHOT"><a href="?filter=436272696">TRICKSHOT</a></td><td data-order="0">0<span class="not-viable">/1</span></td><td class="not-viable" data-order="-28" style="background-color: #ffaf00;">Dooku G8, Jango G12, Geo Soldier R5, Poggle G12, GBA G12 <tt>[28]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-28" style="background-color: #ffaf00;">Dooku G8, Jango G12, Geo Soldier R5, Poggle G12, GBA G12 <tt>[28]</tt></td></tr><tr><td data-filter="217482916" data-order="FunkyWizard"><a href="?filter=217482916">FunkyWizard</a></td><td data-order="0">0<span class="not-viable">/2</span></td><td class="not-viable" data-order="-38" style="background-color: #ff9300;">&#11088;GG G11, B1 G8, Droideka G11, B2 G11, MagnaGuard G11 <tt>[38]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-38" style="background-color: #ff9300;">&#11088;GG G11, B1 G8, Droideka G11, B2 G11, MagnaGuard G11 <tt>[38]</tt></td><td class="not-viable" data-order="-30" style="background-color: #ffaa00;">Dooku G12, Jango R2, GG G11, Droideka G11, MagnaGuard G11 <tt>[30]</tt></td></tr><tr><td data-filter="966819857" data-order="DereckRM13"><a href="?filter=966819857">DereckRM13</a></td><td data-order="0">0<span class="not-viable">/1</span></td><td class="not-viable" data-order="-50" style="background-color: #ff7100;">&#11088;CLS G9, Chewbacca 5* G9, Han G7, Chewpio 3* G7, R2-D2 G8 <tt>[50]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-50" style="background-color: #ff7100;">&#11088;CLS G9, Chewbacca 5* G9, Han G7, Chewpio 3* G7, R2-D2 G8 <tt>[50]</tt></td><td data-order="" /><td data-order="" /></tr><tr><td data-filter="214666834" data-order="Brizz"><a href="?filter=214666834">Brizz</a></td><td data-order="0">0<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="715466673" data-order="BigCon"><a href="?filter=715466673">BigCon</a></td><td data-order="0">0<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="298712984" data-order="BbqBeru"><a href="?filter=298712984">BbqBeru</a></td><td data-order="0">0<span class="not-viable">/1</span></td><td class="not-viable" data-order="-43" style="background-color: #ff8500;">Dooku 6* G8, Jango G11, Geo Soldier G10, GBA G9, Geo Spy G9 <tt>[43]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-43" style="background-color: #ff8500;">Dooku 6* G8, Jango G11, Geo Soldier G10, GBA G9, Geo Spy G9 <tt>[43]</tt></td></tr><tr><td data-filter="964856849" data-order="Bountyy"><a href="?filter=964856849">Bountyy</a></td><td data-order="0">0<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="446373369" data-order="Kenn Skirata"><a href="?filter=446373369">Kenn Skirata</a></td><td data-order="0">0<span class="not-viable">/2</span></td><td class="not-viable" data-order="-41" style="background-color: #ff8a00;">&#11088;CLS R3, Chewbacca G7, Han G9, Chewpio G8, C-3PO G9 <tt>[41]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-41" style="background-color: #ff8a00;">&#11088;CLS R3, Chewbacca G7, Han G9, Chewpio G8, C-3PO G9 <tt>[41]</tt></td><td data-order="" /><td class="not-viable" data-order="-30" style="background-color: #ffaa00;">Dooku G8, Jango R5, Poggle G11, GBA G12, Geo Spy G11 <tt>[30]</tt></td></tr><tr><td data-filter="669656989" data-order="Mol Eliza"><a href="?filter=669656989">Mol Eliza</a></td><td data-order="0">0<span class="not-viable">/1</span></td><td class="not-viable" data-order="-25" style="background-color: #ffb800;">Dooku G11, Jango R6, Geo Soldier G12, Poggle G12, Sun Fac G12 <tt>[25]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-25" style="background-color: #ffb800;">Dooku G11, Jango R6, Geo Soldier G12, Poggle G12, Sun Fac G12 <tt>[25]</tt></td></tr><tr><td data-filter="812752189" data-order="lucathepuka"><a href="?filter=812752189">lucathepuka</a></td><td data-order="0">0<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="184464142" data-order="Abra"><a href="?filter=184464142">Abra</a></td><td data-order="0">0<span class="not-viable">/1</span></td><td class="not-viable" data-order="-32" style="background-color: #ffa400;">Dooku G10, Jango G12, GBA G12, Geo Spy G12, Sun Fac G12 <tt>[32]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-32" style="background-color: #ffa400;">Dooku G10, Jango G12, GBA G12, Geo Spy G12, Sun Fac G12 <tt>[32]</tt></td></tr><tr><td data-filter="948356963" data-order="B"><a href="?filter=948356963">B</a></td><td data-order="0">0<span class="not-viable">/3</span></td><td class="not-viable" data-order="-10" style="background-color: #ffe200;">&#11088;GG R3, B1 R3, Droideka R3, B2 R3, MagnaGuard R3 <tt>[10]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-28" style="background-color: #ffaf00;">&#11088;CLS R2, Chewbacca G12, Han G12, Chewpio G11, C-3PO G12 <tt>[28]</tt></td><td class="not-viable" data-order="-10" style="background-color: #ffe200;">&#11088;GG R3, B1 R3, Droideka R3, B2 R3, MagnaGuard R3 <tt>[10]</tt></td><td class="not-viable" data-order="-22" style="background-color: #ffc000;">Dooku G9, Jango G12, GG R3, Droideka R3, GBA R2 <tt>[22]</tt></td></tr><tr><td data-filter="387869794" data-order="DarthTalon"><a href="?filter=387869794">DarthTalon</a></td><td data-order="2">2<span class="not-viable">/2</span></td><td data-order="-10000" /><td data-order="" /><td data-order="164896" style="background-color: #ceebfd">JKR R5, Rey R7, RH Finn R5, RH Poe R5, JKL R7</td><td data-order="" /><td data-order="150365" style="background-color: #ceebfd">CLS R6, Chewbacca R6, Han R7, Chewpio R5, R2-D2 R7</td><td class="not-viable" data-order="-21" style="background-color: #ffc300;">&#11088;GG R4, B1 G13, Droideka G13, B2 G13, IG-88 G13 <tt>[21]</tt></td><td class="not-viable" data-order="-7" style="background-color: #ffeb00;">Dooku R6, Jango R7, GG R4, GBA R4, MagnaGuard G13 <tt>[7]</tt></td></tr><tr><td data-filter="155754252" data-order="Megared"><a href="?filter=155754252">Megared</a></td><td data-order="0">0<span class="not-viable">/3</span></td><td class="not-viable" data-order="-12" style="background-color: #ffdd00;">&#11088;GG G12, B1 R5, Droideka G12, B2 R6, MagnaGuard R5 <tt>[12]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-21" style="background-color: #ffc300;">&#11088;CLS R5, Chewbacca R4, Han G10, Chewpio G8, C-3PO R3 <tt>[21]</tt></td><td class="not-viable" data-order="-12" style="background-color: #ffdd00;">&#11088;GG G12, B1 R5, Droideka G12, B2 R6, MagnaGuard R5 <tt>[12]</tt></td><td class="not-viable" data-order="-6" style="background-color: #ffee00;">Dooku R6, Jango G12, B2 R6, B1 R5, MagnaGuard R5 <tt>[6]</tt></td></tr><tr><td data-filter="144245956" data-order="Dark Shawi"><a href="?filter=144245956">Dark Shawi</a></td><td data-order="0">0<span class="not-viable">/1</span></td><td class="not-viable" data-order="-33" style="background-color: #ffa100;">Dooku G12, Jango G5, AV G12, GBA R3, Sun Fac G12 <tt>[33]</tt></td><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-33" style="background-color: #ffa100;">Dooku G12, Jango G5, AV G12, GBA R3, Sun Fac G12 <tt>[33]</tt></td></tr><tfoot><th>Counts</th><th>9<span class="not-viable">/79</span></th><th /><th>0<span class="not-viable">/1</span></th><th>2<span class="not-viable">/1</span></th><th>1<span class="not-viable">/0</span></th><th>4<span class="not-viable">/22</span></th><th>1<span class="not-viable">/19</span></th><th>1<span class="not-viable">/36</span></th></tfoot></table><h2 id="summary">Summary By Player and Phase</h2>Summary information by player, by phase.  Counts show number of ready teams / number of teams that need farming.  Blue cells show phases that the player should play.<p><pre id="summary-farm" style="display: none !important;">Bobmaloogax5
+gear levels: 1 -- Padme R5, JKA R4, GK R5, Ahsoka R5, GMY R7
+
+Trav
+gear levels: 1 -- Padme R6, JKA R5, GK R5, Ahsoka R4, GMY R5
+
+B
+gear levels: 2 -- Padme R5, JKA R5, GK R7, Ahsoka R5, GMY R3
+
+Danja
+gear levels: 2 -- Padme R5, JKA R3, GK R5, Ahsoka R7, CAT R5
+
+KingKrille
+gear levels: 3 -- Padme R5, JKA R4, GK R5, Ahsoka R3, GMY R5
+
+SirSchuSchu
+gear levels: 4 -- CLS R5, Chewbacca R5, Han R5, Chewpio R3, C-3PO R3
+
+j13hall13
+gear levels: 6 -- SL Kylo R7, Hux R5, FOST R5, Sith Trooper R5, Thrawn G12
+
+Millz20
+gear levels: 6 -- GG R7, B1 G12, Droideka R5, B2 R5, MagnaGuard R5
+
+DarthTalon
+gear levels: 6 -- Padme R4, JKA R7, GK R4, Ahsoka R1, C-3PO R5
+
+j13hall13
+gear levels: 6 -- Padme R5, JKA R7, GK R5, Ahsoka G12, GMY R5
+
+KingKrille
+gear levels: 8 -- Shaak Ti R3, Fives R3, Rex R5, Echo (501st) R3, ARC Trooper R3
+
+Schmidty2318
+gear levels: 8 -- CLS R5, Chewbacca R3, Han R3, Chewpio R3, C-3PO R3
+
+Schmidty2318
+gear levels: 8 -- Padme R3, JKA R7, GK R3, Ahsoka R3, C-3PO R3
+
+SirSchuSchu
+gear levels: 8 -- Shaak Ti R7, Fives R3, Rex R3, Echo (501st) R3, ARC Trooper R3
+
+YeeterSkeeter
+gear levels: 8 -- Padme R3, JKA R3, GK R3, Ahsoka R3, C-3PO R5
+
+Gloom Walker
+gear levels: 8 -- Shaak Ti R3, Fives R5, Rex R5, Echo (501st) R5, ARC Trooper G12
+
+Megared
+gear levels: 9 -- Padme R4, JKA R7, GK R7, Ahsoka G12, C-3PO R3
+
+Willey
+gear levels: 9 -- Vader R7, EP R7, Thrawn R6, Wat Tambor 5* G9, Malak R6
+
+Tantema Garnik
+gear levels: 9 -- DR R5, Malak R7, BSF R5, HK-47 R5, Sith Marauder G9
+
+B
+gear levels: 10 -- GG R3, B1 R3, Droideka R3, B2 R3, MagnaGuard R3
+
+Zar Anduli
+gear levels: 10 -- Padme R3, JKA R3, GK R3, Ahsoka R3, GMY R3
+
+KingKrille
+gear levels: 11 -- GG R3, B1 R2, Droideka R2, B2 R2, HK-47 R5
+
+wookieguy69
+gear levels: 12 -- Vader R7, KRU R3, Wat Tambor 5* G10, C-3PO R5, Shaak Ti R3
+
+Megared
+gear levels: 12 -- GG G12, B1 R5, Droideka G12, B2 R6, MagnaGuard R5
+
+Valektra Jetberg
+gear levels: 12 -- JKR G12, Rey R8, RH Finn R5, RH Poe R5, BS G12
+
+blactastic
+gear levels: 12 -- Padme R3, JKA R3, GK R5, Ahsoka R3, C-3PO G12
+
+Gloom Walker
+gear levels: 13 -- Padme G12, JKA R5, GK R6, Ahsoka R4, C-3PO G12
+
+Kenn Skirata
+gear levels: 13 -- Padme R8, JKA R7, GK R3, Ahsoka R3, C-3PO G9
+
+Trav
+gear levels: 13 -- CLS R6, Chewbacca R4, Han G12, Chewpio G12, C-3PO R5
+
+MINI Techno Union
+gear levels: 14 -- Shaak Ti G12, Fives R3, Rex R3, Echo (501st) R3, ARC Trooper R3
+
+Jose Longo
+gear levels: 16 -- Shaak Ti R5, Fives R5, Rex R7, Echo (501st) G12, ARC Trooper G8
+
+Jose Longo
+gear levels: 17 -- CLS R6, Chewbacca R5, Han G12, Chewpio G8, C-3PO R4
+
+Naga Sadów
+gear levels: 18 -- Veers R2, Piett R5, Gideon G12, Starck G12, Dark Trooper R2
+
+Untamed Sloth
+gear levels: 18 -- CLS R3, Chewbacca R1, Han R1, Chewpio R1, C-3PO R1
+
+Stahzo
+gear levels: 18 -- Padme G12, JKA G12, GK R7, Ahsoka G12, GMY R5
+
+Stahzo
+gear levels: 19 -- Vader R7, Nute G12, Thrawn R5, Wat Tambor 5* G11, Traya G12
+
+Naga Sadów
+gear levels: 19 -- CLS R3, Chewbacca R2, Han R3, Chewpio G12, C-3PO G12
+
+Gundam Viver
+gear levels: 19 -- Veers R2, Piett R2, Gideon R2, Range Trooper G12, Dark Trooper R1
+
+Gloom Walker
+gear levels: 20 -- GG G12, B1 R4, Droideka G12, B2 G12, HK-47 R4
+
+SirSchuSchu
+gear levels: 20 -- Veers G12, Piett R3, Gideon G11, Starck R2, Dark Trooper R3
+
+Willey
+gear levels: 21 -- Vader R7, Nute G12, Thrawn R6, Wat Tambor 5* G9, Traya G12
+
+The JLS
+gear levels: 22 -- Padme G12, JKA G12, GK R5, Ahsoka R5, GMY G8
+
+MINI Techno Union
+gear levels: 22 -- Veers R3, Piett R8, Gideon G9, Starck R3, Dark Trooper G9
+
+Untamed Sloth
+gear levels: 22 -- Padme G13, JKA R1, GK G13, Ahsoka R1, C-3PO R1
+
+j13hall13
+gear levels: 24 -- Shaak Ti G12, Fives R5, Rex G12, Echo (501st) G12, ARC Trooper G12
+
+j13hall13
+gear levels: 24 -- GG R5, B1 G12, Droideka G12, B2 G12, Chewpio G12
+
+Stahzo
+gear levels: 24 -- GG G12, B1 G12, Droideka G12, B2 G12, MagnaGuard R5
+
+Millz
+gear levels: 24 -- Padme G12, JKA G12, GK R5, Ahsoka G12, C-3PO G12
+
+Zar Anduli
+gear levels: 25 -- CLS R5, Chewbacca G12, Han G12, Chewpio G11, C-3PO G12
+
+wookieguy69
+gear levels: 25 -- Shaak Ti R3, Fives R1, Rex G12, Echo (501st) G12, ARC Trooper G11
+
+Mol Eliza
+gear levels: 25 -- Dooku G11, Jango R6, Geo Soldier G12, Poggle G12, Sun Fac G12
+
+Zar Anduli
+gear levels: 26 -- Shaak Ti R3, Fives G12, Rex G12, Echo (501st) G12, ARC Trooper G12
+
+Peepeepoopooman
+gear levels: 26 -- Veers G12, Piett R5, Gideon G11, Starck G11, Dark Trooper G12
+
+Zar Anduli
+gear levels: 26 -- Veers G12, Piett R8, Gideon G12, Range Trooper G12, Starck G10
+
+blactastic
+gear levels: 27 -- Veers G12, Piett R8, Gideon G11, Starck G11, Dark Trooper G11
+
+MatejC
+gear levels: 27 -- Padme G12, JKA R3, GK 6* G11, Ahsoka G12, GMY G12
+
+Schmidty2318
+gear levels: 27 -- Vader R7, Nute G10, Thrawn R6, Wat Tambor 4* G9, Traya G8
+
+Sam
+gear levels: 27 -- Padme G12, JKA R3, GK G12, Ahsoka G12, GMY G11
+
+Dark Shawi
+gear levels: 28 -- Padme G8, JKA 6* G7, GK R4, Ahsoka G12, GMY R7
+
+TRICKSHOT
+gear levels: 28 -- Dooku G8, Jango G12, Geo Soldier R5, Poggle G12, GBA G12
+
+blactastic
+gear levels: 28 -- CLS R3, Chewbacca G11, Han G12, Chewpio G11, C-3PO G12
+
+Megared
+gear levels: 29 -- Veers R3, Piett R5, Gideon G8, Starck G12, Dark Trooper 5* G7
+
+Stahzo
+gear levels: 29 -- Veers G11, Piett R7, Gideon G12, Starck G11, Dark Trooper 5* G9
+
+Jannah Longo
+gear levels: 29 -- Padme G12, JKA G12, GK G12, Ahsoka G12, R2-D2 G13
+
+MINI Techno Union
+gear levels: 29 -- Padme G8, JKA R7, GK G12, Ahsoka G12, GMY G11
+
+MrPickles
+gear levels: 30 -- Padme 6* G7, JKA G12, GK G11, Ahsoka G12, GMY R5
+
+Bobmaloogax5
+gear levels: 30 -- CLS G12, Chewbacca G11, Han G11, Chewpio 4* G10, C-3PO R3
+
+Untamed Sloth
+gear levels: 30 -- Shaak Ti G12, Fives G12, Rex G12, Echo (501st) G12, ARC Trooper G12
+
+Danja
+gear levels: 30 -- Shaak Ti G12, Fives G12, Rex G12, Echo (501st) G12, ARC Trooper G12
+
+Peepeepoopooman
+gear levels: 30 -- Dooku G12, Jango G7, AV R5, GBA G11, Geo Spy G12
+
+Sneaky Soy Boy 123
+gear levels: 32 -- Dooku G10, Jango G8, Poggle G12, GBA R3, Geo Spy G12
+
+Abra
+gear levels: 32 -- Dooku G10, Jango G12, GBA G12, Geo Spy G12, Sun Fac G12
+
+FunkyWizard
+gear levels: 33 -- Padme G9, JKA G12, GK G12, Ahsoka G12, GMY G12
+
+Naga Sadów
+gear levels: 33 -- Padme G7, JKA G12, GK G8, Ahsoka G12, GMY R5
+
+Dark Shawi
+gear levels: 33 -- Dooku G12, Jango G5, AV G12, GBA R3, Sun Fac G12
+
+wookieguy69
+gear levels: 34 -- Veers G12, Piett R3, Gideon G9, Starck G10, Dark Trooper G9
+
+MrPickles
+gear levels: 35 -- Shaak Ti G9, Fives G10, Rex G12, Echo (501st) G12, ARC Trooper G12
+
+Gundam Viver
+gear levels: 35 -- Dooku G10, Jango 5* G9, Poggle G12, GBA G12, Sun Fac G12
+
+Mol Eliza
+gear levels: 35 -- Aurra 5* G8, Greef G5, Bossk 6* G6, Jango R6, Boba R7
+
+BbqBeru
+gear levels: 36 -- Padme 6* G10, JKA G11, GK 5* G11, Ahsoka G11, GMY G11
+
+The JLS
+gear levels: 37 -- Dooku G9, Jango 6* G8, AV G12, GBA G12, Geo Spy G12
+
+FunkyWizard
+gear levels: 38 -- GG G11, B1 G8, Droideka G11, B2 G11, MagnaGuard G11
+
+MrPickles
+gear levels: 38 -- GG R4, B1 G7, Droideka G9, B2 G7, HK-47 G12
+
+Valektra Jetberg
+gear levels: 39 -- Padme 6* G7, JKA 6* G8, GK G7, Ahsoka G12, R2-D2 R4
+
+Sam
+gear levels: 39 -- CLS G12, Chewbacca G12, Han G12, Chewpio 3* G7, R2-D2 G8
+
+TRICKSHOT
+gear levels: 39 -- Vader R6, KRU G9, Wat Tambor 4* G9, C-3PO 6* G6, BB-8 G9
+
+MatejC
+gear levels: 40 -- CLS G12, Chewbacca G9, Han G10, Chewpio 5* G11, R2-D2 G8
+
+Gerehe Zosma
+gear levels: 40 -- CLS G11, Chewbacca G11, Han G11, Chewpio 4* G9, R2-D2 G8
+
+Kenn Skirata
+gear levels: 41 -- CLS R3, Chewbacca G7, Han G9, Chewpio G8, C-3PO G9
+
+MINI Techno Union
+gear levels: 42 -- GG 6* G9, B1 5* G8, Droideka 6* G7, B2 5* G8, IG-88 R3
+
+Gerehe Zosma
+gear levels: 43 -- Padme G8, JKA 5* G9, GK G10, Ahsoka G8, GMY G12
+
+YeeterSkeeter
+gear levels: 43 -- CLS G10, Chewbacca G7, Han G6, Chewpio 4* G6, C-3PO R5
+
+BbqBeru
+gear levels: 43 -- Dooku 6* G8, Jango G11, Geo Soldier G10, GBA G9, Geo Spy G9
+
+Abra
+gear levels: 44 -- Padme G9, JKA G10, GK G8, Ahsoka G8, GMY G11
+
+Peepeepoopooman
+gear levels: 46 -- Padme G5, JKA 6* G8, GK G8, Ahsoka G11, R2-D2 G12
+
+Gloom Walker
+gear levels: 46 -- Veers G12, Piett G10, Gideon G8, Starck G5, Dark Trooper 6* G9
+
+Jose Longo
+gear levels: 47 -- Veers G7, Piett G12, Gideon G8, Starck G9, Dark Trooper 6* G7
+
+Schmidty2318
+gear levels: 48 -- Veers G12, Piett G8, Gideon G8, Starck G7, Dark Trooper 5* G7
+
+Untamed Sloth
+gear levels: 48 -- Veers G9, Piett G8, Gideon G9, Range Trooper G8, Starck G8
+
+DereckRM13
+gear levels: 50 -- CLS G9, Chewbacca 5* G9, Han G7, Chewpio 3* G7, R2-D2 G8
+
+Sneaky Soy Boy 123
+gear levels: 53 -- Padme G1, JKA 6* G9, GK G7, Ahsoka G8, GMY G12
+
+</pre><pre id="summary-farm-csv" style="display: none !important;">name,allycode,mention,phase,played-phase,played-all,percent,team-name,team,gearNeeded
+Bobmaloogax5,993486218,,p1,0,1,3,Padme 3%,Padme R5 JKA R4 GK R5 Ahsoka R5 GMY R7,1
+Trav,146343631,,p1,0,1,3,Padme 3%,Padme R6 JKA R5 GK R5 Ahsoka R4 GMY R5,1
+B,948356963,,p1,0,1,3,Padme 3%,Padme R5 JKA R5 GK R7 Ahsoka R5 GMY R3,2
+Danja,583496927,,p1,0,1,3,Padme 3%,Padme R5 JKA R3 GK R5 Ahsoka R7 CAT R5,2
+KingKrille,295729596,,p1,0,0,3,Padme 3%,Padme R5 JKA R4 GK R5 Ahsoka R3 GMY R5,3
+SirSchuSchu,863647631,,p4,0,1,2,Rebels (2%),CLS R5 Chewbacca R5 Han R5 Chewpio R3 C-3PO R3,4
+j13hall13,662956843,,p3,0,1,9,SLKR+FO 9%,SL Kylo R7 Hux R5 FOST R5 Sith Trooper R5 Thrawn G12,6
+Millz20,684712353,,p4,0,2,2,GG (2%),GG R7 B1 G12 Droideka R5 B2 R5 MagnaGuard R5,6
+DarthTalon,387869794,,p1,0,3,3,Padme 3%,Padme R4 JKA R7 GK R4 Ahsoka R1 C-3PO R5,6
+j13hall13,662956843,,p1,1,1,3,Padme 3%,Padme R5 JKA R7 GK R5 Ahsoka G12 GMY R5,6
+KingKrille,295729596,,p3,0,0,6,Shaak 6%,Shaak Ti R3 Fives R3 Rex R5 Echo (501st) R3 ARC Trooper R3,8
+Schmidty2318,419954121,,p4,0,0,2,Rebels (2%),CLS R5 Chewbacca R3 Han R3 Chewpio R3 C-3PO R3,8
+Schmidty2318,419954121,,p1,0,0,3,Padme 3%,Padme R3 JKA R7 GK R3 Ahsoka R3 C-3PO R3,8
+SirSchuSchu,863647631,,p2,0,1,6,Shaak 6%,Shaak Ti R7 Fives R3 Rex R3 Echo (501st) R3 ARC Trooper R3,8
+YeeterSkeeter,819259195,,p1,0,1,3,Padme 3%,Padme R3 JKA R3 GK R3 Ahsoka R3 C-3PO R5,8
+Gloom Walker,516227655,,p2,0,0,6,Shaak 6%,Shaak Ti R3 Fives R5 Rex R5 Echo (501st) R5 ARC Trooper G12,8
+Megared,155754252,,p1,0,0,3,Padme 3%,Padme R4 JKA R7 GK R7 Ahsoka G12 C-3PO R3,9
+Willey,136186513,,p3,0,1,8,Vader+Wat 8%,Vader R7 EP R7 Thrawn R6 Wat Tambor 5* G9 Malak R6,9
+Tantema Garnik,788233588,,p1,0,0,3,DR/Malak 3%,DR R5 Malak R7 BSF R5 HK-47 R5 Sith Marauder G9,9
+B,948356963,,p4,0,1,2,GG (2%),GG R3 B1 R3 Droideka R3 B2 R3 MagnaGuard R3,10
+Zar Anduli,889632856,,p1,0,0,3,Padme 3%,Padme R3 JKA R3 GK R3 Ahsoka R3 GMY R3,10
+KingKrille,295729596,,p4,0,0,2,GG (2%),GG R3 B1 R2 Droideka R2 B2 R2 HK-47 R5,11
+wookieguy69,912381174,,p1,0,2,10,Vader P1 10%,Vader R7 KRU R3 Wat Tambor 5* G10 C-3PO R5 Shaak Ti R3,12
+Megared,155754252,,p4,0,0,2,GG (2%),GG G12 B1 R5 Droideka G12 B2 R6 MagnaGuard R5,12
+Valektra Jetberg,661932482,,p4,0,0,7,JKR + Rey (7%),JKR G12 Rey R8 RH Finn R5 RH Poe R5 BS G12,12
+blactastic,281334117,,p1,0,0,3,Padme 3%,Padme R3 JKA R3 GK R5 Ahsoka R3 C-3PO G12,12
+Gloom Walker,516227655,,p1,0,0,3,Padme 3%,Padme G12 JKA R5 GK R6 Ahsoka R4 C-3PO G12,13
+Kenn Skirata,446373369,,p1,0,0,3,Padme 3%,Padme R8 JKA R7 GK R3 Ahsoka R3 C-3PO G9,13
+Trav,146343631,,p4,0,1,2,Rebels (2%),CLS R6 Chewbacca R4 Han G12 Chewpio G12 C-3PO R5,13
+MINI Techno Union,648966762,,p2,0,0,6,Shaak 6%,Shaak Ti G12 Fives R3 Rex R3 Echo (501st) R3 ARC Trooper R3,14
+Jose Longo,633696187,,p2,0,1,6,Shaak 6%,Shaak Ti R5 Fives R5 Rex R7 Echo (501st) G12 ARC Trooper G8,16
+Jose Longo,633696187,,p4,0,1,2,Rebels (2%),CLS R6 Chewbacca R5 Han G12 Chewpio G8 C-3PO R4,17
+Naga Sadów,936392725,,p3,0,0,5,Imperial Troopers 5%,Veers R2 Piett R5 Gideon G12 Starck G12 Dark Trooper R2,18
+Untamed Sloth,741217131,,p4,0,0,2,Rebels (2%),CLS R3 Chewbacca R1 Han R1 Chewpio R1 C-3PO R1,18
+Stahzo,647615227,,p1,0,0,3,Padme 3%,Padme G12 JKA G12 GK R7 Ahsoka G12 GMY R5,18
+Stahzo,647615227,,p2,0,0,12,Vader+Nute 12%,Vader R7 Nute G12 Thrawn R5 Wat Tambor 5* G11 Traya G12,19
+Naga Sadów,936392725,,p4,0,0,2,Rebels (2%),CLS R3 Chewbacca R2 Han R3 Chewpio G12 C-3PO G12,19
+Gundam Viver,278185814,,p3,0,0,5,Imperial Troopers 5%,Veers R2 Piett R2 Gideon R2 Range Trooper G12 Dark Trooper R1,19
+Gloom Walker,516227655,,p4,0,0,2,GG (2%),GG G12 B1 R4 Droideka G12 B2 G12 HK-47 R4,20
+SirSchuSchu,863647631,,p3,0,1,5,Imperial Troopers 5%,Veers G12 Piett R3 Gideon G11 Starck R2 Dark Trooper R3,20
+Willey,136186513,,p2,0,1,12,Vader+Nute 12%,Vader R7 Nute G12 Thrawn R6 Wat Tambor 5* G9 Traya G12,21
+The JLS,647474141,,p1,0,0,3,Padme 3%,Padme G12 JKA G12 GK R5 Ahsoka R5 GMY G8,22
+MINI Techno Union,648966762,,p3,0,0,5,Imperial Troopers 5%,Veers R3 Piett R8 Gideon G9 Starck R3 Dark Trooper G9,22
+Untamed Sloth,741217131,,p1,0,0,3,Padme 3%,Padme G13 JKA R1 GK G13 Ahsoka R1 C-3PO R1,22
+j13hall13,662956843,,p2,0,1,6,Shaak 6%,Shaak Ti G12 Fives R5 Rex G12 Echo (501st) G12 ARC Trooper G12,24
+j13hall13,662956843,,p4,0,1,2,GG (2%),GG R5 B1 G12 Droideka G12 B2 G12 Chewpio G12,24
+Stahzo,647615227,,p4,0,0,2,GG (2%),GG G12 B1 G12 Droideka G12 B2 G12 MagnaGuard R5,24
+Millz,332392187,,p1,1,2,3,Padme 3%,Padme G12 JKA G12 GK R5 Ahsoka G12 C-3PO G12,24
+Zar Anduli,889632856,,p4,0,0,2,Rebels (2%),CLS R5 Chewbacca G12 Han G12 Chewpio G11 C-3PO G12,25
+wookieguy69,912381174,,p2,0,2,6,Shaak 6%,Shaak Ti R3 Fives R1 Rex G12 Echo (501st) G12 ARC Trooper G11,25
+Mol Eliza,669656989,,p4,0,0,1,Seps (1%),Dooku G11 Jango R6 Geo Soldier G12 Poggle G12 Sun Fac G12,25
+Zar Anduli,889632856,,p2,0,0,6,Shaak 6%,Shaak Ti R3 Fives G12 Rex G12 Echo (501st) G12 ARC Trooper G12,26
+Peepeepoopooman,827513585,,p3,0,0,5,Imperial Troopers 5%,Veers G12 Piett R5 Gideon G11 Starck G11 Dark Trooper G12,26
+Zar Anduli,889632856,,p3,0,0,5,Imperial Troopers 5%,Veers G12 Piett R8 Gideon G12 Range Trooper G12 Starck G10,26
+blactastic,281334117,,p3,0,0,5,Imperial Troopers 5%,Veers G12 Piett R8 Gideon G11 Starck G11 Dark Trooper G11,27
+MatejC,759526265,,p1,0,0,3,Padme 3%,Padme G12 JKA R3 GK 6* G11 Ahsoka G12 GMY G12,27
+Schmidty2318,419954121,,p2,0,0,12,Vader+Nute 12%,Vader R7 Nute G10 Thrawn R6 Wat Tambor 4* G9 Traya G8,27
+Sam,218527368,,p1,0,0,3,Padme 3%,Padme G12 JKA R3 GK G12 Ahsoka G12 GMY G11,27
+Dark Shawi,144245956,,p1,0,0,3,Padme 3%,Padme G8 JKA 6* G7 GK R4 Ahsoka G12 GMY R7,28
+TRICKSHOT,436272696,,p4,0,0,1,Seps (1%),Dooku G8 Jango G12 Geo Soldier R5 Poggle G12 GBA G12,28
+blactastic,281334117,,p4,0,0,2,Rebels (2%),CLS R3 Chewbacca G11 Han G12 Chewpio G11 C-3PO G12,28
+Megared,155754252,,p3,0,0,5,Imperial Troopers 5%,Veers R3 Piett R5 Gideon G8 Starck G12 Dark Trooper 5* G7,29
+Stahzo,647615227,,p3,0,0,5,Imperial Troopers 5%,Veers G11 Piett R7 Gideon G12 Starck G11 Dark Trooper 5* G9,29
+Jannah Longo,482599677,,p1,0,0,3,Padme 3%,Padme G12 JKA G12 GK G12 Ahsoka G12 R2-D2 G13,29
+MINI Techno Union,648966762,,p1,0,0,3,Padme 3%,Padme G8 JKA R7 GK G12 Ahsoka G12 GMY G11,29
+MrPickles,237175899,,p1,0,0,3,Padme 3%,Padme 6* G7 JKA G12 GK G11 Ahsoka G12 GMY R5,30
+Bobmaloogax5,993486218,,p4,0,1,2,Rebels (2%),CLS G12 Chewbacca G11 Han G11 Chewpio 4* G10 C-3PO R3,30
+Untamed Sloth,741217131,,p2,0,0,6,Shaak 6%,Shaak Ti G12 Fives G12 Rex G12 Echo (501st) G12 ARC Trooper G12,30
+Danja,583496927,,p3,0,1,6,Shaak 6%,Shaak Ti G12 Fives G12 Rex G12 Echo (501st) G12 ARC Trooper G12,30
+Peepeepoopooman,827513585,,p4,0,0,1,Seps (1%),Dooku G12 Jango G7 AV R5 GBA G11 Geo Spy G12,30
+Sneaky Soy Boy 123,494765873,,p4,0,0,1,Seps (1%),Dooku G10 Jango G8 Poggle G12 GBA R3 Geo Spy G12,32
+Abra,184464142,,p4,0,0,1,Seps (1%),Dooku G10 Jango G12 GBA G12 Geo Spy G12 Sun Fac G12,32
+FunkyWizard,217482916,,p1,0,0,3,Padme 3%,Padme G9 JKA G12 GK G12 Ahsoka G12 GMY G12,33
+Naga Sadów,936392725,,p1,0,0,3,Padme 3%,Padme G7 JKA G12 GK G8 Ahsoka G12 GMY R5,33
+Dark Shawi,144245956,,p4,0,0,1,Seps (1%),Dooku G12 Jango G5 AV G12 GBA R3 Sun Fac G12,33
+wookieguy69,912381174,,p3,0,2,5,Imperial Troopers 5%,Veers G12 Piett R3 Gideon G9 Starck G10 Dark Trooper G9,34
+MrPickles,237175899,,p3,0,0,6,Shaak 6%,Shaak Ti G9 Fives G10 Rex G12 Echo (501st) G12 ARC Trooper G12,35
+Gundam Viver,278185814,,p4,0,0,1,Seps (1%),Dooku G10 Jango 5* G9 Poggle G12 GBA G12 Sun Fac G12,35
+Mol Eliza,669656989,,p3,0,0,2,BH 2%,Aurra 5* G8 Greef G5 Bossk 6* G6 Jango R6 Boba R7,35
+BbqBeru,298712984,,p1,0,0,3,Padme 3%,Padme 6* G10 JKA G11 GK 5* G11 Ahsoka G11 GMY G11,36
+The JLS,647474141,,p4,0,0,1,Seps (1%),Dooku G9 Jango 6* G8 AV G12 GBA G12 Geo Spy G12,37
+FunkyWizard,217482916,,p4,0,0,2,GG (2%),GG G11 B1 G8 Droideka G11 B2 G11 MagnaGuard G11,38
+MrPickles,237175899,,p4,0,0,2,GG (2%),GG R4 B1 G7 Droideka G9 B2 G7 HK-47 G12,38
+Valektra Jetberg,661932482,,p1,0,0,3,Padme 3%,Padme 6* G7 JKA 6* G8 GK G7 Ahsoka G12 R2-D2 R4,39
+Sam,218527368,,p4,0,0,2,Rebels (2%),CLS G12 Chewbacca G12 Han G12 Chewpio 3* G7 R2-D2 G8,39
+TRICKSHOT,436272696,,p1,0,0,10,Vader P1 10%,Vader R6 KRU G9 Wat Tambor 4* G9 C-3PO 6* G6 BB-8 G9,39
+MatejC,759526265,,p4,0,0,2,Rebels (2%),CLS G12 Chewbacca G9 Han G10 Chewpio 5* G11 R2-D2 G8,40
+Gerehe Zosma,441557869,,p4,0,0,2,Rebels (2%),CLS G11 Chewbacca G11 Han G11 Chewpio 4* G9 R2-D2 G8,40
+Kenn Skirata,446373369,,p4,0,0,2,Rebels (2%),CLS R3 Chewbacca G7 Han G9 Chewpio G8 C-3PO G9,41
+MINI Techno Union,648966762,,p4,0,0,2,GG (2%),GG 6* G9 B1 5* G8 Droideka 6* G7 B2 5* G8 IG-88 R3,42
+Gerehe Zosma,441557869,,p1,0,0,3,Padme 3%,Padme G8 JKA 5* G9 GK G10 Ahsoka G8 GMY G12,43
+YeeterSkeeter,819259195,,p4,0,1,2,Rebels (2%),CLS G10 Chewbacca G7 Han G6 Chewpio 4* G6 C-3PO R5,43
+BbqBeru,298712984,,p4,0,0,1,Seps (1%),Dooku 6* G8 Jango G11 Geo Soldier G10 GBA G9 Geo Spy G9,43
+Abra,184464142,,p1,0,0,3,Padme 3%,Padme G9 JKA G10 GK G8 Ahsoka G8 GMY G11,44
+Peepeepoopooman,827513585,,p1,0,0,3,Padme 3%,Padme G5 JKA 6* G8 GK G8 Ahsoka G11 R2-D2 G12,46
+Gloom Walker,516227655,,p3,0,0,5,Imperial Troopers 5%,Veers G12 Piett G10 Gideon G8 Starck G5 Dark Trooper 6* G9,46
+Jose Longo,633696187,,p3,0,1,5,Imperial Troopers 5%,Veers G7 Piett G12 Gideon G8 Starck G9 Dark Trooper 6* G7,47
+Schmidty2318,419954121,,p3,0,0,5,Imperial Troopers 5%,Veers G12 Piett G8 Gideon G8 Starck G7 Dark Trooper 5* G7,48
+Untamed Sloth,741217131,,p3,0,0,5,Imperial Troopers 5%,Veers G9 Piett G8 Gideon G9 Range Trooper G8 Starck G8,48
+DereckRM13,966819857,,p4,0,0,2,Rebels (2%),CLS G9 Chewbacca 5* G9 Han G7 Chewpio 3* G7 R2-D2 G8,50
+Sneaky Soy Boy 123,494765873,,p1,0,0,3,Padme 3%,Padme G1 JKA 6* G9 GK G7 Ahsoka G8 GMY G12,53
+</pre><pre id="summary-attack-csv" style="display: none !important;">phase,name,allycode,team-name,team,percent,gp
+p4,Bski,938232767,JKR + Rey (7%),JKR R5 Rey R7 RH Finn R5 RH Poe R5 GAS R7,7,170740
+p4,Bski,938232767,GG (2%),GG R7 B1 R5 Droideka R5 B2 R5 MagnaGuard R5,2,135711
+p4,Bski,938232767,Seps (1%),Dooku R6 Jango R6 Poggle R7 AV R5 GBA R5,1,140849
+p4,DarthTalon,387869794,JKR + Rey (7%),JKR R5 Rey R7 RH Finn R5 RH Poe R5 JKL R7,7,164896
+p4,DarthTalon,387869794,Rebels (2%),CLS R6 Chewbacca R6 Han R7 Chewpio R5 R2-D2 R7,2,150365
+p4,Mulleg,193362682,Rebels (2%),CLS R5 Chewbacca R5 Han R5 Chewpio R5 C-3PO R5,2,140697
+p4,Danja,583496927,Rebels (2%),CLS R5 Chewbacca R6 Han R6 Chewpio R5 R2-D2 R7,2,142354
+p4,wookieguy69,912381174,JKL + JML (6%),JKL R7 JMLS R7 HYoda R5 GAS R8 Old Ben R5,6,169449
+p4,wookieguy69,912381174,Rebels (2%),CLS R5 Chewbacca R6 Han R6 Chewpio R5 R2-D2 R7,2,142969
+p3,Bski,938232767,SLKR+FO 9%,SL Kylo R7 Hux R7 FOST R5 Sith Trooper R7 Thrawn R6,9,165287
+p1,j13hall13,662956843,SLKR 8%,SL Kylo R7 Hux R5 Sith Trooper R5 KRU R7 FOST R5,8,159239
+p1,Millz20,684712353,Padme 3%,Padme R5 JKA R5 GK R8 Ahsoka R5 GMY R8,3,147580
+p1,Jose Longo,633696187,Padme 3%,Padme R5 JKA R5 GK R5 Ahsoka R5 GMY R5,3,136053
+p1,Millz,332392187,DR/Malak 3%,DR R7 Malak R5 BSF R5 HK-47 R5 Sith Marauder R7,3,148197
+p1,SirSchuSchu,863647631,Padme 3%,Padme R5 JKA R5 GK R8 Ahsoka R5 GMY R7,3,143268
+p1,Willey,136186513,Padme 3%,Padme R5 JKA R5 GK R5 Ahsoka R6 GMY R5,3,134951
+p1,Bski,938232767,Padme 3%,Padme R5 JKA R7 GK R7 Ahsoka R5 GMY R6,3,142226
+p2,B,948356963,Shaak 6%,Shaak Ti R5 Fives R5 Rex R5 Echo (501st) R5 ARC Trooper R5,6,134778
+p2,YeeterSkeeter,819259195,SLKR+FO 9%,SL Kylo R7 Hux R6 FOST R5 Sith Trooper R5 Thrawn R5,9,152402
+p2,Millz20,684712353,Shaak 6%,Shaak Ti R7 Fives R5 Rex R5 Echo (501st) R5 ARC Trooper R5,6,138495
+p2,Trav,146343631,Shaak 6%,Shaak Ti R7 Fives R7 Rex R7 Echo (501st) R6 ARC Trooper R7,6,150364
+p2,Millz,332392187,SLKR+FO 9%,SL Kylo R8 Hux R5 FOST R5 Sith Trooper R5 Thrawn R6,9,160146
+p2,Bobmaloogax5,993486218,Shaak 6%,Shaak Ti R5 Fives R5 Rex R5 Echo (501st) R5 ARC Trooper R5,6,134490
+p2,Bski,938232767,Shaak 6%,Shaak Ti R7 Fives R7 Rex R5 Echo (501st) R5 ARC Trooper R5,6,142614
+p2,DarthTalon,387869794,Shaak 6%,Shaak Ti R7 Fives R7 Rex R7 Echo (501st) R7 ARC Trooper R7,6,151513
+</pre><a href="#" onclick="CopyToClipboard('summary-farm'); return false;">Copy Summary Farming Info</a> | <a href="#" onclick="CopyToClipboard('summary-farm-csv'); return false;">Copy Summary Farming Info (CSV)</a> | <a href="#" onclick="CopyToClipboard('summary-attack-csv'); return false;">Copy Attack Info (CSV)</a><script>
+$(document).ready(function() {
+    $('#by-player').DataTable({
+        "paging": false,
+        "info": false,
+        "fixedHeader": true,
+    });
+});
+</script><table class="display" id="by-player" style="font-size: 75%; width: 80%;"><thead><th>Player</th><th>Teams Played</th><th>P1</th><th>P2</th><th>P3</th><th>P4</th></thead><thead><th>Totals</th><th>21</th><th>7</th><th>8</th><th>1</th><th>9</th></thead><thead><th>Score</th><th /><th>26</th><th>54</th><th>9</th><th>31</th></thead><tr><td data-filter="684712353" data-order="Millz20"><a href="?filter=684712353">Millz20</a></td><td>2</td><td data-order="1" style="background-color: #ceebfd">1</td><td data-order="1" style="background-color: #ceebfd">1</td><td data-order="0" style="" /><td data-order="0" style="" /></tr><tr><td data-filter="516227655" data-order="Gloom Walker"><a href="?filter=516227655">Gloom Walker</a></td><td>0</td><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /></tr><tr><td data-filter="647474141" data-order="The JLS"><a href="?filter=647474141">The JLS</a></td><td>0</td><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /></tr><tr><td data-filter="332392187" data-order="Millz"><a href="?filter=332392187">Millz</a></td><td>2</td><td data-order="1" style="background-color: #ceebfd">1</td><td data-order="1" style="background-color: #ceebfd">1</td><td data-order="0" style="" /><td data-order="0" style="" /></tr><tr><td data-filter="889632856" data-order="Zar Anduli"><a href="?filter=889632856">Zar Anduli</a></td><td>0</td><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /></tr><tr><td data-filter="146343631" data-order="Trav"><a href="?filter=146343631">Trav</a></td><td>1</td><td data-order="0" style="" /><td data-order="1" style="background-color: #ceebfd">1</td><td data-order="0" style="" /><td data-order="0" style="" /></tr><tr><td data-filter="633696187" data-order="Jose Longo"><a href="?filter=633696187">Jose Longo</a></td><td>1</td><td data-order="1" style="background-color: #ceebfd">1</td><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /></tr><tr><td data-filter="936392725" data-order="Naga Sadów"><a href="?filter=936392725">Naga Sadów</a></td><td>0</td><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /></tr><tr><td data-filter="295729596" data-order="KingKrille"><a href="?filter=295729596">KingKrille</a></td><td>0</td><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /></tr><tr><td data-filter="741217131" data-order="Untamed Sloth"><a href="?filter=741217131">Untamed Sloth</a></td><td>0</td><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /></tr><tr><td data-filter="648966762" data-order="MINI Techno Union"><a href="?filter=648966762">MINI Techno Union</a></td><td>0</td><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /></tr><tr><td data-filter="583496927" data-order="Danja"><a href="?filter=583496927">Danja</a></td><td>1</td><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="1" style="background-color: #ceebfd">1</td></tr><tr><td data-filter="482599677" data-order="Jannah Longo"><a href="?filter=482599677">Jannah Longo</a></td><td>0</td><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /></tr><tr><td data-filter="152667675" data-order="Bakufett"><a href="?filter=152667675">Bakufett</a></td><td>0</td><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /></tr><tr><td data-filter="193362682" data-order="Mulleg"><a href="?filter=193362682">Mulleg</a></td><td>1</td><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="1" style="background-color: #ceebfd">1</td></tr><tr><td data-filter="759526265" data-order="MatejC"><a href="?filter=759526265">MatejC</a></td><td>0</td><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /></tr><tr><td data-filter="788233588" data-order="Tantema Garnik"><a href="?filter=788233588">Tantema Garnik</a></td><td>0</td><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /></tr><tr><td data-filter="827513585" data-order="Peepeepoopooman"><a href="?filter=827513585">Peepeepoopooman</a></td><td>0</td><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /></tr><tr><td data-filter="938232767" data-order="Bski"><a href="?filter=938232767">Bski</a></td><td>6</td><td data-order="1" style="background-color: #ceebfd">1</td><td data-order="1" style="background-color: #ceebfd">1</td><td data-order="1" style="background-color: #ceebfd">1</td><td data-order="3" style="background-color: #ceebfd">3</td></tr><tr><td data-filter="441557869" data-order="Gerehe Zosma"><a href="?filter=441557869">Gerehe Zosma</a></td><td>0</td><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /></tr><tr><td data-filter="494765873" data-order="Sneaky Soy Boy 123"><a href="?filter=494765873">Sneaky Soy Boy 123</a></td><td>0</td><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /></tr><tr><td data-filter="237175899" data-order="MrPickles"><a href="?filter=237175899">MrPickles</a></td><td>0</td><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /></tr><tr><td data-filter="819259195" data-order="YeeterSkeeter"><a href="?filter=819259195">YeeterSkeeter</a></td><td>1</td><td data-order="0" style="" /><td data-order="1" style="background-color: #ceebfd">1</td><td data-order="0" style="" /><td data-order="0" style="" /></tr><tr><td data-filter="863647631" data-order="SirSchuSchu"><a href="?filter=863647631">SirSchuSchu</a></td><td>1</td><td data-order="1" style="background-color: #ceebfd">1</td><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /></tr><tr><td data-filter="993486218" data-order="Bobmaloogax5"><a href="?filter=993486218">Bobmaloogax5</a></td><td>1</td><td data-order="0" style="" /><td data-order="1" style="background-color: #ceebfd">1</td><td data-order="0" style="" /><td data-order="0" style="" /></tr><tr><td data-filter="662956843" data-order="j13hall13"><a href="?filter=662956843">j13hall13</a></td><td>1</td><td data-order="1" style="background-color: #ceebfd">1</td><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /></tr><tr><td data-filter="281334117" data-order="blactastic"><a href="?filter=281334117">blactastic</a></td><td>0</td><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /></tr><tr><td data-filter="647615227" data-order="Stahzo"><a href="?filter=647615227">Stahzo</a></td><td>0</td><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /></tr><tr><td data-filter="136186513" data-order="Willey"><a href="?filter=136186513">Willey</a></td><td>1</td><td data-order="1" style="background-color: #ceebfd">1</td><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /></tr><tr><td data-filter="661932482" data-order="Valektra Jetberg"><a href="?filter=661932482">Valektra Jetberg</a></td><td>0</td><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /></tr><tr><td data-filter="912381174" data-order="wookieguy69"><a href="?filter=912381174">wookieguy69</a></td><td>2</td><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="2" style="background-color: #ceebfd">2</td></tr><tr><td data-filter="552172719" data-order="canth reed"><a href="?filter=552172719">canth reed</a></td><td>0</td><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /></tr><tr><td data-filter="218527368" data-order="Sam"><a href="?filter=218527368">Sam</a></td><td>0</td><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /></tr><tr><td data-filter="419954121" data-order="Schmidty2318"><a href="?filter=419954121">Schmidty2318</a></td><td>0</td><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /></tr><tr><td data-filter="278185814" data-order="Gundam Viver"><a href="?filter=278185814">Gundam Viver</a></td><td>0</td><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /></tr><tr><td data-filter="436272696" data-order="TRICKSHOT"><a href="?filter=436272696">TRICKSHOT</a></td><td>0</td><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /></tr><tr><td data-filter="217482916" data-order="FunkyWizard"><a href="?filter=217482916">FunkyWizard</a></td><td>0</td><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /></tr><tr><td data-filter="966819857" data-order="DereckRM13"><a href="?filter=966819857">DereckRM13</a></td><td>0</td><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /></tr><tr><td data-filter="214666834" data-order="Brizz"><a href="?filter=214666834">Brizz</a></td><td>0</td><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /></tr><tr><td data-filter="715466673" data-order="BigCon"><a href="?filter=715466673">BigCon</a></td><td>0</td><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /></tr><tr><td data-filter="298712984" data-order="BbqBeru"><a href="?filter=298712984">BbqBeru</a></td><td>0</td><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /></tr><tr><td data-filter="964856849" data-order="Bountyy"><a href="?filter=964856849">Bountyy</a></td><td>0</td><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /></tr><tr><td data-filter="446373369" data-order="Kenn Skirata"><a href="?filter=446373369">Kenn Skirata</a></td><td>0</td><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /></tr><tr><td data-filter="669656989" data-order="Mol Eliza"><a href="?filter=669656989">Mol Eliza</a></td><td>0</td><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /></tr><tr><td data-filter="812752189" data-order="lucathepuka"><a href="?filter=812752189">lucathepuka</a></td><td>0</td><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /></tr><tr><td data-filter="184464142" data-order="Abra"><a href="?filter=184464142">Abra</a></td><td>0</td><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /></tr><tr><td data-filter="948356963" data-order="B"><a href="?filter=948356963">B</a></td><td>1</td><td data-order="0" style="" /><td data-order="1" style="background-color: #ceebfd">1</td><td data-order="0" style="" /><td data-order="0" style="" /></tr><tr><td data-filter="387869794" data-order="DarthTalon"><a href="?filter=387869794">DarthTalon</a></td><td>3</td><td data-order="0" style="" /><td data-order="1" style="background-color: #ceebfd">1</td><td data-order="0" style="" /><td data-order="2" style="background-color: #ceebfd">2</td></tr><tr><td data-filter="155754252" data-order="Megared"><a href="?filter=155754252">Megared</a></td><td>0</td><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /></tr><tr><td data-filter="144245956" data-order="Dark Shawi"><a href="?filter=144245956">Dark Shawi</a></td><td>0</td><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /></tr></table><script>$(document).ready( function() {
+
+var urlParams = new URLSearchParams(window.location.search)
+var filter = urlParams.get('filter')
+if (filter) {$('#schedule-p1').DataTable().search(filter).draw()
+$('#schedule-p2').DataTable().search(filter).draw()
+$('#schedule-p3').DataTable().search(filter).draw()
+$('#schedule-p4').DataTable().search(filter).draw()
+$('#by-player').DataTable().search(filter).draw()
+}
+});</script><br/>
+<font size="-2">Generated 2023-05-15 01:46:25 +0000</font>
+<script data-goatcounter="https://gorgatron.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>

@@ -1,0 +1,92 @@
+<meta charset="UTF-8">
+<meta name="robots" content="noindex"><style type="text/css">
+body {
+ background-image: url("../../i/more_faded_logo.jpg");
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+</style><style type="text/css">
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  padding: 8px;
+}
+
+tr:nth-child(even) {background: #dddddd}
+tr:nth-child(odd) {background: #ffffff}
+
+.toggleable {
+    display: none;
+}
+</style><link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.1.5/css/fixedHeader.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.6/css/fixedColumns.dataTables.min.css" />
+<script type="text/javascript" language="javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedheader/3.1.5/js/dataTables.fixedHeader.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedcolumns/3.2.6/js/dataTables.fixedColumns.min.js"></script><title>BRG Alliance Guild Reports: Rise of the Empire (P1) Progress Tracker</title>
+<div style="display: flex; align-items:baseline"><img src="../../i/simple_logo_48.jpg"/>&nbsp;<h1>Alliance Guild Reports: Rise of the Empire (P1) Progress Tracker</h1></div>
+
+<div style="background-color: #f0f0f0; border: solid red; padding: 10px; border-radius: 10px">
+<a href="../../alliance/index.html">Alliance</a> |
+<a href="../../alliance/characters.html">Characters</a> |
+
+<div style="float:right;"><a href="../../r">Resources</a></div>
+<a href="index.html">SithStrikeTeam</a>
+</div>
+<br/><h2>Rise of the Empire (P1) Progress Tracker SithStrikeTeam</h2>
+
+<p>
+Progress on Rise of the Empire P1 squads (R5 required):
+<ul>
+<li>CLS, Han, C3PO, Chewbacca, Chewpio
+<li>Troopers -- Veers, Piett, Dark, Range, +1
+<li>EP / MJ / Vader / Malak / Thrawn
+<li>JMK
+<li>JKL or JML
+<li>Padme / Bad Batch
+<li>SEE, Malak, Malgus, BSF, DR
+</ul>
+
+<p>
+<button onclick="$('.complete').hide(); $('.working').show()">hide completed</button>
+<button onclick="$('.complete').show(); $('.working').hide()">hide incomplete</button>
+<button onclick="$('.complete').show(); $('.working').show()">show all</button>
+
+<br/>
+    
+<link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.0.0/css/buttons.dataTables.min.css" />
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/buttons/2.0.0/js/dataTables.buttons.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/buttons/2.0.0/js/buttons.html5.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script><script>
+$(document).ready(function() {
+    var urlParams = new URLSearchParams(window.location.search)
+    var show = urlParams.get('show')
+    if (show == "working") {
+        $('.complete').hide()
+    } else if (show == "complete") {
+        $('.working').hide()
+    }
+});
+</script><table class="stripe" id="stats"><thead><th>Player</th><th>Ally Code</th><th>Starting Gear Needed</th><th>Progress</th><th>Current Gear Needed</th><th>Team</th></thead><tr class="complete" style="background-color: #ceebfd;"><td>Tahl Rexick</td><td>834776681</td><td>0</td><td>0</td><td>0</td><td><b>JMK</b>: JMK, CAT, GK, GAS, Ahsoka</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Tahl Rexick</td><td>834776681</td><td>0</td><td>0</td><td>0</td><td><b>Padme/BB</b>: Padme, Hunter, Echo, Tech, Wrecker</td></tr><tr class="working" style=""><td>Tahl Rexick</td><td>834776681</td><td>40</td><td>0</td><td>40</td><td><b>EP</b>: <b>EP G12</b>, <b>Mara Jade, The Emperor's Hand G9</b>, <b>Vader G12</b>, <b>Thrawn G8</b>, <b>RG G9</b></td></tr><tr class="working" style=""><td>TMONEY</td><td>673871277</td><td>21</td><td>0</td><td>21</td><td><b>CLS</b>: <b>CLS R1</b>, <b>C-3PO R2</b>, <b>Han R1</b>, <b>Chewbacca R1</b>, <b>Chewpio G12</b></td></tr><tr class="working" style=""><td>Kizz</td><td>346434263</td><td>9</td><td>0</td><td>9</td><td><b>EP</b>: <b>EP R4</b>, <b>Mara Jade, The Emperor's Hand G11</b>, Vader, <b>Thrawn R4</b>, Malak</td></tr><tr class="working" style=""><td>Kizz</td><td>346434263</td><td>32</td><td>0</td><td>32</td><td><b>CLS</b>: CLS, <b>C-3PO G12</b>, <b>Han G10</b>, <b>Chewbacca G9</b>, <b>Chewpio G9</b></td></tr><tr class="working" style=""><td>Kizz</td><td>346434263</td><td>47</td><td>0</td><td>47</td><td><b>Padme/BB</b>: <b>Padme G12</b>, <b>Hunter G8 5&#9733;</b>, <b>Echo G8 4&#9733;</b>, <b>Tech G8 4&#9733;</b>, <b>Wrecker G7 4&#9733;</b></td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Kai Dannik</td><td>378913252</td><td>0</td><td>0</td><td>0</td><td><b>JMLS</b>: JMLS, JKL, JKR, GMY, HYoda</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Kai Dannik</td><td>378913252</td><td>0</td><td>0</td><td>0</td><td><b>CLS</b>: CLS, C-3PO, Han, Chewbacca, Chewpio</td></tr><tr class="working" style=""><td>Kai Dannik</td><td>378913252</td><td>13</td><td>1</td><td>12</td><td><b>EP</b>: <b>EP R1</b>, <b>Mara Jade, The Emperor's Hand G12</b>, <b>Vader R3</b>, Thrawn, Malak</td></tr><tr class="working" style=""><td>Kai Dannik</td><td>378913252</td><td>8</td><td>0</td><td>8</td><td><b>Padme/BB</b>: Padme, <b>Hunter R3</b>, <b>Echo R3</b>, <b>Tech R3</b>, <b>Wrecker R3</b></td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Kale Raxl</td><td>428441352</td><td>0</td><td>0</td><td>0</td><td><b>CLS</b>: CLS, C-3PO, Han, Chewbacca, Chewpio</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Kale Raxl</td><td>428441352</td><td>0</td><td>0</td><td>0</td><td><b>JMK</b>: JMK, CAT, GK, GAS, Ahsoka</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Kale Raxl</td><td>428441352</td><td>0</td><td>0</td><td>0</td><td><b>JMLS</b>: JMLS, JKL, JKR, GMY, HYoda</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Kale Raxl</td><td>428441352</td><td>0</td><td>0</td><td>0</td><td><b>Padme/BB</b>: Padme, Hunter, Echo, Tech, Wrecker</td></tr><tr class="working" style=""><td>Kale Raxl</td><td>428441352</td><td>6</td><td>0</td><td>6</td><td><b>EP</b>: EP, Mara Jade, The Emperor's Hand, Vader, <b>Thrawn G12</b>, Malak</td></tr><tr class="working" style=""><td>Kale Raxl</td><td>428441352</td><td>35</td><td>0</td><td>35</td><td><b>Troopers</b>: <b>Veers G12</b>, <b>Piett G12</b>, <b>Dark Trooper G10</b>, <b>Range Trooper G12</b>, <b>Gideon G9</b></td></tr></table><script>var config = {
+    "paging":   false,
+    "info":     false,
+    bFilter: false,
+    fixedHeader: true,
+    dom: 'Bfrtip',
+    buttons: [
+        'copyHtml5',
+        'excelHtml5',
+        'csvHtml5',
+    ],
+}
+
+table = $('#stats').DataTable(config);</script><br/>
+<font size="-2">Generated 2024-05-12 16:11:44 +0000</font>
+<script data-goatcounter="https://gorgatron.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>

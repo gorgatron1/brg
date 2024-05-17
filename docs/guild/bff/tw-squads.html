@@ -1,0 +1,138 @@
+<meta charset="UTF-8">
+<meta name="robots" content="noindex"><link rel="stylesheet" type="text/css" href="../../toons.css">
+<style type="text/css">
+.toT { text-align:center; font-size: 60%; }
+.toI {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    margin: 0 2.5px;
+}
+.toIs {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin: 0 2.5px;
+}
+.opponent {
+    border: 2px solid grey;
+}
+.hardCounter {
+    border: 2px solid red;
+}
+.softCounter {
+    border: 2px solid blue;
+}
+.squad {
+    border: 2px solid black;
+}
+.verbage {
+    font-size: 70%;
+}
+</style><style type="text/css">
+body {
+ background-image: url("../../i/more_faded_logo.jpg");
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+</style><style type="text/css">
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  padding: 8px;
+}
+
+tr:nth-child(even) {background: #dddddd}
+tr:nth-child(odd) {background: #ffffff}
+
+.toggleable {
+    display: none;
+}
+</style><link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.1.5/css/fixedHeader.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.6/css/fixedColumns.dataTables.min.css" />
+<script type="text/javascript" language="javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedheader/3.1.5/js/dataTables.fixedHeader.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedcolumns/3.2.6/js/dataTables.fixedColumns.min.js"></script>    <script>
+    $(document).ready( function () {
+        $('#squads').DataTable({
+        "paging":   false,
+        "info":     false,
+        
+        
+        fixedHeader: true,
+        
+        
+        });
+    } );
+    </script><title>BRG Alliance Guild Reports: BRG Forced Friends TW Squad Inventory</title>
+<div style="display: flex; align-items:baseline"><img src="../../i/simple_logo_48.jpg"/>&nbsp;<h1>Alliance Guild Reports: BRG Forced Friends TW Squad Inventory</h1></div>
+
+<div style="background-color: #f0f0f0; border: solid red; padding: 10px; border-radius: 10px">
+<a href="../../alliance/index.html">Alliance</a> |
+<div style="float:right;"><a href="../../r">Resources</a></div>
+<a href="index.html">Back</a>
+</div>
+<br/><p>
+You know your teams
+better than the program that generates this, so use this as a guideline,
+not hard facts.
+</p>
+
+<p>
+<img src="../../i/ls24.png"/>: Considered mainly an offensive team
+<br/>
+<img src="../../i/shield24.png"/>: Considered mainly an defensive team
+<br/>
+<img src="../../i/ls24.png"/><img src="../../i/shield24.png"/>: Can be offensive or defensive
+<br/>
+<img src="../../i/wrench24.png">: Team may be usable, but gear is recommended.  Hover or click to see more info.
+</p>
+<button onclick="$('.toggle-all').toggle()">show/hide all</button><br/>
+
+<table id="squads" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Count</th>
+<th>Squads</th>
+</tr>
+</thead><tr valign="top"><td data-order="BH" align="center"><img class="toI squad BOSSK-i" onclick="$('#squads1').toggle()"  title="BH"/></td><td data-order="defense"><img src="../../i/shield24.png"/></td><td>4</td><td class="verbage"><a onclick="$('#squads1').toggle()">show/hide</a><br/><table id="squads1" class="toggle-all"><td><b><a href="../../player/tw-squads/985214928.html#BH">Wutdafuhk</a></b></td><td>130k</td><td nowrap>zzBossk zBoba zDengar zZam zzJango</td></tr><td><b><a href="../../player/tw-squads/393679868.html#BH">arcabryn</a></b></td><td>119k</td><td nowrap>zzBossk Cad Boba G11, zZam Jango</td></tr><td><b><a href="../../player/tw-squads/157242719.html#BH">F2Black</a></b></td><td>112k</td><td nowrap>zzBossk Boba G8, Embo zZam zzJango G11</td></tr><td><b><a href="../../player/tw-squads/919188671.html#BH">Fish Salami</a></b></td><td>102k</td><td nowrap>zBossk Boba IG-88 G9, Greef Karga G9, zJango</td></tr></table></td></tr>
+<tr valign="top"><td data-order="Carth" align="center"><img class="toI squad CARTHONASI-i" onclick="$('#squads2').toggle()"  title="Carth"/></td><td data-order="both"><img src="../../i/ls24.png"/><img src="../../i/shield24.png"/></td><td>2</td><td class="verbage"><a onclick="$('#squads2').toggle()">show/hide</a><br/><table id="squads2" class="toggle-all"><td><b><a href="../../player/tw-squads/985214928.html#Carth">Wutdafuhk</a></b></td><td>106k</td><td nowrap>zCarth Onasi, zMission zZaalbar zJuhani zCanderous</td></tr><td><b><a href="../../player/tw-squads/393679868.html#Carth">arcabryn</a></b></td><td>85k</td><td nowrap>zCarth Onasi G11, zMission G11, Zaalbar Juhani G9, Canderous</td></tr></table></td></tr>
+<tr valign="top"><td data-order="CLS" align="center"><img class="toI squad COMMANDERLUKESKYWALKER-i" onclick="$('#squads3').toggle()"  title="CLS"/></td><td data-order="offense"><img src="../../i/ls24.png"/></td><td>2</td><td class="verbage"><a onclick="$('#squads3').toggle()">show/hide</a><br/><table id="squads3" class="toggle-all"><td><b><a href="../../player/tw-squads/985214928.html#CLS">Wutdafuhk</a></b></td><td>135k</td><td nowrap>zzzCLS zHan zzChewbacca zzR2-D2 zChewpio</td></tr><td><b><a href="../../player/tw-squads/393679868.html#CLS">arcabryn</a></b></td><td>120k</td><td nowrap>zzzCLS zHan zChewbacca R2-D2 zC-3PO</td></tr></table></td></tr>
+<tr valign="top"><td data-order="DRMalak" align="center"><img class="toI squad DARTHREVAN-i" onclick="$('#squads4').toggle()"  title="DRMalak"/></td><td data-order="defense"><img src="../../i/shield24.png"/></td><td>2</td><td class="verbage"><a onclick="$('#squads4').toggle()">show/hide</a><br/><table id="squads4" class="toggle-all"><td><b><a href="../../player/tw-squads/985214928.html#DRMalak">Wutdafuhk</a></b></td><td>142k</td><td nowrap>zzzDR zzHK-47 zBSF zzMalak Sith Empire Trooper</td></tr><td><b><a href="../../player/tw-squads/393679868.html#DRMalak">arcabryn</a></b></td><td>130k</td><td nowrap>zzzDR zHK-47 zBSF zzMalak Sith Empire Trooper</td></tr></table></td></tr>
+<tr valign="top"><td data-order="Ewoks" align="center"><img class="toI squad CHIEFCHIRPA-i" onclick="$('#squads5').toggle()"  title="Ewoks"/></td><td data-order="both"><img src="../../i/ls24.png"/><img src="../../i/shield24.png"/></td><td>3</td><td class="verbage"><a onclick="$('#squads5').toggle()">show/hide</a><br/><table id="squads5" class="toggle-all"><td><b><a href="../../player/tw-squads/985214928.html#Ewoks">Wutdafuhk</a></b></td><td>96k</td><td nowrap>zChirpa Elder zPaploo Teebo zLogray</td></tr><td><b><a href="../../player/tw-squads/393679868.html#Ewoks">arcabryn</a></b></td><td>85k</td><td nowrap>zChirpa G11, Elder G11, Paploo G11, zWicket G11, Logray G11</td></tr><td><b><a href="../../player/tw-squads/157242719.html#Ewoks">F2Black</a></b></td><td>82k</td><td nowrap>zChirpa G11, Elder G11, Paploo G10, zWicket G11, Logray G10</td></tr></table></td></tr>
+<tr valign="top"><td data-order="Executrix" align="center"><img class="toI squad CAPITALSTARDESTROYER-i" onclick="$('#squads6').toggle()"  title="Executrix"/></td><td data-order="unknown"></td><td>1</td><td class="verbage"><a onclick="$('#squads6').toggle()">show/hide</a><br/><table id="squads6" class="toggle-all"><td><b><a href="../../player/tw-squads/985214928.html#Executrix">Wutdafuhk</a></b></td><td>487k</td><td nowrap>Executrix Tie Adv, Emperor's Shuttle, TIE Reaper, Imperial TIE Fighter, Gauntlet Starfighter, First Order SF TIE Fighter, First Order TIE Fighter</td></tr></table></td></tr>
+<tr valign="top"><td data-order="FO" align="center"><img class="toI squad KYLORENUNMASKED-i" onclick="$('#squads7').toggle()"  title="FO"/></td><td data-order="defense"><img src="../../i/shield24.png"/></td><td>1</td><td class="verbage"><a onclick="$('#squads7').toggle()">show/hide</a><br/><table id="squads7" class="toggle-all"><td><b><a href="../../player/tw-squads/393679868.html#FO">arcabryn</a></b></td><td>89k</td><td nowrap>zzKRU Kylo G8, FOE zPhasma G11, FOO G11</td></tr></table></td></tr>
+<tr valign="top"><td data-order="GAS" align="center"><img class="toI squad GENERALSKYWALKER-i" onclick="$('#squads8').toggle()"  title="GAS"/></td><td data-order="both"><img src="../../i/ls24.png"/><img src="../../i/shield24.png"/></td><td>2</td><td class="verbage"><a onclick="$('#squads8').toggle()">show/hide</a><br/><table id="squads8" class="toggle-all"><td><b><a href="../../player/tw-squads/157242719.html#GAS">F2Black</a></b></td><td>161k</td><td nowrap>zzzzGAS zRex zEcho (501st), zzFives zARC Trooper</td></tr><td><b><a href="../../player/tw-squads/393679868.html#GAS">arcabryn</a></b></td><td>153k</td><td nowrap>zzzzGAS zRex zEcho (501st), zzFives zARC Trooper</td></tr></table></td></tr>
+<tr valign="top"><td data-order="Geonosians" align="center"><img class="toI squad GEONOSIANBROODALPHA-i" onclick="$('#squads9').toggle()"  title="Geonosians"/></td><td data-order="defense"><img src="../../i/shield24.png"/></td><td>3</td><td class="verbage"><a onclick="$('#squads9').toggle()">show/hide</a><br/><table id="squads9" class="toggle-all"><td><b><a href="../../player/tw-squads/157242719.html#Geonosians">F2Black</a></b></td><td>111k</td><td nowrap>zzGBA Sun Fac, Geo Soldier, Geo Spy, Poggle</td></tr><td><b><a href="../../player/tw-squads/985214928.html#Geonosians">Wutdafuhk</a></b></td><td>104k</td><td nowrap>zzGBA Sun Fac, Geo Soldier, Geo Spy, Poggle</td></tr><td><b><a href="../../player/tw-squads/393679868.html#Geonosians">arcabryn</a></b></td><td>96k</td><td nowrap>zzGBA Sun Fac, Geo Soldier, Geo Spy, Poggle</td></tr></table></td></tr>
+<tr valign="top"><td data-order="GL Rey" align="center"><img class="toI squad GLREY-i" onclick="$('#squads10').toggle()"  title="GL Rey"/></td><td data-order="both"><img src="../../i/ls24.png"/><img src="../../i/shield24.png"/></td><td>1</td><td class="verbage"><a onclick="$('#squads10').toggle()">show/hide</a><br/><table id="squads10" class="toggle-all"><td><b><a href="../../player/tw-squads/393679868.html#GL Rey">arcabryn</a></b></td><td>159k</td><td nowrap>zzzzzzRey zGK zJTR zResistance Hero Poe, zResistance Hero Finn</td></tr></table></td></tr>
+<tr valign="top"><td data-order="Grievous" align="center"><img class="toI squad GRIEVOUS-i" onclick="$('#squads11').toggle()"  title="Grievous"/></td><td data-order="defense"><img src="../../i/shield24.png"/></td><td>3</td><td class="verbage"><a onclick="$('#squads11').toggle()">show/hide</a><br/><table id="squads11" class="toggle-all"><td><b><a href="../../player/tw-squads/157242719.html#Grievous">F2Black</a></b></td><td>124k</td><td nowrap>zzGG zB2 zB1 MagnaGuard zNute</td></tr><td><b><a href="../../player/tw-squads/393679868.html#Grievous">arcabryn</a></b></td><td>120k</td><td nowrap>zzGG zB2 zB1 MagnaGuard zNute</td></tr><td><b><a href="../../player/tw-squads/985214928.html#Grievous">Wutdafuhk</a></b></td><td>112k</td><td nowrap>zzGG zB2 zB1 zMagnaGuard zNute</td></tr></table></td></tr>
+<tr valign="top"><td data-order="HansMF" align="center"><img class="toI squad CAPITALMONCALAMARICRUISER-i" onclick="$('#squads12').toggle()"  title="HansMF"/></td><td data-order="unknown"></td><td>1</td><td class="verbage"><a onclick="$('#squads12').toggle()">show/hide</a><br/><table id="squads12" class="toggle-all"><td><b><a href="../../player/tw-squads/985214928.html#HansMF">Wutdafuhk</a></b></td><td>412k</td><td nowrap>Home One, Han's MF, Biggs X-wing, Bistan's U-wing, Phantom Ghost Cassian's U-wing, Wedge X-wing</td></tr></table></td></tr>
+<tr valign="top"><td data-order="JTR" align="center"><img class="toI squad REYJEDITRAINING-i" onclick="$('#squads13').toggle()"  title="JTR"/></td><td data-order="both"><img src="../../i/ls24.png"/><img src="../../i/shield24.png"/></td><td>1</td><td class="verbage"><a onclick="$('#squads13').toggle()">show/hide</a><br/><table id="squads13" class="toggle-all"><td><b><a href="../../player/tw-squads/157242719.html#JTR">F2Black</a></b></td><td>84k</td><td nowrap>zJTR Scav Rey G11, BB-8 G10, R2-D2 G10, Finn G10</td></tr></table></td></tr>
+<tr valign="top"><td data-order="Mon Mothma" align="center"><img class="toI squad MONMOTHMA-i" onclick="$('#squads14').toggle()"  title="Mon Mothma"/></td><td data-order="unknown"></td><td>1</td><td class="verbage"><a onclick="$('#squads14').toggle()">show/hide</a><br/><table id="squads14" class="toggle-all"><td><b><a href="../../player/tw-squads/157242719.html#Mon Mothma">F2Black</a></b></td><td>110k</td><td nowrap>zzMon Mothma, Hoth Rebel Scout, zCara Dune, Wedge G10, zPao</td></tr></table></td></tr>
+<tr valign="top"><td data-order="Negotiator" align="center"><img class="toI squad CAPITALNEGOTIATOR-i" onclick="$('#squads15').toggle()"  title="Negotiator"/></td><td data-order="unknown"></td><td>2</td><td class="verbage"><a onclick="$('#squads15').toggle()">show/hide</a><br/><table id="squads15" class="toggle-all"><td><b><a href="../../player/tw-squads/985214928.html#Negotiator">Wutdafuhk</a></b></td><td>500k</td><td nowrap>Negotiator HT Anakin's Eta-2 Starfighter, Umbaran Starfighter, Ahsoka Tano's Jedi Starfighter, BTL-B Y-wing Starfighter, Clone Sergeant's ARC-170, Plo Koon's Jedi Starfighter</td></tr><td><b><a href="../../player/tw-squads/393679868.html#Negotiator">arcabryn</a></b></td><td>498k</td><td nowrap>Negotiator 6* HT Anakin's Eta-2 Starfighter, Umbaran Starfighter, Ahsoka Tano's Jedi Starfighter, Clone Sergeant's ARC-170, Plo Koon's Jedi Starfighter, Rex's ARC-170</td></tr></table></td></tr>
+<tr valign="top"><td data-order="NestSisters" align="center"><img class="toI squad ASAJVENTRESS-i" onclick="$('#squads16').toggle()"  title="NestSisters"/></td><td data-order="both"><img src="../../i/ls24.png"/><img src="../../i/shield24.png"/></td><td>1</td><td class="verbage"><a onclick="$('#squads16').toggle()">show/hide</a><br/><table id="squads16" class="toggle-all"><td><b><a href="../../player/tw-squads/985214928.html#NestSisters">Wutdafuhk</a></b></td><td>106k</td><td nowrap>zzAV zzMT zDaka Zombie zNest G11</td></tr></table></td></tr>
+<tr valign="top"><td data-order="NestSolo (Counter)" align="center"><img class="toI squad ENFYSNEST-i" onclick="$('#squads17').toggle()"  title="NestSolo (Counter)"/></td><td data-order="offense"><img src="../../i/ls24.png"/></td><td>1</td><td class="verbage"><a onclick="$('#squads17').toggle()">show/hide</a><br/><table id="squads17" class="toggle-all"><td><b><a href="../../player/tw-squads/393679868.html#NestSolo (Counter)">arcabryn</a></b></td><td>23k</td><td nowrap>zNest</td></tr></table></td></tr>
+<tr valign="top"><td data-order="NS" align="center"><img class="toI squad MOTHERTALZIN-i" onclick="$('#squads18').toggle()"  title="NS"/></td><td data-order="both"><img src="../../i/ls24.png"/><img src="../../i/shield24.png"/></td><td>1</td><td class="verbage"><a onclick="$('#squads18').toggle()">show/hide</a><br/><table id="squads18" class="toggle-all"><td><b><a href="../../player/tw-squads/393679868.html#NS">arcabryn</a></b></td><td>117k</td><td nowrap>zzMT zzAV zDaka Zombie Spirit</td></tr></table></td></tr>
+<tr valign="top"><td data-order="padme" align="center"><img class="toI squad PADMEAMIDALA-i" onclick="$('#squads19').toggle()"  title="padme"/></td><td data-order="defense"><img src="../../i/shield24.png"/></td><td>2</td><td class="verbage"><a onclick="$('#squads19').toggle()">show/hide</a><br/><table id="squads19" class="toggle-all"><td><b><a href="../../player/tw-squads/985214928.html#padme">Wutdafuhk</a></b></td><td>149k</td><td nowrap>zzPadme zGK zJKA zAhsoka zzC-3PO</td></tr><td><b><a href="../../player/tw-squads/157242719.html#padme">F2Black</a></b></td><td>122k</td><td nowrap>zzPadme zGK JKA G10, zAhsoka zBarriss</td></tr></table></td></tr>
+<tr valign="top"><td data-order="Phoenix" align="center"><img class="toI squad HERASYNDULLAS3-i" onclick="$('#squads20').toggle()"  title="Phoenix"/></td><td data-order="defense"><img src="../../i/shield24.png"/></td><td>4</td><td class="verbage"><a onclick="$('#squads20').toggle()">show/hide</a><br/><table id="squads20" class="toggle-all"><td><b><a href="../../player/tw-squads/985214928.html#Phoenix">Wutdafuhk</a></b></td><td>89k</td><td nowrap>zHera G11, Zeb G10, zSabine G8, zEzra zKanan G10</td></tr><td><b><a href="../../player/tw-squads/393679868.html#Phoenix">arcabryn</a></b></td><td>69k</td><td nowrap>Hera G9, Zeb G8, Sabine G9, Ezra G11, Kanan G9</td></tr><td><b><a href="../../player/tw-squads/919188671.html#Phoenix">Fish Salami</a></b></td><td>66k</td><td nowrap>Hera G8, Zeb G8, Ezra G11, Kanan G8, Chopper G8</td></tr><td><b><a href="../../player/tw-squads/157242719.html#Phoenix">F2Black</a></b></td><td>62k</td><td nowrap>Hera G8, Zeb G8, Ezra G8, Kanan G8, Chopper G8</td></tr></table></td></tr>
+<tr valign="top"><td data-order="Revan Offense" align="center"><img class="toI squad JEDIKNIGHTREVAN-i" onclick="$('#squads21').toggle()"  title="Revan Offense"/></td><td data-order="both"><img src="../../i/ls24.png"/><img src="../../i/shield24.png"/></td><td>2</td><td class="verbage"><a onclick="$('#squads21').toggle()">show/hide</a><br/><table id="squads21" class="toggle-all"><td><b><a href="../../player/tw-squads/985214928.html#Revan Offense">Wutdafuhk</a></b></td><td>140k</td><td nowrap>zzzJKR zzGMY zBS zJolee zzHYoda</td></tr><td><b><a href="../../player/tw-squads/393679868.html#Revan Offense">arcabryn</a></b></td><td>137k</td><td nowrap>zzzJKR zGMY HYoda zJolee zJKA</td></tr></table></td></tr>
+<tr valign="top"><td data-order="Rogue1" align="center"><img class="toI squad JYNERSO-i" onclick="$('#squads22').toggle()"  title="Rogue1"/></td><td data-order="both"><img src="../../i/ls24.png"/><img src="../../i/shield24.png"/></td><td>1</td><td class="verbage"><a onclick="$('#squads22').toggle()">show/hide</a><br/><table id="squads22" class="toggle-all"><td><b><a href="../../player/tw-squads/157242719.html#Rogue1">F2Black</a></b></td><td>75k</td><td nowrap>Jyn G8, Chirrut G8, Baze G8, zK-2SO Cassian G8</td></tr></table></td></tr>
+<tr valign="top"><td data-order="ShaakClones" align="center"><img class="toI squad SHAAKTI-i" onclick="$('#squads23').toggle()"  title="ShaakClones"/></td><td data-order="offense"><img src="../../i/ls24.png"/></td><td>1</td><td class="verbage"><a onclick="$('#squads23').toggle()">show/hide</a><br/><table id="squads23" class="toggle-all"><td><b><a href="../../player/tw-squads/985214928.html#ShaakClones">Wutdafuhk</a></b></td><td>136k</td><td nowrap>zzShaak Ti, zRex zEcho (501st), zzFives zARC Trooper</td></tr></table></td></tr>
+<tr valign="top"><td data-order="SL Kylo" align="center"><img class="toI squad SUPREMELEADERKYLOREN-i" onclick="$('#squads24').toggle()"  title="SL Kylo"/></td><td data-order="both"><img src="../../i/ls24.png"/><img src="../../i/shield24.png"/></td><td>1</td><td class="verbage"><a onclick="$('#squads24').toggle()">show/hide</a><br/><table id="squads24" class="toggle-all"><td><b><a href="../../player/tw-squads/985214928.html#SL Kylo">Wutdafuhk</a></b></td><td>159k</td><td nowrap>zzzzzzSL Kylo, zSith Trooper, zHux zzKRU zzThrawn</td></tr></table></td></tr>
+<tr valign="top"><td data-order="Thragma (Counter)" align="center"><img class="toI squad GRANDADMIRALTHRAWN-i" onclick="$('#squads25').toggle()"  title="Thragma (Counter)"/></td><td data-order="offense"><img src="../../i/ls24.png"/></td><td>1</td><td class="verbage"><a onclick="$('#squads25').toggle()">show/hide</a><br/><table id="squads25" class="toggle-all"><td><b><a href="../../player/tw-squads/393679868.html#Thragma (Counter)">arcabryn</a></b></td><td>68k</td><td nowrap>Thrawn G9, Magma G9, DT G10, Stormtrooper G9, Shoretrooper G10</td></tr></table></td></tr>
+<tr valign="top"><td data-order="Traya" align="center"><img class="toI squad DARTHTRAYA-i" onclick="$('#squads26').toggle()"  title="Traya"/></td><td data-order="offense"><img src="../../i/ls24.png"/></td><td>1</td><td class="verbage"><a onclick="$('#squads26').toggle()">show/hide</a><br/><table id="squads26" class="toggle-all"><td><b><a href="../../player/tw-squads/985214928.html#Traya">Wutdafuhk</a></b></td><td>140k</td><td nowrap>zzTraya zDN zSion zDooku zzEP</td></tr></table></td></tr>
+<tr valign="top"><td data-order="Troopers" align="center"><img class="toI squad VEERS-i" onclick="$('#squads27').toggle()"  title="Troopers"/></td><td data-order="offense"><img src="../../i/ls24.png"/></td><td>1</td><td class="verbage"><a onclick="$('#squads27').toggle()">show/hide</a><br/><table id="squads27" class="toggle-all"><td><b><a href="../../player/tw-squads/985214928.html#Troopers">Wutdafuhk</a></b></td><td>90k</td><td nowrap>zVeers zStarck Shoretrooper Magma G11, Snowtrooper G11</td></tr></table></td></tr>
+<tr valign="top"><td data-order="zEP" align="center"><img class="toI squad EMPERORPALPATINE-i" onclick="$('#squads28').toggle()"  title="zEP"/></td><td data-order="both"><img src="../../i/ls24.png"/><img src="../../i/shield24.png"/></td><td>2</td><td class="verbage"><a onclick="$('#squads28').toggle()">show/hide</a><br/><table id="squads28" class="toggle-all"><td><b><a href="../../player/tw-squads/157242719.html#zEP">F2Black</a></b></td><td>112k</td><td nowrap>zEP G8, zzzVader Tarkin zSith Trooper, Sion G9</td></tr><td><b><a href="../../player/tw-squads/393679868.html#zEP">arcabryn</a></b></td><td>96k</td><td nowrap>zEP zzVader Tarkin G8, TFP G8, zzTraya G11</td></tr></table></td></tr>
+</table><br/>
+<font size="-2">Generated 2022-04-29 04:46:31 +0000</font>
+<script data-goatcounter="https://gorgatron.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>

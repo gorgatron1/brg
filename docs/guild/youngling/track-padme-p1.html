@@ -1,0 +1,83 @@
+<meta charset="UTF-8">
+<meta name="robots" content="noindex"><style type="text/css">
+body {
+ background-image: url("../../i/more_faded_logo.jpg");
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+</style><style type="text/css">
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  padding: 8px;
+}
+
+tr:nth-child(even) {background: #dddddd}
+tr:nth-child(odd) {background: #ffffff}
+
+.toggleable {
+    display: none;
+}
+</style><link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.1.5/css/fixedHeader.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.6/css/fixedColumns.dataTables.min.css" />
+<script type="text/javascript" language="javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedheader/3.1.5/js/dataTables.fixedHeader.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedcolumns/3.2.6/js/dataTables.fixedColumns.min.js"></script><title>BRG Alliance Guild Reports: Padme P1 Progress Tracker</title>
+<div style="display: flex; align-items:baseline"><img src="../../i/simple_logo_48.jpg"/>&nbsp;<h1>Alliance Guild Reports: Padme P1 Progress Tracker</h1></div>
+
+<div style="background-color: #f0f0f0; border: solid red; padding: 10px; border-radius: 10px">
+<a href="../../alliance/index.html">Alliance</a> |
+<a href="../../alliance/characters.html">Characters</a> |
+
+<div style="float:right;"><a href="../../r">Resources</a></div>
+<a href="index.html">BRG Younglings In The Temple</a>
+</div>
+<br/><h2>Padme P1 Progress Tracker BRG Younglings In The Temple</h2>
+
+<p>
+Progress on Padme P1 farming.
+
+<p>
+<button onclick="$('.complete').hide(); $('.working').show()">hide completed</button>
+<button onclick="$('.complete').show(); $('.working').hide()">hide incomplete</button>
+<button onclick="$('.complete').show(); $('.working').show()">show all</button>
+
+<br/>
+    
+<link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.0.0/css/buttons.dataTables.min.css" />
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/buttons/2.0.0/js/dataTables.buttons.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/buttons/2.0.0/js/buttons.html5.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script><script>
+$(document).ready(function() {
+    var urlParams = new URLSearchParams(window.location.search)
+    var show = urlParams.get('show')
+    if (show == "working") {
+        $('.complete').hide()
+    } else if (show == "complete") {
+        $('.working').hide()
+    }
+});
+</script><table class="stripe" id="stats"><thead><th>Player</th><th>Ally Code</th><th>Starting Gear Needed</th><th>Progress</th><th>Current Gear Needed</th><th>GP</th><th>Team</th></thead><tr class="working" style=""><td>MINI SgtGingerbeard</td><td>211844511</td><td>67</td><td>39</td><td>28</td><td data-order="96916">96k</td><td><b>Padme G9</b>, JKA, <b>Ahsoka G11</b>, <b>GK G12</b>, <b>GMY G12</b></td></tr><tr class="working" style=""><td>PJMaster</td><td>377989166</td><td>78</td><td>68</td><td>10</td><td data-order="119882">119k</td><td><b>Padme R3</b>, JKA, <b>Ahsoka R3</b>, GK, <b>GMY G12</b></td></tr><tr class="working" style=""><td>Mitsuki</td><td>844775351</td><td>43</td><td>13</td><td>30</td><td data-order="102732">102k</td><td><b>Padme G12</b>, <b>JKA G12</b>, <b>Ahsoka G12</b>, <b>GK G12</b>, <b>GMY G12</b></td></tr><tr class="working" style=""><td>esmith1153</td><td>736978576</td><td>87</td><td>38</td><td>49</td><td data-order="65168">65k</td><td><b>Padme G1</b>, <b>JKA G11 5&#9733;</b>, <b>Ahsoka G10</b>, <b>GK G8</b>, <b>GMY G11</b></td></tr><tr class="working" style=""><td>MrTomChase24</td><td>674818227</td><td>72</td><td>64</td><td>8</td><td data-order="128556">128k</td><td>Padme, JKA, <b>Ahsoka R3</b>, GK, <b>GMY G12</b></td></tr><tr class="working" style=""><td>Pickle rick</td><td>266133985</td><td>65</td><td>33</td><td>32</td><td data-order="91526">91k</td><td><b>Padme G12</b>, <b>JKA G12</b>, <b>Ahsoka G10</b>, <b>GK G12</b>, <b>GMY G12</b></td></tr><tr class="working" style=""><td>TheMeanDean</td><td>579355186</td><td>65</td><td>37</td><td>28</td><td data-order="100151">100k</td><td><b>Padme G12</b>, <b>JKA G11</b>, <b>Ahsoka G11</b>, <b>GK G12</b>, <b>GMY R3</b></td></tr><tr class="working" style=""><td>Orca</td><td>527193378</td><td>69</td><td>62</td><td>7</td><td data-order="126683">126k</td><td>Padme, JKA, Ahsoka, GK, <b>GMY G11</b></td></tr><tr class="working" style=""><td>Kate</td><td>483591584</td><td>74</td><td>39</td><td>35</td><td data-order="83179">83k</td><td><b>Padme G10</b>, <b>JKA G11</b>, <b>Ahsoka G12</b>, <b>GK G10</b>, <b>GMY G12</b></td></tr><tr class="working" style=""><td>Shayna Vetacious</td><td>391637392</td><td>72</td><td>52</td><td>20</td><td data-order="114538">114k</td><td><b>Padme R3</b>, JKA, <b>Ahsoka G12</b>, <b>GK G12</b>, <b>GMY G12</b></td></tr><tr class="working" style=""><td>Jak Frey</td><td>692973843</td><td>65</td><td>22</td><td>43</td><td data-order="68020">68k</td><td><b>Padme G8</b>, <b>JKA G9</b>, <b>Ahsoka G9</b>, <b>GK G8</b>, <b>GMY G13</b></td></tr><tr class="working" style=""><td>Peu Trid</td><td>631967535</td><td>40</td><td>30</td><td>10</td><td data-order="123007">123k</td><td><b>Padme R3</b>, JKA, Ahsoka, <b>GK G12</b>, <b>GMY R3</b></td></tr><tr class="working" style=""><td>Xander</td><td>762457673</td><td>31</td><td>3</td><td>28</td><td data-order="98982">98k</td><td><b>Padme G10</b>, JKA, <b>Ahsoka G11</b>, <b>GK G11</b>, <b>GMY G12</b></td></tr><tr class="working" style=""><td>Blackwing</td><td>654686582</td><td>60</td><td>27</td><td>33</td><td data-order="92778">92k</td><td><b>Padme G9</b>, <b>JKA G12</b>, <b>Ahsoka G12</b>, <b>GK G12</b>, <b>GMY G12</b></td></tr><tr class="working" style=""><td>Bills Mafia</td><td>441664365</td><td>65</td><td>41</td><td>24</td><td data-order="102383">102k</td><td><b>Padme G12</b>, <b>JKA G12</b>, <b>Ahsoka G12</b>, GK, <b>GMY G12</b></td></tr><tr class="working" style=""><td>Prolox150</td><td>784616867</td><td>54</td><td>24</td><td>30</td><td data-order="84805">84k</td><td><b>Padme G9</b>, <b>JKA R4</b>, <b>Ahsoka G11</b>, <b>GK G11</b>, <b>GMY G12</b></td></tr><tr class="working" style=""><td>Forsaken</td><td>757795424</td><td>48</td><td>16</td><td>32</td><td data-order="87243">87k</td><td><b>Padme G8 6&#9733;</b>, <b>JKA G11</b>, <b>Ahsoka G11</b>, <b>GK R3</b>, <b>GMY G12</b></td></tr><tr class="working" style=""><td>Szerahk</td><td>958343253</td><td>62</td><td>9</td><td>53</td><td data-order="58074">58k</td><td><b>Padme G8</b>, <b>JKA G1 3&#9733;</b>, <b>Ahsoka G1</b>, <b>GK G12</b>, <b>GMY R2</b></td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Amaterasu</td><td>935596991</td><td>0</td><td>0</td><td>0</td><td data-order="154413">154k</td><td>Padme, JKA, Ahsoka, GK, GMY</td></tr><tr class="working" style=""><td>theLeskiss</td><td>626646537</td><td>40</td><td>9</td><td>31</td><td data-order="96936">96k</td><td><b>Padme G12</b>, <b>JKA G12</b>, <b>Ahsoka G11</b>, <b>GK G12</b>, <b>GMY G12</b></td></tr><tr class="working" style=""><td>Smashburger</td><td>776444483</td><td>50</td><td>29</td><td>21</td><td data-order="110758">110k</td><td><b>Padme G12</b>, <b>JKA R3</b>, <b>Ahsoka G11</b>, GK, <b>GMY G12</b></td></tr><tr class="complete" style="background-color: #ceebfd;"><td>WilsonJason</td><td>327282478</td><td>38</td><td>38</td><td>0</td><td data-order="144263">144k</td><td>Padme, JKA, Ahsoka, GK, GMY</td></tr><tr class="working" style=""><td>BenSwoloOnDBOL</td><td>871833824</td><td>57</td><td>15</td><td>42</td><td data-order="65750">65k</td><td><b>Padme G8</b>, <b>JKA G9 5&#9733;</b>, <b>Ahsoka G12</b>, <b>GK G7</b>, <b>GMY G12</b></td></tr><tr class="working" style=""><td>Barraza</td><td>479721254</td><td>56</td><td>22</td><td>34</td><td data-order="92291">92k</td><td><b>Padme G9</b>, <b>JKA G12</b>, <b>Ahsoka G11</b>, <b>GK G12</b>, <b>GMY G12</b></td></tr><tr class="working" style=""><td>OnyXavier</td><td>637663384</td><td>57</td><td>19</td><td>38</td><td data-order="78964">78k</td><td><b>Padme G9</b>, <b>JKA G9</b>, <b>Ahsoka G10</b>, <b>GK G8</b>, <b>GMY R3</b></td></tr><tr class="working" style=""><td>mar5hmn9</td><td>294825966</td><td>72</td><td>42</td><td>30</td><td data-order="90548">90k</td><td><b>Padme G12</b>, <b>JKA G12</b>, <b>Ahsoka G12</b>, <b>GK G12</b>, <b>GMY G12</b></td></tr><tr class="working" style=""><td>Galeforce</td><td>284743495</td><td>63</td><td>49</td><td>14</td><td data-order="117610">117k</td><td><b>Padme R3</b>, <b>JKA R3</b>, <b>Ahsoka R3</b>, <b>GK R3</b>, <b>GMY G12</b></td></tr><tr class="working" style=""><td>Desimo</td><td>642239495</td><td>61</td><td>18</td><td>43</td><td data-order="69625">69k</td><td><b>Padme G7</b>, <b>JKA G10</b>, <b>Ahsoka G11</b>, <b>GK G8</b>, <b>GMY G11</b></td></tr><tr class="working" style=""><td>Visigoth83</td><td>491397777</td><td>49</td><td>17</td><td>32</td><td data-order="88821">88k</td><td><b>Padme G10</b>, <b>JKA G12</b>, <b>Ahsoka G12</b>, <b>GK G12</b>, <b>GMY G12</b></td></tr><tr class="working" style=""><td>Coop</td><td>972228286</td><td>22</td><td>7</td><td>15</td><td data-order="112281">112k</td><td><b>Padme R3</b>, <b>JKA R2</b>, <b>Ahsoka R3</b>, <b>GK R3</b>, <b>GMY G12</b></td></tr><tr class="working" style=""><td>Mol Ace</td><td>473196354</td><td>58</td><td>38</td><td>20</td><td data-order="108587">108k</td><td><b>Padme G12</b>, JKA, <b>Ahsoka R3</b>, <b>GK G12</b>, <b>GMY G12</b></td></tr><tr class="working" style=""><td>Zephyr</td><td>297528578</td><td>40</td><td>21</td><td>19</td><td data-order="122921">122k</td><td><b>Padme G12</b>, <b>JKA G11</b>, <b>Ahsoka G12</b>, GK, GMY</td></tr><tr class="working" style=""><td>Megaroutte</td><td>899878853</td><td>40</td><td>10</td><td>30</td><td data-order="92865">92k</td><td><b>Padme G12</b>, <b>JKA R4</b>, <b>Ahsoka G12</b>, <b>GK G8</b>, <b>GMY G11</b></td></tr><tr class="working" style=""><td>DumbNugget</td><td>755976984</td><td>73</td><td>41</td><td>32</td><td data-order="86918">86k</td><td><b>Padme G12</b>, <b>JKA G11 6&#9733;</b>, <b>Ahsoka G11</b>, <b>GK G12</b>, <b>GMY G12</b></td></tr><tr class="working" style=""><td>MINI Leskiss</td><td>112892133</td><td>58</td><td>5</td><td>53</td><td data-order="57361">57k</td><td><b>Padme G1</b>, <b>JKA G11</b>, <b>Ahsoka G12</b>, <b>GK G1</b>, <b>GMY G12</b></td></tr><tr class="working" style=""><td>SleepyKiIIer666</td><td>456111931</td><td>72</td><td>34</td><td>38</td><td data-order="81151">81k</td><td><b>Padme G9</b>, <b>JKA G12</b>, <b>Ahsoka G11</b>, <b>GK G8</b>, <b>GMY G12</b></td></tr><tr class="working" style=""><td>Poppa Nugget</td><td>947679913</td><td>66</td><td>16</td><td>50</td><td data-order="57234">57k</td><td><b>Padme G1 5&#9733;</b>, <b>JKA G12</b>, <b>Ahsoka G8</b>, <b>GK G7</b>, <b>GMY G12</b></td></tr><tr class="working" style=""><td>Citizen Juicer</td><td>562445426</td><td>57</td><td>52</td><td>5</td><td data-order="128189">128k</td><td><b>Padme R3</b>, JKA, <b>Ahsoka R3</b>, GK, <b>GMY R4</b></td></tr><tr class="working" style=""><td>Darkside Dad</td><td>551997198</td><td>40</td><td>0</td><td>40</td><td data-order="73394">73k</td><td><b>Padme G0 0&#9733;</b>, <b>JKA G12</b>, <b>Ahsoka G10</b>, <b>GK G12</b>, <b>GMY R3</b></td></tr><tr class="working" style=""><td>WastedNugget</td><td>478123696</td><td>66</td><td>23</td><td>43</td><td data-order="59366">59k</td><td><b>Padme G10</b>, <b>JKA G12</b>, <b>Ahsoka G10</b>, <b>GK G8 6&#9733;</b>, <b>GMY G7</b></td></tr><tr class="working" style=""><td>Jotar0Kujoh</td><td>973886778</td><td>38</td><td>24</td><td>14</td><td data-order="120564">120k</td><td><b>Padme R3</b>, JKA, <b>Ahsoka G12</b>, GK, <b>GMY G12</b></td></tr><tr class="working" style=""><td>nate</td><td>723479542</td><td>46</td><td>12</td><td>34</td><td data-order="79233">79k</td><td><b>Padme G10</b>, <b>JKA G8 5&#9733;</b>, <b>Ahsoka G12</b>, <b>GK G8</b>, GMY</td></tr><tr class="working" style=""><td>GeneralSkywalker</td><td>628775779</td><td>73</td><td>22</td><td>51</td><td data-order="54581">54k</td><td><b>Padme G8</b>, <b>JKA G9</b>, <b>Ahsoka G9</b>, <b>GK G1</b>, <b>GMY G12</b></td></tr><tr class="working" style=""><td>Yabba</td><td>439127848</td><td>73</td><td>26</td><td>47</td><td data-order="69134">69k</td><td><b>Padme G1</b>, <b>JKA G11</b>, <b>Ahsoka G12</b>, <b>GK G8</b>, <b>GMY G11</b></td></tr><tr class="working" style=""><td>Hoshiyomi Gaming</td><td>729762928</td><td>61</td><td>20</td><td>41</td><td data-order="77902">77k</td><td><b>Padme G9</b>, <b>JKA G11</b>, <b>Ahsoka G11</b>, <b>GK G9 6&#9733;</b>, <b>GMY G9</b></td></tr><tr class="working" style=""><td>GeneralBraxer'sio</td><td>773582248</td><td>67</td><td>19</td><td>48</td><td data-order="57275">57k</td><td><b>Padme G8</b>, <b>JKA G6 5&#9733;</b>, <b>Ahsoka G8</b>, <b>GK G8</b>, <b>GMY G12</b></td></tr><tr class="working" style=""><td>Obi Shinobi</td><td>399864143</td><td>37</td><td>0</td><td>37</td><td data-order="80767">80k</td><td><b>Padme G10</b>, <b>JKA G12</b>, <b>Ahsoka G11</b>, <b>GK G8</b>, <b>GMY G12</b></td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Chantelle Vetacious</td><td>842688545</td><td>0</td><td>0</td><td>0</td><td data-order="152112">152k</td><td>Padme, JKA, Ahsoka, GK, GMY</td></tr><tr class="working" style=""><td>JadenRaven</td><td>329564557</td><td>68</td><td>1</td><td>67</td><td data-order="49213">49k</td><td><b>Padme G1</b>, <b>JKA G1</b>, <b>Ahsoka G1</b>, <b>GK G8</b>, <b>GMY G12</b></td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Δ Vitiaté Δ</td><td>634879281</td><td>0</td><td>0</td><td>0</td><td data-order="157066">157k</td><td>Padme, JKA, Ahsoka, GK, GMY</td></tr></table><script>var config = {
+    "paging":   false,
+    "info":     false,
+    bFilter: false,
+    fixedHeader: true,
+    dom: 'Bfrtip',
+    buttons: [
+        'copyHtml5',
+        'excelHtml5',
+        'csvHtml5',
+    ],
+}
+
+table = $('#stats').DataTable(config);</script><br/>
+<font size="-2">Generated 2023-05-15 01:46:36 +0000</font>
+<script data-goatcounter="https://gorgatron.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>

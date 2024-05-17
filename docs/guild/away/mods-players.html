@@ -1,0 +1,143 @@
+<meta charset="UTF-8">
+<meta name="robots" content="noindex"><style type="text/css">
+body {
+ background-image: url("../../i/more_faded_logo.jpg");
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+</style><style type="text/css">
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  padding: 8px;
+}
+
+tr:nth-child(even) {background: #dddddd}
+tr:nth-child(odd) {background: #ffffff}
+
+.toggleable {
+    display: none;
+}
+</style><link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.1.5/css/fixedHeader.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.6/css/fixedColumns.dataTables.min.css" />
+<script type="text/javascript" language="javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedheader/3.1.5/js/dataTables.fixedHeader.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedcolumns/3.2.6/js/dataTables.fixedColumns.min.js"></script><title>BRG Alliance Guild Reports: Guild Mod Report: By Player</title>
+<div style="display: flex; align-items:baseline"><img src="../../i/simple_logo_48.jpg"/>&nbsp;<h1>Alliance Guild Reports: Guild Mod Report: By Player</h1></div>
+
+<div style="background-color: #f0f0f0; border: solid red; padding: 10px; border-radius: 10px">
+<a href="../../alliance/index.html">Alliance</a> |
+<a href="../../alliance/characters.html">Characters</a> |
+
+<div style="float:right;"><a href="../../r">Resources</a></div>
+<a href="index.html">BRG A Guild Far Far Away</a>
+</div>
+<br/><script>
+    var modReferenceData = {}
+    var modData = {}
+    
+    var scoreThreshold = -25
+    var table = null
+    
+    jQuery.ajax({
+    type: 'GET',
+    async: true,
+    url: 'modData.json',
+    success: function (d1) {
+        modData = d1
+        
+        jQuery.ajax({
+        type: 'GET',
+        async: true,
+        url: '../../modReference.json',
+        success: function (d2) {
+            
+            modReferenceData = d2
+            setup()
+        }})
+    }})
+        
+    function setup() {
+        var characterIds = Object.keys(modData.units).sort()
+        var data = []
+        modData.players.forEach(function(player, i) {
+            var m = 0
+            var a = 0
+            var p = 0
+            var n = 0
+                        
+            characterIds.forEach(id => {
+                var u = modData.units[id][i]
+                if (u != null) {
+                    m += 1
+                    if (u.d <= 250) {
+                        // inside the cluster
+                        a += 1
+                    }
+                    if (u.s >= scoreThreshold) {
+                        p += 1
+                    } else {
+                        n += 1
+                    }
+                }
+            })
+            
+            data.push([
+                [player.n, player.c],
+                m,
+                a,
+                p,
+                n,
+            ])
+        })
+        
+        table = $('#characters').DataTable({
+        "paging":   false,
+        "info":     false,
+        fixedHeader: true,
+            data: data,
+            columnDefs: [
+            {
+                targets: 0,
+                searchable: true,
+                render: function (data, type, row, meta) {
+                    return '<a href="mods-player.html?id=' + row[0][1] + '">' + row[0][0] + "</a>"
+                }
+            },
+            {
+                targets: 2,
+                visible: false,
+            },
+            { targets: '_all', searchable: false }
+            ]
+        });
+    }
+    
+</script>
+    
+<h2 id="name">Mod Report for BRG A Guild Far Far Away</h2>
+
+<p>
+    This table shows summary information for all the mods across all the players in your guild, by player
+    (see <a href="mods-characters.html">them by character</a> as well).  If you click on a player
+    name, you will see details about their mods.
+    
+<table id="characters">
+    <thead><tr>
+        <th>Player</th>
+        <th title="Number of units G8+ and modded.">Modded</th>
+        <th>Aligned Units</th>
+        <th title="Number of units with a positive score.">Positive Scores</th>
+        <th title="Number of units with a negative (may need work) score.">Negative Scores</th>
+    </tr></thead>
+</table><br/>
+<font size="-2">Generated 2024-05-12 16:08:38 +0000</font>
+<script data-goatcounter="https://gorgatron.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>

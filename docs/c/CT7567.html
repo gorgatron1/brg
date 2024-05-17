@@ -1,0 +1,270 @@
+<meta charset="UTF-8">
+<meta name="robots" content="noindex"><style type="text/css">
+body {
+ background-image: url("../i/more_faded_logo.jpg");
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+</style><link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.1.5/css/fixedHeader.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.6/css/fixedColumns.dataTables.min.css" />
+<script type="text/javascript" language="javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedheader/3.1.5/js/dataTables.fixedHeader.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedcolumns/3.2.6/js/dataTables.fixedColumns.min.js"></script>    <script>
+    $(document).ready( function () {
+        $('#zetas').DataTable({
+        "paging":   false,
+        "info":     false,
+        
+        
+        
+        
+        bFilter: false,
+        });
+    } );
+    </script>    <script>
+    $(document).ready( function () {
+        $('#gearLevels').DataTable({
+        "paging":   false,
+        "info":     false,
+        
+        
+        
+        
+        bFilter: false,
+        });
+    } );
+    </script><script src="https://cdn.plot.ly/plotly-latest.min.js"></script><link rel="stylesheet" type="text/css" href="../mods.css">
+<style>
+#zetas {
+    width: 800;
+    margin-left: 10;
+}
+#gearLevels {
+    width: 400;
+    margin-left: 10;
+}
+#picture {
+    float: right;
+}
+table.mods {
+    margin-top: 5px;
+}
+td.examples {
+    padding: 10px;
+    font-size: 90%;
+    width: 430px;
+}
+.mod-set {
+    width: 24px;
+    height: 24px;
+}
+.priority {
+    border: 1px solid black;
+    margin: 2px;
+    margin-right: 10px;
+    background-color: #c0c0c0;
+}
+.mod-cell {
+    border: 1px solid black;
+    padding: 2px;
+    font-size: 85%;
+}
+</style><title>BRG Alliance Guild Reports: Alliance Character Data: CT-7567 "Rex"</title>
+<div style="display: flex; align-items:baseline"><img src="../i/simple_logo_48.jpg"/>&nbsp;<h1>Alliance Guild Reports: Alliance Character Data: CT-7567 "Rex"</h1></div>
+
+<div style="background-color: #f0f0f0; border: solid red; padding: 10px; border-radius: 10px">
+<a href="../alliance/index.html">Alliance</a> |
+<a href="../alliance/characters.html">Characters</a> |
+
+<div style="float:right;"><a href="../r">Resources</a></div>
+<a href="../alliance/players.html">Player</a> | <a href="../alliance/characters.html">Characters</a> | <a href="../alliance/history.html">History</a> | <a href="../alliance/transfers.html">Transfers</a>
+</div>
+<br/><h1><img id="picture" src="https://game-assets.swgoh.gg/tex.charui_trooperclone_rex.png" />Alliance Character Data: CT-7567 "Rex"</h1><h2>swgoh.gg data</h2><ul><li><a href="https://swgoh.gg/characters/ct-7567-rex/">abilities / character data</a></li><li><a href="https://swgoh.gg/characters/ct-7567-rex/data/">character meta report</a></li><li><a href="https://swgoh.gg/characters/ct-7567-rex/data/mods">mods meta report</a></li><li><a href="https://swgoh.gg/characters/ct-7567-rex/data/stats">stats meta report</a></li></ul><h2>Mod Data</h2><h3>Mod Stat Distributions</h3>Mod stat distributions across 2173 units from the
+alliance and top guilds.  The bonuses are shown as applied to an R5 unit.
+Specific distributions are shown below by common mod configurations.<div id="mc-all" style="height:500px" /><script>
+{
+let traces = [];traces.push({
+    name: "speed",
+    x: [ 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160, 170, 180, 190 ],
+    y: [ 0, 1, 1, 2, 2, 3, 4, 4, 4, 5, 5, 6, 7, 10, 15, 13, 8, 1, 0 ],
+    text: [ 0.0, 2.0, 3.0, 6.0, 8.0, 12.0, 16.0, 21.0, 26.0, 31.0, 36.0, 43.0, 50.0, 60.0, 75.0, 89.0, 97.0, 99.0, 99.0 ],
+    hovertemplate: '%{y}% of players have +%{x} speed<br>%{text}% of players have +%{x} or less<br>speed range: +10 - +190',});traces.push({
+    name: "health",
+    x: [ 0, 2500, 5000, 7500, 10000, 12500, 15000, 17500 ],
+    y: [ 10, 12, 44, 25, 3, 1, 2, 0 ],
+    text: [ 10.0, 23.0, 68.0, 93.0, 97.0, 98.0, 100.0, 100.0 ],
+    hovertemplate: '%{y}% of players have +%{x} health<br>%{text}% of players have +%{x} or less<br>health range: +0 - +17500',xaxis: "x2",});traces.push({
+    name: "protection",
+    x: [ 0, 2500, 5000, 7500, 10000 ],
+    y: [ 23, 52, 20, 3, 0 ],
+    text: [ 23.0, 76.0, 96.0, 100.0, 100.0 ],
+    hovertemplate: '%{y}% of players have +%{x} protection<br>%{text}% of players have +%{x} or less<br>protection range: +0 - +10000',xaxis: "x2",});traces.push({
+    name: "offense",
+    x: [ 0, 100, 200, 300, 400, 500 ],
+    y: [ 19, 36, 28, 10, 3, 0 ],
+    text: [ 19.0, 56.0, 84.0, 95.0, 99.0, 99.0 ],
+    hovertemplate: '%{y}% of players have +%{x} offense<br>%{text}% of players have +%{x} or less<br>offense range: +0 - +500',xaxis: "x3",});traces.push({
+    name: "defense",
+    x: [ 0, 1, 2, 3, 4, 5, 6, 7, 8 ],
+    y: [ 25, 27, 20, 12, 6, 3, 2, 1, 0 ],
+    text: [ 25.0, 53.0, 73.0, 85.0, 92.0, 95.0, 98.0, 99.0, 99.0 ],
+    hovertemplate: '%{y}% of players have +%{x} defense<br>%{text}% of players have +%{x} or less<br>defense range: +0 - +8',xaxis: "x4",});traces.push({
+    name: "crit chance",
+    x: [ 0, 1, 7, 8, 9 ],
+    y: [ 95, 0, 0, 3, 0 ],
+    text: [ 96.0, 96.0, 96.0, 100.0, 100.0 ],
+    hovertemplate: '%{y}% of players have +%{x} crit chance<br>%{text}% of players have +%{x} or less<br>crit chance range: +0 - +9',xaxis: "x4",});let layout = {
+      title: "",
+      hovermode: "closest",
+      yaxis: {
+        title: '% of players',
+      },
+      xaxis: {
+          zeroline: false,
+          showline: false,
+          autotick: true,
+          ticks: '',
+          showticklabels: false
+      },
+      xaxis2: {
+          overlaying: 'x',
+          zeroline: false,
+          showline: false,
+          autotick: true,
+          showgrid: false,
+          ticks: '',
+          showticklabels: false
+      },
+      xaxis3: {
+          overlaying: 'x',
+          zeroline: false,
+          showline: false,
+          autotick: true,
+          showgrid: false,
+          ticks: '',
+          showticklabels: false
+      },
+      xaxis4: {
+          overlaying: 'x',
+          zeroline: false,
+          showline: false,
+          autotick: true,
+          showgrid: false,
+          ticks: '',
+          showticklabels: false
+      },
+      margin: {
+          t: 60,
+          b: 0,
+      }
+}
+Plotly.newPlot('mc-all', traces, layout)
+}
+</script><h3>Mod Recommendations (External)</h3><ul><li><a href="https://gaming-fans.com/2017/09/swgoh-best-mods-ct-7567-rex/">https://gaming-fans.com/2017/09/swgoh-best-mods-ct-7567-rex/</a></li></ul><h3>Mod Recommendations (Alliance + Top Guilds)</h3><p>
+Based on 2173 units.  This shows the priorities
+used in assigning mods to the characters.  For example: <b>speed, offense</b>
+would prefer speed over all else and then offense next.  These are not
+necessarily good mod setups, but they are commonly used.
+
+<p>
+The example stats are shown for these mods being applied to an R5 character.<h4 id="mod0">#1 - 82% - speed, health, protection, offense</h4><table><tr><td class="examples"><b>Typical Mods: </b><br/>speed +156, health +1823, protection +1698, offense +48<table class="mods"><tr><td class="mod-cell"><div class="mod"><img class="mod-set priority m4" /><b>+0.08% offense</b><ul><li><b>+18 speed</b> (4)</li><li>+0.04% crit chance (2)</li><li>+0.03% potency (1)</li><li><b>+0.04% health</b> (2)</li></ul></div></td><td class="mod-cell"><div class="mod"><img class="mod-set priority m4" /><b>+32 speed</b><ul><li>+0.02% tenacity (1)</li><li><b>+1549 protection</b> (2)</li><li>+0.1% defense (4)</li><li>+0.03% potency (1)</li></ul></div></td></tr><tr><td class="mod-cell"><div class="mod"><img class="mod-set priority m1" />+0.2% defense<ul><li><b>+36 offense</b> (1)</li><li><b>+26 speed</b> (5)</li><li>+0.03% crit chance (2)</li><li><b>+960 health</b> (2)</li></ul></div></td><td class="mod-cell"><div class="mod"><img class="mod-set m6" /><b>+0.24% protection</b><ul><li><b>+0.03% offense</b> (3)</li><li><b>+448 health</b> (1)</li><li>+20 defense (2)</li><li><b>+25 speed</b> (5)</li></ul></div></td></tr><tr><td class="mod-cell"><div class="mod"><img class="mod-set priority m4" /><b>+0.24% protection</b><ul><li><b>+21 speed</b> (4)</li><li>+12 defense (1)</li><li>+0.11% defense (4)</li><li><b>+0.03% offense</b> (3)</li></ul></div></td><td class="mod-cell"><div class="mod"><img class="mod-set priority m4" /><b>+0.08% offense</b><ul><li><b>+18 speed</b> (4)</li><li><b>+0.07% health</b> (5)</li><li><b>+370 health</b> (1)</li><li>+0.04% potency (2)</li></ul></div></td></tr></table></td><td class="examples"><b>Great Mods: </b><br/>speed +186, health +8400, protection +2278, offense +163<table class="mods"><tr><td class="mod-cell"><div class="mod"><img class="mod-set priority m4" /><b>+0.08% offense</b><ul><li>+0.04% potency (2)</li><li><b>+69 offense</b> (2)</li><li><b>+0.01% health</b> (1)</li><li><b>+28 speed</b> (5)</li></ul></div></td><td class="mod-cell"><div class="mod"><img class="mod-set priority m4" /><b>+32 speed</b><ul><li>+0.07% defense (2)</li><li><b>+0.01% offense</b> (1)</li><li>+0.03% crit chance (2)</li><li><b>+1367 health</b> (3)</li></ul></div></td></tr><tr><td class="mod-cell"><div class="mod"><img class="mod-set priority m1" />+0.2% defense<ul><li><b>+0.03% health</b> (2)</li><li><b>+1441 health</b> (3)</li><li><b>+28 speed</b> (5)</li><li><b>+0.05% protection</b> (2)</li></ul></div></td><td class="mod-cell"><div class="mod"><img class="mod-set priority m1" /><b>+0.24% protection</b><ul><li><b>+0.05% health</b> (3)</li><li>+0.03% defense (1)</li><li><b>+1058 health</b> (3)</li><li><b>+29 speed</b> (5)</li></ul></div></td></tr><tr><td class="mod-cell"><div class="mod"><img class="mod-set priority m4" /><b>+0.16% health</b><ul><li><b>+37 offense</b> (1)</li><li><b>+26 speed</b> (5)</li><li>+0.05% crit chance (3)</li><li><b>+2188 protection</b> (3)</li></ul></div></td><td class="mod-cell"><div class="mod"><img class="mod-set priority m4" />+0.2% defense<ul><li><b>+53 offense</b> (2)</li><li><b>+0.02% health</b> (1)</li><li>+0.05% potency (2)</li><li><b>+27 speed</b> (5)</li></ul></div></td></tr></table></td></tr></table><div id="mc-0" style="height:500px" /><script>
+{
+let traces = [];traces.push({
+    name: "speed",
+    x: [ 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160, 170, 180, 190 ],
+    y: [ 0, 1, 1, 2, 2, 3, 4, 4, 4, 5, 5, 6, 7, 10, 14, 12, 9, 1, 0 ],
+    text: [ 0.0, 1.0, 3.0, 5.0, 8.0, 11.0, 16.0, 20.0, 25.0, 31.0, 36.0, 43.0, 51.0, 61.0, 76.0, 88.0, 98.0, 99.0, 99.0 ],
+    hovertemplate: '%{y}% of players have +%{x} speed<br>%{text}% of players have +%{x} or less<br>speed range: +10 - +190',});traces.push({
+    name: "health",
+    x: [ 0, 2500, 5000, 7500, 10000, 12500, 15000, 17500 ],
+    y: [ 10, 12, 45, 25, 3, 1, 2, 0 ],
+    text: [ 10.0, 22.0, 68.0, 93.0, 97.0, 98.0, 100.0, 100.0 ],
+    hovertemplate: '%{y}% of players have +%{x} health<br>%{text}% of players have +%{x} or less<br>health range: +0 - +17500',xaxis: "x2",});traces.push({
+    name: "protection",
+    x: [ 0, 2500, 5000, 7500, 10000 ],
+    y: [ 23, 52, 20, 3, 0 ],
+    text: [ 23.0, 76.0, 96.0, 100.0, 100.0 ],
+    hovertemplate: '%{y}% of players have +%{x} protection<br>%{text}% of players have +%{x} or less<br>protection range: +0 - +10000',xaxis: "x2",});traces.push({
+    name: "offense",
+    x: [ 0, 100, 200, 300, 400, 500 ],
+    y: [ 19, 36, 28, 10, 3, 0 ],
+    text: [ 19.0, 56.0, 84.0, 95.0, 99.0, 99.0 ],
+    hovertemplate: '%{y}% of players have +%{x} offense<br>%{text}% of players have +%{x} or less<br>offense range: +0 - +500',xaxis: "x3",});let layout = {
+      title: "Attribute distribution for R5 unit prioritizing speed, health, protection, offense.",
+      hovermode: "closest",
+      yaxis: {
+        title: '% of players',
+      },
+      xaxis: {
+          zeroline: false,
+          showline: false,
+          autotick: true,
+          ticks: '',
+          showticklabels: false
+      },
+      xaxis2: {
+          overlaying: 'x',
+          zeroline: false,
+          showline: false,
+          autotick: true,
+          showgrid: false,
+          ticks: '',
+          showticklabels: false
+      },
+      xaxis3: {
+          overlaying: 'x',
+          zeroline: false,
+          showline: false,
+          autotick: true,
+          showgrid: false,
+          ticks: '',
+          showticklabels: false
+      },
+      xaxis4: {
+          overlaying: 'x',
+          zeroline: false,
+          showline: false,
+          autotick: true,
+          showgrid: false,
+          ticks: '',
+          showticklabels: false
+      },
+      margin: {
+          t: 60,
+          b: 0,
+      }
+}
+Plotly.newPlot('mc-0', traces, layout)
+}
+</script><h2>Alliance Demographic Data</h2>Based on 1703 units.<table id="zetas"><thead><tr><th>Name</th><th>Description</th><th>Count</th><th>Percent</th></tr></thead><tr><td data-order="uniqueskill_REX01"><img src="https://game-assets.swgoh.gg/tex.abilityui_passive_501.png" style="width: 30px" /> Captain of the 501st</td><td>All 501st allies have +4% Speed for each 501st ally present at the start of battle. Other 501st Clone Trooper allies reduce their own ability cooldowns by 1 at the start of each of their turns.\n\nIf Ahsoka Tano is an ally, she gains Critical Hit Immunity for 2 turns whenever she falls below 100% Health.</td><td>1179</td><td>69%</td></tr></table><br/><br/><div id="gearLevels-chart" style="width:80%;height:800px" /><script>
+let trace = {
+    y: [ 58, 0, 7, 2, 7, 17, 24, 151, 21, 44, 46, 269, 11, 45, 55, 160, 70, 492, 60, 157, 7, 0 ],
+    type: "bar",
+    name: "Number of Players"
+}
+let trace2 = {
+    y: [ 3.405754550792719, 3.405754550792719, 3.816793893129771, 3.9342337052260716, 4.345273047563124, 5.343511450381679, 6.752789195537287, 15.619495008807984, 16.85261303581914, 19.436288901937754, 22.13740458015267, 37.93305930710511, 38.57897827363477, 41.22137404580153, 44.4509688784498, 53.846153846153854, 57.95654726952438, 86.84674104521434, 90.36993540810336, 99.58896065766297, 100.00000000000001, 100.00000000000001 ],
+    yaxis: "y2",
+    type: "line",
+    name: "Cumulative % Players"
+}
+let layout = {
+    title: "Gear Levels",
+    xaxis: {
+        tickvals: [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21 ],
+        ticktext: [ "G1", "G2", "G3", "G4", "G5", "G6", "G7", "G8", "G9", "G10", "G11", "G12", "G13", "R1", "R2", "R3", "R4", "R5", "R6", "R7", "R8", "R9" ]
+    },
+    yaxis: { title: "Number of Players" },
+    yaxis2: {
+        title: "Cumulative % Players",
+        overlaying: "y",
+        side: "right"
+    }
+}
+Plotly.newPlot('gearLevels-chart', [trace, trace2], layout)
+</script><br/>
+<font size="-2">Generated 2024-05-12 16:12:38 +0000</font>
+<script data-goatcounter="https://gorgatron.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>

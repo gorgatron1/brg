@@ -1,0 +1,167 @@
+<meta charset="UTF-8">
+<meta name="robots" content="noindex"><style type="text/css">
+body {
+ background-image: url("../../i/more_faded_logo.jpg");
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+</style><title>BRG Alliance Guild Reports: BRG LazerFaces Charts</title>
+<div style="display: flex; align-items:baseline"><img src="../../i/simple_logo_48.jpg"/>&nbsp;<h1>Alliance Guild Reports: BRG LazerFaces Charts</h1></div>
+
+<div style="background-color: #f0f0f0; border: solid red; padding: 10px; border-radius: 10px">
+<a href="../../alliance/index.html">Alliance</a> |
+<a href="../../alliance/characters.html">Characters</a> |
+
+<div style="float:right;"><a href="../../r">Resources</a></div>
+<a href="index.html">Back</a>
+</div>
+<br/><script type="text/javascript" language="javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script src="../../j/graph.js"></script><script>
+c1 = new Chart("guild-gp-stats.json", null, "total")
+c1.id = "guild-gp"
+c1.title = "Guild GP"
+c1.tightScale = true
+c1.round = 1000
+c1.height = 500
+c1.width = 1200
+c1.display()
+
+c2 = new Chart("guild-counts.json", null, "players")
+c2.id = "guild-players"
+c2.title = "Player Count"
+c1.height = 500
+c1.width = 1200
+c2.display()
+
+c3 = new Chart("player-gp-stats.json", null, "total")
+c3.id = "player-gp"
+c3.title = "Player GP"
+c3.tightScale = true
+c3.round = 1000
+c3.height = 800
+c3.width = 1200
+c3.display()
+
+c4 = new Chart("guild-counts.json", null, "Zetas")
+c4.id = "zetas"
+c4.title = "Guild Zetas"
+c4.height = 500
+c4.width = 1200
+c4.display()
+
+c11 = new Chart("guild-gl-counts.json", "lazerfaces", null)
+c11.id = "gls"
+c11.title = "Guild GLs"
+c11.height = 600
+c11.width = 1200
+c11.display()
+
+c5 = new Chart("guild-counts.json", null, "G12+")
+c5.id = "g12"
+c5.title = "Guild G12+"
+c5.height = 500
+c5.width = 1200
+c5.display()
+    
+c51 = new Chart("guild-counts.json", null, "G13+")
+c51.id = "g13"
+c51.title = "Guild G13+"
+c51.height = 500
+c51.width = 1200
+c51.display()
+
+c6 = new Chart("player-counts.json", null, "Zetas")
+c6.id = "pzetas"
+c6.title = "Player Zetas"
+c6.height = 500
+c6.width = 1200
+c6.display()
+
+c7 = new Chart("player-counts.json", null, "G12+")
+c7.id = "pg12"
+c7.title = "Player G12+"
+c7.height = 500
+c7.width = 1200
+c7.display()
+
+c71 = new Chart("player-counts.json", null, "G13+")
+c71.id = "pg13"
+c71.title = "Player G13+"
+c71.height = 500
+c71.width = 1200
+c71.display()
+
+c8 = new Chart("guild-important-toon-count.json", "lazerfaces", null)
+c8.id = "important"
+c8.title = "Guild Important Toon Counts"
+c8.height = 500
+c8.width = 1200
+c8.display()
+
+function displayImportantToons(name) {
+    $("#pimportant").html("")
+    c9 = new Chart("player-important-toon-gp.json", null, name)
+    c9.id = "pimportant"
+    c9.title = "Player Toons GP: " + name
+    c9.tightScale = true
+    c9.round = 1000
+    c9.width = 1200
+    c9.display()
+}
+
+function displaySquads(name) {
+    $("#squads").html("")
+    c10 = new Chart("player-squad-gp.json", null, name)
+    c10.id = "squads"
+    c10.title = "Player Squad GP: " + name
+    c10.tightScale = true
+    c10.round = 1000
+    c10.width = 1200
+    c10.display()
+}
+
+displayImportantToons('Asajj')
+displaySquads('501st')
+</script>
+<br/><br/>
+<div id="guild-gp" style="float: left"></div>
+<br clear="all"/>
+
+<div id="guild-players" style="float: left"></div>
+<br clear="all"/>
+
+<div id="player-gp" style="float: left"></div>
+
+<br clear="all"/>
+<div id="zetas" style="float: left"></div>
+
+<br clear="all"/>
+<div id="gls" style="float: left"></div>
+
+<br clear="all"/>
+<div id="g12" style="float: left"></div>
+<br clear="all"/>
+<div id="g13" style="float: left"></div>
+
+<br clear="all"/>
+<div id="pzetas" style="float: left"></div>
+
+<br clear="all"/>
+<div id="pg12" style="float: left"></div>
+<br clear="all"/>
+<div id="pg13" style="float: left"></div>
+
+<br clear="all"/>
+<div id="important" style="float: left"></div>
+
+<br clear="all"/><a href="#pimportant" onclick="displayImportantToons('AV')">Asajj</a> |&nbsp;<a href="#pimportant" onclick="displayImportantToons('Boba')">Boba Fett</a> |&nbsp;<a href="#pimportant" onclick="displayImportantToons('Bossk')">Bossk</a> |&nbsp;<a href="#pimportant" onclick="displayImportantToons('GBA')">Brood Alpha</a> |&nbsp;<a href="#pimportant" onclick="displayImportantToons('C-3PO')">C-3PO</a> |&nbsp;<a href="#pimportant" onclick="displayImportantToons('CLS')">CLS</a> |&nbsp;<a href="#pimportant" onclick="displayImportantToons('Chewbacca')">Chewbacca</a> |&nbsp;<a href="#pimportant" onclick="displayImportantToons('DN')">DN</a> |&nbsp;<a href="#pimportant" onclick="displayImportantToons('DR')">DR</a> |&nbsp;<a href="#pimportant" onclick="displayImportantToons('Daka')">Daka</a> |&nbsp;<a href="#pimportant" onclick="displayImportantToons('EP')">EP</a> |&nbsp;<a href="#pimportant" onclick="displayImportantToons('Finalizer')">Finalizer</a> |&nbsp;<a href="#pimportant" onclick="displayImportantToons('GAS')">GAS</a> |&nbsp;<a href="#pimportant" onclick="displayImportantToons('GK')">GK</a> |&nbsp;<a href="#pimportant" onclick="displayImportantToons('GMY')">GMY</a> |&nbsp;<a href="#pimportant" onclick="displayImportantToons('GG')">Grievous</a> |&nbsp;<a href="#pimportant" onclick="displayImportantToons('HT')">HT</a> |&nbsp;<a href="#pimportant" onclick="displayImportantToons('Han')">Han Solo</a> |&nbsp;<a href="#pimportant" onclick="displayImportantToons('Han's MF')">Han's MF</a> |&nbsp;<a href="#pimportant" onclick="displayImportantToons('IPD')">IPD</a> |&nbsp;<a href="#pimportant" onclick="displayImportantToons('JKA')">JKA</a> |&nbsp;<a href="#pimportant" onclick="displayImportantToons('JKL')">JKL</a> |&nbsp;<a href="#pimportant" onclick="displayImportantToons('JKR')">JKR</a> |&nbsp;<a href="#pimportant" onclick="displayImportantToons('JMK')">JMK</a> |&nbsp;<a href="#pimportant" onclick="displayImportantToons('JMLS')">JMLS</a> |&nbsp;<a href="#pimportant" onclick="displayImportantToons('JTR')">JTR</a> |&nbsp;<a href="#pimportant" onclick="displayImportantToons('Jabba')">Jabba the Hutt</a> |&nbsp;<a href="#pimportant" onclick="displayImportantToons('Jango')">Jango Fett</a> |&nbsp;<a href="#pimportant" onclick="displayImportantToons('KAM')">Ki-Adi-Mundi</a> |&nbsp;<a href="#pimportant" onclick="displayImportantToons('Leia Organa')">Leia Organa</a> |&nbsp;<a href="#pimportant" onclick="displayImportantToons('Lord Vader')">Lord Vader</a> |&nbsp;<a href="#pimportant" onclick="displayImportantToons('MT')">MT</a> |&nbsp;<a href="#pimportant" onclick="displayImportantToons('Malak')">Malak</a> |&nbsp;<a href="#pimportant" onclick="displayImportantToons('Malevolence')">Malevolence</a> |&nbsp;<a href="#pimportant" onclick="displayImportantToons('Negotiator')">Negotiator</a> |&nbsp;<a href="#pimportant" onclick="displayImportantToons('Nest')">Nest</a> |&nbsp;<a href="#pimportant" onclick="displayImportantToons('Padme')">Padme</a> |&nbsp;<a href="#pimportant" onclick="displayImportantToons('R2-D2')">R2-D2</a> |&nbsp;<a href="#pimportant" onclick="displayImportantToons('Raddus')">Raddus</a> |&nbsp;<a href="#pimportant" onclick="displayImportantToons('Rey')">Rey</a> |&nbsp;<a href="#pimportant" onclick="displayImportantToons('SEE')">SEE</a> |&nbsp;<a href="#pimportant" onclick="displayImportantToons('SL Kylo')">SL Kylo</a> |&nbsp;<a href="#pimportant" onclick="displayImportantToons('Sion')">Sion</a> |&nbsp;<a href="#pimportant" onclick="displayImportantToons('Thrawn')">Thrawn</a> |&nbsp;<a href="#pimportant" onclick="displayImportantToons('Traya')">Traya</a> |&nbsp;<a href="#pimportant" onclick="displayImportantToons('Vader')">Vader</a> |&nbsp;<a href="#pimportant" onclick="displayImportantToons('Wampa')">Wampa</a> |&nbsp;<a href="#pimportant" onclick="displayImportantToons('Wat Tambor')">Wat Tambor</a> |&nbsp;<a href="#pimportant" onclick="displayImportantToons('Zombie')">Zombie</a> |&nbsp;<br clear="all"/>
+<div id="pimportant" style="float: left"></div>
+
+<br clear="all"/><a href="#squads" onclick="displaySquads('501st')">501st</a> |&nbsp;<a href="#squads" onclick="displaySquads('Admiral Raddus')">Admiral Raddus</a> |&nbsp;<a href="#squads" onclick="displaySquads('BH')">BH</a> |&nbsp;<a href="#squads" onclick="displaySquads('BS')">BS</a> |&nbsp;<a href="#squads" onclick="displaySquads('BS+Revan')">BS+Revan</a> |&nbsp;<a href="#squads" onclick="displaySquads('Bad Batch')">Bad Batch</a> |&nbsp;<a href="#squads" onclick="displaySquads('CLS')">CLS</a> |&nbsp;<a href="#squads" onclick="displaySquads('Carth')">Carth</a> |&nbsp;<a href="#squads" onclick="displaySquads('Clones')">Clones</a> |&nbsp;<a href="#squads" onclick="displaySquads('DR')">DR</a> |&nbsp;<a href="#squads" onclick="displaySquads('DRMalak')">DRMalak</a> |&nbsp;<a href="#squads" onclick="displaySquads('Disintegration')">Disintegration</a> |&nbsp;<a href="#squads" onclick="displaySquads('EP (Traya)')">EP (Traya)</a> |&nbsp;<a href="#squads" onclick="displaySquads('EP (trio)')">EP (trio)</a> |&nbsp;<a href="#squads" onclick="displaySquads('Ewoks')">Ewoks</a> |&nbsp;<a href="#squads" onclick="displaySquads('Ewoks+C3PO')">Ewoks+C3PO</a> |&nbsp;<a href="#squads" onclick="displaySquads('Executor')">Executor</a> |&nbsp;<a href="#squads" onclick="displaySquads('Executrix')">Executrix</a> |&nbsp;<a href="#squads" onclick="displaySquads('FO')">FO</a> |&nbsp;<a href="#squads" onclick="displaySquads('GAS')">GAS</a> |&nbsp;<a href="#squads" onclick="displaySquads('GK')">GK</a> |&nbsp;<a href="#squads" onclick="displaySquads('GL Rey')">GL Rey</a> |&nbsp;<a href="#squads" onclick="displaySquads('Geonosians Omicron')">Geonosians Omicron</a> |&nbsp;<a href="#squads" onclick="displaySquads('Grievous')">Grievous</a> |&nbsp;<a href="#squads" onclick="displaySquads('Grievous Omicron')">Grievous Omicron</a> |&nbsp;<a href="#squads" onclick="displaySquads('Grievous-Wat')">Grievous-Wat</a> |&nbsp;<a href="#squads" onclick="displaySquads('HansMF')">HansMF</a> |&nbsp;<a href="#squads" onclick="displaySquads('IG88')">IG88</a> |&nbsp;<a href="#squads" onclick="displaySquads('Iden Troopers')">Iden Troopers</a> |&nbsp;<a href="#squads" onclick="displaySquads('JKL')">JKL</a> |&nbsp;<a href="#squads" onclick="displaySquads('JMK')">JMK</a> |&nbsp;<a href="#squads" onclick="displaySquads('JMLS')">JMLS</a> |&nbsp;<a href="#squads" onclick="displaySquads('JTR')">JTR</a> |&nbsp;<a href="#squads" onclick="displaySquads('JTR+droids')">JTR+droids</a> |&nbsp;<a href="#squads" onclick="displaySquads('Jabba')">Jabba</a> |&nbsp;<a href="#squads" onclick="displaySquads('Jawas')">Jawas</a> |&nbsp;<a href="#squads" onclick="displaySquads('LV')">LV</a> |&nbsp;<a href="#squads" onclick="displaySquads('Malevolence')">Malevolence</a> |&nbsp;<a href="#squads" onclick="displaySquads('Mando')">Mando</a> |&nbsp;<a href="#squads" onclick="displaySquads('Maul')">Maul</a> |&nbsp;<a href="#squads" onclick="displaySquads('Mon Mothma')">Mon Mothma</a> |&nbsp;<a href="#squads" onclick="displaySquads('NS')">NS</a> |&nbsp;<a href="#squads" onclick="displaySquads('NS_Alt')">NS_Alt</a> |&nbsp;<a href="#squads" onclick="displaySquads('Negotiator')">Negotiator</a> |&nbsp;<a href="#squads" onclick="displaySquads('NestSisters')">NestSisters</a> |&nbsp;<a href="#squads" onclick="displaySquads('Nute-OR')">Nute-OR</a> |&nbsp;<a href="#squads" onclick="displaySquads('Nute-Sep')">Nute-Sep</a> |&nbsp;<a href="#squads" onclick="displaySquads('Nute-Wat')">Nute-Wat</a> |&nbsp;<a href="#squads" onclick="displaySquads('Phasma')">Phasma</a> |&nbsp;<a href="#squads" onclick="displaySquads('Phoenix')">Phoenix</a> |&nbsp;<a href="#squads" onclick="displaySquads('Profundity')">Profundity</a> |&nbsp;<a href="#squads" onclick="displaySquads('QGJ')">QGJ</a> |&nbsp;<a href="#squads" onclick="displaySquads('Qira')">Qira</a> |&nbsp;<a href="#squads" onclick="displaySquads('QiraNest')">QiraNest</a> |&nbsp;<a href="#squads" onclick="displaySquads('Raddus')">Raddus</a> |&nbsp;<a href="#squads" onclick="displaySquads('Revan')">Revan</a> |&nbsp;<a href="#squads" onclick="displaySquads('Revan Offense')">Revan Offense</a> |&nbsp;<a href="#squads" onclick="displaySquads('Rogue1')">Rogue1</a> |&nbsp;<a href="#squads" onclick="displaySquads('SEE')">SEE</a> |&nbsp;<a href="#squads" onclick="displaySquads('SK')">SK</a> |&nbsp;<a href="#squads" onclick="displaySquads('SL Kylo')">SL Kylo</a> |&nbsp;<a href="#squads" onclick="displaySquads('ShaakClones')">ShaakClones</a> |&nbsp;<a href="#squads" onclick="displaySquads('ThrawnTroopers')">ThrawnTroopers</a> |&nbsp;<a href="#squads" onclick="displaySquads('Traya')">Traya</a> |&nbsp;<a href="#squads" onclick="displaySquads('Troopers')">Troopers</a> |&nbsp;<a href="#squads" onclick="displaySquads('Wiggs')">Wiggs</a> |&nbsp;<a href="#squads" onclick="displaySquads('padme')">padme</a> |&nbsp;<a href="#squads" onclick="displaySquads('zEP')">zEP</a> |&nbsp;<a href="#squads" onclick="displaySquads('zMaul')">zMaul</a> |&nbsp;<br clear="all"/>
+<div id="squads" style="float: left"></div>
+
+<br clear="all"/><br/>
+<font size="-2">Generated 2024-05-12 16:06:52 +0000</font>
+<script data-goatcounter="https://gorgatron.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>

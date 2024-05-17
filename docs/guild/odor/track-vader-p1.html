@@ -1,0 +1,83 @@
+<meta charset="UTF-8">
+<meta name="robots" content="noindex"><style type="text/css">
+body {
+ background-image: url("../../i/more_faded_logo.jpg");
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+</style><style type="text/css">
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  padding: 8px;
+}
+
+tr:nth-child(even) {background: #dddddd}
+tr:nth-child(odd) {background: #ffffff}
+
+.toggleable {
+    display: none;
+}
+</style><link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.1.5/css/fixedHeader.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.6/css/fixedColumns.dataTables.min.css" />
+<script type="text/javascript" language="javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedheader/3.1.5/js/dataTables.fixedHeader.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedcolumns/3.2.6/js/dataTables.fixedColumns.min.js"></script><title>BRG Alliance Guild Reports: Vader P1 Progress Tracker</title>
+<div style="display: flex; align-items:baseline"><img src="../../i/simple_logo_48.jpg"/>&nbsp;<h1>Alliance Guild Reports: Vader P1 Progress Tracker</h1></div>
+
+<div style="background-color: #f0f0f0; border: solid red; padding: 10px; border-radius: 10px">
+<a href="../../alliance/index.html">Alliance</a> |
+<a href="../../alliance/characters.html">Characters</a> |
+
+<div style="float:right;"><a href="../../r">Resources</a></div>
+<a href="index.html">BRG De Prime Odor</a>
+</div>
+<br/><h2>Vader P1 Progress Tracker BRG De Prime Odor</h2>
+
+<p>
+Progress on Vader P1 farming.
+
+<p>
+<button onclick="$('.complete').hide(); $('.working').show()">hide completed</button>
+<button onclick="$('.complete').show(); $('.working').hide()">hide incomplete</button>
+<button onclick="$('.complete').show(); $('.working').show()">show all</button>
+
+<br/>
+    
+<link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.0.0/css/buttons.dataTables.min.css" />
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/buttons/2.0.0/js/dataTables.buttons.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/buttons/2.0.0/js/buttons.html5.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script><script>
+$(document).ready(function() {
+    var urlParams = new URLSearchParams(window.location.search)
+    var show = urlParams.get('show')
+    if (show == "working") {
+        $('.complete').hide()
+    } else if (show == "complete") {
+        $('.working').hide()
+    }
+});
+</script><table class="stripe" id="stats"><thead><th>Player</th><th>Ally Code</th><th>Starting Gear Needed</th><th>Progress</th><th>Current Gear Needed</th><th>GP</th><th>Team</th></thead><tr class="complete" style="background-color: #ceebfd;"><td>DarthKailon</td><td>933888673</td><td>0</td><td>0</td><td>0</td><td data-order="162983">162k</td><td>Vader, Wat Tambor, BB-8, C-3PO, KRU</td></tr><tr class="working" style=""><td>DAGGOBILI</td><td>786851589</td><td>49</td><td>36</td><td>13</td><td data-order="131701">131k</td><td>Vader, Wat Tambor, <b>BB-8 G7</b>, <b>C-3PO R3</b>, KRU</td></tr><tr class="working" style=""><td>Rendash Arend</td><td>557291511</td><td>51</td><td>41</td><td>10</td><td data-order="141908">141k</td><td><b>Vader R3</b>, Wat Tambor, <b>BB-8 G12</b>, <b>C-3PO R3</b>, KRU</td></tr><tr class="working" style=""><td>Lars Quell</td><td>151487741</td><td>40</td><td>24</td><td>16</td><td data-order="130536">130k</td><td><b>Vader R3</b>, Wat Tambor, <b>BB-8 G12</b>, <b>C-3PO R4</b>, <b>KRU G11</b></td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Mordhelm</td><td>562791448</td><td>36</td><td>36</td><td>0</td><td data-order="155272">155k</td><td>Vader, Wat Tambor, BB-8, C-3PO, KRU</td></tr><tr class="working" style=""><td>David</td><td>451567767</td><td>23</td><td>16</td><td>7</td><td data-order="147918">147k</td><td>Vader, Wat Tambor, <b>BB-8 G12</b>, C-3PO, <b>KRU R4</b></td></tr><tr class="working" style=""><td>Curren</td><td>995319291</td><td>51</td><td>41</td><td>10</td><td data-order="141269">141k</td><td>Vader, Wat Tambor, <b>BB-8 G8</b>, C-3PO, KRU</td></tr><tr class="working" style=""><td>Holmahnootz</td><td>375133234</td><td>42</td><td>30</td><td>12</td><td data-order="130476">130k</td><td>Vader, Wat Tambor, <b>BB-8 G12</b>, C-3PO, <b>KRU G12</b></td></tr><tr class="working" style=""><td>Anton360247</td><td>757167173</td><td>48</td><td>27</td><td>21</td><td data-order="130156">130k</td><td>Vader, <b>Wat Tambor G12</b>, <b>BB-8 G9</b>, C-3PO, <b>KRU G12</b></td></tr><tr class="working" style=""><td>Jcerillo70</td><td>177357652</td><td>52</td><td>43</td><td>9</td><td data-order="141953">141k</td><td>Vader, Wat Tambor, <b>BB-8 G9</b>, C-3PO, KRU</td></tr><tr class="working" style=""><td>Mandalorion Jrnyman</td><td>126964277</td><td>52</td><td>28</td><td>24</td><td data-order="117056">117k</td><td>Vader, <b>Wat Tambor G8</b>, <b>BB-8 G9</b>, <b>C-3PO G13</b>, KRU</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Acesoka</td><td>668136538</td><td>7</td><td>7</td><td>0</td><td data-order="155854">155k</td><td>Vader, Wat Tambor, BB-8, C-3PO, KRU</td></tr><tr class="working" style=""><td>FlibbidyDoo</td><td>872314944</td><td>24</td><td>11</td><td>13</td><td data-order="132394">132k</td><td>Vader, <b>Wat Tambor R1</b>, <b>BB-8 G9</b>, C-3PO, KRU</td></tr><tr class="working" style=""><td>Wasburn09</td><td>129783432</td><td>30</td><td>7</td><td>23</td><td data-order="117341">117k</td><td>Vader, <b>Wat Tambor G1</b>, <b>BB-8 G12</b>, C-3PO, KRU</td></tr><tr class="working" style=""><td>Flyt</td><td>831894956</td><td>34</td><td>14</td><td>20</td><td data-order="120680">120k</td><td>Vader, Wat Tambor, <b>BB-8 G8</b>, C-3PO, <b>KRU G8</b></td></tr><tr class="complete" style="background-color: #ceebfd;"><td>oogway</td><td>736683126</td><td>0</td><td>0</td><td>0</td><td data-order="162890">162k</td><td>Vader, Wat Tambor, BB-8, C-3PO, KRU</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Ro'bi wan</td><td>124599552</td><td>1</td><td>1</td><td>0</td><td data-order="163505">163k</td><td>Vader, Wat Tambor, BB-8, C-3PO, KRU</td></tr><tr class="working" style=""><td>Rui Vuusen</td><td>829415495</td><td>35</td><td>27</td><td>8</td><td data-order="140898">140k</td><td>Vader, Wat Tambor, <b>BB-8 G12</b>, <b>C-3PO R3</b>, KRU</td></tr><tr class="working" style=""><td>RP</td><td>524758942</td><td>12</td><td>6</td><td>6</td><td data-order="147297">147k</td><td>Vader, Wat Tambor, <b>BB-8 G12</b>, C-3PO, KRU</td></tr><tr class="working" style=""><td>Al Greaf</td><td>778479137</td><td>27</td><td>8</td><td>19</td><td data-order="126572">126k</td><td>Vader, <b>Wat Tambor G9</b>, BB-8, C-3PO, <b>KRU G8</b></td></tr><tr class="working" style=""><td>ItsTurtleTime</td><td>876758471</td><td>12</td><td>10</td><td>2</td><td data-order="153884">153k</td><td>Vader, Wat Tambor, <b>BB-8 R3</b>, C-3PO, KRU</td></tr><tr class="working" style=""><td>Shamgar</td><td>514487916</td><td>13</td><td>1</td><td>12</td><td data-order="145210">145k</td><td>Vader, <b>Wat Tambor G12</b>, <b>BB-8 G12</b>, C-3PO, KRU</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Pﾑdme's Chﾑstity Belt</td><td>725514455</td><td>6</td><td>6</td><td>0</td><td data-order="159201">159k</td><td>Vader, Wat Tambor, BB-8, C-3PO, KRU</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>HR dpt Chatty's division</td><td>959622351</td><td>2</td><td>2</td><td>0</td><td data-order="159074">159k</td><td>Vader, Wat Tambor, BB-8, C-3PO, KRU</td></tr><tr class="working" style=""><td>Boyk Jhaatim</td><td>919177443</td><td>12</td><td>2</td><td>10</td><td data-order="139246">139k</td><td>Vader, Wat Tambor, <b>BB-8 G11</b>, C-3PO, <b>KRU R2</b></td></tr><tr class="working" style=""><td>Frednerk</td><td>655585354</td><td>33</td><td>17</td><td>16</td><td data-order="129704">129k</td><td>Vader, Wat Tambor, <b>BB-8 G8</b>, C-3PO, <b>KRU G12</b></td></tr><tr class="working" style=""><td>BazookaJoe</td><td>282763552</td><td>18</td><td>5</td><td>13</td><td data-order="127038">127k</td><td>Vader, Wat Tambor, <b>BB-8 G12</b>, C-3PO, <b>KRU G11</b></td></tr><tr class="working" style=""><td>DarthScrimm</td><td>695948683</td><td>26</td><td>10</td><td>16</td><td data-order="128062">128k</td><td>Vader, <b>Wat Tambor G12</b>, <b>BB-8 G8</b>, C-3PO, KRU</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>darthAnology</td><td>268848548</td><td>0</td><td>0</td><td>0</td><td data-order="159626">159k</td><td>Vader, Wat Tambor, BB-8, C-3PO, KRU</td></tr><tr class="working" style=""><td>Wolfenstien</td><td>431257189</td><td>27</td><td>10</td><td>17</td><td data-order="128337">128k</td><td>Vader, Wat Tambor, <b>BB-8 G10</b>, C-3PO, <b>KRU G9</b></td></tr><tr class="complete" style="background-color: #ceebfd;"><td>GravelSK</td><td>496916323</td><td>7</td><td>7</td><td>0</td><td data-order="159281">159k</td><td>Vader, Wat Tambor, BB-8, C-3PO, KRU</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Griffin</td><td>236743442</td><td>0</td><td>0</td><td>0</td><td data-order="160551">160k</td><td>Vader, Wat Tambor, BB-8, C-3PO, KRU</td></tr><tr class="working" style=""><td>knaggs1120</td><td>722718646</td><td>51</td><td>17</td><td>34</td><td data-order="107444">107k</td><td><b>Vader G13</b>, <b>Wat Tambor G1</b>, <b>BB-8 G8</b>, <b>C-3PO R3</b>, KRU</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Vaders Fist</td><td>128286681</td><td>0</td><td>0</td><td>0</td><td data-order="159150">159k</td><td>Vader, Wat Tambor, BB-8, C-3PO, KRU</td></tr><tr class="working" style=""><td>Ke Ke Mar</td><td>943347694</td><td>16</td><td>2</td><td>14</td><td data-order="133537">133k</td><td>Vader, <b>Wat Tambor R1</b>, <b>BB-8 G12</b>, C-3PO, <b>KRU R1</b></td></tr><tr class="working" style=""><td>Kibleh Toht</td><td>512685275</td><td>21</td><td>0</td><td>21</td><td data-order="123367">123k</td><td>Vader, <b>Wat Tambor G10</b>, <b>BB-8 G11</b>, C-3PO, <b>KRU G12</b></td></tr><tr class="working" style=""><td>Jader</td><td>446271891</td><td>19</td><td>0</td><td>19</td><td data-order="133768">133k</td><td>Vader, Wat Tambor, <b>BB-8 G9</b>, C-3PO, <b>KRU G8</b></td></tr><tr class="complete" style="background-color: #ceebfd;"><td>KailonTheGrey</td><td>445222445</td><td>0</td><td>0</td><td>0</td><td data-order="161272">161k</td><td>Vader, Wat Tambor, BB-8, C-3PO, KRU</td></tr><tr class="working" style=""><td>Gman3D 2</td><td>369548148</td><td>21</td><td>9</td><td>12</td><td data-order="136192">136k</td><td>Vader, Wat Tambor, <b>BB-8 G12</b>, C-3PO, <b>KRU G12</b></td></tr><tr class="working" style=""><td>Ewoks Goin In Dry</td><td>448434423</td><td>6</td><td>0</td><td>6</td><td data-order="149706">149k</td><td>Vader, Wat Tambor, BB-8, C-3PO, <b>KRU G12</b></td></tr><tr class="working" style=""><td>YODAlay YODAlay YODAlayhehoo</td><td>415593382</td><td>41</td><td>25</td><td>16</td><td data-order="125142">125k</td><td>Vader, Wat Tambor, <b>BB-8 G8</b>, <b>C-3PO G12</b>, KRU</td></tr><tr class="working" style=""><td>Da Conquering One</td><td>765966569</td><td>18</td><td>4</td><td>14</td><td data-order="135249">135k</td><td>Vader, <b>Wat Tambor G10</b>, <b>BB-8 G12</b>, C-3PO, KRU</td></tr><tr class="working" style=""><td>THX 1138</td><td>956844791</td><td>11</td><td>0</td><td>11</td><td data-order="142460">142k</td><td>Vader, <b>Wat Tambor G12</b>, <b>BB-8 R1</b>, <b>C-3PO R4</b>, KRU</td></tr><tr class="working" style=""><td>FatThrone643</td><td>749291374</td><td>9</td><td>0</td><td>9</td><td data-order="147758">147k</td><td>Vader, Wat Tambor, <b>BB-8 G9</b>, C-3PO, KRU</td></tr><tr class="working" style=""><td>Wrongfulpuppet</td><td>232337688</td><td>14</td><td>0</td><td>14</td><td data-order="132401">132k</td><td>Vader, <b>Wat Tambor G11</b>, <b>BB-8 G11</b>, C-3PO, KRU</td></tr><tr class="working" style=""><td>Zem Malda</td><td>527394568</td><td>6</td><td>0</td><td>6</td><td data-order="147552">147k</td><td>Vader, Wat Tambor, <b>BB-8 G12</b>, C-3PO, KRU</td></tr><tr class="working" style=""><td>Schmuckk007</td><td>858274497</td><td>9</td><td>2</td><td>7</td><td data-order="149140">149k</td><td>Vader, Wat Tambor, <b>BB-8 G11</b>, C-3PO, KRU</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>ATX ONE</td><td>659226473</td><td>0</td><td>0</td><td>0</td><td data-order="165776">165k</td><td>Vader, Wat Tambor, BB-8, C-3PO, KRU</td></tr><tr class="working" style=""><td>9th DOGG of SWAG</td><td>987179658</td><td>25</td><td>0</td><td>25</td><td data-order="122026">122k</td><td>Vader, <b>Wat Tambor G11</b>, <b>BB-8 G9</b>, C-3PO, <b>KRU G9</b></td></tr></table><script>var config = {
+    "paging":   false,
+    "info":     false,
+    bFilter: false,
+    fixedHeader: true,
+    dom: 'Bfrtip',
+    buttons: [
+        'copyHtml5',
+        'excelHtml5',
+        'csvHtml5',
+    ],
+}
+
+table = $('#stats').DataTable(config);</script><br/>
+<font size="-2">Generated 2023-05-15 01:46:16 +0000</font>
+<script data-goatcounter="https://gorgatron.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>

@@ -1,0 +1,198 @@
+<meta charset="UTF-8">
+<meta name="robots" content="noindex"><link rel="stylesheet" type="text/css" href="../../toons.css">
+<style type="text/css">
+.toT { text-align:center; font-size: 60%; }
+.toI {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    margin: 0 2.5px;
+}
+.toIs {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin: 0 2.5px;
+}
+.opponent {
+    border: 2px solid grey;
+}
+.hardCounter {
+    border: 2px solid red;
+}
+.softCounter {
+    border: 2px solid blue;
+}
+.squad {
+    border: 2px solid black;
+}
+.verbage {
+    font-size: 70%;
+}
+</style><style type="text/css">
+body {
+ background-image: url("../../i/more_faded_logo.jpg");
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+</style><style type="text/css">
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  padding: 8px;
+}
+
+tr:nth-child(even) {background: #dddddd}
+tr:nth-child(odd) {background: #ffffff}
+
+.toggleable {
+    display: none;
+}
+</style><link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.1.5/css/fixedHeader.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.6/css/fixedColumns.dataTables.min.css" />
+<script type="text/javascript" language="javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedheader/3.1.5/js/dataTables.fixedHeader.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedcolumns/3.2.6/js/dataTables.fixedColumns.min.js"></script>    <script>
+    $(document).ready( function () {
+        $('#squads').DataTable({
+        "paging":   false,
+        "info":     false,
+        
+        
+        
+        
+        
+        });
+    } );
+    </script><script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script src="../../j/graph.js"></script><title>BRG Alliance - BRG Fallen Order of Ahch To: SithlordAJ TW+GA Squads</title>
+<div style="display: flex; align-items:baseline"><img src="../../i/simple_logo_48.jpg"/>&nbsp;<h1>Alliance - BRG Fallen Order of Ahch To: SithlordAJ TW+GA Squads</h1></div>
+
+<div style="background-color: #f0f0f0; border: solid red; padding: 10px; border-radius: 10px">
+<a href="../../help/player-tw-squads.html">HELP</a> | 
+<a href="../../alliance/index.html">Alliance</a> |
+<a href="../../guild/fallen/index.html">BRG Fallen Order of Ahch To</a> |
+<a href="../info/247923859.html">Info</a> |
+<a href="../../guild/fallen/mods-player.html?id=247923859">Mods</a> |
+<a href="247923859.html">TW+GA Squads</a> |
+<a href="../counters/247923859.html">Counters</a> |
+<a href="../target/247923859.html">Targets</a> |
+<a href="../unlock/247923859.html">Unlocks</a> |
+<a href="../zeta/247923859.html">Zetas</a> |
+<a href="../farm/247923859.html">Farming</a> |
+<a href="../dsgeotb/247923859.html">DS Geo TB</a> |
+<a href="../lsgeotb/247923859.html">LS Geo TB</a> |
+<div style="float:right;"><a href="../../r">Resources</a></div>
+</div>
+<br/><script>
+c1 = new Chart("../../guild/fallen/player-squad-gp.json", "247923859", null)
+c1.id = "chart"
+c1.filter = function(data) {
+    data.series = data.series.filter(function (x) {
+        if (x.name == "HansMF") { return false }
+        if (x.name == "Negotiator") { return false }
+        if (x.name == "Malevolence") { return false }
+        if (x.name == "Raddus") { return false }
+        if (x.name == "Executrix") { return false }
+        if (x.name == "NestSolo") { return false }
+        if (x.name == "Executor") { return false }
+        if (x.name == "Profundity") { return false }
+        return true
+    })
+    return data
+}
+c1.title = "Squads"
+c1.tightScale = true
+c1.round = 1000
+c1.height = 400
+c1.width = 800
+c1.display()
+</script><style>
+.details {
+}
+.detailsTable {
+    width: 100%;
+    font-size: 85%;
+    margin-top: 15px;
+    border-collapse: collapse;
+    border: none;
+}
+</style>
+<div id="chart" style="float: right"></div>
+<h2><a href="../../help/player-tw-squads.html">HELP</a></h2>
+<p>
+Note: these teams may all be used simultaneously --- there is no overlap.
+This makes them potentially suitable for TW and GA.  You know your teams
+better than the program that generates this, so use this as a guideline,
+not hard facts.
+</p>
+
+<p>
+<img src="../../i/ls24.png"/>: Considered mainly an offensive team
+<br/>
+<img src="../../i/shield24.png"/>: Considered mainly an defensive team
+<br/>
+<img src="../../i/ls24.png"/><img src="../../i/shield24.png"/>: Can be offensive or defensive
+<br/>
+<img src="../../i/wrench24.png">: Team may be usable, but gear is recommended.  Hover or click to see more info.
+<br/>
+<img src="../../i/tractor24.png">: Probably not usable -- needs farming
+<br/>
+&#11088;: Team is considered well geared
+<br/>
+&#9432;: Show more info about subs, how the team works, counters and targets
+</p>
+
+<button onclick="$('.squadRow').show()">Show All</button>
+<button onclick="$('.squadRow').hide(); $('.gearNeeded').show()">Show Only Gear Needed</button>
+<button onclick="$('.squadRow').hide(); $('.viable').show()">Show Only Viable</button>
+<button onclick="$('.squadRow').hide(); $('.distinct').show()">Show Only Non Overlapping</button>
+
+<table id="squads" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>GP</th>
+<th>Squad</th>
+</tr>
+</thead><tr id="Phoenix" onclick="$('#PHOENIX_details').toggle()" class="squadRow distinct gearNeeded"><td data-order="Phoenix" align="center"><a href="../target/247923859.html#PHOENIX"><img class="toI squad HERASYNDULLAS3-i" title="Phoenix"/></a><br/>Phoenix</td><td data-order="defense"><img src="../../i/shield24.png"/></td><td data-order="48873">48k</td><td nowrap style="position: relative"><div style="display: flex" title="Hera: low level.  Kanan: low level.  Zeb: low level.  Chopper: low level.  " onclick="$('#squad1').toggle()"><div class="toT"><img class="toI squad HERASYNDULLAS3-i"><br/>Hera G8</div> <div class="toT"><img class="toI squad KANANJARRUSS3-i"><br/>Kanan G8</div> <div class="toT"><img class="toI squad ZEBS3-i"><br/>Zeb G8</div> <div class="toT"><img class="toI squad SABINEWRENS3-i"><br/>Sabine G8</div> <div class="toT"><img class="toI squad CHOPPERS3-i"><br/>Chopper G8</div><div style="margin-left: 10px"><img src="../../i/tractor24.png"></div></div><div id="squad1" class="toggleable verbage"><br/><b>Hera: low level.  Kanan: low level.  Zeb: low level.  Chopper: low level.  </b></div>
+<span style="position: absolute; top: 10px; right: 10px; font-size: 150%;">&#9432;</span>
+<table id="PHOENIX_details" class="toggleable detailsTable">
+<tr class="details"><td colspan="2"><h3>Subs</h3>Chopper</td></tr>
+<tr class="details"><td colspan="2"><h3>Description</h3>High synergy team with a lot of counter attacking, dispelling (or loving the debuffs), and HP + protection recovery. Be careful with G12 zeta Phoenix, use equally geared zeta'd teams.</td></tr>
+<tr class="details">
+<td valign="top"><h3>Counter</h3><b><img style="vertical-align:middle" class="toIs hardCounter NUTEGUNRAY-i"/>Separatists (Nute L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter WAMPA-i"/>Wampa (solo)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter ENFYSNEST-i"/>Enfys Nest (solo)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter GENERALHUX-i"/>First Order (Hux L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter VEERS-i"/>Imperial Troopers</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter EMPERORPALPATINE-i"/>EP L</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter COMMANDERLUKESKYWALKER-i"/>Rebels (CLS L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter DARTHREVAN-i"/>Sith Empire (w/o Malak)</b><br/>
+<img style="vertical-align:middle" class="toIs softCounter QIRA-i"/>Qi'ra L (Prepared Smugglers)<br/>
+<img style="vertical-align:middle" class="toIs softCounter CHIEFCHIRPA-i"/>Ewoks<br/>
+<img style="vertical-align:middle" class="toIs softCounter MAUL-i"/>Sith (Maul L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter CC2224-i"/>Clones (Cody L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter QUIGONJINN-i"/>Jedi (QGJ L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter WEDGEANTILLES-i"/>Rebels (Wiggs)<br/>
+</td><td valign="top"><h3><a href="../target/247923859.html#PHOENIX">Targets</a></h3><b><img style="vertical-align:middle" class="toIs hardCounter CARTHONASI-i"/>Old Republic (Carth L)</b><br/>
+<img style="vertical-align:middle" class="toIs softCounter MAUL-i"/>Sith (Maul L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter MOTHERTALZIN-i"/>Nightsisters (Talzin L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter KYLORENUNMASKED-i"/>First Order (KRU L)<br/>
+</td></tr>
+</table>
+</td></tr>
+</table><script>
+    window.goatcounter = { path: function(p) { return p.replace(/[^/]+\.html$/, '') } }
+</script><br/>
+<font size="-2">Generated 2024-02-19 16:14:07 +0000</font>
+<script data-goatcounter="https://gorgatron.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>

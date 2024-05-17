@@ -1,0 +1,95 @@
+<meta charset="UTF-8">
+<meta name="robots" content="noindex"><style type="text/css">
+body {
+ background-image: url("../../i/more_faded_logo.jpg");
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+</style><style type="text/css">
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  padding: 8px;
+}
+
+tr:nth-child(even) {background: #dddddd}
+tr:nth-child(odd) {background: #ffffff}
+
+.toggleable {
+    display: none;
+}
+</style><link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.1.5/css/fixedHeader.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.6/css/fixedColumns.dataTables.min.css" />
+<script type="text/javascript" language="javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedheader/3.1.5/js/dataTables.fixedHeader.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedcolumns/3.2.6/js/dataTables.fixedColumns.min.js"></script><title>BRG Alliance Guild Reports: Krayt Raid Progress Tracker</title>
+<div style="display: flex; align-items:baseline"><img src="../../i/simple_logo_48.jpg"/>&nbsp;<h1>Alliance Guild Reports: Krayt Raid Progress Tracker</h1></div>
+
+<div style="background-color: #f0f0f0; border: solid red; padding: 10px; border-radius: 10px">
+<a href="../../alliance/index.html">Alliance</a> |
+<a href="../../alliance/characters.html">Characters</a> |
+
+<div style="float:right;"><a href="../../r">Resources</a></div>
+<a href="index.html">BRG Dark Force Alignment</a>
+</div>
+<br/><h2>Krayt Raid Progress Tracker BRG Dark Force Alignment</h2>
+
+<p>
+Potential Krayt Raid teams.
+
+<p>
+More info and play advice:
+
+<ul>
+<li><a href="https://www.youtube.com/watch?v=HVc34jdr6kg&list=PLV3ihsc-3CokFoeQ0n20Wwo9PlTqqXWSo">Skelturix</a>
+<li><a href="https://www.youtube.com/watch?v=h0KUg8eMtV4&list=PLDskqmL-F0lbUFC86srmPlNYD0rQfVbPE">Xaereth</a>
+</ul>
+
+<h3>Inventory</h3>
+
+Note: this list shows the next level to work toward, thus an L2 team can play at Difficulty 1.<table><thead><tr><th>Difficulty Level</th><th>Gear Required</th><th>Maximum Score</th><th>Number of Teams</th><th>Potential Score</th></tr></thead><tr><td>0</td><td>G8</td><td>300k</td><td>33</td><td>9.9m</td></tr><tr><td>1</td><td>G12</td><td>450k</td><td>29</td><td>13.0m</td></tr><tr><td>2</td><td>R1</td><td>600k</td><td>2</td><td>1.2m</td></tr><tr><td>4</td><td>R5</td><td>1.2m</td><td>1</td><td>1.2m</td></tr><tfoot><tr><td><b>Total</b></td><td>&nbsp;</td><td>&nbsp;</td><td><b>65</b></td><td><b>25.3m</b></td></tr></tfoot></table>
+
+<p>
+<button onclick="$('.complete').hide(); $('.working').show()">hide completed</button>
+<button onclick="$('.complete').show(); $('.working').hide()">hide incomplete</button>
+<button onclick="$('.complete').show(); $('.working').show()">show all</button>
+
+<br/>
+    
+<link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.0.0/css/buttons.dataTables.min.css" />
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/buttons/2.0.0/js/dataTables.buttons.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/buttons/2.0.0/js/buttons.html5.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script><script>
+$(document).ready(function() {
+    var urlParams = new URLSearchParams(window.location.search)
+    var show = urlParams.get('show')
+    if (show == "working") {
+        $('.complete').hide()
+    } else if (show == "complete") {
+        $('.working').hide()
+    }
+});
+</script><table class="stripe" id="stats"><thead><th>Player</th><th>Ally Code</th><th>Current Gear Needed</th><th>Team</th></thead><tr class="working" style=""><td>natebzta</td><td>994951475</td><td>8</td><td><b>L2 Old Republic</b>: JKR, <b>BS G12</b>, <b>Jolee G12</b>, <b>Mission G12</b>, <b>Zaalbar G12</b></td></tr><tr class="working" style=""><td>Drew Rosario</td><td>781788419</td><td>4</td><td><b>L1 Old Republic</b>: JKR, BS, Jolee, Mission, <b>Zaalbar G8</b></td></tr><tr class="working" style=""><td>PorkinsRevenge</td><td>459557358</td><td>2</td><td><b>L2 BH</b>: Boba, Jango, Cad, The Mandalorian, <b>Greedo G12</b></td></tr><tr class="working" style=""><td>PorkinsRevenge</td><td>459557358</td><td>1</td><td><b>L0 Old Republic</b>: JKR, BS, Jolee, <b>Mission G7</b>, Zaalbar</td></tr><tr class="working" style=""><td>PorkinsRevenge</td><td>459557358</td><td>2</td><td><b>L0 Tuskens</b>: <b>Tusken Chieftain 4&#9733;</b>, <b>Tusken Raider G7</b>, <b>Tusken Shaman G7</b>, Tusken Warrior, URoRRuR'R'R</td></tr><tr class="working" style=""><td>Misfit</td><td>881692772</td><td>2</td><td><b>L2 Old Republic</b>: JKR, BS, Jolee, <b>Mission G13</b>, <b>Zaalbar G13</b></td></tr><tr class="working" style=""><td>Misfit</td><td>881692772</td><td>7</td><td><b>L1 BH</b>: Boba, <b>Jango G9</b>, Cad, The Mandalorian, <b>Greedo G8</b></td></tr><tr class="working" style=""><td>Killest the Illest</td><td>626428578</td><td>1</td><td><b>L1 Old Republic</b>: JKR, BS, Jolee, <b>Mission G11</b>, Zaalbar</td></tr><tr class="working" style=""><td>Aaron Shepard</td><td>139357628</td><td>4</td><td><b>L1 BH</b>: Boba, Jango, Cad, The Mandalorian, <b>Greedo G8</b></td></tr><tr class="working" style=""><td>Aaron Shepard</td><td>139357628</td><td>1</td><td><b>L0 Carth</b>: Carth Onasi, <b>Mission 6&#9733;</b>, <b>Zaalbar G7 6&#9733;</b>, Canderous, T3-M4</td></tr><tr class="working" style=""><td>KeenAsChilli</td><td>637323937</td><td>4</td><td><b>L1 BH</b>: Boba, Jango, Cad, The Mandalorian, <b>Greedo G8</b></td></tr><tr class="working" style=""><td>KeenAsChilli</td><td>637323937</td><td>2</td><td><b>L0 Old Republic</b>: JKR, BS, Jolee, <b>Mission G7</b>, <b>Zaalbar G7</b></td></tr><tr class="working" style=""><td>Descending</td><td>121358638</td><td>2</td><td><b>L2 BH</b>: Boba, Jango, Cad, The Mandalorian, <b>Greedo G12</b></td></tr><tr class="working" style=""><td>Coktus</td><td>468236797</td><td>1</td><td><b>L0 BH</b>: Boba, <b>Jango G7 6&#9733;</b>, Cad, The Mandalorian, Greedo</td></tr><tr class="working" style=""><td>PolyPlayz</td><td>583664121</td><td>2</td><td><b>L1 BH</b>: Boba, Jango, Cad, The Mandalorian, <b>Greedo G10</b></td></tr><tr class="working" style=""><td>Walan Lamor</td><td>181994418</td><td>4</td><td><b>L2 Old Republic</b>: JKR, BS, Jolee, <b>Mission G12</b>, <b>Zaalbar G12</b></td></tr><tr class="working" style=""><td>Walan Lamor</td><td>181994418</td><td>4</td><td><b>L2 BH</b>: Boba, Jango, <b>Cad G12</b>, The Mandalorian, <b>Greedo G12</b></td></tr><tr class="working" style=""><td>Walan Lamor</td><td>181994418</td><td>2</td><td><b>L0 Jawas</b>: Nebit, <b>Jawa Engineer G7</b>, Jawa Scavenger, Dathcha, <b>Jawa G7</b></td></tr><tr class="working" style=""><td>Walan Lamor</td><td>181994418</td><td>3</td><td><b>L0 Tuskens</b>: <b>Tusken Chieftain G7 3&#9733;</b>, <b>Tusken Raider G7</b>, <b>Tusken Shaman G7</b>, <b>Tusken Warrior 2&#9733;</b>, <b>URoRRuR'R'R 5&#9733;</b></td></tr><tr class="working" style=""><td>Th0mas</td><td>228481223</td><td>5</td><td><b>L1 BH</b>: Boba, <b>Jango G11</b>, Cad, The Mandalorian, <b>Greedo G8 5&#9733;</b></td></tr><tr class="working" style=""><td>BigPeePee420</td><td>626631739</td><td>4</td><td><b>L1 BH</b>: Boba, Jango, Cad, The Mandalorian, <b>Greedo G8</b></td></tr><tr class="working" style=""><td>SHaDoWS</td><td>566851794</td><td>4</td><td><b>L1 Old Republic</b>: JKR, <b>BS G11</b>, <b>Jolee G11</b>, Mission, <b>Zaalbar G10</b></td></tr><tr class="working" style=""><td>SHaDoWS</td><td>566851794</td><td>1</td><td><b>L0 BH</b>: Boba, Jango, Cad, The Mandalorian, <b>Greedo G7</b></td></tr><tr class="working" style=""><td>DarkJedi83</td><td>712886732</td><td>4</td><td><b>L1 BH</b>: Boba, Jango, Cad, The Mandalorian, <b>Greedo G8</b></td></tr><tr class="working" style=""><td>Noxx</td><td>811897181</td><td>5</td><td><b>L1 BH</b>: Boba, <b>Jango G11</b>, Cad, The Mandalorian, <b>Greedo G8 5&#9733;</b></td></tr><tr class="working" style=""><td>Noxx</td><td>811897181</td><td>12</td><td><b>L1 Carth</b>: Carth Onasi, <b>Mission G8</b>, <b>Zaalbar G8</b>, <b>Canderous G8</b>, T3-M4</td></tr><tr class="working" style=""><td>MajorDisaster17</td><td>157551217</td><td>4</td><td><b>L1 BH</b>: Boba, Jango, Cad, The Mandalorian, <b>Greedo G8 5&#9733;</b></td></tr><tr class="working" style=""><td>pears</td><td>611344632</td><td>5</td><td><b>L1 BH</b>: Boba, <b>Jango G11</b>, Cad, The Mandalorian, <b>Greedo G8 5&#9733;</b></td></tr><tr class="working" style=""><td>pears</td><td>611344632</td><td>5</td><td><b>L0 Old Republic</b>: JKR, BS, Jolee, <b>Mission G5</b>, <b>Zaalbar G6</b></td></tr><tr class="working" style=""><td>TanoKun</td><td>948551839</td><td>3</td><td><b>L1 Old Republic</b>: JKR, BS, Jolee, Mission, <b>Zaalbar G9</b></td></tr><tr class="working" style=""><td>TanoKun</td><td>948551839</td><td>4</td><td><b>L1 BH</b>: Boba, Jango, Cad, The Mandalorian, <b>Greedo G8 5&#9733;</b></td></tr><tr class="working" style=""><td>sparky8099</td><td>977261125</td><td>1</td><td><b>L1 Old Republic</b>: JKR, BS, Jolee, <b>Mission G11</b>, Zaalbar</td></tr><tr class="working" style=""><td>The Chosen One</td><td>257699863</td><td>4</td><td><b>L1 BH</b>: Boba, Jango, Cad, The Mandalorian, <b>Greedo G8 5&#9733;</b></td></tr><tr class="working" style=""><td>BillyMays</td><td>855746741</td><td>3</td><td><b>L3 Old Republic</b>: JKR, <b>BS R2</b>, <b>Jolee R2</b>, <b>Mission R2</b>, Zaalbar</td></tr><tr class="working" style=""><td>BillyMays</td><td>855746741</td><td>2</td><td><b>L2 BH</b>: Boba, Jango, Cad, The Mandalorian, <b>Greedo G12</b></td></tr><tr class="working" style=""><td>DarthGutty</td><td>357188912</td><td>2</td><td><b>L2 Old Republic</b>: JKR, BS, Jolee, <b>Mission G12</b>, Zaalbar</td></tr><tr class="working" style=""><td>DarthGutty</td><td>357188912</td><td>8</td><td><b>L2 BH</b>: <b>Boba G12</b>, <b>Jango G12</b>, <b>Cad G12</b>, The Mandalorian, <b>Greedo G12</b></td></tr><tr class="working" style=""><td>DarthGutty</td><td>357188912</td><td>10</td><td><b>L2 Jawas</b>: <b>Nebit G12</b>, <b>Jawa Engineer G12</b>, <b>Jawa Scavenger G12</b>, <b>Dathcha G12</b>, <b>Jawa G12</b></td></tr><tr class="working" style=""><td>DarthGutty</td><td>357188912</td><td>1</td><td><b>L0 Tuskens</b>: <b>Tusken Chieftain (omi)</b>, <b>Tusken Raider (omi)</b>, Tusken Shaman, <b>Tusken Warrior (omi) 4&#9733;</b>, <b>URoRRuR'R'R 5&#9733;</b></td></tr><tr class="working" style=""><td>Kapwing</td><td>246698169</td><td>8</td><td><b>L2 Old Republic</b>: JKR, <b>BS G12</b>, <b>Jolee G12</b>, <b>Mission G12</b>, <b>Zaalbar G12</b></td></tr><tr class="working" style=""><td>Kapwing</td><td>246698169</td><td>1</td><td><b>L1 BH</b>: Boba, <b>Jango G11</b>, Cad, The Mandalorian, Greedo</td></tr><tr class="working" style=""><td>Cbrn121</td><td>114375994</td><td>4</td><td><b>L2 Old Republic</b>: JKR, BS, Jolee, <b>Mission G12</b>, <b>Zaalbar G12</b></td></tr><tr class="working" style=""><td>Obi1ablowme</td><td>421142431</td><td>8</td><td><b>L2 Old Republic</b>: JKR, <b>BS G12</b>, <b>Jolee G12</b>, <b>Mission G12</b>, <b>Zaalbar G12</b></td></tr><tr class="working" style=""><td>Obi1ablowme</td><td>421142431</td><td>4</td><td><b>L1 BH</b>: Boba, Jango, Cad, The Mandalorian, <b>Greedo G8</b></td></tr><tr class="working" style=""><td>Jedicello</td><td>756852592</td><td>4</td><td><b>L2 Old Republic</b>: JKR, BS, <b>Jolee G12</b>, Mission, <b>Zaalbar G12</b></td></tr><tr class="working" style=""><td>Striker</td><td>274722957</td><td>1</td><td><b>L3 Old Republic</b>: JKR, BS, Jolee, <b>Mission R2</b>, Zaalbar</td></tr><tr class="working" style=""><td>Striker</td><td>274722957</td><td>2</td><td><b>L2 BH</b>: Boba, <b>Jango G12</b>, Cad, The Mandalorian, Greedo</td></tr><tr class="working" style=""><td>Striker</td><td>274722957</td><td>4</td><td><b>L0 Jawas</b>: <b>Nebit G7</b>, <b>Jawa Engineer G7</b>, <b>Jawa Scavenger G7</b>, Dathcha, <b>Jawa G7 6&#9733;</b></td></tr><tr class="working" style=""><td>Draco73</td><td>568787334</td><td>8</td><td><b>L2 Old Republic</b>: JKR, <b>BS G12</b>, <b>Jolee G12</b>, <b>Mission G12</b>, <b>Zaalbar G12</b></td></tr><tr class="working" style=""><td>Draco73</td><td>568787334</td><td>4</td><td><b>L1 BH</b>: Boba, Jango, Cad, The Mandalorian, <b>Greedo G8</b></td></tr><tr class="working" style=""><td>Erotavlas</td><td>187715758</td><td>4</td><td><b>L2 BH</b>: Boba, Jango, <b>Cad G12</b>, The Mandalorian, <b>Greedo G12</b></td></tr><tr class="working" style=""><td>Erotavlas</td><td>187715758</td><td>1</td><td><b>L0 Old Republic</b>: JKR, BS, Jolee, <b>Mission G7</b>, Zaalbar</td></tr><tr class="working" style=""><td>ANAKlN</td><td>155651172</td><td>8</td><td><b>L2 Old Republic</b>: JKR, <b>BS G12</b>, <b>Jolee G12</b>, <b>Mission G12</b>, <b>Zaalbar G12</b></td></tr><tr class="working" style=""><td>ANAKlN</td><td>155651172</td><td>4</td><td><b>L1 BH</b>: Boba, Jango, Cad, The Mandalorian, <b>Greedo G8</b></td></tr><tr class="working" style=""><td>GamingChips</td><td>958661216</td><td>8</td><td><b>L2 Old Republic</b>: JKR, <b>BS G12</b>, <b>Jolee G12</b>, <b>Mission G12</b>, <b>Zaalbar G12</b></td></tr><tr class="working" style=""><td>oLiZno</td><td>949882215</td><td>4</td><td><b>L1 BH</b>: Boba, Jango, Cad, The Mandalorian, <b>Greedo G8 5&#9733;</b></td></tr><tr class="working" style=""><td>BigSkyNative</td><td>193327199</td><td>4</td><td><b>L2 Old Republic</b>: JKR, BS, Jolee, <b>Mission G12</b>, <b>Zaalbar G12</b></td></tr><tr class="working" style=""><td>BigSkyNative</td><td>193327199</td><td>4</td><td><b>L2 BH</b>: Boba, Jango, <b>Cad G12</b>, The Mandalorian, <b>Greedo G12</b></td></tr><tr class="working" style=""><td>Mayonnaise</td><td>311959482</td><td>6</td><td><b>L2 Old Republic</b>: JKR, BS, <b>Jolee G12</b>, <b>Mission G12</b>, <b>Zaalbar G12</b></td></tr><tr class="working" style=""><td>Mayonnaise</td><td>311959482</td><td>4</td><td><b>L1 BH</b>: Boba, Jango, Cad, The Mandalorian, <b>Greedo G8</b></td></tr><tr class="working" style=""><td>Mayonnaise</td><td>311959482</td><td>4</td><td><b>L0 Jawas</b>: Nebit, <b>Jawa Engineer G7</b>, <b>Jawa Scavenger G7</b>, <b>Dathcha G7</b>, <b>Jawa G7</b></td></tr><tr class="working" style=""><td>HannibalHunter</td><td>669271694</td><td>4</td><td><b>L1 BH</b>: Boba, Jango, Cad, The Mandalorian, <b>Greedo G8 5&#9733;</b></td></tr><tr class="working" style=""><td>HannibalHunter</td><td>669271694</td><td>11</td><td><b>L1 Carth</b>: Carth Onasi, <b>Mission G8</b>, <b>Zaalbar G9</b>, <b>Canderous G8</b>, T3-M4</td></tr><tr class="working" style=""><td>Paras</td><td>818954738</td><td>8</td><td><b>L1 Old Republic</b>: JKR, <b>BS G11</b>, Jolee, <b>Mission G9</b>, <b>Zaalbar G8</b></td></tr><tr class="working" style=""><td>Paras</td><td>818954738</td><td>5</td><td><b>L0 BH</b>: Boba, Jango, Cad, <b>The Mandalorian G3</b>, Greedo</td></tr><tr class="working" style=""><td>Paras</td><td>818954738</td><td>1</td><td><b>L0 Jawas</b>: Nebit, Jawa Engineer, Jawa Scavenger, Dathcha, <b>Jawa G7</b></td></tr><tr class="working" style=""><td>DarthHoratius</td><td>899145955</td><td>1</td><td><b>L0 Old Republic</b>: JKR, BS, Jolee, <b>Mission G7</b>, Zaalbar</td></tr><tr class="working" style=""><td>TC Lincoln</td><td>815464287</td><td>6</td><td><b>L5 Jabba</b>: Jabba, <b>Boushh (Leia Organa) R5</b>, <b>Krrsantan R5</b>, <b>Skiff Guard (Lando Calrissian) R5</b>, Boba</td></tr><tr class="working" style=""><td>TC Lincoln</td><td>815464287</td><td>2</td><td><b>L2 Maul</b>: Maul, The Mandalorian (Beskar Armor), Bo-Katan, <b>Canderous G12</b>, Armorer</td></tr><tr class="working" style=""><td>TC Lincoln</td><td>815464287</td><td>2</td><td><b>L2 Old Republic</b>: JKR, BS, Jolee, <b>Mission G12</b>, Zaalbar</td></tr><tr class="working" style=""><td>TC Lincoln</td><td>815464287</td><td>3</td><td><b>L1 Tuskens</b>: <b>Tusken Chieftain G11 6&#9733;</b>, Tusken Raider, Tusken Shaman, <b>Tusken Warrior G10</b>, URoRRuR'R'R</td></tr><tr class="working" style=""><td>TC Lincoln</td><td>815464287</td><td>1</td><td><b>L1 Jawas</b>: Nebit, Jawa Engineer, Jawa Scavenger, <b>Dathcha G11</b>, Jawa</td></tr><tr class="working" style=""><td>Starkiller1670</td><td>617241466</td><td>6</td><td><b>L2 Old Republic</b>: JKR, BS, <b>Jolee G12</b>, <b>Mission G12</b>, <b>Zaalbar G12</b></td></tr><tr class="working" style=""><td>Biscuit Tormentor</td><td>673773292</td><td>2</td><td><b>L1 Old Republic</b>: JKR, <b>BS G11</b>, <b>Jolee G11</b>, Mission, Zaalbar</td></tr><tr class="working" style=""><td>Biscuit Tormentor</td><td>673773292</td><td>4</td><td><b>L0 BH</b>: Boba, Jango, Cad, The Mandalorian, <b>Greedo G4</b></td></tr><tr class="working" style=""><td>Dragon</td><td>513278383</td><td>10</td><td><b>L1 Old Republic</b>: <b>JKR G10</b>, <b>BS G11</b>, <b>Jolee G11</b>, <b>Mission G8</b>, <b>Zaalbar G10</b></td></tr><tr class="working" style=""><td>Dragon</td><td>513278383</td><td>4</td><td><b>L1 BH</b>: Boba, Jango, Cad, The Mandalorian, <b>Greedo G8</b></td></tr><tr class="working" style=""><td>Lillyanna</td><td>938276726</td><td>4</td><td><b>L2 Maul</b>: Maul, Sabine, <b>Bo-Katan G13</b>, <b>Canderous G12</b>, <b>Armorer G13</b></td></tr><tr class="working" style=""><td>Lillyanna</td><td>938276726</td><td>8</td><td><b>L2 Old Republic</b>: JKR, <b>BS G12</b>, <b>Jolee G12</b>, <b>Mission G12</b>, <b>Zaalbar G12</b></td></tr><tr class="working" style=""><td>Lillyanna</td><td>938276726</td><td>2</td><td><b>L2 BH</b>: Boba, Jango, Cad, The Mandalorian, <b>Greedo G12</b></td></tr><tr class="working" style=""><td>Lillyanna</td><td>938276726</td><td>2</td><td><b>L2 Jawas</b>: Nebit, Jawa Engineer, <b>Jawa Scavenger G12</b>, Dathcha, Jawa</td></tr><tr class="working" style=""><td>Lillyanna</td><td>938276726</td><td>7</td><td><b>L1 Tuskens</b>: <b>Tusken Chieftain G11</b>, <b>Tusken Raider G11</b>, <b>Tusken Shaman G10</b>, <b>Tusken Warrior G9</b>, URoRRuR'R'R</td></tr></table><script>var config = {
+    "paging":   false,
+    "info":     false,
+    bFilter: false,
+    fixedHeader: true,
+    dom: 'Bfrtip',
+    buttons: [
+        'copyHtml5',
+        'excelHtml5',
+        'csvHtml5',
+    ],
+}
+
+table = $('#stats').DataTable(config);</script><br/>
+<font size="-2">Generated 2024-05-12 16:10:35 +0000</font>
+<script data-goatcounter="https://gorgatron.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>

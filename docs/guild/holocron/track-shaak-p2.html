@@ -1,0 +1,83 @@
+<meta charset="UTF-8">
+<meta name="robots" content="noindex"><style type="text/css">
+body {
+ background-image: url("../../i/more_faded_logo.jpg");
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+</style><style type="text/css">
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  padding: 8px;
+}
+
+tr:nth-child(even) {background: #dddddd}
+tr:nth-child(odd) {background: #ffffff}
+
+.toggleable {
+    display: none;
+}
+</style><link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.1.5/css/fixedHeader.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.6/css/fixedColumns.dataTables.min.css" />
+<script type="text/javascript" language="javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedheader/3.1.5/js/dataTables.fixedHeader.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedcolumns/3.2.6/js/dataTables.fixedColumns.min.js"></script><title>BRG Alliance Guild Reports: Shaak Ti Progress Tracker</title>
+<div style="display: flex; align-items:baseline"><img src="../../i/simple_logo_48.jpg"/>&nbsp;<h1>Alliance Guild Reports: Shaak Ti Progress Tracker</h1></div>
+
+<div style="background-color: #f0f0f0; border: solid red; padding: 10px; border-radius: 10px">
+<a href="../../alliance/index.html">Alliance</a> |
+<a href="../../alliance/characters.html">Characters</a> |
+
+<div style="float:right;"><a href="../../r">Resources</a></div>
+<a href="index.html">[BRG] Holocron Cafe</a>
+</div>
+<br/><h2>Shaak Ti Progress Tracker [BRG] Holocron Cafe</h2>
+
+<p>
+Progress on Shaak Ti farming.  Useful in for KAM mission, among many others.
+
+<p>
+<button onclick="$('.complete').hide(); $('.working').show()">hide completed</button>
+<button onclick="$('.complete').show(); $('.working').hide()">hide incomplete</button>
+<button onclick="$('.complete').show(); $('.working').show()">show all</button>
+
+<br/>
+    
+<link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.0.0/css/buttons.dataTables.min.css" />
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/buttons/2.0.0/js/dataTables.buttons.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/buttons/2.0.0/js/buttons.html5.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script><script>
+$(document).ready(function() {
+    var urlParams = new URLSearchParams(window.location.search)
+    var show = urlParams.get('show')
+    if (show == "working") {
+        $('.complete').hide()
+    } else if (show == "complete") {
+        $('.working').hide()
+    }
+});
+</script><table class="stripe" id="stats"><thead><th>Player</th><th>Ally Code</th><th>Starting Gear Needed</th><th>Progress</th><th>Current Gear Needed</th><th>GP</th><th>Team</th></thead><tr class="complete" style="background-color: #ceebfd;"><td>Millz20</td><td>684712353</td><td>67</td><td>67</td><td>0</td><td data-order="137908">137k</td><td>Shaak Ti, Fives, Rex, Echo (501st), ARC Trooper</td></tr><tr class="working" style=""><td>Gloom Walker</td><td>516227655</td><td>30</td><td>28</td><td>2</td><td data-order="131761">131k</td><td><b>Shaak Ti R3</b>, Fives, Rex, Echo (501st), ARC Trooper</td></tr><tr class="working" style=""><td>Bakufett</td><td>152667675</td><td>86</td><td>45</td><td>41</td><td data-order="77119">77k</td><td><b>Shaak Ti R3</b>, <b>Fives G12</b>, <b>Rex G11</b>, <b>Echo (501st) G9</b>, <b>ARC Trooper G1 4&#9733;</b></td></tr><tr class="working" style=""><td>KingKrille</td><td>295729596</td><td>37</td><td>29</td><td>8</td><td data-order="126674">126k</td><td><b>Shaak Ti R3</b>, <b>Fives R3</b>, Rex, <b>Echo (501st) R3</b>, <b>ARC Trooper R3</b></td></tr><tr class="working" style=""><td>Zar Anduli</td><td>889632856</td><td>50</td><td>44</td><td>6</td><td data-order="129542">129k</td><td><b>Shaak Ti R4</b>, Fives, <b>Rex R4</b>, <b>Echo (501st) R3</b>, <b>ARC Trooper R3</b></td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Trav</td><td>146343631</td><td>30</td><td>30</td><td>0</td><td data-order="152817">152k</td><td>Shaak Ti, Fives, Rex, Echo (501st), ARC Trooper</td></tr><tr class="working" style=""><td>Jose Longo</td><td>633696187</td><td>26</td><td>18</td><td>8</td><td data-order="130225">130k</td><td>Shaak Ti, Fives, Rex, <b>Echo (501st) R3</b>, <b>ARC Trooper G12</b></td></tr><tr class="working" style=""><td>Naga Sadów</td><td>936392725</td><td>73</td><td>45</td><td>28</td><td data-order="106708">106k</td><td><b>Shaak Ti G12</b>, <b>Fives G12</b>, <b>Rex R1</b>, <b>Echo (501st) G12</b>, <b>ARC Trooper G12</b></td></tr><tr class="working" style=""><td>Untamed Sloth</td><td>741217131</td><td>60</td><td>40</td><td>20</td><td data-order="115720">115k</td><td><b>Shaak Ti R1</b>, <b>Fives R1</b>, <b>Rex R1</b>, <b>Echo (501st) R1</b>, <b>ARC Trooper R1</b></td></tr><tr class="working" style=""><td>MINI Techno Union</td><td>648966762</td><td>46</td><td>32</td><td>14</td><td data-order="119865">119k</td><td><b>Shaak Ti G12</b>, <b>Fives R3</b>, <b>Rex R3</b>, <b>Echo (501st) R3</b>, <b>ARC Trooper R3</b></td></tr><tr class="working" style=""><td>Schmidty2318</td><td>419954121</td><td>87</td><td>77</td><td>10</td><td data-order="124266">124k</td><td><b>Shaak Ti R3</b>, <b>Fives R3</b>, <b>Rex R3</b>, <b>Echo (501st) R3</b>, <b>ARC Trooper R3</b></td></tr><tr class="working" style=""><td>blactastic</td><td>281334117</td><td>90</td><td>65</td><td>25</td><td data-order="99084">99k</td><td><b>Shaak Ti G12</b>, <b>Fives R3</b>, <b>Rex G13</b>, <b>Echo (501st) G12</b>, <b>ARC Trooper G12</b></td></tr><tr class="working" style=""><td>Jannah Longo</td><td>482599677</td><td>80</td><td>37</td><td>43</td><td data-order="70761">70k</td><td><b>Shaak Ti G11 6&#9733;</b>, <b>Fives G12</b>, <b>Rex G11</b>, <b>Echo (501st) G9</b>, <b>ARC Trooper G4 4&#9733;</b></td></tr><tr class="working" style=""><td>lucathepuka</td><td>812752189</td><td>89</td><td>3</td><td>86</td><td data-order="2817">2817</td><td><b>Shaak Ti G1 2&#9733;</b>, <b>Fives G1 3&#9733;</b>, <b>Rex G1 4&#9733;</b>, <b>Echo (501st) G1 3&#9733;</b>, <b>ARC Trooper G0 0&#9733;</b></td></tr><tr class="complete" style="background-color: #ceebfd;"><td>B</td><td>948356963</td><td>40</td><td>40</td><td>0</td><td data-order="139079">139k</td><td>Shaak Ti, Fives, Rex, Echo (501st), ARC Trooper</td></tr><tr class="working" style=""><td>Gerehe Zosma</td><td>441557869</td><td>66</td><td>31</td><td>35</td><td data-order="75839">75k</td><td><b>Shaak Ti G12</b>, <b>Fives G11</b>, <b>Rex G10</b>, <b>Echo (501st) G12</b>, <b>ARC Trooper G10</b></td></tr><tr class="working" style=""><td>Tantema Garnik</td><td>788233588</td><td>76</td><td>24</td><td>52</td><td data-order="72022">72k</td><td>Shaak Ti, <b>Fives G12</b>, <b>Rex G4</b>, <b>Echo (501st) G4</b>, <b>ARC Trooper G0 0&#9733;</b></td></tr><tr class="working" style=""><td>Dark Shawi</td><td>144245956</td><td>79</td><td>26</td><td>53</td><td data-order="61849">61k</td><td><b>Shaak Ti G1 5&#9733;</b>, <b>Fives G12</b>, <b>Rex G12</b>, <b>Echo (501st) G12</b>, <b>ARC Trooper G0 0&#9733;</b></td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Bski</td><td>938232767</td><td>1</td><td>1</td><td>0</td><td data-order="142614">142k</td><td>Shaak Ti, Fives, Rex, Echo (501st), ARC Trooper</td></tr><tr class="working" style=""><td>wookieguy69</td><td>912381174</td><td>41</td><td>17</td><td>24</td><td data-order="113139">113k</td><td><b>Shaak Ti R3</b>, <b>Fives R1</b>, <b>Rex G12</b>, <b>Echo (501st) G12</b>, <b>ARC Trooper G12</b></td></tr><tr class="working" style=""><td>j13hall13</td><td>662956843</td><td>47</td><td>41</td><td>6</td><td data-order="128918">128k</td><td><b>Shaak Ti G12</b>, Fives, Rex, Echo (501st), ARC Trooper</td></tr><tr class="working" style=""><td>YeeterSkeeter</td><td>819259195</td><td>81</td><td>7</td><td>74</td><td data-order="34514">34k</td><td><b>Shaak Ti G1 5&#9733;</b>, <b>Fives G5</b>, <b>Rex G7</b>, <b>Echo (501st) G3</b>, <b>ARC Trooper G0 0&#9733;</b></td></tr><tr class="working" style=""><td>Stahzo</td><td>647615227</td><td>62</td><td>49</td><td>13</td><td data-order="117069">117k</td><td><b>Shaak Ti G12</b>, Fives, Rex, <b>Echo (501st) R2</b>, <b>ARC Trooper R1</b></td></tr><tr class="complete" style="background-color: #ceebfd;"><td>SirSchuSchu</td><td>863647631</td><td>21</td><td>21</td><td>0</td><td data-order="139352">139k</td><td>Shaak Ti, Fives, Rex, Echo (501st), ARC Trooper</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Bobmaloogax5</td><td>993486218</td><td>18</td><td>18</td><td>0</td><td data-order="143831">143k</td><td>Shaak Ti, Fives, Rex, Echo (501st), ARC Trooper</td></tr><tr class="working" style=""><td>Valektra Jetberg</td><td>661932482</td><td>84</td><td>23</td><td>61</td><td data-order="49926">49k</td><td><b>Shaak Ti G7</b>, <b>Fives G7</b>, <b>Rex G7</b>, <b>Echo (501st) G7</b>, <b>ARC Trooper G1 4&#9733;</b></td></tr><tr class="working" style=""><td>canth reed</td><td>552172719</td><td>90</td><td>34</td><td>56</td><td data-order="41241">41k</td><td><b>Shaak Ti R3</b>, <b>Fives R3</b>, <b>Rex G1 5&#9733;</b>, <b>Echo (501st) G1 3&#9733;</b>, <b>ARC Trooper G0 0&#9733;</b></td></tr><tr class="working" style=""><td>Kenn Skirata</td><td>446373369</td><td>60</td><td>32</td><td>28</td><td data-order="86897">86k</td><td>Shaak Ti, <b>Fives R1</b>, <b>Rex R1</b>, <b>Echo (501st) G9</b>, <b>ARC Trooper G7</b></td></tr><tr class="working" style=""><td>Willey</td><td>136186513</td><td>48</td><td>16</td><td>32</td><td data-order="96961">96k</td><td><b>Shaak Ti R4</b>, <b>Fives G12</b>, <b>Rex R4</b>, <b>Echo (501st) G12</b>, <b>ARC Trooper G0 0&#9733;</b></td></tr><tr class="working" style=""><td>The JLS</td><td>647474141</td><td>53</td><td>22</td><td>31</td><td data-order="101630">101k</td><td>Shaak Ti, <b>Fives G12</b>, <b>Rex G12</b>, <b>Echo (501st) G12</b>, <b>ARC Trooper G5</b></td></tr><tr class="working" style=""><td>Leftty</td><td>564668226</td><td>66</td><td>34</td><td>32</td><td data-order="78812">78k</td><td><b>Shaak Ti R3</b>, <b>Fives R3</b>, <b>Rex G10</b>, <b>Echo (501st) G8</b>, <b>ARC Trooper G8</b></td></tr><tr class="working" style=""><td>Millz</td><td>332392187</td><td>66</td><td>15</td><td>51</td><td data-order="63101">63k</td><td><b>Shaak Ti G7 4&#9733;</b>, <b>Fives G10</b>, <b>Rex G12</b>, <b>Echo (501st) G9</b>, <b>ARC Trooper G1 4&#9733;</b></td></tr><tr class="working" style=""><td>Thavinpearce</td><td>494298674</td><td>55</td><td>15</td><td>40</td><td data-order="76455">76k</td><td><b>Shaak Ti R2</b>, <b>Fives G10</b>, <b>Rex G11</b>, <b>Echo (501st) G9</b>, <b>ARC Trooper G5 5&#9733;</b></td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Edd Vayder</td><td>895889781</td><td>0</td><td>0</td><td>0</td><td data-order="144697">144k</td><td>Shaak Ti, Fives, Rex, Echo (501st), ARC Trooper</td></tr><tr class="working" style=""><td>DarthSkylar</td><td>998163772</td><td>45</td><td>7</td><td>38</td><td data-order="67520">67k</td><td><b>Shaak Ti G12</b>, <b>Fives G10</b>, <b>Rex G11</b>, <b>Echo (501st) G9</b>, <b>ARC Trooper G10 6&#9733;</b></td></tr><tr class="working" style=""><td>Peepeepoopooman</td><td>827513585</td><td>83</td><td>5</td><td>78</td><td data-order="17405">17k</td><td><b>Shaak Ti G0 0&#9733;</b>, <b>Fives G5</b>, <b>Rex G6</b>, <b>Echo (501st) G1 3&#9733;</b>, <b>ARC Trooper G0 0&#9733;</b></td></tr><tr class="working" style=""><td>XMilitary</td><td>257197713</td><td>9</td><td>1</td><td>8</td><td data-order="127660">127k</td><td><b>Shaak Ti R4</b>, <b>Fives R3</b>, <b>Rex R3</b>, <b>Echo (501st) R3</b>, <b>ARC Trooper R4</b></td></tr><tr class="working" style=""><td>PrimarchHades</td><td>793647289</td><td>26</td><td>4</td><td>22</td><td data-order="118537">118k</td><td><b>Shaak Ti G12</b>, <b>Fives G12</b>, <b>Rex G12</b>, <b>Echo (501st) R1</b>, ARC Trooper</td></tr><tr class="working" style=""><td>Goff</td><td>366158535</td><td>66</td><td>1</td><td>65</td><td data-order="24094">24k</td><td><b>Shaak Ti G1 3&#9733;</b>, <b>Fives G8</b>, <b>Rex G8 5&#9733;</b>, <b>Echo (501st) G8 5&#9733;</b>, <b>ARC Trooper G0 0&#9733;</b></td></tr><tr class="working" style=""><td>Ben</td><td>585336214</td><td>46</td><td>13</td><td>33</td><td data-order="76143">76k</td><td><b>Shaak Ti G7 5&#9733;</b>, <b>Fives G11</b>, <b>Rex R4</b>, <b>Echo (501st) G11</b>, <b>ARC Trooper G11</b></td></tr><tr class="working" style=""><td>Huff</td><td>712559452</td><td>66</td><td>24</td><td>42</td><td data-order="56027">56k</td><td><b>Shaak Ti R3</b>, <b>Fives R3</b>, <b>Rex G8 6&#9733;</b>, <b>Echo (501st) G8 5&#9733;</b>, <b>ARC Trooper G0 0&#9733;</b></td></tr><tr class="working" style=""><td>SwgohIsDead</td><td>579754696</td><td>70</td><td>0</td><td>70</td><td data-order="26482">26k</td><td><b>Shaak Ti G1 2&#9733;</b>, <b>Fives G8</b>, <b>Rex G10</b>, <b>Echo (501st) G1 3&#9733;</b>, <b>ARC Trooper G0 0&#9733;</b></td></tr><tr class="working" style=""><td>SK74</td><td>377498924</td><td>69</td><td>1</td><td>68</td><td data-order="26267">26k</td><td><b>Shaak Ti G1 4&#9733;</b>, <b>Fives G7</b>, <b>Rex G7</b>, <b>Echo (501st) G7</b>, <b>ARC Trooper G0 0&#9733;</b></td></tr><tr class="working" style=""><td>Galaxy</td><td>137427682</td><td>34</td><td>4</td><td>30</td><td data-order="92646">92k</td><td><b>Shaak Ti R1</b>, <b>Fives G10</b>, <b>Rex G12</b>, <b>Echo (501st) G12</b>, <b>ARC Trooper G12</b></td></tr><tr class="working" style=""><td>BuLeo</td><td>739713814</td><td>81</td><td>1</td><td>80</td><td data-order="8883">8883</td><td><b>Shaak Ti G1 2&#9733;</b>, <b>Fives G7 6&#9733;</b>, <b>Rex G1 4&#9733;</b>, <b>Echo (501st) G1 3&#9733;</b>, <b>ARC Trooper G0 0&#9733;</b></td></tr><tr class="working" style=""><td>leobeoskywalker</td><td>629835227</td><td>43</td><td>0</td><td>43</td><td data-order="72761">72k</td><td><b>Shaak Ti G0 0&#9733;</b>, <b>Fives G12</b>, <b>Rex G12</b>, <b>Echo (501st) G12</b>, <b>ARC Trooper G11</b></td></tr><tr class="working" style=""><td>Obi Wonton</td><td>664489794</td><td>80</td><td>0</td><td>80</td><td data-order="12648">12k</td><td><b>Shaak Ti G1 4&#9733;</b>, <b>Fives G7</b>, <b>Rex G1 6&#9733;</b>, <b>Echo (501st) G1 5&#9733;</b>, <b>ARC Trooper G0 0&#9733;</b></td></tr></table><script>var config = {
+    "paging":   false,
+    "info":     false,
+    bFilter: false,
+    fixedHeader: true,
+    dom: 'Bfrtip',
+    buttons: [
+        'copyHtml5',
+        'excelHtml5',
+        'csvHtml5',
+    ],
+}
+
+table = $('#stats').DataTable(config);</script><br/>
+<font size="-2">Generated 2024-05-12 16:08:05 +0000</font>
+<script data-goatcounter="https://gorgatron.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>

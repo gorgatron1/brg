@@ -1,0 +1,644 @@
+<meta charset="UTF-8">
+<meta name="robots" content="noindex"><style type="text/css">
+body {
+ background-image: url("../../i/more_faded_logo.jpg");
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+</style><style type="text/css">
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  padding: 8px;
+}
+
+tr:nth-child(even) {background: #dddddd}
+tr:nth-child(odd) {background: #ffffff}
+
+.toggleable {
+    display: none;
+}
+</style><script type="text/javascript" language="javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><title>BRG Alliance Guild Reports: BRG The HighCouncil  LS Geo TB Plan</title>
+<div style="display: flex; align-items:baseline"><img src="../../i/simple_logo_48.jpg"/>&nbsp;<h1>Alliance Guild Reports: BRG The HighCouncil  LS Geo TB Plan</h1></div>
+
+<div style="background-color: #f0f0f0; border: solid red; padding: 10px; border-radius: 10px">
+<a href="../../alliance/index.html">Alliance</a> |
+<a href="../../alliance/characters.html">Characters</a> |
+
+<div style="float:right;"><a href="../../r">Resources</a></div>
+<a href="index.html">Back</a>
+</div>
+<br/><script>
+function CopyToClipboard(id)
+{
+document.getElementById(id).style.display = 'block';
+var r = document.createRange();
+r.selectNode(document.getElementById(id));
+window.getSelection().removeAllRanges();
+window.getSelection().addRange(r);
+document.execCommand('copy');
+window.getSelection().removeAllRanges();
+document.getElementById(id).style.display = 'none';
+}
+</script><style type="text/css">
+.newPhase td{
+  border-top: 2px solid black;
+}
+.column {
+  float: left;
+  width: 33%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+<script>
+function copyText(name) {
+  var copyText = document.getElementById(name);
+  $("#"+name).show();
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+}
+</script>
+There are several models of activity or you can come up with a <a href="tb.html?tb=ls&d=squad+name&player-summary=on">plan manually with some assistance</a>.
+<ul><li><b>Optimal</b> assumes that everybody deploys and you have reasonable success with the missions.  It is not necessarily a lower bound -- the missions are just estimates of how well you do, but it is an optimistic view.  You might score a star or two higher, especially if you are close on some sections.  You won't make it if participation is low.</li><li><b>Decreasing</b> is in between.  It assumes full participation and good performance on the early phases and tapers off on the later phases (this matches what I observe).</li><li><b>KAM Shards</b> is the same as <b>Decreasing</b> but it tries to force the TB to reach 3 Bottom to obtain KAM shards.</li></ul>
+Contact @gorgatron#3094 to tailor these assumptions.
+<br/>
+<img src="../../i/ls_geo_tb_labels.jpeg" width="500"/>
+<br/>
+<br/><p>See also <a href="https://genskaar.github.io/tb_geo/html/ls.html">https://genskaar.github.io/tb_geo/html/ls.html</a>.</p><br/><div class="row"><div class="column"><h2>Optimal Estimated: 10 &#11088;</h2>
+<br/>
+<table style="margin: 10px">
+<thead>
+    <tr>
+    <th>Phase</th>
+    <th>Section</th>
+    <th>Action</th>
+    </tr>
+</thead>
+<tbody><tr class="newPhase"><td>1</td><td>&nbsp;</td><td><b>active</b> <a href="tb.html?c=1%20Top&tb=ls&d=squad+name&player-summary=on">1 Top</a> <a href="tb.html?c=1%20Middle,%201%20Bottom&tb=ls&d=squad+name&player-summary=on">1 Middle, 1 Bottom</a></td><tr><td>1</td><td>1 Top</td><td><b>missions</b> 2 -> 2m</td><tr><td>1</td><td>1 Middle</td><td><b>missions</b> 7 -> 7m</td><tr><td>1</td><td>1 Bottom</td><td><b>missions</b> 12 -> 12m</td><tr><td>1</td><td>1 Top</td><td><b>deploy</b> 41 -> 43m</td><tr><td>1</td><td>1 Middle</td><td><b>deploy</b> 102 -> 109m</td><tr><td>1</td><td>1 Bottom</td><td><b>deploy</b> 5 -> 17m</td><tr><td>1</td><td>&nbsp;</td><td><b>remaining GP:</b> 0 toons, 38 ships<pre id="optimal-1-plan" style="display: none !important;">**phase 1: 1 Top -> 1 :star:**
+**phase 1: 1 Middle HOLD AT ZERO :star:**
+**phase 1: 1 Bottom HOLD AT ZERO :star:**</pre><pre id="optimal-1-missions" style="display: none !important;">**Fleet CM** Negotiator e.g. Negotiator Anakin's Eta-2, Ahsoka's SF, Umbaran SF, Plo's SF, Clone Sergeant's ARC-170, Rex's ARC-170
+Arkay Belrosa Dart Leon J3d1 Wampa Kyo Perthar Nitz Zenithier
+
+**Jedi CM** JKL e.g. JKL GMY HYoda Old Ben, Ezra
+Arkay Belrosa J3d1 Wampa Nitz Zenithier
+
+**Jedi CM** JMK Jedi e.g. JMK GAS GMY Aayla QGJ
+Arkay
+
+**Jedi CM** JMLS e.g. JMLS GAS Barriss BS JKR
+J3d1 Wampa Nitz Zenithier
+
+**LS CM** CLS e.g. CLS Han Chewbacca Chewpio C-3PO
+Belrosa Crovax Dingodog Fallen J3d1 Wampa Nitz RichmalTheReborn WhisKid Zenithier
+
+**LS CM** GAS e.g. GAS Rex Echo (501st), ARC Trooper, Fives
+Nitz'd
+
+**LS CM** GL Rey e.g. Rey Chewbacca GK RH Poe, RH Finn
+Arkay DarthSnips
+
+**LS CM** JMK GR e.g. JMK CAT Mace JKA Shaak Ti
+Nitz Zenithier
+
+**LS CM** JTR e.g. JTR BB-8 C-3PO R2-D2 Finn
+Kyo Perthar
+
+**LS CM** Padme e.g. Padme Ahsoka JKA GK Shaak Ti
+Nitz'd Sonofskirata
+
+**LS CM** Shaak Ti e.g. Shaak Ti, Rex Echo (501st), ARC Trooper, Fives
+Arkay
+
+</pre><p><a href="#" onclick="CopyToClipboard('optimal-1-plan'); return false;">Copy Plan</a> | <a href="#" onclick="CopyToClipboard('optimal-1-missions'); return false;">Copy Missions</a></p></td><tr><td>1</td><td>1 Top</td><td>1 &#11088; -- 42 to the next</td><tr><td>1</td><td>1 Middle</td><td><b>HOLD AT ZERO &#11088;</b></td><tr><td>1</td><td>1 Bottom</td><td><b>HOLD AT ZERO &#11088;</b></td><tr class="newPhase"><td>2</td><td>&nbsp;</td><td><b>active</b> <a href="tb.html?c=2%20Top&tb=ls&d=squad+name&player-summary=on">2 Top</a> <a href="tb.html?c=1%20Middle,%201%20Bottom&tb=ls&d=squad+name&player-summary=on">1 Middle, 1 Bottom</a></td><tr><td>2</td><td>1 Middle</td><td><b>missions</b> 7 -> 116m</td><tr><td>2</td><td>1 Bottom</td><td><b>missions</b> 12 -> 29m</td><tr><td>2</td><td>2 Top</td><td><b>missions</b> 4 -> 4m</td><tr><td>2</td><td>1 Middle</td><td><b>deploy</b> 51 -> 167m</td><tr><td>2</td><td>1 Bottom</td><td><b>deploy</b> 56 -> 85m</td><tr><td>2</td><td>2 Top</td><td><b>deploy</b> 67 -> 71m</td><tr><td>2</td><td>&nbsp;</td><td><b>remaining GP:</b> 0 toons, 12 ships<pre id="optimal-2-plan" style="display: none !important;">**phase 2: 2 Top -> 1 :star:**
+**phase 2: 1 Middle -> 2 :star:**
+**phase 2: 1 Bottom HOLD AT ZERO :star:**</pre><pre id="optimal-2-missions" style="display: none !important;">**Fleet CM** Negotiator e.g. Negotiator Anakin's Eta-2, Ahsoka's SF, Umbaran SF, Plo's SF, Clone Sergeant's ARC-170, Rex's ARC-170
+Arkay Belrosa Dart Leon J3d1 Wampa Kyo Perthar Nitz Zenithier
+
+**Jedi CM** JKL e.g. JKL GMY HYoda Old Ben, Ezra
+Arkay Belrosa J3d1 Wampa Nitz Zenithier
+
+**Jedi CM** JMK Jedi e.g. JMK GAS GMY Aayla QGJ
+Arkay
+
+**Jedi CM** JMLS e.g. JMLS GAS Barriss BS JKR
+J3d1 Wampa Nitz Zenithier
+
+**LS CM** CLS e.g. CLS Han Chewbacca Chewpio C-3PO
+Belrosa Crovax Dingodog Fallen J3d1 Wampa Nitz RichmalTheReborn WhisKid Zenithier
+
+**LS CM** GAS e.g. GAS Rex Echo (501st), ARC Trooper, Fives
+Nitz'd
+
+**LS CM** GL Rey e.g. Rey Chewbacca GK RH Poe, RH Finn
+Arkay DarthSnips
+
+**LS CM** JMK GR e.g. JMK CAT Mace JKA Shaak Ti
+Nitz Zenithier
+
+**LS CM** JTR e.g. JTR BB-8 C-3PO R2-D2 Finn
+Kyo Perthar
+
+**LS CM** Padme e.g. Padme Ahsoka JKA GK Shaak Ti
+Nitz'd Sonofskirata
+
+**LS CM** Shaak Ti e.g. Shaak Ti, Rex Echo (501st), ARC Trooper, Fives
+Arkay
+
+</pre><p><a href="#" onclick="CopyToClipboard('optimal-2-plan'); return false;">Copy Plan</a> | <a href="#" onclick="CopyToClipboard('optimal-2-missions'); return false;">Copy Missions</a></p></td><tr><td>2</td><td>2 Top</td><td>1 &#11088; -- 63 to the next</td><tr><td>2</td><td>1 Middle</td><td>2 &#11088; -- 90 to the next</td><tr><td>2</td><td>1 Bottom</td><td><b>HOLD AT ZERO &#11088;</b></td><tr class="newPhase"><td>3</td><td>&nbsp;</td><td><b>active</b> <a href="tb.html?c=3%20Top&tb=ls&d=squad+name&player-summary=on">3 Top</a> <a href="tb.html?c=2%20Middle,%201%20Bottom&tb=ls&d=squad+name&player-summary=on">1 Bottom, 2 Middle</a></td><tr><td>3</td><td>2 Middle</td><td><b>missions</b> 9 -> 9m</td><tr><td>3</td><td>3 Top</td><td><b>missions</b> 9 -> 9m</td><tr><td>3</td><td>2 Middle</td><td><b>deploy</b> 86 -> 95m</td><tr><td>3</td><td>3 Top</td><td><b>deploy</b> 79 -> 88m</td><tr><td>3</td><td>&nbsp;</td><td><b>remaining GP:</b> 21 toons, 0 ships<pre id="optimal-3-plan" style="display: none !important;">**phase 3: 3 Top HOLD AT ZERO :star:**
+**phase 3: 2 Middle HOLD AT ZERO :star:**
+**phase 3: 1 Bottom HOLD AT ZERO :star:**</pre><pre id="optimal-3-missions" style="display: none !important;">**Fleet CM** Negotiator e.g. Negotiator Anakin's Eta-2, Ahsoka's SF, Umbaran SF, Plo's SF, Clone Sergeant's ARC-170, Rex's ARC-170
+Arkay Belrosa Dart Leon J3d1 Wampa Kyo Perthar Nitz Zenithier
+
+**GAS/Ahsoka** GAS Special e.g. GAS Ahsoka
+Arkay J3d1 Wampa Nitz Nitz'd Zenithier
+
+**Jedi CM** JKL e.g. JKL GMY HYoda Old Ben, Ezra
+Arkay Belrosa J3d1 Wampa Nitz Zenithier
+
+**LS CM** CLS e.g. CLS Han Chewbacca Chewpio C-3PO
+Belrosa Crovax Dingodog Fallen J3d1 Wampa Nitz RichmalTheReborn WhisKid Zenithier
+
+**LS CM** GL Rey e.g. Rey Chewbacca GK RH Poe, RH Finn
+Arkay DarthSnips
+
+**LS CM** JMK GR e.g. JMK CAT Fives Padme R2-D2
+Arkay Nitz Zenithier
+
+**LS CM** JTR e.g. JTR BB-8 C-3PO R2-D2 Finn
+Kyo Perthar
+
+**LS CM** Padme e.g. Padme Ahsoka JKA GK Shaak Ti
+Nitz'd Sonofskirata
+
+</pre><p><a href="#" onclick="CopyToClipboard('optimal-3-plan'); return false;">Copy Plan</a> | <a href="#" onclick="CopyToClipboard('optimal-3-missions'); return false;">Copy Missions</a></p></td><tr><td>3</td><td>3 Top</td><td><b>HOLD AT ZERO &#11088;</b></td><tr><td>3</td><td>2 Middle</td><td><b>HOLD AT ZERO &#11088;</b></td><tr><td>3</td><td>1 Bottom</td><td><b>HOLD AT ZERO &#11088;</b></td><tr class="newPhase"><td>4</td><td>&nbsp;</td><td><b>active</b> <a href="tb.html?c=3%20Top&tb=ls&d=squad+name&player-summary=on">3 Top</a> <a href="tb.html?c=2%20Middle,%201%20Bottom&tb=ls&d=squad+name&player-summary=on">1 Bottom, 2 Middle</a></td><tr><td>4</td><td>1 Bottom</td><td><b>missions</b> 14 -> 99m</td><tr><td>4</td><td>2 Middle</td><td><b>missions</b> 1 -> 96m</td><tr><td>4</td><td>3 Top</td><td><b>missions</b> 9 -> 97m</td><tr><td>4</td><td>1 Bottom</td><td><b>deploy</b> 81 -> 180m</td><tr><td>4</td><td>3 Top</td><td><b>deploy</b> 55 -> 152m</td><tr><td>4</td><td>&nbsp;</td><td><b>remaining GP:</b> 26 toons, 24 ships<pre id="optimal-4-plan" style="display: none !important;">**phase 4: 3 Top -> 2 :star:**
+**phase 4: 2 Middle -> 1 :star:**
+**phase 4: 1 Bottom -> 3 :star:**</pre><pre id="optimal-4-missions" style="display: none !important;">**Fleet CM** Negotiator e.g. Negotiator Anakin's Eta-2, Ahsoka's SF, Umbaran SF, Plo's SF, Clone Sergeant's ARC-170, Rex's ARC-170
+Arkay Belrosa Dart Leon J3d1 Wampa Kyo Perthar Nitz Zenithier
+
+**GAS/Ahsoka** GAS Special e.g. GAS Ahsoka
+Arkay J3d1 Wampa Nitz Nitz'd Zenithier
+
+**Jedi CM** JKL e.g. JKL GMY HYoda Old Ben, Ezra
+Arkay Belrosa J3d1 Wampa Nitz Zenithier
+
+**LS CM** CLS e.g. CLS Han Chewbacca Chewpio C-3PO
+Belrosa Crovax Dingodog Fallen J3d1 Wampa Nitz RichmalTheReborn WhisKid Zenithier
+
+**LS CM** GL Rey e.g. Rey Chewbacca GK RH Poe, RH Finn
+Arkay DarthSnips
+
+**LS CM** JMK GR e.g. JMK CAT Fives Padme R2-D2
+Arkay Nitz Zenithier
+
+**LS CM** JTR e.g. JTR BB-8 C-3PO R2-D2 Finn
+Kyo Perthar
+
+**LS CM** Padme e.g. Padme Ahsoka JKA GK Shaak Ti
+Nitz'd Sonofskirata
+
+</pre><p><a href="#" onclick="CopyToClipboard('optimal-4-plan'); return false;">Copy Plan</a> | <a href="#" onclick="CopyToClipboard('optimal-4-missions'); return false;">Copy Missions</a></p></td><tr><td>4</td><td>3 Top</td><td>2 &#11088; -- 65 to the next</td><tr><td>4</td><td>2 Middle</td><td>1 &#11088; -- 78 to the next</td><tr><td>4</td><td>1 Bottom</td><td>3 &#11088;</td></tbody>
+</table>
+<br/>
+<br/><textarea id="discordoptimal" style="display:none" rows="8" cols="40">
+**Estimated 10 :star:**
+
+**phase 1: active** 1 Top, 1 Middle, 1 Bottom
+phase 1: **missions** 1 Top 2 -> 2m
+phase 1: **missions** 1 Middle 7 -> 7m
+phase 1: **missions** 1 Bottom 12 -> 12m
+phase 1: **deploy** 1 Top 41 -> 43m
+phase 1: **deploy** 1 Middle 102 -> 109m
+phase 1: **deploy** 1 Bottom 5 -> 17m
+phase 1: remaining GP = 0 toons, 38 ships
+details: https://gorgatron1.github.io/brg/guild/high-council/tb.html%3Fc=1%2520Middle,%25201%2520Bottom&tb=ls&d=squad+name&player-summary=on
+**phase 1: 1 Top -> 1 :star:**
+**phase 1: 1 Middle HOLD AT ZERO :star:**
+**phase 1: 1 Bottom HOLD AT ZERO :star:**
+
+**phase 2: active** 1 Middle, 1 Bottom, 2 Top
+phase 2: **missions** 1 Middle 7 -> 116m
+phase 2: **missions** 1 Bottom 12 -> 29m
+phase 2: **missions** 2 Top 4 -> 4m
+phase 2: **deploy** 1 Middle 51 -> 167m
+phase 2: **deploy** 1 Bottom 56 -> 85m
+phase 2: **deploy** 2 Top 67 -> 71m
+phase 2: remaining GP = 0 toons, 12 ships
+details: https://gorgatron1.github.io/brg/guild/high-council/tb.html%3Fc=1%2520Middle,%25201%2520Bottom&tb=ls&d=squad+name&player-summary=on
+**phase 2: 2 Top -> 1 :star:**
+**phase 2: 1 Middle -> 2 :star:**
+**phase 2: 1 Bottom HOLD AT ZERO :star:**
+
+**phase 3: active** 1 Bottom, 2 Middle, 3 Top
+phase 3: **missions** 2 Middle 9 -> 9m
+phase 3: **missions** 3 Top 9 -> 9m
+phase 3: **deploy** 2 Middle 86 -> 95m
+phase 3: **deploy** 3 Top 79 -> 88m
+phase 3: remaining GP = 21 toons, 0 ships
+details: https://gorgatron1.github.io/brg/guild/high-council/tb.html%3Fc=2%2520Middle,%25201%2520Bottom&tb=ls&d=squad+name&player-summary=on
+**phase 3: 3 Top HOLD AT ZERO :star:**
+**phase 3: 2 Middle HOLD AT ZERO :star:**
+**phase 3: 1 Bottom HOLD AT ZERO :star:**
+
+**phase 4: active** 1 Bottom, 2 Middle, 3 Top
+phase 4: **missions** 1 Bottom 14 -> 99m
+phase 4: **missions** 2 Middle 1 -> 96m
+phase 4: **missions** 3 Top 9 -> 97m
+phase 4: **deploy** 1 Bottom 81 -> 180m
+phase 4: **deploy** 3 Top 55 -> 152m
+phase 4: remaining GP = 26 toons, 24 ships
+details: https://gorgatron1.github.io/brg/guild/high-council/tb.html%3Fc=2%2520Middle,%25201%2520Bottom&tb=ls&d=squad+name&player-summary=on
+**phase 4: 3 Top -> 2 :star:**
+**phase 4: 2 Middle -> 1 :star:**
+**phase 4: 1 Bottom -> 3 :star:**
+
+</textarea>
+<button onclick="copyText('discordoptimal')">Copy For Discord</button></div><div class="column"><h2>Decreasing Estimated: 10 &#11088;</h2>
+<br/>
+<table style="margin: 10px">
+<thead>
+    <tr>
+    <th>Phase</th>
+    <th>Section</th>
+    <th>Action</th>
+    </tr>
+</thead>
+<tbody><tr class="newPhase"><td>1</td><td>&nbsp;</td><td><b>active</b> <a href="tb.html?c=1%20Top&tb=ls&d=squad+name&player-summary=on">1 Top</a> <a href="tb.html?c=1%20Middle,%201%20Bottom&tb=ls&d=squad+name&player-summary=on">1 Middle, 1 Bottom</a></td><tr><td>1</td><td>1 Top</td><td><b>missions</b> 2 -> 2m</td><tr><td>1</td><td>1 Middle</td><td><b>missions</b> 7 -> 7m</td><tr><td>1</td><td>1 Bottom</td><td><b>missions</b> 12 -> 12m</td><tr><td>1</td><td>1 Top</td><td><b>deploy</b> 40 -> 42m</td><tr><td>1</td><td>1 Middle</td><td><b>deploy</b> 103 -> 110m</td><tr><td>1</td><td>1 Bottom</td><td><b>deploy</b> 4 -> 16m</td><tr><td>1</td><td>&nbsp;</td><td><b>remaining GP:</b> 0 toons, 39 ships<pre id="decreasing-1-plan" style="display: none !important;">**phase 1: 1 Top HOLD AT ZERO :star:**
+**phase 1: 1 Middle -> 1 :star:**
+**phase 1: 1 Bottom HOLD AT ZERO :star:**</pre><pre id="decreasing-1-missions" style="display: none !important;">**Fleet CM** Negotiator e.g. Negotiator Anakin's Eta-2, Ahsoka's SF, Umbaran SF, Plo's SF, Clone Sergeant's ARC-170, Rex's ARC-170
+Arkay Belrosa Dart Leon J3d1 Wampa Kyo Perthar Nitz Zenithier
+
+**Jedi CM** JKL e.g. JKL GMY HYoda Old Ben, Ezra
+Arkay Belrosa J3d1 Wampa Nitz Zenithier
+
+**Jedi CM** JMK Jedi e.g. JMK GAS GMY Aayla QGJ
+Arkay
+
+**Jedi CM** JMLS e.g. JMLS GAS Barriss BS JKR
+J3d1 Wampa Nitz Zenithier
+
+**LS CM** CLS e.g. CLS Han Chewbacca Chewpio C-3PO
+Belrosa Crovax Dingodog Fallen J3d1 Wampa Nitz RichmalTheReborn WhisKid Zenithier
+
+**LS CM** GAS e.g. GAS Rex Echo (501st), ARC Trooper, Fives
+Nitz'd
+
+**LS CM** GL Rey e.g. Rey Chewbacca GK RH Poe, RH Finn
+Arkay DarthSnips
+
+**LS CM** JMK GR e.g. JMK CAT Mace JKA Shaak Ti
+Nitz Zenithier
+
+**LS CM** JTR e.g. JTR BB-8 C-3PO R2-D2 Finn
+Kyo Perthar
+
+**LS CM** Padme e.g. Padme Ahsoka JKA GK Shaak Ti
+Nitz'd Sonofskirata
+
+**LS CM** Shaak Ti e.g. Shaak Ti, Rex Echo (501st), ARC Trooper, Fives
+Arkay
+
+</pre><p><a href="#" onclick="CopyToClipboard('decreasing-1-plan'); return false;">Copy Plan</a> | <a href="#" onclick="CopyToClipboard('decreasing-1-missions'); return false;">Copy Missions</a></p></td><tr><td>1</td><td>1 Top</td><td><b>HOLD AT ZERO &#11088;</b></td><tr><td>1</td><td>1 Middle</td><td>1 &#11088; -- 57 to the next</td><tr><td>1</td><td>1 Bottom</td><td><b>HOLD AT ZERO &#11088;</b></td><tr class="newPhase"><td>2</td><td>&nbsp;</td><td><b>active</b> <a href="tb.html?c=1%20Top&tb=ls&d=squad+name&player-summary=on">1 Top</a> <a href="tb.html?c=2%20Middle,%201%20Bottom&tb=ls&d=squad+name&player-summary=on">1 Bottom, 2 Middle</a></td><tr><td>2</td><td>1 Top</td><td><b>missions</b> 2 -> 44m</td><tr><td>2</td><td>1 Bottom</td><td><b>missions</b> 14 -> 30m</td><tr><td>2</td><td>2 Middle</td><td><b>missions</b> 9 -> 9m</td><tr><td>2</td><td>1 Top</td><td><b>deploy</b> 41 -> 85m</td><tr><td>2</td><td>1 Bottom</td><td><b>deploy</b> 55 -> 85m</td><tr><td>2</td><td>2 Middle</td><td><b>deploy</b> 47 -> 56m</td><tr><td>2</td><td>&nbsp;</td><td><b>remaining GP:</b> 0 toons, 34 ships<pre id="decreasing-2-plan" style="display: none !important;">**phase 2: 1 Top -> 2 :star:**
+**phase 2: 2 Middle HOLD AT ZERO :star:**
+**phase 2: 1 Bottom HOLD AT ZERO :star:**</pre><pre id="decreasing-2-missions" style="display: none !important;">**Fleet CM** Negotiator e.g. Negotiator Anakin's Eta-2, Ahsoka's SF, Umbaran SF, Plo's SF, Clone Sergeant's ARC-170, Rex's ARC-170
+Arkay Belrosa Dart Leon J3d1 Wampa Kyo Perthar Nitz Zenithier
+
+**GAS/Ahsoka** GAS Special e.g. GAS Ahsoka
+Arkay J3d1 Wampa Nitz Nitz'd Zenithier
+
+**Jedi CM** JKL e.g. JKL GMY HYoda Old Ben, Ezra
+Arkay Belrosa J3d1 Wampa Nitz Zenithier
+
+**LS CM** CLS e.g. CLS Han Chewbacca Chewpio C-3PO
+Belrosa Crovax Dingodog Fallen J3d1 Wampa Nitz RichmalTheReborn WhisKid Zenithier
+
+**LS CM** GL Rey e.g. Rey Chewbacca GK RH Poe, RH Finn
+Arkay DarthSnips
+
+**LS CM** JMK GR e.g. JMK CAT Fives Padme R2-D2
+Arkay Nitz Zenithier
+
+**LS CM** JTR e.g. JTR BB-8 C-3PO R2-D2 Finn
+Kyo Perthar
+
+**LS CM** Padme e.g. Padme Ahsoka JKA GK Shaak Ti
+Nitz'd Sonofskirata
+
+</pre><p><a href="#" onclick="CopyToClipboard('decreasing-2-plan'); return false;">Copy Plan</a> | <a href="#" onclick="CopyToClipboard('decreasing-2-missions'); return false;">Copy Missions</a></p></td><tr><td>2</td><td>1 Top</td><td>2 &#11088; -- 57 to the next</td><tr><td>2</td><td>2 Middle</td><td><b>HOLD AT ZERO &#11088;</b></td><tr><td>2</td><td>1 Bottom</td><td><b>HOLD AT ZERO &#11088;</b></td><tr class="newPhase"><td>3</td><td>&nbsp;</td><td><b>active</b> <a href="tb.html?c=2%20Top&tb=ls&d=squad+name&player-summary=on">2 Top</a> <a href="tb.html?c=2%20Middle,%201%20Bottom&tb=ls&d=squad+name&player-summary=on">1 Bottom, 2 Middle</a></td><tr><td>3</td><td>1 Bottom</td><td><b>missions</b> 14 -> 99m</td><tr><td>3</td><td>2 Top</td><td><b>missions</b> 4 -> 4m</td><tr><td>3</td><td>2 Middle</td><td><b>missions</b> 9 -> 65m</td><tr><td>3</td><td>1 Bottom</td><td><b>deploy</b> 81 -> 180m</td><tr><td>3</td><td>2 Top</td><td><b>deploy</b> 66 -> 70m</td><tr><td>3</td><td>2 Middle</td><td><b>deploy</b> 17 -> 82m</td><tr><td>3</td><td>&nbsp;</td><td><b>remaining GP:</b> 0 toons, 6 ships<pre id="decreasing-3-plan" style="display: none !important;">**phase 3: 2 Top HOLD AT ZERO :star:**
+**phase 3: 2 Middle HOLD AT ZERO :star:**
+**phase 3: 1 Bottom -> 3 :star:**</pre><pre id="decreasing-3-missions" style="display: none !important;">**Fleet CM** Negotiator e.g. Negotiator Anakin's Eta-2, Ahsoka's SF, Umbaran SF, Plo's SF, Clone Sergeant's ARC-170, Rex's ARC-170
+Arkay Belrosa Dart Leon J3d1 Wampa Kyo Perthar Nitz Zenithier
+
+**GAS/Ahsoka** GAS Special e.g. GAS Ahsoka
+Arkay J3d1 Wampa Nitz Nitz'd Zenithier
+
+**Jedi CM** JKL e.g. JKL GMY HYoda Old Ben, Ezra
+Arkay Belrosa J3d1 Wampa Nitz Zenithier
+
+**LS CM** CLS e.g. CLS Han Chewbacca Chewpio C-3PO
+Belrosa Crovax Dingodog Fallen J3d1 Wampa Nitz RichmalTheReborn WhisKid Zenithier
+
+**LS CM** GL Rey e.g. Rey Chewbacca GK RH Poe, RH Finn
+Arkay DarthSnips
+
+**LS CM** JMK GR e.g. JMK CAT Fives Padme R2-D2
+Arkay Nitz Zenithier
+
+**LS CM** JTR e.g. JTR BB-8 C-3PO R2-D2 Finn
+Kyo Perthar
+
+**LS CM** Padme e.g. Padme Ahsoka JKA GK Shaak Ti
+Nitz'd Sonofskirata
+
+</pre><p><a href="#" onclick="CopyToClipboard('decreasing-3-plan'); return false;">Copy Plan</a> | <a href="#" onclick="CopyToClipboard('decreasing-3-missions'); return false;">Copy Missions</a></p></td><tr><td>3</td><td>2 Top</td><td><b>HOLD AT ZERO &#11088;</b></td><tr><td>3</td><td>2 Middle</td><td><b>HOLD AT ZERO &#11088;</b></td><tr><td>3</td><td>1 Bottom</td><td>3 &#11088;</td><tr class="newPhase"><td>4</td><td>&nbsp;</td><td><b>active</b> <a href="tb.html?c=2%20Top&tb=ls&d=squad+name&player-summary=on">2 Top</a> <a href="tb.html?c=2%20Middle,%202%20Bottom&tb=ls&d=squad+name&player-summary=on">2 Middle, 2 Bottom</a></td><tr><td>4</td><td>2 Top</td><td><b>missions</b> 4 -> 74m</td><tr><td>4</td><td>2 Middle</td><td><b>missions</b> 19 -> 101m</td><tr><td>4</td><td>2 Bottom</td><td><b>missions</b> 5 -> 5m</td><tr><td>4</td><td>2 Top</td><td><b>deploy</b> 60 -> 134m</td><tr><td>4</td><td>2 Middle</td><td><b>deploy</b> 73 -> 174m</td><tr><td>4</td><td>2 Bottom</td><td><b>deploy</b> 21 -> 26m</td><tr><td>4</td><td>&nbsp;</td><td><b>remaining GP:</b> 0 toons, 9 ships<pre id="decreasing-4-plan" style="display: none !important;">**phase 4: 2 Top -> 2 :star:**
+**phase 4: 2 Middle -> 2 :star:**
+**phase 4: 2 Bottom HOLD AT ZERO :star:**</pre><pre id="decreasing-4-missions" style="display: none !important;">**Fleet CM** Negotiator e.g. Negotiator Anakin's Eta-2, Ahsoka's SF, Umbaran SF, Plo's SF, Clone Sergeant's ARC-170, Rex's ARC-170
+Arkay Belrosa Dart Leon J3d1 Wampa Kyo Perthar Nitz Zenithier
+
+**GAS/Ahsoka** GAS Special e.g. GAS Ahsoka
+Arkay J3d1 Wampa Nitz Nitz'd Zenithier
+
+**GR CM** JMK GR e.g. JMK CAT Fives Padme R2-D2
+Arkay Nitz Zenithier
+
+**GR CM** Padme e.g. Padme Ahsoka JKA GK Shaak Ti
+Sonofskirata
+
+**GR CM** Shaak Ti e.g. Shaak Ti, Rex Echo (501st), ARC Trooper, Fives
+Nitz'd
+
+**Jedi CM** JKL e.g. JKL GMY HYoda Old Ben, Ezra
+Arkay Belrosa J3d1 Wampa Nitz Zenithier
+
+**LS CM** CLS e.g. CLS Han Chewbacca Chewpio C-3PO
+Arkay Belrosa Crovax Dingodog Fallen J3d1 Wampa Nitz RichmalTheReborn WhisKid Zenithier
+
+**LS CM** Clones e.g. Rex Echo (501st), ARC Trooper, Cody Fives
+Nitz
+
+**LS CM** GL Rey e.g. Rey Holdo GK RH Poe, RH Finn
+DarthSnips
+
+**LS CM** JTR e.g. JTR BB-8 C-3PO R2-D2 Finn
+Kyo Perthar
+
+</pre><p><a href="#" onclick="CopyToClipboard('decreasing-4-plan'); return false;">Copy Plan</a> | <a href="#" onclick="CopyToClipboard('decreasing-4-missions'); return false;">Copy Missions</a></p></td><tr><td>4</td><td>2 Top</td><td>2 &#11088; -- 81 to the next</td><tr><td>4</td><td>2 Middle</td><td>2 &#11088; -- 86 to the next</td><tr><td>4</td><td>2 Bottom</td><td><b>HOLD AT ZERO &#11088;</b></td></tbody>
+</table>
+<br/>
+<br/><textarea id="discorddecreasing" style="display:none" rows="8" cols="40">
+**Estimated 10 :star:**
+
+**phase 1: active** 1 Top, 1 Middle, 1 Bottom
+phase 1: **missions** 1 Top 2 -> 2m
+phase 1: **missions** 1 Middle 7 -> 7m
+phase 1: **missions** 1 Bottom 12 -> 12m
+phase 1: **deploy** 1 Top 40 -> 42m
+phase 1: **deploy** 1 Middle 103 -> 110m
+phase 1: **deploy** 1 Bottom 4 -> 16m
+phase 1: remaining GP = 0 toons, 39 ships
+details: https://gorgatron1.github.io/brg/guild/high-council/tb.html%3Fc=1%2520Middle,%25201%2520Bottom&tb=ls&d=squad+name&player-summary=on
+**phase 1: 1 Top HOLD AT ZERO :star:**
+**phase 1: 1 Middle -> 1 :star:**
+**phase 1: 1 Bottom HOLD AT ZERO :star:**
+
+**phase 2: active** 1 Top, 1 Bottom, 2 Middle
+phase 2: **missions** 1 Top 2 -> 44m
+phase 2: **missions** 1 Bottom 14 -> 30m
+phase 2: **missions** 2 Middle 9 -> 9m
+phase 2: **deploy** 1 Top 41 -> 85m
+phase 2: **deploy** 1 Bottom 55 -> 85m
+phase 2: **deploy** 2 Middle 47 -> 56m
+phase 2: remaining GP = 0 toons, 34 ships
+details: https://gorgatron1.github.io/brg/guild/high-council/tb.html%3Fc=2%2520Middle,%25201%2520Bottom&tb=ls&d=squad+name&player-summary=on
+**phase 2: 1 Top -> 2 :star:**
+**phase 2: 2 Middle HOLD AT ZERO :star:**
+**phase 2: 1 Bottom HOLD AT ZERO :star:**
+
+**phase 3: active** 1 Bottom, 2 Top, 2 Middle
+phase 3: **missions** 1 Bottom 14 -> 99m
+phase 3: **missions** 2 Top 4 -> 4m
+phase 3: **missions** 2 Middle 9 -> 65m
+phase 3: **deploy** 1 Bottom 81 -> 180m
+phase 3: **deploy** 2 Top 66 -> 70m
+phase 3: **deploy** 2 Middle 17 -> 82m
+phase 3: remaining GP = 0 toons, 6 ships
+details: https://gorgatron1.github.io/brg/guild/high-council/tb.html%3Fc=2%2520Middle,%25201%2520Bottom&tb=ls&d=squad+name&player-summary=on
+**phase 3: 2 Top HOLD AT ZERO :star:**
+**phase 3: 2 Middle HOLD AT ZERO :star:**
+**phase 3: 1 Bottom -> 3 :star:**
+
+**phase 4: active** 2 Top, 2 Middle, 2 Bottom
+phase 4: **missions** 2 Top 4 -> 74m
+phase 4: **missions** 2 Middle 19 -> 101m
+phase 4: **missions** 2 Bottom 5 -> 5m
+phase 4: **deploy** 2 Top 60 -> 134m
+phase 4: **deploy** 2 Middle 73 -> 174m
+phase 4: **deploy** 2 Bottom 21 -> 26m
+phase 4: remaining GP = 0 toons, 9 ships
+details: https://gorgatron1.github.io/brg/guild/high-council/tb.html%3Fc=2%2520Middle,%25202%2520Bottom&tb=ls&d=squad+name&player-summary=on
+**phase 4: 2 Top -> 2 :star:**
+**phase 4: 2 Middle -> 2 :star:**
+**phase 4: 2 Bottom HOLD AT ZERO :star:**
+
+</textarea>
+<button onclick="copyText('discorddecreasing')">Copy For Discord</button></div><div class="column"><h2>KAM Shards Estimated: 10 &#11088;</h2>
+<br/>
+<table style="margin: 10px">
+<thead>
+    <tr>
+    <th>Phase</th>
+    <th>Section</th>
+    <th>Action</th>
+    </tr>
+</thead>
+<tbody><tr class="newPhase"><td>1</td><td>&nbsp;</td><td><b>active</b> <a href="tb.html?c=1%20Top&tb=ls&d=squad+name&player-summary=on">1 Top</a> <a href="tb.html?c=1%20Middle,%201%20Bottom&tb=ls&d=squad+name&player-summary=on">1 Middle, 1 Bottom</a></td><tr><td>1</td><td>1 Top</td><td><b>missions</b> 2 -> 2m</td><tr><td>1</td><td>1 Middle</td><td><b>missions</b> 7 -> 7m</td><tr><td>1</td><td>1 Bottom</td><td><b>missions</b> 12 -> 12m</td><tr><td>1</td><td>1 Top</td><td><b>deploy</b> 40 -> 42m</td><tr><td>1</td><td>1 Middle</td><td><b>deploy</b> 103 -> 110m</td><tr><td>1</td><td>1 Bottom</td><td><b>deploy</b> 4 -> 16m</td><tr><td>1</td><td>&nbsp;</td><td><b>remaining GP:</b> 0 toons, 39 ships<pre id="kam-1-plan" style="display: none !important;">**phase 1: 1 Top HOLD AT ZERO :star:**
+**phase 1: 1 Middle -> 1 :star:**
+**phase 1: 1 Bottom HOLD AT ZERO :star:**</pre><pre id="kam-1-missions" style="display: none !important;">**Fleet CM** Negotiator e.g. Negotiator Anakin's Eta-2, Ahsoka's SF, Umbaran SF, Plo's SF, Clone Sergeant's ARC-170, Rex's ARC-170
+Arkay Belrosa Dart Leon J3d1 Wampa Kyo Perthar Nitz Zenithier
+
+**Jedi CM** JKL e.g. JKL GMY HYoda Old Ben, Ezra
+Arkay Belrosa J3d1 Wampa Nitz Zenithier
+
+**Jedi CM** JMK Jedi e.g. JMK GAS GMY Aayla QGJ
+Arkay
+
+**Jedi CM** JMLS e.g. JMLS GAS Barriss BS JKR
+J3d1 Wampa Nitz Zenithier
+
+**LS CM** CLS e.g. CLS Han Chewbacca Chewpio C-3PO
+Belrosa Crovax Dingodog Fallen J3d1 Wampa Nitz RichmalTheReborn WhisKid Zenithier
+
+**LS CM** GAS e.g. GAS Rex Echo (501st), ARC Trooper, Fives
+Nitz'd
+
+**LS CM** GL Rey e.g. Rey Chewbacca GK RH Poe, RH Finn
+Arkay DarthSnips
+
+**LS CM** JMK GR e.g. JMK CAT Mace JKA Shaak Ti
+Nitz Zenithier
+
+**LS CM** JTR e.g. JTR BB-8 C-3PO R2-D2 Finn
+Kyo Perthar
+
+**LS CM** Padme e.g. Padme Ahsoka JKA GK Shaak Ti
+Nitz'd Sonofskirata
+
+**LS CM** Shaak Ti e.g. Shaak Ti, Rex Echo (501st), ARC Trooper, Fives
+Arkay
+
+</pre><p><a href="#" onclick="CopyToClipboard('kam-1-plan'); return false;">Copy Plan</a> | <a href="#" onclick="CopyToClipboard('kam-1-missions'); return false;">Copy Missions</a></p></td><tr><td>1</td><td>1 Top</td><td><b>HOLD AT ZERO &#11088;</b></td><tr><td>1</td><td>1 Middle</td><td>1 &#11088; -- 57 to the next</td><tr><td>1</td><td>1 Bottom</td><td><b>HOLD AT ZERO &#11088;</b></td><tr class="newPhase"><td>2</td><td>&nbsp;</td><td><b>active</b> <a href="tb.html?c=1%20Top&tb=ls&d=squad+name&player-summary=on">1 Top</a> <a href="tb.html?c=2%20Middle,%201%20Bottom&tb=ls&d=squad+name&player-summary=on">1 Bottom, 2 Middle</a></td><tr><td>2</td><td>1 Top</td><td><b>missions</b> 2 -> 44m</td><tr><td>2</td><td>1 Bottom</td><td><b>missions</b> 14 -> 30m</td><tr><td>2</td><td>2 Middle</td><td><b>missions</b> 9 -> 9m</td><tr><td>2</td><td>1 Top</td><td><b>deploy</b> 41 -> 85m</td><tr><td>2</td><td>1 Bottom</td><td><b>deploy</b> 55 -> 85m</td><tr><td>2</td><td>2 Middle</td><td><b>deploy</b> 47 -> 56m</td><tr><td>2</td><td>&nbsp;</td><td><b>remaining GP:</b> 0 toons, 34 ships<pre id="kam-2-plan" style="display: none !important;">**phase 2: 1 Top -> 2 :star:**
+**phase 2: 2 Middle HOLD AT ZERO :star:**
+**phase 2: 1 Bottom HOLD AT ZERO :star:**</pre><pre id="kam-2-missions" style="display: none !important;">**Fleet CM** Negotiator e.g. Negotiator Anakin's Eta-2, Ahsoka's SF, Umbaran SF, Plo's SF, Clone Sergeant's ARC-170, Rex's ARC-170
+Arkay Belrosa Dart Leon J3d1 Wampa Kyo Perthar Nitz Zenithier
+
+**GAS/Ahsoka** GAS Special e.g. GAS Ahsoka
+Arkay J3d1 Wampa Nitz Nitz'd Zenithier
+
+**Jedi CM** JKL e.g. JKL GMY HYoda Old Ben, Ezra
+Arkay Belrosa J3d1 Wampa Nitz Zenithier
+
+**LS CM** CLS e.g. CLS Han Chewbacca Chewpio C-3PO
+Belrosa Crovax Dingodog Fallen J3d1 Wampa Nitz RichmalTheReborn WhisKid Zenithier
+
+**LS CM** GL Rey e.g. Rey Chewbacca GK RH Poe, RH Finn
+Arkay DarthSnips
+
+**LS CM** JMK GR e.g. JMK CAT Fives Padme R2-D2
+Arkay Nitz Zenithier
+
+**LS CM** JTR e.g. JTR BB-8 C-3PO R2-D2 Finn
+Kyo Perthar
+
+**LS CM** Padme e.g. Padme Ahsoka JKA GK Shaak Ti
+Nitz'd Sonofskirata
+
+</pre><p><a href="#" onclick="CopyToClipboard('kam-2-plan'); return false;">Copy Plan</a> | <a href="#" onclick="CopyToClipboard('kam-2-missions'); return false;">Copy Missions</a></p></td><tr><td>2</td><td>1 Top</td><td>2 &#11088; -- 57 to the next</td><tr><td>2</td><td>2 Middle</td><td><b>HOLD AT ZERO &#11088;</b></td><tr><td>2</td><td>1 Bottom</td><td><b>HOLD AT ZERO &#11088;</b></td><tr class="newPhase"><td>3</td><td>&nbsp;</td><td><b>active</b> <a href="tb.html?c=2%20Top&tb=ls&d=squad+name&player-summary=on">2 Top</a> <a href="tb.html?c=2%20Middle,%201%20Bottom&tb=ls&d=squad+name&player-summary=on">1 Bottom, 2 Middle</a></td><tr><td>3</td><td>1 Bottom</td><td><b>missions</b> 14 -> 99m</td><tr><td>3</td><td>2 Top</td><td><b>missions</b> 4 -> 4m</td><tr><td>3</td><td>2 Middle</td><td><b>missions</b> 9 -> 65m</td><tr><td>3</td><td>1 Bottom</td><td><b>deploy</b> 81 -> 180m</td><tr><td>3</td><td>2 Top</td><td><b>deploy</b> 66 -> 70m</td><tr><td>3</td><td>2 Middle</td><td><b>deploy</b> 17 -> 82m</td><tr><td>3</td><td>&nbsp;</td><td><b>remaining GP:</b> 0 toons, 6 ships<pre id="kam-3-plan" style="display: none !important;">**phase 3: 2 Top HOLD AT ZERO :star:**
+**phase 3: 2 Middle HOLD AT ZERO :star:**
+**phase 3: 1 Bottom -> 3 :star:**</pre><pre id="kam-3-missions" style="display: none !important;">**Fleet CM** Negotiator e.g. Negotiator Anakin's Eta-2, Ahsoka's SF, Umbaran SF, Plo's SF, Clone Sergeant's ARC-170, Rex's ARC-170
+Arkay Belrosa Dart Leon J3d1 Wampa Kyo Perthar Nitz Zenithier
+
+**GAS/Ahsoka** GAS Special e.g. GAS Ahsoka
+Arkay J3d1 Wampa Nitz Nitz'd Zenithier
+
+**Jedi CM** JKL e.g. JKL GMY HYoda Old Ben, Ezra
+Arkay Belrosa J3d1 Wampa Nitz Zenithier
+
+**LS CM** CLS e.g. CLS Han Chewbacca Chewpio C-3PO
+Belrosa Crovax Dingodog Fallen J3d1 Wampa Nitz RichmalTheReborn WhisKid Zenithier
+
+**LS CM** GL Rey e.g. Rey Chewbacca GK RH Poe, RH Finn
+Arkay DarthSnips
+
+**LS CM** JMK GR e.g. JMK CAT Fives Padme R2-D2
+Arkay Nitz Zenithier
+
+**LS CM** JTR e.g. JTR BB-8 C-3PO R2-D2 Finn
+Kyo Perthar
+
+**LS CM** Padme e.g. Padme Ahsoka JKA GK Shaak Ti
+Nitz'd Sonofskirata
+
+</pre><p><a href="#" onclick="CopyToClipboard('kam-3-plan'); return false;">Copy Plan</a> | <a href="#" onclick="CopyToClipboard('kam-3-missions'); return false;">Copy Missions</a></p></td><tr><td>3</td><td>2 Top</td><td><b>HOLD AT ZERO &#11088;</b></td><tr><td>3</td><td>2 Middle</td><td><b>HOLD AT ZERO &#11088;</b></td><tr><td>3</td><td>1 Bottom</td><td>3 &#11088;</td><tr class="newPhase"><td>4</td><td>&nbsp;</td><td><b>active</b> <a href="tb.html?c=2%20Top&tb=ls&d=squad+name&player-summary=on">2 Top</a> <a href="tb.html?c=2%20Middle,%202%20Bottom&tb=ls&d=squad+name&player-summary=on">2 Middle, 2 Bottom</a></td><tr><td>4</td><td>2 Top</td><td><b>missions</b> 4 -> 74m</td><tr><td>4</td><td>2 Middle</td><td><b>missions</b> 19 -> 101m</td><tr><td>4</td><td>2 Bottom</td><td><b>missions</b> 5 -> 5m</td><tr><td>4</td><td>2 Top</td><td><b>deploy</b> 60 -> 134m</td><tr><td>4</td><td>2 Middle</td><td><b>deploy</b> 73 -> 174m</td><tr><td>4</td><td>2 Bottom</td><td><b>deploy</b> 21 -> 26m</td><tr><td>4</td><td>&nbsp;</td><td><b>remaining GP:</b> 0 toons, 9 ships<pre id="kam-4-plan" style="display: none !important;">**phase 4: 2 Top -> 2 :star:**
+**phase 4: 2 Middle -> 2 :star:**
+**phase 4: 2 Bottom HOLD AT ZERO :star:**</pre><pre id="kam-4-missions" style="display: none !important;">**Fleet CM** Negotiator e.g. Negotiator Anakin's Eta-2, Ahsoka's SF, Umbaran SF, Plo's SF, Clone Sergeant's ARC-170, Rex's ARC-170
+Arkay Belrosa Dart Leon J3d1 Wampa Kyo Perthar Nitz Zenithier
+
+**GAS/Ahsoka** GAS Special e.g. GAS Ahsoka
+Arkay J3d1 Wampa Nitz Nitz'd Zenithier
+
+**GR CM** JMK GR e.g. JMK CAT Fives Padme R2-D2
+Arkay Nitz Zenithier
+
+**GR CM** Padme e.g. Padme Ahsoka JKA GK Shaak Ti
+Sonofskirata
+
+**GR CM** Shaak Ti e.g. Shaak Ti, Rex Echo (501st), ARC Trooper, Fives
+Nitz'd
+
+**Jedi CM** JKL e.g. JKL GMY HYoda Old Ben, Ezra
+Arkay Belrosa J3d1 Wampa Nitz Zenithier
+
+**LS CM** CLS e.g. CLS Han Chewbacca Chewpio C-3PO
+Arkay Belrosa Crovax Dingodog Fallen J3d1 Wampa Nitz RichmalTheReborn WhisKid Zenithier
+
+**LS CM** Clones e.g. Rex Echo (501st), ARC Trooper, Cody Fives
+Nitz
+
+**LS CM** GL Rey e.g. Rey Holdo GK RH Poe, RH Finn
+DarthSnips
+
+**LS CM** JTR e.g. JTR BB-8 C-3PO R2-D2 Finn
+Kyo Perthar
+
+</pre><p><a href="#" onclick="CopyToClipboard('kam-4-plan'); return false;">Copy Plan</a> | <a href="#" onclick="CopyToClipboard('kam-4-missions'); return false;">Copy Missions</a></p></td><tr><td>4</td><td>2 Top</td><td>2 &#11088; -- 81 to the next</td><tr><td>4</td><td>2 Middle</td><td>2 &#11088; -- 86 to the next</td><tr><td>4</td><td>2 Bottom</td><td><b>HOLD AT ZERO &#11088;</b></td></tbody>
+</table>
+<br/>
+<br/><textarea id="discordkam" style="display:none" rows="8" cols="40">
+**Estimated 10 :star:**
+
+**phase 1: active** 1 Top, 1 Middle, 1 Bottom
+phase 1: **missions** 1 Top 2 -> 2m
+phase 1: **missions** 1 Middle 7 -> 7m
+phase 1: **missions** 1 Bottom 12 -> 12m
+phase 1: **deploy** 1 Top 40 -> 42m
+phase 1: **deploy** 1 Middle 103 -> 110m
+phase 1: **deploy** 1 Bottom 4 -> 16m
+phase 1: remaining GP = 0 toons, 39 ships
+details: https://gorgatron1.github.io/brg/guild/high-council/tb.html%3Fc=1%2520Middle,%25201%2520Bottom&tb=ls&d=squad+name&player-summary=on
+**phase 1: 1 Top HOLD AT ZERO :star:**
+**phase 1: 1 Middle -> 1 :star:**
+**phase 1: 1 Bottom HOLD AT ZERO :star:**
+
+**phase 2: active** 1 Top, 1 Bottom, 2 Middle
+phase 2: **missions** 1 Top 2 -> 44m
+phase 2: **missions** 1 Bottom 14 -> 30m
+phase 2: **missions** 2 Middle 9 -> 9m
+phase 2: **deploy** 1 Top 41 -> 85m
+phase 2: **deploy** 1 Bottom 55 -> 85m
+phase 2: **deploy** 2 Middle 47 -> 56m
+phase 2: remaining GP = 0 toons, 34 ships
+details: https://gorgatron1.github.io/brg/guild/high-council/tb.html%3Fc=2%2520Middle,%25201%2520Bottom&tb=ls&d=squad+name&player-summary=on
+**phase 2: 1 Top -> 2 :star:**
+**phase 2: 2 Middle HOLD AT ZERO :star:**
+**phase 2: 1 Bottom HOLD AT ZERO :star:**
+
+**phase 3: active** 1 Bottom, 2 Top, 2 Middle
+phase 3: **missions** 1 Bottom 14 -> 99m
+phase 3: **missions** 2 Top 4 -> 4m
+phase 3: **missions** 2 Middle 9 -> 65m
+phase 3: **deploy** 1 Bottom 81 -> 180m
+phase 3: **deploy** 2 Top 66 -> 70m
+phase 3: **deploy** 2 Middle 17 -> 82m
+phase 3: remaining GP = 0 toons, 6 ships
+details: https://gorgatron1.github.io/brg/guild/high-council/tb.html%3Fc=2%2520Middle,%25201%2520Bottom&tb=ls&d=squad+name&player-summary=on
+**phase 3: 2 Top HOLD AT ZERO :star:**
+**phase 3: 2 Middle HOLD AT ZERO :star:**
+**phase 3: 1 Bottom -> 3 :star:**
+
+**phase 4: active** 2 Top, 2 Middle, 2 Bottom
+phase 4: **missions** 2 Top 4 -> 74m
+phase 4: **missions** 2 Middle 19 -> 101m
+phase 4: **missions** 2 Bottom 5 -> 5m
+phase 4: **deploy** 2 Top 60 -> 134m
+phase 4: **deploy** 2 Middle 73 -> 174m
+phase 4: **deploy** 2 Bottom 21 -> 26m
+phase 4: remaining GP = 0 toons, 9 ships
+details: https://gorgatron1.github.io/brg/guild/high-council/tb.html%3Fc=2%2520Middle,%25202%2520Bottom&tb=ls&d=squad+name&player-summary=on
+**phase 4: 2 Top -> 2 :star:**
+**phase 4: 2 Middle -> 2 :star:**
+**phase 4: 2 Bottom HOLD AT ZERO :star:**
+
+</textarea>
+<button onclick="copyText('discordkam')">Copy For Discord</button></div></div><br/>
+<font size="-2">Generated 2024-05-12 16:11:03 +0000</font>
+<script data-goatcounter="https://gorgatron.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>

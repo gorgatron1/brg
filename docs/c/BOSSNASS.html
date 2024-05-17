@@ -1,0 +1,113 @@
+<meta charset="UTF-8">
+<meta name="robots" content="noindex"><style type="text/css">
+body {
+ background-image: url("../i/more_faded_logo.jpg");
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+</style><link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.1.5/css/fixedHeader.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.6/css/fixedColumns.dataTables.min.css" />
+<script type="text/javascript" language="javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedheader/3.1.5/js/dataTables.fixedHeader.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedcolumns/3.2.6/js/dataTables.fixedColumns.min.js"></script>    <script>
+    $(document).ready( function () {
+        $('#zetas').DataTable({
+        "paging":   false,
+        "info":     false,
+        
+        
+        
+        
+        bFilter: false,
+        });
+    } );
+    </script>    <script>
+    $(document).ready( function () {
+        $('#gearLevels').DataTable({
+        "paging":   false,
+        "info":     false,
+        
+        
+        
+        
+        bFilter: false,
+        });
+    } );
+    </script><script src="https://cdn.plot.ly/plotly-latest.min.js"></script><link rel="stylesheet" type="text/css" href="../mods.css">
+<style>
+#zetas {
+    width: 800;
+    margin-left: 10;
+}
+#gearLevels {
+    width: 400;
+    margin-left: 10;
+}
+#picture {
+    float: right;
+}
+table.mods {
+    margin-top: 5px;
+}
+td.examples {
+    padding: 10px;
+    font-size: 90%;
+    width: 430px;
+}
+.mod-set {
+    width: 24px;
+    height: 24px;
+}
+.priority {
+    border: 1px solid black;
+    margin: 2px;
+    margin-right: 10px;
+    background-color: #c0c0c0;
+}
+.mod-cell {
+    border: 1px solid black;
+    padding: 2px;
+    font-size: 85%;
+}
+</style><title>BRG Alliance Guild Reports: Alliance Character Data: Boss Nass</title>
+<div style="display: flex; align-items:baseline"><img src="../i/simple_logo_48.jpg"/>&nbsp;<h1>Alliance Guild Reports: Alliance Character Data: Boss Nass</h1></div>
+
+<div style="background-color: #f0f0f0; border: solid red; padding: 10px; border-radius: 10px">
+<a href="../alliance/index.html">Alliance</a> |
+<a href="../alliance/characters.html">Characters</a> |
+
+<div style="float:right;"><a href="../r">Resources</a></div>
+<a href="../alliance/players.html">Player</a> | <a href="../alliance/characters.html">Characters</a> | <a href="../alliance/history.html">History</a> | <a href="../alliance/transfers.html">Transfers</a>
+</div>
+<br/><h1><img id="picture" src="https://game-assets.swgoh.gg/tex.charui_bossnass.png" />Alliance Character Data: Boss Nass</h1><h2>swgoh.gg data</h2><ul><li><a href="https://swgoh.gg/characters/boss-nass/">abilities / character data</a></li><li><a href="https://swgoh.gg/characters/boss-nass/data/">character meta report</a></li><li><a href="https://swgoh.gg/characters/boss-nass/data/mods">mods meta report</a></li><li><a href="https://swgoh.gg/characters/boss-nass/data/stats">stats meta report</a></li></ul><h2>Mod Data</h2><h2>Alliance Demographic Data</h2>Based on 1607 units.<table id="zetas"><thead><tr><th>Name</th><th>Description</th><th>Count</th><th>Percent</th></tr></thead><tr><td data-order="leaderskill_BOSSNASS"><img src="https://game-assets.swgoh.gg/tex.abilityui_passive_bossofotohgunga.png" style="width: 30px" /> Boss of Otoh Gunga</td><td>Gungan allies have +30% Max Protection, and Offense, and +30 Speed.\n\nWhenever a Gungan ally attacks out of turn, they inflict Speed Down for 1 turn. The first time each Gungan ally drops below 50% Health, they gain 50% bonus Protection for 2 turns.\n\nIf there is an ally Shield Generator, whenever it loses a stack of Recharge, Gungan allies gain 1% Max Protection (max 50%) until the end of the encounter. If the Shield Generator is defeated, Gungan allies gain 50% Turn Meter. At the end of each Gungan ally's turn, they remove a stack of Recharge.\n\nIf all allies are Gungans at the start of battle: Summon a Shield Generator to battle if the ally slot is available.\n\nWhile in Territory Wars: Gungans gain 50% Max Protection and 30 Speed.\n\nAt the start of each Gungan ally's turn, they recover 20% Protection and dispel all debuffs on themselves.\n\nWhenever a Gungan ally is Dazed or Stunned, they dispel it and recover 75% Protection and gain 4 stacks of Protection Over Time (10%) for 2 turns.</td><td>17</td><td>1%</td></tr><tr><td data-order="uniqueskill_BOSSNASS01"><img src="https://game-assets.swgoh.gg/tex.abilityui_passive_inspire.png" style="width: 30px" /> Ankura Resilience</td><td>At the start of battle, Boss Nass loses 75% Max Health and gains that much Max Protection.\n\nAt the start of Boss Nass' turn, he gains Potency equal to 50% of his current Protection percent until the start of his next turn. Whenever enemies are inflicted with Speed Down, they have -25% Critical Chance and Offense.\n\nIf there is an active ally Shield Generator: Whenever a Gungan ally loses Turn Meter, they gain 10% of their current Max Protection (stacking) until the end of the battle, and whenever Boss Nass inflicts a debuff, he deals True damage to the afflicted target.</td><td>165</td><td>10%</td></tr></table><br/><br/><div id="gearLevels-chart" style="width:80%;height:800px" /><script>
+let trace = {
+    y: [ 241, 52, 35, 122, 116, 118, 225, 491, 107, 6, 71, 1, 2, 0, 0, 1, 0, 13, 0, 4, 2, 0 ],
+    type: "bar",
+    name: "Number of Players"
+}
+let trace2 = {
+    y: [ 14.996888612321097, 18.23273179838208, 20.410703173615435, 28.002489110143124, 35.22090852520224, 42.56378344741755, 56.565028002489115, 87.11885500933417, 93.77722464219042, 94.15059116365899, 98.5687616677038, 98.6309894212819, 98.75544492843808, 98.75544492843808, 98.75544492843808, 98.81767268201618, 98.81767268201618, 99.62663347853143, 99.62663347853143, 99.87554449284382, 100.0, 100.0 ],
+    yaxis: "y2",
+    type: "line",
+    name: "Cumulative % Players"
+}
+let layout = {
+    title: "Gear Levels",
+    xaxis: {
+        tickvals: [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21 ],
+        ticktext: [ "G1", "G2", "G3", "G4", "G5", "G6", "G7", "G8", "G9", "G10", "G11", "G12", "G13", "R1", "R2", "R3", "R4", "R5", "R6", "R7", "R8", "R9" ]
+    },
+    yaxis: { title: "Number of Players" },
+    yaxis2: {
+        title: "Cumulative % Players",
+        overlaying: "y",
+        side: "right"
+    }
+}
+Plotly.newPlot('gearLevels-chart', [trace, trace2], layout)
+</script><br/>
+<font size="-2">Generated 2024-05-12 16:12:38 +0000</font>
+<script data-goatcounter="https://gorgatron.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>

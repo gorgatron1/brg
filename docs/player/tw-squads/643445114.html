@@ -1,0 +1,996 @@
+<meta charset="UTF-8">
+<meta name="robots" content="noindex"><link rel="stylesheet" type="text/css" href="../../toons.css">
+<style type="text/css">
+.toT { text-align:center; font-size: 60%; }
+.toI {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    margin: 0 2.5px;
+}
+.toIs {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin: 0 2.5px;
+}
+.opponent {
+    border: 2px solid grey;
+}
+.hardCounter {
+    border: 2px solid red;
+}
+.softCounter {
+    border: 2px solid blue;
+}
+.squad {
+    border: 2px solid black;
+}
+.verbage {
+    font-size: 70%;
+}
+</style><style type="text/css">
+body {
+ background-image: url("../../i/more_faded_logo.jpg");
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+</style><style type="text/css">
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  padding: 8px;
+}
+
+tr:nth-child(even) {background: #dddddd}
+tr:nth-child(odd) {background: #ffffff}
+
+.toggleable {
+    display: none;
+}
+</style><link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.1.5/css/fixedHeader.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.6/css/fixedColumns.dataTables.min.css" />
+<script type="text/javascript" language="javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedheader/3.1.5/js/dataTables.fixedHeader.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedcolumns/3.2.6/js/dataTables.fixedColumns.min.js"></script>    <script>
+    $(document).ready( function () {
+        $('#squads').DataTable({
+        "paging":   false,
+        "info":     false,
+        
+        
+        
+        
+        
+        });
+    } );
+    </script><script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script src="../../j/graph.js"></script><title>BRG Alliance - BRG-HappyAccidents: Sendo TW+GA Squads</title>
+<div style="display: flex; align-items:baseline"><img src="../../i/simple_logo_48.jpg"/>&nbsp;<h1>Alliance - BRG-HappyAccidents: Sendo TW+GA Squads</h1></div>
+
+<div style="background-color: #f0f0f0; border: solid red; padding: 10px; border-radius: 10px">
+<a href="../../help/player-tw-squads.html">HELP</a> | 
+<a href="../../alliance/index.html">Alliance</a> |
+<a href="../../guild/happyaccidents/index.html">BRG-HappyAccidents</a> |
+<a href="../info/643445114.html">Info</a> |
+<a href="../../guild/happyaccidents/mods-player.html?id=643445114">Mods</a> |
+<a href="643445114.html">TW+GA Squads</a> |
+<a href="../counters/643445114.html">Counters</a> |
+<a href="../target/643445114.html">Targets</a> |
+<a href="../unlock/643445114.html">Unlocks</a> |
+<a href="../zeta/643445114.html">Zetas</a> |
+<a href="../farm/643445114.html">Farming</a> |
+<a href="../dsgeotb/643445114.html">DS Geo TB</a> |
+<a href="../lsgeotb/643445114.html">LS Geo TB</a> |
+<div style="float:right;"><a href="../../r">Resources</a></div>
+</div>
+<br/><script>
+c1 = new Chart("../../guild/happyaccidents/player-squad-gp.json", "643445114", null)
+c1.id = "chart"
+c1.filter = function(data) {
+    data.series = data.series.filter(function (x) {
+        if (x.name == "HansMF") { return false }
+        if (x.name == "Negotiator") { return false }
+        if (x.name == "Malevolence") { return false }
+        if (x.name == "Raddus") { return false }
+        if (x.name == "Executrix") { return false }
+        if (x.name == "NestSolo") { return false }
+        if (x.name == "Executor") { return false }
+        if (x.name == "Profundity") { return false }
+        return true
+    })
+    return data
+}
+c1.title = "Squads"
+c1.tightScale = true
+c1.round = 1000
+c1.height = 400
+c1.width = 800
+c1.display()
+</script><style>
+.details {
+}
+.detailsTable {
+    width: 100%;
+    font-size: 85%;
+    margin-top: 15px;
+    border-collapse: collapse;
+    border: none;
+}
+</style>
+<div id="chart" style="float: right"></div>
+<h2><a href="../../help/player-tw-squads.html">HELP</a></h2>
+<p>
+Note: these teams may all be used simultaneously --- there is no overlap.
+This makes them potentially suitable for TW and GA.  You know your teams
+better than the program that generates this, so use this as a guideline,
+not hard facts.
+</p>
+
+<p>
+<img src="../../i/ls24.png"/>: Considered mainly an offensive team
+<br/>
+<img src="../../i/shield24.png"/>: Considered mainly an defensive team
+<br/>
+<img src="../../i/ls24.png"/><img src="../../i/shield24.png"/>: Can be offensive or defensive
+<br/>
+<img src="../../i/wrench24.png">: Team may be usable, but gear is recommended.  Hover or click to see more info.
+<br/>
+<img src="../../i/tractor24.png">: Probably not usable -- needs farming
+<br/>
+&#11088;: Team is considered well geared
+<br/>
+&#9432;: Show more info about subs, how the team works, counters and targets
+</p>
+
+<button onclick="$('.squadRow').show()">Show All</button>
+<button onclick="$('.squadRow').hide(); $('.gearNeeded').show()">Show Only Gear Needed</button>
+<button onclick="$('.squadRow').hide(); $('.viable').show()">Show Only Viable</button>
+<button onclick="$('.squadRow').hide(); $('.distinct').show()">Show Only Non Overlapping</button>
+
+<table id="squads" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>GP</th>
+<th>Squad</th>
+</tr>
+</thead><tr id="501st" onclick="$('#REX_501_details').toggle()" class="squadRow gearNeeded"><td data-order="501st" align="center"><a href="../target/643445114.html#REX_501"><img class="toI squad CT7567-i" title="501st"/></a><br/>501st</td><td data-order="offense"><img src="../../i/ls24.png"/></td><td data-order="60278">60k</td><td nowrap style="position: relative"><div style="display: flex" title="Rex: low gear.  Clone Sergeant: low gear.  Echo (501st): low gear.  " onclick="$('#squad1').toggle()"><div class="toT"><img class="toI squad CT7567-i"><br/>Rex G6</div> <div class="toT"><img class="toI squad CLONESERGEANTPHASEI-i"><br/>Clone Sergeant G2</div> <div class="toT"><img class="toI squad CT210408-i"><br/>Echo (501st) G6</div> <div class="toT"><img class="toI squad CT5555-i"><br/>Fives G10</div> <div class="toT"><img class="toI squad AHSOKATANO-i"><br/>zAhsoka</div><div style="margin-left: 10px"><img src="../../i/tractor24.png"></div></div><div id="squad1" class="toggleable verbage"><br/><b>Rex: low gear.  Clone Sergeant: low gear.  Echo (501st): low gear.  </b></div>
+<span style="position: absolute; top: 10px; right: 10px; font-size: 150%;">&#9432;</span>
+<table id="REX_501_details" class="toggleable detailsTable">
+<tr class="details"><td colspan="2"><h3>Subs</h3>(no subs, this team comp is used for a specific purpose)</td></tr>
+<tr class="details">
+<td valign="top"><h3>Counter</h3></td><td valign="top"><h3><a href="../target/643445114.html#REX_501">Targets</a></h3><img style="vertical-align:middle" class="toIs softCounter GRIEVOUS-i"/>Separatist Droids<br/>
+</td></tr>
+</table>
+</td></tr>
+<tr id="BH" onclick="$('#BH_BOSSK_details').toggle()" class="squadRow distinct viable"><td data-order="BH" align="center"><a href="../target/643445114.html#BH_BOSSK"><img class="toI squad BOSSK-i" title="BH"/></a><br/>BH</td><td data-order="defense"><img src="../../i/shield24.png"/></td><td data-order="99942">99k</td><td nowrap style="position: relative"><div style="display: flex"><div class="toT"><img class="toI squad BOSSK-i"><br/>zzBossk</div> <div class="toT"><img class="toI squad THEMANDALORIAN-i"><br/>zThe Mandalorian</div> <div class="toT"><img class="toI squad DENGAR-i"><br/>Dengar</div> <div class="toT"><img class="toI squad BOBAFETT-i"><br/>Boba G9</div> <div class="toT"><img class="toI squad GREEFKARGA-i"><br/>zzGreef</div></div>
+<span style="position: absolute; top: 10px; right: 10px; font-size: 150%;">&#9432;</span>
+<table id="BH_BOSSK_details" class="toggleable detailsTable">
+<tr class="details"><td colspan="2"><h3>Subs</h3>Any leftover Bounty Hunters, B2 Super Battle Droid, zBarriss Offee, L3-37</td></tr>
+<tr class="details"><td colspan="2"><h3>Description</h3>Bossk's leadership gives all Bounty Hunters extra protection, tenacity, and defence (while at full health).  They recover health and protection when an enemy suffers or resists a debuff.  When they fulfill their contract, all Bounty Hunters gain +50 speed for the rest of the battle on top of their own payouts.</td></tr>
+<tr class="details">
+<td valign="top"><h3>Counter</h3><b><img style="vertical-align:middle" class="toIs hardCounter NUTEGUNRAY-i"/>Separatists (Nute L w/ Nest)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter REYJEDITRAINING-i"/>Resistance (JTR L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter COMMANDERLUKESKYWALKER-i"/>Rebels (CLS L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter BASTILASHAN-i"/>Jedi (Bastila L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter SHAAKTI-i"/>Clones (Shaak Ti L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter GEONOSIANBROODALPHA-i"/>Geonosians</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter GRIEVOUS-i"/>Separatist Droids</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter QIRA-i"/>Qi'ra L (w/ Nest and Young Han)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter DARTHREVAN-i"/>Sith Empire (w/o Malak)</b><br/>
+<img style="vertical-align:middle" class="toIs softCounter EMPERORPALPATINE-i"/>EP L<br/>
+<img style="vertical-align:middle" class="toIs softCounter VEERS-i"/>Imperial Troopers<br/>
+<img style="vertical-align:middle" class="toIs softCounter KYLORENUNMASKED-i"/>First Order (KRU L)<br/>
+</td><td valign="top"><h3><a href="../target/643445114.html#BH_BOSSK">Targets</a></h3><b><img style="vertical-align:middle" class="toIs hardCounter MAUL-i"/>Sith (Maul L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter JYNERSO-i"/>Rogue One</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter ASAJVENTRESS-i"/>Nightsisters (w/ Nest)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter MOTHERTALZIN-i"/>Nightsisters (Talzin L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter CHIEFCHIRPA-i"/>Ewoks</b><br/>
+<img style="vertical-align:middle" class="toIs softCounter NUTEGUNRAY-i"/>Separatists (Nute L w/ Nest)<br/>
+<img style="vertical-align:middle" class="toIs softCounter QIRA-i"/>Qi'ra L (w/ Nest and Zaalbar)<br/>
+<img style="vertical-align:middle" class="toIs softCounter QIRA-i"/>Qi'ra L<br/>
+<img style="vertical-align:middle" class="toIs softCounter BASTILASHAN-i"/>Jedi (Bastila L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter EMPERORPALPATINE-i"/>EP L<br/>
+</td></tr>
+</table>
+</td></tr>
+<tr id="BS" onclick="$('#JEDI_BASTILA_details').toggle()" class="squadRow viable"><td data-order="BS" align="center"><a href="../target/643445114.html#JEDI_BASTILA"><img class="toI squad BASTILASHAN-i" title="BS"/></a><br/>BS</td><td data-order="defense"><img src="../../i/shield24.png"/></td><td data-order="109948">109k</td><td nowrap style="position: relative"><div style="display: flex"><div class="toT"><img class="toI squad BASTILASHAN-i"><br/>zBS</div> <div class="toT"><img class="toI squad GRANDMASTERYODA-i"><br/>zGMY</div> <div class="toT"><img class="toI squad JOLEEBINDO-i"><br/>zJolee</div> <div class="toT"><img class="toI squad GENERALKENOBI-i"><br/>GK</div> <div class="toT"><img class="toI squad HERMITYODA-i"><br/>zzHYoda</div><div style="margin-left: 10px">&#11088;</div></div>
+<span style="position: absolute; top: 10px; right: 10px; font-size: 150%;">&#9432;</span>
+<table id="JEDI_BASTILA_details" class="toggleable detailsTable">
+<tr class="details"><td colspan="2"><h3>Subs</h3>Aayla Secura, Jedi Knight Anakin, Obi-Wan Kenobi (Old Ben), Any leftover Jedi</td></tr>
+<tr class="details"><td colspan="2"><h3>Description</h3>Buffs, high protection pool, and high tenacity.</td></tr>
+<tr class="details">
+<td valign="top"><h3>Counter</h3><b><img style="vertical-align:middle" class="toIs hardCounter REYJEDITRAINING-i"/>Resistance (JTR L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter DARTHTRAYA-i"/>Sith Triumvirate</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter SHAAKTI-i"/>Clones (Shaak Ti L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter GEONOSIANBROODALPHA-i"/>Geonosians</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter QIRA-i"/>Qi'ra L (w/ Nest and Hoda)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter DARTHREVAN-i"/>Sith Empire (w/o Malak)</b><br/>
+<img style="vertical-align:middle" class="toIs softCounter ENFYSNEST-i"/>Enfys Nest (solo)<br/>
+<img style="vertical-align:middle" class="toIs softCounter ASAJVENTRESS-i"/>Nightsisters (Asajj L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter MOTHERTALZIN-i"/>Nightsisters (Talzin L w/ Acolyte)<br/>
+<img style="vertical-align:middle" class="toIs softCounter BOSSK-i"/>Bounty Hunters (Bossk L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter COMMANDERLUKESKYWALKER-i"/>Rebels (CLS L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter KYLORENUNMASKED-i"/>First Order (KRU L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter GRANDADMIRALTHRAWN-i"/>Thrawn Troopers<br/>
+</td><td valign="top"><h3><a href="../target/643445114.html#JEDI_BASTILA">Targets</a></h3><b><img style="vertical-align:middle" class="toIs hardCounter COMMANDERLUKESKYWALKER-i"/>Rebels (CLS L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter QIRA-i"/>Qi'ra L (w/ Nest and Zaalbar)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter QIRA-i"/>Qi'ra L</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter CARTHONASI-i"/>Old Republic (Carth L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter ASAJVENTRESS-i"/>Nightsisters (w/ Nest)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter MOTHERTALZIN-i"/>Nightsisters (Talzin L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter EMPERORPALPATINE-i"/>EP L</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter JANGOFETT-i"/>Bounty Hunters (Jango L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter BOSSK-i"/>Bounty Hunters (Bossk L)</b><br/>
+<img style="vertical-align:middle" class="toIs softCounter DARTHTRAYA-i"/>Sith Triumvirate<br/>
+<img style="vertical-align:middle" class="toIs softCounter MAUL-i"/>Sith (Maul L)<br/>
+</td></tr>
+</table>
+</td></tr>
+<tr id="BS+Revan" onclick="$('#JEDI_BASTILA_REVAN_details').toggle()" class="squadRow viable"><td data-order="BS+Revan" align="center"><a href="../target/643445114.html#JEDI_BASTILA_REVAN"><img class="toI squad BASTILASHAN-i" title="BS+Revan"/></a><br/>BS+Revan</td><td data-order="offense"><img src="../../i/ls24.png"/></td><td data-order="121390">121k</td><td nowrap style="position: relative"><div style="display: flex"><div class="toT"><img class="toI squad BASTILASHAN-i"><br/>zBS</div> <div class="toT"><img class="toI squad GRANDMASTERYODA-i"><br/>zGMY</div> <div class="toT"><img class="toI squad HERMITYODA-i"><br/>zzHYoda</div> <div class="toT"><img class="toI squad GENERALKENOBI-i"><br/>GK</div> <div class="toT"><img class="toI squad JEDIKNIGHTREVAN-i"><br/>zzzJKR</div><div style="margin-left: 10px">&#11088;</div></div>
+<span style="position: absolute; top: 10px; right: 10px; font-size: 150%;">&#9432;</span>
+<table id="JEDI_BASTILA_REVAN_details" class="toggleable detailsTable">
+<tr class="details"><td colspan="2"><h3>Subs</h3>Ezra Bridger, Any leftover Jedi</td></tr>
+<tr class="details">
+<td valign="top"><h3>Counter</h3></td><td valign="top"><h3><a href="../target/643445114.html#JEDI_BASTILA_REVAN">Targets</a></h3><b><img style="vertical-align:middle" class="toIs hardCounter GRIEVOUS-i"/>Separatist Droids</b><br/>
+</td></tr>
+</table>
+</td></tr>
+<tr id="CLS" onclick="$('#REBELS_CLS_details').toggle()" class="squadRow distinct viable"><td data-order="CLS" align="center"><a href="../target/643445114.html#REBELS_CLS"><img class="toI squad COMMANDERLUKESKYWALKER-i" title="CLS"/></a><br/>CLS</td><td data-order="offense"><img src="../../i/ls24.png"/></td><td data-order="142086">142k</td><td nowrap style="position: relative"><div style="display: flex"><div class="toT"><img class="toI squad COMMANDERLUKESKYWALKER-i"><br/>zzzCLS</div> <div class="toT"><img class="toI squad HANSOLO-i"><br/>zHan</div> <div class="toT"><img class="toI squad CHEWBACCALEGENDARY-i"><br/>zzChewbacca</div> <div class="toT"><img class="toI squad C3POLEGENDARY-i"><br/>zzC-3PO</div> <div class="toT"><img class="toI squad C3POCHEWBACCA-i"><br/>zChewpio</div><div style="margin-left: 10px">&#11088;</div></div>
+<span style="position: absolute; top: 10px; right: 10px; font-size: 150%;">&#9432;</span>
+<table id="REBELS_CLS_details" class="toggleable detailsTable">
+<tr class="details"><td colspan="2"><h3>Subs</h3>Captain Han Solo, Ahsoka Tano (Fulcrum), Obi-Wan Kenobi (Old Ben), General Kenobi, Grand Admiral Thrawn</td></tr>
+<tr class="details"><td colspan="2"><h3>Description</h3>Double (Han+CLS): offensive team, high crits, high damage, high TM gain, and lot of counter attacks. Trio - addition of Chewbacca brings crit immunity and can't be stunned/daze for Han and another toon. Quartet - addition of C3PO brings this team to whole new level and lot of attackers will do 40% HP damage (expose+chewbacca' unique).</td></tr>
+<tr class="details">
+<td valign="top"><h3>Counter</h3><b><img style="vertical-align:middle" class="toIs hardCounter SHAAKTI-i"/>Clones (Shaak Ti L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter JEDIKNIGHTREVAN-i"/>Jedi (Revan L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter BASTILASHAN-i"/>Jedi (Bastila L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter PADMEAMIDALA-i"/>Galactic Republic</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter GEONOSIANBROODALPHA-i"/>Geonosians</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter EMPERORPALPATINE-i"/>EP (Anti-Rebel)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter DARTHREVAN-i"/>Sith Empire (w/o Malak)</b><br/>
+<img style="vertical-align:middle" class="toIs softCounter DARTHTRAYA-i"/>Sith Triumvirate<br/>
+<img style="vertical-align:middle" class="toIs softCounter MOTHERTALZIN-i"/>Nightsisters (Talzin L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter CT7567-i"/>Rex/Wampa<br/>
+<img style="vertical-align:middle" class="toIs softCounter CT7567-i"/>Rex L<br/>
+<img style="vertical-align:middle" class="toIs softCounter REYJEDITRAINING-i"/>Resistance (JTR L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter GRIEVOUS-i"/>Separatist Droids<br/>
+<img style="vertical-align:middle" class="toIs softCounter GENERALKENOBI-i"/>General Kenobi L<br/>
+<img style="vertical-align:middle" class="toIs softCounter DIRECTORKRENNIC-i"/>Director Krennic (Anti-Rebel)<br/>
+</td><td valign="top"><h3><a href="../target/643445114.html#REBELS_CLS">Targets</a></h3><b><img style="vertical-align:middle" class="toIs hardCounter DARTHTRAYA-i"/>Sith Triumvirate</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter NUTEGUNRAY-i"/>Separatists (Nute L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter QIRA-i"/>Qi'ra L (w/ Nest and Zaalbar)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter HERASYNDULLAS3-i"/>Phoenix</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter CARTHONASI-i"/>Old Republic (Carth L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter MOTHERTALZIN-i"/>Nightsisters (Talzin L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter KYLORENUNMASKED-i"/>First Order (KRU L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter EMPERORPALPATINE-i"/>EP L</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter SHAAKTI-i"/>Clones (Shaak Ti L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter JANGOFETT-i"/>Bounty Hunters (Jango L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter BOSSK-i"/>Bounty Hunters (Bossk L)</b><br/>
+<img style="vertical-align:middle" class="toIs softCounter DARTHREVAN-i"/>Sith Empire (w/o Malak)<br/>
+<img style="vertical-align:middle" class="toIs softCounter DARTHREVAN-i"/>Sith Empire (w/ Malak)<br/>
+<img style="vertical-align:middle" class="toIs softCounter NUTEGUNRAY-i"/>Separatists (Nute L w/ Nest)<br/>
+<img style="vertical-align:middle" class="toIs softCounter GRIEVOUS-i"/>Separatist Droids<br/>
+<img style="vertical-align:middle" class="toIs softCounter BASTILASHAN-i"/>Jedi (Bastila L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter GENERALSKYWALKER-i"/>501st (Gen. Skywalker L)<br/>
+</td></tr>
+</table>
+</td></tr>
+<tr id="Carth" onclick="$('#OR_CARTH_details').toggle()" class="squadRow distinct viable"><td data-order="Carth" align="center"><a href="../target/643445114.html#OR_CARTH"><img class="toI squad CARTHONASI-i" title="Carth"/></a><br/>Carth</td><td data-order="both"><img src="../../i/ls24.png"/><img src="../../i/shield24.png"/></td><td data-order="86001">86k</td><td nowrap style="position: relative"><div style="display: flex"><div class="toT"><img class="toI squad CARTHONASI-i"><br/>Carth Onasi G9</div> <div class="toT"><img class="toI squad MISSIONVAO-i"><br/>zMission</div> <div class="toT"><img class="toI squad ZAALBAR-i"><br/>zZaalbar</div> <div class="toT"><img class="toI squad JUHANI-i"><br/>Juhani</div> <div class="toT"><img class="toI squad CANDEROUSORDO-i"><br/>Canderous</div></div>
+<span style="position: absolute; top: 10px; right: 10px; font-size: 150%;">&#9432;</span>
+<table id="OR_CARTH_details" class="toggleable detailsTable">
+<tr class="details"><td colspan="2"><h3>Subs</h3>Juhani, Wampa, Boba Fett, Darth Sidious, Chirrut Îmwe + Baze Malbus</td></tr>
+<tr class="details"><td colspan="2"><h3>Description</h3>Lot of damage over time and nice bonus synergy shared between each other [offense, tenacity, assists and defense/crit avoidance, protection recovery].</td></tr>
+<tr class="details">
+<td valign="top"><h3>Counter</h3><b><img style="vertical-align:middle" class="toIs hardCounter KYLORENUNMASKED-i"/>First Order (KRU L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter REYJEDITRAINING-i"/>Resistance (JTR L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter HERASYNDULLAS3-i"/>Phoenix</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter DARTHMALAK-i"/>Darth Malak (solo)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter EMPERORPALPATINE-i"/>EP L</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter DARTHTRAYA-i"/>Sith Triumvirate</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter PADMEAMIDALA-i"/>Galactic Republic</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter COMMANDERLUKESKYWALKER-i"/>Rebels (CLS L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter BASTILASHAN-i"/>Jedi (Bastila L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter CT7567-i"/>Rex/Wampa</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter JANGOFETT-i"/>Bounty Hunters (Jango L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter GRIEVOUS-i"/>Separatist Droids</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter GEONOSIANBROODALPHA-i"/>Geonosians</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter DARTHREVAN-i"/>Sith Empire (w/o Malak)</b><br/>
+<img style="vertical-align:middle" class="toIs softCounter VEERS-i"/>Imperial Troopers<br/>
+<img style="vertical-align:middle" class="toIs softCounter MOTHERTALZIN-i"/>Nightsisters (Talzin L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter CHIEFCHIRPA-i"/>Ewoks<br/>
+<img style="vertical-align:middle" class="toIs softCounter GRANDADMIRALTHRAWN-i"/>Thrawn Troopers<br/>
+</td><td valign="top"><h3><a href="../target/643445114.html#OR_CARTH">Targets</a></h3><img style="vertical-align:middle" class="toIs softCounter JYNERSO-i"/>Rogue One<br/>
+<img style="vertical-align:middle" class="toIs softCounter REYJEDITRAINING-i"/>Resistance (JTR L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter CHIEFCHIRPA-i"/>Ewoks<br/>
+</td></tr>
+</table>
+</td></tr>
+<tr id="Clones" onclick="$('#CLONES_CODY_details').toggle()" class="squadRow gearNeeded"><td data-order="Clones" align="center"><a href="../target/643445114.html#CLONES_CODY"><img class="toI squad CC2224-i" title="Clones"/></a><br/>Clones</td><td data-order="offense"><img src="../../i/ls24.png"/></td><td data-order="48631">48k</td><td nowrap style="position: relative"><div style="display: flex" title="Cody: low gear.  Rex: low gear.  Echo (501st): low gear.  Clone Sergeant: low gear.  " onclick="$('#squad7').toggle()"><div class="toT"><img class="toI squad CC2224-i"><br/>Cody G4</div> <div class="toT"><img class="toI squad CT7567-i"><br/>Rex G6</div> <div class="toT"><img class="toI squad CT210408-i"><br/>Echo (501st) G6</div> <div class="toT"><img class="toI squad CT5555-i"><br/>Fives G10</div> <div class="toT"><img class="toI squad CLONESERGEANTPHASEI-i"><br/>Clone Sergeant G2</div><div style="margin-left: 10px"><img src="../../i/tractor24.png"></div></div><div id="squad7" class="toggleable verbage"><br/><b>Cody: low gear.  Rex: low gear.  Echo (501st): low gear.  Clone Sergeant: low gear.  </b></div>
+<span style="position: absolute; top: 10px; right: 10px; font-size: 150%;">&#9432;</span>
+<table id="CLONES_CODY_details" class="toggleable detailsTable">
+<tr class="details"><td colspan="2"><h3>Subs</h3>(no subs, this team comp is used for a specific purpose)</td></tr>
+<tr class="details">
+<td valign="top"><h3>Counter</h3></td><td valign="top"><h3><a href="../target/643445114.html#CLONES_CODY">Targets</a></h3><img style="vertical-align:middle" class="toIs softCounter JYNERSO-i"/>Rogue One<br/>
+<img style="vertical-align:middle" class="toIs softCounter HERASYNDULLAS3-i"/>Phoenix<br/>
+</td></tr>
+</table>
+</td></tr>
+<tr id="DR" onclick="$('#SITH_EMPIRE_WO_MALAK_details').toggle()" class="squadRow viable"><td data-order="DR" align="center"><a href="../target/643445114.html#SITH_EMPIRE_WO_MALAK"><img class="toI squad DARTHREVAN-i" title="DR"/></a><br/>DR</td><td data-order="defense"><img src="../../i/shield24.png"/></td><td data-order="126899">126k</td><td nowrap style="position: relative"><div style="display: flex"><div class="toT"><img class="toI squad DARTHREVAN-i"><br/>zzzDR</div> <div class="toT"><img class="toI squad HK47-i"><br/>zzHK-47</div> <div class="toT"><img class="toI squad BASTILASHANDARK-i"><br/>zBSF</div> <div class="toT"><img class="toI squad SITHMARAUDER-i"><br/>Sith Marauder</div> <div class="toT"><img class="toI squad SITHTROOPER-i"><br/>Sith Empire Trooper G10</div><div style="margin-left: 10px">&#11088;</div></div>
+<span style="position: absolute; top: 10px; right: 10px; font-size: 150%;">&#9432;</span>
+<table id="SITH_EMPIRE_WO_MALAK_details" class="toggleable detailsTable">
+<tr class="details"><td colspan="2"><h3>Subs</h3>Sith Assassin, Sith Marauder, Grand Admiral Thrawn, Grand Master Yoda, Kylo Ren (Unmasked), Nightsister Zombie + Mother Talzin, Shoretrooper</td></tr>
+<tr class="details"><td colspan="2"><h3>Description</h3>Immunity to turn meter reduction + stops turn meter gain = speed meta.  Super fast, built on lot of debuffs, high offensive power, anti-Jedi, and focuses on the leader often.</td></tr>
+<tr class="details">
+<td valign="top"><h3>Counter</h3><b><img style="vertical-align:middle" class="toIs hardCounter DARTHREVAN-i"/>Sith Empire (w/o Malak)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter PADMEAMIDALA-i"/>Galactic Republic</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter JEDIKNIGHTREVAN-i"/>Jedi (Revan L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter EMPERORPALPATINE-i"/>EP L (w/ Shoretrooper)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter EMPERORPALPATINE-i"/>EP (w/ Traya)</b><br/>
+<img style="vertical-align:middle" class="toIs softCounter SHAAKTI-i"/>Clones (Shaak Ti L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter DARTHTRAYA-i"/>Sith Triumvirate<br/>
+<img style="vertical-align:middle" class="toIs softCounter GRIEVOUS-i"/>Separatist Droids<br/>
+<img style="vertical-align:middle" class="toIs softCounter COMMANDERLUKESKYWALKER-i"/>Rebels (CLS L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter JANGOFETT-i"/>Bounty Hunters (Jango L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter QIRA-i"/>Qi'ra L (w/ Nest, Hoda, and others)<br/>
+<img style="vertical-align:middle" class="toIs softCounter COMMANDERLUKESKYWALKER-i"/>Rebels (CLS Quad w/ Thrawn)<br/>
+</td><td valign="top"><h3><a href="../target/643445114.html#SITH_EMPIRE_WO_MALAK">Targets</a></h3><b><img style="vertical-align:middle" class="toIs hardCounter DARTHTRAYA-i"/>Sith Triumvirate</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter DARTHREVAN-i"/>Sith Empire (w/o Malak)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter MAUL-i"/>Sith (Maul L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter NUTEGUNRAY-i"/>Separatists (Nute L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter NUTEGUNRAY-i"/>Separatists (Nute L w/ Nest)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter JYNERSO-i"/>Rogue One</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter GLREY-i"/>Resistance (Rey L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter GLREY-i"/>Resistance (Rey L w/ Malak)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter REYJEDITRAINING-i"/>Resistance (JTR L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter REYJEDITRAINING-i"/>Resistance (JTR L w/ Droids)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter COMMANDERLUKESKYWALKER-i"/>Rebels (CLS L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter QIRA-i"/>Qi'ra L (w/ Nest and Zaalbar)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter QIRA-i"/>Qi'ra L</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter HERASYNDULLAS3-i"/>Phoenix</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter CARTHONASI-i"/>Old Republic (Carth L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter ASAJVENTRESS-i"/>Nightsisters (w/ Nest)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter MOTHERTALZIN-i"/>Nightsisters (Talzin L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter MOTHERTALZIN-i"/>Nightsisters (Talzin L w/ Acolyte)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter ASAJVENTRESS-i"/>Nightsisters (Asajj L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter BASTILASHAN-i"/>Jedi (Bastila L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter VEERS-i"/>Imperial Troopers</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter GEONOSIANBROODALPHA-i"/>Geonosians</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter GENERALKENOBI-i"/>General Kenobi L</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter SUPREMELEADERKYLOREN-i"/>First Order (SLKR L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter KYLORENUNMASKED-i"/>First Order (KRU L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter CHIEFCHIRPA-i"/>Ewoks</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter ENFYSNEST-i"/>Enfys Nest (solo)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter EMPERORPALPATINE-i"/>EP L</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter VADER-i"/>Darth Vader L</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter SHAAKTI-i"/>Clones (Shaak Ti L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter JANGOFETT-i"/>Bounty Hunters (Jango L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter BOSSK-i"/>Bounty Hunters (Bossk L)</b><br/>
+<img style="vertical-align:middle" class="toIs softCounter DARTHREVAN-i"/>Sith Empire (w/ Malak)<br/>
+</td></tr>
+</table>
+</td></tr>
+<tr id="DRMalak" onclick="$('#SITH_EMPIRE_W_MALAK_details').toggle()" class="squadRow viable"><td data-order="DRMalak" align="center"><a href="../target/643445114.html#SITH_EMPIRE_W_MALAK"><img class="toI squad DARTHREVAN-i" title="DRMalak"/></a><br/>DRMalak</td><td data-order="defense"><img src="../../i/shield24.png"/></td><td data-order="133489">133k</td><td nowrap style="position: relative"><div style="display: flex"><div class="toT"><img class="toI squad DARTHREVAN-i"><br/>zzzDR</div> <div class="toT"><img class="toI squad HK47-i"><br/>zzHK-47</div> <div class="toT"><img class="toI squad BASTILASHANDARK-i"><br/>zBSF</div> <div class="toT"><img class="toI squad DARTHMALAK-i"><br/>zzMalak</div> <div class="toT"><img class="toI squad SITHTROOPER-i"><br/>Sith Empire Trooper G10</div><div style="margin-left: 10px">&#11088;</div></div>
+<span style="position: absolute; top: 10px; right: 10px; font-size: 150%;">&#9432;</span>
+<table id="SITH_EMPIRE_W_MALAK_details" class="toggleable detailsTable">
+<tr class="details"><td colspan="2"><h3>Subs</h3>Sith Assassin, Sith Marauder, Grand Admiral Thrawn, Grand Master Yoda, Kylo Ren (Unmasked), Nightsister Zombie + Mother Talzin, Shoretrooper</td></tr>
+<tr class="details"><td colspan="2"><h3>Description</h3>Immunity to turn meter reduction + stops turn meter gain = speed meta.  Super fast, built on lot of debuffs, high offensive power, anti-Jedi, and focuses on the leader often.</td></tr>
+<tr class="details">
+<td valign="top"><h3>Counter</h3><b><img style="vertical-align:middle" class="toIs hardCounter GENERALSKYWALKER-i"/>501st (Gen. Skywalker L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter REYJEDITRAINING-i"/>Resistance (Heroes)</b><br/>
+<img style="vertical-align:middle" class="toIs softCounter EMPERORPALPATINE-i"/>EP L (w/ Shoretrooper)<br/>
+<img style="vertical-align:middle" class="toIs softCounter PADMEAMIDALA-i"/>Galactic Republic (w/ C-3PO)<br/>
+<img style="vertical-align:middle" class="toIs softCounter IG88-i"/>Droids (Anti-Malak)<br/>
+<img style="vertical-align:middle" class="toIs softCounter SHAAKTI-i"/>Clones (Shaak Ti L w/ JKA)<br/>
+<img style="vertical-align:middle" class="toIs softCounter DARTHREVAN-i"/>Sith Empire (w/ Malak)<br/>
+<img style="vertical-align:middle" class="toIs softCounter DARTHREVAN-i"/>Sith Empire (w/o Malak)<br/>
+<img style="vertical-align:middle" class="toIs softCounter JEDIKNIGHTREVAN-i"/>Jedi (Revan L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter GRIEVOUS-i"/>Separatist Droids<br/>
+<img style="vertical-align:middle" class="toIs softCounter COMMANDERLUKESKYWALKER-i"/>Rebels (CLS L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter GRANDADMIRALTHRAWN-i"/>Magma<br/>
+</td><td valign="top"><h3><a href="../target/643445114.html#SITH_EMPIRE_W_MALAK">Targets</a></h3><b><img style="vertical-align:middle" class="toIs hardCounter JEDIKNIGHTREVAN-i"/>Jedi (Revan L)</b><br/>
+<img style="vertical-align:middle" class="toIs softCounter DARTHREVAN-i"/>Sith Empire (w/ Malak)<br/>
+<img style="vertical-align:middle" class="toIs softCounter GRIEVOUS-i"/>Separatist Droids<br/>
+<img style="vertical-align:middle" class="toIs softCounter PADMEAMIDALA-i"/>Galactic Republic<br/>
+<img style="vertical-align:middle" class="toIs softCounter GENERALSKYWALKER-i"/>501st (Gen. Skywalker L)<br/>
+</td></tr>
+</table>
+</td></tr>
+<tr id="EP (Counter, Rebel)" onclick="$('#EP_ANTI_REBEL_details').toggle()" class="squadRow viable"><td data-order="EP (Counter, Rebel)" align="center"><a href="../target/643445114.html#EP_ANTI_REBEL"><img class="toI squad EMPERORPALPATINE-i" title="EP (Counter, Rebel)"/></a><br/>EP (Counter, Rebel)</td><td data-order="offense"><img src="../../i/ls24.png"/></td><td data-order="132389">132k</td><td nowrap style="position: relative"><div style="display: flex"><div class="toT"><img class="toI squad EMPERORPALPATINE-i"><br/>zzEP</div> <div class="toT"><img class="toI squad DIRECTORKRENNIC-i"><br/>Krennic</div> <div class="toT"><img class="toI squad WAMPA-i"><br/>zzWampa</div> <div class="toT"><img class="toI squad RANGETROOPER-i"><br/>Range Trooper</div> <div class="toT"><img class="toI squad COLONELSTARCK-i"><br/>zStarck</div><div style="margin-left: 10px">&#11088;</div></div>
+<span style="position: absolute; top: 10px; right: 10px; font-size: 150%;">&#9432;</span>
+<table id="EP_ANTI_REBEL_details" class="toggleable detailsTable">
+<tr class="details"><td colspan="2"><h3>Subs</h3>Enfys Nest, Range Trooper, Stormtrooper, Colonel Starck</td></tr>
+<tr class="details">
+<td valign="top"><h3>Counter</h3></td><td valign="top"><h3><a href="../target/643445114.html#EP_ANTI_REBEL">Targets</a></h3><b><img style="vertical-align:middle" class="toIs hardCounter COMMANDERLUKESKYWALKER-i"/>Rebels (CLS L)</b><br/>
+</td></tr>
+</table>
+</td></tr>
+<tr id="EP (Traya)" onclick="$('#EP_TRAYA_details').toggle()" class="squadRow viable"><td data-order="EP (Traya)" align="center"><a href="../target/643445114.html#EP_TRAYA"><img class="toI squad EMPERORPALPATINE-i" title="EP (Traya)"/></a><br/>EP (Traya)</td><td data-order="offense"><img src="../../i/ls24.png"/></td><td data-order="137102">137k</td><td nowrap style="position: relative"><div style="display: flex"><div class="toT"><img class="toI squad EMPERORPALPATINE-i"><br/>zzEP</div> <div class="toT"><img class="toI squad DARTHTRAYA-i"><br/>zzTraya</div> <div class="toT"><img class="toI squad DARTHNIHILUS-i"><br/>zDN</div> <div class="toT"><img class="toI squad SITHTROOPER-i"><br/>Sith Empire Trooper G10</div> <div class="toT"><img class="toI squad VADER-i"><br/>zzzVader</div><div style="margin-left: 10px">&#11088;</div></div>
+<span style="position: absolute; top: 10px; right: 10px; font-size: 150%;">&#9432;</span>
+<table id="EP_TRAYA_details" class="toggleable detailsTable">
+<tr class="details"><td colspan="2"><h3>Subs</h3>Another pre-taunting Tank for Sith Empire Trooper, Darth Vader, Bastila Shan (Fallen), Darth Revan</td></tr>
+<tr class="details">
+<td valign="top"><h3>Counter</h3></td><td valign="top"><h3><a href="../target/643445114.html#EP_TRAYA">Targets</a></h3><b><img style="vertical-align:middle" class="toIs hardCounter DARTHREVAN-i"/>Sith Empire (w/o Malak)</b><br/>
+</td></tr>
+</table>
+</td></tr>
+<tr id="EP (trio)" onclick="$('#EP_TRIO_details').toggle()" class="squadRow viable"><td data-order="EP (trio)" align="center"><a href="../target/643445114.html#EP_TRIO"><img class="toI squad EMPERORPALPATINE-i" title="EP (trio)"/></a><br/>EP (trio)</td><td data-order="offense"><img src="../../i/ls24.png"/></td><td data-order="142401">142k</td><td nowrap style="position: relative"><div style="display: flex"><div class="toT"><img class="toI squad EMPERORPALPATINE-i"><br/>zzEP</div> <div class="toT"><img class="toI squad DARTHTRAYA-i"><br/>zzTraya</div> <div class="toT"><img class="toI squad DARTHNIHILUS-i"><br/>zDN</div> <div class="toT"><img class="toI squad DARTHSION-i"><br/>zSion</div> <div class="toT"><img class="toI squad GRANDADMIRALTHRAWN-i"><br/>zThrawn</div><div style="margin-left: 10px">&#11088;</div></div>
+<span style="position: absolute; top: 10px; right: 10px; font-size: 150%;">&#9432;</span>
+<table id="EP_TRIO_details" class="toggleable detailsTable">
+<tr class="details"><td colspan="2"><h3>Subs</h3>(no subs, this team comp is used for a specific purpose)</td></tr>
+<tr class="details">
+<td valign="top"><h3>Counter</h3></td><td valign="top"><h3><a href="../target/643445114.html#EP_TRIO">Targets</a></h3><img style="vertical-align:middle" class="toIs softCounter JEDIKNIGHTREVAN-i"/>Jedi (Revan L)<br/>
+</td></tr>
+</table>
+</td></tr>
+<tr id="Ewoks" onclick="$('#EWOKS_details').toggle()" class="squadRow distinct viable"><td data-order="Ewoks" align="center"><a href="../target/643445114.html#EWOKS"><img class="toI squad CHIEFCHIRPA-i" title="Ewoks"/></a><br/>Ewoks</td><td data-order="both"><img src="../../i/ls24.png"/><img src="../../i/shield24.png"/></td><td data-order="81359">81k</td><td nowrap style="position: relative"><div style="display: flex"><div class="toT"><img class="toI squad CHIEFCHIRPA-i"><br/>zChirpa</div> <div class="toT"><img class="toI squad EWOKELDER-i"><br/>Elder</div> <div class="toT"><img class="toI squad PAPLOO-i"><br/>Paploo</div> <div class="toT"><img class="toI squad WICKET-i"><br/>Wicket</div> <div class="toT"><img class="toI squad LOGRAY-i"><br/>Logray</div></div>
+<span style="position: absolute; top: 10px; right: 10px; font-size: 150%;">&#9432;</span>
+<table id="EWOKS_details" class="toggleable detailsTable">
+<tr class="details"><td colspan="2"><h3>Subs</h3>C-3PO, Ewok Scout, Teebo</td></tr>
+<tr class="details"><td colspan="2"><h3>Description</h3>Crit team with lot of assists, buffs, and usually daze and revive. High TM gain from Chief Chirpa's zeta lead.</td></tr>
+<tr class="details">
+<td valign="top"><h3>Counter</h3><b><img style="vertical-align:middle" class="toIs hardCounter ENFYSNEST-i"/>Enfys Nest (solo)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter VEERS-i"/>Imperial Troopers</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter DARTHTRAYA-i"/>Sith Triumvirate</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter PADMEAMIDALA-i"/>Galactic Republic</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter KYLORENUNMASKED-i"/>First Order (KRU L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter EMPERORPALPATINE-i"/>EP L</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter BOSSK-i"/>Bounty Hunters (Bossk L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter MOTHERTALZIN-i"/>Nightsisters (Talzin L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter JANGOFETT-i"/>Bounty Hunters (Jango L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter DARTHREVAN-i"/>Sith Empire (w/o Malak)</b><br/>
+<img style="vertical-align:middle" class="toIs softCounter CARTHONASI-i"/>Old Republic (Carth L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter CT7567-i"/>Rex/Wampa<br/>
+<img style="vertical-align:middle" class="toIs softCounter WAMPA-i"/>Wampa (solo)<br/>
+<img style="vertical-align:middle" class="toIs softCounter GENERALKENOBI-i"/>General Kenobi L<br/>
+<img style="vertical-align:middle" class="toIs softCounter MAUL-i"/>Sith (Maul L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter VADER-i"/>Zader<br/>
+<img style="vertical-align:middle" class="toIs softCounter DARTHSION-i"/>Darth Sion (solo)<br/>
+</td><td valign="top"><h3><a href="../target/643445114.html#EWOKS">Targets</a></h3><b><img style="vertical-align:middle" class="toIs hardCounter VEERS-i"/>Imperial Troopers</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter KYLORENUNMASKED-i"/>First Order (KRU L)</b><br/>
+<img style="vertical-align:middle" class="toIs softCounter HERASYNDULLAS3-i"/>Phoenix<br/>
+<img style="vertical-align:middle" class="toIs softCounter CARTHONASI-i"/>Old Republic (Carth L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter MOTHERTALZIN-i"/>Nightsisters (Talzin L)<br/>
+</td></tr>
+</table>
+</td></tr>
+<tr id="Ewoks+C3PO" onclick="$('#EWOKS_C3PO_details').toggle()" class="squadRow viable"><td data-order="Ewoks+C3PO" align="center"><a href="../target/643445114.html#EWOKS_C3PO"><img class="toI squad CHIEFCHIRPA-i" title="Ewoks+C3PO"/></a><br/>Ewoks+C3PO</td><td data-order="both"><img src="../../i/ls24.png"/><img src="../../i/shield24.png"/></td><td data-order="95679">95k</td><td nowrap style="position: relative"><div style="display: flex"><div class="toT"><img class="toI squad CHIEFCHIRPA-i"><br/>zChirpa</div> <div class="toT"><img class="toI squad EWOKELDER-i"><br/>Elder</div> <div class="toT"><img class="toI squad PAPLOO-i"><br/>Paploo</div> <div class="toT"><img class="toI squad WICKET-i"><br/>Wicket</div> <div class="toT"><img class="toI squad C3POLEGENDARY-i"><br/>zzC-3PO</div><div style="margin-left: 10px">&#11088;</div></div>
+<span style="position: absolute; top: 10px; right: 10px; font-size: 150%;">&#9432;</span>
+<table id="EWOKS_C3PO_details" class="toggleable detailsTable">
+<tr class="details"><td colspan="2"><h3>Subs</h3>(no subs, this team comp is used for a specific purpose)</td></tr>
+<tr class="details">
+<td valign="top"><h3>Counter</h3></td><td valign="top"><h3><a href="../target/643445114.html#EWOKS_C3PO">Targets</a></h3><img style="vertical-align:middle" class="toIs softCounter DARTHTRAYA-i"/>Sith Triumvirate<br/>
+</td></tr>
+</table>
+</td></tr>
+<tr id="FO" onclick="$('#FO_KRU_details').toggle()" class="squadRow viable"><td data-order="FO" align="center"><a href="../target/643445114.html#FO_KRU"><img class="toI squad KYLORENUNMASKED-i" title="FO"/></a><br/>FO</td><td data-order="defense"><img src="../../i/shield24.png"/></td><td data-order="132387">132k</td><td nowrap style="position: relative"><div style="display: flex"><div class="toT"><img class="toI squad KYLORENUNMASKED-i"><br/>zzKRU</div> <div class="toT"><img class="toI squad KYLOREN-i"><br/>zKylo</div> <div class="toT"><img class="toI squad FIRSTORDERTROOPER-i"><br/>zFOST</div> <div class="toT"><img class="toI squad FIRSTORDEREXECUTIONER-i"><br/>FOE</div> <div class="toT"><img class="toI squad GENERALHUX-i"><br/>zHux</div><div style="margin-left: 10px">&#11088;</div></div>
+<span style="position: absolute; top: 10px; right: 10px; font-size: 150%;">&#9432;</span>
+<table id="FO_KRU_details" class="toggleable detailsTable">
+<tr class="details"><td colspan="2"><h3>Subs</h3>Enfys Nest, zBarriss Offee, Captain Phasma, First Order SF TIE Pilot</td></tr>
+<tr class="details"><td colspan="2"><h3>Description</h3>Synergy team with counter attacking, dispelling (or loving the debuffs), healing + protection recovery, and high crit damage.</td></tr>
+<tr class="details">
+<td valign="top"><h3>Counter</h3><b><img style="vertical-align:middle" class="toIs hardCounter CHIEFCHIRPA-i"/>Ewoks</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter REYJEDITRAINING-i"/>Resistance (JTR L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter PADMEAMIDALA-i"/>Galactic Republic</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter SHAAKTI-i"/>Clones (Shaak Ti L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter COMMANDERLUKESKYWALKER-i"/>Rebels (CLS L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter GRIEVOUS-i"/>Separatist Droids</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter DARTHREVAN-i"/>Sith Empire (w/o Malak)</b><br/>
+<img style="vertical-align:middle" class="toIs softCounter VEERS-i"/>Imperial Troopers<br/>
+<img style="vertical-align:middle" class="toIs softCounter GEONOSIANBROODALPHA-i"/>Geonosians<br/>
+<img style="vertical-align:middle" class="toIs softCounter MOTHERTALZIN-i"/>Nightsisters (Talzin L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter CT7567-i"/>Rex/Wampa<br/>
+<img style="vertical-align:middle" class="toIs softCounter WEDGEANTILLES-i"/>Rebels (Danger Zone)<br/>
+<img style="vertical-align:middle" class="toIs softCounter HERASYNDULLAS3-i"/>Phoenix<br/>
+</td><td valign="top"><h3><a href="../target/643445114.html#FO_KRU">Targets</a></h3><b><img style="vertical-align:middle" class="toIs hardCounter CARTHONASI-i"/>Old Republic (Carth L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter MOTHERTALZIN-i"/>Nightsisters (Talzin L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter CHIEFCHIRPA-i"/>Ewoks</b><br/>
+<img style="vertical-align:middle" class="toIs softCounter DARTHTRAYA-i"/>Sith Triumvirate<br/>
+<img style="vertical-align:middle" class="toIs softCounter REYJEDITRAINING-i"/>Resistance (JTR L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter QIRA-i"/>Qi'ra L (w/ Nest and Zaalbar)<br/>
+<img style="vertical-align:middle" class="toIs softCounter QIRA-i"/>Qi'ra L<br/>
+<img style="vertical-align:middle" class="toIs softCounter BASTILASHAN-i"/>Jedi (Bastila L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter JANGOFETT-i"/>Bounty Hunters (Jango L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter BOSSK-i"/>Bounty Hunters (Bossk L)<br/>
+</td></tr>
+</table>
+</td></tr>
+<tr id="Geonosians Omicron" onclick="$('#GEONOSIANS_details').toggle()" class="squadRow distinct viable"><td data-order="Geonosians Omicron" align="center"><a href="../target/643445114.html#GEONOSIANS"><img class="toI squad GEONOSIANBROODALPHA-i" title="Geonosians Omicron"/></a><br/>Geonosians Omicron</td><td data-order="defense"><img src="../../i/shield24.png"/></td><td data-order="93948">93k</td><td nowrap style="position: relative"><div style="display: flex"><div class="toT"><img class="toI squad GEONOSIANBROODALPHA-i"><br/>zzGBA</div> <div class="toT"><img class="toI squad SUNFAC-i"><br/>Sun Fac</div> <div class="toT"><img class="toI squad GEONOSIANSOLDIER-i"><br/>Geo Soldier</div> <div class="toT"><img class="toI squad GEONOSIANSPY-i"><br/>Geo Spy</div> <div class="toT"><img class="toI squad POGGLETHELESSER-i"><br/>Poggle</div><div style="margin-left: 10px">&#11088;</div></div>
+<span style="position: absolute; top: 10px; right: 10px; font-size: 150%;">&#9432;</span>
+<table id="GEONOSIANS_details" class="toggleable detailsTable">
+<tr class="details"><td colspan="2"><h3>Subs</h3>(no subs, this team comp is used for a specific purpose)</td></tr>
+<tr class="details">
+<td valign="top"><h3>Counter</h3><b><img style="vertical-align:middle" class="toIs hardCounter FINN-i"/>Resistance (Finn L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter REYJEDITRAINING-i"/>Resistance (Heroes)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter DARTHTRAYA-i"/>Sith Triumvirate</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter KYLORENUNMASKED-i"/>First Order (KRU L w/ Sith Trooper)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter GRIEVOUS-i"/>Separatist Droids</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter IG88-i"/>Droids (Anti-Malak)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter DARTHREVAN-i"/>Sith Empire (w/o Malak)</b><br/>
+<img style="vertical-align:middle" class="toIs softCounter PADMEAMIDALA-i"/>Galactic Republic<br/>
+<img style="vertical-align:middle" class="toIs softCounter NUTEGUNRAY-i"/>Separatists (Nute L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter EMPERORPALPATINE-i"/>EP L<br/>
+<img style="vertical-align:middle" class="toIs softCounter CHIEFNEBIT-i"/>Jawas<br/>
+<img style="vertical-align:middle" class="toIs softCounter MOTHERTALZIN-i"/>Nightsisters (Talzin L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter JEDIKNIGHTREVAN-i"/>Jedi (Revan L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter JANGOFETT-i"/>Bounty Hunters (Jango L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter REYJEDITRAINING-i"/>Resistance (JTR L)<br/>
+</td><td valign="top"><h3><a href="../target/643445114.html#GEONOSIANS">Targets</a></h3><b><img style="vertical-align:middle" class="toIs hardCounter NUTEGUNRAY-i"/>Separatists (Nute L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter REYJEDITRAINING-i"/>Resistance (JTR L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter COMMANDERLUKESKYWALKER-i"/>Rebels (CLS L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter QIRA-i"/>Qi'ra L (w/ Nest and Zaalbar)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter CARTHONASI-i"/>Old Republic (Carth L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter MOTHERTALZIN-i"/>Nightsisters (Talzin L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter BASTILASHAN-i"/>Jedi (Bastila L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter BOSSK-i"/>Bounty Hunters (Bossk L)</b><br/>
+<img style="vertical-align:middle" class="toIs softCounter NUTEGUNRAY-i"/>Separatists (Nute L w/ Nest)<br/>
+<img style="vertical-align:middle" class="toIs softCounter JEDIKNIGHTREVAN-i"/>Jedi (Revan L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter KYLORENUNMASKED-i"/>First Order (KRU L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter SHAAKTI-i"/>Clones (Shaak Ti L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter JANGOFETT-i"/>Bounty Hunters (Jango L)<br/>
+</td></tr>
+</table>
+</td></tr>
+<tr id="Grievous" onclick="$('#SEP_DROIDS_details').toggle()" class="squadRow gearNeeded"><td data-order="Grievous" align="center"><a href="../target/643445114.html#SEP_DROIDS"><img class="toI squad GRIEVOUS-i" title="Grievous"/></a><br/>Grievous</td><td data-order="defense"><img src="../../i/shield24.png"/></td><td data-order="55474">55k</td><td nowrap style="position: relative"><div style="display: flex" title="GG: missing zetas.  B2: low gear.  B1: low gear.  MagnaGuard: low gear.  Nute: missing zetas.  " onclick="$('#squad17').toggle()"><div class="toT"><img class="toI squad GRIEVOUS-i"><br/>GG</div> <div class="toT"><img class="toI squad B2SUPERBATTLEDROID-i"><br/>B2 G1</div> <div class="toT"><img class="toI squad B1BATTLEDROIDV2-i"><br/>B1 G1</div> <div class="toT"><img class="toI squad MAGNAGUARD-i"><br/>MagnaGuard G5</div> <div class="toT"><img class="toI squad NUTEGUNRAY-i"><br/>Nute G10</div><div style="margin-left: 10px"><img src="../../i/tractor24.png"></div></div><div id="squad17" class="toggleable verbage"><br/><b>GG: missing zetas.  B2: low gear.  B1: low gear.  MagnaGuard: low gear.  Nute: missing zetas.  </b></div>
+<span style="position: absolute; top: 10px; right: 10px; font-size: 150%;">&#9432;</span>
+<table id="SEP_DROIDS_details" class="toggleable detailsTable">
+<tr class="details"><td colspan="2"><h3>Subs</h3>Nute Gunray, Count Dooku, IG-88, BB-8, Imperial Probe Droid, T3-M4, L3-37, Wat Tambor</td></tr>
+<tr class="details"><td colspan="2"><h3>Description</h3>Frequent dispels and target lock.  Kill General Grievous as early as possible, he has high damage, puts mark on other droid allies to make himself hard to focus on, and has stacking max health.  High turn meter gains with zetas from B2 and B1.  Can also have high armor penetration if built with IG88 and T3M4.</td></tr>
+<tr class="details">
+<td valign="top"><h3>Counter</h3><b><img style="vertical-align:middle" class="toIs hardCounter JEDIKNIGHTREVAN-i"/>Jedi (Revan L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter BASTILASHAN-i"/>Jedi (Bastila L w/ Revan)</b><br/>
+<img style="vertical-align:middle" class="toIs softCounter CT7567-i"/>Rex 501st<br/>
+<img style="vertical-align:middle" class="toIs softCounter SHAAKTI-i"/>Clones (Shaak Ti L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter PADMEAMIDALA-i"/>Galactic Republic<br/>
+<img style="vertical-align:middle" class="toIs softCounter EMPERORPALPATINE-i"/>EP L<br/>
+<img style="vertical-align:middle" class="toIs softCounter COMMANDERLUKESKYWALKER-i"/>Rebels (CLS L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter DAKA-i"/>Nightsisters (Daka L w/ Talia)<br/>
+<img style="vertical-align:middle" class="toIs softCounter MOTHERTALZIN-i"/>Nightsisters (Talzin L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter DARTHREVAN-i"/>Sith Empire (w/ Malak)<br/>
+<img style="vertical-align:middle" class="toIs softCounter DARTHTRAYA-i"/>Sith Triumvirate<br/>
+</td><td valign="top"><h3><a href="../target/643445114.html#SEP_DROIDS">Targets</a></h3><b><img style="vertical-align:middle" class="toIs hardCounter QIRA-i"/>Qi'ra L</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter CARTHONASI-i"/>Old Republic (Carth L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter ASAJVENTRESS-i"/>Nightsisters (w/ Nest)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter MOTHERTALZIN-i"/>Nightsisters (Talzin L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter JEDIKNIGHTREVAN-i"/>Jedi (Revan L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter GEONOSIANBROODALPHA-i"/>Geonosians</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter PADMEAMIDALA-i"/>Galactic Republic</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter KYLORENUNMASKED-i"/>First Order (KRU L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter SHAAKTI-i"/>Clones (Shaak Ti L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter JANGOFETT-i"/>Bounty Hunters (Jango L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter BOSSK-i"/>Bounty Hunters (Bossk L)</b><br/>
+<img style="vertical-align:middle" class="toIs softCounter DARTHREVAN-i"/>Sith Empire (w/o Malak)<br/>
+<img style="vertical-align:middle" class="toIs softCounter DARTHREVAN-i"/>Sith Empire (w/ Malak)<br/>
+<img style="vertical-align:middle" class="toIs softCounter COMMANDERLUKESKYWALKER-i"/>Rebels (CLS L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter VADER-i"/>Darth Vader L<br/>
+<img style="vertical-align:middle" class="toIs softCounter GENERALSKYWALKER-i"/>501st (Gen. Skywalker L)<br/>
+</td></tr>
+</table>
+</td></tr>
+<tr id="Grievous Omicron"  class="squadRow distinct gearNeeded"><td data-order="Grievous Omicron" align="center"><img class="toI squad GRIEVOUS-i" title="Grievous Omicron"/><br/>Grievous Omicron</td><td data-order="unknown"></td><td data-order="46474">46k</td><td nowrap style="position: relative"><div style="display: flex" title="GG: missing zetas.  B2: low gear.  B1: low gear.  MagnaGuard: low gear.  Droideka: missing omicrons.  " onclick="$('#squad18').toggle()"><div class="toT"><img class="toI squad GRIEVOUS-i"><br/>GG</div> <div class="toT"><img class="toI squad B2SUPERBATTLEDROID-i"><br/>B2 G1</div> <div class="toT"><img class="toI squad B1BATTLEDROIDV2-i"><br/>B1 G1</div> <div class="toT"><img class="toI squad MAGNAGUARD-i"><br/>MagnaGuard G5</div> <div class="toT"><img class="toI squad DROIDEKA-i"><br/>Droideka G4</div><div style="margin-left: 10px"><img src="../../i/tractor24.png"></div></div><div id="squad18" class="toggleable verbage"><br/><b>GG: missing zetas.  B2: low gear.  B1: low gear.  MagnaGuard: low gear.  Droideka: missing omicrons.  </b></div></td></tr>
+<tr id="Grievous-Wat" onclick="$('#SEP_DROIDS_details').toggle()" class="squadRow gearNeeded"><td data-order="Grievous-Wat" align="center"><a href="../target/643445114.html#SEP_DROIDS"><img class="toI squad GRIEVOUS-i" title="Grievous-Wat"/></a><br/>Grievous-Wat</td><td data-order="defense"><img src="../../i/shield24.png"/></td><td data-order="53491">53k</td><td nowrap style="position: relative"><div style="display: flex" title="GG: missing zetas.  B2: low gear.  B1: low gear.  MagnaGuard: low gear.  Wat Tambor: low gear.  " onclick="$('#squad19').toggle()"><div class="toT"><img class="toI squad GRIEVOUS-i"><br/>GG</div> <div class="toT"><img class="toI squad B2SUPERBATTLEDROID-i"><br/>B2 G1</div> <div class="toT"><img class="toI squad B1BATTLEDROIDV2-i"><br/>B1 G1</div> <div class="toT"><img class="toI squad MAGNAGUARD-i"><br/>MagnaGuard G5</div> <div class="toT"><img class="toI squad WATTAMBOR-i"><br/>zWat Tambor G8</div><div style="margin-left: 10px"><img src="../../i/tractor24.png"></div></div><div id="squad19" class="toggleable verbage"><br/><b>GG: missing zetas.  B2: low gear.  B1: low gear.  MagnaGuard: low gear.  Wat Tambor: low gear.  </b></div>
+<span style="position: absolute; top: 10px; right: 10px; font-size: 150%;">&#9432;</span>
+<table id="SEP_DROIDS_details" class="toggleable detailsTable">
+<tr class="details"><td colspan="2"><h3>Subs</h3>Nute Gunray, Count Dooku, IG-88, BB-8, Imperial Probe Droid, T3-M4, L3-37, Wat Tambor</td></tr>
+<tr class="details"><td colspan="2"><h3>Description</h3>Frequent dispels and target lock.  Kill General Grievous as early as possible, he has high damage, puts mark on other droid allies to make himself hard to focus on, and has stacking max health.  High turn meter gains with zetas from B2 and B1.  Can also have high armor penetration if built with IG88 and T3M4.</td></tr>
+<tr class="details">
+<td valign="top"><h3>Counter</h3><b><img style="vertical-align:middle" class="toIs hardCounter JEDIKNIGHTREVAN-i"/>Jedi (Revan L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter BASTILASHAN-i"/>Jedi (Bastila L w/ Revan)</b><br/>
+<img style="vertical-align:middle" class="toIs softCounter CT7567-i"/>Rex 501st<br/>
+<img style="vertical-align:middle" class="toIs softCounter SHAAKTI-i"/>Clones (Shaak Ti L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter PADMEAMIDALA-i"/>Galactic Republic<br/>
+<img style="vertical-align:middle" class="toIs softCounter EMPERORPALPATINE-i"/>EP L<br/>
+<img style="vertical-align:middle" class="toIs softCounter COMMANDERLUKESKYWALKER-i"/>Rebels (CLS L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter DAKA-i"/>Nightsisters (Daka L w/ Talia)<br/>
+<img style="vertical-align:middle" class="toIs softCounter MOTHERTALZIN-i"/>Nightsisters (Talzin L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter DARTHREVAN-i"/>Sith Empire (w/ Malak)<br/>
+<img style="vertical-align:middle" class="toIs softCounter DARTHTRAYA-i"/>Sith Triumvirate<br/>
+</td><td valign="top"><h3><a href="../target/643445114.html#SEP_DROIDS">Targets</a></h3><b><img style="vertical-align:middle" class="toIs hardCounter QIRA-i"/>Qi'ra L</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter CARTHONASI-i"/>Old Republic (Carth L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter ASAJVENTRESS-i"/>Nightsisters (w/ Nest)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter MOTHERTALZIN-i"/>Nightsisters (Talzin L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter JEDIKNIGHTREVAN-i"/>Jedi (Revan L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter GEONOSIANBROODALPHA-i"/>Geonosians</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter PADMEAMIDALA-i"/>Galactic Republic</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter KYLORENUNMASKED-i"/>First Order (KRU L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter SHAAKTI-i"/>Clones (Shaak Ti L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter JANGOFETT-i"/>Bounty Hunters (Jango L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter BOSSK-i"/>Bounty Hunters (Bossk L)</b><br/>
+<img style="vertical-align:middle" class="toIs softCounter DARTHREVAN-i"/>Sith Empire (w/o Malak)<br/>
+<img style="vertical-align:middle" class="toIs softCounter DARTHREVAN-i"/>Sith Empire (w/ Malak)<br/>
+<img style="vertical-align:middle" class="toIs softCounter COMMANDERLUKESKYWALKER-i"/>Rebels (CLS L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter VADER-i"/>Darth Vader L<br/>
+<img style="vertical-align:middle" class="toIs softCounter GENERALSKYWALKER-i"/>501st (Gen. Skywalker L)<br/>
+</td></tr>
+</table>
+</td></tr>
+<tr id="HansMF"  class="squadRow distinct gearNeeded"><td data-order="HansMF" align="center"><img class="toI squad CAPITALMONCALAMARICRUISER-i" title="HansMF"/><br/>HansMF</td><td data-order="unknown"></td><td data-order="307128">307k</td><td style="position: relative"><div style="display: flex" title="Bistan's U-wing: level is 1/85, stars is 4/7.  Cassian's U-wing: stars is 5/7.  " onclick="$('#squad20').toggle()"><div class="toT"><img class="toI squad CAPITALMONCALAMARICRUISER-i"><br/>Home One</div> <div class="toT"><img class="toI squad MILLENNIUMFALCON-i"><br/>Han's MF</div> <div class="toT"><img class="toI squad XWINGRED3-i"><br/>Biggs X-wing</div> <div class="toT"><img class="toI squad UWINGSCARIF-i"><br/>Bistan's U-wing 4*</div> <div class="toT"><img class="toI squad PHANTOM2-i"><br/>Phantom</div> <div class="toT"><img class="toI squad GHOST-i"><br/>Ghost</div> <div class="toT"><img class="toI squad UWINGROGUEONE-i"><br/>Cassian's U-wing 5*</div> <div class="toT"><img class="toI squad XWINGRED2-i"><br/>Wedge X-wing</div><div style="margin-left: 10px"><img src="../../i/tractor24.png"></div></div><div id="squad20" class="toggleable verbage"><br/><b>Bistan's U-wing: level is 1/85, stars is 4/7.  Cassian's U-wing: stars is 5/7.  </b></div></td></tr>
+<tr id="IG88" onclick="$('#IG-88_HI_details').toggle()" class="squadRow gearNeeded"><td data-order="IG88" align="center"><a href="../target/643445114.html#IG-88_HI"><img class="toI squad IG88-i" title="IG88"/></a><br/>IG88</td><td data-order="offense"><img src="../../i/ls24.png"/></td><td data-order="93780">93k</td><td nowrap style="position: relative"><div style="display: flex" title="Cassian: low gear.  " onclick="$('#squad21').toggle()"><div class="toT"><img class="toI squad IG88-i"><br/>IG-88 G8</div> <div class="toT"><img class="toI squad WAMPA-i"><br/>zzWampa</div> <div class="toT"><img class="toI squad CASSIANANDOR-i"><br/>Cassian G6</div> <div class="toT"><img class="toI squad BOBAFETT-i"><br/>Boba G9</div> <div class="toT"><img class="toI squad KYLOREN-i"><br/>zKylo</div><div style="margin-left: 10px"><img src="../../i/tractor24.png"></div></div><div id="squad21" class="toggleable verbage"><br/><b>Cassian: low gear.  </b></div>
+<span style="position: absolute; top: 10px; right: 10px; font-size: 150%;">&#9432;</span>
+<table id="IG-88_HI_details" class="toggleable detailsTable">
+<tr class="details">
+<td valign="top"><h3>Counter</h3></td><td valign="top"><h3><a href="../target/643445114.html#IG-88_HI">Targets</a></h3></td></tr>
+</table>
+</td></tr>
+<tr id="JKL"  class="squadRow gearNeeded"><td data-order="JKL" align="center"><img class="toI squad JEDIKNIGHTLUKE-i" title="JKL"/><br/>JKL</td><td data-order="unknown"></td><td data-order="118550">118k</td><td nowrap style="position: relative"><div style="display: flex" title="Old Ben: low gear.  Ezra: low gear.  " onclick="$('#squad22').toggle()"><div class="toT"><img class="toI squad JEDIKNIGHTLUKE-i"><br/>zzJKL</div> <div class="toT"><img class="toI squad JEDIKNIGHTREVAN-i"><br/>zzzJKR</div> <div class="toT"><img class="toI squad HERMITYODA-i"><br/>zzHYoda</div> <div class="toT"><img class="toI squad OLDBENKENOBI-i"><br/>Old Ben G9</div> <div class="toT"><img class="toI squad EZRABRIDGERS3-i"><br/>zEzra G10</div><div style="margin-left: 10px"><img src="../../i/tractor24.png"></div></div><div id="squad22" class="toggleable verbage"><br/><b>Old Ben: low gear.  Ezra: low gear.  </b></div></td></tr>
+<tr id="Negotiator"  class="squadRow distinct gearNeeded"><td data-order="Negotiator" align="center"><img class="toI squad CAPITALNEGOTIATOR-i" title="Negotiator"/><br/>Negotiator</td><td data-order="unknown"></td><td data-order="355233">355k</td><td style="position: relative"><div style="display: flex" title="Clone Sergeant's ARC-170: level is 73/85, stars is 5/7.  " onclick="$('#squad23').toggle()"><div class="toT"><img class="toI squad CAPITALNEGOTIATOR-i"><br/>Negotiator 6*</div> <div class="toT"><img class="toI squad HOUNDSTOOTH-i"><br/>HT</div> <div class="toT"><img class="toI squad JEDISTARFIGHTERANAKIN-i"><br/>Anakin's Eta-2</div> <div class="toT"><img class="toI squad UMBARANSTARFIGHTER-i"><br/>Umbaran SF</div> <div class="toT"><img class="toI squad JEDISTARFIGHTERAHSOKATANO-i"><br/>Ahsoka's SF</div> <div class="toT"><img class="toI squad ARC170CLONESERGEANT-i"><br/>Clone Sergeant's ARC-170 5*</div> <div class="toT"><img class="toI squad JEDISTARFIGHTERCONSULAR-i"><br/>Jedi Consular's Starfighter</div> <div class="toT"><img class="toI squad BLADEOFDORIN-i"><br/>Plo's SF</div><div style="margin-left: 10px"><img src="../../i/tractor24.png"></div></div><div id="squad23" class="toggleable verbage"><br/><b>Clone Sergeant's ARC-170: level is 73/85, stars is 5/7.  </b></div></td></tr>
+<tr id="NestSolo (Counter)" onclick="$('#NEST_SOLO_details').toggle()" class="squadRow gearNeeded"><td data-order="NestSolo (Counter)" align="center"><a href="../target/643445114.html#NEST_SOLO"><img class="toI squad ENFYSNEST-i" title="NestSolo (Counter)"/></a><br/>NestSolo (Counter)</td><td data-order="offense"><img src="../../i/ls24.png"/></td><td data-order="11692">11k</td><td nowrap style="position: relative"><div style="display: flex" title="Nest: low gear.  " onclick="$('#squad24').toggle()"><div class="toT"><img class="toI squad ENFYSNEST-i"><br/>Nest G5</div><div style="margin-left: 10px"><img src="../../i/tractor24.png"></div></div><div id="squad24" class="toggleable verbage"><br/><b>Nest: low gear.  </b></div>
+<span style="position: absolute; top: 10px; right: 10px; font-size: 150%;">&#9432;</span>
+<table id="NEST_SOLO_details" class="toggleable detailsTable">
+<tr class="details"><td colspan="2"><h3>Subs</h3>Qi'ra (L), Hermit Yoda</td></tr>
+<tr class="details"><td colspan="2"><h3>Description</h3>Enfys Nest (solo) excels against teams that have a high attack rate but low power output.  She has a high counter chance and ignores taunts.  She gains stacking crit chance and protection every time she is damaged before her turn (these reset at the end of her turn).  And throughout the encounter, she also gains crit damage and health steal whenever an enemy loses a buff or debuff.</td></tr>
+<tr class="details">
+<td valign="top"><h3>Counter</h3><b><img style="vertical-align:middle" class="toIs hardCounter DARTHTRAYA-i"/>Sith Triumvirate</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter JEDIKNIGHTREVAN-i"/>Jedi (Revan L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter REYJEDITRAINING-i"/>Resistance (JTR L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter MOTHERTALZIN-i"/>Nightsisters (Talzin L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter MAUL-i"/>Sith (Maul L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter EMPERORPALPATINE-i"/>EP L</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter DARTHREVAN-i"/>Sith Empire (w/o Malak)</b><br/>
+<img style="vertical-align:middle" class="toIs softCounter VISASMARR-i"/>Visas Marr<br/>
+<img style="vertical-align:middle" class="toIs softCounter JANGOFETT-i"/>Jango Fett<br/>
+</td><td valign="top"><h3><a href="../target/643445114.html#NEST_SOLO">Targets</a></h3><b><img style="vertical-align:middle" class="toIs hardCounter HERASYNDULLAS3-i"/>Phoenix</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter CHIEFCHIRPA-i"/>Ewoks</b><br/>
+<img style="vertical-align:middle" class="toIs softCounter JYNERSO-i"/>Rogue One<br/>
+<img style="vertical-align:middle" class="toIs softCounter BASTILASHAN-i"/>Jedi (Bastila L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter VEERS-i"/>Imperial Troopers<br/>
+<img style="vertical-align:middle" class="toIs softCounter PADMEAMIDALA-i"/>Galactic Republic<br/>
+<img style="vertical-align:middle" class="toIs softCounter SHAAKTI-i"/>Clones (Shaak Ti L)<br/>
+</td></tr>
+</table>
+</td></tr>
+<tr id="Nute-OR"  class="squadRow gearNeeded"><td data-order="Nute-OR" align="center"><img class="toI squad NUTEGUNRAY-i" title="Nute-OR"/><br/>Nute-OR</td><td data-order="unknown"></td><td data-order="95726">95k</td><td nowrap style="position: relative"><div style="display: flex" title="Nute: missing zetas.  " onclick="$('#squad25').toggle()"><div class="toT"><img class="toI squad NUTEGUNRAY-i"><br/>Nute G10</div> <div class="toT"><img class="toI squad COUNTDOOKU-i"><br/>Dooku</div> <div class="toT"><img class="toI squad JANGOFETT-i"><br/>Jango</div> <div class="toT"><img class="toI squad ZAALBAR-i"><br/>zZaalbar</div> <div class="toT"><img class="toI squad MISSIONVAO-i"><br/>zMission</div><div style="margin-left: 10px"><img src="../../i/tractor24.png"></div></div><div id="squad25" class="toggleable verbage"><br/><b>Nute: missing zetas.  </b></div></td></tr>
+<tr id="Nute-Sep"  class="squadRow gearNeeded"><td data-order="Nute-Sep" align="center"><img class="toI squad NUTEGUNRAY-i" title="Nute-Sep"/><br/>Nute-Sep</td><td data-order="unknown"></td><td data-order="77584">77k</td><td nowrap style="position: relative"><div style="display: flex" title="Nute: missing zetas.  Nest: low gear.  Droideka: low gear.  " onclick="$('#squad26').toggle()"><div class="toT"><img class="toI squad NUTEGUNRAY-i"><br/>Nute G10</div> <div class="toT"><img class="toI squad COUNTDOOKU-i"><br/>Dooku</div> <div class="toT"><img class="toI squad JANGOFETT-i"><br/>Jango</div> <div class="toT"><img class="toI squad ENFYSNEST-i"><br/>Nest G5</div> <div class="toT"><img class="toI squad DROIDEKA-i"><br/>Droideka G4</div><div style="margin-left: 10px"><img src="../../i/tractor24.png"></div></div><div id="squad26" class="toggleable verbage"><br/><b>Nute: missing zetas.  Nest: low gear.  Droideka: low gear.  </b></div></td></tr>
+<tr id="Nute-Wat"  class="squadRow distinct gearNeeded"><td data-order="Nute-Wat" align="center"><img class="toI squad NUTEGUNRAY-i" title="Nute-Wat"/><br/>Nute-Wat</td><td data-order="unknown"></td><td data-order="84601">84k</td><td nowrap style="position: relative"><div style="display: flex" title="Nute: missing zetas.  Wat Tambor: low gear.  Nest: low gear.  " onclick="$('#squad27').toggle()"><div class="toT"><img class="toI squad NUTEGUNRAY-i"><br/>Nute G10</div> <div class="toT"><img class="toI squad COUNTDOOKU-i"><br/>Dooku</div> <div class="toT"><img class="toI squad WATTAMBOR-i"><br/>zWat Tambor G8</div> <div class="toT"><img class="toI squad JANGOFETT-i"><br/>Jango</div> <div class="toT"><img class="toI squad ENFYSNEST-i"><br/>Nest G5</div><div style="margin-left: 10px"><img src="../../i/tractor24.png"></div></div><div id="squad27" class="toggleable verbage"><br/><b>Nute: missing zetas.  Wat Tambor: low gear.  Nest: low gear.  </b></div></td></tr>
+<tr id="Phasma"  class="squadRow distinct gearNeeded"><td data-order="Phasma" align="center"><img class="toI squad PHASMA-i" title="Phasma"/><br/>Phasma</td><td data-order="unknown"></td><td data-order="122340">122k</td><td nowrap style="position: relative"><div style="display: flex" title="Phasma: missing omicrons.  " onclick="$('#squad28').toggle()"><div class="toT"><img class="toI squad PHASMA-i"><br/>zPhasma</div> <div class="toT"><img class="toI squad FIRSTORDERTIEPILOT-i"><br/>zFOTP</div> <div class="toT"><img class="toI squad FIRSTORDERSPECIALFORCESPILOT-i"><br/>FOSFTP</div> <div class="toT"><img class="toI squad FIRSTORDERTROOPER-i"><br/>zFOST</div> <div class="toT"><img class="toI squad KYLOREN-i"><br/>zKylo</div><div style="margin-left: 10px"><img src="../../i/tractor24.png"></div></div><div id="squad28" class="toggleable verbage"><br/><b>Phasma: missing omicrons.  </b></div></td></tr>
+<tr id="Phoenix" onclick="$('#PHOENIX_details').toggle()" class="squadRow distinct viable"><td data-order="Phoenix" align="center"><a href="../target/643445114.html#PHOENIX"><img class="toI squad HERASYNDULLAS3-i" title="Phoenix"/></a><br/>Phoenix</td><td data-order="defense"><img src="../../i/shield24.png"/></td><td data-order="74346">74k</td><td nowrap style="position: relative"><div style="display: flex"><div class="toT"><img class="toI squad HERASYNDULLAS3-i"><br/>Hera G10</div> <div class="toT"><img class="toI squad EZRABRIDGERS3-i"><br/>zEzra G10</div> <div class="toT"><img class="toI squad KANANJARRUSS3-i"><br/>Kanan G9</div> <div class="toT"><img class="toI squad ZEBS3-i"><br/>Zeb G8</div> <div class="toT"><img class="toI squad CHOPPERS3-i"><br/>Chopper G9</div></div>
+<span style="position: absolute; top: 10px; right: 10px; font-size: 150%;">&#9432;</span>
+<table id="PHOENIX_details" class="toggleable detailsTable">
+<tr class="details"><td colspan="2"><h3>Subs</h3>Chopper</td></tr>
+<tr class="details"><td colspan="2"><h3>Description</h3>High synergy team with a lot of counter attacking, dispelling (or loving the debuffs), and HP + protection recovery. Be careful with G12 zeta Phoenix, use equally geared zeta'd teams.</td></tr>
+<tr class="details">
+<td valign="top"><h3>Counter</h3><b><img style="vertical-align:middle" class="toIs hardCounter NUTEGUNRAY-i"/>Separatists (Nute L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter WAMPA-i"/>Wampa (solo)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter ENFYSNEST-i"/>Enfys Nest (solo)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter GENERALHUX-i"/>First Order (Hux L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter VEERS-i"/>Imperial Troopers</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter EMPERORPALPATINE-i"/>EP L</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter COMMANDERLUKESKYWALKER-i"/>Rebels (CLS L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter DARTHREVAN-i"/>Sith Empire (w/o Malak)</b><br/>
+<img style="vertical-align:middle" class="toIs softCounter QIRA-i"/>Qi'ra L (Prepared Smugglers)<br/>
+<img style="vertical-align:middle" class="toIs softCounter CHIEFCHIRPA-i"/>Ewoks<br/>
+<img style="vertical-align:middle" class="toIs softCounter MAUL-i"/>Sith (Maul L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter CC2224-i"/>Clones (Cody L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter QUIGONJINN-i"/>Jedi (QGJ L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter WEDGEANTILLES-i"/>Rebels (Wiggs)<br/>
+</td><td valign="top"><h3><a href="../target/643445114.html#PHOENIX">Targets</a></h3><b><img style="vertical-align:middle" class="toIs hardCounter CARTHONASI-i"/>Old Republic (Carth L)</b><br/>
+<img style="vertical-align:middle" class="toIs softCounter MAUL-i"/>Sith (Maul L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter MOTHERTALZIN-i"/>Nightsisters (Talzin L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter KYLORENUNMASKED-i"/>First Order (KRU L)<br/>
+</td></tr>
+</table>
+</td></tr>
+<tr id="Revan" onclick="$('#JEDI_REVAN_details').toggle()" class="squadRow distinct viable"><td data-order="Revan" align="center"><a href="../target/643445114.html#JEDI_REVAN"><img class="toI squad JEDIKNIGHTREVAN-i" title="Revan"/></a><br/>Revan</td><td data-order="both"><img src="../../i/ls24.png"/><img src="../../i/shield24.png"/></td><td data-order="115568">115k</td><td nowrap style="position: relative"><div style="display: flex"><div class="toT"><img class="toI squad JEDIKNIGHTREVAN-i"><br/>zzzJKR</div> <div class="toT"><img class="toI squad BASTILASHAN-i"><br/>zBS</div> <div class="toT"><img class="toI squad GRANDMASTERYODA-i"><br/>zGMY</div> <div class="toT"><img class="toI squad JOLEEBINDO-i"><br/>zJolee</div> <div class="toT"><img class="toI squad GENERALKENOBI-i"><br/>GK</div><div style="margin-left: 10px">&#11088;</div></div>
+<span style="position: absolute; top: 10px; right: 10px; font-size: 150%;">&#9432;</span>
+<table id="JEDI_REVAN_details" class="toggleable detailsTable">
+<tr class="details"><td colspan="2"><h3>Subs</h3>Ezra Bridger, Hermit Yoda, Obi-Wan Kenobi (Old Ben), Juhani, Plo Koon</td></tr>
+<tr class="details"><td colspan="2"><h3>Description</h3>Buffs, heals, protection regeneration, revive, and lot of damage.</td></tr>
+<tr class="details">
+<td valign="top"><h3>Counter</h3><b><img style="vertical-align:middle" class="toIs hardCounter DARTHREVAN-i"/>Sith Empire (w/ Malak)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter PADMEAMIDALA-i"/>Galactic Republic</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter GRIEVOUS-i"/>Separatist Droids</b><br/>
+<img style="vertical-align:middle" class="toIs softCounter JEDIKNIGHTREVAN-i"/>Jedi (Revan L w/ Hoda)<br/>
+<img style="vertical-align:middle" class="toIs softCounter SHAAKTI-i"/>Clones (Shaak Ti L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter GEONOSIANBROODALPHA-i"/>Geonosians<br/>
+<img style="vertical-align:middle" class="toIs softCounter DARTHTRAYA-i"/>Sith Triumvirate<br/>
+<img style="vertical-align:middle" class="toIs softCounter MOTHERTALZIN-i"/>Nightsisters (Talzin L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter REYJEDITRAINING-i"/>Resistance (JTR L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter COMMANDERLUKESKYWALKER-i"/>Rebels (CLS Quad w/ Thrawn)<br/>
+<img style="vertical-align:middle" class="toIs softCounter EMPERORPALPATINE-i"/>EP (Sith Triumvirate)<br/>
+</td><td valign="top"><h3><a href="../target/643445114.html#JEDI_REVAN">Targets</a></h3><b><img style="vertical-align:middle" class="toIs hardCounter DARTHTRAYA-i"/>Sith Triumvirate</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter DARTHREVAN-i"/>Sith Empire (w/o Malak)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter NUTEGUNRAY-i"/>Separatists (Nute L w/ Nest)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter GRIEVOUS-i"/>Separatist Droids</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter COMMANDERLUKESKYWALKER-i"/>Rebels (CLS L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter MOTHERTALZIN-i"/>Nightsisters (Talzin L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter MOTHERTALZIN-i"/>Nightsisters (Talzin L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter MOTHERTALZIN-i"/>Nightsisters (Talzin L w/ Acolyte)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter ASAJVENTRESS-i"/>Nightsisters (Asajj L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter ENFYSNEST-i"/>Enfys Nest (solo)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter SHAAKTI-i"/>Clones (Shaak Ti L)</b><br/>
+<img style="vertical-align:middle" class="toIs softCounter DARTHREVAN-i"/>Sith Empire (w/ Malak)<br/>
+<img style="vertical-align:middle" class="toIs softCounter GEONOSIANBROODALPHA-i"/>Geonosians<br/>
+<img style="vertical-align:middle" class="toIs softCounter PADMEAMIDALA-i"/>Galactic Republic<br/>
+</td></tr>
+</table>
+</td></tr>
+<tr id="Revan Offense" onclick="$('#JEDI_REVAN_details').toggle()" class="squadRow viable"><td data-order="Revan Offense" align="center"><a href="../target/643445114.html#JEDI_REVAN"><img class="toI squad JEDIKNIGHTREVAN-i" title="Revan Offense"/></a><br/>Revan Offense</td><td data-order="both"><img src="../../i/ls24.png"/><img src="../../i/shield24.png"/></td><td data-order="129108">129k</td><td nowrap style="position: relative"><div style="display: flex"><div class="toT"><img class="toI squad JEDIKNIGHTREVAN-i"><br/>zzzJKR</div> <div class="toT"><img class="toI squad GRANDMASTERYODA-i"><br/>zGMY</div> <div class="toT"><img class="toI squad HERMITYODA-i"><br/>zzHYoda</div> <div class="toT"><img class="toI squad JOLEEBINDO-i"><br/>zJolee</div> <div class="toT"><img class="toI squad ANAKINKNIGHT-i"><br/>zJKA</div><div style="margin-left: 10px">&#11088;</div></div>
+<span style="position: absolute; top: 10px; right: 10px; font-size: 150%;">&#9432;</span>
+<table id="JEDI_REVAN_details" class="toggleable detailsTable">
+<tr class="details"><td colspan="2"><h3>Subs</h3>Ezra Bridger, Hermit Yoda, Obi-Wan Kenobi (Old Ben), Juhani, Plo Koon</td></tr>
+<tr class="details"><td colspan="2"><h3>Description</h3>Buffs, heals, protection regeneration, revive, and lot of damage.</td></tr>
+<tr class="details">
+<td valign="top"><h3>Counter</h3><b><img style="vertical-align:middle" class="toIs hardCounter DARTHREVAN-i"/>Sith Empire (w/ Malak)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter PADMEAMIDALA-i"/>Galactic Republic</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter GRIEVOUS-i"/>Separatist Droids</b><br/>
+<img style="vertical-align:middle" class="toIs softCounter JEDIKNIGHTREVAN-i"/>Jedi (Revan L w/ Hoda)<br/>
+<img style="vertical-align:middle" class="toIs softCounter SHAAKTI-i"/>Clones (Shaak Ti L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter GEONOSIANBROODALPHA-i"/>Geonosians<br/>
+<img style="vertical-align:middle" class="toIs softCounter DARTHTRAYA-i"/>Sith Triumvirate<br/>
+<img style="vertical-align:middle" class="toIs softCounter MOTHERTALZIN-i"/>Nightsisters (Talzin L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter REYJEDITRAINING-i"/>Resistance (JTR L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter COMMANDERLUKESKYWALKER-i"/>Rebels (CLS Quad w/ Thrawn)<br/>
+<img style="vertical-align:middle" class="toIs softCounter EMPERORPALPATINE-i"/>EP (Sith Triumvirate)<br/>
+</td><td valign="top"><h3><a href="../target/643445114.html#JEDI_REVAN">Targets</a></h3><b><img style="vertical-align:middle" class="toIs hardCounter DARTHTRAYA-i"/>Sith Triumvirate</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter DARTHREVAN-i"/>Sith Empire (w/o Malak)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter NUTEGUNRAY-i"/>Separatists (Nute L w/ Nest)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter GRIEVOUS-i"/>Separatist Droids</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter COMMANDERLUKESKYWALKER-i"/>Rebels (CLS L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter MOTHERTALZIN-i"/>Nightsisters (Talzin L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter MOTHERTALZIN-i"/>Nightsisters (Talzin L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter MOTHERTALZIN-i"/>Nightsisters (Talzin L w/ Acolyte)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter ASAJVENTRESS-i"/>Nightsisters (Asajj L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter ENFYSNEST-i"/>Enfys Nest (solo)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter SHAAKTI-i"/>Clones (Shaak Ti L)</b><br/>
+<img style="vertical-align:middle" class="toIs softCounter DARTHREVAN-i"/>Sith Empire (w/ Malak)<br/>
+<img style="vertical-align:middle" class="toIs softCounter GEONOSIANBROODALPHA-i"/>Geonosians<br/>
+<img style="vertical-align:middle" class="toIs softCounter PADMEAMIDALA-i"/>Galactic Republic<br/>
+</td></tr>
+</table>
+</td></tr>
+<tr id="SEE"  class="squadRow distinct viable"><td data-order="SEE" align="center"><img class="toI squad SITHPALPATINE-i" title="SEE"/><br/>SEE</td><td data-order="unknown"></td><td data-order="183339">183k</td><td nowrap style="position: relative"><div style="display: flex"><div class="toT"><img class="toI squad SITHPALPATINE-i"><br/>zzzzzzSEE</div> <div class="toT"><img class="toI squad BASTILASHANDARK-i"><br/>zBSF</div> <div class="toT"><img class="toI squad DARTHMALAK-i"><br/>zzMalak</div> <div class="toT"><img class="toI squad DARTHREVAN-i"><br/>zzzDR</div> <div class="toT"><img class="toI squad VADER-i"><br/>zzzVader</div><div style="margin-left: 10px">&#11088;</div></div></td></tr>
+<tr id="SL Kylo" onclick="$('#FO_SLKR_details').toggle()" class="squadRow distinct viable"><td data-order="SL Kylo" align="center"><a href="../target/643445114.html#FO_SLKR"><img class="toI squad SUPREMELEADERKYLOREN-i" title="SL Kylo"/></a><br/>SL Kylo</td><td data-order="both"><img src="../../i/ls24.png"/><img src="../../i/shield24.png"/></td><td data-order="164922">164k</td><td nowrap style="position: relative"><div style="display: flex"><div class="toT"><img class="toI squad SUPREMELEADERKYLOREN-i"><br/>zzzzzzSL Kylo</div> <div class="toT"><img class="toI squad FOSITHTROOPER-i"><br/>zSith Trooper</div> <div class="toT"><img class="toI squad GENERALHUX-i"><br/>zHux</div> <div class="toT"><img class="toI squad KYLORENUNMASKED-i"><br/>zzKRU</div> <div class="toT"><img class="toI squad GRANDADMIRALTHRAWN-i"><br/>zThrawn</div><div style="margin-left: 10px">&#11088;</div></div>
+<span style="position: absolute; top: 10px; right: 10px; font-size: 150%;">&#9432;</span>
+<table id="FO_SLKR_details" class="toggleable detailsTable">
+<tr class="details">
+<td valign="top"><h3>Counter</h3><b><img style="vertical-align:middle" class="toIs hardCounter DARTHREVAN-i"/>Sith Empire (w/o Malak)</b><br/>
+<img style="vertical-align:middle" class="toIs softCounter GENERALSKYWALKER-i"/>501st (Gen. Skywalker L w/ Echo)<br/>
+<img style="vertical-align:middle" class="toIs softCounter DARTHREVAN-i"/>Sith Empire (w/ Malak & Thrawn)<br/>
+<img style="vertical-align:middle" class="toIs softCounter PADMEAMIDALA-i"/>Galactic Republic SLKR-Killer<br/>
+<img style="vertical-align:middle" class="toIs softCounter VADER-i"/>Darth Vader L (SLKR Killer)<br/>
+</td><td valign="top"><h3><a href="../target/643445114.html#FO_SLKR">Targets</a></h3><img style="vertical-align:middle" class="toIs softCounter GLREY-i"/>Resistance (Rey L)<br/>
+</td></tr>
+</table>
+</td></tr>
+<tr id="ShaakClones" onclick="$('#CLONES_SHAAKTI_details').toggle()" class="squadRow distinct gearNeeded"><td data-order="ShaakClones" align="center"><a href="../target/643445114.html#CLONES_SHAAKTI"><img class="toI squad SHAAKTI-i" title="ShaakClones"/></a><br/>ShaakClones</td><td data-order="offense"><img src="../../i/ls24.png"/></td><td data-order="52937">52k</td><td nowrap style="position: relative"><div style="display: flex" title="Shaak Ti: missing zetas.  Rex: low gear.  Echo (501st): low gear.  Clone Sergeant: low gear.  " onclick="$('#squad34').toggle()"><div class="toT"><img class="toI squad SHAAKTI-i"><br/>Shaak Ti G8</div> <div class="toT"><img class="toI squad CT7567-i"><br/>Rex G6</div> <div class="toT"><img class="toI squad CT210408-i"><br/>Echo (501st) G6</div> <div class="toT"><img class="toI squad CT5555-i"><br/>Fives G10</div> <div class="toT"><img class="toI squad CLONESERGEANTPHASEI-i"><br/>Clone Sergeant G2</div><div style="margin-left: 10px"><img src="../../i/tractor24.png"></div></div><div id="squad34" class="toggleable verbage"><br/><b>Shaak Ti: missing zetas.  Rex: low gear.  Echo (501st): low gear.  Clone Sergeant: low gear.  </b></div>
+<span style="position: absolute; top: 10px; right: 10px; font-size: 150%;">&#9432;</span>
+<table id="CLONES_SHAAKTI_details" class="toggleable detailsTable">
+<tr class="details"><td colspan="2"><h3>Subs</h3>ARC Trooper, CC-2224 "Cody", Barriss Offee, Ahsoka Tano, R2-D2</td></tr>
+<tr class="details"><td colspan="2"><h3>Description</h3>Shaak Ti's leadership gives Clone Troopers speed, health and protection recovery when attacking out of turn, and an increase in max health, protection, and offense.  She also gives Retribution to herself or Clones when they take damage.</td></tr>
+<tr class="details">
+<td valign="top"><h3>Counter</h3><b><img style="vertical-align:middle" class="toIs hardCounter DARTHTRAYA-i"/>Sith Triumvirate</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter PADMEAMIDALA-i"/>Galactic Republic</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter GRIEVOUS-i"/>Separatist Droids</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter COMMANDERLUKESKYWALKER-i"/>Rebels (CLS L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter JEDIKNIGHTREVAN-i"/>Jedi (Revan L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter DARTHREVAN-i"/>Sith Empire (w/o Malak)</b><br/>
+<img style="vertical-align:middle" class="toIs softCounter EMPERORPALPATINE-i"/>EP L<br/>
+<img style="vertical-align:middle" class="toIs softCounter GEONOSIANBROODALPHA-i"/>Geonosians<br/>
+<img style="vertical-align:middle" class="toIs softCounter ENFYSNEST-i"/>Enfys Nest (solo)<br/>
+<img style="vertical-align:middle" class="toIs softCounter REYJEDITRAINING-i"/>Resistance (JTR L)<br/>
+</td><td valign="top"><h3><a href="../target/643445114.html#CLONES_SHAAKTI">Targets</a></h3><b><img style="vertical-align:middle" class="toIs hardCounter COMMANDERLUKESKYWALKER-i"/>Rebels (CLS L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter QIRA-i"/>Qi'ra L</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter MOTHERTALZIN-i"/>Nightsisters (Talzin L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter BASTILASHAN-i"/>Jedi (Bastila L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter VEERS-i"/>Imperial Troopers</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter KYLORENUNMASKED-i"/>First Order (KRU L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter EMPERORPALPATINE-i"/>EP L</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter JANGOFETT-i"/>Bounty Hunters (Jango L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter BOSSK-i"/>Bounty Hunters (Bossk L)</b><br/>
+<img style="vertical-align:middle" class="toIs softCounter DARTHTRAYA-i"/>Sith Triumvirate<br/>
+<img style="vertical-align:middle" class="toIs softCounter DARTHREVAN-i"/>Sith Empire (w/o Malak)<br/>
+<img style="vertical-align:middle" class="toIs softCounter GRIEVOUS-i"/>Separatist Droids<br/>
+<img style="vertical-align:middle" class="toIs softCounter JEDIKNIGHTREVAN-i"/>Jedi (Revan L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter PADMEAMIDALA-i"/>Galactic Republic<br/>
+</td></tr>
+</table>
+</td></tr>
+<tr id="SionSolo (Counter)" onclick="$('#SION_SOLO_details').toggle()" class="squadRow viable"><td data-order="SionSolo (Counter)" align="center"><a href="../target/643445114.html#SION_SOLO"><img class="toI squad DARTHSION-i" title="SionSolo (Counter)"/></a><br/>SionSolo (Counter)</td><td data-order="offense"><img src="../../i/ls24.png"/></td><td data-order="26716">26k</td><td nowrap style="position: relative"><div style="display: flex"><div class="toT"><img class="toI squad DARTHSION-i"><br/>zSion</div><div style="margin-left: 10px">&#11088;</div></div>
+<span style="position: absolute; top: 10px; right: 10px; font-size: 150%;">&#9432;</span>
+<table id="SION_SOLO_details" class="toggleable detailsTable">
+<tr class="details">
+<td valign="top"><h3>Counter</h3></td><td valign="top"><h3><a href="../target/643445114.html#SION_SOLO">Targets</a></h3><img style="vertical-align:middle" class="toIs softCounter CHIEFCHIRPA-i"/>Ewoks<br/>
+</td></tr>
+</table>
+</td></tr>
+<tr id="Traya" onclick="$('#SITH_TRI_details').toggle()" class="squadRow distinct viable"><td data-order="Traya" align="center"><a href="../target/643445114.html#SITH_TRI"><img class="toI squad DARTHTRAYA-i" title="Traya"/></a><br/>Traya</td><td data-order="offense"><img src="../../i/ls24.png"/></td><td data-order="124239">124k</td><td nowrap style="position: relative"><div style="display: flex"><div class="toT"><img class="toI squad DARTHTRAYA-i"><br/>zzTraya</div> <div class="toT"><img class="toI squad DARTHNIHILUS-i"><br/>zDN</div> <div class="toT"><img class="toI squad DARTHSION-i"><br/>zSion</div> <div class="toT"><img class="toI squad SITHTROOPER-i"><br/>Sith Empire Trooper G10</div> <div class="toT"><img class="toI squad GRANDADMIRALTHRAWN-i"><br/>zThrawn</div><div style="margin-left: 10px">&#11088;</div></div>
+<span style="position: absolute; top: 10px; right: 10px; font-size: 150%;">&#9432;</span>
+<table id="SITH_TRI_details" class="toggleable detailsTable">
+<tr class="details"><td colspan="2"><h3>Subs</h3>Bastila Shan (Fallen), Count Dooku, Emperor Palpatine, Sith Assassin, Enfys Nest, Grand Moff Tarkin (L), Darth Vader, Any leftover Sith</td></tr>
+<tr class="details"><td colspan="2"><h3>Description</h3>Defensive lead that cripples the other team (Isolate, Pain, debuff removal).</td></tr>
+<tr class="details">
+<td valign="top"><h3>Counter</h3><b><img style="vertical-align:middle" class="toIs hardCounter COMMANDERLUKESKYWALKER-i"/>Rebels (CLS L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter JEDIKNIGHTREVAN-i"/>Jedi (Revan L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter EMPERORPALPATINE-i"/>EP (Anti-Traya)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter GRANDADMIRALTHRAWN-i"/>Magma</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter DARTHREVAN-i"/>Sith Empire (w/o Malak)</b><br/>
+<img style="vertical-align:middle" class="toIs softCounter REYJEDITRAINING-i"/>Resistance (JTR L w/ Droids)<br/>
+<img style="vertical-align:middle" class="toIs softCounter SHAAKTI-i"/>Clones (Shaak Ti L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter WEDGEANTILLES-i"/>Rebels (Danger Zone)<br/>
+<img style="vertical-align:middle" class="toIs softCounter BASTILASHAN-i"/>Jedi (Bastila L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter JANGOFETT-i"/>Bounty Hunters (Jango L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter KYLORENUNMASKED-i"/>First Order (KRU L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter CHIEFCHIRPA-i"/>Ewoks (w/ C-3PO)<br/>
+</td><td valign="top"><h3><a href="../target/643445114.html#SITH_TRI">Targets</a></h3><b><img style="vertical-align:middle" class="toIs hardCounter REYJEDITRAINING-i"/>Resistance (JTR L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter QIRA-i"/>Qi'ra L (w/ Nest and Zaalbar)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter QIRA-i"/>Qi'ra L</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter CARTHONASI-i"/>Old Republic (Carth L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter ASAJVENTRESS-i"/>Nightsisters (w/ Nest)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter MOTHERTALZIN-i"/>Nightsisters (Talzin L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter BASTILASHAN-i"/>Jedi (Bastila L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter VEERS-i"/>Imperial Troopers</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter GEONOSIANBROODALPHA-i"/>Geonosians</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter PADMEAMIDALA-i"/>Galactic Republic</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter CHIEFCHIRPA-i"/>Ewoks</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter ENFYSNEST-i"/>Enfys Nest (solo)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter SHAAKTI-i"/>Clones (Shaak Ti L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter JANGOFETT-i"/>Bounty Hunters (Jango L)</b><br/>
+<img style="vertical-align:middle" class="toIs softCounter DARTHREVAN-i"/>Sith Empire (w/o Malak)<br/>
+<img style="vertical-align:middle" class="toIs softCounter NUTEGUNRAY-i"/>Separatists (Nute L w/ Nest)<br/>
+<img style="vertical-align:middle" class="toIs softCounter GRIEVOUS-i"/>Separatist Droids<br/>
+<img style="vertical-align:middle" class="toIs softCounter COMMANDERLUKESKYWALKER-i"/>Rebels (CLS L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter JEDIKNIGHTREVAN-i"/>Jedi (Revan L)<br/>
+</td></tr>
+</table>
+</td></tr>
+<tr id="Troopers" onclick="$('#IT_details').toggle()" class="squadRow distinct viable"><td data-order="Troopers" align="center"><a href="../target/643445114.html#IT"><img class="toI squad VEERS-i" title="Troopers"/></a><br/>Troopers</td><td data-order="offense"><img src="../../i/ls24.png"/></td><td data-order="129405">129k</td><td nowrap style="position: relative"><div style="display: flex"><div class="toT"><img class="toI squad VEERS-i"><br/>zVeers</div> <div class="toT"><img class="toI squad COLONELSTARCK-i"><br/>zStarck</div> <div class="toT"><img class="toI squad RANGETROOPER-i"><br/>Range Trooper</div> <div class="toT"><img class="toI squad DARKTROOPER-i"><br/>zDark Trooper</div> <div class="toT"><img class="toI squad ADMIRALPIETT-i"><br/>zzPiett</div><div style="margin-left: 10px">&#11088;</div></div>
+<span style="position: absolute; top: 10px; right: 10px; font-size: 150%;">&#9432;</span>
+<table id="IT_details" class="toggleable detailsTable">
+<tr class="details"><td colspan="2"><h3>Subs</h3>Grand Admiral Thrawn, Stormtrooper, Shoretrooper</td></tr>
+<tr class="details"><td colspan="2"><h3>Description</h3>Fast, offensive team that's focused on getting a kill to gain massive turn meter.  Death Trooper's Deathmark makes sequential kills easier.  This team isn't effective against tankier squads or squads that require more than two dispels.</td></tr>
+<tr class="details">
+<td valign="top"><h3>Counter</h3><b><img style="vertical-align:middle" class="toIs hardCounter CHIEFCHIRPA-i"/>Ewoks</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter SHAAKTI-i"/>Clones (Shaak Ti L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter REYJEDITRAINING-i"/>Resistance (JTR L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter COMMANDERLUKESKYWALKER-i"/>Rebels (CLS Trio + Chaze)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter PADMEAMIDALA-i"/>Galactic Republic</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter DARTHTRAYA-i"/>Sith Triumvirate</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter DARTHREVAN-i"/>Sith Empire (w/o Malak)</b><br/>
+<img style="vertical-align:middle" class="toIs softCounter ENFYSNEST-i"/>Enfys Nest (solo)<br/>
+<img style="vertical-align:middle" class="toIs softCounter CT7567-i"/>Rex/Wampa<br/>
+<img style="vertical-align:middle" class="toIs softCounter MAUL-i"/>Sith (Maul L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter VEERS-i"/>Imperial Troopers<br/>
+</td><td valign="top"><h3><a href="../target/643445114.html#IT">Targets</a></h3><b><img style="vertical-align:middle" class="toIs hardCounter JYNERSO-i"/>Rogue One</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter HERASYNDULLAS3-i"/>Phoenix</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter CHIEFCHIRPA-i"/>Ewoks</b><br/>
+<img style="vertical-align:middle" class="toIs softCounter CARTHONASI-i"/>Old Republic (Carth L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter ASAJVENTRESS-i"/>Nightsisters (w/ Nest)<br/>
+<img style="vertical-align:middle" class="toIs softCounter MOTHERTALZIN-i"/>Nightsisters (Talzin L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter VEERS-i"/>Imperial Troopers<br/>
+<img style="vertical-align:middle" class="toIs softCounter KYLORENUNMASKED-i"/>First Order (KRU L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter EMPERORPALPATINE-i"/>EP L<br/>
+<img style="vertical-align:middle" class="toIs softCounter BOSSK-i"/>Bounty Hunters (Bossk L)<br/>
+</td></tr>
+</table>
+</td></tr>
+<tr id="Wampa (Counter)" onclick="$('#REX_WAMPA_details').toggle()" class="squadRow gearNeeded"><td data-order="Wampa (Counter)" align="center"><a href="../target/643445114.html#REX_WAMPA"><img class="toI squad CT7567-i" title="Wampa (Counter)"/></a><br/>Wampa (Counter)</td><td data-order="offense"><img src="../../i/ls24.png"/></td><td data-order="109812">109k</td><td nowrap style="position: relative"><div style="display: flex" title="Rex: gear level must be at least 7.  " onclick="$('#squad38').toggle()"><div class="toT"><img class="toI squad CT7567-i"><br/>Rex G6</div> <div class="toT"><img class="toI squad WAMPA-i"><br/>zzWampa</div> <div class="toT"><img class="toI squad DIRECTORKRENNIC-i"><br/>Krennic</div> <div class="toT"><img class="toI squad HERMITYODA-i"><br/>zzHYoda</div> <div class="toT"><img class="toI squad FIRSTORDEROFFICERMALE-i"><br/>FOO</div><div style="margin-left: 10px"><img src="../../i/tractor24.png"></div></div><div id="squad38" class="toggleable verbage"><br/><b>Rex: gear level must be at least 7.  </b></div>
+<span style="position: absolute; top: 10px; right: 10px; font-size: 150%;">&#9432;</span>
+<table id="REX_WAMPA_details" class="toggleable detailsTable">
+<tr class="details"><td colspan="2"><h3>Subs</h3>Baze Malbus + Chirrut Îmwe, R2-D2, Enfys Nest, Darth Nihilus, Mother Talzin, Han Solo + Chewbacca, General Kenobi, Barriss Offee, Visas Marr, Obi-Wan Kenobi (Old Ben), Sun Fac, First Order Officer</td></tr>
+<tr class="details">
+<td valign="top"><h3>Counter</h3></td><td valign="top"><h3><a href="../target/643445114.html#REX_WAMPA">Targets</a></h3><b><img style="vertical-align:middle" class="toIs hardCounter CARTHONASI-i"/>Old Republic (Carth L)</b><br/>
+<img style="vertical-align:middle" class="toIs softCounter COMMANDERLUKESKYWALKER-i"/>Rebels (CLS L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter ASAJVENTRESS-i"/>Nightsisters (w/ Nest)<br/>
+<img style="vertical-align:middle" class="toIs softCounter VEERS-i"/>Imperial Troopers<br/>
+<img style="vertical-align:middle" class="toIs softCounter GENERALKENOBI-i"/>General Kenobi L<br/>
+<img style="vertical-align:middle" class="toIs softCounter KYLORENUNMASKED-i"/>First Order (KRU L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter CHIEFCHIRPA-i"/>Ewoks<br/>
+</td></tr>
+</table>
+</td></tr>
+<tr id="Wiggs" onclick="$('#REBELS_DANGER_ZONE_details').toggle()" class="squadRow gearNeeded"><td data-order="Wiggs" align="center"><a href="../target/643445114.html#REBELS_DANGER_ZONE"><img class="toI squad WEDGEANTILLES-i" title="Wiggs"/></a><br/>Wiggs</td><td data-order="offense"><img src="../../i/ls24.png"/></td><td data-order="118308">118k</td><td nowrap style="position: relative"><div style="display: flex" title="Wedge: should be G9 (G8).  " onclick="$('#squad39').toggle()"><div class="toT"><img class="toI squad WEDGEANTILLES-i"><br/>Wedge G8</div> <div class="toT"><img class="toI squad BIGGSDARKLIGHTER-i"><br/>Biggs</div> <div class="toT"><img class="toI squad COMMANDERLUKESKYWALKER-i"><br/>zzzCLS</div> <div class="toT"><img class="toI squad CHEWBACCALEGENDARY-i"><br/>zzChewbacca</div> <div class="toT"><img class="toI squad C3POLEGENDARY-i"><br/>zzC-3PO</div><div style="margin-left: 10px"><img src="../../i/tractor24.png"></div></div><div id="squad39" class="toggleable verbage"><br/><b>Wedge: should be G9 (G8).  </b></div>
+<span style="position: absolute; top: 10px; right: 10px; font-size: 150%;">&#9432;</span>
+<table id="REBELS_DANGER_ZONE_details" class="toggleable detailsTable">
+<tr class="details"><td colspan="2"><h3>Subs</h3>Ahsoka Tano (Fulcrum), Ezra Bridger, C-3PO, Princess Leia</td></tr>
+<tr class="details">
+<td valign="top"><h3>Counter</h3></td><td valign="top"><h3><a href="../target/643445114.html#REBELS_DANGER_ZONE">Targets</a></h3><img style="vertical-align:middle" class="toIs softCounter DARTHTRAYA-i"/>Sith Triumvirate<br/>
+<img style="vertical-align:middle" class="toIs softCounter KYLORENUNMASKED-i"/>First Order (KRU L)<br/>
+</td></tr>
+</table>
+</td></tr>
+<tr id="padme" onclick="$('#GALACTIC_REPUBLIC_details').toggle()" class="squadRow viable"><td data-order="padme" align="center"><a href="../target/643445114.html#GALACTIC_REPUBLIC"><img class="toI squad PADMEAMIDALA-i" title="padme"/></a><br/>padme</td><td data-order="defense"><img src="../../i/shield24.png"/></td><td data-order="117258">117k</td><td nowrap style="position: relative"><div style="display: flex"><div class="toT"><img class="toI squad PADMEAMIDALA-i"><br/>zzPadme G8</div> <div class="toT"><img class="toI squad GENERALKENOBI-i"><br/>GK</div> <div class="toT"><img class="toI squad ANAKINKNIGHT-i"><br/>zJKA</div> <div class="toT"><img class="toI squad AHSOKATANO-i"><br/>zAhsoka</div> <div class="toT"><img class="toI squad C3POLEGENDARY-i"><br/>zzC-3PO</div><div style="margin-left: 10px">&#11088;</div></div>
+<span style="position: absolute; top: 10px; right: 10px; font-size: 150%;">&#9432;</span>
+<table id="GALACTIC_REPUBLIC_details" class="toggleable detailsTable">
+<tr class="details"><td colspan="2"><h3>Subs</h3>Grand Master Yoda, C-3PO, CT-7567 "Rex", Clone Wars Chewbacca, CT-5555 "Fives",</td></tr>
+<tr class="details"><td colspan="2"><h3>Description</h3>Super tanky team, immunity to debuffs (with many options to dispel), protection-up spamming, damage based on % of target's health, and benefits when enemies attack out of turn.</td></tr>
+<tr class="details">
+<td valign="top"><h3>Counter</h3><b><img style="vertical-align:middle" class="toIs hardCounter DARTHTRAYA-i"/>Sith Triumvirate</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter GRIEVOUS-i"/>Separatist Droids (w/ Wat)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter GRIEVOUS-i"/>Separatist Droids</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter REYJEDITRAINING-i"/>Resistance (Heroes)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter PADMEAMIDALA-i"/>Galactic Republic</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter PADMEAMIDALA-i"/>Galactic Republic (w/ C-3PO)</b><br/>
+<img style="vertical-align:middle" class="toIs softCounter JEDIKNIGHTREVAN-i"/>Jedi (Revan L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter EMPERORPALPATINE-i"/>EP L<br/>
+<img style="vertical-align:middle" class="toIs softCounter DARTHREVAN-i"/>Sith Empire (w/ Malak)<br/>
+<img style="vertical-align:middle" class="toIs softCounter ENFYSNEST-i"/>Enfys Nest (solo)<br/>
+<img style="vertical-align:middle" class="toIs softCounter SHAAKTI-i"/>Clones (Shaak Ti L)<br/>
+</td><td valign="top"><h3><a href="../target/643445114.html#GALACTIC_REPUBLIC">Targets</a></h3><b><img style="vertical-align:middle" class="toIs hardCounter DARTHREVAN-i"/>Sith Empire (w/o Malak)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter COMMANDERLUKESKYWALKER-i"/>Rebels (CLS L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter CARTHONASI-i"/>Old Republic (Carth L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter MOTHERTALZIN-i"/>Nightsisters (Talzin L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter JEDIKNIGHTREVAN-i"/>Jedi (Revan L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter VEERS-i"/>Imperial Troopers</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter PADMEAMIDALA-i"/>Galactic Republic</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter KYLORENUNMASKED-i"/>First Order (KRU L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter CHIEFCHIRPA-i"/>Ewoks</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter SHAAKTI-i"/>Clones (Shaak Ti L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter JANGOFETT-i"/>Bounty Hunters (Jango L)</b><br/>
+<img style="vertical-align:middle" class="toIs softCounter GRIEVOUS-i"/>Separatist Droids<br/>
+<img style="vertical-align:middle" class="toIs softCounter GEONOSIANBROODALPHA-i"/>Geonosians<br/>
+</td></tr>
+</table>
+</td></tr>
+<tr id="zEP" onclick="$('#EP_details').toggle()" class="squadRow viable"><td data-order="zEP" align="center"><a href="../target/643445114.html#EP"><img class="toI squad EMPERORPALPATINE-i" title="zEP"/></a><br/>zEP</td><td data-order="both"><img src="../../i/ls24.png"/><img src="../../i/shield24.png"/></td><td data-order="129041">129k</td><td nowrap style="position: relative"><div style="display: flex"><div class="toT"><img class="toI squad EMPERORPALPATINE-i"><br/>zzEP</div> <div class="toT"><img class="toI squad VADER-i"><br/>zzzVader</div> <div class="toT"><img class="toI squad GRANDMOFFTARKIN-i"><br/>Tarkin</div> <div class="toT"><img class="toI squad TIEFIGHTERPILOT-i"><br/>TFP G9</div> <div class="toT"><img class="toI squad MARAJADE-i"><br/>zzMara Jade, The Emperor's Hand</div><div style="margin-left: 10px">&#11088;</div></div>
+<span style="position: absolute; top: 10px; right: 10px; font-size: 150%;">&#9432;</span>
+<table id="EP_details" class="toggleable detailsTable">
+<tr class="details"><td colspan="2"><h3>Subs</h3>Count Dooku, Death Trooper, Director Krennic</td></tr>
+<tr class="details"><td colspan="2"><h3>Description</h3>Emperor Palpatine's leadership grants Empire and Sith allies potency and max health.  It reduces potency and evasion for Jedi and Rebel enemies.  This is a debuff-driven team, granting Empire allies turn meter for applying debuffs, Sith allies health for applying debuffs, and turn meter for both when enemy debuffs expire.</td></tr>
+<tr class="details">
+<td valign="top"><h3>Counter</h3><b><img style="vertical-align:middle" class="toIs hardCounter JANGOFETT-i"/>Bounty Hunters (Jango L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter BASTILASHAN-i"/>Jedi (Bastila L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter SHAAKTI-i"/>Clones (Shaak Ti L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter COMMANDERLUKESKYWALKER-i"/>Rebels (CLS L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter DARTHREVAN-i"/>Sith Empire (w/o Malak)</b><br/>
+<img style="vertical-align:middle" class="toIs softCounter REYJEDITRAINING-i"/>Resistance (JTR L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter VEERS-i"/>Imperial Troopers<br/>
+<img style="vertical-align:middle" class="toIs softCounter BOSSK-i"/>Bounty Hunters (Bossk L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter CT7567-i"/>Rex L<br/>
+</td><td valign="top"><h3><a href="../target/643445114.html#EP">Targets</a></h3><b><img style="vertical-align:middle" class="toIs hardCounter HERASYNDULLAS3-i"/>Phoenix</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter CARTHONASI-i"/>Old Republic (Carth L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter ASAJVENTRESS-i"/>Nightsisters (w/ Nest)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter MOTHERTALZIN-i"/>Nightsisters (Talzin L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter CHIEFCHIRPA-i"/>Ewoks</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter ENFYSNEST-i"/>Enfys Nest (solo)</b><br/>
+<img style="vertical-align:middle" class="toIs softCounter NUTEGUNRAY-i"/>Separatists (Nute L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter GRIEVOUS-i"/>Separatist Droids<br/>
+<img style="vertical-align:middle" class="toIs softCounter JYNERSO-i"/>Rogue One<br/>
+<img style="vertical-align:middle" class="toIs softCounter QIRA-i"/>Qi'ra L (w/ Nest and Zaalbar)<br/>
+<img style="vertical-align:middle" class="toIs softCounter QIRA-i"/>Qi'ra L<br/>
+<img style="vertical-align:middle" class="toIs softCounter GEONOSIANBROODALPHA-i"/>Geonosians<br/>
+<img style="vertical-align:middle" class="toIs softCounter PADMEAMIDALA-i"/>Galactic Republic<br/>
+<img style="vertical-align:middle" class="toIs softCounter SHAAKTI-i"/>Clones (Shaak Ti L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter JANGOFETT-i"/>Bounty Hunters (Jango L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter BOSSK-i"/>Bounty Hunters (Bossk L)<br/>
+</td></tr>
+</table>
+</td></tr>
+<tr id="zMaul" onclick="$('#SITH_MAUL_details').toggle()" class="squadRow gearNeeded"><td data-order="zMaul" align="center"><a href="../target/643445114.html#SITH_MAUL"><img class="toI squad MAUL-i" title="zMaul"/></a><br/>zMaul</td><td data-order="offense"><img src="../../i/ls24.png"/></td><td data-order="101946">101k</td><td nowrap style="position: relative"><div style="display: flex" title="Darth Maul: missing zetas.  Nest: gear level must be at least 8.  " onclick="$('#squad42').toggle()"><div class="toT"><img class="toI squad MAUL-i"><br/>Darth Maul</div> <div class="toT"><img class="toI squad DARTHSIDIOUS-i"><br/>zSidious</div> <div class="toT"><img class="toI squad COUNTDOOKU-i"><br/>Dooku</div> <div class="toT"><img class="toI squad SITHTROOPER-i"><br/>Sith Empire Trooper G10</div> <div class="toT"><img class="toI squad ENFYSNEST-i"><br/>Nest G5</div><div style="margin-left: 10px"><img src="../../i/tractor24.png"></div></div><div id="squad42" class="toggleable verbage"><br/><b>Darth Maul: missing zetas.  Nest: gear level must be at least 8.  </b></div>
+<span style="position: absolute; top: 10px; right: 10px; font-size: 150%;">&#9432;</span>
+<table id="SITH_MAUL_details" class="toggleable detailsTable">
+<tr class="details"><td colspan="2"><h3>Subs</h3>Any leftover Sith</td></tr>
+<tr class="details"><td colspan="2"><h3>Description</h3>Stealthy team with mass dispel of debuffs, fast turn meter gain, first turn advantage, and lots of AoE.  Dazing Maul is effective.</td></tr>
+<tr class="details">
+<td valign="top"><h3>Counter</h3><b><img style="vertical-align:middle" class="toIs hardCounter BOSSK-i"/>Bounty Hunters (Bossk L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter CT7567-i"/>Rex L</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter MOTHERTALZIN-i"/>Nightsisters (Talzin L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter JANGOFETT-i"/>Bounty Hunters (Jango L)</b><br/>
+<b><img style="vertical-align:middle" class="toIs hardCounter DARTHREVAN-i"/>Sith Empire (w/o Malak)</b><br/>
+<img style="vertical-align:middle" class="toIs softCounter BASTILASHAN-i"/>Jedi (Bastila L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter GENERALKENOBI-i"/>General Kenobi L<br/>
+<img style="vertical-align:middle" class="toIs softCounter HERASYNDULLAS3-i"/>Phoenix<br/>
+</td><td valign="top"><h3><a href="../target/643445114.html#SITH_MAUL">Targets</a></h3><b><img style="vertical-align:middle" class="toIs hardCounter ENFYSNEST-i"/>Enfys Nest (solo)</b><br/>
+<img style="vertical-align:middle" class="toIs softCounter REYJEDITRAINING-i"/>Resistance (JTR L w/ Droids)<br/>
+<img style="vertical-align:middle" class="toIs softCounter HERASYNDULLAS3-i"/>Phoenix<br/>
+<img style="vertical-align:middle" class="toIs softCounter MOTHERTALZIN-i"/>Nightsisters (Talzin L)<br/>
+<img style="vertical-align:middle" class="toIs softCounter VEERS-i"/>Imperial Troopers<br/>
+<img style="vertical-align:middle" class="toIs softCounter CHIEFCHIRPA-i"/>Ewoks<br/>
+</td></tr>
+</table>
+</td></tr>
+</table><script>
+    window.goatcounter = { path: function(p) { return p.replace(/[^/]+\.html$/, '') } }
+</script><br/>
+<font size="-2">Generated 2024-05-12 16:09:18 +0000</font>
+<script data-goatcounter="https://gorgatron.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>

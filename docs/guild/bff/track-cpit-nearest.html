@@ -1,0 +1,81 @@
+<meta charset="UTF-8">
+<meta name="robots" content="noindex"><style type="text/css">
+body {
+ background-image: url("../../i/more_faded_logo.jpg");
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+</style><style type="text/css">
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  padding: 8px;
+}
+
+tr:nth-child(even) {background: #dddddd}
+tr:nth-child(odd) {background: #ffffff}
+
+.toggleable {
+    display: none;
+}
+</style><link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.1.5/css/fixedHeader.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.6/css/fixedColumns.dataTables.min.css" />
+<script type="text/javascript" language="javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedheader/3.1.5/js/dataTables.fixedHeader.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedcolumns/3.2.6/js/dataTables.fixedColumns.min.js"></script><title>BRG Alliance Guild Reports: CPIT Farming Progress Tracker</title>
+<div style="display: flex; align-items:baseline"><img src="../../i/simple_logo_48.jpg"/>&nbsp;<h1>Alliance Guild Reports: CPIT Farming Progress Tracker</h1></div>
+
+<div style="background-color: #f0f0f0; border: solid red; padding: 10px; border-radius: 10px">
+<a href="../../alliance/index.html">Alliance</a> |
+<div style="float:right;"><a href="../../r">Resources</a></div>
+<a href="index.html">BRG Forced Friends</a>
+</div>
+<br/><h2>CPIT Farming Progress Tracker BRG Forced Friends</h2>
+
+<p>
+Progress on close CPIT teams.  Note that these may overlap with other teams.
+
+<p>
+<button onclick="$('.complete').hide(); $('.working').show()">hide completed</button>
+<button onclick="$('.complete').show(); $('.working').hide()">hide incomplete</button>
+<button onclick="$('.complete').show(); $('.working').show()">show all</button>
+
+<br/>
+    
+<link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.0.0/css/buttons.dataTables.min.css" />
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/buttons/2.0.0/js/dataTables.buttons.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/buttons/2.0.0/js/buttons.html5.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script><script>
+$(document).ready(function() {
+    var urlParams = new URLSearchParams(window.location.search)
+    var show = urlParams.get('show')
+    if (show == "working") {
+        $('.complete').hide()
+    } else if (show == "complete") {
+        $('.working').hide()
+    }
+});
+</script><table class="stripe" id="stats"><thead><th>Player</th><th>Ally Code</th><th>Starting Gear Needed</th><th>Progress</th><th>Current Gear Needed</th><th>Team</th></thead><tr class="complete" style="background-color: #ceebfd;"><td>Wutdafuhk</td><td>985214928</td><td>6</td><td>6</td><td>0</td><td><b>Rebels (2%)</b>: CLS, Chewbacca, Han, Chewpio, C-3PO</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Wutdafuhk</td><td>985214928</td><td>0</td><td>0</td><td>0</td><td><b>Shaak 6%</b>: Shaak Ti, Fives, Rex, Echo (501st), ARC Trooper</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Wutdafuhk</td><td>985214928</td><td>0</td><td>0</td><td>0</td><td><b>SLKR+FO 9%</b>: SL Kylo, Hux, FOST, Sith Trooper, Thrawn</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Wutdafuhk</td><td>985214928</td><td>0</td><td>0</td><td>0</td><td><b>Padme 3%</b>: Padme, JKA, GK, Ahsoka, GMY</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>arcabryn</td><td>393679868</td><td>0</td><td>0</td><td>0</td><td><b>JKR + Rey (7%)</b>: JKR, Rey, Resistance Hero Finn, Resistance Hero Poe, GAS</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>arcabryn</td><td>393679868</td><td>0</td><td>0</td><td>0</td><td><b>Shaak 6%</b>: Shaak Ti, Fives, Rex, Echo (501st), ARC Trooper</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>arcabryn</td><td>393679868</td><td>0</td><td>0</td><td>0</td><td><b>Padme 3%</b>: Padme, JKA, GK, Ahsoka, GMY</td></tr><tr class="working" style=""><td>arcabryn</td><td>393679868</td><td>31</td><td>0</td><td>31</td><td><b>Imperial Troopers 5%</b>: <b>Veers R3</b>, <b>Admiral Piett R3</b>, <b>Starck G11</b>, <b>Range Trooper G7 5&#9733;</b>, <b>Dark Trooper G9</b></td></tr><tr class="working" style=""><td>F2Black</td><td>157242719</td><td>6</td><td>0</td><td>6</td><td><b>Shaak 6%</b>: <b>Shaak Ti G12</b>, Fives, Rex, Echo (501st), ARC Trooper</td></tr><tr class="working" style=""><td>Fish Salami</td><td>919188671</td><td>25</td><td>0</td><td>25</td><td><b>Rebels (2%)</b>: CLS, <b>Chewbacca G12</b>, <b>Han G12</b>, <b>Chewpio G11 3&#9733;</b>, <b>R2-D2 G12</b></td></tr></table><script>var config = {
+    "paging":   false,
+    "info":     false,
+    bFilter: false,
+    fixedHeader: true,
+    dom: 'Bfrtip',
+    buttons: [
+        'copyHtml5',
+        'excelHtml5',
+        'csvHtml5',
+    ],
+}
+
+table = $('#stats').DataTable(config);</script><br/>
+<font size="-2">Generated 2022-04-29 04:46:32 +0000</font>
+<script data-goatcounter="https://gorgatron.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>

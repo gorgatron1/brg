@@ -1,0 +1,70 @@
+<style type="text/css">
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  padding: 8px;
+}
+
+tr:nth-child(even) {background: #dddddd}
+tr:nth-child(odd) {background: #ffffff}
+
+.toggleable {
+    display: none;
+}
+</style><link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.1.5/css/fixedHeader.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.6/css/fixedColumns.dataTables.min.css" />
+<script type="text/javascript" language="javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedheader/3.1.5/js/dataTables.fixedHeader.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedcolumns/3.2.6/js/dataTables.fixedColumns.min.js"></script>    <script>
+    $(document).ready( function () {
+        $('#schedule').DataTable({
+        "paging":   false,
+        "info":     false,
+        
+        
+        
+        fixedColumns: { leftColumns: 1 }, scrollX: true,
+        
+        });
+    } );
+    </script><title>BRG Alliance Guild Reports: HSTR Schedule</title>
+<div style="display: flex; align-items:baseline"><img src="../../i/simple_logo_48.jpg"/>&nbsp;<h1>Alliance Guild Reports: HSTR Schedule</h1></div>
+
+<div style="background-color: #f0f0f0; border: solid red; padding: 10px; border-radius: 10px">
+<a href="../../alliance/index.html">Alliance</a> |
+<a href="../../alliance/characters.html">Characters</a> |
+
+<div style="float:right;"><a href="../../r">Resources</a></div>
+<a href="index.html">Back</a>
+</div>
+<br/>
+Note: some teams may overlap.
+<br/>
+<br/>
+<button onclick="$('.not-viable').text('&nbsp;').css('background-color', '')">remove not ready</button><br/>
+
+
+<table id="schedule" class="display" style="font-size: 75%">
+    <thead>
+        <tr>
+        <th>Player</th>
+        <th>Team Count</th><th>P1</th><th>P2</th><th>P2</th><th>P2</th><th>P2</th><th>P3</th><th>P3</th><th>P3</th><th>P3</th><th>P4</th><th>P4</th>        </tr>
+    </thead>
+    <tbody><tr><td nowrap>Kai Dannik</td><td>6</td><td nowrap data-order="137217">(JTR) zzzJTR R7, zzC-3PO R5, zBB-8 G11, zzR2-D2 R7, zBarriss G12</td><td nowrap data-order="154247">(Revan) zzzJKR R7, zzGMY R7, zBS R5, zJolee R7, zzHYoda R5</td><td nowrap data-order="132093">(Sith) zzEP R1, zzThrawn R5, zSion R4, Sith Empire Trooper R5, zzzVader R3</td><td nowrap data-order="104786" class="not-viable" style="background-color: yellow;">(MG Leia) Ackbar G9, zLeia R3, zGK R5, Sun Fac R1, zBarriss G12</td><td nowrap data-order="70878" class="not-viable" style="background-color: red;">(Phoenix) Hera G10, Ezra G10, Sabine 5* G7, zKanan G9, Zeb G8</td><td nowrap data-order="138724">(ChexMix) zzzCLS R6, zHan R6, DT R3, zJKA R4, zzChewbacca R7</td><td nowrap data-order="110394">(BH) zzBossk R1, Greedo G12, Poggle R1, zBoba G12, zLeia R3</td><td nowrap data-order="77020" class="not-viable" style="background-color: yellow;">(ROLO) zROLO R5, zPao G12, Spirit G1, FOTP G9, TFP G7</td><td nowrap data-order="98010" class="not-viable" style="background-color: yellow;">(Deathstorm) zzMT G12, zzAV R3, zDaka G12, Zombie G12, Initiate G6</td><td nowrap data-order="105461">(NS) zzAV R3, zDaka G12, Talia G11, Zombie G12, zzMT G12</td><td nowrap data-order="67884" class="not-viable" style="background-color: yellow;">(FO) KRU G8, Kylo G8, FOSFTP G8, Phasma G7, FOTP G9</td></tr>
+<tr><td nowrap>Kale Raxl</td><td>11</td><td nowrap data-order="145484">(JTR) zzzJTR R7, zzC-3PO R7, zzBB-8 G12, zzR2-D2 R7, zFinn G12</td><td nowrap data-order="146408">(Revan) zzzJKR R5, zGMY R8, zBS R5, zJolee R5, zzHYoda R5</td><td nowrap data-order="119456">(MG Leia) Ackbar G12, zLeia R4, zGK R8, zzThrawn G12, zBarriss G12</td><td nowrap data-order="105270">(Phoenix) zHera R5, zEzra G12, zSabine G11, zKanan G12, zZeb G12</td><td nowrap data-order="106525">(Sith) zzEP R7, zSion G11, zDN G12, Sith Empire Trooper G11, Sith Marauder G12</td><td nowrap data-order="126362">(ChexMix) zzzCLS R7, zHan R7, DT G10, zJKA R5, Chirrut G12</td><td nowrap data-order="125768">(BH) zzBossk R5, zGreedo G12, Poggle R5, zBoba R4, zLeia R4</td><td nowrap data-order="101719">(ROLO) zROLO R4, zPao R3, zFOTP G12, TFP G12, Acolyte G12</td><td nowrap data-order="118550">(Deathstorm-JKA) zzMT G12, zzAV R5, zDaka G12, zJKA R5, zInitiate G11</td><td nowrap data-order="108665">(NS) zzAV R5, zDaka G12, Talia G12, Zombie G12, zzMT G12</td><td nowrap data-order="121167">(FO) zzKRU R7, zKylo R1, FOE R3, zFOST G12, zHux R5</td></tr>
+<tr><td nowrap>Kizz</td><td>5</td><td nowrap data-order="0">&nbsp;</td><td nowrap data-order="144601">(Revan) zzzJKR R7, zzGMY R5, zBS R5, zJolee R5, zzHYoda R3</td><td nowrap data-order="117777">(Sith) zzEP R4, zzThrawn R4, zzDN R5, Sith Empire Trooper G12, Sith Marauder G12</td><td nowrap data-order="88495" class="not-viable" style="background-color: yellow;">(MG Leia) Ackbar G11, Leia G12, zGK R4, Sun Fac G8, Barriss G9</td><td nowrap data-order="75665" class="not-viable" style="background-color: yellow;">(Phoenix) Hera G12, Ezra G12, Sabine G8, Kanan G8, Zeb G8</td><td nowrap data-order="110330" class="not-viable" style="background-color: yellow;">(ChexMix) zzzCLS R5, Han G10, DT G9, zJKA R3, zRex R4</td><td nowrap data-order="72935" class="not-viable" style="background-color: yellow;">(ROLO) ROLO G9, Poggle G12, Chirrut G8, Spirit G8, TFP G8</td><td nowrap data-order="80974" class="not-viable" style="background-color: yellow;">(BH) Bossk G12, Greedo G9, Pao G6, zBoba R3, FOTP G6</td><td nowrap data-order="105271">(Deathstorm-JKA) zzMT G12, zzAV G12, zDaka G12, zJKA R3, Initiate G9</td><td nowrap data-order="100633">(NS) zzAV G12, zDaka G12, Talia G12, zzMT G12, Acolyte G10</td><td nowrap data-order="78621">(FO) zzKRU G12, Kylo G8, zPhasma G9, FOE G8, FOST G8</td></tr>
+<tr><td nowrap>Little Porg</td><td>3</td><td nowrap data-order="146318">(JTR) zzzJTR R7, zScav Rey R7, zzBB-8 R7, zzR2-D2 G12, zFinn R5</td><td nowrap data-order="111792">(Revan) zzzJKR G12, zGMY R1, zBS G11, zJolee G11, GK R3</td><td nowrap data-order="123911">(Sith) zzEP R2, zThrawn R2, zSion G12, zzTraya R1, zzVader R4</td><td nowrap data-order="79474" class="not-viable" style="background-color: yellow;">(Phoenix) Hera G10, Ezra G10, zSabine G11, Kanan G10, Zeb G8</td><td nowrap data-order="44787" class="not-viable" style="background-color: red;">(Church of Nute) Nute G1, zLeia G12, Stormtrooper Han G9, Acolyte 3* G2, Wampa G1</td><td nowrap data-order="88534" class="not-viable" style="background-color: yellow;">(ChexMix) zzzCLS G12, zHan G12, DT 3* G1, JKA G10, zzChewbacca R2</td><td nowrap data-order="15346" class="not-viable" style="background-color: yellow;">(ROLO) ROLO G1, Poggle G1, Spirit 4* G2, FOTP 4* G5, Acolyte 3* G2</td><td nowrap data-order="77117" class="not-viable" style="background-color: yellow;">(BH) zzBossk G12, Greedo G7, Pao 5* G1, zBoba G11, zLeia G12</td><td nowrap data-order="29643" class="not-viable" style="background-color: red;">(Deathstorm-JKA) MT 2* G1, AV G1, Daka G1, JKA G10, Initiate G2</td><td nowrap data-order="16073" class="not-viable" style="background-color: red;">(NS) AV G1, Daka G1, Talia 5* G5, Zombie 5* G2, MT 2* G1</td><td nowrap data-order="70455" class="not-viable" style="background-color: yellow;">(FO) zKRU G11, Kylo G8, FOO G7, Phasma G7, FOE G7</td></tr>
+<tr><td nowrap>Tahl Rexick</td><td>0</td><td nowrap data-order="0">&nbsp;</td><td nowrap data-order="90149" class="not-viable" style="background-color: red;">(GK Jedi) zGK R8, zzGMY R8, zEzra G7, Old Ben 3* G1, BS 5* G6</td><td nowrap data-order="75768" class="not-viable" style="background-color: yellow;">(Phoenix2) zHera G8, Chopper G6, zSabine G8, zKanan G8, zZeb G8</td><td nowrap data-order="0">&nbsp;</td><td nowrap data-order="0">&nbsp;</td><td nowrap data-order="66104" class="not-viable" style="background-color: yellow;">(ROLO) ROLO 5* G1, zJKA R7, Boba G9, Spirit G4, FOTP 6* G9</td><td nowrap data-order="58746" class="not-viable" style="background-color: yellow;">(BH) zzBossk G12, Greedo G10, Poggle G11, TFP 2* G4, Acolyte 4* G4</td><td nowrap data-order="0">&nbsp;</td><td nowrap data-order="87497" class="not-viable" style="background-color: red;">(Deathstorm-JKA) zMT G7, zAV G12, Daka G9, zJKA R7, Initiate 5* G7</td><td nowrap data-order="75731" class="not-viable" style="background-color: yellow;">(NS) zAV G12, Daka G9, Talia G7, Zombie G8, zMT G7</td><td nowrap data-order="0">&nbsp;</td></tr>
+<tr><td nowrap>TMONEY</td><td>6</td><td nowrap data-order="139292">(JTR) zzzJTR R7, zzC-3PO R2, zzBB-8 R7, zzR2-D2 G12, RT R5</td><td nowrap data-order="149375">(Revan) zzzJKR R7, zzGMY R7, zBS R6, zJolee R7, zzHYoda R1</td><td nowrap data-order="97556">(Phoenix) zHera G12, zEzra G12, zSabine G12, zKanan G12, Zeb G12</td><td nowrap data-order="82497" class="not-viable" style="background-color: yellow;">(MG Leia) Ackbar G12, Leia G9, zGK R8, Thrawn G9, Barriss G1</td><td nowrap data-order="32865" class="not-viable" style="background-color: red;">(Sith) zzEP G12, Sion 5* G2, DN 4* G2, Sith Empire Trooper 3* G1, Sith Marauder 3* G1</td><td nowrap data-order="101034">(BH) zzBossk R2, Greedo G10, zJKA G12, Chirrut G11, zBoba R1</td><td nowrap data-order="91911" class="not-viable" style="background-color: yellow;">(ChexMix) zzzCLS R1, zHan R1, DT 2* G1, Poggle G12, zzChewbacca R1</td><td nowrap data-order="48709" class="not-viable" style="background-color: yellow;">(ROLO) ROLO G1, Pao 6* G1, TFP G8, Leia G9, Acolyte G9</td><td nowrap data-order="88443" class="not-viable" style="background-color: yellow;">(Deathstorm) zzMT G12, zzAV G12, zDaka G12, Zombie G12, Initiate G1</td><td nowrap data-order="101445">(NS) zzAV G12, zDaka G12, Talia G12, Zombie G12, zzMT G12</td><td nowrap data-order="76810">(FO) zzKRU G12, zKylo G9, FOO G8, FOSFTP G9, FOTP G9</td></tr>
+<tfoot><tr><td></td><td>31</td><td>4</td><td>12</td><td></td><td></td><td></td><td>8</td><td></td><td></td><td></td><td>7</td><td></td></tr></tfoot>
+    </tbody>
+</table><br/>
+<font size="-2">Generated 2024-05-12 16:11:44 +0000</font>
+<script data-goatcounter="https://gorgatron.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>

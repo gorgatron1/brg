@@ -1,0 +1,320 @@
+<style type="text/css">
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  padding: 8px;
+}
+
+tr:nth-child(even) {background: #dddddd}
+tr:nth-child(odd) {background: #ffffff}
+
+.toggleable {
+    display: none;
+}
+</style><link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.1.5/css/fixedHeader.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.6/css/fixedColumns.dataTables.min.css" />
+<script type="text/javascript" language="javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedheader/3.1.5/js/dataTables.fixedHeader.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedcolumns/3.2.6/js/dataTables.fixedColumns.min.js"></script><script src="https://cdn.datatables.net/plug-ins/1.10.25/sorting/absolute.js"></script><title>BRG Alliance Guild Reports: Challenge Rancor Schedule</title>
+<div style="display: flex; align-items:baseline"><img src="../../i/simple_logo_48.jpg"/>&nbsp;<h1>Alliance Guild Reports: Challenge Rancor Schedule</h1></div>
+
+<div style="background-color: #f0f0f0; border: solid red; padding: 10px; border-radius: 10px">
+<a href="../../alliance/index.html">Alliance</a> |
+<div style="float:right;"><a href="../../r">Resources</a></div>
+<a href="index.html">Back</a>
+</div>
+<br/><script>
+function CopyToClipboard(id)
+{
+document.getElementById(id).style.display = 'block';
+var r = document.createRange();
+r.selectNode(document.getElementById(id));
+window.getSelection().removeAllRanges();
+window.getSelection().addRange(r);
+document.execCommand('copy');
+window.getSelection().removeAllRanges();
+document.getElementById(id).style.display = 'none';
+}
+</script><b>Thanks to jraenar#4239 (Porgs) for contributing advice for the teams and phases!</b>
+
+<p>
+This page is full of information about the Challenge Rancor Raid.  Links in the
+header of the table give more information about the teams, where available.
+<a href="https://www.youtube.com/watch?v=7uczv4W7AVk&feature=youtu.be">Darth Kermit's full raid video</a> is always good places to look as well.  Be aware that the raid
+rules changed in April of 2021, so videos and materials about the raid from before
+that time are suspect.
+
+<p>
+Note that the damage estimates are used to build teams, give planners a rough estimate of available damage and give players something to shoot for.  These numbers are usually at the high end of what you will get, but if you consistently fall short, you should ask your guild mates about how to play it!
+<br/>
+<br/>
+Note: some teams may overlap between phases, but teams marked in
+<span style="background-color: #ceebfd">blue</span>
+do not overlap.  Within a phase, teams that are not ready may overlap
+to give an idea of what teams each player <i>could</i> have.
+<p>
+<b>Click on a name to filter to only that player.</b>  Click <a href="?">here</a> to show all players again.
+<p>
+Teams shown in <span style="background-color: #ceebfd">blue</span> are suggested teams to play that phase.  A team might not be suggested because it has units that are preferred in later phases or the suggested team would have been used in an earlier phase.
+Teams shown in <span style="background-color: yellow;">yellow</span> need additional gear.
+Counts are shown with <i># ready / # not ready</i>.  Teams that need gear indicate the number of gear levels with <tt>[#]</tt>.  You can
+<button onclick="$('.not-viable').text('&nbsp;').css('background-color', '')">remove not ready</button><br/>
+
+<p>
+An <b>Estimated Score</b> is given for each phase.  This adds up
+the nominal score for each of the suggested play teams.  Performance
+may vary depending on mods and RNG.  The rating right below gives
+a simple interpretation of the score.  Different teams played will give different results -- this is merely meant as a guide.  Good luck!<h2>Breakdown By Player and Phase and Team</h2><h3 id="p1">P1</h3>Prefer these teams for phase 1 (marked with a &#11088; in the table):
+
+<ul>
+<li>Vader, KRU, C-3PO, Wat, (BB8 or Shaak) - 8-11%, depending on relics/mods
+<li>SEE, Malak, (any 3 Sith, only need to check on SEE+Malak being R5 because of Sith requirements for SEE) - 4-6%
+<li>Padme, JKA, Ahsoka, GK, GMY (can sub last three with zBarriss, Sarge, R2, C-3PO, if using on other teams) - 3%
+</ul>
+
+<p>
+Vader also has a preferred P2 team.  SEE is really only useful in this phase.  Padme is best in this phase.<p><b>Estimated Score: 6</b><br/>Youngling: probably not going to make it<pre id="p1-farm" style="display: none !important;">F2Black https://gorgatron1.github.io/brg/guild/bff/rancor.html?filter=157242719#p1
+gear levels: 16 -- Padme R8, JKA G10, GK R4, Ahsoka R4, C-3PO G12
+
+</pre><pre id="p1-attack" style="display: none !important;">https://gorgatron1.github.io/brg/guild/bff/rancor.html#p1
+
+arcabryn
+Padme 3%: Padme R7, JKA R7, GK R8, Ahsoka R5, GMY R7
+
+Wutdafuhk
+Padme 3%: Padme R7, JKA R7, GK R7, Ahsoka R6, GMY R5
+
+</pre><pre id="p1-attack-csv" style="display: none !important;">phase,name,allycode,team-name,team,percent,gp
+p1,arcabryn,393679868,Padme 3%,Padme R7 JKA R7 GK R8 Ahsoka R5 GMY R7,3,149442
+p1,Wutdafuhk,985214928,Padme 3%,Padme R7 JKA R7 GK R7 Ahsoka R6 GMY R5,3,147952
+</pre><a href="#" onclick="CopyToClipboard('p1-farm'); return false;">Copy Farming Info</a> | <a href="#" onclick="CopyToClipboard('p1-attack'); return false;">Copy Attack Info</a> | <a href="#" onclick="CopyToClipboard('p1-attack-csv'); return false;">Copy Attack Info (CSV)</a><script>$(document).ready(function () {
+    sortType = $.fn.dataTable.absoluteOrderNumber({ value: "", position: "bottom"});
+    $('#schedule-p1').DataTable({
+        "paging": false,
+        "info": false,
+        "fixedHeader": true,
+        "columnDefs": [
+            {
+                targets: 0,
+                type: "html",
+            },
+            {
+                targets: 1,
+                type: "num",
+            },
+            {
+                targets: "_all",
+                type: sortType,
+            },
+        ],
+    });
+});</script><table id="schedule-p1" style="font-size: 75%;"><thead><th>Player</th><th>Counts</th><th>Farming Suggestion</th><th>Vader P1 10%&#11088;</th><th>Padme 3%&#11088;</th><th>Rey+Clones 7%</th><th>DR/Malak 3%</th><th>Padme-b 2%</th></thead><thead><th>Links</th><th /><th /><th><a href="../../alliance/crancor/VADER1.html">info ...</a></th><th><a href="../../alliance/crancor/PADME1.html">info ...</a></th><th /><th><a href="https://www.youtube.com/watch?v=LJZJmeq0Tfg">info ...</a></th><th /></thead><thead><th>Counts</th><th>3<span class="not-viable">/7</span></th><th /><th>1<span class="not-viable">/2</span></th><th>2<span class="not-viable">/1</span></th><th>0<span class="not-viable">/1</span></th><th>0<span class="not-viable">/2</span></th><th>0<span class="not-viable">/1</span></th></thead><tr><td data-filter="985214928" data-order="Wutdafuhk"><a href="?filter=985214928">Wutdafuhk</a></td><td data-order="2">2<span class="not-viable">/1</span></td><td data-order="-10000" /><td data-order="152638" style="">Vader R7, KRU R7, Wat Tambor R5, C-3PO R5, BB-8 R5</td><td data-order="147952" style="background-color: #ceebfd">Padme R7, JKA R7, GK R7, Ahsoka R6, GMY R5</td><td data-order="" /><td class="not-viable" data-order="-13" style="background-color: #ffda00;">DR R5, Malak R6, BSF R6, HK-47 R5, Sith Marauder 6* G5 <tt>[13]</tt></td><td data-order="" /></tr><tr><td data-filter="393679868" data-order="arcabryn"><a href="?filter=393679868">arcabryn</a></td><td data-order="1">1<span class="not-viable">/3</span></td><td data-order="-10000" /><td class="not-viable" data-order="-19" style="background-color: #ffc900;">&#11088;Vader R5, KRU R3, Wat Tambor 5* G7, C-3PO G12, BB-8 R7 <tt>[19]</tt></td><td data-order="149442" style="background-color: #ceebfd">Padme R7, JKA R7, GK R8, Ahsoka R5, GMY R7</td><td class="not-viable" data-order="-12" style="background-color: #ffdd00;">Rey R8, Fives R7, Rex R5, C-3PO G12, HYoda G12 <tt>[12]</tt></td><td class="not-viable" data-order="-6" style="background-color: #ffee00;">DR R5, Malak R7, BSF R3, HK-47 R3, Sith Marauder R3 <tt>[6]</tt></td><td data-order="" /></tr><tr><td data-filter="919188671" data-order="Fish Salami"><a href="?filter=919188671">Fish Salami</a></td><td data-order="0">0<span class="not-viable">/0</span></td><td data-order="-10000" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /><td data-order="" /></tr><tr><td data-filter="157242719" data-order="F2Black"><a href="?filter=157242719">F2Black</a></td><td data-order="0">0<span class="not-viable">/3</span></td><td class="not-viable" data-order="-16" style="background-color: #ffd100;">&#11088;Padme R8, JKA G10, GK R4, Ahsoka R4, C-3PO G12 <tt>[16]</tt></td><td class="not-viable" data-order="-27" style="background-color: #ffb200;">&#11088;Vader R7, KRU R3, Wat Tambor 4* G5, C-3PO G12, Shaak Ti G12 <tt>[27]</tt></td><td class="not-viable" data-order="-16" style="background-color: #ffd100;">&#11088;Padme R8, JKA G10, GK R4, Ahsoka R4, C-3PO G12 <tt>[16]</tt></td><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-27" style="background-color: #ffb200;">Padme R8, JKA G10, Clone Sergeant 5* G8, R2-D2 G10, Barriss R4 <tt>[27]</tt></td></tr><tfoot><th>Counts</th><th>3<span class="not-viable">/7</span></th><th /><th>1<span class="not-viable">/2</span></th><th>2<span class="not-viable">/1</span></th><th>0<span class="not-viable">/1</span></th><th>0<span class="not-viable">/2</span></th><th>0<span class="not-viable">/1</span></th></tfoot></table><h3 id="p2">P2</h3>Prefer these teams for phase 2 (marked with a &#11088; in the table).  Note that the first team makes use of the Devour to trigger Fives and the other teams may need a sacrifice character to eat the devour.
+
+<p>
+The door/topple triggers once per phase -- the best scores require the use of the door.  Plan accordingly.
+
+<ul>
+<li>Shaak, ARC, 501st Echo, Rex, Fives - (depends on Devour being available) 5-6%
+<li>Veers, Piett, Gideon, Range, Dark (sub Starck for one of last three if needed) - 4-7%
+<li>Vader, Nute, Thrawn, Traya, Wat - requires special modding, can do around 12%
+</ul>
+
+<p>Note that the teams for P2 and P3 are the same but different teams are recommended.<p><b>Estimated Score: 12</b><br/>Youngling: probably not going to make it<pre id="p2-farm" style="display: none !important;">F2Black https://gorgatron1.github.io/brg/guild/bff/rancor.html?filter=157242719#p2
+gear levels: 6 -- Shaak Ti G12, Fives R7, Rex R7, Echo (501st) R7, ARC Trooper R8
+
+Fish Salami https://gorgatron1.github.io/brg/guild/bff/rancor.html?filter=919188671#p2
+gear levels: 35 -- Vader R6, Nute G7, Thrawn G12, Wat Tambor 4* G8, Traya 6* G10
+
+</pre><pre id="p2-attack" style="display: none !important;">https://gorgatron1.github.io/brg/guild/bff/rancor.html#p2
+
+arcabryn
+Shaak 6%: Shaak Ti R5, Fives R7, Rex R5, Echo (501st) R5, ARC Trooper R7
+
+Wutdafuhk
+Shaak 6%: Shaak Ti R6, Fives R5, Rex R5, Echo (501st) R5, ARC Trooper R5
+
+</pre><pre id="p2-attack-csv" style="display: none !important;">phase,name,allycode,team-name,team,percent,gp
+p2,Wutdafuhk,985214928,Shaak 6%,Shaak Ti R6 Fives R5 Rex R5 Echo (501st) R5 ARC Trooper R5,6,136351
+p2,arcabryn,393679868,Shaak 6%,Shaak Ti R5 Fives R7 Rex R5 Echo (501st) R5 ARC Trooper R7,6,142384
+</pre><a href="#" onclick="CopyToClipboard('p2-farm'); return false;">Copy Farming Info</a> | <a href="#" onclick="CopyToClipboard('p2-attack'); return false;">Copy Attack Info</a> | <a href="#" onclick="CopyToClipboard('p2-attack-csv'); return false;">Copy Attack Info (CSV)</a><script>$(document).ready(function () {
+    sortType = $.fn.dataTable.absoluteOrderNumber({ value: "", position: "bottom"});
+    $('#schedule-p2').DataTable({
+        "paging": false,
+        "info": false,
+        "fixedHeader": true,
+        "columnDefs": [
+            {
+                targets: 0,
+                type: "html",
+            },
+            {
+                targets: 1,
+                type: "num",
+            },
+            {
+                targets: "_all",
+                type: sortType,
+            },
+        ],
+    });
+});</script><table id="schedule-p2" style="font-size: 75%;"><thead><th>Player</th><th>Counts</th><th>Farming Suggestion</th><th>Shaak 6%&#11088;</th><th>Imperial Troopers 5%&#11088;</th><th>Vader+Nute 12%&#11088;</th><th>SLKR+FO 9%</th><th>Vader+Wat 8%</th><th>BH 2%</th></thead><thead><th>Links</th><th /><th /><th><a href="../../alliance/crancor/SHAAK23.html">info ...</a></th><th><a href="https://www.youtube.com/watch?v=KEFUkww8oxo">info ...</a></th><th><a href="https://www.youtube.com/watch?v=LHYzr39r7EE">info ...</a></th><th><a href="../../alliance/crancor/SLKR23.html">info ...</a></th><th /><th /></thead><thead><th>Counts</th><th>3<span class="not-viable">/11</span></th><th /><th>2<span class="not-viable">/1</span></th><th>0<span class="not-viable">/3</span></th><th>0<span class="not-viable">/3</span></th><th>1<span class="not-viable">/0</span></th><th>0<span class="not-viable">/3</span></th><th>0<span class="not-viable">/1</span></th></thead><tr><td data-filter="985214928" data-order="Wutdafuhk"><a href="?filter=985214928">Wutdafuhk</a></td><td data-order="2">2<span class="not-viable">/1</span></td><td data-order="-10000" /><td data-order="136351" style="background-color: #ceebfd">Shaak Ti R6, Fives R5, Rex R5, Echo (501st) R5, ARC Trooper R5</td><td class="not-viable" data-order="-40" style="background-color: #ff8d00;">&#11088;Veers G12, Admiral Piett 6* G9, Moff Gideon 6* G10, Starck G12, Dark Trooper G7 <tt>[40]</tt></td><td data-order="" /><td data-order="152478" style="">SL Kylo R7, Hux R5, FOST R5, Sith Trooper R6, Thrawn R6</td><td data-order="" /><td data-order="" /></tr><tr><td data-filter="393679868" data-order="arcabryn"><a href="?filter=393679868">arcabryn</a></td><td data-order="1">1<span class="not-viable">/4</span></td><td data-order="-10000" /><td data-order="142384" style="background-color: #ceebfd">Shaak Ti R5, Fives R7, Rex R5, Echo (501st) R5, ARC Trooper R7</td><td class="not-viable" data-order="-31" style="background-color: #ffa700;">&#11088;Veers R3, Admiral Piett R3, Starck G11, Range Trooper 5* G7, Dark Trooper G9 <tt>[31]</tt></td><td class="not-viable" data-order="-33" style="background-color: #ffa100;">&#11088;Vader R5, Nute G12, Thrawn G9, Wat Tambor 5* G7, Traya G11 <tt>[33]</tt></td><td data-order="" /><td class="not-viable" data-order="-22" style="background-color: #ffc000;">Vader R5, EP R3, Thrawn G9, Wat Tambor 5* G7, Malak R7 <tt>[22]</tt></td><td class="not-viable" data-order="-25" style="background-color: #ffb800;">Aurra 3* G7, Greef Karga G10, Bossk R5, Jango R5, The Mandalorian G12 <tt>[25]</tt></td></tr><tr><td data-filter="919188671" data-order="Fish Salami"><a href="?filter=919188671">Fish Salami</a></td><td data-order="0">0<span class="not-viable">/3</span></td><td class="not-viable" data-order="-35" style="background-color: #ff9b00;">&#11088;Vader R6, Nute G7, Thrawn G12, Wat Tambor 4* G8, Traya 6* G10 <tt>[35]</tt></td><td data-order="" /><td class="not-viable" data-order="-48" style="background-color: #ff7700;">&#11088;Veers 5* G10, Admiral Piett 3* G10, Moff Gideon 4* G7, Starck G7, Dark Trooper 5* G8 <tt>[48]</tt></td><td class="not-viable" data-order="-35" style="background-color: #ff9b00;">&#11088;Vader R6, Nute G7, Thrawn G12, Wat Tambor 4* G8, Traya 6* G10 <tt>[35]</tt></td><td data-order="" /><td class="not-viable" data-order="-31" style="background-color: #ffa700;">Vader R6, EP G11, Thrawn G12, Wat Tambor 4* G8, Admiral Piett 3* G10 <tt>[31]</tt></td><td data-order="" /></tr><tr><td data-filter="157242719" data-order="F2Black"><a href="?filter=157242719">F2Black</a></td><td data-order="0">0<span class="not-viable">/3</span></td><td class="not-viable" data-order="-6" style="background-color: #ffee00;">&#11088;Shaak Ti G12, Fives R7, Rex R7, Echo (501st) R7, ARC Trooper R8 <tt>[6]</tt></td><td class="not-viable" data-order="-6" style="background-color: #ffee00;">&#11088;Shaak Ti G12, Fives R7, Rex R7, Echo (501st) R7, ARC Trooper R8 <tt>[6]</tt></td><td data-order="" /><td class="not-viable" data-order="-34" style="background-color: #ff9e00;">&#11088;Vader R7, Nute R7, Thrawn 6* G8, Wat Tambor 4* G5, Traya G7 <tt>[34]</tt></td><td data-order="" /><td class="not-viable" data-order="-42" style="background-color: #ff8800;">Vader R7, EP G8, Thrawn 6* G8, Wat Tambor 4* G5, Admiral Piett 4* G9 <tt>[42]</tt></td><td data-order="" /></tr><tfoot><th>Counts</th><th>3<span class="not-viable">/11</span></th><th /><th>2<span class="not-viable">/1</span></th><th>0<span class="not-viable">/3</span></th><th>0<span class="not-viable">/3</span></th><th>1<span class="not-viable">/0</span></th><th>0<span class="not-viable">/3</span></th><th>0<span class="not-viable">/1</span></th></tfoot></table><h3 id="p3">P3</h3>Prefer these teams for phase 3 (marked with a &#11088; in the table).
+
+<p>
+The door/topple triggers once per phase -- the best scores require the use of the door.  Plan accordingly.
+
+<ul>
+<li>SLKR, Daka, Zombie, Thrawn, Hux - 10-12%
+<li>SLKR, FOST, Red, Thrawn, Hux - 8-10%
+<li>Veers, Piett, Gideon, Range, Dark (sub Starck for one of last three if needed) - 4-7%
+</ul><p><b>Estimated Score: 9</b><br/>Youngling: probably not going to make it<pre id="p3-farm" style="display: none !important;">F2Black https://gorgatron1.github.io/brg/guild/bff/rancor.html?filter=157242719#p3
+gear levels: 6 -- Shaak Ti G12, Fives R7, Rex R7, Echo (501st) R7, ARC Trooper R8
+
+arcabryn https://gorgatron1.github.io/brg/guild/bff/rancor.html?filter=393679868#p3
+gear levels: 31 -- Veers R3, Admiral Piett R3, Starck G11, Range Trooper 5* G7, Dark Trooper G9
+
+Fish Salami https://gorgatron1.github.io/brg/guild/bff/rancor.html?filter=919188671#p3
+gear levels: 48 -- Veers 5* G10, Admiral Piett 3* G10, Moff Gideon 4* G7, Starck G7, Dark Trooper 5* G8
+
+</pre><pre id="p3-attack" style="display: none !important;">https://gorgatron1.github.io/brg/guild/bff/rancor.html#p3
+
+Wutdafuhk
+SLKR+FO 9%: SL Kylo R7, Hux R5, FOST R5, Sith Trooper R6, Thrawn R6
+
+</pre><pre id="p3-attack-csv" style="display: none !important;">phase,name,allycode,team-name,team,percent,gp
+p3,Wutdafuhk,985214928,SLKR+FO 9%,SL Kylo R7 Hux R5 FOST R5 Sith Trooper R6 Thrawn R6,9,152478
+</pre><a href="#" onclick="CopyToClipboard('p3-farm'); return false;">Copy Farming Info</a> | <a href="#" onclick="CopyToClipboard('p3-attack'); return false;">Copy Attack Info</a> | <a href="#" onclick="CopyToClipboard('p3-attack-csv'); return false;">Copy Attack Info (CSV)</a><script>$(document).ready(function () {
+    sortType = $.fn.dataTable.absoluteOrderNumber({ value: "", position: "bottom"});
+    $('#schedule-p3').DataTable({
+        "paging": false,
+        "info": false,
+        "fixedHeader": true,
+        "columnDefs": [
+            {
+                targets: 0,
+                type: "html",
+            },
+            {
+                targets: 1,
+                type: "num",
+            },
+            {
+                targets: "_all",
+                type: sortType,
+            },
+        ],
+    });
+});</script><table id="schedule-p3" style="font-size: 75%;"><thead><th>Player</th><th>Counts</th><th>Farming Suggestion</th><th>SLKR+FO 9%&#11088;</th><th>Imperial Troopers 5%&#11088;</th><th>Vader+Nute 12%</th><th>Vader+Wat 8%</th><th>Shaak 6%</th><th>BH 2%</th></thead><thead><th>Links</th><th /><th /><th><a href="../../alliance/crancor/SLKR23.html">info ...</a></th><th><a href="https://www.youtube.com/watch?v=KEFUkww8oxo">info ...</a></th><th><a href="https://www.youtube.com/watch?v=LHYzr39r7EE">info ...</a></th><th /><th><a href="../../alliance/crancor/SHAAK23.html">info ...</a></th><th /></thead><thead><th>Counts</th><th>3<span class="not-viable">/11</span></th><th /><th>1<span class="not-viable">/0</span></th><th>0<span class="not-viable">/3</span></th><th>0<span class="not-viable">/3</span></th><th>0<span class="not-viable">/3</span></th><th>2<span class="not-viable">/1</span></th><th>0<span class="not-viable">/1</span></th></thead><tr><td data-filter="985214928" data-order="Wutdafuhk"><a href="?filter=985214928">Wutdafuhk</a></td><td data-order="2">2<span class="not-viable">/1</span></td><td data-order="-10000" /><td data-order="152478" style="background-color: #ceebfd">SL Kylo R7, Hux R5, FOST R5, Sith Trooper R6, Thrawn R6</td><td class="not-viable" data-order="-40" style="background-color: #ff8d00;">&#11088;Veers G12, Admiral Piett 6* G9, Moff Gideon 6* G10, Starck G12, Dark Trooper G7 <tt>[40]</tt></td><td data-order="" /><td data-order="" /><td data-order="136351" style="">Shaak Ti R6, Fives R5, Rex R5, Echo (501st) R5, ARC Trooper R5</td><td data-order="" /></tr><tr><td data-filter="393679868" data-order="arcabryn"><a href="?filter=393679868">arcabryn</a></td><td data-order="1">1<span class="not-viable">/4</span></td><td class="not-viable" data-order="-31" style="background-color: #ffa700;">&#11088;Veers R3, Admiral Piett R3, Starck G11, Range Trooper 5* G7, Dark Trooper G9 <tt>[31]</tt></td><td data-order="" /><td class="not-viable" data-order="-31" style="background-color: #ffa700;">&#11088;Veers R3, Admiral Piett R3, Starck G11, Range Trooper 5* G7, Dark Trooper G9 <tt>[31]</tt></td><td class="not-viable" data-order="-33" style="background-color: #ffa100;">Vader R5, Nute G12, Thrawn G9, Wat Tambor 5* G7, Traya G11 <tt>[33]</tt></td><td class="not-viable" data-order="-22" style="background-color: #ffc000;">Vader R5, EP R3, Thrawn G9, Wat Tambor 5* G7, Malak R7 <tt>[22]</tt></td><td data-order="142384" style="">Shaak Ti R5, Fives R7, Rex R5, Echo (501st) R5, ARC Trooper R7</td><td class="not-viable" data-order="-25" style="background-color: #ffb800;">Aurra 3* G7, Greef Karga G10, Bossk R5, Jango R5, The Mandalorian G12 <tt>[25]</tt></td></tr><tr><td data-filter="919188671" data-order="Fish Salami"><a href="?filter=919188671">Fish Salami</a></td><td data-order="0">0<span class="not-viable">/3</span></td><td class="not-viable" data-order="-48" style="background-color: #ff7700;">&#11088;Veers 5* G10, Admiral Piett 3* G10, Moff Gideon 4* G7, Starck G7, Dark Trooper 5* G8 <tt>[48]</tt></td><td data-order="" /><td class="not-viable" data-order="-48" style="background-color: #ff7700;">&#11088;Veers 5* G10, Admiral Piett 3* G10, Moff Gideon 4* G7, Starck G7, Dark Trooper 5* G8 <tt>[48]</tt></td><td class="not-viable" data-order="-35" style="background-color: #ff9b00;">Vader R6, Nute G7, Thrawn G12, Wat Tambor 4* G8, Traya 6* G10 <tt>[35]</tt></td><td class="not-viable" data-order="-31" style="background-color: #ffa700;">Vader R6, EP G11, Thrawn G12, Wat Tambor 4* G8, Admiral Piett 3* G10 <tt>[31]</tt></td><td data-order="" /><td data-order="" /></tr><tr><td data-filter="157242719" data-order="F2Black"><a href="?filter=157242719">F2Black</a></td><td data-order="0">0<span class="not-viable">/3</span></td><td class="not-viable" data-order="-6" style="background-color: #ffee00;">Shaak Ti G12, Fives R7, Rex R7, Echo (501st) R7, ARC Trooper R8 <tt>[6]</tt></td><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-34" style="background-color: #ff9e00;">Vader R7, Nute R7, Thrawn 6* G8, Wat Tambor 4* G5, Traya G7 <tt>[34]</tt></td><td class="not-viable" data-order="-42" style="background-color: #ff8800;">Vader R7, EP G8, Thrawn 6* G8, Wat Tambor 4* G5, Admiral Piett 4* G9 <tt>[42]</tt></td><td class="not-viable" data-order="-6" style="background-color: #ffee00;">Shaak Ti G12, Fives R7, Rex R7, Echo (501st) R7, ARC Trooper R8 <tt>[6]</tt></td><td data-order="" /></tr><tfoot><th>Counts</th><th>3<span class="not-viable">/11</span></th><th /><th>1<span class="not-viable">/0</span></th><th>0<span class="not-viable">/3</span></th><th>0<span class="not-viable">/3</span></th><th>0<span class="not-viable">/3</span></th><th>2<span class="not-viable">/1</span></th><th>0<span class="not-viable">/1</span></th></tfoot></table><h3 id="p4">P4</h3>Prefer these teams for phase 4 (marked with a &#11088; in the table).
+
+<ul>
+<li>Rey, Jawa Scav, Armorer, Jawas (can do 4 Jawas) - 8%
+<li>JKR, Rey, 3x Jedi or Resistance Bros - 5-10% depending on comp, relics, mods
+<li>JKL, JML, 3x Jedi - 4-8% depending on comp, relics, mods
+<li>CLS, Han, Chewie, Chewpio, R2 - 1-2%
+<li>GG, B1, B2, Deka, Magna (sub any other droid except GG) - 1-2%
+<li>JMK, CAT, GK, Ahsoka, GAS - 8%
+<li>Dooku, Jango, (any seps you feel like, none necessary) - 1%
+</ul>
+
+This is the last phase -- hit it with everything you have!<p><b>Estimated Score: 9</b><br/>Youngling: probably not going to make it<pre id="p4-farm" style="display: none !important;">F2Black https://gorgatron1.github.io/brg/guild/bff/rancor.html?filter=157242719#p4
+gear levels: 11 -- GG R3, B1 R5, Droideka G12, B2 R4, Chewpio R3
+
+Fish Salami https://gorgatron1.github.io/brg/guild/bff/rancor.html?filter=919188671#p4
+gear levels: 25 -- CLS R7, Chewbacca G12, Han G12, Chewpio 3* G11, R2-D2 G12
+
+</pre><pre id="p4-attack" style="display: none !important;">https://gorgatron1.github.io/brg/guild/bff/rancor.html#p4
+
+arcabryn
+JKR + Rey (7%): JKR R7, Rey R8, Resistance Hero Finn R5, Resistance Hero Poe R5, GAS R8
+
+Wutdafuhk
+Rebels (2%): CLS R5, Chewbacca R5, Han R5, Chewpio R5, C-3PO R5
+
+</pre><pre id="p4-attack-csv" style="display: none !important;">phase,name,allycode,team-name,team,percent,gp
+p4,arcabryn,393679868,JKR + Rey (7%),JKR R7 Rey R8 Resistance Hero Finn R5 Resistance Hero Poe R5 GAS R8,7,171709
+p4,Wutdafuhk,985214928,Rebels (2%),CLS R5 Chewbacca R5 Han R5 Chewpio R5 C-3PO R5,2,141956
+</pre><a href="#" onclick="CopyToClipboard('p4-farm'); return false;">Copy Farming Info</a> | <a href="#" onclick="CopyToClipboard('p4-attack'); return false;">Copy Attack Info</a> | <a href="#" onclick="CopyToClipboard('p4-attack-csv'); return false;">Copy Attack Info (CSV)</a><script>$(document).ready(function () {
+    sortType = $.fn.dataTable.absoluteOrderNumber({ value: "", position: "bottom"});
+    $('#schedule-p4').DataTable({
+        "paging": false,
+        "info": false,
+        "fixedHeader": true,
+        "columnDefs": [
+            {
+                targets: 0,
+                type: "html",
+            },
+            {
+                targets: 1,
+                type: "num",
+            },
+            {
+                targets: "_all",
+                type: sortType,
+            },
+        ],
+    });
+});</script><table id="schedule-p4" style="font-size: 75%;"><thead><th>Player</th><th>Counts</th><th>Farming Suggestion</th><th>JKR + Rey (7%)&#11088;</th><th>Rebels (2%)&#11088;</th><th>GG (2%)&#11088;</th><th>Seps (1%)</th></thead><thead><th>Links</th><th /><th /><th /><th><a href="https://www.youtube.com/watch?v=Ru3B6xiPeig">info ...</a></th><th><a href="https://www.youtube.com/watch?v=BuC3_he3BQE">info ...</a></th><th><a href="https://www.youtube.com/watch?v=IjZNkeiy2-8">info ...</a></th></thead><thead><th>Counts</th><th>2<span class="not-viable">/10</span></th><th /><th>1<span class="not-viable">/0</span></th><th>1<span class="not-viable">/2</span></th><th>0<span class="not-viable">/4</span></th><th>0<span class="not-viable">/4</span></th></thead><tr><td data-filter="985214928" data-order="Wutdafuhk"><a href="?filter=985214928">Wutdafuhk</a></td><td data-order="1">1<span class="not-viable">/2</span></td><td data-order="-10000" /><td data-order="" /><td data-order="141956" style="background-color: #ceebfd">CLS R5, Chewbacca R5, Han R5, Chewpio R5, C-3PO R5</td><td class="not-viable" data-order="-11" style="background-color: #ffdf00;">&#11088;GG R4, B1 R3, Droideka R3, B2 G12, HK-47 R5 <tt>[11]</tt></td><td class="not-viable" data-order="-10" style="background-color: #ffe200;">Dooku R6, Jango G12, AV R3, GBA R4, GG R4 <tt>[10]</tt></td></tr><tr><td data-filter="393679868" data-order="arcabryn"><a href="?filter=393679868">arcabryn</a></td><td data-order="1">1<span class="not-viable">/3</span></td><td data-order="-10000" /><td data-order="171709" style="background-color: #ceebfd">JKR R7, Rey R8, Resistance Hero Finn R5, Resistance Hero Poe R5, GAS R8</td><td class="not-viable" data-order="-18" style="background-color: #ffcc00;">&#11088;CLS R3, Chewbacca R4, Han R4, Chewpio G10, C-3PO G12 <tt>[18]</tt></td><td class="not-viable" data-order="-9" style="background-color: #ffe500;">&#11088;GG R7, B1 R4, Droideka R3, B2 G12, MagnaGuard R5 <tt>[9]</tt></td><td class="not-viable" data-order="-2" style="background-color: #fff900;">Dooku R3, Jango R5, AV R7, MagnaGuard R5, GG R7 <tt>[2]</tt></td></tr><tr><td data-filter="919188671" data-order="Fish Salami"><a href="?filter=919188671">Fish Salami</a></td><td data-order="0">0<span class="not-viable">/3</span></td><td class="not-viable" data-order="-25" style="background-color: #ffb800;">&#11088;CLS R7, Chewbacca G12, Han G12, Chewpio 3* G11, R2-D2 G12 <tt>[25]</tt></td><td data-order="" /><td class="not-viable" data-order="-25" style="background-color: #ffb800;">&#11088;CLS R7, Chewbacca G12, Han G12, Chewpio 3* G11, R2-D2 G12 <tt>[25]</tt></td><td class="not-viable" data-order="-46" style="background-color: #ff7c00;">&#11088;GG 6* G9, B1 5* G7, Droideka 6* G9, B2 6* G8, HK-47 G11 <tt>[46]</tt></td><td class="not-viable" data-order="-38" style="background-color: #ff9300;">Dooku G7, Jango R5, GBA G9, Droideka 6* G9, GG 6* G9 <tt>[38]</tt></td></tr><tr><td data-filter="157242719" data-order="F2Black"><a href="?filter=157242719">F2Black</a></td><td data-order="0">0<span class="not-viable">/2</span></td><td class="not-viable" data-order="-11" style="background-color: #ffdf00;">&#11088;GG R3, B1 R5, Droideka G12, B2 R4, Chewpio R3 <tt>[11]</tt></td><td data-order="" /><td data-order="" /><td class="not-viable" data-order="-11" style="background-color: #ffdf00;">&#11088;GG R3, B1 R5, Droideka G12, B2 R4, Chewpio R3 <tt>[11]</tt></td><td class="not-viable" data-order="-7" style="background-color: #ffeb00;">Dooku R8, Jango G11, AV R5, Nute R7, B1 R5 <tt>[7]</tt></td></tr><tfoot><th>Counts</th><th>2<span class="not-viable">/10</span></th><th /><th>1<span class="not-viable">/0</span></th><th>1<span class="not-viable">/2</span></th><th>0<span class="not-viable">/4</span></th><th>0<span class="not-viable">/4</span></th></tfoot></table><h2 id="summary">Summary By Player and Phase</h2>Summary information by player, by phase.  Counts show number of ready teams / number of teams that need farming.  Blue cells show phases that the player should play.<p><pre id="summary-farm" style="display: none !important;">F2Black
+gear levels: 6 -- Shaak Ti G12, Fives R7, Rex R7, Echo (501st) R7, ARC Trooper R8
+
+F2Black
+gear levels: 11 -- GG R3, B1 R5, Droideka G12, B2 R4, Chewpio R3
+
+F2Black
+gear levels: 16 -- Padme R8, JKA G10, GK R4, Ahsoka R4, C-3PO G12
+
+Fish Salami
+gear levels: 25 -- CLS R7, Chewbacca G12, Han G12, Chewpio 3* G11, R2-D2 G12
+
+arcabryn
+gear levels: 31 -- Veers R3, Admiral Piett R3, Starck G11, Range Trooper 5* G7, Dark Trooper G9
+
+Fish Salami
+gear levels: 35 -- Vader R6, Nute G7, Thrawn G12, Wat Tambor 4* G8, Traya 6* G10
+
+Fish Salami
+gear levels: 48 -- Veers 5* G10, Admiral Piett 3* G10, Moff Gideon 4* G7, Starck G7, Dark Trooper 5* G8
+
+</pre><pre id="summary-farm-csv" style="display: none !important;">name,allycode,mention,phase,played-phase,played-all,percent,team-name,team,gearNeeded
+F2Black,157242719,,p2,0,0,6,Shaak 6%,Shaak Ti G12 Fives R7 Rex R7 Echo (501st) R7 ARC Trooper R8,6
+F2Black,157242719,,p4,0,0,2,GG (2%),GG R3 B1 R5 Droideka G12 B2 R4 Chewpio R3,11
+F2Black,157242719,,p1,0,0,3,Padme 3%,Padme R8 JKA G10 GK R4 Ahsoka R4 C-3PO G12,16
+Fish Salami,919188671,,p4,0,0,2,Rebels (2%),CLS R7 Chewbacca G12 Han G12 Chewpio 3* G11 R2-D2 G12,25
+arcabryn,393679868,,p3,0,3,5,Imperial Troopers 5%,Veers R3 Admiral Piett R3 Starck G11 Range Trooper 5* G7 Dark Trooper G9,31
+Fish Salami,919188671,,p2,0,0,12,Vader+Nute 12%,Vader R6 Nute G7 Thrawn G12 Wat Tambor 4* G8 Traya 6* G10,35
+Fish Salami,919188671,,p3,0,0,5,Imperial Troopers 5%,Veers 5* G10 Admiral Piett 3* G10 Moff Gideon 4* G7 Starck G7 Dark Trooper 5* G8,48
+</pre><pre id="summary-attack-csv" style="display: none !important;">phase,name,allycode,team-name,team,percent,gp
+p2,Wutdafuhk,985214928,Shaak 6%,Shaak Ti R6 Fives R5 Rex R5 Echo (501st) R5 ARC Trooper R5,6,136351
+p2,arcabryn,393679868,Shaak 6%,Shaak Ti R5 Fives R7 Rex R5 Echo (501st) R5 ARC Trooper R7,6,142384
+p4,arcabryn,393679868,JKR + Rey (7%),JKR R7 Rey R8 Resistance Hero Finn R5 Resistance Hero Poe R5 GAS R8,7,171709
+p4,Wutdafuhk,985214928,Rebels (2%),CLS R5 Chewbacca R5 Han R5 Chewpio R5 C-3PO R5,2,141956
+p3,Wutdafuhk,985214928,SLKR+FO 9%,SL Kylo R7 Hux R5 FOST R5 Sith Trooper R6 Thrawn R6,9,152478
+p1,arcabryn,393679868,Padme 3%,Padme R7 JKA R7 GK R8 Ahsoka R5 GMY R7,3,149442
+p1,Wutdafuhk,985214928,Padme 3%,Padme R7 JKA R7 GK R7 Ahsoka R6 GMY R5,3,147952
+</pre><a href="#" onclick="CopyToClipboard('summary-farm'); return false;">Copy Summary Farming Info</a> | <a href="#" onclick="CopyToClipboard('summary-farm-csv'); return false;">Copy Summary Farming Info (CSV)</a> | <a href="#" onclick="CopyToClipboard('summary-attack-csv'); return false;">Copy Attack Info (CSV)</a><script>
+$(document).ready(function() {
+    $('#by-player').DataTable({
+        "paging": false,
+        "info": false,
+        "fixedHeader": true,
+    });
+});
+</script><table class="display" id="by-player" style="font-size: 75%; width: 80%;"><thead><th>Player</th><th>Teams Played</th><th>P1</th><th>P2</th><th>P3</th><th>P4</th></thead><thead><th>Totals</th><th>7</th><th>2</th><th>2</th><th>1</th><th>2</th></thead><thead><th>Score</th><th /><th>6</th><th>12</th><th>9</th><th>9</th></thead><tr><td data-filter="985214928" data-order="Wutdafuhk"><a href="?filter=985214928">Wutdafuhk</a></td><td>4</td><td data-order="1" style="background-color: #ceebfd">1</td><td data-order="1" style="background-color: #ceebfd">1</td><td data-order="1" style="background-color: #ceebfd">1</td><td data-order="1" style="background-color: #ceebfd">1</td></tr><tr><td data-filter="393679868" data-order="arcabryn"><a href="?filter=393679868">arcabryn</a></td><td>3</td><td data-order="1" style="background-color: #ceebfd">1</td><td data-order="1" style="background-color: #ceebfd">1</td><td data-order="0" style="" /><td data-order="1" style="background-color: #ceebfd">1</td></tr><tr><td data-filter="919188671" data-order="Fish Salami"><a href="?filter=919188671">Fish Salami</a></td><td>0</td><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /></tr><tr><td data-filter="157242719" data-order="F2Black"><a href="?filter=157242719">F2Black</a></td><td>0</td><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /><td data-order="0" style="" /></tr></table><script>$(document).ready( function() {
+
+var urlParams = new URLSearchParams(window.location.search)
+var filter = urlParams.get('filter')
+if (filter) {$('#schedule-p1').DataTable().search(filter).draw()
+$('#schedule-p2').DataTable().search(filter).draw()
+$('#schedule-p3').DataTable().search(filter).draw()
+$('#schedule-p4').DataTable().search(filter).draw()
+$('#by-player').DataTable().search(filter).draw()
+}
+});</script><br/>
+<font size="-2">Generated 2022-04-29 04:46:32 +0000</font>
+<script data-goatcounter="https://gorgatron.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>

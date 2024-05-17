@@ -1,0 +1,91 @@
+<meta charset="UTF-8">
+<meta name="robots" content="noindex"><style type="text/css">
+body {
+ background-image: url("../../i/more_faded_logo.jpg");
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+</style><style type="text/css">
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  padding: 8px;
+}
+
+tr:nth-child(even) {background: #dddddd}
+tr:nth-child(odd) {background: #ffffff}
+
+.toggleable {
+    display: none;
+}
+</style><link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.1.5/css/fixedHeader.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.6/css/fixedColumns.dataTables.min.css" />
+<script type="text/javascript" language="javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedheader/3.1.5/js/dataTables.fixedHeader.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedcolumns/3.2.6/js/dataTables.fixedColumns.min.js"></script><title>BRG Alliance Guild Reports: LS Geo TB Progress Tracker</title>
+<div style="display: flex; align-items:baseline"><img src="../../i/simple_logo_48.jpg"/>&nbsp;<h1>Alliance Guild Reports: LS Geo TB Progress Tracker</h1></div>
+
+<div style="background-color: #f0f0f0; border: solid red; padding: 10px; border-radius: 10px">
+<a href="../../alliance/index.html">Alliance</a> |
+<a href="../../alliance/characters.html">Characters</a> |
+
+<div style="float:right;"><a href="../../r">Resources</a></div>
+<a href="index.html">BRG The HighCouncil </a>
+</div>
+<br/><h2>LS Geo TB Progress Tracker BRG The HighCouncil </h2>
+
+<p>
+Progress on top performing LS Geo TB Teams to R3 (a good starting place for LS TB):
+<ul>
+<li><a href="https://www.youtube.com/watch?v=1HDFKfimY1U">Finn (omicron)</a>
+<li><a href="https://www.youtube.com/watch?v=-yOIL4Wi4Fg">ROLO (omicron)</a>
+<li>Shaak + 501st
+<li>JKL(L) + jedi
+<li>GAS + Ahsoka (special in P2 Middle)
+<li>CLS (but prefer ROLO)
+</ul>
+
+<p>
+<button onclick="$('.complete').hide(); $('.working').show()">hide completed</button>
+<button onclick="$('.complete').show(); $('.working').hide()">hide incomplete</button>
+<button onclick="$('.complete').show(); $('.working').show()">show all</button>
+
+<br/>
+    
+<link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.0.0/css/buttons.dataTables.min.css" />
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/buttons/2.0.0/js/dataTables.buttons.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/buttons/2.0.0/js/buttons.html5.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script><script>
+$(document).ready(function() {
+    var urlParams = new URLSearchParams(window.location.search)
+    var show = urlParams.get('show')
+    if (show == "working") {
+        $('.complete').hide()
+    } else if (show == "complete") {
+        $('.working').hide()
+    }
+});
+</script><table class="stripe" id="stats"><thead><th>Player</th><th>Ally Code</th><th>Starting Gear Needed</th><th>Progress</th><th>Current Gear Needed</th><th>Team</th></thead><tr class="working" style=""><td>Leopald Strauss</td><td>174578724</td><td>1</td><td>0</td><td>1</td><td><b>Finn</b>: <b>Finn (omi)</b>, RT, RH Finn, RH Poe, Vet Chewbacca</td></tr><tr class="working" style=""><td>bluhoteyes</td><td>668698455</td><td>1</td><td>0</td><td>1</td><td><b>Finn</b>: <b>Finn (omi)</b>, RT, RH Finn, RH Poe, Holdo</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>RichmalTheReborn</td><td>575915113</td><td>20</td><td>20</td><td>0</td><td><b>CLS</b>: CLS, Han, Chewbacca, Chewpio, C-3PO</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Fallen</td><td>961276461</td><td>0</td><td>0</td><td>0</td><td><b>CLS</b>: CLS, Han, Chewbacca, Chewpio, C-3PO</td></tr><tr class="working" style=""><td>Fallen</td><td>961276461</td><td>1</td><td>0</td><td>1</td><td><b>Finn</b>: <b>Finn (omi)</b>, RT, RH Finn, RH Poe, R2-D2</td></tr><tr class="working" style=""><td>Fallen</td><td>961276461</td><td>17</td><td>9</td><td>8</td><td><b>JKL</b>: JKL, HYoda, <b>GMY G12</b>, <b>Jolee G12</b>, GK</td></tr><tr class="working" style=""><td>Fallen</td><td>961276461</td><td>12</td><td>0</td><td>12</td><td><b>Shaak Ti</b>: Shaak Ti, <b>Rex G12</b>, <b>Echo (501st) G12</b>, <b>ARC Trooper G12</b>, Fives</td></tr><tr class="working" style=""><td>Kyo Perthar</td><td>447523615</td><td>1</td><td>0</td><td>1</td><td><b>Finn</b>: <b>Finn (omi)</b>, RT, RH Finn, RH Poe, Rey</td></tr><tr class="working" style=""><td>Rodi</td><td>283859663</td><td>15</td><td>7</td><td>8</td><td><b>CLS</b>: CLS, Han, Chewbacca, <b>Chewpio G12</b>, <b>C-3PO G12</b></td></tr><tr class="working" style=""><td>Darovit</td><td>296371155</td><td>17</td><td>0</td><td>17</td><td><b>ROLO</b>: <b>ROLO G7</b>, <b>Chirrut G8 5&#9733;</b>, Biggs, CLS, Lando</td></tr><tr class="working" style=""><td>Dart Leon</td><td>356126651</td><td>1</td><td>0</td><td>1</td><td><b>Finn</b>: <b>Finn (omi)</b>, RT, RH Finn, RH Poe, JTR</td></tr><tr class="working" style=""><td>Dart Leon</td><td>356126651</td><td>20</td><td>0</td><td>20</td><td><b>CLS</b>: <b>CLS G12</b>, <b>Han G12</b>, <b>Chewbacca G12</b>, <b>Chewpio G12</b>, <b>C-3PO G12</b></td></tr><tr class="complete" style="background-color: #ceebfd;"><td>ACheekyWolf</td><td>515499798</td><td>20</td><td>20</td><td>0</td><td><b>CLS</b>: CLS, Han, Chewbacca, Chewpio, C-3PO</td></tr><tr class="working" style=""><td>ACheekyWolf</td><td>515499798</td><td>1</td><td>0</td><td>1</td><td><b>Finn</b>: <b>Finn (omi)</b>, RT, RH Finn, RH Poe, Rey</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>WhisKid</td><td>985344829</td><td>17</td><td>17</td><td>0</td><td><b>CLS</b>: CLS, Han, Chewbacca, Chewpio, C-3PO</td></tr><tr class="working" style=""><td>WhisKid</td><td>985344829</td><td>1</td><td>0</td><td>1</td><td><b>Finn</b>: <b>Finn (omi)</b>, RT, RH Finn, RH Poe, Rey</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Belrosa</td><td>983233755</td><td>0</td><td>0</td><td>0</td><td><b>JKL</b>: JKL, HYoda, GMY, JKR, GK</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Belrosa</td><td>983233755</td><td>0</td><td>0</td><td>0</td><td><b>CLS</b>: CLS, Han, Chewbacca, Chewpio, C-3PO</td></tr><tr class="working" style=""><td>Belrosa</td><td>983233755</td><td>1</td><td>0</td><td>1</td><td><b>Finn</b>: <b>Finn (omi)</b>, RT, RH Finn, RH Poe, R2-D2</td></tr><tr class="working" style=""><td>Belrosa</td><td>983233755</td><td>8</td><td>0</td><td>8</td><td><b>GAS Special</b>: <b>GAS G8 5&#9733;</b>, Ahsoka</td></tr><tr class="working" style=""><td>Belrosa</td><td>983233755</td><td>18</td><td>10</td><td>8</td><td><b>ROLO</b>: ROLO, Cpt Solo, Leia, <b>Baze G8 6&#9733;</b>, Lando</td></tr><tr class="working" style=""><td>Belrosa</td><td>983233755</td><td>20</td><td>8</td><td>12</td><td><b>Shaak Ti</b>: Shaak Ti, <b>Rex G12</b>, <b>Echo (501st) G12</b>, <b>ARC Trooper G12</b>, Fives</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Nitz'd</td><td>961325798</td><td>0</td><td>0</td><td>0</td><td><b>GAS Special</b>: GAS, Ahsoka</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Nitz'd</td><td>961325798</td><td>8</td><td>8</td><td>0</td><td><b>Shaak Ti</b>: Shaak Ti, Rex, Echo (501st), ARC Trooper, Fives</td></tr><tr class="working" style=""><td>Nitz'd</td><td>961325798</td><td>1</td><td>0</td><td>1</td><td><b>Finn</b>: <b>Finn (omi)</b>, RT, RH Finn, RH Poe, JTR</td></tr><tr class="working" style=""><td>Nitz'd</td><td>961325798</td><td>20</td><td>12</td><td>8</td><td><b>CLS</b>: <b>CLS G12</b>, Han, Chewbacca, <b>Chewpio G12</b>, C-3PO</td></tr><tr class="working" style=""><td>Devlin</td><td>254626297</td><td>1</td><td>0</td><td>1</td><td><b>Finn</b>: <b>Finn (omi)</b>, RT, RH Finn, RH Poe, JTR</td></tr><tr class="working" style=""><td>Devlin</td><td>254626297</td><td>14</td><td>13</td><td>1</td><td><b>ROLO</b>: <b>ROLO (omi)</b>, Cpt Solo, <b>Leia (omi)</b>, Chewbacca, Lando</td></tr><tr class="working" style=""><td>Devlin</td><td>254626297</td><td>18</td><td>4</td><td>14</td><td><b>JKL</b>: JKL, HYoda, <b>GMY G12</b>, <b>JKR G12</b>, <b>Jolee G10</b></td></tr><tr class="working" style=""><td>DarthSnips</td><td>755865424</td><td>1</td><td>0</td><td>1</td><td><b>Finn</b>: <b>Finn (omi)</b>, RT, RH Finn, RH Poe, Rey</td></tr><tr class="working" style=""><td>DarthSnips</td><td>755865424</td><td>11</td><td>0</td><td>11</td><td><b>CLS</b>: CLS, Han, <b>Chewbacca R2</b>, <b>Chewpio G12</b>, <b>C-3PO G10 5&#9733;</b></td></tr><tr class="complete" style="background-color: #ceebfd;"><td>J3d1 Wampa</td><td>233129389</td><td>0</td><td>0</td><td>0</td><td><b>GAS Special</b>: GAS, Ahsoka</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>J3d1 Wampa</td><td>233129389</td><td>0</td><td>0</td><td>0</td><td><b>JKL</b>: JKL, HYoda, GMY, Jolee, GK</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>J3d1 Wampa</td><td>233129389</td><td>0</td><td>0</td><td>0</td><td><b>CLS</b>: CLS, Han, Chewbacca, Chewpio, C-3PO</td></tr><tr class="working" style=""><td>J3d1 Wampa</td><td>233129389</td><td>17</td><td>11</td><td>6</td><td><b>Shaak Ti</b>: <b>Shaak Ti G12</b>, <b>Rex R1</b>, Echo (501st), ARC Trooper, Fives</td></tr><tr class="working" style=""><td>Sidonplays</td><td>192852549</td><td>1</td><td>0</td><td>1</td><td><b>Finn</b>: <b>Finn (omi)</b>, RT, RH Finn, RH Poe, Holdo</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>AvGPuD</td><td>545584614</td><td>14</td><td>14</td><td>0</td><td><b>CLS</b>: CLS, Han, Chewbacca, Chewpio, C-3PO</td></tr><tr class="working" style=""><td>AvGPuD</td><td>545584614</td><td>1</td><td>0</td><td>1</td><td><b>Finn</b>: <b>Finn (omi)</b>, RT, RH Finn, RH Poe, JTR</td></tr><tr class="working" style=""><td>VoidedSouls24</td><td>896149329</td><td>9</td><td>5</td><td>4</td><td><b>GAS Special</b>: GAS, <b>Ahsoka G12</b></td></tr><tr class="working" style=""><td>VoidedSouls24</td><td>896149329</td><td>19</td><td>11</td><td>8</td><td><b>CLS</b>: CLS, Han, Chewbacca, <b>Chewpio G12</b>, <b>C-3PO G12</b></td></tr><tr class="working" style=""><td>VoidedSouls24</td><td>896149329</td><td>19</td><td>4</td><td>15</td><td><b>Shaak Ti</b>: <b>Shaak Ti G9</b>, Rex, <b>Echo (501st) G12</b>, <b>ARC Trooper G12</b>, Fives</td></tr><tr class="working" style=""><td>NamikazeNC</td><td>572225845</td><td>1</td><td>0</td><td>1</td><td><b>Finn</b>: <b>Finn (omi)</b>, RT, RH Finn, RH Poe, Vet Han</td></tr><tr class="working" style=""><td>NamikazeNC</td><td>572225845</td><td>20</td><td>14</td><td>6</td><td><b>CLS</b>: <b>CLS R2</b>, <b>Han R2</b>, <b>Chewbacca R2</b>, <b>Chewpio R2</b>, <b>C-3PO R1</b></td></tr><tr class="working" style=""><td>Sonofskirata</td><td>457422143</td><td>20</td><td>6</td><td>14</td><td><b>CLS</b>: CLS, <b>Han G12</b>, <b>Chewbacca G12</b>, <b>Chewpio G12</b>, <b>C-3PO R1</b></td></tr><tr class="working" style=""><td>hurtin Drebin</td><td>888342228</td><td>1</td><td>0</td><td>1</td><td><b>Finn</b>: <b>Finn (omi)</b>, RT, RH Finn, RH Poe, Poe</td></tr><tr class="working" style=""><td>hurtin Drebin</td><td>888342228</td><td>20</td><td>8</td><td>12</td><td><b>Shaak Ti</b>: <b>Shaak Ti G12</b>, Rex, <b>Echo (501st) G12</b>, <b>ARC Trooper G12</b>, Fives</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Dingodog</td><td>628718313</td><td>20</td><td>20</td><td>0</td><td><b>CLS</b>: CLS, Han, Chewbacca, Chewpio, C-3PO</td></tr><tr class="working" style=""><td>Dingodog</td><td>628718313</td><td>1</td><td>0</td><td>1</td><td><b>Finn</b>: <b>Finn (omi)</b>, RT, RH Finn, RH Poe, Poe</td></tr><tr class="working" style=""><td>Dhoor</td><td>853742526</td><td>1</td><td>0</td><td>1</td><td><b>Finn</b>: <b>Finn (omi)</b>, RT, RH Finn, RH Poe, Rey</td></tr><tr class="working" style=""><td>Dhoor</td><td>853742526</td><td>20</td><td>11</td><td>9</td><td><b>CLS</b>: CLS, Han, Chewbacca, <b>Chewpio G11</b>, <b>C-3PO G12</b></td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Nitz</td><td>991936212</td><td>0</td><td>0</td><td>0</td><td><b>GAS Special</b>: GAS, Ahsoka</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Nitz</td><td>991936212</td><td>0</td><td>0</td><td>0</td><td><b>JKL</b>: JKL, HYoda, GMY, Jolee, GK</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Nitz</td><td>991936212</td><td>0</td><td>0</td><td>0</td><td><b>CLS</b>: CLS, Han, Chewbacca, Chewpio, C-3PO</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Nitz</td><td>991936212</td><td>0</td><td>0</td><td>0</td><td><b>Shaak Ti</b>: Shaak Ti, Rex, Echo (501st), ARC Trooper, Fives</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Crovax</td><td>873218834</td><td>8</td><td>8</td><td>0</td><td><b>CLS</b>: CLS, Han, Chewbacca, Chewpio, C-3PO</td></tr><tr class="working" style=""><td>Crovax</td><td>873218834</td><td>1</td><td>0</td><td>1</td><td><b>Finn</b>: <b>Finn (omi)</b>, RT, RH Finn, RH Poe, Rey</td></tr><tr class="working" style=""><td>Crovax</td><td>873218834</td><td>8</td><td>0</td><td>8</td><td><b>ROLO</b>: ROLO, Cpt Solo, Leia, <b>Baze G8 6&#9733;</b>, Lando</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Zenithier</td><td>443596224</td><td>0</td><td>0</td><td>0</td><td><b>GAS Special</b>: GAS, Ahsoka</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Zenithier</td><td>443596224</td><td>0</td><td>0</td><td>0</td><td><b>JKL</b>: JKL, HYoda, GMY, Jolee, GK</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Zenithier</td><td>443596224</td><td>0</td><td>0</td><td>0</td><td><b>CLS</b>: CLS, Han, Chewbacca, Chewpio, C-3PO</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Zenithier</td><td>443596224</td><td>0</td><td>0</td><td>0</td><td><b>Shaak Ti</b>: Shaak Ti, Rex, Echo (501st), ARC Trooper, Fives</td></tr><tr class="working" style=""><td>Zenithier</td><td>443596224</td><td>5</td><td>0</td><td>5</td><td><b>ROLO</b>: ROLO, Cpt Solo, Leia, <b>Baze G11</b>, Lando</td></tr><tr class="working" style=""><td>BigKopsing</td><td>532597427</td><td>1</td><td>0</td><td>1</td><td><b>Finn</b>: <b>Finn (omi)</b>, RT, RH Finn, RH Poe, Vet Han</td></tr><tr class="working" style=""><td>BigKopsing</td><td>532597427</td><td>17</td><td>0</td><td>17</td><td><b>ROLO</b>: <b>ROLO G7 5&#9733;</b>, <b>Chirrut G8 5&#9733;</b>, Leia, CLS, Lando</td></tr><tr class="working" style=""><td>Hdwolf</td><td>445881368</td><td>1</td><td>0</td><td>1</td><td><b>Finn</b>: <b>Finn (omi)</b>, RT, RH Finn, RH Poe, Rey</td></tr><tr class="working" style=""><td>Hdwolf</td><td>445881368</td><td>19</td><td>0</td><td>19</td><td><b>ROLO</b>: <b>ROLO G8</b>, <b>Cpt Solo G9</b>, Han, <b>Chewbacca G12</b>, Lando</td></tr><tr class="working" style=""><td>Hdwolf</td><td>445881368</td><td>19</td><td>0</td><td>19</td><td><b>Shaak Ti</b>: Shaak Ti, <b>Rex G12</b>, <b>Echo (501st) G9</b>, <b>ARC Trooper G8 4&#9733;</b>, Fives</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Arkay</td><td>485165597</td><td>0</td><td>0</td><td>0</td><td><b>GAS Special</b>: GAS, Ahsoka</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Arkay</td><td>485165597</td><td>0</td><td>0</td><td>0</td><td><b>JKL</b>: JKL, HYoda, GMY, Jolee, GK</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Arkay</td><td>485165597</td><td>0</td><td>0</td><td>0</td><td><b>CLS</b>: CLS, Han, Chewbacca, Chewpio, C-3PO</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Arkay</td><td>485165597</td><td>0</td><td>0</td><td>0</td><td><b>Shaak Ti</b>: Shaak Ti, Rex, Echo (501st), ARC Trooper, Fives</td></tr><tr class="working" style=""><td>Arkay</td><td>485165597</td><td>1</td><td>0</td><td>1</td><td><b>Finn</b>: <b>Finn (omi)</b>, RT, RH Finn, RH Poe, Rey</td></tr><tr class="working" style=""><td>Arkay</td><td>485165597</td><td>4</td><td>0</td><td>4</td><td><b>ROLO</b>: ROLO, Cpt Solo, Leia, <b>Baze G12</b>, Lando</td></tr><tr class="working" style=""><td>Din Grogu</td><td>581913766</td><td>1</td><td>0</td><td>1</td><td><b>Finn</b>: <b>Finn (omi)</b>, RT, RH Finn, RH Poe, Rey</td></tr><tr class="working" style=""><td>Dori Solman</td><td>565476421</td><td>19</td><td>2</td><td>17</td><td><b>CLS</b>: CLS, <b>Han G12</b>, <b>Chewbacca G12</b>, <b>Chewpio G11</b>, <b>C-3PO G12</b></td></tr><tr class="working" style=""><td>Sans</td><td>156217258</td><td>18</td><td>6</td><td>12</td><td><b>ROLO</b>: <b>ROLO G12</b>, <b>Chirrut G8 5&#9733;</b>, Leia, CLS, Lando</td></tr><tr class="working" style=""><td>Sans</td><td>156217258</td><td>19</td><td>2</td><td>17</td><td><b>Shaak Ti</b>: <b>Shaak Ti G11 2&#9733;</b>, <b>Rex G12</b>, <b>Echo (501st) G12</b>, ARC Trooper, <b>Fives G12</b></td></tr></table><script>var config = {
+    "paging":   false,
+    "info":     false,
+    bFilter: false,
+    fixedHeader: true,
+    dom: 'Bfrtip',
+    buttons: [
+        'copyHtml5',
+        'excelHtml5',
+        'csvHtml5',
+    ],
+}
+
+table = $('#stats').DataTable(config);</script><br/>
+<font size="-2">Generated 2024-05-12 16:11:03 +0000</font>
+<script data-goatcounter="https://gorgatron.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>

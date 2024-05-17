@@ -1,0 +1,91 @@
+<meta charset="UTF-8">
+<meta name="robots" content="noindex"><style type="text/css">
+body {
+ background-image: url("../../i/more_faded_logo.jpg");
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+</style><style type="text/css">
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  padding: 8px;
+}
+
+tr:nth-child(even) {background: #dddddd}
+tr:nth-child(odd) {background: #ffffff}
+
+.toggleable {
+    display: none;
+}
+</style><link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.1.5/css/fixedHeader.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.6/css/fixedColumns.dataTables.min.css" />
+<script type="text/javascript" language="javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedheader/3.1.5/js/dataTables.fixedHeader.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedcolumns/3.2.6/js/dataTables.fixedColumns.min.js"></script><title>BRG Alliance Guild Reports: LS Geo TB Progress Tracker</title>
+<div style="display: flex; align-items:baseline"><img src="../../i/simple_logo_48.jpg"/>&nbsp;<h1>Alliance Guild Reports: LS Geo TB Progress Tracker</h1></div>
+
+<div style="background-color: #f0f0f0; border: solid red; padding: 10px; border-radius: 10px">
+<a href="../../alliance/index.html">Alliance</a> |
+<a href="../../alliance/characters.html">Characters</a> |
+
+<div style="float:right;"><a href="../../r">Resources</a></div>
+<a href="index.html">BRG Fallen Order of Ahch To</a>
+</div>
+<br/><h2>LS Geo TB Progress Tracker BRG Fallen Order of Ahch To</h2>
+
+<p>
+Progress on top performing LS Geo TB Teams to R3 (a good starting place for LS TB):
+<ul>
+<li><a href="https://www.youtube.com/watch?v=1HDFKfimY1U">Finn (omicron)</a>
+<li><a href="https://www.youtube.com/watch?v=-yOIL4Wi4Fg">ROLO (omicron)</a>
+<li>Shaak + 501st
+<li>JKL(L) + jedi
+<li>GAS + Ahsoka (special in P2 Middle)
+<li>CLS (but prefer ROLO)
+</ul>
+
+<p>
+<button onclick="$('.complete').hide(); $('.working').show()">hide completed</button>
+<button onclick="$('.complete').show(); $('.working').hide()">hide incomplete</button>
+<button onclick="$('.complete').show(); $('.working').show()">show all</button>
+
+<br/>
+    
+<link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.0.0/css/buttons.dataTables.min.css" />
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/buttons/2.0.0/js/dataTables.buttons.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/buttons/2.0.0/js/buttons.html5.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script><script>
+$(document).ready(function() {
+    var urlParams = new URLSearchParams(window.location.search)
+    var show = urlParams.get('show')
+    if (show == "working") {
+        $('.complete').hide()
+    } else if (show == "complete") {
+        $('.working').hide()
+    }
+});
+</script><table class="stripe" id="stats"><thead><th>Player</th><th>Ally Code</th><th>Starting Gear Needed</th><th>Progress</th><th>Current Gear Needed</th><th>Team</th></thead><tr class="working" style=""><td>Kit Dynasty</td><td>965856225</td><td>1</td><td>0</td><td>1</td><td><b>Finn</b>: <b>Finn (omi)</b>, RT, RH Finn, RH Poe, Poe</td></tr><tr class="working" style=""><td>Kit Dynasty</td><td>965856225</td><td>18</td><td>9</td><td>9</td><td><b>CLS</b>: CLS, Han, Chewbacca, <b>Chewpio G11</b>, <b>C-3PO G12</b></td></tr><tr class="working" style=""><td>Lightsaberg</td><td>149891279</td><td>1</td><td>0</td><td>1</td><td><b>Finn</b>: <b>Finn (omi)</b>, RT, RH Finn, RH Poe, JTR</td></tr><tr class="working" style=""><td>flycycle</td><td>967252473</td><td>1</td><td>0</td><td>1</td><td><b>Finn</b>: <b>Finn (omi)</b>, RT, RH Finn, RH Poe, Holdo</td></tr><tr class="working" style=""><td>ControlWard</td><td>661294514</td><td>1</td><td>0</td><td>1</td><td><b>Finn</b>: <b>Finn (omi)</b>, RT, RH Finn, RH Poe, Vet Han</td></tr><tr class="working" style=""><td>Sithler</td><td>348765681</td><td>20</td><td>0</td><td>20</td><td><b>CLS</b>: <b>CLS G12</b>, <b>Han G12</b>, <b>Chewbacca G12</b>, <b>Chewpio G12</b>, <b>C-3PO G12</b></td></tr><tr class="working" style=""><td>Striker</td><td>398583924</td><td>19</td><td>0</td><td>19</td><td><b>Shaak Ti</b>: Shaak Ti, <b>Rex G12</b>, <b>Echo (501st) G9</b>, <b>ARC Trooper G8</b>, Fives</td></tr><tr class="working" style=""><td>Bird and Bull</td><td>331866775</td><td>1</td><td>0</td><td>1</td><td><b>Finn</b>: <b>Finn (omi)</b>, RT, RH Finn, RH Poe, Holdo</td></tr><tr class="working" style=""><td>BP</td><td>176595647</td><td>17</td><td>9</td><td>8</td><td><b>ROLO</b>: <b>ROLO G12</b>, <b>Cpt Solo G12</b>, Leia, CLS, Lando</td></tr><tr class="working" style=""><td>AC the Great</td><td>348615531</td><td>1</td><td>0</td><td>1</td><td><b>Finn</b>: <b>Finn (omi)</b>, RT, RH Finn, RH Poe, JTR</td></tr><tr class="working" style=""><td>Rhil Margos</td><td>562694187</td><td>1</td><td>0</td><td>1</td><td><b>Finn</b>: <b>Finn (omi)</b>, RT, RH Finn, RH Poe, Vet Chewbacca</td></tr><tr class="working" style=""><td>DrDocster</td><td>848559269</td><td>1</td><td>0</td><td>1</td><td><b>Finn</b>: <b>Finn (omi)</b>, RT, RH Finn, RH Poe, JTR</td></tr><tr class="working" style=""><td>Toasty McFloasty</td><td>331541467</td><td>1</td><td>0</td><td>1</td><td><b>Finn</b>: <b>Finn (omi)</b>, RT, RH Finn, RH Poe, Vet Han</td></tr><tr class="working" style=""><td>DarthAsh</td><td>153488472</td><td>1</td><td>0</td><td>1</td><td><b>Finn</b>: <b>Finn (omi)</b>, RT, RH Finn, RH Poe, Poe</td></tr><tr class="working" style=""><td>Aaron</td><td>424267991</td><td>1</td><td>0</td><td>1</td><td><b>Finn</b>: <b>Finn (omi)</b>, RT, RH Finn, RH Poe, Vet Han</td></tr><tr class="working" style=""><td>TheLoneWanderer84</td><td>749817979</td><td>1</td><td>0</td><td>1</td><td><b>Finn</b>: <b>Finn (omi)</b>, RT, RH Finn, RH Poe, JTR</td></tr><tr class="working" style=""><td>TheLoneWanderer84</td><td>749817979</td><td>8</td><td>7</td><td>1</td><td><b>ROLO</b>: <b>ROLO (omi)</b>, Cpt Solo, <b>Leia (omi)</b>, CLS, Lando</td></tr><tr class="working" style=""><td>mr meme2902</td><td>913182347</td><td>19</td><td>10</td><td>9</td><td><b>CLS</b>: CLS, <b>Han R2</b>, Chewbacca, <b>Chewpio G10</b>, <b>C-3PO R1</b></td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Rando</td><td>718921524</td><td>0</td><td>0</td><td>0</td><td><b>Finn</b>: Finn, RT, RH Finn, RH Poe, JTR</td></tr><tr class="working" style=""><td>Floros</td><td>789545733</td><td>1</td><td>0</td><td>1</td><td><b>Finn</b>: <b>Finn (omi)</b>, RT, RH Finn, RH Poe, Poe</td></tr><tr class="working" style=""><td>Floros</td><td>789545733</td><td>17</td><td>7</td><td>10</td><td><b>CLS</b>: CLS, Han, Chewbacca, <b>Chewpio G12</b>, <b>C-3PO G10</b></td></tr><tr class="working" style=""><td>Floros</td><td>789545733</td><td>19</td><td>0</td><td>19</td><td><b>Shaak Ti</b>: Shaak Ti, <b>Rex G11</b>, <b>Echo (501st) G10</b>, <b>ARC Trooper G8</b>, Fives</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Jmk simp</td><td>542156463</td><td>0</td><td>0</td><td>0</td><td><b>GAS Special</b>: GAS, Ahsoka</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Jmk simp</td><td>542156463</td><td>0</td><td>0</td><td>0</td><td><b>JKL</b>: JKL, HYoda, GMY, Jolee, GK</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Jmk simp</td><td>542156463</td><td>0</td><td>0</td><td>0</td><td><b>CLS</b>: CLS, Han, Chewbacca, Chewpio, C-3PO</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Jmk simp</td><td>542156463</td><td>0</td><td>0</td><td>0</td><td><b>Shaak Ti</b>: Shaak Ti, Rex, Echo (501st), ARC Trooper, Fives</td></tr><tr class="working" style=""><td>Jmk simp</td><td>542156463</td><td>15</td><td>0</td><td>15</td><td><b>ROLO</b>: ROLO, Cpt Solo, Biggs, <b>Baze G1</b>, Lando</td></tr><tr class="working" style=""><td>ZMustang</td><td>688985621</td><td>1</td><td>0</td><td>1</td><td><b>Finn</b>: <b>Finn (omi)</b>, RT, RH Finn, RH Poe, Poe</td></tr><tr class="working" style=""><td>Millzking</td><td>711241297</td><td>1</td><td>0</td><td>1</td><td><b>Finn</b>: <b>Finn (omi)</b>, RT, RH Finn, RH Poe, Vet Chewbacca</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>adamclark52</td><td>586229869</td><td>0</td><td>0</td><td>0</td><td><b>GAS Special</b>: GAS, Ahsoka</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>adamclark52</td><td>586229869</td><td>0</td><td>0</td><td>0</td><td><b>ROLO</b>: ROLO, Cpt Solo, Han, Chewpio, Lando</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>adamclark52</td><td>586229869</td><td>0</td><td>0</td><td>0</td><td><b>JKL</b>: JKL, HYoda, GMY, Jolee, GK</td></tr><tr class="working" style=""><td>adamclark52</td><td>586229869</td><td>1</td><td>0</td><td>1</td><td><b>Finn</b>: <b>Finn (omi)</b>, RT, RH Finn, RH Poe, JTR</td></tr><tr class="working" style=""><td>adamclark52</td><td>586229869</td><td>15</td><td>1</td><td>14</td><td><b>Shaak Ti</b>: Shaak Ti, <b>Rex R1</b>, <b>Echo (501st) R1</b>, <b>ARC Trooper G8 4&#9733;</b>, <b>Fives R1</b></td></tr><tr class="working" style=""><td>gegg</td><td>288912899</td><td>1</td><td>0</td><td>1</td><td><b>Finn</b>: <b>Finn (omi)</b>, RT, RH Finn, RH Poe, Holdo</td></tr></table><script>var config = {
+    "paging":   false,
+    "info":     false,
+    bFilter: false,
+    fixedHeader: true,
+    dom: 'Bfrtip',
+    buttons: [
+        'copyHtml5',
+        'excelHtml5',
+        'csvHtml5',
+    ],
+}
+
+table = $('#stats').DataTable(config);</script><br/>
+<font size="-2">Generated 2024-05-12 16:11:14 +0000</font>
+<script data-goatcounter="https://gorgatron.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>

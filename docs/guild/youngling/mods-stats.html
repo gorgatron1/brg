@@ -1,0 +1,372 @@
+<meta charset="UTF-8">
+<meta name="robots" content="noindex"><style type="text/css">
+body {
+ background-image: url("../../i/more_faded_logo.jpg");
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+</style><style type="text/css">
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  padding: 8px;
+}
+
+tr:nth-child(even) {background: #dddddd}
+tr:nth-child(odd) {background: #ffffff}
+
+.toggleable {
+    display: none;
+}
+</style><link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.1.5/css/fixedHeader.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.6/css/fixedColumns.dataTables.min.css" />
+<script type="text/javascript" language="javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedheader/3.1.5/js/dataTables.fixedHeader.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedcolumns/3.2.6/js/dataTables.fixedColumns.min.js"></script><title>BRG Alliance Guild Reports: Guild Mod Stats</title>
+<div style="display: flex; align-items:baseline"><img src="../../i/simple_logo_48.jpg"/>&nbsp;<h1>Alliance Guild Reports: Guild Mod Stats</h1></div>
+
+<div style="background-color: #f0f0f0; border: solid red; padding: 10px; border-radius: 10px">
+<a href="../../alliance/index.html">Alliance</a> |
+<a href="../../alliance/characters.html">Characters</a> |
+
+<div style="float:right;"><a href="../../r">Resources</a></div>
+<a href="index.html">BRG Younglings In The Temple</a>
+</div>
+<br/><h2 id="name">Mod Stats for BRG Younglings In The Temple</h2>
+
+<p>
+    This table shows summary information for all the mods across all the players in your guild, by player
+    (see <a href="mods-characters.html">them by character</a> as well).  If you click on a player
+    name, you will see details about their mods.
+    
+<p>
+    The headers show the character name and the target value for the stat for an R5 unit using the <i>most common</i>
+    modding strategy.
+    
+<p>
+    <form name="params" action="mods-stats.html" method="get">
+    <b>Stat:</b>
+    <select name="stat" onchange="document.params.submit()">
+        <option value="speed">speed</option>
+        <option value="offense">offense</option>
+        <option value="defense">defense</option>
+        <option value="health">health</option>
+        <option value="protection">protection</option>
+        <option value="crit chance">crit chance</option>
+        <option value="crit damage">crit damage</option>
+        <option value="crit avoidance">crit avoidance</option>
+        <option value="potency">potency</option>
+        <option value="tenacity">tenacity</option>
+        <option value="accuracy">accuracy</option>
+    </select>
+    <b>Sort By:</b>
+    <select name="sort" onchange="document.params.submit()">
+        <option value="name">name</option>
+        <option value="target_asc">target +</option>
+        <option value="target_desc">target -</option>
+    </select>
+    <b>Gear:</b><input name="gearFilter" type="text" placeholder="Gear >=, R1 = 21" min="1" max="28" pattern="[0-9]+" onchange="document.params.submit()">
+    <b>Stat Value:</b><input name="statFilter" type="text" placeholder="Stats <=" pattern="[0-9]+" onchange="document.params.submit()">
+    <b>Name:</b><input name="nameFilter" type="text" placeholder="names and tags" onchange="document.params.submit()">
+    </form>
+    
+    
+<table id="characters">
+    <thead><tr>
+        <th>Player</th>
+    </tr></thead>
+</table>
+
+<script>
+    var urlParams = new URLSearchParams(window.location.search)
+    var stat = urlParams.get('stat') ?? "speed"
+    
+    var gearFilter = urlParams.get('gearFilter')
+    var statFilter = urlParams.get('statFilter')
+    var nameFilter = urlParams.get('nameFilter')
+    var sortBy = urlParams.get('sort') ?? "name"
+
+    document.params.stat.value = stat
+    document.params.gearFilter.value = gearFilter
+    document.params.statFilter.value = statFilter
+    document.params.nameFilter.value = nameFilter
+    document.params.sort.value = sortBy
+    
+    var modReferenceData = {}
+    var modData = {}
+    
+    var scoreThreshold = -25
+    var table = null
+    var data = []
+    var characterIds = []
+    
+    jQuery.ajax({
+    type: 'GET',
+    async: true,
+    url: 'modData.json',
+    success: function (d1) {
+        modData = d1
+        
+        jQuery.ajax({
+        type: 'GET',
+        async: true,
+        url: '../../modReference.json',
+        success: function (d2) {
+            
+            modReferenceData = d2
+            setup()
+        }})
+    }})
+    
+    function addColumn(title, target, link) {
+        var t = document.getElementById("characters")
+        var header = t.createTHead()
+        var row = header.rows[0]
+        var cell = row.insertCell(-1)
+        cell.innerHTML = '<b><a href="' + link +'">' + title + '</a></b>' + (target == null ? "" : "<br>+ " + target)
+    }
+        
+    function setup() {
+        // sort character ids by name (not just id)
+        characterIds = Object.keys(modData.units).sort(function (a, b) {
+            if (sortBy == "name") {
+                var aa = modReferenceData.characters[a].n
+                var bb = modReferenceData.characters[b].n
+                if (aa < bb) { return -1 }
+                if (aa > bb) { return 1 }
+                return 0
+            } else {
+                var dir = sortBy == "target_asc" ? 1 : -1
+                var ai = modReferenceData.characters[a].c[0].p.indexOf(stat)
+                var bi = modReferenceData.characters[b].c[0].p.indexOf(stat)
+                var aa = ai == -1 ? 0 : modReferenceData.characters[a].c[0].t[25][ai]
+                var bb = bi == -1 ? 0 : modReferenceData.characters[b].c[0].t[25][bi]
+                if (aa < bb) { return -dir }
+                if (aa > bb) { return dir }
+                return 0
+            }
+        })
+        
+        var names = nameFilter == null ? null : nameFilter.replace(",", " ").split(" ").map(v => {
+            return v.trim().toLowerCase()
+        })
+        
+        characterIds = characterIds.filter(cid => {
+            var rmd = modReferenceData.characters[cid]
+            
+            // honor the name filter
+            if (names != null) {
+                var pass = false
+                names.forEach(n => {
+                    // allow any of the names to match
+                    if (rmd.n.toLowerCase().indexOf(n) != -1) {
+                        pass = true
+                    }
+                })
+                if (!pass) {
+                    // not a name, require all of the tags to match
+                    var allTagsMatched = true
+                    names.every(n => {
+                        var foundTag = false
+                        rmd.t.forEach(t => {
+                            if (t.indexOf(n) != -1) {
+                                foundTag = true
+                            }
+                        })
+                        if (!foundTag) {
+                            allTagsMatched = false
+                            return false
+                        } else {
+                            return true
+                        }
+                    })
+                    
+                    if (allTagsMatched) {
+                        pass = true
+                    }
+                }
+                if (!pass) {
+                    return false
+                }
+            }
+            var statIndex = rmd.c[0].p.indexOf(stat)
+            return statIndex != -1
+        })
+                        
+        // build the columns
+        characterIds.forEach(cid => {
+            var rmd = modReferenceData.characters[cid]
+            var index = modReferenceData.characters[cid].c[0].p.indexOf(stat)
+            var t = index == -1 ? null : modReferenceData.characters[cid].c[0].t[25][index]
+            
+            addColumn(rmd.n, t, "mods-character.html?id=" + cid)
+        })
+        
+        // gear filter
+        var g = gearFilter
+        if (g == null || g.length == 0) {
+            g = 0
+        } else {
+            g = parseInt(g)
+        }
+        
+        // stat filter
+        var s = statFilter
+        if (s == null || s.length == 0) {
+            s = 10000000
+        } else {
+            s = parseInt(s)
+        }
+                
+        // rows will be player, (gear level, stat) ...
+        modData.players.forEach(function(player, playerIndex) {
+            var keep = false
+            var row = [[player.n, player.c]]
+            
+            characterIds.forEach(cid => {
+                var rmd = modReferenceData.characters[cid]
+                var statIndex = rmd.c[0].p.indexOf(stat)
+                if (statIndex >= 0) {
+                    var u = modData.units[cid][playerIndex]
+                    if (u == null || u.g < g || u.v[statIndex] > s) {
+                        row.push(null)
+                    } else {
+                        row.push([u.g, u.v[statIndex]])
+                        keep = true
+                    }
+                }
+            })
+            
+            if (keep) {
+                data.push(row)
+            }
+        })
+        
+        var config = {
+            "paging":   false,
+            "info":     false,
+            bFilter: false,
+            data: data,
+            columnDefs: [
+            {
+                targets: 0,
+                searchable: true,
+                width: 250,
+                render: function (data, type, row, meta) {
+                    return '<a href="mods-player.html?id=' + row[0][1] + '">' + row[0][0] + "</a>"
+                }
+            },
+            {
+                targets: '_all',
+                searchable: false,
+                render: function (data, type, row, meta) {
+                    var d = row[meta.col]
+                    if (d == null) {
+                        return null
+                    }
+                    if (type == "sort" || type == "type") {
+                        return d[1]
+                    } else {
+                        var n = ""
+                        if (d[0] > 20) {
+                            n = "R" + (d[0] - 20)
+                        } else {
+                            n = "G" + d[0]
+                        }
+                        
+                        return "+" + d[1] + "&nbsp;" + n
+                    }
+                }
+            },
+            ]
+        }
+        
+        if (nameFilter == null) {
+            config['fixedColumns'] = { leftColumns: 1 }
+            config['scrollX'] = true
+        }
+
+        table = $('#characters').DataTable(config);
+    }
+    
+    function updateFilter() {
+        // gear filter
+        var g = $('#gear-filter').val()
+        if (g == null || g.length == 0) {
+            g = 0
+        } else {
+            g = parseInt(g)
+        }
+        
+        // stat filter
+        var s = $('#stat-filter').val()
+        if (s == null || s.length == 0) {
+            s = 10000000
+        } else {
+            s = parseInt(s)
+        }
+        
+        var n = $('#name-filter').val()
+        if (n.length == 0) {
+            n = null
+        } else {
+            n = n.toLowerCase()
+        }
+                
+        var columns_to_show = {}
+        var columns_to_hide = []
+        characterIds.forEach(function(id, i) {
+            if (n != null && modReferenceData.characters[id].n.toLowerCase().indexOf(n) == -1) {
+                columns_to_hide.push(i + 1)
+            } else {
+                columns_to_show[i + 1] = true
+            }
+        })
+
+        table.columns(columns_to_hide).visible(false)
+        table.columns(Object.keys(columns_to_show)).visible(true)
+
+        var filteredData = []
+        
+        data.forEach(inputRow => {
+            var keep = false
+            var row = []
+            
+            inputRow.forEach(function(v, i) {
+                if (i == 0) {
+                    row.push(v)
+                } else if (columns_to_show[i]) {
+                    if (v == null) {
+                        row.push(null)
+                    } else  if (v[0] >= g && v[1] < s) {
+                        keep = true
+                        row.push(v)
+                    } else {
+                        row.push(null)
+                    }
+                } else {
+                    row.push(null)
+                }
+            })
+            
+            if (keep) {
+                filteredData.push(row)
+            }
+        })
+        
+        table.clear()
+        table.rows.add(filteredData)
+        table.draw(false)
+    }
+    
+</script><br/>
+<font size="-2">Generated 2024-05-12 16:08:10 +0000</font>
+<script data-goatcounter="https://gorgatron.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>

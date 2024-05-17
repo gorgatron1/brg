@@ -1,0 +1,291 @@
+<meta charset="UTF-8">
+<meta name="robots" content="noindex"><style type="text/css">
+body {
+ background-image: url("../../i/more_faded_logo.jpg");
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+</style><style type="text/css">
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  padding: 8px;
+}
+
+tr:nth-child(even) {background: #dddddd}
+tr:nth-child(odd) {background: #ffffff}
+
+.toggleable {
+    display: none;
+}
+</style><link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.1.5/css/fixedHeader.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.6/css/fixedColumns.dataTables.min.css" />
+<script type="text/javascript" language="javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedheader/3.1.5/js/dataTables.fixedHeader.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedcolumns/3.2.6/js/dataTables.fixedColumns.min.js"></script><title>BRG Alliance Guild Reports: Guild Mod Report: Single Character</title>
+<div style="display: flex; align-items:baseline"><img src="../../i/simple_logo_48.jpg"/>&nbsp;<h1>Alliance Guild Reports: Guild Mod Report: Single Character</h1></div>
+
+<div style="background-color: #f0f0f0; border: solid red; padding: 10px; border-radius: 10px">
+<a href="../../alliance/index.html">Alliance</a> |
+<a href="../../alliance/characters.html">Characters</a> |
+
+<div style="float:right;"><a href="../../r">Resources</a></div>
+<a href="index.html">BRG Laxed Out Pros</a>
+</div>
+<br/><script>
+    var urlParams = new URLSearchParams(window.location.search)
+    var id = urlParams.get('id') ?? 'ADMIRALACKBAR'
+    var characterUrl = "../../c/"
+
+    var modReferenceData = {}
+    var modData = {}
+    
+    var table = null
+        
+    
+    jQuery.ajax({
+    type: 'GET',
+    async: true,
+    url: 'modData.json',
+    success: function (d1) {
+        modData = d1
+        
+        jQuery.ajax({
+        type: 'GET',
+        async: true,
+        url: '../../modReference.json',
+        success: function (d2) {
+            
+            modReferenceData = d2
+            setup()
+        }})
+    }})
+    
+    function addColumn(title) {
+        var t = document.getElementById("characters")
+        var header = t.createTHead()
+        var row = header.rows[0]
+        var cell = row.insertCell(-1)
+        cell.innerHTML = "<b>" + title + "</b>"
+    }
+                
+    function setup() {
+        document.getElementById('name').innerHTML = 'Mod Data for <a href="' + characterUrl + id + '.html#mod0">' + modReferenceData.characters[id].n + '</a>'
+        
+        // sort character ids by name (not just id)
+        var characterIds = Object.keys(modData.units).sort(function (a, b) {
+            var aa = modReferenceData.characters[a].n
+            var bb = modReferenceData.characters[b].n
+            if (aa < bb) { return -1 }
+            if (aa > bb) { return 1 }
+            return 0
+        })
+        
+        // set up the list to show characters to vie
+        select = document.getElementById('select')
+        characterIds.forEach(c => {
+            var option = document.createElement("option");
+            option.text = modReferenceData.characters[c].n
+            option.value = c
+            if (c == id) {
+                option.selected = true
+            }
+            select.add(option)
+        })
+        
+        // add the columns for the stats for this character
+        modReferenceData.characters[id].c[0].p.forEach(addColumn)
+        
+        var data = []
+        modData.players.forEach(function(player, i) {
+            var u = modData.units[id][i]
+            if (u != null) {
+                var row = [
+                    [player.n, player.c],
+                    u.g,
+                    u.d,
+                    u.s,
+                    null,
+                ]
+            
+                u.v.forEach(function (v, i) {
+                    // the stat and the target stat for this gear level
+                    row.push([v, modReferenceData.characters[id].c[0].t[u.g][i]])
+                })
+            
+                data.push(row)
+            } else {
+                var row = [
+                    [player.n, player.c],
+                    null,
+                    null,
+                    null,
+                    null,
+                ]
+                modReferenceData.characters[id].c[0].p.forEach(v => {
+                    row.push(null)
+                })
+                data.push(row)
+            }
+        })
+        
+        table = $('#characters').DataTable({
+        "paging":   false,
+        "info":     false,
+        fixedHeader: true,
+
+            data: data,
+            columnDefs: [
+            {
+                targets: 0,
+                searchable: true,
+                render: function (data, type, row, meta) {
+                    var u = modData.units[id][meta.row]
+                    if (u == null) {
+                        return '<a href="mods-player.html?id=' + row[0][1] + '">' + row[0][0] + '</a>'
+                    } else {
+                        return '<a href="mods-player.html?id=' + row[0][1] + '">' + row[0][0] + '</a>' + ' [<a href="' + characterUrl + id + '.html#mod' + (u.alt ?? 0) + '">mods</a>]'
+                    }
+                }
+            },
+            {
+                targets: 1,
+                render: function (data, type, row, meta) {
+                    if (type == "sort" || type == "type") {
+                        return row[meta.col]
+                    } else {
+                        if (row[meta.col] == null) {
+                            return null
+                        }
+                        var n = ""
+                        if (row[meta.col] > 20) {
+                            n = "R" + (row[meta.col] - 20)
+                        } else {
+                            n = "G" + row[meta.col]
+                        }
+                        return '<a href="https://swgoh.gg/p/' + row[0][1] + '/characters/' + modReferenceData.characters[id].u + '">' + n + '</a>'
+                    }
+                }
+            },
+            {
+                targets: [2, 3],
+                render: function (data, type, row, meta) {
+                    return row[meta.col]
+                }
+            },
+            {
+                targets: 2,
+                visible: false,
+            },
+            {
+                targets: 4,
+                render: function (data, type, row, meta) {
+                    var c = 0
+                    row.forEach(function(d, i) {
+                        if (d != null && i > 4) {
+                            if (d[0] < d[1]) {
+                                c += 1
+                            }
+                        }
+                    })
+                    return c
+                }
+            },
+            {
+                targets: '_all',
+                render: function (data, type, row, meta) {
+                    var d = row[meta.col]
+                    if (d == null) {
+                        return null
+                    }
+                    
+                    // the stat index
+                    var i = meta.col - 4
+                    if (type == "sort" || type == "type") {
+                        return d[0]
+                    } else {
+                        if (d[0] >= d[1]) {
+                            return "+" + d[0]
+                        } else {
+                            return "<b>+" + d[0] + "/" + d[1] + "</b>"
+                        }
+                    }
+                },
+            },
+            { targets: '_all', searchable: false }
+            ]
+        });
+    }
+    
+    function reload() {
+        select = document.getElementById('select')
+        window.location = "?id=" + select.value
+    }
+    
+</script>
+    
+<h2 id="name"></h2>
+    
+<p>
+    All the mods for a single character across all the players.  The table shows what the data mining has
+    determined to be important stats (in particular the primary configuration -- there may be multiple).
+    You can sort by any of the columns.  The score computes how much over/under you are compared to the target with
+    more important stats (click the [mods] link to see more info) counting for more.  Generally a higher score
+    is better.  Below zero may need some work (if you want that unit to have good mods).  The target is computed
+    by looking at mods in the center of the cluster your mods seem to belong to.  If you
+    click on the [mods] link you can see which mods were picked as the target.  The stat values are what you
+    would get if you put <i>those</i> mods on your character.  These numbers are not necessarily <i>correct</i>,
+    but they are an indication of where you might aim.
+    
+<p>
+    <b>Q:</b> What does the score mean?  <b>A:</b> Higher is probably better.  If you match the target mod exactly,
+    you will get a score of zero.  If you are way below in many of the stats (or the highest priority stats) you
+    may get a large negative score.  If you exceed the stats (and take a look at the "great mod" if you click the
+    link), you will get a high score.
+    <br>
+    <b>Q:</b> What if it says I need more speed?  <b>A:</b> You probably do.  Speed is a good thing to have.
+    <br>
+    <b>Q:</b> It says I seed 8775 protection but I only have 7563 -- what do I do?  <b>A:</b> You can keep working toward the target, or
+    since you already have about 85% of the target, call it good enough.  The score is based on priority and percent of
+    target.
+    <br>
+    <b>Q:</b> I like to mod my Daka with CA and Defense but it says otherwise.  <b>A:</b> Me too -- this selects common configurations
+    as targets and you may have other ideas.  Be yourself!
+    <br>
+    <b>Q:</b> Mods optimizer tells me to mod them a different way.  <b>A:</b> Could be -- this is based on what people actually
+    use.  You need to decide.
+    <br>
+    <b>Q:</b> This says my mods on Gar Saxon are no good, do I need to fix them?  <b>A:</b> You need to make that call (but no in this case!).
+    This will score any character that is G8 or higher and has a full set of mods.  Maybe you just parked some mods there.  If you don't
+    use the toon, I wouldn't bother modding it.
+
+<p>
+    The stats columns will show a single number if you exceed the target stat or two numbers (in bold) -- the first
+    number is the stat increase and the second is the target.
+    
+<p>
+    If you click on the gear value, you will see your mods on swgoh.gg.
+
+<p>
+<select name="id" id="select" onchange="if (this.selectedIndex) reload();">
+</select>
+    
+<table id="characters">
+    <thead><tr>
+        <th>Character</th>
+        <th>Gear</th>
+        <th>Distance</th>
+        <th>Score</th>
+        <th>Under</th>
+    </tr></thead>
+</table><br/>
+<font size="-2">Generated 2024-05-12 16:05:00 +0000</font>
+<script data-goatcounter="https://gorgatron.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>

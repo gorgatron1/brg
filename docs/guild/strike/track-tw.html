@@ -1,0 +1,101 @@
+<meta charset="UTF-8">
+<meta name="robots" content="noindex"><style type="text/css">
+body {
+ background-image: url("../../i/more_faded_logo.jpg");
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+</style><style type="text/css">
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  padding: 8px;
+}
+
+tr:nth-child(even) {background: #dddddd}
+tr:nth-child(odd) {background: #ffffff}
+
+.toggleable {
+    display: none;
+}
+</style><link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.1.5/css/fixedHeader.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.6/css/fixedColumns.dataTables.min.css" />
+<script type="text/javascript" language="javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedheader/3.1.5/js/dataTables.fixedHeader.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedcolumns/3.2.6/js/dataTables.fixedColumns.min.js"></script><title>BRG Alliance Guild Reports: TW Teams Progress Tracker</title>
+<div style="display: flex; align-items:baseline"><img src="../../i/simple_logo_48.jpg"/>&nbsp;<h1>Alliance Guild Reports: TW Teams Progress Tracker</h1></div>
+
+<div style="background-color: #f0f0f0; border: solid red; padding: 10px; border-radius: 10px">
+<a href="../../alliance/index.html">Alliance</a> |
+<a href="../../alliance/characters.html">Characters</a> |
+
+<div style="float:right;"><a href="../../r">Resources</a></div>
+<a href="index.html">SithStrikeTeam</a>
+</div>
+<br/><h2>TW Teams Progress Tracker SithStrikeTeam</h2>
+
+<p>
+Progress on top tier TW teams:
+
+<ul>
+<li>Negotiator (defense) & Malevolence (offense)
+<li>Padme - Padme, GK, JKA, Ahsoka, C3PO/CAT
+<li>CLS - CLS, Chewpio, Han, C3PO, Chewbacca
+<li>GAS - GAS, 501st
+<li>Troopers - Veers, Starck/Gideon, Range, Dark, Piett
+<li>Grievous (with omicron) - GG, Droideka, B1, B2, Magnagaurd
+<li>Geos (with omicron) - GBA Sun Fac, Geonosian Soldier, Geonosian Spy, Poggle
+<li>Phasma (with omicron) - Phasma, leftover FO
+</ul>
+
+<p>
+Note that the target gear level for the units in the squad is R3 -- you may want more
+and they may be usable with less.
+
+<p>
+Some variations are possible -- just ask!
+
+<p>
+<button onclick="$('.complete').hide(); $('.working').show()">hide completed</button>
+<button onclick="$('.complete').show(); $('.working').hide()">hide incomplete</button>
+<button onclick="$('.complete').show(); $('.working').show()">show all</button>
+
+<br/>
+    
+<link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.0.0/css/buttons.dataTables.min.css" />
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/buttons/2.0.0/js/dataTables.buttons.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/buttons/2.0.0/js/buttons.html5.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script><script>
+$(document).ready(function() {
+    var urlParams = new URLSearchParams(window.location.search)
+    var show = urlParams.get('show')
+    if (show == "working") {
+        $('.complete').hide()
+    } else if (show == "complete") {
+        $('.working').hide()
+    }
+});
+</script><table class="stripe" id="stats"><thead><th>Player</th><th>Ally Code</th><th>Starting Gear Needed</th><th>Progress</th><th>Current Gear Needed</th><th>Team</th></thead><tr class="working" style=""><td>TMONEY</td><td>673871277</td><td>5</td><td>0</td><td>5</td><td><b>padme</b>: Padme, GK, <b>JKA G12</b>, Ahsoka, <b>C-3PO R2</b></td></tr><tr class="working" style=""><td>TMONEY</td><td>673871277</td><td>14</td><td>0</td><td>14</td><td><b>CLS</b>: <b>CLS R1</b>, <b>Han R1</b>, <b>Chewbacca R1</b>, <b>Chewpio G12</b>, <b>R2-D2 G12</b></td></tr><tr class="working" style=""><td>TMONEY</td><td>673871277</td><td>37</td><td>0</td><td>37</td><td><b>Phasma</b>: <b>Phasma G9</b>, <b>FOTP G9</b>, <b>FOSFTP G9</b>, <b>FOST G7 2&#9733;</b>, <b>Kylo G9</b></td></tr><tr class="working" style=""><td>TMONEY</td><td>673871277</td><td>4</td><td>0</td><td>4</td><td><b>Grievous Omicron</b>: GG, B2, B1, MagnaGuard, <b>Droideka G12</b></td></tr><tr class="working" style=""><td>TMONEY</td><td>673871277</td><td>20</td><td>0</td><td>20</td><td><b>Geonosians Omicron</b>: <b>GBA G12</b>, <b>Sun Fac G12</b>, <b>Geo Soldier G12</b>, <b>Geo Spy G12</b>, <b>Poggle G12</b></td></tr><tr class="working" style=""><td>TMONEY</td><td>673871277</td><td>32</td><td>3</td><td>29</td><td><b>GAS</b>: <b>GAS G12</b>, <b>Rex G9</b>, <b>Echo (501st) G9</b>, <b>Fives G10</b>, <b>ARC Trooper G11 5&#9733;</b></td></tr><tr class="working" style=""><td>Kale Raxl</td><td>428441352</td><td>6</td><td>0</td><td>6</td><td><b>Phasma</b>: Phasma, FOE, <b>Sith Trooper G12</b>, KRU, <b>Kylo R1</b></td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Kale Raxl</td><td>428441352</td><td>0</td><td>0</td><td>0</td><td><b>padme</b>: Padme, GK, JKA, Ahsoka, CAT</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Kale Raxl</td><td>428441352</td><td>0</td><td>0</td><td>0</td><td><b>Negotiator</b>: Negotiator, BTL-B Y-wing, Anakin's Eta-2, Rex's ARC-170, Umbaran SF, Ahsoka's SF, Plo's SF, Clone Sergeant's ARC-170</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Kale Raxl</td><td>428441352</td><td>0</td><td>0</td><td>0</td><td><b>Malevolence</b>: Malevolence, Hyena Bomber, Vulture Droid, Sun Fac SF, Soldier SF, Spy SF</td></tr><tr class="working" style=""><td>Kale Raxl</td><td>428441352</td><td>23</td><td>0</td><td>23</td><td><b>Troopers</b>: <b>Veers G12</b>, <b>Piett G12</b>, <b>Starck G11</b>, <b>Dark Trooper G10</b>, <b>Range Trooper G12</b></td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Kale Raxl</td><td>428441352</td><td>0</td><td>0</td><td>0</td><td><b>CLS</b>: CLS, Han, Chewbacca, Chewpio, C-3PO</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Kale Raxl</td><td>428441352</td><td>0</td><td>0</td><td>0</td><td><b>GAS</b>: GAS, Rex, Echo (501st), Fives, ARC Trooper</td></tr><tr class="working" style=""><td>Kale Raxl</td><td>428441352</td><td>1</td><td>0</td><td>1</td><td><b>Grievous Omicron</b>: GG, B2, B1, MagnaGuard, <b>Droideka (omi)</b></td></tr><tr class="working" style=""><td>Kale Raxl</td><td>428441352</td><td>1</td><td>0</td><td>1</td><td><b>Geonosians Omicron</b>: GBA, Sun Fac, Geo Soldier, Geo Spy, <b>Poggle (omi)</b></td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Kai Dannik</td><td>378913252</td><td>0</td><td>0</td><td>0</td><td><b>padme</b>: Padme, GK, JKA, Ahsoka, CAT</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Kai Dannik</td><td>378913252</td><td>0</td><td>0</td><td>0</td><td><b>CLS</b>: CLS, Han, Chewbacca, Chewpio, C-3PO</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Kai Dannik</td><td>378913252</td><td>0</td><td>0</td><td>0</td><td><b>GAS</b>: GAS, Rex, Echo (501st), Fives, ARC Trooper</td></tr><tr class="working" style=""><td>Kai Dannik</td><td>378913252</td><td>47</td><td>0</td><td>47</td><td><b>Phasma</b>: <b>Phasma G7</b>, <b>FOTP G9</b>, <b>FOSFTP G8</b>, <b>FOST G1 3&#9733;</b>, <b>Kylo G8</b></td></tr><tr class="working" style=""><td>Kai Dannik</td><td>378913252</td><td>1</td><td>0</td><td>1</td><td><b>Grievous Omicron</b>: GG, B2, B1, <b>MagnaGuard R2</b>, Droideka</td></tr><tr class="working" style=""><td>Kai Dannik</td><td>378913252</td><td>1</td><td>0</td><td>1</td><td><b>Negotiator</b>: Negotiator, BTL-B Y-wing, Anakin's Eta-2, Rex's ARC-170, Umbaran SF, Ahsoka's SF, <b>Plo's SF LV1</b>, Clone Sergeant's ARC-170</td></tr><tr class="working" style=""><td>Kai Dannik</td><td>378913252</td><td>6</td><td>0</td><td>6</td><td><b>Geonosians Omicron</b>: GBA, <b>Sun Fac R1</b>, Geo Soldier, <b>Geo Spy R1</b>, <b>Poggle R1</b></td></tr><tr class="working" style=""><td>Kai Dannik</td><td>378913252</td><td>19</td><td>0</td><td>19</td><td><b>Troopers</b>: <b>Veers G12</b>, Piett, Gideon, Dark Trooper, <b>Range Trooper G1 5&#9733;</b></td></tr><tr class="working" style=""><td>Little Porg</td><td>489586157</td><td>28</td><td>0</td><td>28</td><td><b>CLS</b>: <b>CLS G12</b>, <b>Han G12</b>, <b>Chewbacca R2</b>, <b>Chewpio G1 4&#9733;</b>, <b>R2-D2 G12</b></td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Tahl Rexick</td><td>834776681</td><td>0</td><td>0</td><td>0</td><td><b>padme</b>: Padme, GK, JKA, Ahsoka, CAT</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Tahl Rexick</td><td>834776681</td><td>0</td><td>0</td><td>0</td><td><b>Negotiator</b>: Negotiator, BTL-B Y-wing, Anakin's Eta-2, Rex's ARC-170, Umbaran SF, Ahsoka's SF, Plo's SF, Clone Sergeant's ARC-170</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Tahl Rexick</td><td>834776681</td><td>0</td><td>0</td><td>0</td><td><b>GAS</b>: GAS, Rex, Echo (501st), Fives, ARC Trooper</td></tr><tr class="working" style=""><td>Tahl Rexick</td><td>834776681</td><td>1</td><td>0</td><td>1</td><td><b>Grievous Omicron</b>: GG, B2, B1, MagnaGuard, <b>Droideka (omi)</b></td></tr><tr class="working" style=""><td>Tahl Rexick</td><td>834776681</td><td>1</td><td>0</td><td>1</td><td><b>Malevolence</b>: Malevolence, Hyena Bomber, <b>Vulture Droid 6&#9733;</b>, Sun Fac SF, Soldier SF, Spy SF</td></tr><tr class="working" style=""><td>Tahl Rexick</td><td>834776681</td><td>25</td><td>0</td><td>25</td><td><b>Geonosians Omicron</b>: <b>GBA G10</b>, <b>Sun Fac G11</b>, <b>Geo Soldier G12</b>, <b>Geo Spy G11</b>, <b>Poggle G11</b></td></tr><tr class="working" style=""><td>Kizz</td><td>346434263</td><td>12</td><td>0</td><td>12</td><td><b>padme</b>: <b>Padme G12</b>, GK, JKA, <b>Ahsoka G12</b>, <b>C-3PO G12</b></td></tr><tr class="working" style=""><td>Kizz</td><td>346434263</td><td>42</td><td>0</td><td>42</td><td><b>Phasma</b>: <b>Phasma G9</b>, <b>FOTP G6</b>, <b>FOSFTP G7</b>, <b>FOST G8</b>, <b>Kylo G8</b></td></tr><tr class="working" style=""><td>Kizz</td><td>346434263</td><td>31</td><td>0</td><td>31</td><td><b>Grievous Omicron</b>: <b>GG G12</b>, <b>B2 G9</b>, <b>B1 G12</b>, <b>MagnaGuard G8</b>, <b>Droideka G8</b></td></tr><tr class="working" style=""><td>Kizz</td><td>346434263</td><td>1</td><td>0</td><td>1</td><td><b>Negotiator</b>: Negotiator, <b>BTL-B Y-wing 3&#9733;</b>, Anakin's Eta-2, Rex's ARC-170, Umbaran SF, Ahsoka's SF, Plo's SF, Clone Sergeant's ARC-170</td></tr><tr class="working" style=""><td>Kizz</td><td>346434263</td><td>28</td><td>0</td><td>28</td><td><b>Geonosians Omicron</b>: <b>GBA G12</b>, <b>Sun Fac G8</b>, <b>Geo Soldier G11</b>, <b>Geo Spy G9</b>, <b>Poggle G12</b></td></tr><tr class="working" style=""><td>Kizz</td><td>346434263</td><td>47</td><td>1</td><td>46</td><td><b>Troopers</b>: <b>Veers G7 6&#9733;</b>, <b>Piett G7 4&#9733;</b>, <b>Starck G6</b>, <b>Dark Trooper G9</b>, <b>Range Trooper G5 6&#9733;</b></td></tr><tr class="working" style=""><td>Kizz</td><td>346434263</td><td>24</td><td>0</td><td>24</td><td><b>CLS</b>: CLS, <b>Han G10</b>, <b>Chewbacca G9</b>, <b>Chewpio G9</b>, <b>R2-D2 G12</b></td></tr></table><script>var config = {
+    "paging":   false,
+    "info":     false,
+    bFilter: false,
+    fixedHeader: true,
+    dom: 'Bfrtip',
+    buttons: [
+        'copyHtml5',
+        'excelHtml5',
+        'csvHtml5',
+    ],
+}
+
+table = $('#stats').DataTable(config);</script><br/>
+<font size="-2">Generated 2024-05-12 16:11:44 +0000</font>
+<script data-goatcounter="https://gorgatron.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>

@@ -1,0 +1,260 @@
+<meta charset="UTF-8"><style type="text/css">
+body {
+ background-image: url("../i/more_faded_logo.jpg");
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+</style><style type="text/css">
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  padding: 8px;
+}
+
+tr:nth-child(even) {background: #dddddd}
+tr:nth-child(odd) {background: #ffffff}
+
+.toggleable {
+    display: none;
+}
+</style><link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.1.5/css/fixedHeader.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.6/css/fixedColumns.dataTables.min.css" />
+<script type="text/javascript" language="javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedheader/3.1.5/js/dataTables.fixedHeader.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedcolumns/3.2.6/js/dataTables.fixedColumns.min.js"></script>    <script>
+    $(document).ready( function () {
+        $('#data').DataTable({
+        "paging":   false,
+        "info":     false,
+        
+        
+        
+        
+        
+        });
+    } );
+    </script><script src="https://d3js.org/d3.v5.min.js"></script>
+	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+<title>BRG Alliance Guild Reports: Alliance Guild Index</title>
+<div style="display: flex; align-items:baseline"><img src="../i/simple_logo_48.jpg"/>&nbsp;<h1>Alliance Guild Reports: Alliance Guild Index</h1></div>
+
+<div style="background-color: #f0f0f0; border: solid red; padding: 10px; border-radius: 10px">
+<a href="index.html">Alliance</a> |
+<div style="float:right;"><a href="../r">Resources</a></div>
+<a href="players.html">Player</a> | <a href="characters.html">Characters</a> | <a href="history.html">History</a>
+</div>
+
+<div id="guild-gp-per-player" style="height:800px;"></div>
+
+<div id="guild-gps" style="height:800px;"></div>
+<div id="guild-gps-hover-info"></div>
+
+<div id="guild-delta-gps" style="height:800px;"></div>
+
+<div id="guild-delta-gps-negative" style="height:800px;"></div>
+
+<script>	
+	function d_to_pl(x) {
+		let p = x.split("/");
+		return new Date(p[2] + "-" + p[0] + "-" + p[1])
+	}
+		
+	jQuery.ajax({
+	type: 'GET',
+	async: true,
+	url: 'alliance-guilds-gp-stats.json',
+	success: function (data) {
+		
+		let traces = []
+		
+		// per guild gp info
+		data["series"].forEach(function(guild) {
+			let dates = data["dates"].map(d_to_pl)
+			let gps = guild["values"]["total"].map(function(x) { return x == -1 ? null : x })
+			trace = {
+				y: gps,
+				x: dates,
+				mode: "lines",
+				name: guild["name"]
+			}
+			traces.push(trace)
+		});
+		
+		let layout = {
+			title: "Guild GP Over Time",
+			hovermode: "closest",
+		}
+		
+	    Plotly.newPlot('guild-gps', traces, layout);
+		
+		p = document.getElementById('guild-gps');
+		hoverInfo = document.getElementById('guild-gps-hover-info');
+		p.on("plotly_hover", function(data) {
+			let p = data.points[0]
+			hoverInfo.innerHTML = "Value: " + p.y.toLocaleString("en") + " delta from previous: " + (p.y - p.data.y[p.pointNumber - 1]).toLocaleString("en")
+		})
+		.on("plotly_unhover", function(data) {
+			hoverInfo.innerHTML = '';
+		})
+		
+		
+		// now load the player counts so we can compute gp/player
+		jQuery.ajax({
+		type: 'GET',
+		async: true,
+		url: 'alliance-guilds-counts-stats.json',
+		success: function (counts) {
+			let traces = []
+		
+			// per guild gp info
+			data["series"].forEach(function(guild) {
+				let dates = data["dates"].map(d_to_pl)
+				let gps = guild["values"]["total"].map(function(x) { return x == -1 ? null : x })
+				
+				let counts_data = counts["series"].filter(function(x) { return x.name == guild.name })[0]
+								
+				let gps_per_player = counts_data.values.players.map(function(count, index) { 
+					if (count == -1) {
+						return null
+					} else {
+						return gps[index] / count
+					}
+				}).map(function(x, i, arr) {
+					if (arr[i - 5] == null) {
+						return x
+					} else {
+						return (arr[i - 5] + arr[i - 4] + arr[i - 3] + arr[i - 2] + arr[i - 1] + arr[i]) / 6
+					}
+				})
+				
+				trace = {
+					y: gps_per_player,
+					x: dates,
+					mode: "lines",
+					name: guild["name"]
+				}
+				traces.push(trace)
+			});
+		
+			let layout = {
+				title: "Guild GP / Player",
+				hovermode: "closest",
+			}
+		
+		    Plotly.newPlot('guild-gp-per-player', traces, layout);
+			
+			// delta gp info
+			traces = []
+			data["series"].forEach(function(guild) {
+				let dates = data["dates"].map(d_to_pl)
+				let gps = guild["values"]["total"].map(function(x) { return x == -1 ? null : x })
+				
+				let counts_data = counts["series"].filter(function(x) { return x.name == guild.name })[0]
+								
+				let gps_per_player = counts_data.values.players.map(function(count, index) { 
+					if (count == -1) {
+						return null
+					} else {
+						return gps[index] / count
+					}
+				})
+				
+				let offset = 2
+				let every = 1
+				let deltas = gps.map(function(x, i) {
+					if (i < offset || gps_per_player[i - offset] == null) {
+						return 0
+					} else {
+						v = (gps_per_player[i] - gps_per_player[i - offset]) / ((dates[i] - dates[i - offset]) / (24*3600*1000))
+						return v
+					}
+				}).map(function(x, i, arr) {
+					if (arr[i - 5] == null) {
+						return x
+					} else {
+						return (arr[i - 5] + arr[i - 4] + arr[i - 3] + arr[i - 2] + arr[i - 1] + arr[i]) / 6
+					}
+				})
+				trace = {
+					y: deltas.filter(function(v, i) { return i % every == 0 }),
+					x: dates.filter(function(v, i) { return i % every == 0 }),
+					mode: "lines",
+					name: guild["name"]
+				}
+				traces.push(trace)
+			});
+		
+			layout = {
+				title: "Delta GP per Player per Day",
+				hovermode: "closest",
+			}
+			
+			Plotly.newPlot('guild-delta-gps', traces, layout);
+			
+			// variant that only shows negative excursions
+			traces = []
+			data["series"].forEach(function(guild) {
+				let dates = data["dates"].map(d_to_pl)
+				let gps = guild["values"]["total"].map(function(x) { return x == -1 ? null : x })
+				
+				let counts_data = counts["series"].filter(function(x) { return x.name == guild.name })[0]
+								
+				let gps_per_player = counts_data.values.players.map(function(count, index) { 
+					if (count == -1) {
+						return null
+					} else {
+						return gps[index] / count
+					}
+				})
+				
+				let offset = 2
+				let every = 1
+				let deltas = gps.map(function(x, i) {
+					if (i < offset || gps_per_player[i - offset] == null) {
+						return 0
+					} else {
+						v = (gps_per_player[i] - gps_per_player[i - offset]) / ((dates[i] - dates[i - offset]) / (24*3600*1000))
+						if (v > -1000) {
+							return 0
+						} else {
+							return v
+						}
+					}
+				}).map(function(x, i, arr) {
+					if (arr[i - 5] == null) {
+						return x
+					} else {
+						return (arr[i - 5] + arr[i - 4] + arr[i - 3] + arr[i - 2] + arr[i - 1] + arr[i]) / 6
+					}
+				})
+				trace = {
+					y: deltas.filter(function(v, i) { return i % every == 0 }),
+					x: dates.filter(function(v, i) { return i % every == 0 }),
+					mode: "lines",
+					name: guild["name"]
+				}
+				traces.push(trace)
+			});
+		
+			layout = {
+				title: "Only Negative Delta GP per Player per Day",
+				hovermode: "closest",
+			}
+			
+			Plotly.newPlot('guild-delta-gps-negative', traces, layout);
+		}})
+	  }
+	});
+	
+</script>
+
+<font size="-2">Generated 2021-01-27 22:26:24 +0000</font>

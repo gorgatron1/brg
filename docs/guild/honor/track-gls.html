@@ -1,0 +1,83 @@
+<meta charset="UTF-8">
+<meta name="robots" content="noindex"><style type="text/css">
+body {
+ background-image: url("../../i/more_faded_logo.jpg");
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+</style><style type="text/css">
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  padding: 8px;
+}
+
+tr:nth-child(even) {background: #dddddd}
+tr:nth-child(odd) {background: #ffffff}
+
+.toggleable {
+    display: none;
+}
+</style><link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.1.5/css/fixedHeader.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.6/css/fixedColumns.dataTables.min.css" />
+<script type="text/javascript" language="javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedheader/3.1.5/js/dataTables.fixedHeader.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedcolumns/3.2.6/js/dataTables.fixedColumns.min.js"></script><title>BRG Alliance Guild Reports: Upcoming GLs Progress Tracker</title>
+<div style="display: flex; align-items:baseline"><img src="../../i/simple_logo_48.jpg"/>&nbsp;<h1>Alliance Guild Reports: Upcoming GLs Progress Tracker</h1></div>
+
+<div style="background-color: #f0f0f0; border: solid red; padding: 10px; border-radius: 10px">
+<a href="../../alliance/index.html">Alliance</a> |
+<a href="../../alliance/characters.html">Characters</a> |
+
+<div style="float:right;"><a href="../../r">Resources</a></div>
+<a href="index.html">BRG Honor Above All Else</a>
+</div>
+<br/><h2>Upcoming GLs Progress Tracker BRG Honor Above All Else</h2>
+
+<p>
+Progress on close GL unlocks.
+
+<p>
+<button onclick="$('.complete').hide(); $('.working').show()">hide completed</button>
+<button onclick="$('.complete').show(); $('.working').hide()">hide incomplete</button>
+<button onclick="$('.complete').show(); $('.working').show()">show all</button>
+
+<br/>
+    
+<link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.0.0/css/buttons.dataTables.min.css" />
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/buttons/2.0.0/js/dataTables.buttons.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/buttons/2.0.0/js/buttons.html5.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script><script>
+$(document).ready(function() {
+    var urlParams = new URLSearchParams(window.location.search)
+    var show = urlParams.get('show')
+    if (show == "working") {
+        $('.complete').hide()
+    } else if (show == "complete") {
+        $('.working').hide()
+    }
+});
+</script><table class="stripe" id="stats"><thead><th>Player</th><th>Ally Code</th><th>Starting Gear Needed</th><th>Progress</th><th>Current Gear Needed</th><th>Team</th></thead><tr class="complete" style="background-color: #ceebfd;"><td>Shadowtrap</td><td>337228443</td><td>58</td><td>58</td><td>0</td><td><b>Jedi Master Luke Skywalker</b>: Old Ben, JTR, C-3PO, Mon Mothma, Chewpio, JKL, R2-D2, Han, Chewbacca, Rebel Y-wing, Leia, HYoda, Wedge, Biggs, Lando</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Shadowtrap</td><td>337228443</td><td>59</td><td>59</td><td>0</td><td><b>Jedi Master Kenobi</b>: GK, Bo-Katan, Aayla, Mace, Negotiator, GG, Wat Tambor, MagnaGuard, Clone Sergeant, QGJ, GMY, Jango, Shaak Ti, Cad, Cody</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Shadowtrap</td><td>337228443</td><td>0</td><td>0</td><td>0</td><td><b>Supreme Leader Kylo Ren</b>: KRU, Kylo, FOST, FOE, FOO, FOTP, Phasma, Hux, FOSFTP, Sith Trooper, Vet Han, EP, Finalizer</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Shadowtrap</td><td>337228443</td><td>0</td><td>0</td><td>0</td><td><b>Sith Eternal Emperor</b>: EP, Vader, RG, Piett, Krennic, Sidious, Darth Maul, Dooku, Sith Marauder, Imperial TIE Bomber, JKA, Thrawn, Tarkin, Veers, Starck</td></tr><tr class="working" style=""><td>Ashla Bogan</td><td>378192553</td><td>56</td><td>4</td><td>52</td><td><b>Jedi Master Luke Skywalker</b>: Old Ben, <b>JTR G0 0&#9733;</b>, C-3PO, <b>Mon Mothma G8 6&#9733;</b>, <b>Chewpio G10 5&#9733;</b>, <b>JKL R6</b>, <b>R2-D2 R3</b>, Han, Chewbacca, Rebel Y-wing, <b>Leia G9</b>, <b>HYoda R3</b>, Wedge, Biggs, Lando</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>микаким</td><td>292677973</td><td>0</td><td>0</td><td>0</td><td><b>Supreme Leader Kylo Ren</b>: KRU, Kylo, FOST, FOE, FOO, FOTP, Phasma, Hux, FOSFTP, Sith Trooper, Vet Han, EP, Finalizer</td></tr><tr class="working" style=""><td>микаким</td><td>292677973</td><td>58</td><td>39</td><td>19</td><td><b>Sith Eternal Emperor</b>: EP, Vader, RG, Piett, Krennic, Sidious, <b>Darth Maul R3</b>, <b>Dooku R4</b>, <b>Sith Marauder R4</b>, <b>Imperial TIE Bomber 6&#9733;</b>, <b>JKA R5</b>, <b>Thrawn R3</b>, <b>Tarkin G12</b>, <b>Veers G12</b>, Starck</td></tr></table><script>var config = {
+    "paging":   false,
+    "info":     false,
+    bFilter: false,
+    fixedHeader: true,
+    dom: 'Bfrtip',
+    buttons: [
+        'copyHtml5',
+        'excelHtml5',
+        'csvHtml5',
+    ],
+}
+
+table = $('#stats').DataTable(config);</script><br/>
+<font size="-2">Generated 2023-05-08 05:52:30 +0000</font>
+<script data-goatcounter="https://gorgatron.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>

@@ -1,0 +1,265 @@
+<meta charset="UTF-8">
+<meta name="robots" content="noindex"><style type="text/css">
+body {
+ background-image: url("../i/more_faded_logo.jpg");
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+</style><link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.1.5/css/fixedHeader.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.6/css/fixedColumns.dataTables.min.css" />
+<script type="text/javascript" language="javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedheader/3.1.5/js/dataTables.fixedHeader.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedcolumns/3.2.6/js/dataTables.fixedColumns.min.js"></script>    <script>
+    $(document).ready( function () {
+        $('#zetas').DataTable({
+        "paging":   false,
+        "info":     false,
+        
+        
+        
+        
+        bFilter: false,
+        });
+    } );
+    </script>    <script>
+    $(document).ready( function () {
+        $('#gearLevels').DataTable({
+        "paging":   false,
+        "info":     false,
+        
+        
+        
+        
+        bFilter: false,
+        });
+    } );
+    </script><script src="https://cdn.plot.ly/plotly-latest.min.js"></script><link rel="stylesheet" type="text/css" href="../mods.css">
+<style>
+#zetas {
+    width: 800;
+    margin-left: 10;
+}
+#gearLevels {
+    width: 400;
+    margin-left: 10;
+}
+#picture {
+    float: right;
+}
+table.mods {
+    margin-top: 5px;
+}
+td.examples {
+    padding: 10px;
+    font-size: 90%;
+    width: 430px;
+}
+.mod-set {
+    width: 24px;
+    height: 24px;
+}
+.priority {
+    border: 1px solid black;
+    margin: 2px;
+    margin-right: 10px;
+    background-color: #c0c0c0;
+}
+.mod-cell {
+    border: 1px solid black;
+    padding: 2px;
+    font-size: 85%;
+}
+</style><title>BRG Alliance Guild Reports: Alliance Character Data: Supreme Leader Kylo Ren</title>
+<div style="display: flex; align-items:baseline"><img src="../i/simple_logo_48.jpg"/>&nbsp;<h1>Alliance Guild Reports: Alliance Character Data: Supreme Leader Kylo Ren</h1></div>
+
+<div style="background-color: #f0f0f0; border: solid red; padding: 10px; border-radius: 10px">
+<a href="../alliance/index.html">Alliance</a> |
+<a href="../alliance/characters.html">Characters</a> |
+
+<div style="float:right;"><a href="../r">Resources</a></div>
+<a href="../alliance/players.html">Player</a> | <a href="../alliance/characters.html">Characters</a> | <a href="../alliance/history.html">History</a> | <a href="../alliance/transfers.html">Transfers</a>
+</div>
+<br/><h1><img id="picture" src="https://game-assets.swgoh.gg/tex.charui_kyloren_tros.png" />Alliance Character Data: Supreme Leader Kylo Ren</h1><h2>swgoh.gg data</h2><ul><li><a href="https://swgoh.gg/characters/supreme-leader-kylo-ren/">abilities / character data</a></li><li><a href="https://swgoh.gg/characters/supreme-leader-kylo-ren/data/">character meta report</a></li><li><a href="https://swgoh.gg/characters/supreme-leader-kylo-ren/data/mods">mods meta report</a></li><li><a href="https://swgoh.gg/characters/supreme-leader-kylo-ren/data/stats">stats meta report</a></li></ul><h2>Mod Data</h2><h3>Mod Stat Distributions</h3>Mod stat distributions across 2150 units from the
+alliance and top guilds.  The bonuses are shown as applied to an R5 unit.
+Specific distributions are shown below by common mod configurations.<div id="mc-all" style="height:500px" /><script>
+{
+let traces = [];traces.push({
+    name: "speed",
+    x: [ 70, 80, 90, 100, 110, 120, 130, 140, 150, 160, 170, 180, 190, 200, 210 ],
+    y: [ 0, 1, 1, 1, 4, 6, 7, 10, 9, 8, 8, 17, 14, 3, 0 ],
+    text: [ 0.0, 1.0, 3.0, 5.0, 9.0, 16.0, 24.0, 34.0, 44.0, 53.0, 61.0, 79.0, 94.0, 98.0, 98.0 ],
+    hovertemplate: '%{y}% of players have +%{x} speed<br>%{text}% of players have +%{x} or less<br>speed range: +70 - +210',});traces.push({
+    name: "health",
+    x: [ 0, 2500, 5000, 7500, 10000, 12500, 15000, 17500, 25000, 27500, 30000 ],
+    y: [ 3, 3, 0, 0, 66, 21, 1, 0, 0, 1, 0 ],
+    text: [ 3.0, 7.0, 8.0, 8.0, 74.0, 95.0, 97.0, 97.0, 97.0, 98.0, 99.0 ],
+    hovertemplate: '%{y}% of players have +%{x} health<br>%{text}% of players have +%{x} or less<br>health range: +0 - +30000',xaxis: "x2",});traces.push({
+    name: "protection",
+    x: [ 0, 2500, 5000, 7500, 10000, 12500 ],
+    y: [ 30, 46, 17, 4, 1, 0 ],
+    text: [ 31.0, 77.0, 94.0, 99.0, 100.0, 100.0 ],
+    hovertemplate: '%{y}% of players have +%{x} protection<br>%{text}% of players have +%{x} or less<br>protection range: +0 - +12500',xaxis: "x2",});traces.push({
+    name: "offense",
+    x: [ 0, 100, 200, 300, 400, 500, 600, 700, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700 ],
+    y: [ 6, 17, 19, 14, 8, 4, 1, 0, 0, 1, 4, 6, 5, 4, 2, 0 ],
+    text: [ 7.0, 24.0, 44.0, 59.0, 67.0, 71.0, 73.0, 74.0, 74.0, 75.0, 80.0, 86.0, 91.0, 95.0, 98.0, 98.0 ],
+    hovertemplate: '%{y}% of players have +%{x} offense<br>%{text}% of players have +%{x} or less<br>offense range: +0 - +1700',xaxis: "x3",});traces.push({
+    name: "defense",
+    x: [ 0, 1, 2, 3, 4, 5, 6, 7 ],
+    y: [ 34, 22, 18, 10, 6, 3, 1, 0 ],
+    text: [ 35.0, 57.0, 76.0, 87.0, 94.0, 97.0, 99.0, 100.0 ],
+    hovertemplate: '%{y}% of players have +%{x} defense<br>%{text}% of players have +%{x} or less<br>defense range: +0 - +7',xaxis: "x4",});traces.push({
+    name: "crit chance",
+    x: [ 0, 1, 7, 8 ],
+    y: [ 97, 0, 0, 2 ],
+    text: [ 97.0, 97.0, 97.0, 100.0 ],
+    hovertemplate: '%{y}% of players have +%{x} crit chance<br>%{text}% of players have +%{x} or less<br>crit chance range: +0 - +8',xaxis: "x4",});let layout = {
+      title: "",
+      hovermode: "closest",
+      yaxis: {
+        title: '% of players',
+      },
+      xaxis: {
+          zeroline: false,
+          showline: false,
+          autotick: true,
+          ticks: '',
+          showticklabels: false
+      },
+      xaxis2: {
+          overlaying: 'x',
+          zeroline: false,
+          showline: false,
+          autotick: true,
+          showgrid: false,
+          ticks: '',
+          showticklabels: false
+      },
+      xaxis3: {
+          overlaying: 'x',
+          zeroline: false,
+          showline: false,
+          autotick: true,
+          showgrid: false,
+          ticks: '',
+          showticklabels: false
+      },
+      xaxis4: {
+          overlaying: 'x',
+          zeroline: false,
+          showline: false,
+          autotick: true,
+          showgrid: false,
+          ticks: '',
+          showticklabels: false
+      },
+      margin: {
+          t: 60,
+          b: 0,
+      }
+}
+Plotly.newPlot('mc-all', traces, layout)
+}
+</script><h3>Mod Recommendations (External)</h3><ul><li><a href="https://gaming-fans.com/2020/04/swgoh-best-mods-for-supreme-leader-kylo-ren-galactic-legend/">https://gaming-fans.com/2020/04/swgoh-best-mods-for-supreme-leader-kylo-ren-galactic-legend/</a></li></ul><h3>Mod Recommendations (Alliance + Top Guilds)</h3><p>
+Based on 2150 units.  This shows the priorities
+used in assigning mods to the characters.  For example: <b>speed, offense</b>
+would prefer speed over all else and then offense next.  These are not
+necessarily good mod setups, but they are commonly used.
+
+<p>
+The example stats are shown for these mods being applied to an R5 character.<h4 id="mod0">#1 - 93% - speed, offense, health</h4><table><tr><td class="examples"><b>Typical Mods: </b><br/>speed +190, offense +265, health +10166<table class="mods"><tr><td class="mod-cell"><div class="mod"><img class="mod-set priority m4" /><b>+0.08% offense</b><ul><li><b>+1230 health</b> (3)</li><li><b>+19 speed</b> (4)</li><li>+0.1% defense (3)</li><li>+0.03% crit chance (2)</li></ul></div></td><td class="mod-cell"><div class="mod"><img class="mod-set priority m1" /><b>+32 speed</b><ul><li><b>+45 offense</b> (1)</li><li>+40 defense (3)</li><li><b>+0.07% offense</b> (5)</li><li>+0.07% potency (3)</li></ul></div></td></tr><tr><td class="mod-cell"><div class="mod"><img class="mod-set priority m4" />+0.2% defense<ul><li><b>+22 speed</b> (4)</li><li>+0.08% tenacity (4)</li><li>+0.05% protection (2)</li><li><b>+79 offense</b> (2)</li></ul></div></td><td class="mod-cell"><div class="mod"><img class="mod-set priority m4" /><b>+0.08% offense</b><ul><li>+1723 protection (3)</li><li>+15 defense (1)</li><li><b>+116 offense</b> (3)</li><li><b>+27 speed</b> (5)</li></ul></div></td></tr><tr><td class="mod-cell"><div class="mod"><img class="mod-set priority m4" /><b>+0.16% health</b><ul><li><b>+25 speed</b> (5)</li><li>+0.07% tenacity (3)</li><li>+0.03% potency (1)</li><li><b>+0.03% offense</b> (3)</li></ul></div></td><td class="mod-cell"><div class="mod"><img class="mod-set priority m1" /><b>+0.08% offense</b><ul><li>+1283 protection (2)</li><li><b>+26 speed</b> (5)</li><li>+0.05% potency (2)</li><li>+0.09% defense (3)</li></ul></div></td></tr></table></td><td class="examples"><b>Great Mods: </b><br/>speed +203, offense +598, health +10034<table class="mods"><tr><td class="mod-cell"><div class="mod"><img class="mod-set priority m4" /><b>+0.08% offense</b><ul><li>+0.02% protection (1)</li><li><b>+26 speed</b> (5)</li><li><b>+100 offense</b> (2)</li><li><b>+309 health</b> (1)</li></ul></div></td><td class="mod-cell"><div class="mod"><img class="mod-set priority m1" /><b>+32 speed</b><ul><li><b>+0.04% offense</b> (3)</li><li><b>+0.01% health</b> (1)</li><li><b>+175 offense</b> (4)</li><li>+0.03% tenacity (1)</li></ul></div></td></tr><tr><td class="mod-cell"><div class="mod"><img class="mod-set priority m4" />+0.2% defense<ul><li><b>+28 speed</b> (5)</li><li><b>+0.06% offense</b> (5)</li><li>+13 defense (1)</li><li>+0.02% tenacity (1)</li></ul></div></td><td class="mod-cell"><div class="mod"><img class="mod-set priority m4" />+0.42% crit damage<ul><li><b>+88 offense</b> (2)</li><li><b>+0.05% offense</b> (4)</li><li><b>+24 speed</b> (5)</li><li>+487 protection (1)</li></ul></div></td></tr><tr><td class="mod-cell"><div class="mod"><img class="mod-set priority m4" /><b>+0.16% health</b><ul><li><b>+26 speed</b> (5)</li><li><b>+0.04% offense</b> (3)</li><li><b>+95 offense</b> (3)</li><li><b>+386 health</b> (1)</li></ul></div></td><td class="mod-cell"><div class="mod"><img class="mod-set priority m1" /><b>+0.08% offense</b><ul><li>+33 defense (3)</li><li><b>+114 offense</b> (3)</li><li><b>+28 speed</b> (5)</li><li><b>+391 health</b> (1)</li></ul></div></td></tr></table></td></tr></table><div id="mc-0" style="height:500px" /><script>
+{
+let traces = [];traces.push({
+    name: "speed",
+    x: [ 70, 80, 90, 100, 110, 120, 130, 140, 150, 160, 170, 180, 190, 200, 210 ],
+    y: [ 0, 1, 1, 1, 4, 6, 7, 10, 9, 8, 8, 18, 15, 3, 0 ],
+    text: [ 0.0, 1.0, 3.0, 5.0, 9.0, 16.0, 24.0, 34.0, 44.0, 53.0, 61.0, 79.0, 94.0, 98.0, 98.0 ],
+    hovertemplate: '%{y}% of players have +%{x} speed<br>%{text}% of players have +%{x} or less<br>speed range: +70 - +210',});traces.push({
+    name: "offense",
+    x: [ 0, 100, 200, 300, 400, 500, 600, 700, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700 ],
+    y: [ 6, 17, 19, 14, 8, 4, 1, 0, 0, 1, 4, 6, 5, 3, 2, 0 ],
+    text: [ 7.0, 24.0, 44.0, 58.0, 67.0, 71.0, 73.0, 73.0, 73.0, 75.0, 80.0, 86.0, 91.0, 95.0, 98.0, 98.0 ],
+    hovertemplate: '%{y}% of players have +%{x} offense<br>%{text}% of players have +%{x} or less<br>offense range: +0 - +1700',xaxis: "x3",});traces.push({
+    name: "health",
+    x: [ 0, 2500, 5000, 7500, 10000, 12500, 15000, 17500, 25000, 27500, 30000 ],
+    y: [ 3, 3, 0, 0, 66, 21, 1, 0, 0, 1, 0 ],
+    text: [ 3.0, 7.0, 8.0, 8.0, 74.0, 95.0, 97.0, 97.0, 97.0, 98.0, 99.0 ],
+    hovertemplate: '%{y}% of players have +%{x} health<br>%{text}% of players have +%{x} or less<br>health range: +0 - +30000',xaxis: "x2",});let layout = {
+      title: "Attribute distribution for R5 unit prioritizing speed, offense, health.",
+      hovermode: "closest",
+      yaxis: {
+        title: '% of players',
+      },
+      xaxis: {
+          zeroline: false,
+          showline: false,
+          autotick: true,
+          ticks: '',
+          showticklabels: false
+      },
+      xaxis2: {
+          overlaying: 'x',
+          zeroline: false,
+          showline: false,
+          autotick: true,
+          showgrid: false,
+          ticks: '',
+          showticklabels: false
+      },
+      xaxis3: {
+          overlaying: 'x',
+          zeroline: false,
+          showline: false,
+          autotick: true,
+          showgrid: false,
+          ticks: '',
+          showticklabels: false
+      },
+      xaxis4: {
+          overlaying: 'x',
+          zeroline: false,
+          showline: false,
+          autotick: true,
+          showgrid: false,
+          ticks: '',
+          showticklabels: false
+      },
+      margin: {
+          t: 60,
+          b: 0,
+      }
+}
+Plotly.newPlot('mc-0', traces, layout)
+}
+</script><h2>Alliance Demographic Data</h2>Based on 1177 units.<table id="zetas"><thead><tr><th>Name</th><th>Description</th><th>Count</th><th>Percent</th></tr></thead><tr><td data-order="basicskill_SUPREMELEADERKYLOREN"><img src="https://game-assets.swgoh.gg/tex.ability_kyloren_tros_basic.png" style="width: 30px" /> Brutal Assault</td><td>Inflict Buff Immunity for 2 turns on target enemy and deal Physical damage to them twice. If the target was Stunned, deal damage again and gain Advantage for 2 turns. If it's Kylo's turn, he gains 10 Siphon until the end of the encounter.\n\nSiphon: This unit will gain 1% of a stat per stack and the target will lose the amount gained</td><td>1140</td><td>97%</td></tr><tr><td data-order="leaderskill_SUPREMELEADERKYLOREN"><img src="https://game-assets.swgoh.gg/tex.abilityui_passive_kyloren_tros.png" style="width: 30px" /> Supreme Leader</td><td>Dark Side allies have +30 Speed, +40% Mastery, and +50% Critical Damage, and they can't be critically hit while they have Advantage.\n\nWhenever a Dark Side ally loses Advantage without scoring a critical hit, they gain Advantage for 1 turn at the end of the turn.\n\nWhenever a Dark Side ally gains Advantage, if they didn't already have it, they gain a bonus based on their role:\n- Tanks Taunt for 2 turns\n- Attackers gain Critical Damage Up for 2 turns\n- Supports and Healers gain 20% Turn Meter</td><td>1169</td><td>99%</td></tr><tr><td data-order="specialskill_SUPREMELEADERKYLOREN01"><img src="https://game-assets.swgoh.gg/tex.ability_kyloren_tros_special01.png" style="width: 30px" /> Stasis Strike</td><td>Dispel all buffs on all enemies and Stun target enemy for 2 turns, which can't be copied, dispelled, or resisted. Then, deal Physical damage to target enemy and Kylo gains 20 Siphon until the end of the encounter. On a critical hit, Kylo gains 40 Siphon instead. This attack can't be evaded.</td><td>1169</td><td>99%</td></tr><tr><td data-order="specialskill_SUPREMELEADERKYLOREN02"><img src="https://game-assets.swgoh.gg/tex.ability_kyloren_tros_special02.png" style="width: 30px" /> Furious Onslaught</td><td>Deal Physical damage to all enemies. Kylo Siphons Mastery from target enemy, doubled if they were Stunned, which can't be resisted. Then, dispel all debuffs on all Dark Side allies and grant them Advantage for 2 turns.\n\nSiphon Mastery: Gain a percentage of Mastery equal to this unit's Siphon until the end of the encounter and the target loses that much Mastery (stacking, excludes raid bosses and Galactic Legends)</td><td>1161</td><td>99%</td></tr><tr><td data-order="uniqueskill_GALACTICLEGEND01"><img src="https://game-assets.swgoh.gg/tex.abilityui_passive_galacticlegend.png" style="width: 30px" /> Galactic Legend</td><td>This unit takes reduced damage from percent Health damage effects and massive damage effects. They take massive damage from destroy effects (excludes raid bosses) and are immune to stun effects.\n\nThis unit has +10% Max Health and Max Protection per Relic Amplifier level, and damage they receive is decreased by 30%.</td><td>1156</td><td>98%</td></tr><tr><td data-order="uniqueskill_SUPREMELEADERKYLOREN01"><img src="https://game-assets.swgoh.gg/tex.abilityui_press_advantage.png" style="width: 30px" /> Press the Advantage</td><td>Supreme Leader Kylo Ren is immune to Stagger and can't gain taunt effects, and enemies defeated during his turn can't be revived.\n\nWhenever a Dark Side ally loses Turn Meter, they gain 10% of their current Max Health and Max Protection (stacking) until the end of battle.\n\nWhenever a Dark Side ally gains bonus Turn Meter, they lose 10% of their current Max Health and Max Protection (stacking) until the end of battle.</td><td>1092</td><td>93%</td></tr></table><br/><br/><div id="gearLevels-chart" style="width:80%;height:800px" /><script>
+let trace = {
+    y: [ 1, 0, 0, 0, 0, 0, 0, 0, 4, 0, 5, 6, 0, 0, 0, 5, 3, 15, 11, 616, 442, 69 ],
+    type: "bar",
+    name: "Number of Players"
+}
+let trace2 = {
+    y: [ 0.08496176720475786, 0.08496176720475786, 0.08496176720475786, 0.08496176720475786, 0.08496176720475786, 0.08496176720475786, 0.08496176720475786, 0.08496176720475786, 0.42480883602378927, 0.42480883602378927, 0.8496176720475785, 1.3593882752761257, 1.3593882752761257, 1.3593882752761257, 1.3593882752761257, 1.784197111299915, 2.0390824129141887, 3.313508920985557, 4.248088360237893, 56.58453695836873, 94.1376380628717, 100.0 ],
+    yaxis: "y2",
+    type: "line",
+    name: "Cumulative % Players"
+}
+let layout = {
+    title: "Gear Levels",
+    xaxis: {
+        tickvals: [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21 ],
+        ticktext: [ "G1", "G2", "G3", "G4", "G5", "G6", "G7", "G8", "G9", "G10", "G11", "G12", "G13", "R1", "R2", "R3", "R4", "R5", "R6", "R7", "R8", "R9" ]
+    },
+    yaxis: { title: "Number of Players" },
+    yaxis2: {
+        title: "Cumulative % Players",
+        overlaying: "y",
+        side: "right"
+    }
+}
+Plotly.newPlot('gearLevels-chart', [trace, trace2], layout)
+</script><br/>
+<font size="-2">Generated 2024-05-12 16:12:38 +0000</font>
+<script data-goatcounter="https://gorgatron.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>

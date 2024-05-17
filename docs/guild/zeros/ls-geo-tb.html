@@ -1,0 +1,847 @@
+<meta charset="UTF-8">
+<meta name="robots" content="noindex"><style type="text/css">
+body {
+ background-image: url("../../i/more_faded_logo.jpg");
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+</style><style type="text/css">
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  padding: 8px;
+}
+
+tr:nth-child(even) {background: #dddddd}
+tr:nth-child(odd) {background: #ffffff}
+
+.toggleable {
+    display: none;
+}
+</style><script type="text/javascript" language="javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><title>BRG Alliance Guild Reports: BRG Rule of Two LS Geo TB Plan</title>
+<div style="display: flex; align-items:baseline"><img src="../../i/simple_logo_48.jpg"/>&nbsp;<h1>Alliance Guild Reports: BRG Rule of Two LS Geo TB Plan</h1></div>
+
+<div style="background-color: #f0f0f0; border: solid red; padding: 10px; border-radius: 10px">
+<a href="../../alliance/index.html">Alliance</a> |
+<a href="../../alliance/characters.html">Characters</a> |
+
+<div style="float:right;"><a href="../../r">Resources</a></div>
+<a href="index.html">Back</a>
+</div>
+<br/><script>
+function CopyToClipboard(id)
+{
+document.getElementById(id).style.display = 'block';
+var r = document.createRange();
+r.selectNode(document.getElementById(id));
+window.getSelection().removeAllRanges();
+window.getSelection().addRange(r);
+document.execCommand('copy');
+window.getSelection().removeAllRanges();
+document.getElementById(id).style.display = 'none';
+}
+</script><style type="text/css">
+.newPhase td{
+  border-top: 2px solid black;
+}
+.column {
+  float: left;
+  width: 33%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+<script>
+function copyText(name) {
+  var copyText = document.getElementById(name);
+  $("#"+name).show();
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+}
+</script>
+There are several models of activity or you can come up with a <a href="tb.html?tb=ls&d=squad+name&player-summary=on">plan manually with some assistance</a>.
+<ul><li><b>Optimal</b> assumes that everybody deploys and you have reasonable success with the missions.  It is not necessarily a lower bound -- the missions are just estimates of how well you do, but it is an optimistic view.  You might score a star or two higher, especially if you are close on some sections.  You won't make it if participation is low.</li><li><b>Decreasing</b> is in between.  It assumes full participation and good performance on the early phases and tapers off on the later phases (this matches what I observe).</li><li><b>KAM Shards</b> is the same as <b>Decreasing</b> but it tries to force the TB to reach 3 Bottom to obtain KAM shards.</li></ul>
+Contact @gorgatron#3094 to tailor these assumptions.
+<br/>
+<img src="../../i/ls_geo_tb_labels.jpeg" width="500"/>
+<br/>
+<br/><p>See also <a href="https://genskaar.github.io/tb_geo/html/ls.html">https://genskaar.github.io/tb_geo/html/ls.html</a>.</p><br/><div class="row"><div class="column"><h2>Optimal Estimated: 18 &#11088;</h2>
+<br/>
+<table style="margin: 10px">
+<thead>
+    <tr>
+    <th>Phase</th>
+    <th>Section</th>
+    <th>Action</th>
+    </tr>
+</thead>
+<tbody><tr class="newPhase"><td>1</td><td>&nbsp;</td><td><b>active</b> <a href="tb.html?c=1%20Top&tb=ls&d=squad+name&player-summary=on">1 Top</a> <a href="tb.html?c=1%20Middle,%201%20Bottom&tb=ls&d=squad+name&player-summary=on">1 Middle, 1 Bottom</a></td><tr><td>1</td><td>1 Top</td><td><b>missions</b> 9 -> 9m</td><tr><td>1</td><td>1 Middle</td><td><b>missions</b> 36 -> 36m</td><tr><td>1</td><td>1 Bottom</td><td><b>missions</b> 41 -> 41m</td><tr><td>1</td><td>1 Top</td><td><b>deploy</b> 76 -> 85m</td><tr><td>1</td><td>1 Middle</td><td><b>deploy</b> 73 -> 109m</td><tr><td>1</td><td>1 Bottom</td><td><b>deploy</b> 44 -> 85m</td><tr><td>1</td><td>&nbsp;</td><td><b>remaining GP:</b> 56 toons, 42 ships<pre id="optimal-1-plan" style="display: none !important;">**phase 1: 1 Top -> 2 :star:**
+**phase 1: 1 Middle HOLD AT ZERO :star:**
+**phase 1: 1 Bottom HOLD AT ZERO :star:**</pre><pre id="optimal-1-missions" style="display: none !important;">**Fleet CM** Negotiator e.g. Negotiator Anakin's Eta-2, Ahsoka's SF, Umbaran SF, Plo's SF, Clone Sergeant's ARC-170, Rex's ARC-170
+Allsomea0 ARCNiNjai Bellanoche BenStaWa Cukorborsó Dani Vao DarthSinister Deathdealer Enderz Ethan Geilvta FunkE Kushbender Mol Chod Renegade Rune schumi sergio SnakeEyes Tassk Texas chef TheFoilGuy Thraken The First Wonkee Zack g
+
+**Jedi CM** JKL e.g. JKL GMY HYoda Old Ben, Ezra
+Allsomea0 Bellanoche Cap Falcon Cukorborsó Dam daniel Dani Vao DarthSinister Enderz Ethan Geilvta Grandola Paca IceRoad Combine Kushbender Lil Gap Mol Chod Renegade Rune schumi SnakeEyes Tassk Texas chef TheFoilGuy Thraken The First Zack g
+
+**Jedi CM** JKR e.g. JKR GMY HYoda BS Jolee
+ARCNiNjai DerGert FunkE Wonkee
+
+**Jedi CM** JMK Jedi e.g. JMK GAS GMY Aayla QGJ
+Bellanoche Cukorborsó Dani Vao Deathdealer Kushbender Thraken The First Zack g
+
+**Jedi CM** JMLS e.g. JMLS GAS Jolee BS JKR
+DarthSinister Enderz gandihip Mol Chod Renegade schumi SnakeEyes
+
+**LS CM** CLS e.g. CLS Han Chewbacca Chewpio C-3PO
+DarthSinister gandihip Lil Gap MINI kccoyote Renegade SnakeEyes Tassk TheFoilGuy
+
+**LS CM** CLS-Alt e.g. CLS Han Chewbacca R2-D2 C-3PO
+Charybdis Grandola Paca
+
+**LS CM** Clones e.g. Rex Echo (501st), ARC Trooper, Cody Fives
+FunkE
+
+**LS CM** Finn e.g. Finn RT RH Finn, RH Poe, Rey
+Charybdis Dani Vao Deathdealer
+
+**LS CM** GAS e.g. GAS Rex Echo (501st), ARC Trooper, Fives
+Emperor63 IceRoad Combine Megabites91
+
+**LS CM** GL Rey e.g. Rey Chewbacca GK RH Poe, RH Finn
+Allsomea0 ARCNiNjai BabuFrik Cukorborsó Dam daniel DerGert Kushbender Mol Chod Texas chef Thraken The First Zack g Zakeve
+
+**LS CM** JMK GR e.g. JMK CAT Fives Padme Shaak Ti
+BenStaWa DarthSinister FunkE Rune SnakeEyes TheFoilGuy
+
+**LS CM** JTR e.g. JTR BB-8 C-3PO R2-D2 Finn
+Allsomea0 BabuFrik Bellanoche Cukorborsó Emperor63 Texas chef Zack g
+
+**LS CM** Padme e.g. Padme Ahsoka JKA GK R2-D2
+Enderz Ethan Geilvta Leon Ren Megabites91 Nico 1313
+
+**LS CM** ROLO e.g. ROLO Cpt Solo, Han Chewpio Lando
+Bellanoche Cap Falcon Dam daniel Dani Vao Enderz Mol Chod schumi Thraken The First
+
+**LS CM** Shaak Ti e.g. Shaak Ti, Rex Echo (501st), ARC Trooper, Fives
+Deathdealer DerGert Kushbender schumi
+
+</pre><p><a href="#" onclick="CopyToClipboard('optimal-1-plan'); return false;">Copy Plan</a> | <a href="#" onclick="CopyToClipboard('optimal-1-missions'); return false;">Copy Missions</a></p></td><tr><td>1</td><td>1 Top</td><td>2 &#11088; -- 57 to the next</td><tr><td>1</td><td>1 Middle</td><td><b>HOLD AT ZERO &#11088;</b></td><tr><td>1</td><td>1 Bottom</td><td><b>HOLD AT ZERO &#11088;</b></td><tr class="newPhase"><td>2</td><td>&nbsp;</td><td><b>active</b> <a href="tb.html?c=2%20Top&tb=ls&d=squad+name&player-summary=on">2 Top</a> <a href="tb.html?c=1%20Middle,%201%20Bottom&tb=ls&d=squad+name&player-summary=on">1 Middle, 1 Bottom</a></td><tr><td>2</td><td>1 Middle</td><td><b>missions</b> 36 -> 145m</td><tr><td>2</td><td>1 Bottom</td><td><b>missions</b> 41 -> 126m</td><tr><td>2</td><td>2 Top</td><td><b>missions</b> 16 -> 16m</td><tr><td>2</td><td>1 Middle</td><td><b>deploy</b> 112 -> 257m</td><tr><td>2</td><td>1 Bottom</td><td><b>deploy</b> 54 -> 180m</td><tr><td>2</td><td>2 Top</td><td><b>deploy</b> 118 -> 134m</td><tr><td>2</td><td>&nbsp;</td><td><b>remaining GP:</b> 7 toons, 0 ships<pre id="optimal-2-plan" style="display: none !important;">**phase 2: 2 Top -> 2 :star:**
+**phase 2: 1 Middle -> 3 :star:**
+**phase 2: 1 Bottom -> 3 :star:**</pre><pre id="optimal-2-missions" style="display: none !important;">**Fleet CM** Negotiator e.g. Negotiator Anakin's Eta-2, Ahsoka's SF, Umbaran SF, Plo's SF, Clone Sergeant's ARC-170, Rex's ARC-170
+Allsomea0 ARCNiNjai Bellanoche BenStaWa Cukorborsó Dani Vao DarthSinister Deathdealer Enderz Ethan Geilvta FunkE Kushbender Mol Chod Renegade Rune schumi sergio SnakeEyes Tassk Texas chef TheFoilGuy Thraken The First Wonkee Zack g
+
+**Jedi CM** JKL e.g. JKL GMY HYoda Old Ben, Ezra
+Allsomea0 Bellanoche Cap Falcon Cukorborsó Dam daniel Dani Vao DarthSinister Enderz Ethan Geilvta Grandola Paca IceRoad Combine Kushbender Lil Gap Mol Chod Renegade Rune schumi SnakeEyes Tassk Texas chef TheFoilGuy Thraken The First Zack g
+
+**Jedi CM** JKR e.g. JKR GMY HYoda BS Jolee
+ARCNiNjai DerGert FunkE Wonkee
+
+**Jedi CM** JMK Jedi e.g. JMK GAS GMY Aayla QGJ
+Bellanoche Cukorborsó Dani Vao Deathdealer Kushbender Thraken The First Zack g
+
+**Jedi CM** JMLS e.g. JMLS GAS Jolee BS JKR
+DarthSinister Enderz gandihip Mol Chod Renegade schumi SnakeEyes
+
+**LS CM** CLS e.g. CLS Han Chewbacca Chewpio C-3PO
+DarthSinister gandihip Lil Gap MINI kccoyote Renegade SnakeEyes Tassk TheFoilGuy
+
+**LS CM** CLS-Alt e.g. CLS Han Chewbacca R2-D2 C-3PO
+Charybdis Grandola Paca
+
+**LS CM** Clones e.g. Rex Echo (501st), ARC Trooper, Cody Fives
+FunkE
+
+**LS CM** Finn e.g. Finn RT RH Finn, RH Poe, Rey
+Charybdis Dani Vao Deathdealer
+
+**LS CM** GAS e.g. GAS Rex Echo (501st), ARC Trooper, Fives
+Emperor63 IceRoad Combine Megabites91
+
+**LS CM** GL Rey e.g. Rey Chewbacca GK RH Poe, RH Finn
+Allsomea0 ARCNiNjai BabuFrik Cukorborsó Dam daniel DerGert Kushbender Mol Chod Texas chef Thraken The First Zack g Zakeve
+
+**LS CM** JMK GR e.g. JMK CAT Fives Padme Shaak Ti
+BenStaWa DarthSinister FunkE Rune SnakeEyes TheFoilGuy
+
+**LS CM** JTR e.g. JTR BB-8 C-3PO R2-D2 Finn
+Allsomea0 BabuFrik Bellanoche Cukorborsó Emperor63 Texas chef Zack g
+
+**LS CM** Padme e.g. Padme Ahsoka JKA GK R2-D2
+Enderz Ethan Geilvta Leon Ren Megabites91 Nico 1313
+
+**LS CM** ROLO e.g. ROLO Cpt Solo, Han Chewpio Lando
+Bellanoche Cap Falcon Dam daniel Dani Vao Enderz Mol Chod schumi Thraken The First
+
+**LS CM** Shaak Ti e.g. Shaak Ti, Rex Echo (501st), ARC Trooper, Fives
+Deathdealer DerGert Kushbender schumi
+
+</pre><p><a href="#" onclick="CopyToClipboard('optimal-2-plan'); return false;">Copy Plan</a> | <a href="#" onclick="CopyToClipboard('optimal-2-missions'); return false;">Copy Missions</a></p></td><tr><td>2</td><td>2 Top</td><td>2 &#11088; -- 81 to the next</td><tr><td>2</td><td>1 Middle</td><td>3 &#11088;</td><tr><td>2</td><td>1 Bottom</td><td>3 &#11088;</td><tr class="newPhase"><td>3</td><td>&nbsp;</td><td><b>active</b> <a href="tb.html?c=3%20Top&tb=ls&d=squad+name&player-summary=on">3 Top</a> <a href="tb.html?c=2%20Middle,%202%20Bottom&tb=ls&d=squad+name&player-summary=on">2 Middle, 2 Bottom</a></td><tr><td>3</td><td>2 Middle</td><td><b>missions</b> 70 -> 70m</td><tr><td>3</td><td>2 Bottom</td><td><b>missions</b> 25 -> 25m</td><tr><td>3</td><td>3 Top</td><td><b>missions</b> 32 -> 32m</td><tr><td>3</td><td>2 Middle</td><td><b>deploy</b> 25 -> 95m</td><tr><td>3</td><td>2 Bottom</td><td><b>deploy</b> 95 -> 120m</td><tr><td>3</td><td>3 Top</td><td><b>deploy</b> 59 -> 91m</td><tr><td>3</td><td>&nbsp;</td><td><b>remaining GP:</b> 53 toons, 59 ships<pre id="optimal-3-plan" style="display: none !important;">**phase 3: 3 Top HOLD AT ZERO :star:**
+**phase 3: 2 Middle HOLD AT ZERO :star:**
+**phase 3: 2 Bottom HOLD AT ZERO :star:**</pre><pre id="optimal-3-missions" style="display: none !important;">**Fleet CM** Negotiator e.g. Negotiator Anakin's Eta-2, Ahsoka's SF, Umbaran SF, Plo's SF, Clone Sergeant's ARC-170, Rex's ARC-170
+Allsomea0 ARCNiNjai Bellanoche BenStaWa Cukorborsó Dani Vao DarthSinister Deathdealer Enderz Ethan Geilvta FunkE Kushbender Mol Chod Renegade Rune schumi sergio SnakeEyes Tassk Texas chef TheFoilGuy Thraken The First Wonkee Zack g
+
+**GAS/Ahsoka** GAS Special e.g. GAS Ahsoka
+ARCNiNjai Cukorborsó Dani Vao DarthSinister Deathdealer DerGert Emperor63 Enderz Ethan Geilvta FunkE IceRoad Combine Kushbender Megabites91 Mol Chod Renegade schumi SnakeEyes Texas chef TheFoilGuy Thraken The First Zack g
+
+**GR CM** JMK GR e.g. JMK CAT Mace Padme R2-D2
+Bellanoche BenStaWa Cukorborsó Dani Vao DarthSinister Deathdealer FunkE Kushbender Rune SnakeEyes TheFoilGuy Thraken The First Zack g
+
+**GR CM** Padme e.g. Padme Shaak Ti, JKA GK R2-D2
+BabuFrik DerGert Enderz Ethan Geilvta Leon Ren Megabites91 Texas chef
+
+**GR CM** Shaak Ti e.g. Shaak Ti, Rex Echo (501st), ARC Trooper, Fives
+Emperor63 Mol Chod schumi
+
+**Jedi CM** JKL e.g. JKL GMY HYoda Old Ben, Ezra
+Allsomea0 Bellanoche Cap Falcon Cukorborsó Dam daniel Dani Vao DarthSinister Enderz Ethan Geilvta IceRoad Combine Kushbender Lil Gap Mol Chod Renegade Rune schumi SnakeEyes Tassk TheFoilGuy Thraken The First Zack g
+
+**Jedi CM** JKR e.g. JKR GMY HYoda BS Jolee
+Deathdealer Wonkee
+
+**Jedi CM** JMLS e.g. JMLS JKL HYoda Old Ben, Ezra
+gandihip
+
+**LS CM** CLS e.g. CLS Han Chewbacca Chewpio C-3PO
+Allsomea0 DarthSinister Deathdealer gandihip Kushbender Lil Gap MINI kccoyote Renegade SnakeEyes Tassk Texas chef TheFoilGuy
+
+**LS CM** CLS-Alt e.g. CLS Han Chewbacca Chewpio Old Ben
+BabuFrik Charybdis Grandola Paca
+
+**LS CM** Finn e.g. Finn RT RH Finn, RH Poe, Rey
+Charybdis Dani Vao Deathdealer
+
+**LS CM** GL Rey e.g. Rey Chewbacca GK RH Poe, RH Finn
+ARCNiNjai Cukorborsó Zack g Zakeve
+
+**LS CM** JTR e.g. JTR BB-8 C-3PO R2-D2 Finn
+Dam daniel Emperor63 Mol Chod
+
+**LS CM** ROLO e.g. ROLO Cpt Solo, Han Chewpio Lando
+Bellanoche Cap Falcon Dam daniel Dani Vao Enderz Mol Chod schumi Thraken The First
+
+</pre><p><a href="#" onclick="CopyToClipboard('optimal-3-plan'); return false;">Copy Plan</a> | <a href="#" onclick="CopyToClipboard('optimal-3-missions'); return false;">Copy Missions</a></p></td><tr><td>3</td><td>3 Top</td><td><b>HOLD AT ZERO &#11088;</b></td><tr><td>3</td><td>2 Middle</td><td><b>HOLD AT ZERO &#11088;</b></td><tr><td>3</td><td>2 Bottom</td><td><b>HOLD AT ZERO &#11088;</b></td><tr class="newPhase"><td>4</td><td>&nbsp;</td><td><b>active</b> <a href="tb.html?c=3%20Top&tb=ls&d=squad+name&player-summary=on">3 Top</a> <a href="tb.html?c=2%20Middle,%202%20Bottom&tb=ls&d=squad+name&player-summary=on">2 Middle, 2 Bottom</a></td><tr><td>4</td><td>2 Middle</td><td><b>missions</b> 70 -> 165m</td><tr><td>4</td><td>2 Bottom</td><td><b>missions</b> 25 -> 145m</td><tr><td>4</td><td>3 Top</td><td><b>missions</b> 32 -> 123m</td><tr><td>4</td><td>2 Middle</td><td><b>deploy</b> 95 -> 260m</td><tr><td>4</td><td>2 Bottom</td><td><b>deploy</b> 72 -> 217m</td><tr><td>4</td><td>3 Top</td><td><b>deploy</b> 94 -> 217m</td><tr><td>4</td><td>&nbsp;</td><td><b>remaining GP:</b> 6 toons, 24 ships<pre id="optimal-4-plan" style="display: none !important;">**phase 4: 3 Top -> 3 :star:**
+**phase 4: 2 Middle -> 3 :star:**
+**phase 4: 2 Bottom -> 2 :star:**</pre><pre id="optimal-4-missions" style="display: none !important;">**Fleet CM** Negotiator e.g. Negotiator Anakin's Eta-2, Ahsoka's SF, Umbaran SF, Plo's SF, Clone Sergeant's ARC-170, Rex's ARC-170
+Allsomea0 ARCNiNjai Bellanoche BenStaWa Cukorborsó Dani Vao DarthSinister Deathdealer Enderz Ethan Geilvta FunkE Kushbender Mol Chod Renegade Rune schumi sergio SnakeEyes Tassk Texas chef TheFoilGuy Thraken The First Wonkee Zack g
+
+**GAS/Ahsoka** GAS Special e.g. GAS Ahsoka
+ARCNiNjai Cukorborsó Dani Vao DarthSinister Deathdealer DerGert Emperor63 Enderz Ethan Geilvta FunkE IceRoad Combine Kushbender Megabites91 Mol Chod Renegade schumi SnakeEyes Texas chef TheFoilGuy Thraken The First Zack g
+
+**GR CM** JMK GR e.g. JMK CAT Mace Padme R2-D2
+Bellanoche BenStaWa Cukorborsó Dani Vao DarthSinister Deathdealer FunkE Kushbender Rune SnakeEyes TheFoilGuy Thraken The First Zack g
+
+**GR CM** Padme e.g. Padme Shaak Ti, JKA GK R2-D2
+BabuFrik DerGert Enderz Ethan Geilvta Leon Ren Megabites91 Texas chef
+
+**GR CM** Shaak Ti e.g. Shaak Ti, Rex Echo (501st), ARC Trooper, Fives
+Emperor63 Mol Chod schumi
+
+**Jedi CM** JKL e.g. JKL GMY HYoda Old Ben, Ezra
+Allsomea0 Bellanoche Cap Falcon Cukorborsó Dam daniel Dani Vao DarthSinister Enderz Ethan Geilvta IceRoad Combine Kushbender Lil Gap Mol Chod Renegade Rune schumi SnakeEyes Tassk TheFoilGuy Thraken The First Zack g
+
+**Jedi CM** JKR e.g. JKR GMY HYoda BS Jolee
+Deathdealer Wonkee
+
+**Jedi CM** JMLS e.g. JMLS JKL HYoda Old Ben, Ezra
+gandihip
+
+**LS CM** CLS e.g. CLS Han Chewbacca Chewpio C-3PO
+Allsomea0 DarthSinister Deathdealer gandihip Kushbender Lil Gap MINI kccoyote Renegade SnakeEyes Tassk Texas chef TheFoilGuy
+
+**LS CM** CLS-Alt e.g. CLS Han Chewbacca Chewpio Old Ben
+BabuFrik Charybdis Grandola Paca
+
+**LS CM** Finn e.g. Finn RT RH Finn, RH Poe, Rey
+Charybdis Dani Vao Deathdealer
+
+**LS CM** GL Rey e.g. Rey Chewbacca GK RH Poe, RH Finn
+ARCNiNjai Cukorborsó Zack g Zakeve
+
+**LS CM** JTR e.g. JTR BB-8 C-3PO R2-D2 Finn
+Dam daniel Emperor63 Mol Chod
+
+**LS CM** ROLO e.g. ROLO Cpt Solo, Han Chewpio Lando
+Bellanoche Cap Falcon Dam daniel Dani Vao Enderz Mol Chod schumi Thraken The First
+
+</pre><p><a href="#" onclick="CopyToClipboard('optimal-4-plan'); return false;">Copy Plan</a> | <a href="#" onclick="CopyToClipboard('optimal-4-missions'); return false;">Copy Missions</a></p></td><tr><td>4</td><td>3 Top</td><td>3 &#11088;</td><tr><td>4</td><td>2 Middle</td><td>3 &#11088;</td><tr><td>4</td><td>2 Bottom</td><td>2 &#11088; -- 93 to the next</td></tbody>
+</table>
+<br/>
+<br/><textarea id="discordoptimal" style="display:none" rows="8" cols="40">
+**Estimated 18 :star:**
+
+**phase 1: active** 1 Top, 1 Middle, 1 Bottom
+phase 1: **missions** 1 Top 9 -> 9m
+phase 1: **missions** 1 Middle 36 -> 36m
+phase 1: **missions** 1 Bottom 41 -> 41m
+phase 1: **deploy** 1 Top 76 -> 85m
+phase 1: **deploy** 1 Middle 73 -> 109m
+phase 1: **deploy** 1 Bottom 44 -> 85m
+phase 1: remaining GP = 56 toons, 42 ships
+details: https://gorgatron1.github.io/brg/guild/zeros/tb.html%3Fc=1%2520Middle,%25201%2520Bottom&tb=ls&d=squad+name&player-summary=on
+**phase 1: 1 Top -> 2 :star:**
+**phase 1: 1 Middle HOLD AT ZERO :star:**
+**phase 1: 1 Bottom HOLD AT ZERO :star:**
+
+**phase 2: active** 1 Middle, 1 Bottom, 2 Top
+phase 2: **missions** 1 Middle 36 -> 145m
+phase 2: **missions** 1 Bottom 41 -> 126m
+phase 2: **missions** 2 Top 16 -> 16m
+phase 2: **deploy** 1 Middle 112 -> 257m
+phase 2: **deploy** 1 Bottom 54 -> 180m
+phase 2: **deploy** 2 Top 118 -> 134m
+phase 2: remaining GP = 7 toons, 0 ships
+details: https://gorgatron1.github.io/brg/guild/zeros/tb.html%3Fc=1%2520Middle,%25201%2520Bottom&tb=ls&d=squad+name&player-summary=on
+**phase 2: 2 Top -> 2 :star:**
+**phase 2: 1 Middle -> 3 :star:**
+**phase 2: 1 Bottom -> 3 :star:**
+
+**phase 3: active** 2 Middle, 2 Bottom, 3 Top
+phase 3: **missions** 2 Middle 70 -> 70m
+phase 3: **missions** 2 Bottom 25 -> 25m
+phase 3: **missions** 3 Top 32 -> 32m
+phase 3: **deploy** 2 Middle 25 -> 95m
+phase 3: **deploy** 2 Bottom 95 -> 120m
+phase 3: **deploy** 3 Top 59 -> 91m
+phase 3: remaining GP = 53 toons, 59 ships
+details: https://gorgatron1.github.io/brg/guild/zeros/tb.html%3Fc=2%2520Middle,%25202%2520Bottom&tb=ls&d=squad+name&player-summary=on
+**phase 3: 3 Top HOLD AT ZERO :star:**
+**phase 3: 2 Middle HOLD AT ZERO :star:**
+**phase 3: 2 Bottom HOLD AT ZERO :star:**
+
+**phase 4: active** 2 Middle, 2 Bottom, 3 Top
+phase 4: **missions** 2 Middle 70 -> 165m
+phase 4: **missions** 2 Bottom 25 -> 145m
+phase 4: **missions** 3 Top 32 -> 123m
+phase 4: **deploy** 2 Middle 95 -> 260m
+phase 4: **deploy** 2 Bottom 72 -> 217m
+phase 4: **deploy** 3 Top 94 -> 217m
+phase 4: remaining GP = 6 toons, 24 ships
+details: https://gorgatron1.github.io/brg/guild/zeros/tb.html%3Fc=2%2520Middle,%25202%2520Bottom&tb=ls&d=squad+name&player-summary=on
+**phase 4: 3 Top -> 3 :star:**
+**phase 4: 2 Middle -> 3 :star:**
+**phase 4: 2 Bottom -> 2 :star:**
+
+</textarea>
+<button onclick="copyText('discordoptimal')">Copy For Discord</button></div><div class="column"><h2>Decreasing Estimated: 16 &#11088;</h2>
+<br/>
+<table style="margin: 10px">
+<thead>
+    <tr>
+    <th>Phase</th>
+    <th>Section</th>
+    <th>Action</th>
+    </tr>
+</thead>
+<tbody><tr class="newPhase"><td>1</td><td>&nbsp;</td><td><b>active</b> <a href="tb.html?c=1%20Top&tb=ls&d=squad+name&player-summary=on">1 Top</a> <a href="tb.html?c=1%20Middle,%201%20Bottom&tb=ls&d=squad+name&player-summary=on">1 Middle, 1 Bottom</a></td><tr><td>1</td><td>1 Top</td><td><b>missions</b> 9 -> 9m</td><tr><td>1</td><td>1 Middle</td><td><b>missions</b> 36 -> 36m</td><tr><td>1</td><td>1 Bottom</td><td><b>missions</b> 41 -> 41m</td><tr><td>1</td><td>1 Top</td><td><b>deploy</b> 76 -> 85m</td><tr><td>1</td><td>1 Middle</td><td><b>deploy</b> 73 -> 109m</td><tr><td>1</td><td>1 Bottom</td><td><b>deploy</b> 44 -> 85m</td><tr><td>1</td><td>&nbsp;</td><td><b>remaining GP:</b> 56 toons, 42 ships<pre id="decreasing-1-plan" style="display: none !important;">**phase 1: 1 Top -> 2 :star:**
+**phase 1: 1 Middle HOLD AT ZERO :star:**
+**phase 1: 1 Bottom HOLD AT ZERO :star:**</pre><pre id="decreasing-1-missions" style="display: none !important;">**Fleet CM** Negotiator e.g. Negotiator Anakin's Eta-2, Ahsoka's SF, Umbaran SF, Plo's SF, Clone Sergeant's ARC-170, Rex's ARC-170
+Allsomea0 ARCNiNjai Bellanoche BenStaWa Cukorborsó Dani Vao DarthSinister Deathdealer Enderz Ethan Geilvta FunkE Kushbender Mol Chod Renegade Rune schumi sergio SnakeEyes Tassk Texas chef TheFoilGuy Thraken The First Wonkee Zack g
+
+**Jedi CM** JKL e.g. JKL GMY HYoda Old Ben, Ezra
+Allsomea0 Bellanoche Cap Falcon Cukorborsó Dam daniel Dani Vao DarthSinister Enderz Ethan Geilvta Grandola Paca IceRoad Combine Kushbender Lil Gap Mol Chod Renegade Rune schumi SnakeEyes Tassk Texas chef TheFoilGuy Thraken The First Zack g
+
+**Jedi CM** JKR e.g. JKR GMY HYoda BS Jolee
+ARCNiNjai DerGert FunkE Wonkee
+
+**Jedi CM** JMK Jedi e.g. JMK GAS GMY Aayla QGJ
+Bellanoche Cukorborsó Dani Vao Deathdealer Kushbender Thraken The First Zack g
+
+**Jedi CM** JMLS e.g. JMLS GAS Jolee BS JKR
+DarthSinister Enderz gandihip Mol Chod Renegade schumi SnakeEyes
+
+**LS CM** CLS e.g. CLS Han Chewbacca Chewpio C-3PO
+DarthSinister gandihip Lil Gap MINI kccoyote Renegade SnakeEyes Tassk TheFoilGuy
+
+**LS CM** CLS-Alt e.g. CLS Han Chewbacca R2-D2 C-3PO
+Charybdis Grandola Paca
+
+**LS CM** Clones e.g. Rex Echo (501st), ARC Trooper, Cody Fives
+FunkE
+
+**LS CM** Finn e.g. Finn RT RH Finn, RH Poe, Rey
+Charybdis Dani Vao Deathdealer
+
+**LS CM** GAS e.g. GAS Rex Echo (501st), ARC Trooper, Fives
+Emperor63 IceRoad Combine Megabites91
+
+**LS CM** GL Rey e.g. Rey Chewbacca GK RH Poe, RH Finn
+Allsomea0 ARCNiNjai BabuFrik Cukorborsó Dam daniel DerGert Kushbender Mol Chod Texas chef Thraken The First Zack g Zakeve
+
+**LS CM** JMK GR e.g. JMK CAT Fives Padme Shaak Ti
+BenStaWa DarthSinister FunkE Rune SnakeEyes TheFoilGuy
+
+**LS CM** JTR e.g. JTR BB-8 C-3PO R2-D2 Finn
+Allsomea0 BabuFrik Bellanoche Cukorborsó Emperor63 Texas chef Zack g
+
+**LS CM** Padme e.g. Padme Ahsoka JKA GK R2-D2
+Enderz Ethan Geilvta Leon Ren Megabites91 Nico 1313
+
+**LS CM** ROLO e.g. ROLO Cpt Solo, Han Chewpio Lando
+Bellanoche Cap Falcon Dam daniel Dani Vao Enderz Mol Chod schumi Thraken The First
+
+**LS CM** Shaak Ti e.g. Shaak Ti, Rex Echo (501st), ARC Trooper, Fives
+Deathdealer DerGert Kushbender schumi
+
+</pre><p><a href="#" onclick="CopyToClipboard('decreasing-1-plan'); return false;">Copy Plan</a> | <a href="#" onclick="CopyToClipboard('decreasing-1-missions'); return false;">Copy Missions</a></p></td><tr><td>1</td><td>1 Top</td><td>2 &#11088; -- 57 to the next</td><tr><td>1</td><td>1 Middle</td><td><b>HOLD AT ZERO &#11088;</b></td><tr><td>1</td><td>1 Bottom</td><td><b>HOLD AT ZERO &#11088;</b></td><tr class="newPhase"><td>2</td><td>&nbsp;</td><td><b>active</b> <a href="tb.html?c=2%20Top&tb=ls&d=squad+name&player-summary=on">2 Top</a> <a href="tb.html?c=1%20Middle,%201%20Bottom&tb=ls&d=squad+name&player-summary=on">1 Middle, 1 Bottom</a></td><tr><td>2</td><td>1 Middle</td><td><b>missions</b> 36 -> 145m</td><tr><td>2</td><td>1 Bottom</td><td><b>missions</b> 41 -> 126m</td><tr><td>2</td><td>2 Top</td><td><b>missions</b> 15 -> 15m</td><tr><td>2</td><td>1 Middle</td><td><b>deploy</b> 112 -> 257m</td><tr><td>2</td><td>1 Bottom</td><td><b>deploy</b> 54 -> 180m</td><tr><td>2</td><td>2 Top</td><td><b>deploy</b> 56 -> 71m</td><tr><td>2</td><td>&nbsp;</td><td><b>remaining GP:</b> 0 toons, 57 ships<pre id="decreasing-2-plan" style="display: none !important;">**phase 2: 2 Top -> 1 :star:**
+**phase 2: 1 Middle -> 3 :star:**
+**phase 2: 1 Bottom -> 3 :star:**</pre><pre id="decreasing-2-missions" style="display: none !important;">**Fleet CM** Negotiator e.g. Negotiator Anakin's Eta-2, Ahsoka's SF, Umbaran SF, Plo's SF, Clone Sergeant's ARC-170, Rex's ARC-170
+Allsomea0 ARCNiNjai Bellanoche BenStaWa Cukorborsó Dani Vao DarthSinister Deathdealer Enderz Ethan Geilvta FunkE Kushbender Mol Chod Renegade Rune schumi sergio SnakeEyes Tassk Texas chef TheFoilGuy Thraken The First Wonkee Zack g
+
+**Jedi CM** JKL e.g. JKL GMY HYoda Old Ben, Ezra
+Allsomea0 Bellanoche Cap Falcon Cukorborsó Dam daniel Dani Vao DarthSinister Enderz Ethan Geilvta Grandola Paca IceRoad Combine Kushbender Lil Gap Mol Chod Renegade Rune schumi SnakeEyes Tassk Texas chef TheFoilGuy Thraken The First Zack g
+
+**Jedi CM** JKR e.g. JKR GMY HYoda BS Jolee
+ARCNiNjai DerGert FunkE Wonkee
+
+**Jedi CM** JMK Jedi e.g. JMK GAS GMY Aayla QGJ
+Bellanoche Cukorborsó Dani Vao Deathdealer Kushbender Thraken The First Zack g
+
+**Jedi CM** JMLS e.g. JMLS GAS Jolee BS JKR
+DarthSinister Enderz gandihip Mol Chod Renegade schumi SnakeEyes
+
+**LS CM** CLS e.g. CLS Han Chewbacca Chewpio C-3PO
+DarthSinister gandihip Lil Gap MINI kccoyote Renegade SnakeEyes Tassk TheFoilGuy
+
+**LS CM** CLS-Alt e.g. CLS Han Chewbacca R2-D2 C-3PO
+Charybdis Grandola Paca
+
+**LS CM** Clones e.g. Rex Echo (501st), ARC Trooper, Cody Fives
+FunkE
+
+**LS CM** Finn e.g. Finn RT RH Finn, RH Poe, Rey
+Charybdis Dani Vao Deathdealer
+
+**LS CM** GAS e.g. GAS Rex Echo (501st), ARC Trooper, Fives
+Emperor63 IceRoad Combine Megabites91
+
+**LS CM** GL Rey e.g. Rey Chewbacca GK RH Poe, RH Finn
+Allsomea0 ARCNiNjai BabuFrik Cukorborsó Dam daniel DerGert Kushbender Mol Chod Texas chef Thraken The First Zack g Zakeve
+
+**LS CM** JMK GR e.g. JMK CAT Fives Padme Shaak Ti
+BenStaWa DarthSinister FunkE Rune SnakeEyes TheFoilGuy
+
+**LS CM** JTR e.g. JTR BB-8 C-3PO R2-D2 Finn
+Allsomea0 BabuFrik Bellanoche Cukorborsó Emperor63 Texas chef Zack g
+
+**LS CM** Padme e.g. Padme Ahsoka JKA GK R2-D2
+Enderz Ethan Geilvta Leon Ren Megabites91 Nico 1313
+
+**LS CM** ROLO e.g. ROLO Cpt Solo, Han Chewpio Lando
+Bellanoche Cap Falcon Dam daniel Dani Vao Enderz Mol Chod schumi Thraken The First
+
+**LS CM** Shaak Ti e.g. Shaak Ti, Rex Echo (501st), ARC Trooper, Fives
+Deathdealer DerGert Kushbender schumi
+
+</pre><p><a href="#" onclick="CopyToClipboard('decreasing-2-plan'); return false;">Copy Plan</a> | <a href="#" onclick="CopyToClipboard('decreasing-2-missions'); return false;">Copy Missions</a></p></td><tr><td>2</td><td>2 Top</td><td>1 &#11088; -- 63 to the next</td><tr><td>2</td><td>1 Middle</td><td>3 &#11088;</td><tr><td>2</td><td>1 Bottom</td><td>3 &#11088;</td><tr class="newPhase"><td>3</td><td>&nbsp;</td><td><b>active</b> <a href="tb.html?c=3%20Top&tb=ls&d=squad+name&player-summary=on">3 Top</a> <a href="tb.html?c=2%20Middle,%202%20Bottom&tb=ls&d=squad+name&player-summary=on">2 Middle, 2 Bottom</a></td><tr><td>3</td><td>2 Middle</td><td><b>missions</b> 67 -> 67m</td><tr><td>3</td><td>2 Bottom</td><td><b>missions</b> 24 -> 24m</td><tr><td>3</td><td>3 Top</td><td><b>missions</b> 29 -> 29m</td><tr><td>3</td><td>2 Middle</td><td><b>deploy</b> 28 -> 95m</td><tr><td>3</td><td>2 Bottom</td><td><b>deploy</b> 96 -> 120m</td><tr><td>3</td><td>3 Top</td><td><b>deploy</b> 62 -> 91m</td><tr><td>3</td><td>&nbsp;</td><td><b>remaining GP:</b> 35 toons, 46 ships<pre id="decreasing-3-plan" style="display: none !important;">**phase 3: 3 Top HOLD AT ZERO :star:**
+**phase 3: 2 Middle HOLD AT ZERO :star:**
+**phase 3: 2 Bottom HOLD AT ZERO :star:**</pre><pre id="decreasing-3-missions" style="display: none !important;">**Fleet CM** Negotiator e.g. Negotiator Anakin's Eta-2, Ahsoka's SF, Umbaran SF, Plo's SF, Clone Sergeant's ARC-170, Rex's ARC-170
+Allsomea0 ARCNiNjai Bellanoche BenStaWa Cukorborsó Dani Vao DarthSinister Deathdealer Enderz Ethan Geilvta FunkE Kushbender Mol Chod Renegade Rune schumi sergio SnakeEyes Tassk Texas chef TheFoilGuy Thraken The First Wonkee Zack g
+
+**GAS/Ahsoka** GAS Special e.g. GAS Ahsoka
+ARCNiNjai Cukorborsó Dani Vao DarthSinister Deathdealer DerGert Emperor63 Enderz Ethan Geilvta FunkE IceRoad Combine Kushbender Megabites91 Mol Chod Renegade schumi SnakeEyes Texas chef TheFoilGuy Thraken The First Zack g
+
+**GR CM** JMK GR e.g. JMK CAT Mace Padme R2-D2
+Bellanoche BenStaWa Cukorborsó Dani Vao DarthSinister Deathdealer FunkE Kushbender Rune SnakeEyes TheFoilGuy Thraken The First Zack g
+
+**GR CM** Padme e.g. Padme Shaak Ti, JKA GK R2-D2
+BabuFrik DerGert Enderz Ethan Geilvta Leon Ren Megabites91 Texas chef
+
+**GR CM** Shaak Ti e.g. Shaak Ti, Rex Echo (501st), ARC Trooper, Fives
+Emperor63 Mol Chod schumi
+
+**Jedi CM** JKL e.g. JKL GMY HYoda Old Ben, Ezra
+Allsomea0 Bellanoche Cap Falcon Cukorborsó Dam daniel Dani Vao DarthSinister Enderz Ethan Geilvta IceRoad Combine Kushbender Lil Gap Mol Chod Renegade Rune schumi SnakeEyes Tassk TheFoilGuy Thraken The First Zack g
+
+**Jedi CM** JKR e.g. JKR GMY HYoda BS Jolee
+Deathdealer Wonkee
+
+**Jedi CM** JMLS e.g. JMLS JKL HYoda Old Ben, Ezra
+gandihip
+
+**LS CM** CLS e.g. CLS Han Chewbacca Chewpio C-3PO
+Allsomea0 DarthSinister Deathdealer gandihip Kushbender Lil Gap MINI kccoyote Renegade SnakeEyes Tassk Texas chef TheFoilGuy
+
+**LS CM** CLS-Alt e.g. CLS Han Chewbacca Chewpio Old Ben
+BabuFrik Charybdis Grandola Paca
+
+**LS CM** Finn e.g. Finn RT RH Finn, RH Poe, Rey
+Charybdis Dani Vao Deathdealer
+
+**LS CM** GL Rey e.g. Rey Chewbacca GK RH Poe, RH Finn
+ARCNiNjai Cukorborsó Zack g Zakeve
+
+**LS CM** JTR e.g. JTR BB-8 C-3PO R2-D2 Finn
+Dam daniel Emperor63 Mol Chod
+
+**LS CM** ROLO e.g. ROLO Cpt Solo, Han Chewpio Lando
+Bellanoche Cap Falcon Dam daniel Dani Vao Enderz Mol Chod schumi Thraken The First
+
+</pre><p><a href="#" onclick="CopyToClipboard('decreasing-3-plan'); return false;">Copy Plan</a> | <a href="#" onclick="CopyToClipboard('decreasing-3-missions'); return false;">Copy Missions</a></p></td><tr><td>3</td><td>3 Top</td><td><b>HOLD AT ZERO &#11088;</b></td><tr><td>3</td><td>2 Middle</td><td><b>HOLD AT ZERO &#11088;</b></td><tr><td>3</td><td>2 Bottom</td><td><b>HOLD AT ZERO &#11088;</b></td><tr class="newPhase"><td>4</td><td>&nbsp;</td><td><b>active</b> <a href="tb.html?c=3%20Top&tb=ls&d=squad+name&player-summary=on">3 Top</a> <a href="tb.html?c=2%20Middle,%202%20Bottom&tb=ls&d=squad+name&player-summary=on">2 Middle, 2 Bottom</a></td><tr><td>4</td><td>2 Middle</td><td><b>missions</b> 67 -> 162m</td><tr><td>4</td><td>2 Bottom</td><td><b>missions</b> 1 -> 121m</td><tr><td>4</td><td>3 Top</td><td><b>missions</b> 29 -> 120m</td><tr><td>4</td><td>2 Middle</td><td><b>deploy</b> 98 -> 260m</td><tr><td>4</td><td>3 Top</td><td><b>deploy</b> 97 -> 217m</td><tr><td>4</td><td>&nbsp;</td><td><b>remaining GP:</b> 54 toons, 6 ships<pre id="decreasing-4-plan" style="display: none !important;">**phase 4: 3 Top -> 3 :star:**
+**phase 4: 2 Middle -> 3 :star:**
+**phase 4: 2 Bottom -> 1 :star:**</pre><pre id="decreasing-4-missions" style="display: none !important;">**Fleet CM** Negotiator e.g. Negotiator Anakin's Eta-2, Ahsoka's SF, Umbaran SF, Plo's SF, Clone Sergeant's ARC-170, Rex's ARC-170
+Allsomea0 ARCNiNjai Bellanoche BenStaWa Cukorborsó Dani Vao DarthSinister Deathdealer Enderz Ethan Geilvta FunkE Kushbender Mol Chod Renegade Rune schumi sergio SnakeEyes Tassk Texas chef TheFoilGuy Thraken The First Wonkee Zack g
+
+**GAS/Ahsoka** GAS Special e.g. GAS Ahsoka
+ARCNiNjai Cukorborsó Dani Vao DarthSinister Deathdealer DerGert Emperor63 Enderz Ethan Geilvta FunkE IceRoad Combine Kushbender Megabites91 Mol Chod Renegade schumi SnakeEyes Texas chef TheFoilGuy Thraken The First Zack g
+
+**GR CM** JMK GR e.g. JMK CAT Mace Padme R2-D2
+Bellanoche BenStaWa Cukorborsó Dani Vao DarthSinister Deathdealer FunkE Kushbender Rune SnakeEyes TheFoilGuy Thraken The First Zack g
+
+**GR CM** Padme e.g. Padme Shaak Ti, JKA GK R2-D2
+BabuFrik DerGert Enderz Ethan Geilvta Leon Ren Megabites91 Texas chef
+
+**GR CM** Shaak Ti e.g. Shaak Ti, Rex Echo (501st), ARC Trooper, Fives
+Emperor63 Mol Chod schumi
+
+**Jedi CM** JKL e.g. JKL GMY HYoda Old Ben, Ezra
+Allsomea0 Bellanoche Cap Falcon Cukorborsó Dam daniel Dani Vao DarthSinister Enderz Ethan Geilvta IceRoad Combine Kushbender Lil Gap Mol Chod Renegade Rune schumi SnakeEyes Tassk TheFoilGuy Thraken The First Zack g
+
+**Jedi CM** JKR e.g. JKR GMY HYoda BS Jolee
+Deathdealer Wonkee
+
+**Jedi CM** JMLS e.g. JMLS JKL HYoda Old Ben, Ezra
+gandihip
+
+**LS CM** CLS e.g. CLS Han Chewbacca Chewpio C-3PO
+Allsomea0 DarthSinister Deathdealer gandihip Kushbender Lil Gap MINI kccoyote Renegade SnakeEyes Tassk Texas chef TheFoilGuy
+
+**LS CM** CLS-Alt e.g. CLS Han Chewbacca Chewpio Old Ben
+BabuFrik Charybdis Grandola Paca
+
+**LS CM** Finn e.g. Finn RT RH Finn, RH Poe, Rey
+Charybdis Dani Vao Deathdealer
+
+**LS CM** GL Rey e.g. Rey Chewbacca GK RH Poe, RH Finn
+ARCNiNjai Cukorborsó Zack g Zakeve
+
+**LS CM** JTR e.g. JTR BB-8 C-3PO R2-D2 Finn
+Dam daniel Emperor63 Mol Chod
+
+**LS CM** ROLO e.g. ROLO Cpt Solo, Han Chewpio Lando
+Bellanoche Cap Falcon Dam daniel Dani Vao Enderz Mol Chod schumi Thraken The First
+
+</pre><p><a href="#" onclick="CopyToClipboard('decreasing-4-plan'); return false;">Copy Plan</a> | <a href="#" onclick="CopyToClipboard('decreasing-4-missions'); return false;">Copy Missions</a></p></td><tr><td>4</td><td>3 Top</td><td>3 &#11088;</td><tr><td>4</td><td>2 Middle</td><td>3 &#11088;</td><tr><td>4</td><td>2 Bottom</td><td>1 &#11088; -- 96 to the next</td></tbody>
+</table>
+<br/>
+<br/><textarea id="discorddecreasing" style="display:none" rows="8" cols="40">
+**Estimated 16 :star:**
+
+**phase 1: active** 1 Top, 1 Middle, 1 Bottom
+phase 1: **missions** 1 Top 9 -> 9m
+phase 1: **missions** 1 Middle 36 -> 36m
+phase 1: **missions** 1 Bottom 41 -> 41m
+phase 1: **deploy** 1 Top 76 -> 85m
+phase 1: **deploy** 1 Middle 73 -> 109m
+phase 1: **deploy** 1 Bottom 44 -> 85m
+phase 1: remaining GP = 56 toons, 42 ships
+details: https://gorgatron1.github.io/brg/guild/zeros/tb.html%3Fc=1%2520Middle,%25201%2520Bottom&tb=ls&d=squad+name&player-summary=on
+**phase 1: 1 Top -> 2 :star:**
+**phase 1: 1 Middle HOLD AT ZERO :star:**
+**phase 1: 1 Bottom HOLD AT ZERO :star:**
+
+**phase 2: active** 1 Middle, 1 Bottom, 2 Top
+phase 2: **missions** 1 Middle 36 -> 145m
+phase 2: **missions** 1 Bottom 41 -> 126m
+phase 2: **missions** 2 Top 15 -> 15m
+phase 2: **deploy** 1 Middle 112 -> 257m
+phase 2: **deploy** 1 Bottom 54 -> 180m
+phase 2: **deploy** 2 Top 56 -> 71m
+phase 2: remaining GP = 0 toons, 57 ships
+details: https://gorgatron1.github.io/brg/guild/zeros/tb.html%3Fc=1%2520Middle,%25201%2520Bottom&tb=ls&d=squad+name&player-summary=on
+**phase 2: 2 Top -> 1 :star:**
+**phase 2: 1 Middle -> 3 :star:**
+**phase 2: 1 Bottom -> 3 :star:**
+
+**phase 3: active** 2 Middle, 2 Bottom, 3 Top
+phase 3: **missions** 2 Middle 67 -> 67m
+phase 3: **missions** 2 Bottom 24 -> 24m
+phase 3: **missions** 3 Top 29 -> 29m
+phase 3: **deploy** 2 Middle 28 -> 95m
+phase 3: **deploy** 2 Bottom 96 -> 120m
+phase 3: **deploy** 3 Top 62 -> 91m
+phase 3: remaining GP = 35 toons, 46 ships
+details: https://gorgatron1.github.io/brg/guild/zeros/tb.html%3Fc=2%2520Middle,%25202%2520Bottom&tb=ls&d=squad+name&player-summary=on
+**phase 3: 3 Top HOLD AT ZERO :star:**
+**phase 3: 2 Middle HOLD AT ZERO :star:**
+**phase 3: 2 Bottom HOLD AT ZERO :star:**
+
+**phase 4: active** 2 Middle, 2 Bottom, 3 Top
+phase 4: **missions** 2 Middle 67 -> 162m
+phase 4: **missions** 2 Bottom 1 -> 121m
+phase 4: **missions** 3 Top 29 -> 120m
+phase 4: **deploy** 2 Middle 98 -> 260m
+phase 4: **deploy** 3 Top 97 -> 217m
+phase 4: remaining GP = 54 toons, 6 ships
+details: https://gorgatron1.github.io/brg/guild/zeros/tb.html%3Fc=2%2520Middle,%25202%2520Bottom&tb=ls&d=squad+name&player-summary=on
+**phase 4: 3 Top -> 3 :star:**
+**phase 4: 2 Middle -> 3 :star:**
+**phase 4: 2 Bottom -> 1 :star:**
+
+</textarea>
+<button onclick="copyText('discorddecreasing')">Copy For Discord</button></div><div class="column"><h2>KAM Shards Estimated: 16 &#11088;</h2>
+<br/>
+<table style="margin: 10px">
+<thead>
+    <tr>
+    <th>Phase</th>
+    <th>Section</th>
+    <th>Action</th>
+    </tr>
+</thead>
+<tbody><tr class="newPhase"><td>1</td><td>&nbsp;</td><td><b>active</b> <a href="tb.html?c=1%20Top&tb=ls&d=squad+name&player-summary=on">1 Top</a> <a href="tb.html?c=1%20Middle,%201%20Bottom&tb=ls&d=squad+name&player-summary=on">1 Middle, 1 Bottom</a></td><tr><td>1</td><td>1 Top</td><td><b>missions</b> 9 -> 9m</td><tr><td>1</td><td>1 Middle</td><td><b>missions</b> 36 -> 36m</td><tr><td>1</td><td>1 Bottom</td><td><b>missions</b> 41 -> 41m</td><tr><td>1</td><td>1 Top</td><td><b>deploy</b> 76 -> 85m</td><tr><td>1</td><td>1 Middle</td><td><b>deploy</b> 73 -> 109m</td><tr><td>1</td><td>1 Bottom</td><td><b>deploy</b> 44 -> 85m</td><tr><td>1</td><td>&nbsp;</td><td><b>remaining GP:</b> 56 toons, 42 ships<pre id="kam-1-plan" style="display: none !important;">**phase 1: 1 Top -> 2 :star:**
+**phase 1: 1 Middle HOLD AT ZERO :star:**
+**phase 1: 1 Bottom HOLD AT ZERO :star:**</pre><pre id="kam-1-missions" style="display: none !important;">**Fleet CM** Negotiator e.g. Negotiator Anakin's Eta-2, Ahsoka's SF, Umbaran SF, Plo's SF, Clone Sergeant's ARC-170, Rex's ARC-170
+Allsomea0 ARCNiNjai Bellanoche BenStaWa Cukorborsó Dani Vao DarthSinister Deathdealer Enderz Ethan Geilvta FunkE Kushbender Mol Chod Renegade Rune schumi sergio SnakeEyes Tassk Texas chef TheFoilGuy Thraken The First Wonkee Zack g
+
+**Jedi CM** JKL e.g. JKL GMY HYoda Old Ben, Ezra
+Allsomea0 Bellanoche Cap Falcon Cukorborsó Dam daniel Dani Vao DarthSinister Enderz Ethan Geilvta Grandola Paca IceRoad Combine Kushbender Lil Gap Mol Chod Renegade Rune schumi SnakeEyes Tassk Texas chef TheFoilGuy Thraken The First Zack g
+
+**Jedi CM** JKR e.g. JKR GMY HYoda BS Jolee
+ARCNiNjai DerGert FunkE Wonkee
+
+**Jedi CM** JMK Jedi e.g. JMK GAS GMY Aayla QGJ
+Bellanoche Cukorborsó Dani Vao Deathdealer Kushbender Thraken The First Zack g
+
+**Jedi CM** JMLS e.g. JMLS GAS Jolee BS JKR
+DarthSinister Enderz gandihip Mol Chod Renegade schumi SnakeEyes
+
+**LS CM** CLS e.g. CLS Han Chewbacca Chewpio C-3PO
+DarthSinister gandihip Lil Gap MINI kccoyote Renegade SnakeEyes Tassk TheFoilGuy
+
+**LS CM** CLS-Alt e.g. CLS Han Chewbacca R2-D2 C-3PO
+Charybdis Grandola Paca
+
+**LS CM** Clones e.g. Rex Echo (501st), ARC Trooper, Cody Fives
+FunkE
+
+**LS CM** Finn e.g. Finn RT RH Finn, RH Poe, Rey
+Charybdis Dani Vao Deathdealer
+
+**LS CM** GAS e.g. GAS Rex Echo (501st), ARC Trooper, Fives
+Emperor63 IceRoad Combine Megabites91
+
+**LS CM** GL Rey e.g. Rey Chewbacca GK RH Poe, RH Finn
+Allsomea0 ARCNiNjai BabuFrik Cukorborsó Dam daniel DerGert Kushbender Mol Chod Texas chef Thraken The First Zack g Zakeve
+
+**LS CM** JMK GR e.g. JMK CAT Fives Padme Shaak Ti
+BenStaWa DarthSinister FunkE Rune SnakeEyes TheFoilGuy
+
+**LS CM** JTR e.g. JTR BB-8 C-3PO R2-D2 Finn
+Allsomea0 BabuFrik Bellanoche Cukorborsó Emperor63 Texas chef Zack g
+
+**LS CM** Padme e.g. Padme Ahsoka JKA GK R2-D2
+Enderz Ethan Geilvta Leon Ren Megabites91 Nico 1313
+
+**LS CM** ROLO e.g. ROLO Cpt Solo, Han Chewpio Lando
+Bellanoche Cap Falcon Dam daniel Dani Vao Enderz Mol Chod schumi Thraken The First
+
+**LS CM** Shaak Ti e.g. Shaak Ti, Rex Echo (501st), ARC Trooper, Fives
+Deathdealer DerGert Kushbender schumi
+
+</pre><p><a href="#" onclick="CopyToClipboard('kam-1-plan'); return false;">Copy Plan</a> | <a href="#" onclick="CopyToClipboard('kam-1-missions'); return false;">Copy Missions</a></p></td><tr><td>1</td><td>1 Top</td><td>2 &#11088; -- 57 to the next</td><tr><td>1</td><td>1 Middle</td><td><b>HOLD AT ZERO &#11088;</b></td><tr><td>1</td><td>1 Bottom</td><td><b>HOLD AT ZERO &#11088;</b></td><tr class="newPhase"><td>2</td><td>&nbsp;</td><td><b>active</b> <a href="tb.html?c=2%20Top&tb=ls&d=squad+name&player-summary=on">2 Top</a> <a href="tb.html?c=1%20Middle,%201%20Bottom&tb=ls&d=squad+name&player-summary=on">1 Middle, 1 Bottom</a></td><tr><td>2</td><td>1 Middle</td><td><b>missions</b> 36 -> 145m</td><tr><td>2</td><td>1 Bottom</td><td><b>missions</b> 41 -> 126m</td><tr><td>2</td><td>2 Top</td><td><b>missions</b> 15 -> 15m</td><tr><td>2</td><td>1 Middle</td><td><b>deploy</b> 112 -> 257m</td><tr><td>2</td><td>1 Bottom</td><td><b>deploy</b> 54 -> 180m</td><tr><td>2</td><td>2 Top</td><td><b>deploy</b> 56 -> 71m</td><tr><td>2</td><td>&nbsp;</td><td><b>remaining GP:</b> 0 toons, 57 ships<pre id="kam-2-plan" style="display: none !important;">**phase 2: 2 Top -> 1 :star:**
+**phase 2: 1 Middle -> 3 :star:**
+**phase 2: 1 Bottom -> 3 :star:**</pre><pre id="kam-2-missions" style="display: none !important;">**Fleet CM** Negotiator e.g. Negotiator Anakin's Eta-2, Ahsoka's SF, Umbaran SF, Plo's SF, Clone Sergeant's ARC-170, Rex's ARC-170
+Allsomea0 ARCNiNjai Bellanoche BenStaWa Cukorborsó Dani Vao DarthSinister Deathdealer Enderz Ethan Geilvta FunkE Kushbender Mol Chod Renegade Rune schumi sergio SnakeEyes Tassk Texas chef TheFoilGuy Thraken The First Wonkee Zack g
+
+**Jedi CM** JKL e.g. JKL GMY HYoda Old Ben, Ezra
+Allsomea0 Bellanoche Cap Falcon Cukorborsó Dam daniel Dani Vao DarthSinister Enderz Ethan Geilvta Grandola Paca IceRoad Combine Kushbender Lil Gap Mol Chod Renegade Rune schumi SnakeEyes Tassk Texas chef TheFoilGuy Thraken The First Zack g
+
+**Jedi CM** JKR e.g. JKR GMY HYoda BS Jolee
+ARCNiNjai DerGert FunkE Wonkee
+
+**Jedi CM** JMK Jedi e.g. JMK GAS GMY Aayla QGJ
+Bellanoche Cukorborsó Dani Vao Deathdealer Kushbender Thraken The First Zack g
+
+**Jedi CM** JMLS e.g. JMLS GAS Jolee BS JKR
+DarthSinister Enderz gandihip Mol Chod Renegade schumi SnakeEyes
+
+**LS CM** CLS e.g. CLS Han Chewbacca Chewpio C-3PO
+DarthSinister gandihip Lil Gap MINI kccoyote Renegade SnakeEyes Tassk TheFoilGuy
+
+**LS CM** CLS-Alt e.g. CLS Han Chewbacca R2-D2 C-3PO
+Charybdis Grandola Paca
+
+**LS CM** Clones e.g. Rex Echo (501st), ARC Trooper, Cody Fives
+FunkE
+
+**LS CM** Finn e.g. Finn RT RH Finn, RH Poe, Rey
+Charybdis Dani Vao Deathdealer
+
+**LS CM** GAS e.g. GAS Rex Echo (501st), ARC Trooper, Fives
+Emperor63 IceRoad Combine Megabites91
+
+**LS CM** GL Rey e.g. Rey Chewbacca GK RH Poe, RH Finn
+Allsomea0 ARCNiNjai BabuFrik Cukorborsó Dam daniel DerGert Kushbender Mol Chod Texas chef Thraken The First Zack g Zakeve
+
+**LS CM** JMK GR e.g. JMK CAT Fives Padme Shaak Ti
+BenStaWa DarthSinister FunkE Rune SnakeEyes TheFoilGuy
+
+**LS CM** JTR e.g. JTR BB-8 C-3PO R2-D2 Finn
+Allsomea0 BabuFrik Bellanoche Cukorborsó Emperor63 Texas chef Zack g
+
+**LS CM** Padme e.g. Padme Ahsoka JKA GK R2-D2
+Enderz Ethan Geilvta Leon Ren Megabites91 Nico 1313
+
+**LS CM** ROLO e.g. ROLO Cpt Solo, Han Chewpio Lando
+Bellanoche Cap Falcon Dam daniel Dani Vao Enderz Mol Chod schumi Thraken The First
+
+**LS CM** Shaak Ti e.g. Shaak Ti, Rex Echo (501st), ARC Trooper, Fives
+Deathdealer DerGert Kushbender schumi
+
+</pre><p><a href="#" onclick="CopyToClipboard('kam-2-plan'); return false;">Copy Plan</a> | <a href="#" onclick="CopyToClipboard('kam-2-missions'); return false;">Copy Missions</a></p></td><tr><td>2</td><td>2 Top</td><td>1 &#11088; -- 63 to the next</td><tr><td>2</td><td>1 Middle</td><td>3 &#11088;</td><tr><td>2</td><td>1 Bottom</td><td>3 &#11088;</td><tr class="newPhase"><td>3</td><td>&nbsp;</td><td><b>active</b> <a href="tb.html?c=3%20Top&tb=ls&d=squad+name&player-summary=on">3 Top</a> <a href="tb.html?c=2%20Middle,%202%20Bottom&tb=ls&d=squad+name&player-summary=on">2 Middle, 2 Bottom</a></td><tr><td>3</td><td>2 Middle</td><td><b>missions</b> 67 -> 67m</td><tr><td>3</td><td>2 Bottom</td><td><b>missions</b> 24 -> 24m</td><tr><td>3</td><td>3 Top</td><td><b>missions</b> 29 -> 29m</td><tr><td>3</td><td>2 Middle</td><td><b>deploy</b> 28 -> 95m</td><tr><td>3</td><td>2 Bottom</td><td><b>deploy</b> 97 -> 121m</td><tr><td>3</td><td>3 Top</td><td><b>deploy</b> 62 -> 91m</td><tr><td>3</td><td>&nbsp;</td><td><b>remaining GP:</b> 34 toons, 46 ships<pre id="kam-3-plan" style="display: none !important;">**phase 3: 3 Top HOLD AT ZERO :star:**
+**phase 3: 2 Middle HOLD AT ZERO :star:**
+**phase 3: 2 Bottom -> 1 :star:**</pre><pre id="kam-3-missions" style="display: none !important;">**Fleet CM** Negotiator e.g. Negotiator Anakin's Eta-2, Ahsoka's SF, Umbaran SF, Plo's SF, Clone Sergeant's ARC-170, Rex's ARC-170
+Allsomea0 ARCNiNjai Bellanoche BenStaWa Cukorborsó Dani Vao DarthSinister Deathdealer Enderz Ethan Geilvta FunkE Kushbender Mol Chod Renegade Rune schumi sergio SnakeEyes Tassk Texas chef TheFoilGuy Thraken The First Wonkee Zack g
+
+**GAS/Ahsoka** GAS Special e.g. GAS Ahsoka
+ARCNiNjai Cukorborsó Dani Vao DarthSinister Deathdealer DerGert Emperor63 Enderz Ethan Geilvta FunkE IceRoad Combine Kushbender Megabites91 Mol Chod Renegade schumi SnakeEyes Texas chef TheFoilGuy Thraken The First Zack g
+
+**GR CM** JMK GR e.g. JMK CAT Mace Padme R2-D2
+Bellanoche BenStaWa Cukorborsó Dani Vao DarthSinister Deathdealer FunkE Kushbender Rune SnakeEyes TheFoilGuy Thraken The First Zack g
+
+**GR CM** Padme e.g. Padme Shaak Ti, JKA GK R2-D2
+BabuFrik DerGert Enderz Ethan Geilvta Leon Ren Megabites91 Texas chef
+
+**GR CM** Shaak Ti e.g. Shaak Ti, Rex Echo (501st), ARC Trooper, Fives
+Emperor63 Mol Chod schumi
+
+**Jedi CM** JKL e.g. JKL GMY HYoda Old Ben, Ezra
+Allsomea0 Bellanoche Cap Falcon Cukorborsó Dam daniel Dani Vao DarthSinister Enderz Ethan Geilvta IceRoad Combine Kushbender Lil Gap Mol Chod Renegade Rune schumi SnakeEyes Tassk TheFoilGuy Thraken The First Zack g
+
+**Jedi CM** JKR e.g. JKR GMY HYoda BS Jolee
+Deathdealer Wonkee
+
+**Jedi CM** JMLS e.g. JMLS JKL HYoda Old Ben, Ezra
+gandihip
+
+**LS CM** CLS e.g. CLS Han Chewbacca Chewpio C-3PO
+Allsomea0 DarthSinister Deathdealer gandihip Kushbender Lil Gap MINI kccoyote Renegade SnakeEyes Tassk Texas chef TheFoilGuy
+
+**LS CM** CLS-Alt e.g. CLS Han Chewbacca Chewpio Old Ben
+BabuFrik Charybdis Grandola Paca
+
+**LS CM** Finn e.g. Finn RT RH Finn, RH Poe, Rey
+Charybdis Dani Vao Deathdealer
+
+**LS CM** GL Rey e.g. Rey Chewbacca GK RH Poe, RH Finn
+ARCNiNjai Cukorborsó Zack g Zakeve
+
+**LS CM** JTR e.g. JTR BB-8 C-3PO R2-D2 Finn
+Dam daniel Emperor63 Mol Chod
+
+**LS CM** ROLO e.g. ROLO Cpt Solo, Han Chewpio Lando
+Bellanoche Cap Falcon Dam daniel Dani Vao Enderz Mol Chod schumi Thraken The First
+
+</pre><p><a href="#" onclick="CopyToClipboard('kam-3-plan'); return false;">Copy Plan</a> | <a href="#" onclick="CopyToClipboard('kam-3-missions'); return false;">Copy Missions</a></p></td><tr><td>3</td><td>3 Top</td><td><b>HOLD AT ZERO &#11088;</b></td><tr><td>3</td><td>2 Middle</td><td><b>HOLD AT ZERO &#11088;</b></td><tr><td>3</td><td>2 Bottom</td><td>1 &#11088; -- 96 to the next</td><tr class="newPhase"><td>4</td><td>&nbsp;</td><td><b>active</b> <a href="tb.html?c=3%20Top&tb=ls&d=squad+name&player-summary=on">3 Top</a> <a href="tb.html?c=2%20Middle,%203%20Bottom&tb=ls&d=squad+name&player-summary=on">2 Middle, 3 Bottom</a></td><tr><td>4</td><td>2 Middle</td><td><b>missions</b> 68 -> 163m</td><tr><td>4</td><td>3 Top</td><td><b>missions</b> 29 -> 120m</td><tr><td>4</td><td>3 Bottom</td><td><b>missions</b> 18 -> 18m</td><tr><td>4</td><td>2 Middle</td><td><b>deploy</b> 11 -> 174m</td><tr><td>4</td><td>3 Top</td><td><b>deploy</b> 97 -> 217m</td><tr><td>4</td><td>3 Bottom</td><td><b>deploy</b> 93 -> 111m</td><tr><td>4</td><td>&nbsp;</td><td><b>remaining GP:</b> 48 toons, 6 ships<pre id="kam-4-plan" style="display: none !important;">**phase 4: 3 Top -> 3 :star:**
+**phase 4: 2 Middle -> 2 :star:**
+**phase 4: 3 Bottom -> 1 :star:**</pre><pre id="kam-4-missions" style="display: none !important;">**Fleet CM** Negotiator e.g. Negotiator Anakin's Eta-2, Ahsoka's SF, Umbaran SF, Plo's SF, Clone Sergeant's ARC-170, Rex's ARC-170
+Allsomea0 ARCNiNjai Bellanoche BenStaWa Cukorborsó Dani Vao DarthSinister Deathdealer Enderz Ethan Geilvta FunkE Kushbender Mol Chod Renegade Rune schumi sergio SnakeEyes Tassk Texas chef TheFoilGuy Thraken The First Wonkee Zack g
+
+**GAS/Ahsoka** GAS Special e.g. GAS Ahsoka
+ARCNiNjai Cukorborsó Dani Vao DarthSinister Deathdealer DerGert Emperor63 Enderz Ethan Geilvta FunkE IceRoad Combine Kushbender Megabites91 Mol Chod Renegade schumi SnakeEyes Texas chef TheFoilGuy Thraken The First Zack g
+
+**GR CM** JMK GR e.g. JMK CAT Mace JKA R2-D2
+Bellanoche BenStaWa Cukorborsó Dani Vao DarthSinister Deathdealer FunkE Kushbender Rune SnakeEyes TheFoilGuy Thraken The First Zack g
+
+**GR CM** Padme e.g. Padme Ahsoka JKA GK Shaak Ti
+Allsomea0 BabuFrik Dam daniel Emperor63 Enderz Ethan Geilvta IceRoad Combine Leon Ren Megabites91 Mol Chod Renegade schumi Tassk Texas chef
+
+**Jedi CM** JKL e.g. JKL HYoda GMY Jolee GK
+Allsomea0 Bellanoche Cukorborsó Dani Vao DarthSinister Ethan Geilvta gandihip Kushbender Lil Gap Renegade Rune schumi SnakeEyes Tassk TheFoilGuy Thraken The First Zack g
+
+**Jedi CM** JKR e.g. JKR GMY HYoda BS Jolee
+Wonkee
+
+**Jedi CM** JMLS e.g. JMLS JKL HYoda Old Ben, Ezra
+Enderz
+
+**KAM** KAM Squad e.g. Shaak Ti, Rex Echo (501st), ARC Trooper, Fives
+BenStaWa DarthSinister Deathdealer DerGert Emperor63 FunkE Kushbender Mol Chod schumi SnakeEyes Texas chef TheFoilGuy Thraken The First
+
+**LS CM** CLS e.g. CLS Han Chewbacca Chewpio C-3PO
+Cukorborsó DarthSinister gandihip Kushbender Lil Gap MINI kccoyote SnakeEyes Tassk TheFoilGuy Zack g
+
+**LS CM** CLS-Alt e.g. CLS Han Chewbacca Chewpio Old Ben
+Allsomea0 BabuFrik Grandola Paca Renegade
+
+**LS CM** Finn e.g. Finn RT RH Finn, RH Poe, Rey
+Charybdis Dani Vao Deathdealer
+
+**LS CM** GL Rey e.g. Rey Holdo GK RH Poe, RH Finn
+ARCNiNjai DerGert Zakeve
+
+**LS CM** ROLO e.g. ROLO Cpt Solo, Han Chewpio Lando
+Bellanoche Cap Falcon Dam daniel Enderz Mol Chod schumi Thraken The First
+
+</pre><p><a href="#" onclick="CopyToClipboard('kam-4-plan'); return false;">Copy Plan</a> | <a href="#" onclick="CopyToClipboard('kam-4-missions'); return false;">Copy Missions</a></p></td><tr><td>4</td><td>3 Top</td><td>3 &#11088;</td><tr><td>4</td><td>2 Middle</td><td>2 &#11088; -- 86 to the next</td><tr><td>4</td><td>3 Bottom</td><td>1 &#11088; -- 55 to the next</td></tbody>
+</table>
+<br/>
+<br/><textarea id="discordkam" style="display:none" rows="8" cols="40">
+**Estimated 16 :star:**
+
+**phase 1: active** 1 Top, 1 Middle, 1 Bottom
+phase 1: **missions** 1 Top 9 -> 9m
+phase 1: **missions** 1 Middle 36 -> 36m
+phase 1: **missions** 1 Bottom 41 -> 41m
+phase 1: **deploy** 1 Top 76 -> 85m
+phase 1: **deploy** 1 Middle 73 -> 109m
+phase 1: **deploy** 1 Bottom 44 -> 85m
+phase 1: remaining GP = 56 toons, 42 ships
+details: https://gorgatron1.github.io/brg/guild/zeros/tb.html%3Fc=1%2520Middle,%25201%2520Bottom&tb=ls&d=squad+name&player-summary=on
+**phase 1: 1 Top -> 2 :star:**
+**phase 1: 1 Middle HOLD AT ZERO :star:**
+**phase 1: 1 Bottom HOLD AT ZERO :star:**
+
+**phase 2: active** 1 Middle, 1 Bottom, 2 Top
+phase 2: **missions** 1 Middle 36 -> 145m
+phase 2: **missions** 1 Bottom 41 -> 126m
+phase 2: **missions** 2 Top 15 -> 15m
+phase 2: **deploy** 1 Middle 112 -> 257m
+phase 2: **deploy** 1 Bottom 54 -> 180m
+phase 2: **deploy** 2 Top 56 -> 71m
+phase 2: remaining GP = 0 toons, 57 ships
+details: https://gorgatron1.github.io/brg/guild/zeros/tb.html%3Fc=1%2520Middle,%25201%2520Bottom&tb=ls&d=squad+name&player-summary=on
+**phase 2: 2 Top -> 1 :star:**
+**phase 2: 1 Middle -> 3 :star:**
+**phase 2: 1 Bottom -> 3 :star:**
+
+**phase 3: active** 2 Middle, 2 Bottom, 3 Top
+phase 3: **missions** 2 Middle 67 -> 67m
+phase 3: **missions** 2 Bottom 24 -> 24m
+phase 3: **missions** 3 Top 29 -> 29m
+phase 3: **deploy** 2 Middle 28 -> 95m
+phase 3: **deploy** 2 Bottom 97 -> 121m
+phase 3: **deploy** 3 Top 62 -> 91m
+phase 3: remaining GP = 34 toons, 46 ships
+details: https://gorgatron1.github.io/brg/guild/zeros/tb.html%3Fc=2%2520Middle,%25202%2520Bottom&tb=ls&d=squad+name&player-summary=on
+**phase 3: 3 Top HOLD AT ZERO :star:**
+**phase 3: 2 Middle HOLD AT ZERO :star:**
+**phase 3: 2 Bottom -> 1 :star:**
+
+**phase 4: active** 2 Middle, 3 Top, 3 Bottom
+phase 4: **missions** 2 Middle 68 -> 163m
+phase 4: **missions** 3 Top 29 -> 120m
+phase 4: **missions** 3 Bottom 18 -> 18m
+phase 4: **deploy** 2 Middle 11 -> 174m
+phase 4: **deploy** 3 Top 97 -> 217m
+phase 4: **deploy** 3 Bottom 93 -> 111m
+phase 4: remaining GP = 48 toons, 6 ships
+details: https://gorgatron1.github.io/brg/guild/zeros/tb.html%3Fc=2%2520Middle,%25203%2520Bottom&tb=ls&d=squad+name&player-summary=on
+**phase 4: 3 Top -> 3 :star:**
+**phase 4: 2 Middle -> 2 :star:**
+**phase 4: 3 Bottom -> 1 :star:**
+
+</textarea>
+<button onclick="copyText('discordkam')">Copy For Discord</button></div></div><br/>
+<font size="-2">Generated 2024-05-12 16:10:50 +0000</font>
+<script data-goatcounter="https://gorgatron.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>

@@ -1,0 +1,83 @@
+<meta charset="UTF-8">
+<meta name="robots" content="noindex"><style type="text/css">
+body {
+ background-image: url("../../i/more_faded_logo.jpg");
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+</style><style type="text/css">
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  padding: 8px;
+}
+
+tr:nth-child(even) {background: #dddddd}
+tr:nth-child(odd) {background: #ffffff}
+
+.toggleable {
+    display: none;
+}
+</style><link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.1.5/css/fixedHeader.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.6/css/fixedColumns.dataTables.min.css" />
+<script type="text/javascript" language="javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedheader/3.1.5/js/dataTables.fixedHeader.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedcolumns/3.2.6/js/dataTables.fixedColumns.min.js"></script><title>BRG Alliance Guild Reports: CPIT Farming Progress Tracker</title>
+<div style="display: flex; align-items:baseline"><img src="../../i/simple_logo_48.jpg"/>&nbsp;<h1>Alliance Guild Reports: CPIT Farming Progress Tracker</h1></div>
+
+<div style="background-color: #f0f0f0; border: solid red; padding: 10px; border-radius: 10px">
+<a href="../../alliance/index.html">Alliance</a> |
+<a href="../../alliance/characters.html">Characters</a> |
+
+<div style="float:right;"><a href="../../r">Resources</a></div>
+<a href="index.html">BRG The HighCouncil </a>
+</div>
+<br/><h2>CPIT Farming Progress Tracker BRG The HighCouncil </h2>
+
+<p>
+Progress on close CPIT teams.  Note that these may overlap with other teams.
+
+<p>
+<button onclick="$('.complete').hide(); $('.working').show()">hide completed</button>
+<button onclick="$('.complete').show(); $('.working').hide()">hide incomplete</button>
+<button onclick="$('.complete').show(); $('.working').show()">show all</button>
+
+<br/>
+    
+<link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.0.0/css/buttons.dataTables.min.css" />
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/buttons/2.0.0/js/dataTables.buttons.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/buttons/2.0.0/js/buttons.html5.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script><script>
+$(document).ready(function() {
+    var urlParams = new URLSearchParams(window.location.search)
+    var show = urlParams.get('show')
+    if (show == "working") {
+        $('.complete').hide()
+    } else if (show == "complete") {
+        $('.working').hide()
+    }
+});
+</script><table class="stripe" id="stats"><thead><th>Player</th><th>Ally Code</th><th>Starting Gear Needed</th><th>Progress</th><th>Current Gear Needed</th><th>Team</th></thead><tr class="complete" style="background-color: #ceebfd;"><td>Zenithier</td><td>443596224</td><td>0</td><td>0</td><td>0</td><td><b>Seps (1%)</b>: Dooku, Jango, Nute, GG, Geo Spy</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Zenithier</td><td>443596224</td><td>0</td><td>0</td><td>0</td><td><b>SLKR+FO 9%</b>: SL Kylo, Hux, FOST, Sith Trooper, Thrawn</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Zenithier</td><td>443596224</td><td>0</td><td>0</td><td>0</td><td><b>Shaak 6%</b>: Shaak Ti, Fives, Rex, Echo (501st), ARC Trooper</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Zenithier</td><td>443596224</td><td>0</td><td>0</td><td>0</td><td><b>Rebels (2%)</b>: CLS, Chewbacca, Han, Chewpio, R2-D2</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Zenithier</td><td>443596224</td><td>0</td><td>0</td><td>0</td><td><b>JMK (8%)</b>: JMK, GK, Ahsoka, CAT, GAS</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Zenithier</td><td>443596224</td><td>0</td><td>0</td><td>0</td><td><b>SEE P1 5%</b>: SEE, Malak, Sith Marauder, Vader, Darth Talon</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Zenithier</td><td>443596224</td><td>0</td><td>0</td><td>0</td><td><b>JKL + JML (6%)</b>: JKL, JMLS, JKR, Mace, Old Ben</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Captainblinx</td><td>613873926</td><td>0</td><td>0</td><td>0</td><td><b>JMK (8%)</b>: JMK, GK, Ahsoka, CAT, JKA</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Captainblinx</td><td>613873926</td><td>0</td><td>0</td><td>0</td><td><b>Rebels (2%)</b>: CLS, Chewbacca, Han, Chewpio, R2-D2</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Captainblinx</td><td>613873926</td><td>0</td><td>0</td><td>0</td><td><b>JKL + JML (6%)</b>: JKL, JMLS, JKR, GAS, BS</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Captainblinx</td><td>613873926</td><td>0</td><td>0</td><td>0</td><td><b>Vader+Wat 8%</b>: Vader, EP, Thrawn, Wat Tambor, Piett</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Captainblinx</td><td>613873926</td><td>0</td><td>0</td><td>0</td><td><b>Shaak 6%</b>: Shaak Ti, Fives, Rex, Echo (501st), ARC Trooper</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Captainblinx</td><td>613873926</td><td>0</td><td>0</td><td>0</td><td><b>SEE P1 5%</b>: SEE, Malak, Sith Marauder, Sidious, DR</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Captainblinx</td><td>613873926</td><td>0</td><td>0</td><td>0</td><td><b>Seps (1%)</b>: Dooku, Jango, GG, B1, GBA</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Nitz'd</td><td>961325798</td><td>0</td><td>0</td><td>0</td><td><b>Padme 3%</b>: Padme, JKA, GK, Ahsoka, GMY</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Nitz'd</td><td>961325798</td><td>12</td><td>12</td><td>0</td><td><b>Shaak 6%</b>: Shaak Ti, Fives, Rex, Echo (501st), ARC Trooper</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Cha22y</td><td>761457315</td><td>0</td><td>0</td><td>0</td><td><b>Shaak 6%</b>: Shaak Ti, Fives, Rex, Echo (501st), ARC Trooper</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Cha22y</td><td>761457315</td><td>0</td><td>0</td><td>0</td><td><b>SLKR 8%</b>: SL Kylo, Hux, Sith Trooper, KRU, FOST</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Nitz</td><td>991936212</td><td>0</td><td>0</td><td>0</td><td><b>SLKR+NS 11%</b>: SL Kylo, Zombie, Daka, Hux, Thrawn</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Nitz</td><td>991936212</td><td>0</td><td>0</td><td>0</td><td><b>JKL + JML (6%)</b>: JKL, JMLS, Mace, Ezra, Old Ben</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Nitz</td><td>991936212</td><td>0</td><td>0</td><td>0</td><td><b>Seps (1%)</b>: Dooku, Jango, AV, Sun Fac, Geo Spy</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Nitz</td><td>991936212</td><td>0</td><td>0</td><td>0</td><td><b>Vader P1 10%</b>: Vader, KRU, Wat Tambor, C-3PO, BB-8</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Nitz</td><td>991936212</td><td>0</td><td>0</td><td>0</td><td><b>Shaak 6%</b>: Shaak Ti, Fives, Rex, Echo (501st), ARC Trooper</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Nitz</td><td>991936212</td><td>0</td><td>0</td><td>0</td><td><b>Rebels (2%)</b>: CLS, Chewbacca, Han, Chewpio, R2-D2</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Nitz</td><td>991936212</td><td>0</td><td>0</td><td>0</td><td><b>GG (2%)</b>: GG, B1, Droideka, B2, Dark Trooper</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>Nitz</td><td>991936212</td><td>0</td><td>0</td><td>0</td><td><b>JMK (8%)</b>: JMK, GK, Ahsoka, CAT, GAS</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>allidrA</td><td>673329616</td><td>0</td><td>0</td><td>0</td><td><b>Vader+Wat 8%</b>: Vader, EP, Thrawn, Wat Tambor, Piett</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>allidrA</td><td>673329616</td><td>0</td><td>0</td><td>0</td><td><b>JMK (8%)</b>: JMK, GK, Ahsoka, CAT, GAS</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>allidrA</td><td>673329616</td><td>0</td><td>0</td><td>0</td><td><b>SEE P1 5%</b>: SEE, Malak, Sith Marauder, Darth Talon, DR</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>allidrA</td><td>673329616</td><td>0</td><td>0</td><td>0</td><td><b>Shaak 6%</b>: Shaak Ti, Fives, Rex, Echo (501st), ARC Trooper</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>allidrA</td><td>673329616</td><td>0</td><td>0</td><td>0</td><td><b>Rebels (2%)</b>: CLS, Chewbacca, Han, Chewpio, R2-D2</td></tr><tr class="complete" style="background-color: #ceebfd;"><td>allidrA</td><td>673329616</td><td>0</td><td>0</td><td>0</td><td><b>GG (2%)</b>: GG, B1, Droideka, B2, Dark Trooper</td></tr><tr class="working" style=""><td>Itzcoatl</td><td>755865424</td><td>53</td><td>3</td><td>50</td><td><b>p3: Imperial Troopers 5%</b>: <b>Veers G9</b>, <b>Piett G7</b>, <b>Gideon G8</b>, <b>Range Trooper G8</b>, <b>Dark Trooper G8</b></td></tr><tr class="working" style=""><td>Cha22y</td><td>761457315</td><td>15</td><td>0</td><td>15</td><td><b>p4: GG (2%)</b>: GG, <b>B1 G13</b>, <b>Droideka G13</b>, <b>B2 R2</b>, <b>MagnaGuard R3</b></td></tr><tr class="working" style=""><td>Cha22y</td><td>761457315</td><td>7</td><td>0</td><td>7</td><td><b>p3: SLKR+FO 9%</b>: SL Kylo, Hux, FOST, Sith Trooper, <b>Thrawn G11</b></td></tr><tr class="working" style=""><td>JediLukeSkywalker Alt</td><td>873328237</td><td>10</td><td>0</td><td>10</td><td><b>p1: Padme 3%</b>: <b>Padme R3</b>, <b>JKA R3</b>, <b>GK R3</b>, <b>Ahsoka R3</b>, <b>C-3PO R3</b></td></tr><tr class="working" style=""><td>Sans</td><td>156217258</td><td>35</td><td>5</td><td>30</td><td><b>p4: GG (2%)</b>: <b>GG G12</b>, <b>B1 G11 2&#9733;</b>, <b>Droideka G12</b>, <b>B2 R3</b>, <b>T3-M4 G9 6&#9733;</b></td></tr><tr class="working" style=""><td>Oberon Calad</td><td>771197337</td><td>33</td><td>0</td><td>33</td><td><b>p4: Seps (1%)</b>: <b>Dooku G10</b>, <b>Jango G11</b>, <b>Sun Fac G12</b>, <b>Geo Spy G12</b>, <b>GBA G12</b></td></tr><tr class="working" style=""><td>The force</td><td>686882798</td><td>40</td><td>0</td><td>40</td><td><b>p4: Seps (1%)</b>: <b>Dooku G8 6&#9733;</b>, <b>Jango G9</b>, <b>Poggle G11</b>, <b>Geo Soldier G11</b>, <b>GBA G11 5&#9733;</b></td></tr><tr class="working" style=""><td>Mini Noah Boat</td><td>698942577</td><td>37</td><td>9</td><td>28</td><td><b>p1: Padme 3%</b>: Padme, <b>JKA G12</b>, <b>GK G8 6&#9733;</b>, <b>Ahsoka G12</b>, <b>GMY G12</b></td></tr><tr class="working" style=""><td>znub</td><td>913947995</td><td>40</td><td>5</td><td>35</td><td><b>p4: Rebels (2%)</b>: <b>CLS R3</b>, <b>Chewbacca G12</b>, <b>Han G12</b>, <b>Chewpio G7 5&#9733;</b>, <b>C-3PO G8 5&#9733;</b></td></tr><tr class="working" style=""><td>znub</td><td>913947995</td><td>38</td><td>3</td><td>35</td><td><b>p1: Vader P1 10%</b>: <b>Vader R3</b>, KRU, <b>Wat Tambor G7 4&#9733;</b>, <b>C-3PO G8 5&#9733;</b>, <b>BB-8 G6</b></td></tr><tr class="working" style=""><td>Edd Vadah</td><td>752936177</td><td>45</td><td>12</td><td>33</td><td><b>p3: Imperial Troopers 5%</b>: <b>Veers G12</b>, <b>Piett G10</b>, <b>Gideon G11</b>, <b>Range Trooper G12</b>, <b>Dark Trooper G12</b></td></tr><tr class="working" style=""><td>VoidedSouls24</td><td>896149329</td><td>25</td><td>4</td><td>21</td><td><b>p4: Rebels (2%)</b>: CLS, <b>Chewbacca R1</b>, <b>Han R1</b>, <b>Chewpio G12</b>, <b>C-3PO G11 5&#9733;</b></td></tr><tr class="working" style=""><td>lolxd</td><td>177442627</td><td>39</td><td>3</td><td>36</td><td><b>p1: Padme 3%</b>: <b>Padme G12</b>, <b>JKA G12</b>, <b>GK G8 6&#9733;</b>, <b>Ahsoka G10</b>, <b>GMY G12</b></td></tr><tr class="working" style=""><td>Belrosa</td><td>983233755</td><td>46</td><td>3</td><td>43</td><td><b>p4: Rebels (2%)</b>: <b>CLS G12</b>, <b>Chewbacca G9 6&#9733;</b>, <b>Han G9 6&#9733;</b>, <b>Chewpio G9 4&#9733;</b>, <b>R2-D2 G8</b></td></tr><tr class="working" style=""><td>Belrosa</td><td>983233755</td><td>49</td><td>3</td><td>46</td><td><b>p3: Imperial Troopers 5%</b>: <b>Veers G11</b>, <b>Piett G9 6&#9733;</b>, <b>Gideon G8</b>, <b>Starck G7</b>, <b>Dark Trooper G9 6&#9733;</b></td></tr><tr class="working" style=""><td>Crovax</td><td>873218834</td><td>42</td><td>9</td><td>33</td><td><b>p3: Imperial Troopers 5%</b>: <b>Veers G12</b>, <b>Piett G10</b>, <b>Gideon G12</b>, <b>Range Trooper G11 6&#9733;</b>, <b>Dark Trooper G12</b></td></tr><tr class="working" style=""><td>The World Champ</td><td>367296627</td><td>37</td><td>0</td><td>37</td><td><b>p4: Seps (1%)</b>: <b>Dooku G8 5&#9733;</b>, <b>Jango G12</b>, <b>Geo Soldier G11</b>, <b>Sun Fac G11</b>, <b>GBA G11</b></td></tr><tr class="working" style=""><td>Fallen</td><td>961276461</td><td>32</td><td>7</td><td>25</td><td><b>p4: Rebels (2%)</b>: CLS, <b>Chewbacca G12</b>, <b>Han R1</b>, <b>Chewpio G9 5&#9733;</b>, <b>C-3PO G12</b></td></tr><tr class="working" style=""><td>Gonzaleez12</td><td>122593812</td><td>50</td><td>0</td><td>50</td><td><b>p4: Rebels (2%)</b>: <b>CLS G9</b>, <b>Chewbacca G8</b>, <b>Han G8</b>, <b>Chewpio G7 3&#9733;</b>, <b>R2-D2 G8</b></td></tr><tr class="working" style=""><td>Nitz'd</td><td>961325798</td><td>18</td><td>0</td><td>18</td><td><b>p4: GG (2%)</b>: <b>GG G12</b>, B1, <b>Droideka G12</b>, B2, <b>Dark Trooper G12</b></td></tr><tr class="working" style=""><td>DarthShade</td><td>612692916</td><td>50</td><td>8</td><td>42</td><td><b>p4: GG (2%)</b>: <b>GG G11</b>, <b>B1 G10 2&#9733;</b>, <b>Droideka G9</b>, <b>B2 G8</b>, <b>Dark Trooper G10</b></td></tr></table><script>var config = {
+    "paging":   false,
+    "info":     false,
+    bFilter: false,
+    fixedHeader: true,
+    dom: 'Bfrtip',
+    buttons: [
+        'copyHtml5',
+        'excelHtml5',
+        'csvHtml5',
+    ],
+}
+
+table = $('#stats').DataTable(config);</script><br/>
+<font size="-2">Generated 2023-05-15 01:50:29 +0000</font>
+<script data-goatcounter="https://gorgatron.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>

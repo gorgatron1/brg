@@ -1,0 +1,42 @@
+<meta charset="UTF-8">
+<meta name="robots" content="noindex"><style type="text/css">
+body {
+ background-image: url("../../i/more_faded_logo.jpg");
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+</style><title>BRG Alliance Guild Reports: SithStrikeTeam LS Geo TB Squads Charts</title>
+<div style="display: flex; align-items:baseline"><img src="../../i/simple_logo_48.jpg"/>&nbsp;<h1>Alliance Guild Reports: SithStrikeTeam LS Geo TB Squads Charts</h1></div>
+
+<div style="background-color: #f0f0f0; border: solid red; padding: 10px; border-radius: 10px">
+<a href="../../alliance/index.html">Alliance</a> |
+<a href="../../alliance/characters.html">Characters</a> |
+
+<div style="float:right;"><a href="../../r">Resources</a></div>
+<a href="index.html">Back</a>
+</div>
+<br/><script type="text/javascript" language="javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script src="../../j/graph.js"></script><script>
+function displayChart(name) {
+    $("#chart").html("")
+    c1 = new Chart("player-ls-geo-tb-squad-gp.json", null, name)
+    c1.id = "chart"
+    c1.title = "Guild TB Squads: " + name
+    c1.tightScale = true
+    c1.width = 1200
+    c1.height = 800
+    c1.round = 1000
+    c1.display()
+}
+displayChart("ROLO")
+</script>
+
+<a href="lsgeotb-squads-section.html">Squads by Section</a>&nbsp;|&nbsp;
+<a href="lsgeotb-squads-type.html">Squads by Type</a>&nbsp;|&nbsp;
+<a href="lsgeotb-squads-chart.html">Squads Chart</a>
+<br/><br/><a href="#" onclick="displayChart('ROLO')">ROLO</a> |&nbsp;<a href="#" onclick="displayChart('Shaak Ti')">Shaak Ti</a> |&nbsp;<a href="#" onclick="displayChart('JTR')">JTR</a> |&nbsp;<a href="#" onclick="displayChart('JKR')">JKR</a> |&nbsp;<a href="#" onclick="displayChart('Padme')">Padme</a> |&nbsp;<a href="#" onclick="displayChart('JMK Jedi')">JMK Jedi</a> |&nbsp;<a href="#" onclick="displayChart('JMK GR')">JMK GR</a> |&nbsp;<a href="#" onclick="displayChart('Clones')">Clones</a> |&nbsp;<a href="#" onclick="displayChart('GAS')">GAS</a> |&nbsp;<a href="#" onclick="displayChart('GAS Special')">GAS Special</a> |&nbsp;<a href="#" onclick="displayChart('CLS')">CLS</a> |&nbsp;<a href="#" onclick="displayChart('CLS-Alt')">CLS-Alt</a> |&nbsp;<a href="#" onclick="displayChart('GL Rey')">GL Rey</a> |&nbsp;<a href="#" onclick="displayChart('KAM Squad')">KAM Squad</a> |&nbsp;<a href="#" onclick="displayChart('JMLS')">JMLS</a> |&nbsp;<a href="#" onclick="displayChart('JKL')">JKL</a> |&nbsp;<a href="#" onclick="displayChart('Mon Mothma')">Mon Mothma</a> |&nbsp;<a href="#" onclick="displayChart('GL Rey')">GL Rey</a> |&nbsp;<a href="#" onclick="displayChart('Negotiator')">Negotiator</a> |&nbsp;<br/><br/>
+<div id="chart"></div><br/>
+<font size="-2">Generated 2024-05-12 16:11:44 +0000</font>
+<script data-goatcounter="https://gorgatron.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
