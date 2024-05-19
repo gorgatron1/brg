@@ -1,215 +1,10 @@
 Player,Ally Code,Starting Gear Needed,Progress,Current Gear Needed,Team
-Micropterus Salimoidous,925452565,0,0,0,Phasma: Phasma FOTP FOSFTP FOST Kylo
-Micropterus Salimoidous,925452565,0,0,0,padme: Padme GK JKA Ahsoka CAT
-Micropterus Salimoidous,925452565,0,0,0,Grievous Omicron: GG B2 B1 MagnaGuard Droideka
-Micropterus Salimoidous,925452565,1,1,0,Negotiator: Negotiator BTL-B Y-wing Anakin's Eta-2 Rex's ARC-170 Umbaran SF Ahsoka's SF Plo's SF Clone Sergeant's ARC-170
-Micropterus Salimoidous,925452565,0,0,0,Malevolence: Malevolence Hyena Bomber Vulture Droid Sun Fac SF Soldier SF Spy SF
-Micropterus Salimoidous,925452565,0,0,0,Geonosians Omicron: GBA Sun Fac Geo Soldier Geo Spy Poggle
-Micropterus Salimoidous,925452565,16,16,0,CLS: CLS Han Chewbacca Chewpio C-3PO
-Micropterus Salimoidous,925452565,20,8,12,GAS: GAS Rex G12 Echo (501st) G12 Fives ARC Trooper G12
-Micropterus Salimoidous,925452565,12,8,4,Troopers: Veers Piett Starck Dark Trooper Range Trooper G12
-Sandakin Airstepper,348956666,27,7,20,Geonosians Omicron: GBA G12 Sun Fac G12 Geo Soldier G12 Geo Spy G12 Poggle G12
-Sandakin Airstepper,348956666,20,20,0,Troopers: Veers Piett Gideon Dark Trooper Range Trooper
-Sandakin Airstepper,348956666,1,0,1,Phasma: Phasma FOTP FOSFTP FOST Kylo
-Sandakin Airstepper,348956666,42,37,5,Grievous Omicron: GG G11 B2 B1 MagnaGuard Droideka
-Sandakin Airstepper,348956666,1,0,1,Negotiator: Negotiator BTL-B Y-wing 3* Anakin's Eta-2 Rex's ARC-170 Umbaran SF Ahsoka's SF Plo's SF Clone Sergeant's ARC-170
-Sandakin Airstepper,348956666,49,14,35,CLS: CLS G10 Han G8 Chewbacca G9 Chewpio G8 2* R2-D2 G10
-Nimbulus,181256629,20,0,20,Geonosians Omicron: GBA G12 Sun Fac G12 Geo Soldier G12 Geo Spy G12 Poggle G12
-Nimbulus,181256629,21,5,16,CLS: CLS Han G12 Chewbacca G12 Chewpio G12 C-3PO G12
-Nimbulus,181256629,27,26,1,Phasma: Phasma FOTP FOSFTP FOST Kylo
-Nimbulus,181256629,34,14,20,Grievous Omicron: GG G12 B2 G12 B1 G12 MagnaGuard G12 Droideka G12
-Nimbulus,181256629,44,0,44,Troopers: Veers G10 Piett G9 Gideon G7 Dark Trooper G9 Range Trooper G1 2*
-SkyGuy501,961395828,2,0,2,padme: Padme GK JKA Ahsoka R1 C-3PO
-SkyGuy501,961395828,12,0,12,Grievous Omicron: GG B2 G12 B1 MagnaGuard G12 Droideka G12
-SkyGuy501,961395828,20,0,20,Geonosians Omicron: GBA G12 Sun Fac G12 Geo Soldier G12 Geo Spy G12 Poggle G12
-SkyGuy501,961395828,11,11,0,CLS: CLS Han Chewbacca Chewpio R2-D2
-SkyGuy501,961395828,8,4,4,GAS: GAS Rex Echo (501st) R1 Fives ARC Trooper R1
-SkyGuy501,961395828,47,5,42,Phasma: Phasma G12 FOTP G7 FOSFTP G3 FOST G4 5* Kylo G12
-SkyGuy501,961395828,19,3,16,Troopers: Veers Piett Starck Dark Trooper R2 Range Trooper G1 5*
-Dash Rektless,567161194,41,5,36,Phasma: Phasma G8 FOTP G10 FOSFTP G7 FOST G11 6* Kylo G8
-Dash Rektless,567161194,44,5,39,Grievous Omicron: GG G9 B2 G11 B1 G6 5* MagnaGuard G9 Droideka G6 5*
-Dash Rektless,567161194,1,0,1,Malevolence: Malevolence 5* Hyena Bomber 4* Vulture Droid 3* Sun Fac SF Soldier SF Spy SF
-Dash Rektless,567161194,41,18,23,Geonosians Omicron: GBA G11 Sun Fac G11 Geo Soldier G12 Geo Spy G11 Poggle G12
-Dash Rektless,567161194,49,8,41,CLS: CLS G9 Han G9 Chewbacca G4 5* Chewpio G5 4* R2-D2 G12
-Dark Helmet,783487787,1,1,0,Phasma: Phasma FOTP FOSFTP FOST Kylo
-Dark Helmet,783487787,36,36,0,padme: Padme GK JKA Ahsoka C-3PO
-Dark Helmet,783487787,0,0,0,Geonosians Omicron: GBA Sun Fac Geo Soldier Geo Spy Poggle
-Dark Helmet,783487787,12,12,0,CLS: CLS Han Chewbacca Chewpio R2-D2
-Dark Helmet,783487787,4,0,4,Grievous Omicron: GG G12 B2 B1 MagnaGuard Droideka
-Dark Helmet,783487787,1,0,1,Malevolence: Malevolence Hyena Bomber Vulture Droid 5* Sun Fac SF Soldier SF Spy SF
 Variable,777295619,1,1,0,Phasma: Phasma FOTP FOSFTP FOST Kylo
 Variable,777295619,20,20,0,Geonosians Omicron: GBA Sun Fac Geo Soldier Geo Spy Poggle
-Variable,777295619,40,30,10,padme: Padme G10 GK G12 JKA Ahsoka C-3PO
-Variable,777295619,15,0,15,Grievous Omicron: GG G1 4* B2 B1 MagnaGuard Droideka
+Variable,777295619,40,36,4,padme: Padme G12 GK JKA Ahsoka C-3PO
+Variable,777295619,15,0,15,Grievous Omicron: GG G1 5* B2 B1 MagnaGuard Droideka
 Variable,777295619,46,16,30,Troopers: Veers Piett Starck Dark Trooper G1 6* Range Trooper G1 5*
 Variable,777295619,50,21,29,CLS: CLS Han G6 Chewbacca Chewpio G1 5* R2-D2 G12
-Un Known,463235621,20,0,20,Geonosians Omicron: GBA G12 Sun Fac G12 Geo Soldier G12 Geo Spy G12 Poggle G12
-Un Known,463235621,1,0,1,Phasma: Phasma FOTP FOSFTP FOST Kylo
-Un Known,463235621,15,0,15,padme: Padme G12 GK JKA Ahsoka C-3PO G5 6*
-Un Known,463235621,33,32,1,Grievous Omicron: GG B2 B1 MagnaGuard Droideka
-Un Known,463235621,1,0,1,Negotiator: Negotiator BTL-B Y-wing 3* Anakin's Eta-2 Rex's ARC-170 4* Umbaran SF Ahsoka's SF Plo's SF Clone Sergeant's ARC-170
-Un Known,463235621,33,0,33,Troopers: Veers G12 Piett G9 4* Gideon G9 6* Dark Trooper G9 5* Range Trooper G8 4*
-Un Known,463235621,44,0,44,CLS: CLS G11 Han G7 Chewbacca G9 Chewpio G1 R2-D2 G8
-Sieana Rayley,547229965,46,46,0,Phasma: Phasma FOTP FOSFTP FOST Kylo
-Sieana Rayley,547229965,17,17,0,padme: Padme GK JKA Ahsoka C-3PO
-Sieana Rayley,547229965,49,49,0,Grievous Omicron: GG B2 B1 MagnaGuard Droideka
-Sieana Rayley,547229965,1,0,1,Negotiator: Negotiator BTL-B Y-wing 6* Anakin's Eta-2 Rex's ARC-170 Umbaran SF Ahsoka's SF Plo's SF Clone Sergeant's ARC-170
-Sieana Rayley,547229965,45,45,0,Geonosians Omicron: GBA Sun Fac Geo Soldier Geo Spy Poggle
-Sieana Rayley,547229965,16,16,0,CLS: CLS Han Chewbacca Chewpio R2-D2
-Sieana Rayley,547229965,7,7,0,GAS: GAS Rex Echo (501st) Fives ARC Trooper
-Sieana Rayley,547229965,39,16,23,Troopers: Veers G12 Piett Gideon G12 Dark Trooper Range Trooper G1 6*
-Archer,974471184,5,0,5,padme: Padme GK R2 JKA Ahsoka G12 C-3PO
-Archer,974471184,8,4,4,Grievous Omicron: GG B2 B1 G12 MagnaGuard Droideka
-Archer,974471184,0,0,0,GAS: GAS Rex Echo (501st) Fives ARC Trooper
-Archer,974471184,19,0,19,Geonosians Omicron: GBA Sun Fac G11 Geo Soldier G11 Geo Spy G12 Poggle G11
-Archer,974471184,18,8,10,Troopers: Veers Piett Starck Dark Trooper Range Trooper G6 5*
-Archer,974471184,11,4,7,CLS: CLS Han Chewbacca Chewpio R2-D2 G9
-Left 4 Gaming Addiction,612524345,7,3,4,padme: Padme GK JKA Ahsoka C-3PO G12
-Left 4 Gaming Addiction,612524345,1,1,0,Negotiator: Negotiator BTL-B Y-wing Anakin's Eta-2 Rex's ARC-170 Umbaran SF Ahsoka's SF Plo's SF Clone Sergeant's ARC-170
-Left 4 Gaming Addiction,612524345,20,0,20,Geonosians Omicron: GBA G12 Sun Fac G12 Geo Soldier G12 Geo Spy G12 Poggle G12
-Left 4 Gaming Addiction,612524345,16,12,4,CLS: CLS Han Chewbacca Chewpio G12 R2-D2
-Left 4 Gaming Addiction,612524345,32,32,0,GAS: GAS Rex Echo (501st) Fives ARC Trooper
-Left 4 Gaming Addiction,612524345,1,0,1,Phasma: Phasma FOTP FOSFTP FOST Kylo
-Left 4 Gaming Addiction,612524345,31,30,1,Grievous Omicron: GG B2 B1 MagnaGuard Droideka
-Left 4 Gaming Addiction,612524345,33,22,11,Troopers: Veers Piett Starck Dark Trooper G9 Range Trooper G12
-buttnuggets,744348919,21,21,0,padme: Padme GK JKA Ahsoka C-3PO
-buttnuggets,744348919,43,43,0,Grievous Omicron: GG B2 B1 MagnaGuard Droideka
-buttnuggets,744348919,20,4,16,Geonosians Omicron: GBA Sun Fac G12 Geo Soldier G12 Geo Spy G12 Poggle G12
-buttnuggets,744348919,19,15,4,CLS: CLS Han Chewbacca Chewpio R2-D2 G12
-buttnuggets,744348919,47,46,1,Phasma: Phasma FOTP FOSFTP FOST Kylo
-buttnuggets,744348919,1,0,1,Negotiator: Negotiator BTL-B Y-wing 5* Anakin's Eta-2 Rex's ARC-170 Umbaran SF Ahsoka's SF Plo's SF Clone Sergeant's ARC-170
-buttnuggets,744348919,34,4,30,Troopers: Veers G12 Piett G10 Starck G12 Dark Trooper G9 6* Range Trooper G7 5*
-buttnuggets,744348919,25,0,25,GAS: GAS G7 5* Rex G12 Echo (501st) G12 Fives G12 ARC Trooper G12
-Jojo,917122652,39,39,0,Phasma: Phasma FOTP FOSFTP FOST Kylo
-Jojo,917122652,17,17,0,Geonosians Omicron: GBA Sun Fac Geo Soldier Geo Spy Poggle
-Jojo,917122652,19,0,19,CLS: CLS Han G12 Chewbacca G12 Chewpio G10 C-3PO G11
-Jojo,917122652,45,38,7,Grievous Omicron: GG G9 B2 B1 MagnaGuard Droideka
-Jojo,917122652,39,5,34,Troopers: Veers G10 Piett G9 Gideon G10 Dark Trooper G9 6* Range Trooper G8 5*
-Dark,752462989,4,0,4,padme: Padme GK JKA Ahsoka G12 C-3PO
-Dark,752462989,0,0,0,Malevolence: Malevolence Hyena Bomber Vulture Droid Sun Fac SF Soldier SF Spy SF
-Dark,752462989,12,0,12,Geonosians Omicron: GBA Sun Fac G12 Geo Soldier G12 Geo Spy Poggle G12
-Dark,752462989,0,0,0,GAS: GAS Rex Echo (501st) Fives ARC Trooper
-Dark,752462989,46,45,1,Phasma: Phasma FOTP FOSFTP FOST Kylo
-Dark,752462989,8,0,8,Grievous Omicron: GG R2 B2 R1 B1 R2 MagnaGuard Droideka G12
-Dark,752462989,19,3,16,CLS: CLS Han Chewbacca Chewpio G8 2* R2-D2 G8
-MrRevan,556951466,0,0,0,padme: Padme GK JKA Ahsoka CAT
-MrRevan,556951466,4,4,0,Grievous Omicron: GG B2 B1 MagnaGuard Droideka
-MrRevan,556951466,25,25,0,Geonosians Omicron: GBA Sun Fac Geo Soldier Geo Spy Poggle
-MrRevan,556951466,0,0,0,CLS: CLS Han Chewbacca Chewpio C-3PO
-MrRevan,556951466,26,26,0,GAS: GAS Rex Echo (501st) Fives ARC Trooper
-MrRevan,556951466,46,45,1,Phasma: Phasma FOTP FOSFTP FOST Kylo
-MrRevan,556951466,1,0,1,Negotiator: Negotiator BTL-B Y-wing 4* Anakin's Eta-2 Rex's ARC-170 Umbaran SF Ahsoka's SF Plo's SF Clone Sergeant's ARC-170
-MrRevan,556951466,16,0,16,Troopers: Veers Piett Starck Dark Trooper G9 Range Trooper G7 6*
-Fiberhead,813548382,0,0,0,Phasma: Phasma FOTP FOSFTP FOST Kylo
-Fiberhead,813548382,21,16,5,padme: Padme R1 GK R1 JKA R2 Ahsoka C-3PO
-Fiberhead,813548382,1,1,0,Malevolence: Malevolence Hyena Bomber Vulture Droid Sun Fac SF Soldier SF Spy SF
-Fiberhead,813548382,17,6,11,Geonosians Omicron: GBA Sun Fac G12 Geo Soldier G12 Geo Spy R1 Poggle R2
-Fiberhead,813548382,27,19,8,CLS: CLS Han R1 Chewbacca Chewpio R1 R2-D2 G12
-Fiberhead,813548382,24,12,12,Grievous Omicron: GG G12 B2 R1 B1 R1 MagnaGuard R1 Droideka R1
-Fiberhead,813548382,35,19,16,Troopers: Veers Piett Starck Dark Trooper G9 Range Trooper G7
-IrvingBerlin,442512143,46,46,0,Phasma: Phasma FOTP FOSFTP FOST Kylo
-IrvingBerlin,442512143,20,20,0,Geonosians Omicron: GBA Sun Fac Geo Soldier Geo Spy Poggle
-IrvingBerlin,442512143,17,17,0,CLS: CLS Han Chewbacca Chewpio C-3PO
-IrvingBerlin,442512143,15,0,15,Grievous Omicron: GG G1 B2 B1 MagnaGuard Droideka
-IrvingBerlin,442512143,1,0,1,Malevolence: Malevolence Hyena Bomber 6* Vulture Droid Sun Fac SF Soldier SF Spy SF
-IrvingBerlin,442512143,21,0,21,Troopers: Veers G11 Piett Gideon G11 Dark Trooper G12 Range Trooper G9
-SithLordCryo,257389653,0,0,0,padme: Padme GK JKA Ahsoka CAT
-SithLordCryo,257389653,16,16,0,Grievous Omicron: GG B2 B1 MagnaGuard Droideka
-SithLordCryo,257389653,16,0,16,Geonosians Omicron: GBA Sun Fac G12 Geo Soldier G12 Geo Spy G12 Poggle G12
-SithLordCryo,257389653,0,0,0,CLS: CLS Han Chewbacca Chewpio C-3PO
-SithLordCryo,257389653,4,4,0,GAS: GAS Rex Echo (501st) Fives ARC Trooper
-SithLordCryo,257389653,42,41,1,Phasma: Phasma FOTP FOSFTP FOST Kylo
-SithLordCryo,257389653,1,0,1,Negotiator: Negotiator BTL-B Y-wing 4* Anakin's Eta-2 Rex's ARC-170 5* Umbaran SF Ahsoka's SF Plo's SF Clone Sergeant's ARC-170
-SithLordCryo,257389653,18,10,8,Troopers: Veers Piett Starck Dark Trooper G9 6* Range Trooper R2
-Capt Black,257644793,0,0,0,padme: Padme GK JKA Ahsoka CAT
-Capt Black,257644793,0,0,0,Malevolence: Malevolence Hyena Bomber Vulture Droid Sun Fac SF Soldier SF Spy SF
-Capt Black,257644793,0,0,0,CLS: CLS Han Chewbacca Chewpio C-3PO
-Capt Black,257644793,1,0,1,Phasma: Phasma FOTP FOSFTP FOST Kylo
-Capt Black,257644793,4,0,4,Grievous Omicron: GG B2 B1 MagnaGuard Droideka G12
-Capt Black,257644793,18,0,18,Geonosians Omicron: GBA R1 Sun Fac G12 Geo Soldier G12 Geo Spy G12 Poggle G12
-Capt Black,257644793,43,0,43,Troopers: Veers G10 Piett Gideon G9 Dark Trooper G1 1* Range Trooper G1 4*
-Axel Kennedy,358543737,37,37,0,Phasma: Phasma FOTP FOSFTP FOST Kylo
-Axel Kennedy,358543737,35,35,0,padme: Padme GK JKA Ahsoka C-3PO
-Axel Kennedy,358543737,28,28,0,Geonosians Omicron: GBA Sun Fac Geo Soldier Geo Spy Poggle
-Axel Kennedy,358543737,43,39,4,Grievous Omicron: GG G12 B2 B1 MagnaGuard Droideka
-Axel Kennedy,358543737,1,0,1,Negotiator: Negotiator BTL-B Y-wing 4* Anakin's Eta-2 Rex's ARC-170 Umbaran SF Ahsoka's SF Plo's SF Clone Sergeant's ARC-170
-Axel Kennedy,358543737,46,6,40,Troopers: Veers G12 Piett G8 5* Starck G7 Dark Trooper G7 4* Range Trooper G6 2*
-Axel Kennedy,358543737,47,12,35,CLS: CLS G10 Han G8 Chewbacca G8 Chewpio G7 4* R2-D2 G12
-Axel Kennedy,358543737,19,1,18,GAS: GAS G7 5* Rex Echo (501st) G12 Fives ARC Trooper G11
-JoeMacFando,241665115,20,4,16,Geonosians Omicron: GBA Sun Fac G12 Geo Soldier G12 Geo Spy G12 Poggle G12
-JoeMacFando,241665115,19,19,0,CLS: CLS Han Chewbacca Chewpio C-3PO
-JoeMacFando,241665115,50,49,1,Phasma: Phasma FOTP FOSFTP FOST Kylo
-JoeMacFando,241665115,42,24,18,Grievous Omicron: GG B2 G12 B1 G12 MagnaGuard G12 Droideka G10
-JoeMacFando,241665115,1,0,1,Malevolence: Malevolence 5* Hyena Bomber 5* Vulture Droid Sun Fac SF Soldier SF Spy SF
-JoeMacFando,241665115,32,3,29,Troopers: Veers G12 Piett G12 Starck G11 Dark Trooper G6 4* Range Trooper G10
-BBBcube314,668135442,0,0,0,Phasma: Phasma FOTP FOSFTP FOST Kylo
-BBBcube314,668135442,23,23,0,Geonosians Omicron: GBA Sun Fac Geo Soldier Geo Spy Poggle
-BBBcube314,668135442,4,0,4,CLS: CLS Han Chewbacca Chewpio G12 C-3PO
-BBBcube314,668135442,47,42,5,Grievous Omicron: GG G11 B2 B1 MagnaGuard Droideka
-BBBcube314,668135442,1,0,1,Negotiator: Negotiator BTL-B Y-wing 4* Anakin's Eta-2 Rex's ARC-170 6* Umbaran SF Ahsoka's SF Plo's SF Clone Sergeant's ARC-170
-BBBcube314,668135442,34,0,34,Troopers: Veers G11 Piett G10 6* Gideon G9 Dark Trooper G9 Range Trooper G7
-jamesCCCC,577439491,0,0,0,Phasma: Phasma FOTP FOSFTP FOST Kylo
-jamesCCCC,577439491,17,17,0,Geonosians Omicron: GBA Sun Fac Geo Soldier Geo Spy Poggle
-jamesCCCC,577439491,15,15,0,CLS: CLS Han Chewbacca Chewpio C-3PO
-jamesCCCC,577439491,40,36,4,Grievous Omicron: GG G12 B2 B1 MagnaGuard Droideka
-jamesCCCC,577439491,48,4,44,Troopers: Veers G11 Piett G10 Starck G7 Dark Trooper G7 6* Range Trooper G1 4*
-jamesCCCC,577439491,32,0,32,GAS: GAS G1 5* Rex G12 Echo (501st) G9 Fives ARC Trooper G10
-OpticAlex,221577484,0,0,0,padme: Padme GK JKA Ahsoka C-3PO
-OpticAlex,221577484,4,1,3,GAS: GAS Rex R2 Echo (501st) R2 Fives ARC Trooper R2
-OpticAlex,221577484,32,0,32,Phasma: Phasma G8 FOTP G11 FOSFTP G9 FOST G8 4* Kylo G12
-OpticAlex,221577484,2,0,2,Grievous Omicron: GG B2 R2 B1 MagnaGuard R2 Droideka
-OpticAlex,221577484,1,0,1,Negotiator: Negotiator BTL-B Y-wing 3* Anakin's Eta-2 Rex's ARC-170 Umbaran SF Ahsoka's SF Plo's SF Clone Sergeant's ARC-170
-OpticAlex,221577484,1,0,1,Malevolence: Malevolence Hyena Bomber 5* Vulture Droid 3* Sun Fac SF Soldier SF Spy SF
-OpticAlex,221577484,26,2,24,Geonosians Omicron: GBA G11 Sun Fac G11 Geo Soldier G12 Geo Spy G11 Poggle G11
-OpticAlex,221577484,37,3,34,Troopers: Veers G11 Piett G9 5* Starck G10 Dark Trooper G7 4* Range Trooper G9 4*
-OpticAlex,221577484,10,1,9,CLS: CLS Han Chewbacca Chewpio G11 4* R2-D2 G12
-Snorlax,157865324,0,0,0,Phasma: Phasma FOTP FOSFTP FOST Kylo
-Snorlax,157865324,20,4,16,padme: Padme G12 GK G12 JKA G12 Ahsoka G12 C-3PO
-Snorlax,157865324,20,0,20,Geonosians Omicron: GBA G12 Sun Fac G12 Geo Soldier G12 Geo Spy G12 Poggle G12
-Snorlax,157865324,22,22,0,CLS: CLS Han Chewbacca Chewpio R2-D2
-Snorlax,157865324,50,30,20,Grievous Omicron: GG G12 B2 G12 B1 G12 MagnaGuard G12 Droideka G12
-Snorlax,157865324,36,31,5,Troopers: Veers Piett Starck Dark Trooper Range Trooper G11 5*
-AgentOfChaos,718699874,16,8,8,Geonosians Omicron: GBA Sun Fac Geo Soldier G12 Geo Spy Poggle G12
-AgentOfChaos,718699874,50,49,1,Phasma: Phasma FOTP FOSFTP FOST Kylo
-AgentOfChaos,718699874,39,15,24,Grievous Omicron: GG G12 B2 G12 B1 G11 MagnaGuard G9 Droideka G12
-AgentOfChaos,718699874,1,0,1,Negotiator: Negotiator 5* BTL-B Y-wing 3* LVunit.level Anakin's Eta-2 Rex's ARC-170 Umbaran SF Ahsoka's SF Plo's SF Clone Sergeant's ARC-170
-AgentOfChaos,718699874,1,0,1,Malevolence: Malevolence Hyena Bomber 5* Vulture Droid Sun Fac SF Soldier SF Spy SF
-AgentOfChaos,718699874,49,18,31,Troopers: Veers G10 Piett G10 5* Gideon G9 Dark Trooper G9 6* Range Trooper G11 4*
-AgentOfChaos,718699874,43,11,32,CLS: CLS R2 Han G7 Chewbacca G7 Chewpio G10 5* R2-D2 G9
-YngviFrey,747421381,19,6,13,Geonosians Omicron: GBA G12 Sun Fac R2 Geo Soldier G12 Geo Spy Poggle G12
-YngviFrey,747421381,26,25,1,Phasma: Phasma FOTP FOSFTP FOST Kylo
-YngviFrey,747421381,34,5,29,Grievous Omicron: GG B2 G11 B1 G8 5* MagnaGuard G8 6* Droideka G8 5*
-YngviFrey,747421381,37,1,36,CLS: CLS G12 Han G10 Chewbacca G9 Chewpio G4 3* R2-D2 G9
-Kliff Fuser,891864244,48,48,0,Phasma: Phasma FOTP FOSFTP FOST Kylo
-Kliff Fuser,891864244,49,41,8,padme: Padme G8 GK JKA Ahsoka C-3PO
-Kliff Fuser,891864244,12,12,0,Geonosians Omicron: GBA Sun Fac Geo Soldier Geo Spy Poggle
-Kliff Fuser,891864244,30,27,3,CLS: CLS Han Chewbacca Chewpio R1 R2-D2 R2
-Kliff Fuser,891864244,7,0,7,Grievous Omicron: GG G9 B2 B1 MagnaGuard Droideka
-Kliff Fuser,891864244,1,0,1,Negotiator: Negotiator BTL-B Y-wing 2* Anakin's Eta-2 Rex's ARC-170 6* Umbaran SF Ahsoka's SF Plo's SF Clone Sergeant's ARC-170
-Kliff Fuser,891864244,46,0,46,GAS: GAS G1 5* Rex G8 Echo (501st) G8 Fives ARC Trooper G1 6*
-EdmundsV2,628862281,16,16,0,Geonosians Omicron: GBA Sun Fac Geo Soldier Geo Spy Poggle
-EdmundsV2,628862281,8,8,0,Troopers: Veers Piett Starck Dark Trooper Range Trooper
-EdmundsV2,628862281,27,5,22,CLS: CLS G12 Han G12 Chewbacca G12 Chewpio G10 C-3PO G12
-EdmundsV2,628862281,1,0,1,Phasma: Phasma FOTP FOSFTP FOST Kylo
-EdmundsV2,628862281,4,0,4,Grievous Omicron: GG G12 B2 B1 MagnaGuard Droideka
-thegame,177442627,8,0,8,padme: Padme G12 GK JKA Ahsoka C-3PO G12
-thegame,177442627,20,0,20,Geonosians Omicron: GBA G12 Sun Fac G12 Geo Soldier G12 Geo Spy G12 Poggle G12
-thegame,177442627,14,0,14,CLS: CLS Han G12 Chewbacca R1 Chewpio G12 R2-D2 G12
-thegame,177442627,1,0,1,Phasma: Phasma FOTP FOSFTP FOST Kylo
-thegame,177442627,45,41,4,Grievous Omicron: GG G12 B2 B1 MagnaGuard Droideka
-thegame,177442627,47,0,47,Troopers: Veers G7 6* Piett G9 Starck G7 Dark Trooper G6 4* Range Trooper G4 2*
-Jbob1011,193859291,34,34,0,Geonosians Omicron: GBA Sun Fac Geo Soldier Geo Spy Poggle
-Jbob1011,193859291,10,6,4,CLS: CLS Han Chewbacca Chewpio G12 C-3PO
-Jbob1011,193859291,1,0,1,Phasma: Phasma FOTP FOSFTP FOST Kylo
-Jbob1011,193859291,15,0,15,Grievous Omicron: GG G1 5* B2 B1 MagnaGuard Droideka
-Jbob1011,193859291,44,0,44,Troopers: Veers G10 Piett Gideon G8 Dark Trooper G1 4* Range Trooper G1 2*
-Gilberdere,855471613,0,0,0,Phasma: Phasma FOTP FOSFTP FOST Kylo
-Gilberdere,855471613,34,34,0,padme: Padme GK JKA Ahsoka C-3PO
-Gilberdere,855471613,20,7,13,Geonosians Omicron: GBA R2 Sun Fac G12 Geo Soldier G12 Geo Spy Poggle G12
-Gilberdere,855471613,28,24,4,CLS: CLS Han Chewbacca Chewpio G12 R2-D2
-Gilberdere,855471613,33,29,4,Grievous Omicron: GG G12 B2 B1 MagnaGuard Droideka
-Gilberdere,855471613,1,0,1,Negotiator: Negotiator BTL-B Y-wing 5* Anakin's Eta-2 Rex's ARC-170 Umbaran SF Ahsoka's SF Plo's SF Clone Sergeant's ARC-170
-Gilberdere,855471613,38,3,35,Troopers: Veers G9 Piett G10 Gideon G9 Dark Trooper G9 Range Trooper G8
 Talyn,722362941,49,49,0,Phasma: Phasma FOTP FOSFTP FOST Kylo
 Talyn,722362941,42,30,12,padme: Padme G8 GK JKA Ahsoka C-3PO G12
 Talyn,722362941,12,12,0,Geonosians Omicron: GBA Sun Fac Geo Soldier Geo Spy Poggle
@@ -219,6 +14,113 @@ Talyn,722362941,1,0,1,Malevolence: Malevolence Hyena Bomber 4* Vulture Droid Sun
 Talyn,722362941,31,14,17,Troopers: Veers Piett Starck Dark Trooper G9 4* Range Trooper G6 4*
 Talyn,722362941,45,7,38,CLS: CLS G13 Han G7 Chewbacca G12 Chewpio G4 5* R2-D2 G6
 Talyn,722362941,46,0,46,GAS: GAS G1 5* Rex G8 Echo (501st) G8 Fives ARC Trooper G1 4*
+JoeMacFando,241665115,41,25,16,padme: Padme G12 GK G8 JKA G12 Ahsoka C-3PO
+JoeMacFando,241665115,20,4,16,Geonosians Omicron: GBA Sun Fac G12 Geo Soldier G12 Geo Spy G12 Poggle G12
+JoeMacFando,241665115,19,19,0,CLS: CLS Han Chewbacca Chewpio R2-D2
+JoeMacFando,241665115,50,49,1,Phasma: Phasma FOTP FOSFTP FOST Kylo
+JoeMacFando,241665115,42,24,18,Grievous Omicron: GG B2 G12 B1 G12 MagnaGuard G12 Droideka G10
+JoeMacFando,241665115,1,0,1,Malevolence: Malevolence 5* Hyena Bomber 5* Vulture Droid Sun Fac SF Soldier SF Spy SF
+JoeMacFando,241665115,32,3,29,Troopers: Veers G12 Piett G12 Starck G11 Dark Trooper G6 4* Range Trooper G10
+Sieana Rayley,547229965,46,46,0,Phasma: Phasma FOTP FOSFTP FOST Kylo
+Sieana Rayley,547229965,17,17,0,padme: Padme GK JKA Ahsoka C-3PO
+Sieana Rayley,547229965,49,49,0,Grievous Omicron: GG B2 B1 MagnaGuard Droideka
+Sieana Rayley,547229965,1,0,1,Negotiator: Negotiator BTL-B Y-wing 6* Anakin's Eta-2 Rex's ARC-170 Umbaran SF Ahsoka's SF Plo's SF Clone Sergeant's ARC-170
+Sieana Rayley,547229965,45,45,0,Geonosians Omicron: GBA Sun Fac Geo Soldier Geo Spy Poggle
+Sieana Rayley,547229965,16,16,0,CLS: CLS Han Chewbacca Chewpio R2-D2
+Sieana Rayley,547229965,7,7,0,GAS: GAS Rex Echo (501st) Fives ARC Trooper
+Sieana Rayley,547229965,39,16,23,Troopers: Veers G12 Piett Gideon G12 Dark Trooper Range Trooper G1 6*
+Siegeking,232115115,1,1,0,Phasma: Phasma FOTP FOSFTP FOST Kylo
+Siegeking,232115115,19,7,12,padme: Padme G12 GK G12 JKA Ahsoka G12 C-3PO
+Siegeking,232115115,20,0,20,Geonosians Omicron: GBA G12 Sun Fac G12 Geo Soldier G12 Geo Spy G12 Poggle G12
+Siegeking,232115115,29,1,28,Grievous Omicron: GG G12 B2 G9 B1 G11 6* MagnaGuard G9 Droideka G11
+Siegeking,232115115,1,0,1,Negotiator: Negotiator 6* BTL-B Y-wing 3* Anakin's Eta-2 5* Rex's ARC-170 4* Umbaran SF Ahsoka's SF Plo's SF Clone Sergeant's ARC-170 6*
+Siegeking,232115115,10,1,9,Troopers: Veers Piett Starck Dark Trooper G12 Range Trooper G11 6*
+Siegeking,232115115,20,8,12,CLS: CLS Han Chewbacca Chewpio G11 6* R2-D2 G9
+EdmundsV2,628862281,16,16,0,Geonosians Omicron: GBA Sun Fac Geo Soldier Geo Spy Poggle
+EdmundsV2,628862281,8,8,0,Troopers: Veers Piett Starck Dark Trooper Range Trooper
+EdmundsV2,628862281,27,5,22,CLS: CLS G12 Han G12 Chewbacca G12 Chewpio G10 C-3PO G12
+EdmundsV2,628862281,1,0,1,Phasma: Phasma FOTP FOSFTP FOST Kylo
+EdmundsV2,628862281,4,0,4,Grievous Omicron: GG G12 B2 B1 MagnaGuard Droideka
+SithLordCryo,257389653,42,42,0,Phasma: Phasma FOTP FOSFTP FOST Kylo
+SithLordCryo,257389653,0,0,0,padme: Padme GK JKA Ahsoka CAT
+SithLordCryo,257389653,16,16,0,Grievous Omicron: GG B2 B1 MagnaGuard Droideka
+SithLordCryo,257389653,16,0,16,Geonosians Omicron: GBA Sun Fac G12 Geo Soldier G12 Geo Spy G12 Poggle G12
+SithLordCryo,257389653,0,0,0,CLS: CLS Han Chewbacca Chewpio C-3PO
+SithLordCryo,257389653,4,4,0,GAS: GAS Rex Echo (501st) Fives ARC Trooper
+SithLordCryo,257389653,1,0,1,Negotiator: Negotiator BTL-B Y-wing 4* Anakin's Eta-2 Rex's ARC-170 5* Umbaran SF Ahsoka's SF Plo's SF Clone Sergeant's ARC-170
+SithLordCryo,257389653,18,10,8,Troopers: Veers Piett Starck Dark Trooper G9 6* Range Trooper R2
+Dash Rektless,567161194,41,5,36,Phasma: Phasma G8 FOTP G10 FOSFTP G7 FOST G11 6* Kylo G8
+Dash Rektless,567161194,44,5,39,Grievous Omicron: GG G9 B2 G11 B1 G6 5* MagnaGuard G9 Droideka G6 5*
+Dash Rektless,567161194,1,0,1,Malevolence: Malevolence 5* Hyena Bomber 4* Vulture Droid 3* Sun Fac SF Soldier SF Spy SF
+Dash Rektless,567161194,41,19,22,Geonosians Omicron: GBA G11 Sun Fac G12 Geo Soldier G12 Geo Spy G11 Poggle G12
+Dash Rektless,567161194,49,8,41,CLS: CLS G9 Han G9 Chewbacca G4 5* Chewpio G5 4* R2-D2 G12
+Axel Kennedy,358543737,37,37,0,Phasma: Phasma FOTP FOSFTP FOST Kylo
+Axel Kennedy,358543737,35,35,0,padme: Padme GK JKA Ahsoka C-3PO
+Axel Kennedy,358543737,43,43,0,Grievous Omicron: GG B2 B1 MagnaGuard Droideka
+Axel Kennedy,358543737,28,28,0,Geonosians Omicron: GBA Sun Fac Geo Soldier Geo Spy Poggle
+Axel Kennedy,358543737,1,0,1,Negotiator: Negotiator BTL-B Y-wing 4* Anakin's Eta-2 Rex's ARC-170 Umbaran SF Ahsoka's SF Plo's SF Clone Sergeant's ARC-170
+Axel Kennedy,358543737,46,6,40,Troopers: Veers G12 Piett G8 5* Starck G7 Dark Trooper G7 4* Range Trooper G6 2*
+Axel Kennedy,358543737,47,13,34,CLS: CLS G11 Han G8 Chewbacca G8 Chewpio G7 4* R2-D2 G12
+Axel Kennedy,358543737,19,2,17,GAS: GAS G8 5* Rex Echo (501st) G12 Fives ARC Trooper G11
+thegame,177442627,8,2,6,padme: Padme R1 GK JKA Ahsoka C-3PO G12
+thegame,177442627,20,0,20,Geonosians Omicron: GBA G12 Sun Fac G12 Geo Soldier G12 Geo Spy G12 Poggle G12
+thegame,177442627,14,0,14,CLS: CLS Han G12 Chewbacca R1 Chewpio G12 R2-D2 G12
+thegame,177442627,1,0,1,Phasma: Phasma FOTP FOSFTP FOST Kylo
+thegame,177442627,45,41,4,Grievous Omicron: GG G12 B2 B1 MagnaGuard Droideka
+thegame,177442627,47,0,47,Troopers: Veers G7 6* Piett G9 Starck G7 Dark Trooper G6 4* Range Trooper G4 2*
+buttnuggets,744348919,21,21,0,padme: Padme GK JKA Ahsoka C-3PO
+buttnuggets,744348919,43,43,0,Grievous Omicron: GG B2 B1 MagnaGuard Droideka
+buttnuggets,744348919,20,4,16,Geonosians Omicron: GBA Sun Fac G12 Geo Soldier G12 Geo Spy G12 Poggle G12
+buttnuggets,744348919,19,15,4,CLS: CLS Han Chewbacca Chewpio R2-D2 G12
+buttnuggets,744348919,47,46,1,Phasma: Phasma FOTP FOSFTP FOST Kylo
+buttnuggets,744348919,1,0,1,Negotiator: Negotiator BTL-B Y-wing 5* Anakin's Eta-2 Rex's ARC-170 Umbaran SF Ahsoka's SF Plo's SF Clone Sergeant's ARC-170
+buttnuggets,744348919,34,4,30,Troopers: Veers G12 Piett G10 Starck G12 Dark Trooper G9 6* Range Trooper G7 5*
+buttnuggets,744348919,25,1,24,GAS: GAS G8 5* Rex G12 Echo (501st) G12 Fives G12 ARC Trooper G12
+lukeyworld,579933454,16,16,0,Geonosians Omicron: GBA Sun Fac Geo Soldier Geo Spy Poggle
+lukeyworld,579933454,20,0,20,Troopers: Veers G12 Piett G12 Gideon G12 Dark Trooper G12 Range Trooper G12
+lukeyworld,579933454,22,2,20,CLS: CLS G12 Han G12 Chewbacca G12 Chewpio G12 C-3PO G12
+lukeyworld,579933454,1,0,1,Phasma: Phasma FOTP FOSFTP FOST Kylo
+lukeyworld,579933454,40,36,4,Grievous Omicron: GG G12 B2 B1 MagnaGuard Droideka
+Dark Helmet,783487787,1,1,0,Phasma: Phasma FOTP FOSFTP FOST Kylo
+Dark Helmet,783487787,36,36,0,padme: Padme GK JKA Ahsoka C-3PO
+Dark Helmet,783487787,0,0,0,Geonosians Omicron: GBA Sun Fac Geo Soldier Geo Spy Poggle
+Dark Helmet,783487787,12,12,0,CLS: CLS Han Chewbacca Chewpio R2-D2
+Dark Helmet,783487787,4,0,4,Grievous Omicron: GG G12 B2 B1 MagnaGuard Droideka
+Dark Helmet,783487787,1,0,1,Malevolence: Malevolence Hyena Bomber Vulture Droid 6* Sun Fac SF Soldier SF Spy SF
+Un Known,463235621,20,0,20,Geonosians Omicron: GBA G12 Sun Fac G12 Geo Soldier G12 Geo Spy G12 Poggle G12
+Un Known,463235621,1,0,1,Phasma: Phasma FOTP FOSFTP FOST Kylo
+Un Known,463235621,15,1,14,padme: Padme G12 GK JKA Ahsoka C-3PO G6 6*
+Un Known,463235621,33,32,1,Grievous Omicron: GG B2 B1 MagnaGuard Droideka
+Un Known,463235621,1,0,1,Negotiator: Negotiator BTL-B Y-wing 3* Anakin's Eta-2 Rex's ARC-170 4* Umbaran SF Ahsoka's SF Plo's SF Clone Sergeant's ARC-170
+Un Known,463235621,33,0,33,Troopers: Veers G12 Piett G9 4* Gideon G9 6* Dark Trooper G9 5* Range Trooper G8 4*
+Un Known,463235621,44,0,44,CLS: CLS G11 Han G7 Chewbacca G9 Chewpio G1 R2-D2 G8
+Micropterus Salimoidous,925452565,0,0,0,Phasma: Phasma FOTP FOSFTP FOST Kylo
+Micropterus Salimoidous,925452565,0,0,0,padme: Padme GK JKA Ahsoka CAT
+Micropterus Salimoidous,925452565,0,0,0,Grievous Omicron: GG B2 B1 MagnaGuard Droideka
+Micropterus Salimoidous,925452565,1,1,0,Negotiator: Negotiator BTL-B Y-wing Anakin's Eta-2 Rex's ARC-170 Umbaran SF Ahsoka's SF Plo's SF Clone Sergeant's ARC-170
+Micropterus Salimoidous,925452565,0,0,0,Malevolence: Malevolence Hyena Bomber Vulture Droid Sun Fac SF Soldier SF Spy SF
+Micropterus Salimoidous,925452565,0,0,0,Geonosians Omicron: GBA Sun Fac Geo Soldier Geo Spy Poggle
+Micropterus Salimoidous,925452565,16,16,0,CLS: CLS Han Chewbacca Chewpio C-3PO
+Micropterus Salimoidous,925452565,20,8,12,GAS: GAS Rex G12 Echo (501st) G12 Fives ARC Trooper G12
+Micropterus Salimoidous,925452565,12,8,4,Troopers: Veers Piett Starck Dark Trooper Range Trooper G12
+Archer,974471184,5,0,5,padme: Padme GK R2 JKA Ahsoka G12 C-3PO
+Archer,974471184,8,4,4,Grievous Omicron: GG B2 B1 G12 MagnaGuard Droideka
+Archer,974471184,0,0,0,GAS: GAS Rex Echo (501st) Fives ARC Trooper
+Archer,974471184,19,0,19,Geonosians Omicron: GBA Sun Fac G11 Geo Soldier G11 Geo Spy G12 Poggle G11
+Archer,974471184,18,8,10,Troopers: Veers Piett Starck Dark Trooper Range Trooper G6 5*
+Archer,974471184,11,4,7,CLS: CLS Han Chewbacca Chewpio R2-D2 G9
+Jbob1011,193859291,34,34,0,Geonosians Omicron: GBA Sun Fac Geo Soldier Geo Spy Poggle
+Jbob1011,193859291,10,10,0,CLS: CLS Han Chewbacca Chewpio C-3PO
+Jbob1011,193859291,1,0,1,Phasma: Phasma FOTP FOSFTP FOST Kylo
+Jbob1011,193859291,15,0,15,Grievous Omicron: GG G1 5* B2 B1 MagnaGuard Droideka
+Jbob1011,193859291,44,0,44,Troopers: Veers G10 Piett Gideon G8 Dark Trooper G1 4* Range Trooper G1 2*
+Anlair Deth,517761455,1,1,0,Phasma: Phasma FOTP FOSFTP FOST Kylo
+Anlair Deth,517761455,26,22,4,padme: Padme G12 GK JKA Ahsoka C-3PO
+Anlair Deth,517761455,20,4,16,Geonosians Omicron: GBA Sun Fac G12 Geo Soldier G12 Geo Spy G12 Poggle G12
+Anlair Deth,517761455,24,12,12,Troopers: Veers G12 Piett Gideon G12 Dark Trooper Range Trooper G12
+Anlair Deth,517761455,47,37,10,CLS: CLS Han Chewbacca R1 Chewpio R1 R2-D2 G10
+Anlair Deth,517761455,48,9,39,Grievous Omicron: GG G12 B2 G7 B1 G6 MagnaGuard G8 Droideka G8
+Anlair Deth,517761455,1,0,1,Malevolence: Malevolence 6* Hyena Bomber 5* Vulture Droid Sun Fac SF Soldier SF Spy SF
 Mitch,454736696,8,8,0,padme: Padme GK JKA Ahsoka C-3PO
 Mitch,454736696,10,10,0,Grievous Omicron: GG B2 B1 MagnaGuard Droideka
 Mitch,454736696,1,1,0,Negotiator: Negotiator BTL-B Y-wing Anakin's Eta-2 Rex's ARC-170 Umbaran SF Ahsoka's SF Plo's SF Clone Sergeant's ARC-170
@@ -228,30 +130,39 @@ Mitch,454736696,2,0,2,GAS: GAS Rex Echo (501st) Fives ARC Trooper R1
 Mitch,454736696,1,0,1,Phasma: Phasma FOTP FOSFTP FOST Kylo
 Mitch,454736696,19,1,18,Troopers: Veers G12 Piett Gideon G12 Dark Trooper G11 5* Range Trooper G11
 Mitch,454736696,11,1,10,CLS: CLS Han Chewbacca Chewpio G10 4* R2-D2 G12
+Gilberdere,855471613,0,0,0,Phasma: Phasma FOTP FOSFTP FOST Kylo
+Gilberdere,855471613,34,34,0,padme: Padme GK JKA Ahsoka C-3PO
+Gilberdere,855471613,20,11,9,Geonosians Omicron: GBA Sun Fac G12 Geo Soldier G12 Geo Spy Poggle R2
+Gilberdere,855471613,28,24,4,CLS: CLS Han Chewbacca Chewpio G12 R2-D2
+Gilberdere,855471613,33,29,4,Grievous Omicron: GG G12 B2 B1 MagnaGuard Droideka
+Gilberdere,855471613,1,0,1,Negotiator: Negotiator BTL-B Y-wing 5* Anakin's Eta-2 Rex's ARC-170 Umbaran SF Ahsoka's SF Plo's SF Clone Sergeant's ARC-170
+Gilberdere,855471613,38,3,35,Troopers: Veers G9 Piett G10 Gideon G9 Dark Trooper G9 Range Trooper G8
+AgentOfChaos,718699874,16,12,4,Geonosians Omicron: GBA Sun Fac Geo Soldier Geo Spy Poggle G12
+AgentOfChaos,718699874,50,49,1,Phasma: Phasma FOTP FOSFTP FOST Kylo
+AgentOfChaos,718699874,39,15,24,Grievous Omicron: GG G12 B2 G12 B1 G11 MagnaGuard G9 Droideka G12
+AgentOfChaos,718699874,1,0,1,Negotiator: Negotiator 5* BTL-B Y-wing 3* LVunit.level Anakin's Eta-2 Rex's ARC-170 Umbaran SF Ahsoka's SF Plo's SF Clone Sergeant's ARC-170
+AgentOfChaos,718699874,1,0,1,Malevolence: Malevolence Hyena Bomber 5* Vulture Droid Sun Fac SF Soldier SF Spy SF
+AgentOfChaos,718699874,49,18,31,Troopers: Veers G10 Piett G10 5* Gideon G9 Dark Trooper G9 6* Range Trooper G11 4*
+AgentOfChaos,718699874,43,11,32,CLS: CLS R2 Han G7 Chewbacca G7 Chewpio G10 5* R2-D2 G9
+jamesCCCC,577439491,0,0,0,Phasma: Phasma FOTP FOSFTP FOST Kylo
+jamesCCCC,577439491,40,40,0,Grievous Omicron: GG B2 B1 MagnaGuard Droideka
+jamesCCCC,577439491,17,17,0,Geonosians Omicron: GBA Sun Fac Geo Soldier Geo Spy Poggle
+jamesCCCC,577439491,15,15,0,CLS: CLS Han Chewbacca Chewpio C-3PO
+jamesCCCC,577439491,48,4,44,Troopers: Veers G11 Piett G10 Starck G7 Dark Trooper G7 6* Range Trooper G1 4*
+jamesCCCC,577439491,32,0,32,GAS: GAS G1 5* Rex G12 Echo (501st) G9 Fives ARC Trooper G10
 SirCrazyPhil,985641597,18,10,8,padme: Padme G12 GK JKA G12 Ahsoka C-3PO
 SirCrazyPhil,985641597,1,1,0,Negotiator: Negotiator BTL-B Y-wing Anakin's Eta-2 Rex's ARC-170 Umbaran SF Ahsoka's SF Plo's SF Clone Sergeant's ARC-170
 SirCrazyPhil,985641597,20,0,20,Geonosians Omicron: GBA G12 Sun Fac G12 Geo Soldier G12 Geo Spy G12 Poggle G12
 SirCrazyPhil,985641597,22,6,16,Troopers: Veers G12 Piett Gideon G12 Dark Trooper G12 Range Trooper G12
 SirCrazyPhil,985641597,16,16,0,CLS: CLS Han Chewbacca Chewpio R2-D2
+SirCrazyPhil,985641597,36,20,16,GAS: GAS Rex G12 Echo (501st) G12 Fives G12 ARC Trooper G12
 SirCrazyPhil,985641597,1,0,1,Phasma: Phasma FOTP FOSFTP FOST Kylo
-SirCrazyPhil,985641597,32,28,4,Grievous Omicron: GG G12 B2 B1 MagnaGuard Droideka
-SirCrazyPhil,985641597,36,10,26,GAS: GAS Rex G10 Echo (501st) G8 Fives G12 ARC Trooper G8
-Valarkale,265279199,1,1,0,Phasma: Phasma FOTP FOSFTP FOST Kylo
-Valarkale,265279199,3,1,2,padme: Padme R2 GK JKA Ahsoka C-3PO R2
-Valarkale,265279199,0,0,0,Malevolence: Malevolence Hyena Bomber Vulture Droid Sun Fac SF Soldier SF Spy SF
-Valarkale,265279199,20,2,18,Geonosians Omicron: GBA R1 Sun Fac G12 Geo Soldier G12 Geo Spy G12 Poggle G12
-Valarkale,265279199,23,3,20,Grievous Omicron: GG G12 B2 G12 B1 G12 MagnaGuard G12 Droideka G12
-Valarkale,265279199,1,0,1,Negotiator: Negotiator BTL-B Y-wing 4* Anakin's Eta-2 Rex's ARC-170 Umbaran SF Ahsoka's SF Plo's SF Clone Sergeant's ARC-170
-Valarkale,265279199,11,0,11,Troopers: Veers Piett Starck Dark Trooper G9 6* Range Trooper G12
-Valarkale,265279199,11,0,11,CLS: CLS Han R2 Chewbacca R2 Chewpio G11 6* R2-D2 G12
-KyloKow,376184932,0,0,0,Phasma: Phasma FOTP FOSFTP FOST Kylo
-KyloKow,376184932,0,0,0,padme: Padme GK JKA Ahsoka CAT
-KyloKow,376184932,0,0,0,Grievous Omicron: GG B2 B1 MagnaGuard Droideka
-KyloKow,376184932,0,0,0,Negotiator: Negotiator BTL-B Y-wing Anakin's Eta-2 Rex's ARC-170 Umbaran SF Ahsoka's SF Plo's SF Clone Sergeant's ARC-170
-KyloKow,376184932,4,4,0,Geonosians Omicron: GBA Sun Fac Geo Soldier Geo Spy Poggle
-KyloKow,376184932,0,0,0,Troopers: Veers Piett Starck Dark Trooper Range Trooper
-KyloKow,376184932,0,0,0,CLS: CLS Han Chewbacca Chewpio C-3PO
-KyloKow,376184932,0,0,0,GAS: GAS Rex Echo (501st) Fives ARC Trooper
+SirCrazyPhil,985641597,32,31,1,Grievous Omicron: GG B2 B1 MagnaGuard Droideka
+Andurian Talz,278452733,0,0,0,padme: Padme GK JKA Ahsoka C-3PO
+Andurian Talz,278452733,20,0,20,Geonosians Omicron: GBA G12 Sun Fac G12 Geo Soldier G12 Geo Spy G12 Poggle G12
+Andurian Talz,278452733,11,11,0,CLS: CLS Han Chewbacca Chewpio R2-D2
+Andurian Talz,278452733,43,1,42,Phasma: Phasma G8 FOTP G10 FOSFTP G3 FOST G5 2* Kylo G12
+Andurian Talz,278452733,4,0,4,Grievous Omicron: GG B2 B1 MagnaGuard Droideka G12
 CronikdaHemphog,649191986,1,1,0,Phasma: Phasma FOTP FOSFTP FOST Kylo
 CronikdaHemphog,649191986,14,14,0,padme: Padme GK JKA Ahsoka C-3PO
 CronikdaHemphog,649191986,22,22,0,Geonosians Omicron: GBA Sun Fac Geo Soldier Geo Spy Poggle
@@ -259,6 +170,87 @@ CronikdaHemphog,649191986,30,26,4,CLS: CLS Han Chewbacca Chewpio R2-D2 G12
 CronikdaHemphog,649191986,41,37,4,Grievous Omicron: GG G12 B2 B1 MagnaGuard Droideka
 CronikdaHemphog,649191986,1,0,1,Negotiator: Negotiator BTL-B Y-wing 3* LVunit.level Anakin's Eta-2 Rex's ARC-170 4* LVunit.level Umbaran SF Ahsoka's SF Plo's SF Clone Sergeant's ARC-170
 CronikdaHemphog,649191986,33,6,27,Troopers: Veers Piett G12 Gideon G9 Dark Trooper G9 Range Trooper G7
+Snorlax,157865324,0,0,0,Phasma: Phasma FOTP FOSFTP FOST Kylo
+Snorlax,157865324,20,4,16,padme: Padme G12 GK G12 JKA G12 Ahsoka G12 C-3PO
+Snorlax,157865324,20,0,20,Geonosians Omicron: GBA G12 Sun Fac G12 Geo Soldier G12 Geo Spy G12 Poggle G12
+Snorlax,157865324,22,22,0,CLS: CLS Han Chewbacca Chewpio R2-D2
+Snorlax,157865324,50,30,20,Grievous Omicron: GG G12 B2 G12 B1 G12 MagnaGuard G12 Droideka G12
+Snorlax,157865324,36,31,5,Troopers: Veers Piett Starck Dark Trooper Range Trooper G11 6*
+AZN10,979298148,38,18,20,Geonosians Omicron: GBA G12 Sun Fac G12 Geo Soldier G12 Geo Spy G12 Poggle G12
+AZN10,979298148,43,2,41,Phasma: Phasma G7 FOTP G9 FOSFTP G6 3* FOST G8 4* Kylo G9 6*
+AZN10,979298148,1,0,1,Negotiator: Negotiator 6* BTL-B Y-wing 3* Anakin's Eta-2 6* Rex's ARC-170 6* Umbaran SF Ahsoka's SF Plo's SF Clone Sergeant's ARC-170
+AZN10,979298148,48,8,40,Troopers: Veers G9 6* Piett G1 3* Gideon G10 Dark Trooper G9 6* Range Trooper G11
+AZN10,979298148,37,16,21,CLS: CLS Han G12 Chewbacca G12 Chewpio G10 4* R2-D2 G9
+Left 4 Gaming Addiction,612524345,7,7,0,padme: Padme GK JKA Ahsoka C-3PO
+Left 4 Gaming Addiction,612524345,1,1,0,Negotiator: Negotiator BTL-B Y-wing Anakin's Eta-2 Rex's ARC-170 Umbaran SF Ahsoka's SF Plo's SF Clone Sergeant's ARC-170
+Left 4 Gaming Addiction,612524345,20,0,20,Geonosians Omicron: GBA G12 Sun Fac G12 Geo Soldier G12 Geo Spy G12 Poggle G12
+Left 4 Gaming Addiction,612524345,16,12,4,CLS: CLS Han Chewbacca Chewpio G12 R2-D2
+Left 4 Gaming Addiction,612524345,32,32,0,GAS: GAS Rex Echo (501st) Fives ARC Trooper
+Left 4 Gaming Addiction,612524345,1,0,1,Phasma: Phasma FOTP FOSFTP FOST Kylo
+Left 4 Gaming Addiction,612524345,31,30,1,Grievous Omicron: GG B2 B1 MagnaGuard Droideka
+Left 4 Gaming Addiction,612524345,33,22,11,Troopers: Veers Piett Starck Dark Trooper G9 Range Trooper G12
+Kliff Fuser,891864244,48,48,0,Phasma: Phasma FOTP FOSFTP FOST Kylo
+Kliff Fuser,891864244,49,41,8,padme: Padme G8 GK JKA Ahsoka C-3PO
+Kliff Fuser,891864244,12,12,0,Geonosians Omicron: GBA Sun Fac Geo Soldier Geo Spy Poggle
+Kliff Fuser,891864244,30,27,3,CLS: CLS Han Chewbacca Chewpio R1 R2-D2 R2
+Kliff Fuser,891864244,7,0,7,Grievous Omicron: GG G9 B2 B1 MagnaGuard Droideka
+Kliff Fuser,891864244,1,0,1,Negotiator: Negotiator BTL-B Y-wing 2* Anakin's Eta-2 Rex's ARC-170 6* Umbaran SF Ahsoka's SF Plo's SF Clone Sergeant's ARC-170
+Kliff Fuser,891864244,46,0,46,GAS: GAS G1 5* Rex G8 Echo (501st) G8 Fives ARC Trooper G1 6*
+Bishop,992545136,1,1,0,Phasma: Phasma FOTP FOSFTP FOST Kylo
+Bishop,992545136,15,0,15,Grievous Omicron: GG G1 5* B2 B1 MagnaGuard Droideka
+Bishop,992545136,23,0,23,padme: Padme G8 GK JKA Ahsoka C-3PO G1 6*
+Bishop,992545136,37,36,1,Geonosians Omicron: GBA Sun Fac Geo Soldier Geo Spy Poggle
+OpticAlex,221577484,0,0,0,padme: Padme GK JKA Ahsoka C-3PO
+OpticAlex,221577484,4,1,3,GAS: GAS Rex R2 Echo (501st) R2 Fives ARC Trooper R2
+OpticAlex,221577484,32,0,32,Phasma: Phasma G8 FOTP G11 FOSFTP G9 FOST G8 4* Kylo G12
+OpticAlex,221577484,2,0,2,Grievous Omicron: GG B2 R2 B1 MagnaGuard R2 Droideka
+OpticAlex,221577484,1,0,1,Negotiator: Negotiator BTL-B Y-wing 3* Anakin's Eta-2 Rex's ARC-170 Umbaran SF Ahsoka's SF Plo's SF Clone Sergeant's ARC-170
+OpticAlex,221577484,1,0,1,Malevolence: Malevolence Hyena Bomber 5* Vulture Droid 3* Sun Fac SF Soldier SF Spy SF
+OpticAlex,221577484,26,2,24,Geonosians Omicron: GBA G11 Sun Fac G11 Geo Soldier G12 Geo Spy G11 Poggle G11
+OpticAlex,221577484,37,3,34,Troopers: Veers G11 Piett G9 5* Starck G10 Dark Trooper G7 4* Range Trooper G9 4*
+OpticAlex,221577484,10,1,9,CLS: CLS Han Chewbacca Chewpio G11 4* R2-D2 G12
+IrvingBerlin,442512143,46,46,0,Phasma: Phasma FOTP FOSFTP FOST Kylo
+IrvingBerlin,442512143,20,20,0,Geonosians Omicron: GBA Sun Fac Geo Soldier Geo Spy Poggle
+IrvingBerlin,442512143,17,17,0,CLS: CLS Han Chewbacca Chewpio C-3PO
+IrvingBerlin,442512143,15,0,15,Grievous Omicron: GG G1 B2 B1 MagnaGuard Droideka
+IrvingBerlin,442512143,1,0,1,Malevolence: Malevolence Hyena Bomber 6* Vulture Droid Sun Fac SF Soldier SF Spy SF
+IrvingBerlin,442512143,21,0,21,Troopers: Veers G11 Piett Gideon G11 Dark Trooper G12 Range Trooper G9
+Fiberhead,813548382,0,0,0,Phasma: Phasma FOTP FOSFTP FOST Kylo
+Fiberhead,813548382,21,16,5,padme: Padme R1 GK R1 JKA R2 Ahsoka C-3PO
+Fiberhead,813548382,1,0,1,Negotiator: Negotiator 5* BTL-B Y-wing Anakin's Eta-2 Rex's ARC-170 Umbaran SF Ahsoka's SF Plo's SF Clone Sergeant's ARC-170
+Fiberhead,813548382,1,1,0,Malevolence: Malevolence Hyena Bomber Vulture Droid Sun Fac SF Soldier SF Spy SF
+Fiberhead,813548382,17,8,9,Geonosians Omicron: GBA Sun Fac G12 Geo Soldier R1 Geo Spy R1 Poggle R2
+Fiberhead,813548382,27,19,8,CLS: CLS Han R1 Chewbacca Chewpio R1 R2-D2 G12
+Fiberhead,813548382,24,12,12,Grievous Omicron: GG G12 B2 R1 B1 R1 MagnaGuard R1 Droideka R1
+Fiberhead,813548382,35,19,16,Troopers: Veers Piett Starck Dark Trooper G9 Range Trooper G7
+BBBcube314,668135442,0,0,0,Phasma: Phasma FOTP FOSFTP FOST Kylo
+BBBcube314,668135442,23,23,0,Geonosians Omicron: GBA Sun Fac Geo Soldier Geo Spy Poggle
+BBBcube314,668135442,4,2,2,CLS: CLS Han Chewbacca Chewpio R1 C-3PO
+BBBcube314,668135442,47,42,5,Grievous Omicron: GG G11 B2 B1 MagnaGuard Droideka
+BBBcube314,668135442,1,0,1,Negotiator: Negotiator BTL-B Y-wing 4* Anakin's Eta-2 Rex's ARC-170 6* Umbaran SF Ahsoka's SF Plo's SF Clone Sergeant's ARC-170
+BBBcube314,668135442,1,0,1,Malevolence: Malevolence 5* Hyena Bomber 6* Vulture Droid 5* Sun Fac SF Soldier SF Spy SF
+BBBcube314,668135442,34,0,34,Troopers: Veers G11 Piett G10 6* Gideon G9 Dark Trooper G9 Range Trooper G7
+BobaKush,997839259,0,0,0,padme: Padme GK JKA Ahsoka C-3PO
+BobaKush,997839259,20,2,18,Geonosians Omicron: GBA R1 Sun Fac G12 Geo Soldier G12 Geo Spy G12 Poggle G12
+BobaKush,997839259,4,0,4,CLS: CLS Han Chewbacca Chewpio R2-D2 G12
+BobaKush,997839259,1,0,1,Phasma: Phasma FOTP FOSFTP FOST Kylo
+BobaKush,997839259,29,14,15,Grievous Omicron: GG G11 5* B2 B1 G11 6* MagnaGuard Droideka G11 6*
+BobaKush,997839259,50,0,50,Troopers: Veers G10 5* Piett G1 3* Gideon G9 5* Dark Trooper G9 Range Trooper G1 3*
+MrRevan,556951466,0,0,0,padme: Padme GK JKA Ahsoka CAT
+MrRevan,556951466,4,4,0,Grievous Omicron: GG B2 B1 MagnaGuard Droideka
+MrRevan,556951466,25,25,0,Geonosians Omicron: GBA Sun Fac Geo Soldier Geo Spy Poggle
+MrRevan,556951466,0,0,0,CLS: CLS Han Chewbacca Chewpio C-3PO
+MrRevan,556951466,26,26,0,GAS: GAS Rex Echo (501st) Fives ARC Trooper
+MrRevan,556951466,46,45,1,Phasma: Phasma FOTP FOSFTP FOST Kylo
+MrRevan,556951466,1,0,1,Negotiator: Negotiator BTL-B Y-wing 4* Anakin's Eta-2 Rex's ARC-170 Umbaran SF Ahsoka's SF Plo's SF Clone Sergeant's ARC-170
+MrRevan,556951466,16,0,16,Troopers: Veers Piett Starck Dark Trooper G9 Range Trooper G7 6*
+Capt Black,257644793,0,0,0,padme: Padme GK JKA Ahsoka CAT
+Capt Black,257644793,0,0,0,Malevolence: Malevolence Hyena Bomber Vulture Droid Sun Fac SF Soldier SF Spy SF
+Capt Black,257644793,0,0,0,CLS: CLS Han Chewbacca Chewpio C-3PO
+Capt Black,257644793,1,0,1,Phasma: Phasma FOTP FOSFTP FOST Kylo
+Capt Black,257644793,4,0,4,Grievous Omicron: GG B2 B1 MagnaGuard Droideka G12
+Capt Black,257644793,18,0,18,Geonosians Omicron: GBA R1 Sun Fac G12 Geo Soldier G12 Geo Spy G12 Poggle G12
+Capt Black,257644793,43,0,43,Troopers: Veers G10 Piett Gideon G9 Dark Trooper G1 1* Range Trooper G1 4*
 Valerius,754194713,0,0,0,Phasma: Phasma FOTP FOSFTP FOST Kylo
 Valerius,754194713,16,16,0,padme: Padme GK JKA Ahsoka C-3PO
 Valerius,754194713,42,42,0,Troopers: Veers Piett Gideon Dark Trooper Range Trooper
@@ -267,38 +259,31 @@ Valerius,754194713,13,13,0,GAS: GAS Rex Echo (501st) Fives ARC Trooper
 Valerius,754194713,20,12,8,Grievous Omicron: GG B2 G12 B1 MagnaGuard Droideka G12
 Valerius,754194713,1,0,1,Negotiator: Negotiator BTL-B Y-wing 4* Anakin's Eta-2 Rex's ARC-170 Umbaran SF Ahsoka's SF Plo's SF Clone Sergeant's ARC-170 LVunit.level
 Valerius,754194713,29,9,20,Geonosians Omicron: GBA G12 Sun Fac G12 Geo Soldier G12 Geo Spy G12 Poggle G12
-lukeyworld,579933454,16,16,0,Geonosians Omicron: GBA Sun Fac Geo Soldier Geo Spy Poggle
-lukeyworld,579933454,20,0,20,Troopers: Veers G12 Piett G12 Gideon G12 Dark Trooper G12 Range Trooper G12
-lukeyworld,579933454,22,2,20,CLS: CLS G12 Han G12 Chewbacca G12 Chewpio G12 C-3PO G12
-lukeyworld,579933454,1,0,1,Phasma: Phasma FOTP FOSFTP FOST Kylo
-lukeyworld,579933454,40,36,4,Grievous Omicron: GG G12 B2 B1 MagnaGuard Droideka
-Andurian Talz,278452733,0,0,0,padme: Padme GK JKA Ahsoka C-3PO
-Andurian Talz,278452733,20,0,20,Geonosians Omicron: GBA G12 Sun Fac G12 Geo Soldier G12 Geo Spy G12 Poggle G12
-Andurian Talz,278452733,11,11,0,CLS: CLS Han Chewbacca Chewpio R2-D2
-Andurian Talz,278452733,43,1,42,Phasma: Phasma G8 FOTP G10 FOSFTP G3 FOST G5 2* Kylo G12
-Andurian Talz,278452733,4,0,4,Grievous Omicron: GG B2 B1 MagnaGuard Droideka G12
-BobaKush,997839259,0,0,0,padme: Padme GK JKA Ahsoka C-3PO
-BobaKush,997839259,20,2,18,Geonosians Omicron: GBA R1 Sun Fac G12 Geo Soldier G12 Geo Spy G12 Poggle G12
-BobaKush,997839259,4,0,4,CLS: CLS Han Chewbacca Chewpio R2-D2 G12
-BobaKush,997839259,1,0,1,Phasma: Phasma FOTP FOSFTP FOST Kylo
-BobaKush,997839259,29,14,15,Grievous Omicron: GG G11 5* B2 B1 G11 6* MagnaGuard Droideka G11 6*
-BobaKush,997839259,50,0,50,Troopers: Veers G10 5* Piett G1 3* Gideon G9 5* Dark Trooper G9 Range Trooper G1 3*
-Bishop,992545136,1,1,0,Phasma: Phasma FOTP FOSFTP FOST Kylo
-Bishop,992545136,15,0,15,Grievous Omicron: GG G1 5* B2 B1 MagnaGuard Droideka
-Bishop,992545136,23,0,23,padme: Padme G8 GK JKA Ahsoka C-3PO G1 6*
-Bishop,992545136,37,36,1,Geonosians Omicron: GBA Sun Fac Geo Soldier Geo Spy Poggle
-AZN10,979298148,38,18,20,Geonosians Omicron: GBA G12 Sun Fac G12 Geo Soldier G12 Geo Spy G12 Poggle G12
-AZN10,979298148,43,2,41,Phasma: Phasma G7 FOTP G9 FOSFTP G6 3* FOST G8 4* Kylo G9 6*
-AZN10,979298148,1,0,1,Negotiator: Negotiator 6* BTL-B Y-wing 3* Anakin's Eta-2 6* Rex's ARC-170 6* Umbaran SF 6* Ahsoka's SF Plo's SF Clone Sergeant's ARC-170
-AZN10,979298148,48,8,40,Troopers: Veers G9 6* Piett G1 3* Gideon G10 Dark Trooper G9 6* Range Trooper G11
-AZN10,979298148,37,15,22,CLS: CLS Han G12 Chewbacca G12 Chewpio G9 4* R2-D2 G9
-Anlair Deth,517761455,1,1,0,Phasma: Phasma FOTP FOSFTP FOST Kylo
-Anlair Deth,517761455,26,22,4,padme: Padme G12 GK JKA Ahsoka C-3PO
-Anlair Deth,517761455,20,4,16,Geonosians Omicron: GBA Sun Fac G12 Geo Soldier G12 Geo Spy G12 Poggle G12
-Anlair Deth,517761455,24,12,12,Troopers: Veers G12 Piett Gideon G12 Dark Trooper Range Trooper G12
-Anlair Deth,517761455,47,37,10,CLS: CLS Han Chewbacca R1 Chewpio R1 R2-D2 G10
-Anlair Deth,517761455,48,9,39,Grievous Omicron: GG G12 B2 G7 B1 G6 MagnaGuard G8 Droideka G8
-Anlair Deth,517761455,1,0,1,Malevolence: Malevolence 6* Hyena Bomber 5* Vulture Droid Sun Fac SF Soldier SF Spy SF
+SkyGuy501,961395828,2,0,2,padme: Padme GK JKA Ahsoka R1 C-3PO
+SkyGuy501,961395828,12,0,12,Grievous Omicron: GG B2 G12 B1 MagnaGuard G12 Droideka G12
+SkyGuy501,961395828,20,0,20,Geonosians Omicron: GBA G12 Sun Fac G12 Geo Soldier G12 Geo Spy G12 Poggle G12
+SkyGuy501,961395828,11,11,0,CLS: CLS Han Chewbacca Chewpio R2-D2
+SkyGuy501,961395828,8,4,4,GAS: GAS Rex Echo (501st) R1 Fives ARC Trooper R1
+SkyGuy501,961395828,47,5,42,Phasma: Phasma G12 FOTP G7 FOSFTP G3 FOST G4 5* Kylo G12
+SkyGuy501,961395828,19,3,16,Troopers: Veers Piett Starck Dark Trooper R2 Range Trooper G1 5*
+YngviFrey,747421381,19,6,13,Geonosians Omicron: GBA G12 Sun Fac R2 Geo Soldier G12 Geo Spy Poggle G12
+YngviFrey,747421381,26,25,1,Phasma: Phasma FOTP FOSFTP FOST Kylo
+YngviFrey,747421381,34,5,29,Grievous Omicron: GG B2 G11 B1 G8 5* MagnaGuard G8 6* Droideka G8 5*
+YngviFrey,747421381,37,1,36,CLS: CLS G12 Han G10 Chewbacca G9 Chewpio G4 3* R2-D2 G9
+Dark,752462989,4,0,4,padme: Padme GK JKA Ahsoka G12 C-3PO
+Dark,752462989,0,0,0,Malevolence: Malevolence Hyena Bomber Vulture Droid Sun Fac SF Soldier SF Spy SF
+Dark,752462989,12,0,12,Geonosians Omicron: GBA Sun Fac G12 Geo Soldier G12 Geo Spy Poggle G12
+Dark,752462989,0,0,0,GAS: GAS Rex Echo (501st) Fives ARC Trooper
+Dark,752462989,46,45,1,Phasma: Phasma FOTP FOSFTP FOST Kylo
+Dark,752462989,8,0,8,Grievous Omicron: GG R2 B2 R1 B1 R2 MagnaGuard Droideka G12
+Dark,752462989,19,3,16,CLS: CLS Han Chewbacca Chewpio G8 2* R2-D2 G8
+Sandakin Airstepper,348956666,27,7,20,Geonosians Omicron: GBA G12 Sun Fac G12 Geo Soldier G12 Geo Spy G12 Poggle G12
+Sandakin Airstepper,348956666,20,20,0,Troopers: Veers Piett Gideon Dark Trooper Range Trooper
+Sandakin Airstepper,348956666,1,0,1,Phasma: Phasma FOTP FOSFTP FOST Kylo
+Sandakin Airstepper,348956666,9,0,9,padme: Padme G12 GK JKA Ahsoka C-3PO G11
+Sandakin Airstepper,348956666,42,38,4,Grievous Omicron: GG G12 B2 B1 MagnaGuard Droideka
+Sandakin Airstepper,348956666,1,0,1,Negotiator: Negotiator BTL-B Y-wing 3* Anakin's Eta-2 Rex's ARC-170 Umbaran SF Ahsoka's SF Plo's SF Clone Sergeant's ARC-170
+Sandakin Airstepper,348956666,49,14,35,CLS: CLS G10 Han G8 Chewbacca G9 Chewpio G8 5* R2-D2 G10
 Ajunta Pall,992141888,1,1,0,Phasma: Phasma FOTP FOSFTP FOST Kylo
 Ajunta Pall,992141888,0,0,0,padme: Padme GK JKA Ahsoka CAT
 Ajunta Pall,992141888,0,0,0,Grievous Omicron: GG B2 B1 MagnaGuard Droideka
@@ -307,10 +292,21 @@ Ajunta Pall,992141888,0,0,0,CLS: CLS Han Chewbacca Chewpio C-3PO
 Ajunta Pall,992141888,0,0,0,GAS: GAS Rex Echo (501st) Fives ARC Trooper
 Ajunta Pall,992141888,1,0,1,Negotiator: Negotiator 6* BTL-B Y-wing 5* Anakin's Eta-2 Rex's ARC-170 Umbaran SF Ahsoka's SF Plo's SF Clone Sergeant's ARC-170
 Ajunta Pall,992141888,46,2,44,Troopers: Veers G9 Piett G8 5* Gideon G9 Dark Trooper G9 Range Trooper G1 3*
-Siegeking,232115115,1,1,0,Phasma: Phasma FOTP FOSFTP FOST Kylo
-Siegeking,232115115,19,7,12,padme: Padme G12 GK G12 JKA Ahsoka G12 C-3PO
-Siegeking,232115115,20,0,20,Geonosians Omicron: GBA G12 Sun Fac G12 Geo Soldier G12 Geo Spy G12 Poggle G12
-Siegeking,232115115,29,1,28,Grievous Omicron: GG G12 B2 G9 B1 G11 6* MagnaGuard G9 Droideka G11
-Siegeking,232115115,1,0,1,Negotiator: Negotiator 6* BTL-B Y-wing 3* Anakin's Eta-2 5* Rex's ARC-170 4* Umbaran SF Ahsoka's SF Plo's SF Clone Sergeant's ARC-170 5*
-Siegeking,232115115,10,1,9,Troopers: Veers Piett Starck Dark Trooper G12 Range Trooper G11 6*
-Siegeking,232115115,20,8,12,CLS: CLS Han Chewbacca Chewpio G11 6* R2-D2 G9
+Valarkale,265279199,1,1,0,Phasma: Phasma FOTP FOSFTP FOST Kylo
+Valarkale,265279199,3,2,1,padme: Padme R2 GK JKA Ahsoka C-3PO
+Valarkale,265279199,0,0,0,Malevolence: Malevolence Hyena Bomber Vulture Droid Sun Fac SF Soldier SF Spy SF
+Valarkale,265279199,20,2,18,Geonosians Omicron: GBA R1 Sun Fac G12 Geo Soldier G12 Geo Spy G12 Poggle G12
+Valarkale,265279199,23,3,20,Grievous Omicron: GG G12 B2 G12 B1 G12 MagnaGuard G12 Droideka G12
+Valarkale,265279199,1,0,1,Negotiator: Negotiator BTL-B Y-wing 4* Anakin's Eta-2 Rex's ARC-170 Umbaran SF Ahsoka's SF Plo's SF Clone Sergeant's ARC-170
+Valarkale,265279199,11,0,11,Troopers: Veers Piett Starck Dark Trooper G9 6* Range Trooper G12
+Valarkale,265279199,11,1,10,CLS: CLS Han R2 Chewbacca Chewpio G11 6* R2-D2 G12
+Nimbulus,181256629,27,27,0,Phasma: Phasma FOTP FOSFTP FOST Kylo
+Nimbulus,181256629,20,0,20,Geonosians Omicron: GBA G12 Sun Fac G12 Geo Soldier G12 Geo Spy G12 Poggle G12
+Nimbulus,181256629,21,5,16,CLS: CLS Han G12 Chewbacca G12 Chewpio G12 C-3PO G12
+Nimbulus,181256629,34,14,20,Grievous Omicron: GG G12 B2 G12 B1 G12 MagnaGuard G12 Droideka G12
+Nimbulus,181256629,44,0,44,Troopers: Veers G10 Piett G9 Gideon G7 Dark Trooper G9 Range Trooper G1 2*
+Jojo,917122652,39,39,0,Phasma: Phasma FOTP FOSFTP FOST Kylo
+Jojo,917122652,17,17,0,Geonosians Omicron: GBA Sun Fac Geo Soldier Geo Spy Poggle
+Jojo,917122652,19,0,19,CLS: CLS Han G12 Chewbacca G12 Chewpio G10 C-3PO G11
+Jojo,917122652,45,38,7,Grievous Omicron: GG G9 B2 B1 MagnaGuard Droideka
+Jojo,917122652,39,5,34,Troopers: Veers G10 Piett G9 Gideon G10 Dark Trooper G9 6* Range Trooper G8 5*
