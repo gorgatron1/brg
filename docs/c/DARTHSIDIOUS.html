@@ -244,14 +244,14 @@ let traces = [];traces.push({
 }
 Plotly.newPlot('mc-0', traces, layout)
 }
-</script><h2>Alliance Demographic Data</h2>Based on 1680 units.<table id="zetas"><thead><tr><th>Name</th><th>Description</th><th>Count</th><th>Percent</th></tr></thead><tr><td data-order="uniqueskill_DARTHSIDIOUS01"><img src="https://game-assets.swgoh.gg/tex.abilityui_passive_heal.png" style="width: 30px" /> Sadistic Glee</td><td>Darth Sidious recovers 20% of his Max Health and gains 50% Turn Meter whenever any unit is defeated. In addition, he has +35% Evasion against Jedi attacks, +50% Potency, and gains Max Health equal to his Potency percentage.\n\nWhile in Territory Wars: If all allies are Sith at the start of battle, other Sith allies gain Max Health equal to half of Darth Sidious' Potency until the first time he is defeated (excludes Galactic Legends). When Darth Sidious uses Demoralizing Blows, the cooldown of the ability is reduced by 1 for each other Sith ally and Darth Sidious gains 50 Speed (stacking) for 4 turns.</td><td>872</td><td>52%</td></tr></table><br/><br/><div id="gearLevels-chart" style="width:80%;height:800px" /><script>
+</script><h2>Alliance Demographic Data</h2>Based on 1677 units.<table id="zetas"><thead><tr><th>Name</th><th>Description</th><th>Count</th><th>Percent</th></tr></thead><tr><td data-order="uniqueskill_DARTHSIDIOUS01"><img src="https://game-assets.swgoh.gg/tex.abilityui_passive_heal.png" style="width: 30px" /> Sadistic Glee</td><td>Darth Sidious recovers 20% of his Max Health and gains 50% Turn Meter whenever any unit is defeated. In addition, he has +35% Evasion against Jedi attacks, +50% Potency, and gains Max Health equal to his Potency percentage.\n\nWhile in Territory Wars: If all allies are Sith at the start of battle, other Sith allies gain Max Health equal to half of Darth Sidious' Potency until the first time he is defeated (excludes Galactic Legends). When Darth Sidious uses Demoralizing Blows, the cooldown of the ability is reduced by 1 for each other Sith ally and Darth Sidious gains 50 Speed (stacking) for 4 turns.</td><td>870</td><td>52%</td></tr></table><br/><br/><div id="gearLevels-chart" style="width:80%;height:800px" /><script>
 let trace = {
-    y: [ 114, 8, 4, 6, 13, 33, 32, 318, 56, 51, 53, 152, 9, 6, 3, 3, 4, 9, 4, 801, 1, 0 ],
+    y: [ 113, 7, 5, 6, 12, 32, 36, 318, 55, 52, 53, 154, 8, 6, 3, 1, 5, 7, 3, 799, 2, 0 ],
     type: "bar",
     name: "Number of Players"
 }
 let trace2 = {
-    y: [ 6.785714285714286, 7.261904761904762, 7.5, 7.857142857142857, 8.630952380952381, 10.595238095238095, 12.5, 31.428571428571427, 34.76190476190476, 37.797619047619044, 40.95238095238095, 50.0, 50.535714285714285, 50.89285714285714, 51.07142857142857, 51.25, 51.48809523809524, 52.023809523809526, 52.261904761904766, 99.9404761904762, 100.00000000000001, 100.00000000000001 ],
+    y: [ 6.7382230172927855, 7.1556350626118075, 7.453786523553966, 7.8115682766845564, 8.527131782945737, 10.435301132975553, 12.581991651759095, 31.54442456768038, 34.824090638044126, 37.924865831842574, 41.08527131782945, 50.268336314847936, 50.74537865235539, 51.10316040548598, 51.28205128205128, 51.34168157423971, 51.639833035181866, 52.05724508050089, 52.23613595706619, 99.88073941562314, 100.0, 100.0 ],
     yaxis: "y2",
     type: "line",
     name: "Cumulative % Players"
@@ -271,5 +271,5 @@ let layout = {
 }
 Plotly.newPlot('gearLevels-chart', [trace, trace2], layout)
 </script><br/>
-<font size="-2">Generated 2024-06-03 00:19:13 +0000</font>
+<font size="-2">Generated 2024-06-10 02:49:54 +0000</font>
 <script data-goatcounter="https://gorgatron.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>

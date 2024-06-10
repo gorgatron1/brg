@@ -249,14 +249,14 @@ let traces = [];traces.push({
 }
 Plotly.newPlot('mc-0', traces, layout)
 }
-</script><h2>Alliance Demographic Data</h2>Based on 1666 units.<table id="zetas"><thead><tr><th>Name</th><th>Description</th><th>Count</th><th>Percent</th></tr></thead><tr><td data-order="uniqueskill_HK4701"><img src="https://game-assets.swgoh.gg/tex.abilityui_passive_heal_buff.png" style="width: 30px" /> Self-Reconstruction</td><td>When a buff expires on an enemy, HK-47 recovers 5% Health and 5% Protection. When HK-47 uses an ability during his turn, it deals 25% more damage if the target has Deathmark or Fear.</td><td>904</td><td>54%</td></tr><tr><td data-order="uniqueskill_HK4702"><img src="https://game-assets.swgoh.gg/tex.abilityui_passive_attack_buff.png" style="width: 30px" /> Loyalty to the Maker</td><td>If HK-47's leader is Darth Revan, HK-47 has the following:\n\n- +50% Defense, Offense, Potency, and Tenacity\n\n- +30% Critical Avoidance for each Jedi enemy at the start of encounter\n\n- Cooldown of Assassination Protocol is reset the first time another Sith Empire ally is defeated\n\n- Enemies with Protection Up can't gain bonus Turn Meter</td><td>911</td><td>55%</td></tr></table><br/><br/><div id="gearLevels-chart" style="width:80%;height:800px" /><script>
+</script><h2>Alliance Demographic Data</h2>Based on 1664 units.<table id="zetas"><thead><tr><th>Name</th><th>Description</th><th>Count</th><th>Percent</th></tr></thead><tr><td data-order="uniqueskill_HK4701"><img src="https://game-assets.swgoh.gg/tex.abilityui_passive_heal_buff.png" style="width: 30px" /> Self-Reconstruction</td><td>When a buff expires on an enemy, HK-47 recovers 5% Health and 5% Protection. When HK-47 uses an ability during his turn, it deals 25% more damage if the target has Deathmark or Fear.</td><td>901</td><td>54%</td></tr><tr><td data-order="uniqueskill_HK4702"><img src="https://game-assets.swgoh.gg/tex.abilityui_passive_attack_buff.png" style="width: 30px" /> Loyalty to the Maker</td><td>If HK-47's leader is Darth Revan, HK-47 has the following:\n\n- +50% Defense, Offense, Potency, and Tenacity\n\n- +30% Critical Avoidance for each Jedi enemy at the start of encounter\n\n- Cooldown of Assassination Protocol is reset the first time another Sith Empire ally is defeated\n\n- Enemies with Protection Up can't gain bonus Turn Meter</td><td>911</td><td>55%</td></tr></table><br/><br/><div id="gearLevels-chart" style="width:80%;height:800px" /><script>
 let trace = {
-    y: [ 130, 0, 10, 5, 8, 8, 29, 14, 35, 41, 149, 458, 25, 47, 47, 106, 56, 119, 16, 358, 5, 0 ],
+    y: [ 125, 0, 10, 6, 8, 9, 31, 13, 32, 40, 149, 458, 29, 45, 46, 106, 54, 117, 17, 364, 5, 0 ],
     type: "bar",
     name: "Number of Players"
 }
 let trace2 = {
-    y: [ 7.803121248499399, 7.803121248499399, 8.403361344537814, 8.703481392557022, 9.183673469387754, 9.663865546218487, 11.40456182472989, 12.244897959183673, 14.345738295318126, 16.806722689075627, 25.750300120048017, 53.24129651860744, 54.74189675870348, 57.563025210084035, 60.38415366146459, 66.74669867947179, 70.10804321728692, 77.25090036014406, 78.21128451380552, 99.69987995198079, 100.0, 100.0 ],
+    y: [ 7.512019230769231, 7.512019230769231, 8.11298076923077, 8.473557692307693, 8.954326923076923, 9.495192307692308, 11.358173076923077, 12.139423076923077, 14.0625, 16.466346153846153, 25.420673076923077, 52.94471153846154, 54.6875, 57.39182692307692, 60.15625, 66.5264423076923, 69.77163461538461, 76.80288461538461, 77.82451923076923, 99.69951923076923, 100.0, 100.0 ],
     yaxis: "y2",
     type: "line",
     name: "Cumulative % Players"
@@ -276,5 +276,5 @@ let layout = {
 }
 Plotly.newPlot('gearLevels-chart', [trace, trace2], layout)
 </script><br/>
-<font size="-2">Generated 2024-06-03 00:19:13 +0000</font>
+<font size="-2">Generated 2024-06-10 02:49:54 +0000</font>
 <script data-goatcounter="https://gorgatron.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
