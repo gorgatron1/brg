@@ -224,14 +224,14 @@ let traces = [];traces.push({
 }
 Plotly.newPlot('mc-0', traces, layout)
 }
-</script><h2>Alliance Demographic Data</h2>Based on 1680 units.<table id="zetas"><thead><tr><th>Name</th><th>Description</th><th>Count</th><th>Percent</th></tr></thead><tr><td data-order="uniqueskill_SAVAGEOPRESS01"><img src="https://game-assets.swgoh.gg/tex.abilityui_passive_def.png" style="width: 30px" /> Brute</td><td>Whenever Savage receives damage, he gains Defense Up, a stack of Heal Over Time, and Offense Up for 2 turns, and gains 30% Turn Meter.\n\nWhenever Savage is critically hit, he dispels all debuffs on himself. At the end of his turn, Savage dispels all debuffs on a random other Sith ally and gains those debuffs for 1 turn.\n\nWhile in Grand Arenas: Savage gains 50% Defense, Max Health, and Offense, and 30 Speed. At the start of the encounter, Savage gains 2 stacks of Resilient Defense. At the end of his turn, Savage gains 2 stacks of Resilient Defense (max 10) and 10% Turn Meter (max 50%) for each debuff on other Sith allies.\nWhenever Savage is critically hit, he gains 16% Health Steal and Offense (stacking, max 160%) and all other Sith allies gain 4% Health Steal and Offense (stacking, max 40%), recover 15% Health and Protection, and gain 10% Turn Meter until the end of the encounter.\n\nWhile Savage has Resilient Defense, he has +50% Defense per stack and is inflicted with Vulnerable, which can't be prevented or dispelled. Whenever Savage gains Taunt, he dispels it and gains 2 stacks of Resilient Defense.</td><td>1108</td><td>66%</td></tr></table><br/><br/><div id="gearLevels-chart" style="width:80%;height:800px" /><script>
+</script><h2>Alliance Demographic Data</h2>Based on 1680 units.<table id="zetas"><thead><tr><th>Name</th><th>Description</th><th>Count</th><th>Percent</th></tr></thead><tr><td data-order="uniqueskill_SAVAGEOPRESS01"><img src="https://game-assets.swgoh.gg/tex.abilityui_passive_def.png" style="width: 30px" /> Brute</td><td>Whenever Savage receives damage, he gains Defense Up, a stack of Heal Over Time, and Offense Up for 2 turns, and gains 30% Turn Meter.\n\nWhenever Savage is critically hit, he dispels all debuffs on himself. At the end of his turn, Savage dispels all debuffs on a random other Sith ally and gains those debuffs for 1 turn.\n\nWhile in Grand Arenas: Savage gains 50% Defense, Max Health, and Offense, and 30 Speed. At the start of the encounter, Savage gains 2 stacks of Resilient Defense. At the end of his turn, Savage gains 2 stacks of Resilient Defense (max 10) and 10% Turn Meter (max 50%) for each debuff on other Sith allies.\nWhenever Savage is critically hit, he gains 16% Health Steal and Offense (stacking, max 160%) and all other Sith allies gain 4% Health Steal and Offense (stacking, max 40%), recover 15% Health and Protection, and gain 10% Turn Meter until the end of the encounter.\n\nWhile Savage has Resilient Defense, he has +50% Defense per stack and is inflicted with Vulnerable, which can't be prevented or dispelled. Whenever Savage gains Taunt, he dispels it and gains 2 stacks of Resilient Defense.</td><td>1112</td><td>66%</td></tr></table><br/><br/><div id="gearLevels-chart" style="width:80%;height:800px" /><script>
 let trace = {
-    y: [ 184, 13, 4, 13, 28, 37, 71, 68, 32, 54, 38, 482, 18, 55, 45, 171, 35, 256, 13, 57, 4, 2 ],
+    y: [ 184, 13, 3, 14, 28, 36, 67, 66, 34, 57, 36, 480, 19, 52, 42, 172, 36, 265, 13, 56, 4, 3 ],
     type: "bar",
     name: "Number of Players"
 }
 let trace2 = {
-    y: [ 10.952380952380953, 11.726190476190476, 11.964285714285714, 12.738095238095237, 14.404761904761903, 16.607142857142854, 20.83333333333333, 24.880952380952376, 26.78571428571428, 29.999999999999996, 32.26190476190476, 60.95238095238095, 62.02380952380952, 65.29761904761904, 67.97619047619047, 78.1547619047619, 80.23809523809523, 95.47619047619047, 96.24999999999999, 99.64285714285712, 99.88095238095237, 99.99999999999999 ],
+    y: [ 10.952380952380953, 11.726190476190476, 11.904761904761905, 12.738095238095239, 14.404761904761905, 16.547619047619047, 20.535714285714285, 24.46428571428571, 26.488095238095234, 29.880952380952376, 32.02380952380952, 60.59523809523809, 61.72619047619047, 64.82142857142857, 67.32142857142857, 77.55952380952381, 79.70238095238095, 95.47619047619047, 96.24999999999999, 99.58333333333331, 99.82142857142856, 99.99999999999999 ],
     yaxis: "y2",
     type: "line",
     name: "Cumulative % Players"
@@ -251,5 +251,5 @@ let layout = {
 }
 Plotly.newPlot('gearLevels-chart', [trace, trace2], layout)
 </script><br/>
-<font size="-2">Generated 2024-06-10 02:49:54 +0000</font>
+<font size="-2">Generated 2024-06-17 15:20:26 +0000</font>
 <script data-goatcounter="https://gorgatron.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
