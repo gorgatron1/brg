@@ -1,0 +1,113 @@
+<meta charset="UTF-8">
+<meta name="robots" content="noindex"><style type="text/css">
+body {
+ background-image: url("../i/more_faded_logo.jpg");
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+</style><link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.1.5/css/fixedHeader.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.6/css/fixedColumns.dataTables.min.css" />
+<script type="text/javascript" language="javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedheader/3.1.5/js/dataTables.fixedHeader.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedcolumns/3.2.6/js/dataTables.fixedColumns.min.js"></script>    <script>
+    $(document).ready( function () {
+        $('#zetas').DataTable({
+        "paging":   false,
+        "info":     false,
+        
+        
+        
+        
+        bFilter: false,
+        });
+    } );
+    </script>    <script>
+    $(document).ready( function () {
+        $('#gearLevels').DataTable({
+        "paging":   false,
+        "info":     false,
+        
+        
+        
+        
+        bFilter: false,
+        });
+    } );
+    </script><script src="https://cdn.plot.ly/plotly-latest.min.js"></script><link rel="stylesheet" type="text/css" href="../mods.css">
+<style>
+#zetas {
+    width: 800;
+    margin-left: 10;
+}
+#gearLevels {
+    width: 400;
+    margin-left: 10;
+}
+#picture {
+    float: right;
+}
+table.mods {
+    margin-top: 5px;
+}
+td.examples {
+    padding: 10px;
+    font-size: 90%;
+    width: 430px;
+}
+.mod-set {
+    width: 24px;
+    height: 24px;
+}
+.priority {
+    border: 1px solid black;
+    margin: 2px;
+    margin-right: 10px;
+    background-color: #c0c0c0;
+}
+.mod-cell {
+    border: 1px solid black;
+    padding: 2px;
+    font-size: 85%;
+}
+</style><title>BRG Alliance Guild Reports: Alliance Character Data: Night Trooper</title>
+<div style="display: flex; align-items:baseline"><img src="../i/simple_logo_48.jpg"/>&nbsp;<h1>Alliance Guild Reports: Alliance Character Data: Night Trooper</h1></div>
+
+<div style="background-color: #f0f0f0; border: solid red; padding: 10px; border-radius: 10px">
+<a href="../alliance/index.html">Alliance</a> |
+<a href="../alliance/characters.html">Characters</a> |
+
+<div style="float:right;"><a href="../r">Resources</a></div>
+<a href="../alliance/players.html">Player</a> | <a href="../alliance/characters.html">Characters</a> | <a href="../alliance/history.html">History</a> | <a href="../alliance/transfers.html">Transfers</a>
+</div>
+<br/><h1><img id="picture" src="https://game-assets.swgoh.gg/textures/tex.charui_nighttrooper_a.png" />Alliance Character Data: Night Trooper</h1><h2>swgoh.gg data</h2><ul><li><a href="https://swgoh.gg/characters/night-trooper/">abilities / character data</a></li><li><a href="https://swgoh.gg/characters/night-trooper/data/">character meta report</a></li><li><a href="https://swgoh.gg/characters/night-trooper/data/mods">mods meta report</a></li><li><a href="https://swgoh.gg/characters/night-trooper/data/stats">stats meta report</a></li></ul><h2>Mod Data</h2><h2>Alliance Demographic Data</h2>Based on 1449 units.<table id="zetas"><thead><tr><th>Name</th><th>Description</th><th>Count</th><th>Percent</th></tr></thead><tr><td data-order="specialskill_NIGHTTROOPER01"><img src="https://game-assets.swgoh.gg/textures/tex.ability_nighttrooper_a_special01.png" style="width: 30px" /> March of the Undying</td><td>Deal Physical damage to all enemies and Night Trooper gains Alert for 2 turns, which can't be copied. The enemy with the least Turn Meter is Stunned and inflicted with Vulnerable for 1 turn, and remove 5% Turn Meter from all other enemies. Call target other ally to assist.\n\nAlert: Whenever an ally gains bonus Turn Meter while not at 100% Turn Meter, this character gains 10% Turn Meter (once per turn); this character assists whenever an ally uses a Special ability</td><td>94</td><td>6%</td></tr><tr><td data-order="uniqueskill_NIGHTTROOPER01"><img src="https://game-assets.swgoh.gg/textures/tex.abilityui_passive_inevitableend.png" style="width: 30px" /> Inevitable End</td><td>Night Trooper has +35% Potency. Whenever Night Trooper is damaged, they gain 10% Offense (stacking) and 5 Speed (stacking, max 100) for 1 turn or until they are critically hit. Whenever an enemy recovers Health, Night Trooper recovers 100% Health. Enemies can't recover Health from Health Steal when targeting Night Trooper. At the start of Night Trooper's turn, gain +10% Critical Damage and Defense Penetration per stack of Blight for 1 turn. Whenever Night Trooper reaches 5 stacks of Blight, they gain Frenzy for 2 turns.\n\nWhile in Grand Arenas: Night Trooper has +100% Max Health and +35 Speed. Night Trooper is immune to Turn Meter reduction. If the ally in the Leader slot is Imperial Remnant, inflict a stack of Blight until the end of the encounter at the start of each Imperial Remnant ally's turn to a random enemy. Whenever an enemy is inflicted with Blight this way, reduce the cooldown of Share My Suffering by 1.</td><td>6</td><td>0%</td></tr></table><br/><br/><div id="gearLevels-chart" style="width:80%;height:800px" /><script>
+let trace = {
+    y: [ 373, 42, 29, 75, 52, 169, 217, 156, 231, 41, 49, 3, 0, 0, 0, 1, 0, 5, 1, 4, 1, 0 ],
+    type: "bar",
+    name: "Number of Players"
+}
+let trace2 = {
+    y: [ 25.741890959282266, 28.640441683919946, 30.641821946169774, 35.81780538302277, 39.406487232574186, 51.06970324361628, 66.0455486542443, 76.81159420289855, 92.7536231884058, 95.58316080055211, 98.9648033126294, 99.17184265010351, 99.17184265010351, 99.17184265010351, 99.17184265010351, 99.24085576259489, 99.24085576259489, 99.58592132505176, 99.65493443754313, 99.93098688750862, 100.0, 100.0 ],
+    yaxis: "y2",
+    type: "line",
+    name: "Cumulative % Players"
+}
+let layout = {
+    title: "Gear Levels",
+    xaxis: {
+        tickvals: [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21 ],
+        ticktext: [ "G1", "G2", "G3", "G4", "G5", "G6", "G7", "G8", "G9", "G10", "G11", "G12", "G13", "R1", "R2", "R3", "R4", "R5", "R6", "R7", "R8", "R9" ]
+    },
+    yaxis: { title: "Number of Players" },
+    yaxis2: {
+        title: "Cumulative % Players",
+        overlaying: "y",
+        side: "right"
+    }
+}
+Plotly.newPlot('gearLevels-chart', [trace, trace2], layout)
+</script><br/>
+<font size="-2">Generated 2024-07-13 17:51:10 +0000</font>
+<script data-goatcounter="https://gorgatron.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>

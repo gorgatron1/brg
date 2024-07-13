@@ -82,7 +82,7 @@ td.examples {
 <div style="float:right;"><a href="../r">Resources</a></div>
 <a href="../alliance/players.html">Player</a> | <a href="../alliance/characters.html">Characters</a> | <a href="../alliance/history.html">History</a> | <a href="../alliance/transfers.html">Transfers</a>
 </div>
-<br/><h1><img id="picture" src="https://game-assets.swgoh.gg/tex.charui_triplezero.png" />Alliance Character Data: 0-0-0</h1><h2>swgoh.gg data</h2><ul><li><a href="https://swgoh.gg/characters/0-0-0/">abilities / character data</a></li><li><a href="https://swgoh.gg/characters/0-0-0/data/">character meta report</a></li><li><a href="https://swgoh.gg/characters/0-0-0/data/mods">mods meta report</a></li><li><a href="https://swgoh.gg/characters/0-0-0/data/stats">stats meta report</a></li></ul><h2>Mod Data</h2><h3>Mod Stat Distributions</h3>Mod stat distributions across 1438 units from the
+<br/><h1><img id="picture" src="https://game-assets.swgoh.gg/textures/tex.charui_triplezero.png" />Alliance Character Data: 0-0-0</h1><h2>swgoh.gg data</h2><ul><li><a href="https://swgoh.gg/characters/0-0-0/">abilities / character data</a></li><li><a href="https://swgoh.gg/characters/0-0-0/data/">character meta report</a></li><li><a href="https://swgoh.gg/characters/0-0-0/data/mods">mods meta report</a></li><li><a href="https://swgoh.gg/characters/0-0-0/data/stats">stats meta report</a></li></ul><h2>Mod Data</h2><h3>Mod Stat Distributions</h3>Mod stat distributions across 1438 units from the
 alliance and top guilds.  The bonuses are shown as applied to an R5 unit.
 Specific distributions are shown below by common mod configurations.<div id="mc-all" style="height:500px" /><script>
 {
@@ -239,14 +239,14 @@ let traces = [];traces.push({
 }
 Plotly.newPlot('mc-0', traces, layout)
 }
-</script><h2>Alliance Demographic Data</h2>Based on 1303 units.<table id="zetas"><thead><tr><th>Name</th><th>Description</th><th>Count</th><th>Percent</th></tr></thead><tr><td data-order="uniqueskill_TRIPLEZERO02"><img src="https://game-assets.swgoh.gg/tex.abilityui_passive_drainorganics.png" style="width: 30px" /> Drain Organics</td><td>Whenever 0-0-0 or BT-1 gain a stack of Translation, they grant a stack of Translation to the other (limit once per turn). At the start of 0-0-0's turn, inflict Target Lock for 1 turn on a random non-Droid enemy that doesn't already have it. Whenever a non-Droid enemy is defeated, the attacking ally recovers 30% Health and Protection. If the attacking ally is a Dark Side Droid, they also gain Offense Up for 2 turns and 15% Turn Meter. If the attacking ally is BT-1, he gains Offense Up for 2 turns and 30% Turn Meter instead.</td><td>288</td><td>22%</td></tr></table><br/><br/><div id="gearLevels-chart" style="width:80%;height:800px" /><script>
+</script><h2>Alliance Demographic Data</h2>Based on 1316 units.<table id="zetas"><thead><tr><th>Name</th><th>Description</th><th>Count</th><th>Percent</th></tr></thead><tr><td data-order="uniqueskill_TRIPLEZERO02"><img src="https://game-assets.swgoh.gg/textures/tex.abilityui_passive_drainorganics.png" style="width: 30px" /> Drain Organics</td><td>Whenever 0-0-0 or BT-1 gain a stack of Translation, they grant a stack of Translation to the other (limit once per turn). At the start of 0-0-0's turn, inflict Target Lock for 1 turn on a random non-Droid enemy that doesn't already have it. Whenever a non-Droid enemy is defeated, the attacking ally recovers 30% Health and Protection. If the attacking ally is a Dark Side Droid, they also gain Offense Up for 2 turns and 15% Turn Meter. If the attacking ally is BT-1, he gains Offense Up for 2 turns and 30% Turn Meter instead.</td><td>298</td><td>23%</td></tr></table><br/><br/><div id="gearLevels-chart" style="width:80%;height:800px" /><script>
 let trace = {
-    y: [ 565, 32, 18, 20, 18, 56, 79, 85, 121, 30, 22, 18, 1, 6, 3, 2, 0, 186, 7, 32, 1, 1 ],
+    y: [ 565, 34, 20, 20, 15, 56, 84, 82, 123, 33, 17, 19, 1, 5, 1, 1, 1, 193, 7, 36, 2, 1 ],
     type: "bar",
     name: "Number of Players"
 }
 let trace2 = {
-    y: [ 43.36147352264006, 45.81734458940905, 47.19877206446661, 48.73369148119723, 50.11511895625479, 54.41289332310053, 60.47582501918649, 66.99923254029163, 76.28549501151188, 78.58787413660782, 80.2762854950115, 81.65771297006907, 81.7344589409056, 82.19493476592478, 82.42517267843438, 82.57866462010745, 82.57866462010745, 96.85341519570223, 97.39063699155794, 99.84650805832693, 99.92325402916346, 99.99999999999999 ],
+    y: [ 42.933130699088146, 45.516717325227965, 47.03647416413374, 48.55623100303952, 49.696048632218854, 53.95136778115503, 60.334346504559285, 66.56534954407296, 75.91185410334347, 78.419452887538, 79.7112462006079, 81.15501519756839, 81.23100303951368, 81.61094224924013, 81.68693009118542, 81.76291793313071, 81.838905775076, 96.50455927051674, 97.03647416413376, 99.77203647416415, 99.92401215805474, 100.00000000000003 ],
     yaxis: "y2",
     type: "line",
     name: "Cumulative % Players"
@@ -266,5 +266,5 @@ let layout = {
 }
 Plotly.newPlot('gearLevels-chart', [trace, trace2], layout)
 </script><br/>
-<font size="-2">Generated 2024-06-17 15:20:26 +0000</font>
+<font size="-2">Generated 2024-07-13 17:51:10 +0000</font>
 <script data-goatcounter="https://gorgatron.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
