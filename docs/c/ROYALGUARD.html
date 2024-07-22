@@ -229,14 +229,14 @@ let traces = [];traces.push({
 }
 Plotly.newPlot('mc-0', traces, layout)
 }
-</script><h2>Alliance Demographic Data</h2>Based on 1733 units.<table id="zetas"><thead><tr><th>Name</th><th>Description</th><th>Count</th><th>Percent</th></tr></thead><tr><td data-order="uniqueskill_ROYALGUARD01"><img src="https://game-assets.swgoh.gg/textures/tex.abilityui_passive_hp.png" style="width: 30px" /> Unyielding Defender</td><td>At the start of the encounter, if the allied Leader is Empire, Royal Guard gains Max Health equal to 5% of the allied Leader's Max Health and then doubles his Health until the end of the encounter.\n\nAt the end of each turn, if another ally took damage that turn, all Empire allies recover 6% Health. Royal Guard Taunts for 1 turn whenever another ally falls below 50% Health.</td><td>875</td><td>50%</td></tr></table><br/><br/><div id="gearLevels-chart" style="width:80%;height:800px" /><script>
+</script><h2>Alliance Demographic Data</h2>Based on 1724 units.<table id="zetas"><thead><tr><th>Name</th><th>Description</th><th>Count</th><th>Percent</th></tr></thead><tr><td data-order="uniqueskill_ROYALGUARD01"><img src="https://game-assets.swgoh.gg/textures/tex.abilityui_passive_hp.png" style="width: 30px" /> Unyielding Defender</td><td>At the start of the encounter, if the allied Leader is Empire, Royal Guard gains Max Health equal to 5% of the allied Leader's Max Health and then doubles his Health until the end of the encounter.\n\nAt the end of each turn, if another ally took damage that turn, all Empire allies recover 6% Health. Royal Guard Taunts for 1 turn whenever another ally falls below 50% Health.</td><td>866</td><td>50%</td></tr></table><br/><br/><div id="gearLevels-chart" style="width:80%;height:800px" /><script>
 let trace = {
-    y: [ 94, 21, 17, 28, 52, 69, 91, 124, 84, 45, 42, 153, 12, 14, 4, 594, 37, 146, 24, 67, 12, 3 ],
+    y: [ 93, 23, 17, 29, 55, 63, 90, 126, 84, 44, 41, 155, 13, 13, 4, 586, 36, 146, 24, 67, 13, 2 ],
     type: "bar",
     name: "Number of Players"
 }
 let trace2 = {
-    y: [ 5.424120023081361, 6.635891517599537, 7.616849394114252, 9.232544720138486, 12.233121754183495, 16.214656664743217, 21.46566647432198, 28.62088863242931, 33.46797461050202, 36.06462781304097, 38.48817080207733, 47.316791690709756, 48.00923254472014, 48.81708020773226, 49.04789382573572, 83.32371609924985, 85.45874206578188, 93.88343912290824, 95.26832083092901, 99.134448932487, 99.82688978649739, 99.99999999999999 ],
+    y: [ 5.394431554524362, 6.728538283062646, 7.71461716937355, 9.396751740139212, 12.587006960556845, 16.241299303944317, 21.46171693735499, 28.77030162412993, 33.64269141531322, 36.19489559164733, 38.57308584686775, 47.56380510440835, 48.31786542923434, 49.071925754060324, 49.303944315545245, 83.29466357308584, 85.38283062645012, 93.85150812064965, 95.24361948955917, 99.12993039443155, 99.88399071925754, 100.0 ],
     yaxis: "y2",
     type: "line",
     name: "Cumulative % Players"
@@ -256,5 +256,5 @@ let layout = {
 }
 Plotly.newPlot('gearLevels-chart', [trace, trace2], layout)
 </script><br/>
-<font size="-2">Generated 2024-07-13 17:51:10 +0000</font>
+<font size="-2">Generated 2024-07-22 15:54:58 +0000</font>
 <script data-goatcounter="https://gorgatron.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>

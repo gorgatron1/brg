@@ -249,14 +249,14 @@ let traces = [];traces.push({
 }
 Plotly.newPlot('mc-0', traces, layout)
 }
-</script><h2>Alliance Demographic Data</h2>Based on 1730 units.<table id="zetas"><thead><tr><th>Name</th><th>Description</th><th>Count</th><th>Percent</th></tr></thead><tr><td data-order="uniqueskill_FIRSTORDERTIEPILOT01"><img src="https://game-assets.swgoh.gg/textures/tex.abilityui_passive_crit_buff.png" style="width: 30px" /> Keen Eye</td><td>First Order TIE Pilot has +30% Critical Chance and +30% Critical Damage, and gains Advantage for 3 turns whenever an enemy falls below 100% Health. First Order TIE Pilot has a 70% chance to gain Foresight for 2 turns whenever they lose Advantage.\n\nWhile in Grand Arenas if there are no Galactic Legend allies and all allies are First Order: First Order TIE Pilot instead has 100% chance to gain Foresight. At the start of the encounter:\n\n- All allies gain 50% Max Health\n- Whenever an ally has Advantage, they have +50% Critical Damage and +100 Speed\n- At the start of each character's turn, if an ally doesn't have Advantage, they have +100% Tenacity until they gain Advantage\n- Whenever an ally loses Advantage, they recover 20% Health and Protection\n- Whenever First Order TIE Pilot gains bonus Turn Meter, they gain Advantage for 1 turn if they didn't already have it\n- Whenever First Order TIE Pilot gains Foresight, all allies gain Foresight for 2 turns</td><td>948</td><td>55%</td></tr></table><br/><br/><div id="gearLevels-chart" style="width:80%;height:800px" /><script>
+</script><h2>Alliance Demographic Data</h2>Based on 1720 units.<table id="zetas"><thead><tr><th>Name</th><th>Description</th><th>Count</th><th>Percent</th></tr></thead><tr><td data-order="uniqueskill_FIRSTORDERTIEPILOT01"><img src="https://game-assets.swgoh.gg/textures/tex.abilityui_passive_crit_buff.png" style="width: 30px" /> Keen Eye</td><td>First Order TIE Pilot has +30% Critical Chance and +30% Critical Damage, and gains Advantage for 3 turns whenever an enemy falls below 100% Health. First Order TIE Pilot has a 70% chance to gain Foresight for 2 turns whenever they lose Advantage.\n\nWhile in Grand Arenas if there are no Galactic Legend allies and all allies are First Order: First Order TIE Pilot instead has 100% chance to gain Foresight. At the start of the encounter:\n\n- All allies gain 50% Max Health\n- Whenever an ally has Advantage, they have +50% Critical Damage and +100 Speed\n- At the start of each character's turn, if an ally doesn't have Advantage, they have +100% Tenacity until they gain Advantage\n- Whenever an ally loses Advantage, they recover 20% Health and Protection\n- Whenever First Order TIE Pilot gains bonus Turn Meter, they gain Advantage for 1 turn if they didn't already have it\n- Whenever First Order TIE Pilot gains Foresight, all allies gain Foresight for 2 turns</td><td>941</td><td>55%</td></tr></table><br/><br/><div id="gearLevels-chart" style="width:80%;height:800px" /><script>
 let trace = {
-    y: [ 36, 2, 1, 19, 14, 22, 16, 26, 32, 20, 28, 62, 1, 2, 3, 566, 45, 820, 7, 4, 4, 0 ],
+    y: [ 39, 2, 0, 17, 16, 22, 15, 27, 28, 19, 30, 62, 1, 2, 3, 561, 44, 816, 7, 5, 4, 0 ],
     type: "bar",
     name: "Number of Players"
 }
 let trace2 = {
-    y: [ 2.0809248554913293, 2.1965317919075145, 2.254335260115607, 3.3526011560693645, 4.1618497109826595, 5.433526011560694, 6.3583815028901745, 7.8612716763005785, 9.710982658959539, 10.867052023121389, 12.485549132947979, 16.069364161849713, 16.127167630057805, 16.24277456647399, 16.416184971098268, 49.13294797687862, 51.73410404624278, 99.13294797687861, 99.53757225433526, 99.76878612716763, 100.0, 100.0 ],
+    y: [ 2.2674418604651163, 2.3837209302325584, 2.3837209302325584, 3.372093023255814, 4.302325581395349, 5.58139534883721, 6.453488372093024, 8.02325581395349, 9.651162790697676, 10.755813953488373, 12.5, 16.1046511627907, 16.16279069767442, 16.27906976744186, 16.453488372093023, 49.06976744186046, 51.627906976744185, 99.06976744186046, 99.47674418604652, 99.76744186046513, 100.00000000000001, 100.00000000000001 ],
     yaxis: "y2",
     type: "line",
     name: "Cumulative % Players"
@@ -276,5 +276,5 @@ let layout = {
 }
 Plotly.newPlot('gearLevels-chart', [trace, trace2], layout)
 </script><br/>
-<font size="-2">Generated 2024-07-13 17:51:10 +0000</font>
+<font size="-2">Generated 2024-07-22 15:54:58 +0000</font>
 <script data-goatcounter="https://gorgatron.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>

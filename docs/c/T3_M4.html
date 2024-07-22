@@ -377,14 +377,14 @@ let traces = [];traces.push({
 }
 Plotly.newPlot('mc-2', traces, layout)
 }
-</script><h2>Alliance Demographic Data</h2>Based on 1699 units.<table id="zetas"><thead><tr><th>Name</th><th>Description</th><th>Count</th><th>Percent</th></tr></thead><tr><td data-order="uniqueskill_t3_m4_01"><img src="https://game-assets.swgoh.gg/textures/tex.abilityui_passive_crit_buff.png" style="width: 30px" /> Combat Logic Upgrade</td><td>Droid allies gain 8% Potency and 8% Critical Hit Chance (stacking) each time T3-M4 uses an ability. Also, Droid allies have +8% Critical Damage for each debuff on the enemy team.</td><td>416</td><td>24%</td></tr><tr><td data-order="uniqueskill_t3_m4_02"><img src="https://game-assets.swgoh.gg/textures/tex.abilityui_passive_penetration.png" style="width: 30px" /> Master Gearhead</td><td>T3-M4 has +100% Defense Penetration, and Droid allies gain 100% of T3-M4's Defense Penetration. Additionally, each time T3-M4 starts his turn, he has a 75% chance to inflict Target Lock for 2 turns on a random enemy who does not already have it. This Target Lock can't be evaded.\n\nWhile in Territory Wars: At the start of the encounter, T3-M4 gains Stealth for 2 turns, and Droid allies gain 15 Armor Penetration and 30% Max Health. Droid allies have +20% Defense for each Target Locked enemy, +20% Defense while debuffed, and +20% Defense while buffed. At the start of T3-M4's turn, inflict Target Lock for 2 turns on a random enemy who does not already have it, which can't be evaded. Then, all allies recover 5% Health and Protection for each Target Locked enemy.</td><td>409</td><td>24%</td></tr></table><br/><br/><div id="gearLevels-chart" style="width:80%;height:800px" /><script>
+</script><h2>Alliance Demographic Data</h2>Based on 1692 units.<table id="zetas"><thead><tr><th>Name</th><th>Description</th><th>Count</th><th>Percent</th></tr></thead><tr><td data-order="uniqueskill_t3_m4_01"><img src="https://game-assets.swgoh.gg/textures/tex.abilityui_passive_crit_buff.png" style="width: 30px" /> Combat Logic Upgrade</td><td>Droid allies gain 8% Potency and 8% Critical Hit Chance (stacking) each time T3-M4 uses an ability. Also, Droid allies have +8% Critical Damage for each debuff on the enemy team.</td><td>414</td><td>24%</td></tr><tr><td data-order="uniqueskill_t3_m4_02"><img src="https://game-assets.swgoh.gg/textures/tex.abilityui_passive_penetration.png" style="width: 30px" /> Master Gearhead</td><td>T3-M4 has +100% Defense Penetration, and Droid allies gain 100% of T3-M4's Defense Penetration. Additionally, each time T3-M4 starts his turn, he has a 75% chance to inflict Target Lock for 2 turns on a random enemy who does not already have it. This Target Lock can't be evaded.\n\nWhile in Territory Wars: At the start of the encounter, T3-M4 gains Stealth for 2 turns, and Droid allies gain 15 Armor Penetration and 30% Max Health. Droid allies have +20% Defense for each Target Locked enemy, +20% Defense while debuffed, and +20% Defense while buffed. At the start of T3-M4's turn, inflict Target Lock for 2 turns on a random enemy who does not already have it, which can't be evaded. Then, all allies recover 5% Health and Protection for each Target Locked enemy.</td><td>408</td><td>24%</td></tr></table><br/><br/><div id="gearLevels-chart" style="width:80%;height:800px" /><script>
 let trace = {
-    y: [ 54, 1, 2, 10, 2, 17, 98, 77, 73, 70, 141, 330, 8, 22, 11, 21, 6, 747, 3, 6, 0, 0 ],
+    y: [ 54, 0, 3, 12, 2, 15, 102, 74, 74, 67, 141, 334, 8, 22, 9, 23, 6, 736, 3, 6, 1, 0 ],
     type: "bar",
     name: "Number of Players"
 }
 let trace2 = {
-    y: [ 3.1783402001177166, 3.2371983519717484, 3.354914655679812, 3.94349617422013, 4.061212477928193, 5.061801059446734, 10.829899941141848, 15.361977633902296, 19.658622719246615, 23.778693349028842, 32.07769276044732, 51.500882872277806, 51.97174808711006, 53.266627427898754, 53.9140670982931, 55.15008828722777, 55.50323719835196, 99.4702766333137, 99.64685108887579, 99.99999999999999, 99.99999999999999, 99.99999999999999 ],
+    y: [ 3.1914893617021276, 3.1914893617021276, 3.368794326241135, 4.078014184397163, 4.196217494089835, 5.08274231678487, 11.11111111111111, 15.484633569739952, 19.858156028368793, 23.817966903073284, 32.15130023640661, 51.891252955082734, 52.36406619385342, 53.6643026004728, 54.19621749408982, 55.55555555555554, 55.91016548463356, 99.40898345153664, 99.58628841607565, 99.94089834515366, 99.99999999999999, 99.99999999999999 ],
     yaxis: "y2",
     type: "line",
     name: "Cumulative % Players"
@@ -404,5 +404,5 @@ let layout = {
 }
 Plotly.newPlot('gearLevels-chart', [trace, trace2], layout)
 </script><br/>
-<font size="-2">Generated 2024-07-13 17:51:10 +0000</font>
+<font size="-2">Generated 2024-07-22 15:54:58 +0000</font>
 <script data-goatcounter="https://gorgatron.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
