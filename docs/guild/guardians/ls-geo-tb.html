@@ -52,7 +52,7 @@ document.getElementById(id).style.display = 'none';
 }
 .column {
   float: left;
-  width: 33%;
+  width: 50%;
 }
 .row:after {
   content: "";
@@ -70,12 +70,12 @@ function copyText(name) {
 }
 </script>
 There are several models of activity or you can come up with a <a href="tb.html?tb=ls&d=squad+name&player-summary=on">plan manually with some assistance</a>.
-<ul><li><b>Optimal</b> assumes that everybody deploys and you have reasonable success with the missions.  It is not necessarily a lower bound -- the missions are just estimates of how well you do, but it is an optimistic view.  You might score a star or two higher, especially if you are close on some sections.  You won't make it if participation is low.</li><li><b>Decreasing</b> is in between.  It assumes full participation and good performance on the early phases and tapers off on the later phases (this matches what I observe).</li><li><b>KAM Shards</b> is the same as <b>Decreasing</b> but it tries to force the TB to reach 3 Bottom to obtain KAM shards.</li></ul>
+<ul><li><b>Optimal</b> assumes that everybody deploys and you have reasonable success with the missions.  It is not necessarily a lower bound -- the missions are just estimates of how well you do, but it is an optimistic view.  You might score a star or two higher, especially if you are close on some sections.  You won't make it if participation is low.</li><li><b>Decreasing</b> is in between.  It assumes full participation and good performance on the early phases and tapers off on the later phases (this matches what I observe).</li></ul>
 Contact @gorgatron#3094 to tailor these assumptions.
 <br/>
 <img src="../../i/ls_geo_tb_labels.jpeg" width="500"/>
 <br/>
-<br/><p>See also <a href="https://genskaar.github.io/tb_geo/html/ls.html">https://genskaar.github.io/tb_geo/html/ls.html</a>.</p><br/><div class="row"><div class="column"><h2>Optimal Estimated: 17 &#11088;</h2>
+<br/><p>See also <a href="https://genskaar.github.io/tb_geo/html/ls.html">https://genskaar.github.io/tb_geo/html/ls.html</a>.</p><br/><div class="row"><div class="column"><h2>Optimal Estimated: 20 &#11088;</h2>
 <br/>
 <table style="margin: 10px">
 <thead>
@@ -85,728 +85,486 @@ Contact @gorgatron#3094 to tailor these assumptions.
     <th>Action</th>
     </tr>
 </thead>
-<tbody><tr class="newPhase"><td>1</td><td>&nbsp;</td><td><b>active</b> <a href="tb.html?c=1%20Top&tb=ls&d=squad+name&player-summary=on">1 Top</a> <a href="tb.html?c=1%20Middle,%201%20Bottom&tb=ls&d=squad+name&player-summary=on">1 Middle, 1 Bottom</a></td><tr><td>1</td><td>1 Top</td><td><b>missions</b> 5 -> 5m</td><tr><td>1</td><td>1 Middle</td><td><b>missions</b> 27 -> 27m</td><tr><td>1</td><td>1 Bottom</td><td><b>missions</b> 31 -> 31m</td><tr><td>1</td><td>1 Top</td><td><b>deploy</b> 80 -> 85m</td><tr><td>1</td><td>1 Middle</td><td><b>deploy</b> 140 -> 167m</td><tr><td>1</td><td>1 Bottom</td><td><b>deploy</b> 30 -> 61m</td><tr><td>1</td><td>&nbsp;</td><td><b>remaining GP:</b> 0 toons, 44 ships<pre id="optimal-1-plan" style="display: none !important;">**phase 1: 1 Top -> 2 :star:**
-**phase 1: 1 Middle -> 2 :star:**
-**phase 1: 1 Bottom HOLD AT ZERO :star:**</pre><pre id="optimal-1-missions" style="display: none !important;">**Fleet CM** Negotiator e.g. Negotiator Anakin's Eta-2, Ahsoka's SF, Umbaran SF, Plo's SF, Clone Sergeant's ARC-170, Rex's ARC-170
-Ajunta Pall Axel Kennedy BBBcube314 buttnuggets Capt Black Gilberdere Left 4 Gaming Addiction Micropterus Salimoidous Mitch MrRevan OpticAlex Sandakin Airstepper Sieana Rayley SirCrazyPhil Valarkale
-
-**Jedi CM** JKL e.g. JKL GMY HYoda Old Ben, Ahsoka Tano (Snips)
-Ajunta Pall Andurian Talz Archer Capt Black CronikdaHemphog Dark Fiberhead IrvingBerlin Jbob1011 MrRevan OpticAlex Sieana Rayley Siegeking SirCrazyPhil SithLordCryo SkyGuy501 Variable
-
-**Jedi CM** JKR e.g. JKR GMY HYoda BS Jolee
-Axel Kennedy BobaKush Micropterus Salimoidous Nimbulus Valarkale
-
-**Jedi CM** JMK Jedi e.g. JMK GAS GMY Aayla QGJ
-Ajunta Pall Capt Black Mitch MrRevan
-
-**Jedi CM** JMLS e.g. JMLS GAS Jolee BS JKR
-jamesCCCC Sieana Rayley SirCrazyPhil SithLordCryo Snorlax
-
-**LS CM** CLS e.g. CLS Han Chewbacca Chewpio C-3PO
-Andurian Talz Anlair Deth Archer BBBcube314 BobaKush buttnuggets Dark Helmet IrvingBerlin Jbob1011 JoeMacFando Micropterus Salimoidous SkyGuy501
-
-**LS CM** Finn e.g. Finn RT RH Finn, RH Poe, Rey
-Axel Kennedy Fiberhead Gilberdere Nimbulus
-
-**LS CM** GAS e.g. GAS Rex Echo (501st), ARC Trooper, Fives
-Dark Valerius
-
-**LS CM** GL Rey e.g. Rey Chewbacca GK RH Poe, RH Finn
-AgentOfChaos Ajunta Pall Capt Black CronikdaHemphog jamesCCCC Kliff Fuser Left 4 Gaming Addiction Mitch MrRevan Sieana Rayley SirCrazyPhil SithLordCryo Snorlax Talyn Un Known
-
-**LS CM** JMK GR e.g. JMK Shaak Ti, Mace Padme R2-D2
-buttnuggets
-
-**LS CM** JTR e.g. JTR BB-8 C-3PO R2-D2 Finn
-Capt Black CronikdaHemphog jamesCCCC Mitch Sieana Rayley SirCrazyPhil SithLordCryo Snorlax
-
-**LS CM** Padme e.g. Padme Ahsoka Tano (Snips), JKA GK Shaak Ti
-Axel Kennedy Micropterus Salimoidous OpticAlex Valarkale Variable
-
-**LS CM** ROLO e.g. ROLO Cpt Solo, Han Chewpio Lando
-Fiberhead Gilberdere MrRevan
-
-**LS CM** Shaak Ti e.g. Shaak Ti, Rex Echo (501st), ARC Trooper, Fives
-Ajunta Pall Archer Fruktoz Left 4 Gaming Addiction
-
-</pre><p><a href="#" onclick="CopyToClipboard('optimal-1-plan'); return false;">Copy Plan</a> | <a href="#" onclick="CopyToClipboard('optimal-1-missions'); return false;">Copy Missions</a></p></td><tr><td>1</td><td>1 Top</td><td>2 &#11088; -- 57 to the next</td><tr><td>1</td><td>1 Middle</td><td>2 &#11088; -- 90 to the next</td><tr><td>1</td><td>1 Bottom</td><td><b>HOLD AT ZERO &#11088;</b></td><tr class="newPhase"><td>2</td><td>&nbsp;</td><td><b>active</b> <a href="tb.html?c=2%20Top&tb=ls&d=squad+name&player-summary=on">2 Top</a> <a href="tb.html?c=2%20Middle,%201%20Bottom&tb=ls&d=squad+name&player-summary=on">1 Bottom, 2 Middle</a></td><tr><td>2</td><td>1 Bottom</td><td><b>missions</b> 46 -> 107m</td><tr><td>2</td><td>2 Top</td><td><b>missions</b> 10 -> 10m</td><tr><td>2</td><td>2 Middle</td><td><b>missions</b> 29 -> 29m</td><tr><td>2</td><td>1 Bottom</td><td><b>deploy</b> 73 -> 180m</td><tr><td>2</td><td>2 Top</td><td><b>deploy</b> 124 -> 134m</td><tr><td>2</td><td>2 Middle</td><td><b>deploy</b> 66 -> 95m</td><tr><td>2</td><td>&nbsp;</td><td><b>remaining GP:</b> 31 toons, 0 ships<pre id="optimal-2-plan" style="display: none !important;">**phase 2: 2 Top -> 2 :star:**
-**phase 2: 2 Middle HOLD AT ZERO :star:**
-**phase 2: 1 Bottom -> 3 :star:**</pre><pre id="optimal-2-missions" style="display: none !important;">**Fleet CM** Negotiator e.g. Negotiator Anakin's Eta-2, Ahsoka's SF, Umbaran SF, Plo's SF, Clone Sergeant's ARC-170, Rex's ARC-170
-Ajunta Pall Axel Kennedy BBBcube314 buttnuggets Capt Black Gilberdere Left 4 Gaming Addiction Micropterus Salimoidous Mitch MrRevan OpticAlex Sandakin Airstepper Sieana Rayley SirCrazyPhil Valarkale
-
-**GAS/Ahsoka** GAS Special e.g. GAS Ahsoka Tano (Snips)
-Ajunta Pall Capt Black Left 4 Gaming Addiction Micropterus Salimoidous Mitch MrRevan OpticAlex Sieana Rayley SirCrazyPhil SithLordCryo SkyGuy501 Valerius
-
-**GR CM** JMK GR e.g. JMK CAT Mace JKA R2-D2
-Ajunta Pall buttnuggets Capt Black Mitch MrRevan
-
-**GR CM** Padme e.g. Padme Ahsoka Tano (Snips), JKA GK Shaak Ti
-Axel Kennedy Gilberdere Micropterus Salimoidous OpticAlex Valarkale Variable
-
-**GR CM** Shaak Ti e.g. Shaak Ti, Rex Echo (501st), ARC Trooper, Fives
-Archer Fruktoz Left 4 Gaming Addiction SithLordCryo
-
-**Jedi CM** JKL e.g. JKL GMY HYoda Old Ben, Ezra
-Ajunta Pall Andurian Talz Archer Capt Black CronikdaHemphog Dark Fiberhead IrvingBerlin Jbob1011 Mitch MrRevan OpticAlex Sieana Rayley Siegeking SirCrazyPhil SithLordCryo SkyGuy501 Variable
-
-**Jedi CM** JKR e.g. JKR GMY HYoda BS Jolee
-Axel Kennedy BobaKush Nimbulus Valarkale
-
-**Jedi CM** JMLS e.g. JMLS JKL HYoda Old Ben, Ezra
-jamesCCCC Snorlax
-
-**LS CM** CLS e.g. CLS Han Chewbacca Chewpio C-3PO
-Andurian Talz Anlair Deth Archer BBBcube314 BobaKush buttnuggets Dark Helmet IrvingBerlin Jbob1011 JoeMacFando Micropterus Salimoidous SkyGuy501
-
-**LS CM** Finn e.g. Finn RT RH Finn, RH Poe, Rey
-Axel Kennedy Fiberhead Gilberdere Nimbulus
-
-**LS CM** GAS e.g. GAS Rex Echo (501st), ARC Trooper, Fives
-Dark
-
-**LS CM** GL Rey e.g. Rey Chewbacca GK RH Poe, RH Finn
-AgentOfChaos Ajunta Pall Capt Black CronikdaHemphog jamesCCCC Kliff Fuser Left 4 Gaming Addiction Mitch MrRevan Sieana Rayley SirCrazyPhil SithLordCryo Snorlax Talyn Un Known
-
-**LS CM** JTR e.g. JTR BB-8 C-3PO R2-D2 Finn
-CronikdaHemphog Left 4 Gaming Addiction Mitch Sieana Rayley SirCrazyPhil SithLordCryo Snorlax
-
-**LS CM** ROLO e.g. ROLO Cpt Solo, Han Chewpio Lando
-Fiberhead Gilberdere MrRevan
-
-</pre><p><a href="#" onclick="CopyToClipboard('optimal-2-plan'); return false;">Copy Plan</a> | <a href="#" onclick="CopyToClipboard('optimal-2-missions'); return false;">Copy Missions</a></p></td><tr><td>2</td><td>2 Top</td><td>2 &#11088; -- 81 to the next</td><tr><td>2</td><td>2 Middle</td><td><b>HOLD AT ZERO &#11088;</b></td><tr><td>2</td><td>1 Bottom</td><td>3 &#11088;</td><tr class="newPhase"><td>3</td><td>&nbsp;</td><td><b>active</b> <a href="tb.html?c=3%20Top&tb=ls&d=squad+name&player-summary=on">3 Top</a> <a href="tb.html?c=2%20Middle,%202%20Bottom&tb=ls&d=squad+name&player-summary=on">2 Middle, 2 Bottom</a></td><tr><td>3</td><td>2 Middle</td><td><b>missions</b> 49 -> 144m</td><tr><td>3</td><td>2 Bottom</td><td><b>missions</b> 24 -> 24m</td><tr><td>3</td><td>3 Top</td><td><b>missions</b> 20 -> 20m</td><tr><td>3</td><td>2 Middle</td><td><b>deploy</b> 30 -> 174m</td><tr><td>3</td><td>2 Bottom</td><td><b>deploy</b> 96 -> 120m</td><tr><td>3</td><td>3 Top</td><td><b>deploy</b> 71 -> 91m</td><tr><td>3</td><td>&nbsp;</td><td><b>remaining GP:</b> 44 toons, 53 ships<pre id="optimal-3-plan" style="display: none !important;">**phase 3: 3 Top HOLD AT ZERO :star:**
-**phase 3: 2 Middle -> 2 :star:**
-**phase 3: 2 Bottom HOLD AT ZERO :star:**</pre><pre id="optimal-3-missions" style="display: none !important;">**Fleet CM** Negotiator e.g. Negotiator Anakin's Eta-2, Ahsoka's SF, Umbaran SF, Plo's SF, Clone Sergeant's ARC-170, Rex's ARC-170
-Ajunta Pall Axel Kennedy BBBcube314 buttnuggets Capt Black Gilberdere Left 4 Gaming Addiction Micropterus Salimoidous Mitch MrRevan OpticAlex Sandakin Airstepper Sieana Rayley SirCrazyPhil Valarkale
-
-**GAS/Ahsoka** GAS Special e.g. GAS Ahsoka Tano (Snips)
-Ajunta Pall Capt Black Left 4 Gaming Addiction Micropterus Salimoidous Mitch MrRevan OpticAlex Sieana Rayley SirCrazyPhil SithLordCryo SkyGuy501 Valerius
-
-**GR CM** JMK GR e.g. JMK CAT Mace JKA R2-D2
-Ajunta Pall buttnuggets Capt Black Mitch MrRevan
-
-**GR CM** Padme e.g. Padme Fives JKA GK R2-D2
-Axel Kennedy Gilberdere Left 4 Gaming Addiction Micropterus Salimoidous Valarkale Variable
-
-**GR CM** Shaak Ti e.g. Shaak Ti, Rex Echo (501st), ARC Trooper, Fives
-Archer Dark Fruktoz SithLordCryo
-
-**Jedi CM** JKL e.g. JKL GMY HYoda Old Ben, Ezra
-Ajunta Pall Andurian Talz Archer Capt Black CronikdaHemphog Dark Fiberhead Mitch MrRevan OpticAlex Sieana Rayley SirCrazyPhil SithLordCryo SkyGuy501 Snorlax Variable
-
-**Jedi CM** JKR e.g. JKR GMY HYoda BS Jolee
-BobaKush Nimbulus Valarkale
-
-**Jedi CM** JMLS e.g. JMLS JKL HYoda Old Ben, Ezra
-IrvingBerlin jamesCCCC
-
-**LS CM** CLS e.g. CLS Han Chewbacca Chewpio C-3PO
-Ajunta Pall Andurian Talz Anlair Deth Archer BBBcube314 BobaKush CronikdaHemphog Dark Helmet IrvingBerlin Jbob1011 JoeMacFando Left 4 Gaming Addiction Micropterus Salimoidous Sieana Rayley SkyGuy501
-
-**LS CM** CLS-Alt e.g. CLS Han Chewbacca Chewpio Old Ben
-buttnuggets
-
-**LS CM** Finn e.g. Finn RT RH Finn, RH Poe, Rey
-Axel Kennedy Fiberhead Gilberdere Nimbulus
-
-**LS CM** GL Rey e.g. Rey Chewbacca GK RH Poe, RH Finn
-AgentOfChaos Capt Black jamesCCCC Kliff Fuser MrRevan SirCrazyPhil SithLordCryo Snorlax Talyn Un Known
-
-**LS CM** JTR e.g. JTR BB-8 C-3PO R2-D2 Finn
-Mitch SirCrazyPhil SithLordCryo Snorlax
-
-**LS CM** ROLO e.g. ROLO Cpt Solo, Han Chewpio Lando
-Fiberhead Gilberdere MrRevan
-
-</pre><p><a href="#" onclick="CopyToClipboard('optimal-3-plan'); return false;">Copy Plan</a> | <a href="#" onclick="CopyToClipboard('optimal-3-missions'); return false;">Copy Missions</a></p></td><tr><td>3</td><td>3 Top</td><td><b>HOLD AT ZERO &#11088;</b></td><tr><td>3</td><td>2 Middle</td><td>2 &#11088; -- 86 to the next</td><tr><td>3</td><td>2 Bottom</td><td><b>HOLD AT ZERO &#11088;</b></td><tr class="newPhase"><td>4</td><td>&nbsp;</td><td><b>active</b> <a href="tb.html?c=3%20Top&tb=ls&d=squad+name&player-summary=on">3 Top</a> <a href="tb.html?c=3%20Middle,%202%20Bottom&tb=ls&d=squad+name&player-summary=on">2 Bottom, 3 Middle</a></td><tr><td>4</td><td>2 Bottom</td><td><b>missions</b> 49 -> 169m</td><tr><td>4</td><td>3 Top</td><td><b>missions</b> 20 -> 111m</td><tr><td>4</td><td>3 Middle</td><td><b>missions</b> 13 -> 13m</td><tr><td>4</td><td>2 Bottom</td><td><b>deploy</b> 141 -> 310m</td><tr><td>4</td><td>3 Top</td><td><b>deploy</b> 106 -> 217m</td><tr><td>4</td><td>3 Middle</td><td><b>deploy</b> 29 -> 42m</td><tr><td>4</td><td>&nbsp;</td><td><b>remaining GP:</b> 0 toons, 18 ships<pre id="optimal-4-plan" style="display: none !important;">**phase 4: 3 Top -> 3 :star:**
-**phase 4: 3 Middle HOLD AT ZERO :star:**
-**phase 4: 2 Bottom -> 3 :star:**</pre><pre id="optimal-4-missions" style="display: none !important;">**Fleet CM** Negotiator e.g. Negotiator Anakin's Eta-2, Ahsoka's SF, Umbaran SF, Plo's SF, Clone Sergeant's ARC-170, Rex's ARC-170
-Ajunta Pall Axel Kennedy BBBcube314 buttnuggets Capt Black Gilberdere Left 4 Gaming Addiction Micropterus Salimoidous Mitch MrRevan OpticAlex Sandakin Airstepper Sieana Rayley SirCrazyPhil Valarkale
-
-**Jedi CM** JKL e.g. JKL GMY HYoda Old Ben, Ezra
-Ajunta Pall Andurian Talz Archer CronikdaHemphog Dark Fiberhead Left 4 Gaming Addiction Mitch MrRevan OpticAlex Sieana Rayley SirCrazyPhil SithLordCryo SkyGuy501 Snorlax Variable
-
-**Jedi CM** JKR e.g. JKR GMY HYoda BS Jolee
-BobaKush Micropterus Salimoidous Nimbulus Valarkale
-
-**Jedi CM** JMK Jedi e.g. JMK GAS GMY Aayla QGJ
-Capt Black
-
-**Jedi CM** JMLS e.g. JMLS JKL HYoda Old Ben, Ezra
-IrvingBerlin jamesCCCC
-
-**LS CM** CLS e.g. CLS Han Chewbacca Chewpio C-3PO
-Ajunta Pall Andurian Talz Anlair Deth Archer BBBcube314 BobaKush buttnuggets CronikdaHemphog Dark Helmet IrvingBerlin Jbob1011 JoeMacFando Left 4 Gaming Addiction Micropterus Salimoidous Sieana Rayley SkyGuy501
-
-**LS CM** Finn e.g. Finn RT RH Finn, RH Poe, Rey
-Axel Kennedy Fiberhead Gilberdere Nimbulus
-
-**LS CM** GAS e.g. GAS Rex Echo (501st), ARC Trooper, Fives
-SithLordCryo Valerius
-
-**LS CM** GL Rey e.g. Rey Chewbacca GK RH Poe, RH Finn
-AgentOfChaos Capt Black jamesCCCC Kliff Fuser Mitch MrRevan SirCrazyPhil SithLordCryo Snorlax Talyn Un Known
-
-**LS CM** JMK GR e.g. JMK CAT Fives Padme R2-D2
-Ajunta Pall buttnuggets Mitch MrRevan
-
-**LS CM** JTR e.g. JTR BB-8 C-3PO R2-D2 Finn
-Capt Black Mitch SirCrazyPhil SithLordCryo Snorlax
-
-**LS CM** Padme e.g. Padme Ahsoka Tano (Snips), JKA GK C-3PO
-Axel Kennedy Gilberdere Valarkale Variable
-
-**LS CM** ROLO e.g. ROLO Cpt Solo, Han Chewpio Lando
-Fiberhead Gilberdere MrRevan
-
-**LS CM** Shaak Ti e.g. Shaak Ti, Rex Echo (501st), ARC Trooper, Fives
-Archer Dark Fruktoz Left 4 Gaming Addiction
-
-</pre><p><a href="#" onclick="CopyToClipboard('optimal-4-plan'); return false;">Copy Plan</a> | <a href="#" onclick="CopyToClipboard('optimal-4-missions'); return false;">Copy Missions</a></p></td><tr><td>4</td><td>3 Top</td><td>3 &#11088;</td><tr><td>4</td><td>3 Middle</td><td><b>HOLD AT ZERO &#11088;</b></td><tr><td>4</td><td>2 Bottom</td><td>3 &#11088;</td></tbody>
-</table>
-<br/>
-<br/><textarea id="discordoptimal" style="display:none" rows="8" cols="40">
-**Estimated 17 :star:**
-
-**phase 1: active** 1 Top, 1 Middle, 1 Bottom
-phase 1: **missions** 1 Top 5 -> 5m
-phase 1: **missions** 1 Middle 27 -> 27m
-phase 1: **missions** 1 Bottom 31 -> 31m
-phase 1: **deploy** 1 Top 80 -> 85m
-phase 1: **deploy** 1 Middle 140 -> 167m
-phase 1: **deploy** 1 Bottom 30 -> 61m
-phase 1: remaining GP = 0 toons, 44 ships
-details: https://gorgatron1.github.io/brg/guild/guardians/tb.html%3Fc=1%2520Middle,%25201%2520Bottom&tb=ls&d=squad+name&player-summary=on
-**phase 1: 1 Top -> 2 :star:**
-**phase 1: 1 Middle -> 2 :star:**
-**phase 1: 1 Bottom HOLD AT ZERO :star:**
-
-**phase 2: active** 1 Bottom, 2 Top, 2 Middle
-phase 2: **missions** 1 Bottom 46 -> 107m
-phase 2: **missions** 2 Top 10 -> 10m
-phase 2: **missions** 2 Middle 29 -> 29m
-phase 2: **deploy** 1 Bottom 73 -> 180m
-phase 2: **deploy** 2 Top 124 -> 134m
-phase 2: **deploy** 2 Middle 66 -> 95m
-phase 2: remaining GP = 31 toons, 0 ships
-details: https://gorgatron1.github.io/brg/guild/guardians/tb.html%3Fc=2%2520Middle,%25201%2520Bottom&tb=ls&d=squad+name&player-summary=on
-**phase 2: 2 Top -> 2 :star:**
-**phase 2: 2 Middle HOLD AT ZERO :star:**
-**phase 2: 1 Bottom -> 3 :star:**
-
-**phase 3: active** 2 Middle, 2 Bottom, 3 Top
-phase 3: **missions** 2 Middle 49 -> 144m
-phase 3: **missions** 2 Bottom 24 -> 24m
-phase 3: **missions** 3 Top 20 -> 20m
-phase 3: **deploy** 2 Middle 30 -> 174m
-phase 3: **deploy** 2 Bottom 96 -> 120m
-phase 3: **deploy** 3 Top 71 -> 91m
-phase 3: remaining GP = 44 toons, 53 ships
-details: https://gorgatron1.github.io/brg/guild/guardians/tb.html%3Fc=2%2520Middle,%25202%2520Bottom&tb=ls&d=squad+name&player-summary=on
-**phase 3: 3 Top HOLD AT ZERO :star:**
-**phase 3: 2 Middle -> 2 :star:**
-**phase 3: 2 Bottom HOLD AT ZERO :star:**
-
-**phase 4: active** 2 Bottom, 3 Top, 3 Middle
-phase 4: **missions** 2 Bottom 49 -> 169m
-phase 4: **missions** 3 Top 20 -> 111m
-phase 4: **missions** 3 Middle 13 -> 13m
-phase 4: **deploy** 2 Bottom 141 -> 310m
-phase 4: **deploy** 3 Top 106 -> 217m
-phase 4: **deploy** 3 Middle 29 -> 42m
-phase 4: remaining GP = 0 toons, 18 ships
-details: https://gorgatron1.github.io/brg/guild/guardians/tb.html%3Fc=3%2520Middle,%25202%2520Bottom&tb=ls&d=squad+name&player-summary=on
-**phase 4: 3 Top -> 3 :star:**
-**phase 4: 3 Middle HOLD AT ZERO :star:**
-**phase 4: 2 Bottom -> 3 :star:**
-
-</textarea>
-<button onclick="copyText('discordoptimal')">Copy For Discord</button></div><div class="column"><h2>Decreasing Estimated: 16 &#11088;</h2>
-<br/>
-<table style="margin: 10px">
-<thead>
-    <tr>
-    <th>Phase</th>
-    <th>Section</th>
-    <th>Action</th>
-    </tr>
-</thead>
-<tbody><tr class="newPhase"><td>1</td><td>&nbsp;</td><td><b>active</b> <a href="tb.html?c=1%20Top&tb=ls&d=squad+name&player-summary=on">1 Top</a> <a href="tb.html?c=1%20Middle,%201%20Bottom&tb=ls&d=squad+name&player-summary=on">1 Middle, 1 Bottom</a></td><tr><td>1</td><td>1 Top</td><td><b>missions</b> 5 -> 5m</td><tr><td>1</td><td>1 Middle</td><td><b>missions</b> 27 -> 27m</td><tr><td>1</td><td>1 Bottom</td><td><b>missions</b> 31 -> 31m</td><tr><td>1</td><td>1 Top</td><td><b>deploy</b> 80 -> 85m</td><tr><td>1</td><td>1 Middle</td><td><b>deploy</b> 140 -> 167m</td><tr><td>1</td><td>1 Bottom</td><td><b>deploy</b> 30 -> 61m</td><tr><td>1</td><td>&nbsp;</td><td><b>remaining GP:</b> 0 toons, 44 ships<pre id="decreasing-1-plan" style="display: none !important;">**phase 1: 1 Top -> 2 :star:**
-**phase 1: 1 Middle -> 2 :star:**
-**phase 1: 1 Bottom HOLD AT ZERO :star:**</pre><pre id="decreasing-1-missions" style="display: none !important;">**Fleet CM** Negotiator e.g. Negotiator Anakin's Eta-2, Ahsoka's SF, Umbaran SF, Plo's SF, Clone Sergeant's ARC-170, Rex's ARC-170
-Ajunta Pall Axel Kennedy BBBcube314 buttnuggets Capt Black Gilberdere Left 4 Gaming Addiction Micropterus Salimoidous Mitch MrRevan OpticAlex Sandakin Airstepper Sieana Rayley SirCrazyPhil Valarkale
-
-**Jedi CM** JKL e.g. JKL GMY HYoda Old Ben, Ahsoka Tano (Snips)
-Ajunta Pall Andurian Talz Archer Capt Black CronikdaHemphog Dark Fiberhead IrvingBerlin Jbob1011 MrRevan OpticAlex Sieana Rayley Siegeking SirCrazyPhil SithLordCryo SkyGuy501 Variable
-
-**Jedi CM** JKR e.g. JKR GMY HYoda BS Jolee
-Axel Kennedy BobaKush Micropterus Salimoidous Nimbulus Valarkale
-
-**Jedi CM** JMK Jedi e.g. JMK GAS GMY Aayla QGJ
-Ajunta Pall Capt Black Mitch MrRevan
-
-**Jedi CM** JMLS e.g. JMLS GAS Jolee BS JKR
-jamesCCCC Sieana Rayley SirCrazyPhil SithLordCryo Snorlax
-
-**LS CM** CLS e.g. CLS Han Chewbacca Chewpio C-3PO
-Andurian Talz Anlair Deth Archer BBBcube314 BobaKush buttnuggets Dark Helmet IrvingBerlin Jbob1011 JoeMacFando Micropterus Salimoidous SkyGuy501
-
-**LS CM** Finn e.g. Finn RT RH Finn, RH Poe, Rey
-Axel Kennedy Fiberhead Gilberdere Nimbulus
-
-**LS CM** GAS e.g. GAS Rex Echo (501st), ARC Trooper, Fives
-Dark Valerius
-
-**LS CM** GL Rey e.g. Rey Chewbacca GK RH Poe, RH Finn
-AgentOfChaos Ajunta Pall Capt Black CronikdaHemphog jamesCCCC Kliff Fuser Left 4 Gaming Addiction Mitch MrRevan Sieana Rayley SirCrazyPhil SithLordCryo Snorlax Talyn Un Known
-
-**LS CM** JMK GR e.g. JMK Shaak Ti, Mace Padme R2-D2
-buttnuggets
-
-**LS CM** JTR e.g. JTR BB-8 C-3PO R2-D2 Finn
-Capt Black CronikdaHemphog jamesCCCC Mitch Sieana Rayley SirCrazyPhil SithLordCryo Snorlax
-
-**LS CM** Padme e.g. Padme Ahsoka Tano (Snips), JKA GK Shaak Ti
-Axel Kennedy Micropterus Salimoidous OpticAlex Valarkale Variable
-
-**LS CM** ROLO e.g. ROLO Cpt Solo, Han Chewpio Lando
-Fiberhead Gilberdere MrRevan
-
-**LS CM** Shaak Ti e.g. Shaak Ti, Rex Echo (501st), ARC Trooper, Fives
-Ajunta Pall Archer Fruktoz Left 4 Gaming Addiction
-
-</pre><p><a href="#" onclick="CopyToClipboard('decreasing-1-plan'); return false;">Copy Plan</a> | <a href="#" onclick="CopyToClipboard('decreasing-1-missions'); return false;">Copy Missions</a></p></td><tr><td>1</td><td>1 Top</td><td>2 &#11088; -- 57 to the next</td><tr><td>1</td><td>1 Middle</td><td>2 &#11088; -- 90 to the next</td><tr><td>1</td><td>1 Bottom</td><td><b>HOLD AT ZERO &#11088;</b></td><tr class="newPhase"><td>2</td><td>&nbsp;</td><td><b>active</b> <a href="tb.html?c=2%20Top&tb=ls&d=squad+name&player-summary=on">2 Top</a> <a href="tb.html?c=2%20Middle,%201%20Bottom&tb=ls&d=squad+name&player-summary=on">1 Bottom, 2 Middle</a></td><tr><td>2</td><td>1 Bottom</td><td><b>missions</b> 46 -> 107m</td><tr><td>2</td><td>2 Top</td><td><b>missions</b> 9 -> 9m</td><tr><td>2</td><td>2 Middle</td><td><b>missions</b> 28 -> 28m</td><tr><td>2</td><td>1 Bottom</td><td><b>deploy</b> 73 -> 180m</td><tr><td>2</td><td>2 Top</td><td><b>deploy</b> 62 -> 71m</td><tr><td>2</td><td>2 Middle</td><td><b>deploy</b> 67 -> 95m</td><tr><td>2</td><td>&nbsp;</td><td><b>remaining GP:</b> 23 toons, 57 ships<pre id="decreasing-2-plan" style="display: none !important;">**phase 2: 2 Top -> 1 :star:**
-**phase 2: 2 Middle HOLD AT ZERO :star:**
-**phase 2: 1 Bottom -> 3 :star:**</pre><pre id="decreasing-2-missions" style="display: none !important;">**Fleet CM** Negotiator e.g. Negotiator Anakin's Eta-2, Ahsoka's SF, Umbaran SF, Plo's SF, Clone Sergeant's ARC-170, Rex's ARC-170
-Ajunta Pall Axel Kennedy BBBcube314 buttnuggets Capt Black Gilberdere Left 4 Gaming Addiction Micropterus Salimoidous Mitch MrRevan OpticAlex Sandakin Airstepper Sieana Rayley SirCrazyPhil Valarkale
-
-**GAS/Ahsoka** GAS Special e.g. GAS Ahsoka Tano (Snips)
-Ajunta Pall Capt Black Left 4 Gaming Addiction Micropterus Salimoidous Mitch MrRevan OpticAlex Sieana Rayley SirCrazyPhil SithLordCryo SkyGuy501 Valerius
-
-**GR CM** JMK GR e.g. JMK CAT Mace JKA R2-D2
-Ajunta Pall buttnuggets Capt Black Mitch MrRevan
-
-**GR CM** Padme e.g. Padme Ahsoka Tano (Snips), JKA GK Shaak Ti
-Axel Kennedy Gilberdere Micropterus Salimoidous OpticAlex Valarkale Variable
-
-**GR CM** Shaak Ti e.g. Shaak Ti, Rex Echo (501st), ARC Trooper, Fives
-Archer Fruktoz Left 4 Gaming Addiction SithLordCryo
-
-**Jedi CM** JKL e.g. JKL GMY HYoda Old Ben, Ezra
-Ajunta Pall Andurian Talz Archer Capt Black CronikdaHemphog Dark Fiberhead IrvingBerlin Jbob1011 Mitch MrRevan OpticAlex Sieana Rayley Siegeking SirCrazyPhil SithLordCryo SkyGuy501 Variable
-
-**Jedi CM** JKR e.g. JKR GMY HYoda BS Jolee
-Axel Kennedy BobaKush Nimbulus Valarkale
-
-**Jedi CM** JMLS e.g. JMLS JKL HYoda Old Ben, Ezra
-jamesCCCC Snorlax
-
-**LS CM** CLS e.g. CLS Han Chewbacca Chewpio C-3PO
-Andurian Talz Anlair Deth Archer BBBcube314 BobaKush buttnuggets Dark Helmet IrvingBerlin Jbob1011 JoeMacFando Micropterus Salimoidous SkyGuy501
-
-**LS CM** Finn e.g. Finn RT RH Finn, RH Poe, Rey
-Axel Kennedy Fiberhead Gilberdere Nimbulus
-
-**LS CM** GAS e.g. GAS Rex Echo (501st), ARC Trooper, Fives
-Dark
-
-**LS CM** GL Rey e.g. Rey Chewbacca GK RH Poe, RH Finn
-AgentOfChaos Ajunta Pall Capt Black CronikdaHemphog jamesCCCC Kliff Fuser Left 4 Gaming Addiction Mitch MrRevan Sieana Rayley SirCrazyPhil SithLordCryo Snorlax Talyn Un Known
-
-**LS CM** JTR e.g. JTR BB-8 C-3PO R2-D2 Finn
-CronikdaHemphog Left 4 Gaming Addiction Mitch Sieana Rayley SirCrazyPhil SithLordCryo Snorlax
-
-**LS CM** ROLO e.g. ROLO Cpt Solo, Han Chewpio Lando
-Fiberhead Gilberdere MrRevan
-
-</pre><p><a href="#" onclick="CopyToClipboard('decreasing-2-plan'); return false;">Copy Plan</a> | <a href="#" onclick="CopyToClipboard('decreasing-2-missions'); return false;">Copy Missions</a></p></td><tr><td>2</td><td>2 Top</td><td>1 &#11088; -- 63 to the next</td><tr><td>2</td><td>2 Middle</td><td><b>HOLD AT ZERO &#11088;</b></td><tr><td>2</td><td>1 Bottom</td><td>3 &#11088;</td><tr class="newPhase"><td>3</td><td>&nbsp;</td><td><b>active</b> <a href="tb.html?c=3%20Top&tb=ls&d=squad+name&player-summary=on">3 Top</a> <a href="tb.html?c=2%20Middle,%202%20Bottom&tb=ls&d=squad+name&player-summary=on">2 Middle, 2 Bottom</a></td><tr><td>3</td><td>2 Middle</td><td><b>missions</b> 47 -> 142m</td><tr><td>3</td><td>2 Bottom</td><td><b>missions</b> 23 -> 23m</td><tr><td>3</td><td>3 Top</td><td><b>missions</b> 18 -> 18m</td><tr><td>3</td><td>2 Middle</td><td><b>deploy</b> 32 -> 174m</td><tr><td>3</td><td>2 Bottom</td><td><b>deploy</b> 97 -> 120m</td><tr><td>3</td><td>3 Top</td><td><b>deploy</b> 73 -> 91m</td><tr><td>3</td><td>&nbsp;</td><td><b>remaining GP:</b> 27 toons, 41 ships<pre id="decreasing-3-plan" style="display: none !important;">**phase 3: 3 Top HOLD AT ZERO :star:**
-**phase 3: 2 Middle -> 2 :star:**
-**phase 3: 2 Bottom HOLD AT ZERO :star:**</pre><pre id="decreasing-3-missions" style="display: none !important;">**Fleet CM** Negotiator e.g. Negotiator Anakin's Eta-2, Ahsoka's SF, Umbaran SF, Plo's SF, Clone Sergeant's ARC-170, Rex's ARC-170
-Ajunta Pall Axel Kennedy BBBcube314 buttnuggets Capt Black Gilberdere Left 4 Gaming Addiction Micropterus Salimoidous Mitch MrRevan OpticAlex Sandakin Airstepper Sieana Rayley SirCrazyPhil Valarkale
-
-**GAS/Ahsoka** GAS Special e.g. GAS Ahsoka Tano (Snips)
-Ajunta Pall Capt Black Left 4 Gaming Addiction Micropterus Salimoidous Mitch MrRevan OpticAlex Sieana Rayley SirCrazyPhil SithLordCryo SkyGuy501 Valerius
-
-**GR CM** JMK GR e.g. JMK CAT Mace JKA R2-D2
-Ajunta Pall buttnuggets Capt Black Mitch MrRevan
-
-**GR CM** Padme e.g. Padme Fives JKA GK R2-D2
-Axel Kennedy Gilberdere Left 4 Gaming Addiction Micropterus Salimoidous Valarkale Variable
-
-**GR CM** Shaak Ti e.g. Shaak Ti, Rex Echo (501st), ARC Trooper, Fives
-Archer Dark Fruktoz SithLordCryo
-
-**Jedi CM** JKL e.g. JKL GMY HYoda Old Ben, Ezra
-Ajunta Pall Andurian Talz Archer Capt Black CronikdaHemphog Dark Fiberhead Mitch MrRevan OpticAlex Sieana Rayley SirCrazyPhil SithLordCryo SkyGuy501 Snorlax Variable
-
-**Jedi CM** JKR e.g. JKR GMY HYoda BS Jolee
-BobaKush Nimbulus Valarkale
-
-**Jedi CM** JMLS e.g. JMLS JKL HYoda Old Ben, Ezra
-IrvingBerlin jamesCCCC
-
-**LS CM** CLS e.g. CLS Han Chewbacca Chewpio C-3PO
-Ajunta Pall Andurian Talz Anlair Deth Archer BBBcube314 BobaKush CronikdaHemphog Dark Helmet IrvingBerlin Jbob1011 JoeMacFando Left 4 Gaming Addiction Micropterus Salimoidous Sieana Rayley SkyGuy501
-
-**LS CM** CLS-Alt e.g. CLS Han Chewbacca Chewpio Old Ben
-buttnuggets
-
-**LS CM** Finn e.g. Finn RT RH Finn, RH Poe, Rey
-Axel Kennedy Fiberhead Gilberdere Nimbulus
-
-**LS CM** GL Rey e.g. Rey Chewbacca GK RH Poe, RH Finn
-AgentOfChaos Capt Black jamesCCCC Kliff Fuser MrRevan SirCrazyPhil SithLordCryo Snorlax Talyn Un Known
-
-**LS CM** JTR e.g. JTR BB-8 C-3PO R2-D2 Finn
-Mitch SirCrazyPhil SithLordCryo Snorlax
-
-**LS CM** ROLO e.g. ROLO Cpt Solo, Han Chewpio Lando
-Fiberhead Gilberdere MrRevan
-
-</pre><p><a href="#" onclick="CopyToClipboard('decreasing-3-plan'); return false;">Copy Plan</a> | <a href="#" onclick="CopyToClipboard('decreasing-3-missions'); return false;">Copy Missions</a></p></td><tr><td>3</td><td>3 Top</td><td><b>HOLD AT ZERO &#11088;</b></td><tr><td>3</td><td>2 Middle</td><td>2 &#11088; -- 86 to the next</td><tr><td>3</td><td>2 Bottom</td><td><b>HOLD AT ZERO &#11088;</b></td><tr class="newPhase"><td>4</td><td>&nbsp;</td><td><b>active</b> <a href="tb.html?c=3%20Top&tb=ls&d=squad+name&player-summary=on">3 Top</a> <a href="tb.html?c=3%20Middle,%202%20Bottom&tb=ls&d=squad+name&player-summary=on">2 Bottom, 3 Middle</a></td><tr><td>4</td><td>2 Bottom</td><td><b>missions</b> 47 -> 167m</td><tr><td>4</td><td>3 Top</td><td><b>missions</b> 18 -> 109m</td><tr><td>4</td><td>3 Middle</td><td><b>missions</b> 12 -> 12m</td><tr><td>4</td><td>2 Bottom</td><td><b>deploy</b> 143 -> 310m</td><tr><td>4</td><td>3 Top</td><td><b>deploy</b> 108 -> 217m</td><tr><td>4</td><td>3 Middle</td><td><b>deploy</b> 6 -> 18m</td><tr><td>4</td><td>&nbsp;</td><td><b>remaining GP:</b> 0 toons, 1 ships<pre id="decreasing-4-plan" style="display: none !important;">**phase 4: 3 Top -> 3 :star:**
-**phase 4: 3 Middle HOLD AT ZERO :star:**
-**phase 4: 2 Bottom -> 3 :star:**</pre><pre id="decreasing-4-missions" style="display: none !important;">**Fleet CM** Negotiator e.g. Negotiator Anakin's Eta-2, Ahsoka's SF, Umbaran SF, Plo's SF, Clone Sergeant's ARC-170, Rex's ARC-170
-Ajunta Pall Axel Kennedy BBBcube314 buttnuggets Capt Black Gilberdere Left 4 Gaming Addiction Micropterus Salimoidous Mitch MrRevan OpticAlex Sandakin Airstepper Sieana Rayley SirCrazyPhil Valarkale
-
-**Jedi CM** JKL e.g. JKL GMY HYoda Old Ben, Ezra
-Ajunta Pall Andurian Talz Archer CronikdaHemphog Dark Fiberhead Left 4 Gaming Addiction Mitch MrRevan OpticAlex Sieana Rayley SirCrazyPhil SithLordCryo SkyGuy501 Snorlax Variable
-
-**Jedi CM** JKR e.g. JKR GMY HYoda BS Jolee
-BobaKush Micropterus Salimoidous Nimbulus Valarkale
-
-**Jedi CM** JMK Jedi e.g. JMK GAS GMY Aayla QGJ
-Capt Black
-
-**Jedi CM** JMLS e.g. JMLS JKL HYoda Old Ben, Ezra
-IrvingBerlin jamesCCCC
-
-**LS CM** CLS e.g. CLS Han Chewbacca Chewpio C-3PO
-Ajunta Pall Andurian Talz Anlair Deth Archer BBBcube314 BobaKush buttnuggets CronikdaHemphog Dark Helmet IrvingBerlin Jbob1011 JoeMacFando Left 4 Gaming Addiction Micropterus Salimoidous Sieana Rayley SkyGuy501
-
-**LS CM** Finn e.g. Finn RT RH Finn, RH Poe, Rey
-Axel Kennedy Fiberhead Gilberdere Nimbulus
-
-**LS CM** GAS e.g. GAS Rex Echo (501st), ARC Trooper, Fives
-SithLordCryo Valerius
-
-**LS CM** GL Rey e.g. Rey Chewbacca GK RH Poe, RH Finn
-AgentOfChaos Capt Black jamesCCCC Kliff Fuser Mitch MrRevan SirCrazyPhil SithLordCryo Snorlax Talyn Un Known
-
-**LS CM** JMK GR e.g. JMK CAT Fives Padme R2-D2
-Ajunta Pall buttnuggets Mitch MrRevan
-
-**LS CM** JTR e.g. JTR BB-8 C-3PO R2-D2 Finn
-Capt Black Mitch SirCrazyPhil SithLordCryo Snorlax
-
-**LS CM** Padme e.g. Padme Ahsoka Tano (Snips), JKA GK C-3PO
-Axel Kennedy Gilberdere Valarkale Variable
-
-**LS CM** ROLO e.g. ROLO Cpt Solo, Han Chewpio Lando
-Fiberhead Gilberdere MrRevan
-
-**LS CM** Shaak Ti e.g. Shaak Ti, Rex Echo (501st), ARC Trooper, Fives
-Archer Dark Fruktoz Left 4 Gaming Addiction
-
-</pre><p><a href="#" onclick="CopyToClipboard('decreasing-4-plan'); return false;">Copy Plan</a> | <a href="#" onclick="CopyToClipboard('decreasing-4-missions'); return false;">Copy Missions</a></p></td><tr><td>4</td><td>3 Top</td><td>3 &#11088;</td><tr><td>4</td><td>3 Middle</td><td><b>HOLD AT ZERO &#11088;</b></td><tr><td>4</td><td>2 Bottom</td><td>3 &#11088;</td></tbody>
-</table>
-<br/>
-<br/><textarea id="discorddecreasing" style="display:none" rows="8" cols="40">
-**Estimated 16 :star:**
-
-**phase 1: active** 1 Top, 1 Middle, 1 Bottom
-phase 1: **missions** 1 Top 5 -> 5m
-phase 1: **missions** 1 Middle 27 -> 27m
-phase 1: **missions** 1 Bottom 31 -> 31m
-phase 1: **deploy** 1 Top 80 -> 85m
-phase 1: **deploy** 1 Middle 140 -> 167m
-phase 1: **deploy** 1 Bottom 30 -> 61m
-phase 1: remaining GP = 0 toons, 44 ships
-details: https://gorgatron1.github.io/brg/guild/guardians/tb.html%3Fc=1%2520Middle,%25201%2520Bottom&tb=ls&d=squad+name&player-summary=on
-**phase 1: 1 Top -> 2 :star:**
-**phase 1: 1 Middle -> 2 :star:**
-**phase 1: 1 Bottom HOLD AT ZERO :star:**
-
-**phase 2: active** 1 Bottom, 2 Top, 2 Middle
-phase 2: **missions** 1 Bottom 46 -> 107m
-phase 2: **missions** 2 Top 9 -> 9m
-phase 2: **missions** 2 Middle 28 -> 28m
-phase 2: **deploy** 1 Bottom 73 -> 180m
-phase 2: **deploy** 2 Top 62 -> 71m
-phase 2: **deploy** 2 Middle 67 -> 95m
-phase 2: remaining GP = 23 toons, 57 ships
-details: https://gorgatron1.github.io/brg/guild/guardians/tb.html%3Fc=2%2520Middle,%25201%2520Bottom&tb=ls&d=squad+name&player-summary=on
-**phase 2: 2 Top -> 1 :star:**
-**phase 2: 2 Middle HOLD AT ZERO :star:**
-**phase 2: 1 Bottom -> 3 :star:**
-
-**phase 3: active** 2 Middle, 2 Bottom, 3 Top
-phase 3: **missions** 2 Middle 47 -> 142m
-phase 3: **missions** 2 Bottom 23 -> 23m
-phase 3: **missions** 3 Top 18 -> 18m
-phase 3: **deploy** 2 Middle 32 -> 174m
-phase 3: **deploy** 2 Bottom 97 -> 120m
-phase 3: **deploy** 3 Top 73 -> 91m
-phase 3: remaining GP = 27 toons, 41 ships
-details: https://gorgatron1.github.io/brg/guild/guardians/tb.html%3Fc=2%2520Middle,%25202%2520Bottom&tb=ls&d=squad+name&player-summary=on
-**phase 3: 3 Top HOLD AT ZERO :star:**
-**phase 3: 2 Middle -> 2 :star:**
-**phase 3: 2 Bottom HOLD AT ZERO :star:**
-
-**phase 4: active** 2 Bottom, 3 Top, 3 Middle
-phase 4: **missions** 2 Bottom 47 -> 167m
-phase 4: **missions** 3 Top 18 -> 109m
-phase 4: **missions** 3 Middle 12 -> 12m
-phase 4: **deploy** 2 Bottom 143 -> 310m
-phase 4: **deploy** 3 Top 108 -> 217m
-phase 4: **deploy** 3 Middle 6 -> 18m
-phase 4: remaining GP = 0 toons, 1 ships
-details: https://gorgatron1.github.io/brg/guild/guardians/tb.html%3Fc=3%2520Middle,%25202%2520Bottom&tb=ls&d=squad+name&player-summary=on
-**phase 4: 3 Top -> 3 :star:**
-**phase 4: 3 Middle HOLD AT ZERO :star:**
-**phase 4: 2 Bottom -> 3 :star:**
-
-</textarea>
-<button onclick="copyText('discorddecreasing')">Copy For Discord</button></div><div class="column"><h2>KAM Shards Estimated: 15 &#11088;</h2>
-<br/>
-<table style="margin: 10px">
-<thead>
-    <tr>
-    <th>Phase</th>
-    <th>Section</th>
-    <th>Action</th>
-    </tr>
-</thead>
-<tbody><tr class="newPhase"><td>1</td><td>&nbsp;</td><td><b>active</b> <a href="tb.html?c=1%20Top&tb=ls&d=squad+name&player-summary=on">1 Top</a> <a href="tb.html?c=1%20Middle,%201%20Bottom&tb=ls&d=squad+name&player-summary=on">1 Middle, 1 Bottom</a></td><tr><td>1</td><td>1 Top</td><td><b>missions</b> 5 -> 5m</td><tr><td>1</td><td>1 Middle</td><td><b>missions</b> 27 -> 27m</td><tr><td>1</td><td>1 Bottom</td><td><b>missions</b> 31 -> 31m</td><tr><td>1</td><td>1 Top</td><td><b>deploy</b> 80 -> 85m</td><tr><td>1</td><td>1 Middle</td><td><b>deploy</b> 82 -> 109m</td><tr><td>1</td><td>1 Bottom</td><td><b>deploy</b> 54 -> 85m</td><tr><td>1</td><td>&nbsp;</td><td><b>remaining GP:</b> 34 toons, 44 ships<pre id="kam-1-plan" style="display: none !important;">**phase 1: 1 Top -> 2 :star:**
+<tbody><tr class="newPhase"><td>1</td><td>&nbsp;</td><td><b>active</b> <a href="tb.html?c=1%20Top&tb=ls&d=squad+name&player-summary=on">1 Top</a> <a href="tb.html?c=1%20Middle,%201%20Bottom&tb=ls&d=squad+name&player-summary=on">1 Middle, 1 Bottom</a></td><tr><td>1</td><td>1 Top</td><td><b>missions</b> 8 -> 8m</td><tr><td>1</td><td>1 Middle</td><td><b>missions</b> 36 -> 36m</td><tr><td>1</td><td>1 Bottom</td><td><b>missions</b> 39 -> 39m</td><tr><td>1</td><td>1 Top</td><td><b>deploy</b> 134 -> 142m</td><tr><td>1</td><td>1 Middle</td><td><b>deploy</b> 73 -> 109m</td><tr><td>1</td><td>1 Bottom</td><td><b>deploy</b> 81 -> 120m</td><tr><td>1</td><td>&nbsp;</td><td><b>remaining GP:</b> 42 toons, 4 ships<pre id="optimal-1-plan" style="display: none !important;">**phase 1: 1 Top -> 3 :star:**
 **phase 1: 1 Middle HOLD AT ZERO :star:**
-**phase 1: 1 Bottom HOLD AT ZERO :star:**</pre><pre id="kam-1-missions" style="display: none !important;">**Fleet CM** Negotiator e.g. Negotiator Anakin's Eta-2, Ahsoka's SF, Umbaran SF, Plo's SF, Clone Sergeant's ARC-170, Rex's ARC-170
-Ajunta Pall Axel Kennedy BBBcube314 buttnuggets Capt Black Gilberdere Left 4 Gaming Addiction Micropterus Salimoidous Mitch MrRevan OpticAlex Sandakin Airstepper Sieana Rayley SirCrazyPhil Valarkale
-
-**Jedi CM** JKL e.g. JKL GMY HYoda Old Ben, Ahsoka Tano (Snips)
-Ajunta Pall Andurian Talz Archer Capt Black CronikdaHemphog Dark Fiberhead IrvingBerlin Jbob1011 MrRevan OpticAlex Sieana Rayley Siegeking SirCrazyPhil SithLordCryo SkyGuy501 Variable
-
-**Jedi CM** JKR e.g. JKR GMY HYoda BS Jolee
-Axel Kennedy BobaKush Micropterus Salimoidous Nimbulus Valarkale
-
-**Jedi CM** JMK Jedi e.g. JMK GAS GMY Aayla QGJ
-Ajunta Pall Capt Black Mitch MrRevan
-
-**Jedi CM** JMLS e.g. JMLS GAS Jolee BS JKR
-jamesCCCC Sieana Rayley SirCrazyPhil SithLordCryo Snorlax
-
-**LS CM** CLS e.g. CLS Han Chewbacca Chewpio C-3PO
-Andurian Talz Anlair Deth Archer BBBcube314 BobaKush buttnuggets Dark Helmet IrvingBerlin Jbob1011 JoeMacFando Micropterus Salimoidous SkyGuy501
-
-**LS CM** Finn e.g. Finn RT RH Finn, RH Poe, Rey
-Axel Kennedy Fiberhead Gilberdere Nimbulus
-
-**LS CM** GAS e.g. GAS Rex Echo (501st), ARC Trooper, Fives
-Dark Valerius
-
-**LS CM** GL Rey e.g. Rey Chewbacca GK RH Poe, RH Finn
-AgentOfChaos Ajunta Pall Capt Black CronikdaHemphog jamesCCCC Kliff Fuser Left 4 Gaming Addiction Mitch MrRevan Sieana Rayley SirCrazyPhil SithLordCryo Snorlax Talyn Un Known
-
-**LS CM** JMK GR e.g. JMK Shaak Ti, Mace Padme R2-D2
-buttnuggets
-
-**LS CM** JTR e.g. JTR BB-8 C-3PO R2-D2 Finn
-Capt Black CronikdaHemphog jamesCCCC Mitch Sieana Rayley SirCrazyPhil SithLordCryo Snorlax
-
-**LS CM** Padme e.g. Padme Ahsoka Tano (Snips), JKA GK Shaak Ti
-Axel Kennedy Micropterus Salimoidous OpticAlex Valarkale Variable
-
-**LS CM** ROLO e.g. ROLO Cpt Solo, Han Chewpio Lando
-Fiberhead Gilberdere MrRevan
-
-**LS CM** Shaak Ti e.g. Shaak Ti, Rex Echo (501st), ARC Trooper, Fives
-Ajunta Pall Archer Fruktoz Left 4 Gaming Addiction
-
-</pre><p><a href="#" onclick="CopyToClipboard('kam-1-plan'); return false;">Copy Plan</a> | <a href="#" onclick="CopyToClipboard('kam-1-missions'); return false;">Copy Missions</a></p></td><tr><td>1</td><td>1 Top</td><td>2 &#11088; -- 57 to the next</td><tr><td>1</td><td>1 Middle</td><td><b>HOLD AT ZERO &#11088;</b></td><tr><td>1</td><td>1 Bottom</td><td><b>HOLD AT ZERO &#11088;</b></td><tr class="newPhase"><td>2</td><td>&nbsp;</td><td><b>active</b> <a href="tb.html?c=2%20Top&tb=ls&d=squad+name&player-summary=on">2 Top</a> <a href="tb.html?c=1%20Middle,%201%20Bottom&tb=ls&d=squad+name&player-summary=on">1 Middle, 1 Bottom</a></td><tr><td>2</td><td>1 Middle</td><td><b>missions</b> 27 -> 136m</td><tr><td>2</td><td>1 Bottom</td><td><b>missions</b> 31 -> 116m</td><tr><td>2</td><td>2 Top</td><td><b>missions</b> 9 -> 9m</td><tr><td>2</td><td>1 Middle</td><td><b>deploy</b> 121 -> 257m</td><tr><td>2</td><td>1 Bottom</td><td><b>deploy</b> 4 -> 120m</td><tr><td>2</td><td>2 Top</td><td><b>deploy</b> 62 -> 71m</td><tr><td>2</td><td>&nbsp;</td><td><b>remaining GP:</b> 38 toons, 57 ships<pre id="kam-2-plan" style="display: none !important;">**phase 2: 2 Top -> 1 :star:**
-**phase 2: 1 Middle -> 3 :star:**
-**phase 2: 1 Bottom -> 2 :star:**</pre><pre id="kam-2-missions" style="display: none !important;">**Fleet CM** Negotiator e.g. Negotiator Anakin's Eta-2, Ahsoka's SF, Umbaran SF, Plo's SF, Clone Sergeant's ARC-170, Rex's ARC-170
-Ajunta Pall Axel Kennedy BBBcube314 buttnuggets Capt Black Gilberdere Left 4 Gaming Addiction Micropterus Salimoidous Mitch MrRevan OpticAlex Sandakin Airstepper Sieana Rayley SirCrazyPhil Valarkale
-
-**Jedi CM** JKL e.g. JKL GMY HYoda Old Ben, Ahsoka Tano (Snips)
-Ajunta Pall Andurian Talz Archer Capt Black CronikdaHemphog Dark Fiberhead IrvingBerlin Jbob1011 MrRevan OpticAlex Sieana Rayley Siegeking SirCrazyPhil SithLordCryo SkyGuy501 Variable
-
-**Jedi CM** JKR e.g. JKR GMY HYoda BS Jolee
-Axel Kennedy BobaKush Micropterus Salimoidous Nimbulus Valarkale
-
-**Jedi CM** JMK Jedi e.g. JMK GAS GMY Aayla QGJ
-Ajunta Pall Capt Black Mitch MrRevan
-
-**Jedi CM** JMLS e.g. JMLS GAS Jolee BS JKR
-jamesCCCC Sieana Rayley SirCrazyPhil SithLordCryo Snorlax
-
-**LS CM** CLS e.g. CLS Han Chewbacca Chewpio C-3PO
-Andurian Talz Anlair Deth Archer BBBcube314 BobaKush buttnuggets Dark Helmet IrvingBerlin Jbob1011 JoeMacFando Micropterus Salimoidous SkyGuy501
-
-**LS CM** Finn e.g. Finn RT RH Finn, RH Poe, Rey
-Axel Kennedy Fiberhead Gilberdere Nimbulus
-
-**LS CM** GAS e.g. GAS Rex Echo (501st), ARC Trooper, Fives
-Dark Valerius
-
-**LS CM** GL Rey e.g. Rey Chewbacca GK RH Poe, RH Finn
-AgentOfChaos Ajunta Pall Capt Black CronikdaHemphog jamesCCCC Kliff Fuser Left 4 Gaming Addiction Mitch MrRevan Sieana Rayley SirCrazyPhil SithLordCryo Snorlax Talyn Un Known
-
-**LS CM** JMK GR e.g. JMK Shaak Ti, Mace Padme R2-D2
-buttnuggets
-
-**LS CM** JTR e.g. JTR BB-8 C-3PO R2-D2 Finn
-Capt Black CronikdaHemphog jamesCCCC Mitch Sieana Rayley SirCrazyPhil SithLordCryo Snorlax
-
-**LS CM** Padme e.g. Padme Ahsoka Tano (Snips), JKA GK Shaak Ti
-Axel Kennedy Micropterus Salimoidous OpticAlex Valarkale Variable
-
-**LS CM** ROLO e.g. ROLO Cpt Solo, Han Chewpio Lando
-Fiberhead Gilberdere MrRevan
-
-**LS CM** Shaak Ti e.g. Shaak Ti, Rex Echo (501st), ARC Trooper, Fives
-Ajunta Pall Archer Fruktoz Left 4 Gaming Addiction
-
-</pre><p><a href="#" onclick="CopyToClipboard('kam-2-plan'); return false;">Copy Plan</a> | <a href="#" onclick="CopyToClipboard('kam-2-missions'); return false;">Copy Missions</a></p></td><tr><td>2</td><td>2 Top</td><td>1 &#11088; -- 63 to the next</td><tr><td>2</td><td>1 Middle</td><td>3 &#11088;</td><tr><td>2</td><td>1 Bottom</td><td>2 &#11088; -- 60 to the next</td><tr class="newPhase"><td>3</td><td>&nbsp;</td><td><b>active</b> <a href="tb.html?c=3%20Top&tb=ls&d=squad+name&player-summary=on">3 Top</a> <a href="tb.html?c=2%20Middle,%202%20Bottom&tb=ls&d=squad+name&player-summary=on">2 Middle, 2 Bottom</a></td><tr><td>3</td><td>2 Middle</td><td><b>missions</b> 47 -> 47m</td><tr><td>3</td><td>2 Bottom</td><td><b>missions</b> 23 -> 23m</td><tr><td>3</td><td>3 Top</td><td><b>missions</b> 18 -> 18m</td><tr><td>3</td><td>2 Middle</td><td><b>deploy</b> 48 -> 95m</td><tr><td>3</td><td>2 Bottom</td><td><b>deploy</b> 98 -> 121m</td><tr><td>3</td><td>3 Top</td><td><b>deploy</b> 73 -> 91m</td><tr><td>3</td><td>&nbsp;</td><td><b>remaining GP:</b> 10 toons, 41 ships<pre id="kam-3-plan" style="display: none !important;">**phase 3: 3 Top HOLD AT ZERO :star:**
-**phase 3: 2 Middle HOLD AT ZERO :star:**
-**phase 3: 2 Bottom -> 1 :star:**</pre><pre id="kam-3-missions" style="display: none !important;">**Fleet CM** Negotiator e.g. Negotiator Anakin's Eta-2, Ahsoka's SF, Umbaran SF, Plo's SF, Clone Sergeant's ARC-170, Rex's ARC-170
-Ajunta Pall Axel Kennedy BBBcube314 buttnuggets Capt Black Gilberdere Left 4 Gaming Addiction Micropterus Salimoidous Mitch MrRevan OpticAlex Sandakin Airstepper Sieana Rayley SirCrazyPhil Valarkale
-
-**GAS/Ahsoka** GAS Special e.g. GAS Ahsoka Tano (Snips)
-Ajunta Pall Capt Black Left 4 Gaming Addiction Micropterus Salimoidous Mitch MrRevan OpticAlex Sieana Rayley SirCrazyPhil SithLordCryo SkyGuy501 Valerius
-
-**GR CM** JMK GR e.g. JMK CAT Mace JKA R2-D2
-Ajunta Pall buttnuggets Capt Black Mitch MrRevan
-
-**GR CM** Padme e.g. Padme Fives JKA GK R2-D2
-Axel Kennedy Gilberdere Left 4 Gaming Addiction Micropterus Salimoidous Valarkale Variable
-
-**GR CM** Shaak Ti e.g. Shaak Ti, Rex Echo (501st), ARC Trooper, Fives
-Archer Dark Fruktoz SithLordCryo
+**phase 1: 1 Bottom -> 2 :star:**</pre><pre id="optimal-1-missions" style="display: none !important;">**Fleet CM** Negotiator e.g. Negotiator Anakin's Eta-2, Ahsoka's SF, Umbaran SF, Plo's SF, Clone Sergeant's ARC-170, Rex's ARC-170
+AgentOfChaos Ajunta Pall Axel Kennedy BBBcube314 buttnuggets Capt Black Därth Nema Fiberhead Gilberdere Japiim Left 4 Gaming Addiction Medwin Rapis Micropterus Salimoidous Mitch MrRevan Nimbulus OpticAlex Sandakin Airstepper Sieana Rayley SirCrazyPhil TheMisery Valarkale
 
 **Jedi CM** JKL e.g. JKL GMY HYoda Old Ben, Ezra
-Ajunta Pall Andurian Talz Archer Capt Black CronikdaHemphog Dark Fiberhead Mitch MrRevan OpticAlex Sieana Rayley SirCrazyPhil SithLordCryo SkyGuy501 Snorlax Variable
+Ajunta Pall Archer BBBcube314 Capt Black CronikdaHemphog Dark Dark Helmet DarthVectivus Därth Nema Fiberhead IrvingBerlin Japiim Jbob1011 JoeMacFando Left 4 Gaming Addiction MrRevan OpticAlex Sieana Rayley Siegeking SirCrazyPhil SithLordCryo SkyGuy501 Variable Xerasius
 
-**Jedi CM** JKR e.g. JKR GMY HYoda BS Jolee
-BobaKush Nimbulus Valarkale
+**Jedi CM** JKR e.g. JKR GMY GAS BS Jolee
+Axel Kennedy BobaKush Medwin Rapis Micropterus Salimoidous Nimbulus Valarkale
 
-**Jedi CM** JMLS e.g. JMLS JKL HYoda Old Ben, Ezra
-IrvingBerlin jamesCCCC
+**Jedi CM** JMK Jedi e.g. JMK GAS GMY Aayla QGJ
+Ajunta Pall Capt Black Därth Nema Mitch MrRevan
+
+**Jedi CM** JMLS e.g. JMLS GAS Jolee BS JKR
+jamesCCCC Japiim Sieana Rayley SirCrazyPhil SithLordCryo
 
 **LS CM** CLS e.g. CLS Han Chewbacca Chewpio C-3PO
-Ajunta Pall Andurian Talz Anlair Deth Archer BBBcube314 BobaKush CronikdaHemphog Dark Helmet IrvingBerlin Jbob1011 JoeMacFando Left 4 Gaming Addiction Micropterus Salimoidous Sieana Rayley SkyGuy501
-
-**LS CM** CLS-Alt e.g. CLS Han Chewbacca Chewpio Old Ben
-buttnuggets
+Anlair D3TH Archer BBBcube314 BobaKush buttnuggets Dark Helmet IrvingBerlin Jbob1011 JoeMacFando lukeyworld Mitch SkyGuy501
 
 **LS CM** Finn e.g. Finn RT RH Finn, RH Poe, Rey
-Axel Kennedy Fiberhead Gilberdere Nimbulus
+Axel Kennedy Fiberhead Gilberdere Nimbulus RevansApprentice
+
+**LS CM** GAS e.g. GAS Rex Echo (501st), ARC Trooper, Fives
+Dark RevansApprentice Sandakin Airstepper Valerius
 
 **LS CM** GL Rey e.g. Rey Chewbacca GK RH Poe, RH Finn
-AgentOfChaos Capt Black jamesCCCC Kliff Fuser MrRevan SirCrazyPhil SithLordCryo Snorlax Talyn Un Known
+AgentOfChaos Ajunta Pall Capt Black CronikdaHemphog jamesCCCC Japiim Kliff Fuser Left 4 Gaming Addiction Micropterus Salimoidous Mitch MrRevan Sieana Rayley SirCrazyPhil SithLordCryo Talyn Un Known Valerius
+
+**LS CM** JMK GR e.g. JMK Shaak Ti, Mace Padme R2-D2
+buttnuggets
 
 **LS CM** JTR e.g. JTR BB-8 C-3PO R2-D2 Finn
-Mitch SirCrazyPhil SithLordCryo Snorlax
+BiggWiggz Capt Black CronikdaHemphog jamesCCCC Japiim Medwin Rapis Micropterus Salimoidous Sieana Rayley SirCrazyPhil SithLordCryo
+
+**LS CM** Padme e.g. Padme Ahsoka Tano (Snips), JKA GK Shaak Ti
+Axel Kennedy Därth Nema OpticAlex Valarkale Variable
 
 **LS CM** ROLO e.g. ROLO Cpt Solo, Han Chewpio Lando
-Fiberhead Gilberdere MrRevan
+DarthVectivus Därth Nema Fiberhead Gilberdere Medwin Rapis MrRevan Xerasius
 
-</pre><p><a href="#" onclick="CopyToClipboard('kam-3-plan'); return false;">Copy Plan</a> | <a href="#" onclick="CopyToClipboard('kam-3-missions'); return false;">Copy Missions</a></p></td><tr><td>3</td><td>3 Top</td><td><b>HOLD AT ZERO &#11088;</b></td><tr><td>3</td><td>2 Middle</td><td><b>HOLD AT ZERO &#11088;</b></td><tr><td>3</td><td>2 Bottom</td><td>1 &#11088; -- 96 to the next</td><tr class="newPhase"><td>4</td><td>&nbsp;</td><td><b>active</b> <a href="tb.html?c=3%20Top&tb=ls&d=squad+name&player-summary=on">3 Top</a> <a href="tb.html?c=2%20Middle,%203%20Bottom&tb=ls&d=squad+name&player-summary=on">2 Middle, 3 Bottom</a></td><tr><td>4</td><td>2 Middle</td><td><b>missions</b> 47 -> 142m</td><tr><td>4</td><td>3 Top</td><td><b>missions</b> 18 -> 109m</td><tr><td>4</td><td>3 Bottom</td><td><b>missions</b> 17 -> 17m</td><tr><td>4</td><td>2 Middle</td><td><b>deploy</b> 118 -> 260m</td><tr><td>4</td><td>3 Top</td><td><b>deploy</b> 108 -> 217m</td><tr><td>4</td><td>3 Bottom</td><td><b>deploy</b> 31 -> 48m</td><tr><td>4</td><td>&nbsp;</td><td><b>remaining GP:</b> 0 toons, 1 ships<pre id="kam-4-plan" style="display: none !important;">**phase 4: 3 Top -> 3 :star:**
-**phase 4: 2 Middle -> 3 :star:**
-**phase 4: 3 Bottom HOLD AT ZERO :star:**</pre><pre id="kam-4-missions" style="display: none !important;">**Fleet CM** Negotiator e.g. Negotiator Anakin's Eta-2, Ahsoka's SF, Umbaran SF, Plo's SF, Clone Sergeant's ARC-170, Rex's ARC-170
-Ajunta Pall Axel Kennedy BBBcube314 buttnuggets Capt Black Gilberdere Left 4 Gaming Addiction Micropterus Salimoidous Mitch MrRevan OpticAlex Sandakin Airstepper Sieana Rayley SirCrazyPhil Valarkale
+**LS CM** Shaak Ti e.g. Shaak Ti, Rex Echo (501st), ARC Trooper, Fives
+Ajunta Pall Archer Fruktoz Left 4 Gaming Addiction Xerasius
+
+</pre><p><a href="#" onclick="CopyToClipboard('optimal-1-plan'); return false;">Copy Plan</a> | <a href="#" onclick="CopyToClipboard('optimal-1-missions'); return false;">Copy Missions</a></p></td><tr><td>1</td><td>1 Top</td><td>3 &#11088;</td><tr><td>1</td><td>1 Middle</td><td><b>HOLD AT ZERO &#11088;</b></td><tr><td>1</td><td>1 Bottom</td><td>2 &#11088; -- 60 to the next</td><tr class="newPhase"><td>2</td><td>&nbsp;</td><td><b>active</b> <a href="tb.html?c=2%20Top&tb=ls&d=squad+name&player-summary=on">2 Top</a> <a href="tb.html?c=1%20Middle,%202%20Bottom&tb=ls&d=squad+name&player-summary=on">1 Middle, 2 Bottom</a></td><tr><td>2</td><td>1 Middle</td><td><b>missions</b> 37 -> 146m</td><tr><td>2</td><td>2 Top</td><td><b>missions</b> 14 -> 14m</td><tr><td>2</td><td>2 Bottom</td><td><b>missions</b> 39 -> 39m</td><tr><td>2</td><td>1 Middle</td><td><b>deploy</b> 111 -> 257m</td><tr><td>2</td><td>2 Top</td><td><b>deploy</b> 56 -> 70m</td><tr><td>2</td><td>2 Bottom</td><td><b>deploy</b> 82 -> 121m</td><tr><td>2</td><td>&nbsp;</td><td><b>remaining GP:</b> 3 toons, 82 ships<pre id="optimal-2-plan" style="display: none !important;">**phase 2: 2 Top HOLD AT ZERO :star:**
+**phase 2: 1 Middle -> 3 :star:**
+**phase 2: 2 Bottom -> 1 :star:**</pre><pre id="optimal-2-missions" style="display: none !important;">**Fleet CM** Negotiator e.g. Negotiator Anakin's Eta-2, Ahsoka's SF, Umbaran SF, Plo's SF, Clone Sergeant's ARC-170, Rex's ARC-170
+AgentOfChaos Ajunta Pall Axel Kennedy BBBcube314 buttnuggets Capt Black Därth Nema Fiberhead Gilberdere Japiim Left 4 Gaming Addiction Medwin Rapis Micropterus Salimoidous Mitch MrRevan Nimbulus OpticAlex Sandakin Airstepper Sieana Rayley SirCrazyPhil TheMisery Valarkale
+
+**Jedi CM** JKL e.g. JKL GMY HYoda Old Ben, Ezra
+Ajunta Pall Archer BBBcube314 Capt Black CronikdaHemphog Dark Dark Helmet DarthVectivus Därth Nema Fiberhead Japiim Jbob1011 JoeMacFando Left 4 Gaming Addiction Mitch MrRevan OpticAlex Sieana Rayley Siegeking SirCrazyPhil SithLordCryo SkyGuy501 Variable Xerasius
+
+**Jedi CM** JKR e.g. JKR GMY GAS BS Jolee
+Axel Kennedy BobaKush Medwin Rapis Micropterus Salimoidous Nimbulus Valarkale
+
+**Jedi CM** JMK Jedi e.g. JMK GAS GMY Aayla QGJ
+buttnuggets Capt Black Därth Nema
+
+**Jedi CM** JMLS e.g. JMLS GAS Jolee BS JKR
+Ajunta Pall IrvingBerlin jamesCCCC Japiim MrRevan SithLordCryo
+
+**LS CM** CLS e.g. CLS Han Chewbacca Chewpio C-3PO
+Ajunta Pall Anlair D3TH Archer BBBcube314 BobaKush buttnuggets Capt Black Dark Helmet IrvingBerlin Jbob1011 JoeMacFando Left 4 Gaming Addiction lukeyworld Sieana Rayley SithLordCryo SkyGuy501
+
+**LS CM** Finn e.g. Finn RT RH Finn, RH Poe, Rey
+Axel Kennedy Fiberhead Gilberdere Nimbulus RevansApprentice
+
+**LS CM** GAS e.g. GAS Rex Echo (501st), ARC Trooper, Fives
+RevansApprentice Sandakin Airstepper Valerius
+
+**LS CM** GL Rey e.g. Rey Chewbacca GK RH Poe, RH Finn
+AgentOfChaos CronikdaHemphog jamesCCCC Japiim Kliff Fuser Micropterus Salimoidous Mitch MrRevan SirCrazyPhil Talyn Un Known Valerius
+
+**LS CM** JMK GR e.g. JMK CAT Fives Padme Shaak Ti
+Ajunta Pall Mitch
+
+**LS CM** JTR e.g. JTR BB-8 C-3PO R2-D2 Finn
+BiggWiggz CronikdaHemphog Japiim Medwin Rapis Micropterus Salimoidous SirCrazyPhil
+
+**LS CM** Padme e.g. Padme Ahsoka Tano (Snips), JKA GK Shaak Ti
+Axel Kennedy buttnuggets Därth Nema Valarkale Variable
+
+**LS CM** ROLO e.g. ROLO Cpt Solo, Han Chewpio Lando
+DarthVectivus Därth Nema Fiberhead Gilberdere Medwin Rapis MrRevan Xerasius
+
+**LS CM** Shaak Ti e.g. Shaak Ti, Rex Echo (501st), ARC Trooper, Fives
+Archer Dark Fruktoz Left 4 Gaming Addiction OpticAlex SithLordCryo Xerasius
+
+</pre><p><a href="#" onclick="CopyToClipboard('optimal-2-plan'); return false;">Copy Plan</a> | <a href="#" onclick="CopyToClipboard('optimal-2-missions'); return false;">Copy Missions</a></p></td><tr><td>2</td><td>2 Top</td><td><b>HOLD AT ZERO &#11088;</b></td><tr><td>2</td><td>1 Middle</td><td>3 &#11088;</td><tr><td>2</td><td>2 Bottom</td><td>1 &#11088; -- 96 to the next</td><tr class="newPhase"><td>3</td><td>&nbsp;</td><td><b>active</b> <a href="tb.html?c=2%20Top&tb=ls&d=squad+name&player-summary=on">2 Top</a> <a href="tb.html?c=2%20Middle,%203%20Bottom&tb=ls&d=squad+name&player-summary=on">2 Middle, 3 Bottom</a></td><tr><td>3</td><td>2 Top</td><td><b>missions</b> 14 -> 84m</td><tr><td>3</td><td>2 Middle</td><td><b>missions</b> 64 -> 64m</td><tr><td>3</td><td>3 Bottom</td><td><b>missions</b> 23 -> 23m</td><tr><td>3</td><td>2 Top</td><td><b>deploy</b> 131 -> 215m</td><tr><td>3</td><td>2 Middle</td><td><b>deploy</b> 31 -> 95m</td><tr><td>3</td><td>3 Bottom</td><td><b>deploy</b> 87 -> 110m</td><tr><td>3</td><td>&nbsp;</td><td><b>remaining GP:</b> 78 toons, 7 ships<pre id="optimal-3-plan" style="display: none !important;">**phase 3: 2 Top -> 3 :star:**
+**phase 3: 2 Middle HOLD AT ZERO :star:**
+**phase 3: 3 Bottom HOLD AT ZERO :star:**</pre><pre id="optimal-3-missions" style="display: none !important;">**Fleet CM** Negotiator e.g. Negotiator Anakin's Eta-2, Ahsoka's SF, Umbaran SF, Plo's SF, Clone Sergeant's ARC-170, Rex's ARC-170
+AgentOfChaos Ajunta Pall Axel Kennedy BBBcube314 buttnuggets Capt Black Därth Nema Fiberhead Gilberdere Japiim Left 4 Gaming Addiction Medwin Rapis Micropterus Salimoidous Mitch MrRevan Nimbulus OpticAlex Sandakin Airstepper Sieana Rayley SirCrazyPhil TheMisery Valarkale
 
 **GAS/Ahsoka** GAS Special e.g. GAS Ahsoka Tano (Snips)
-Ajunta Pall Capt Black Left 4 Gaming Addiction Micropterus Salimoidous Mitch MrRevan OpticAlex Sieana Rayley SirCrazyPhil SithLordCryo SkyGuy501 Valerius
+Ajunta Pall Capt Black Därth Nema Japiim Left 4 Gaming Addiction Medwin Rapis Micropterus Salimoidous Mitch MrRevan OpticAlex RevansApprentice Sandakin Airstepper Sieana Rayley SirCrazyPhil SithLordCryo SkyGuy501 Un Known Valerius Xerasius
 
-**GR CM** JMK GR e.g. JMK CAT Mace JKA R2-D2
-Ajunta Pall buttnuggets Capt Black Mitch MrRevan
+**GR CM** JMK GR e.g. JMK CAT Mace Padme R2-D2
+Ajunta Pall buttnuggets Capt Black Därth Nema Mitch MrRevan
 
-**GR CM** Padme e.g. Padme Fives JKA GK R2-D2
-Andurian Talz Axel Kennedy CronikdaHemphog Gilberdere Left 4 Gaming Addiction Micropterus Salimoidous OpticAlex Sieana Rayley SithLordCryo SkyGuy501 Valarkale Variable
+**GR CM** Padme e.g. Padme Shaak Ti, JKA GK R2-D2
+Axel Kennedy CronikdaHemphog Fiberhead Gilberdere Japiim Left 4 Gaming Addiction Medwin Rapis Micropterus Salimoidous OpticAlex Sieana Rayley SithLordCryo SkyGuy501 Valarkale Variable
 
 **Jedi CM** JKL e.g. JKL GMY HYoda GK Ezra
-Ajunta Pall Andurian Talz Archer Capt Black CronikdaHemphog Dark jamesCCCC Mitch MrRevan Sieana Rayley SirCrazyPhil SithLordCryo SkyGuy501 Snorlax Variable
+Ajunta Pall Archer Capt Black CronikdaHemphog Dark Därth Nema Fiberhead jamesCCCC Japiim Jbob1011 Left 4 Gaming Addiction Mitch MrRevan Sieana Rayley Siegeking SirCrazyPhil SithLordCryo SkyGuy501 Variable
 
 **Jedi CM** JKR e.g. JKR GMY HYoda BS Jolee
-BobaKush Nimbulus OpticAlex Valarkale
+BobaKush Medwin Rapis Nimbulus OpticAlex Valarkale
 
 **Jedi CM** JMLS e.g. JMLS JKL HYoda Old Ben, Ezra
 IrvingBerlin
 
 **KAM** KAM Squad e.g. Shaak Ti, Rex Echo (501st), ARC Trooper, Fives
-Ajunta Pall Archer Dark Fruktoz Left 4 Gaming Addiction Mitch OpticAlex Sieana Rayley SithLordCryo
+Ajunta Pall Archer Dark Därth Nema Fruktoz Left 4 Gaming Addiction Mitch OpticAlex Sieana Rayley SithLordCryo Xerasius
 
 **LS CM** CLS e.g. CLS Han Chewbacca Chewpio C-3PO
-Ajunta Pall Anlair Deth Archer BBBcube314 BobaKush Capt Black Dark Helmet IrvingBerlin Jbob1011 JoeMacFando Micropterus Salimoidous SirCrazyPhil SkyGuy501
+Ajunta Pall Anlair D3TH Archer BBBcube314 BobaKush Capt Black Dark Helmet IrvingBerlin Japiim Jbob1011 JoeMacFando lukeyworld Micropterus Salimoidous Mitch SirCrazyPhil SkyGuy501
 
 **LS CM** CLS-Alt e.g. CLS Han Chewbacca Chewpio Old Ben
-Andurian Talz buttnuggets CronikdaHemphog Left 4 Gaming Addiction Sieana Rayley SithLordCryo
+buttnuggets CronikdaHemphog Left 4 Gaming Addiction Sieana Rayley SithLordCryo
 
 **LS CM** Finn e.g. Finn RT RH Finn, RH Poe, Rey
-Axel Kennedy Fiberhead Gilberdere Nimbulus
+Axel Kennedy Fiberhead Gilberdere Nimbulus RevansApprentice
 
-**LS CM** GL Rey e.g. Rey Holdo GK RH Poe, RH Finn
-AgentOfChaos jamesCCCC Kliff Fuser Snorlax Talyn Un Known
+**LS CM** GL Rey e.g. Rey Chewbacca GK RH Poe, RH Finn
+AgentOfChaos jamesCCCC Kliff Fuser Talyn Un Known Valerius
+
+**LS CM** JTR e.g. JTR BB-8 C-3PO R2-D2 Finn
+BiggWiggz
 
 **LS CM** ROLO e.g. ROLO Cpt Solo, Han Chewpio Lando
-MrRevan
+DarthVectivus Därth Nema Medwin Rapis MrRevan Xerasius
 
-</pre><p><a href="#" onclick="CopyToClipboard('kam-4-plan'); return false;">Copy Plan</a> | <a href="#" onclick="CopyToClipboard('kam-4-missions'); return false;">Copy Missions</a></p></td><tr><td>4</td><td>3 Top</td><td>3 &#11088;</td><tr><td>4</td><td>2 Middle</td><td>3 &#11088;</td><tr><td>4</td><td>3 Bottom</td><td><b>HOLD AT ZERO &#11088;</b></td></tbody>
+</pre><p><a href="#" onclick="CopyToClipboard('optimal-3-plan'); return false;">Copy Plan</a> | <a href="#" onclick="CopyToClipboard('optimal-3-missions'); return false;">Copy Missions</a></p></td><tr><td>3</td><td>2 Top</td><td>3 &#11088;</td><tr><td>3</td><td>2 Middle</td><td><b>HOLD AT ZERO &#11088;</b></td><tr><td>3</td><td>3 Bottom</td><td><b>HOLD AT ZERO &#11088;</b></td><tr class="newPhase"><td>4</td><td>&nbsp;</td><td><b>active</b> <a href="tb.html?c=3%20Top&tb=ls&d=squad+name&player-summary=on">3 Top</a> <a href="tb.html?c=2%20Middle,%203%20Bottom&tb=ls&d=squad+name&player-summary=on">2 Middle, 3 Bottom</a></td><tr><td>4</td><td>2 Middle</td><td><b>missions</b> 64 -> 159m</td><tr><td>4</td><td>3 Top</td><td><b>missions</b> 29 -> 29m</td><tr><td>4</td><td>3 Bottom</td><td><b>missions</b> 23 -> 133m</td><tr><td>4</td><td>2 Middle</td><td><b>deploy</b> 101 -> 260m</td><tr><td>4</td><td>3 Top</td><td><b>deploy</b> 123 -> 152m</td><tr><td>4</td><td>3 Bottom</td><td><b>deploy</b> 88 -> 221m</td><tr><td>4</td><td>&nbsp;</td><td><b>remaining GP:</b> 7 toons, 15 ships<pre id="optimal-4-plan" style="display: none !important;">**phase 4: 3 Top -> 2 :star:**
+**phase 4: 2 Middle -> 3 :star:**
+**phase 4: 3 Bottom -> 3 :star:**</pre><pre id="optimal-4-missions" style="display: none !important;">**Fleet CM** Negotiator e.g. Negotiator Anakin's Eta-2, Ahsoka's SF, Umbaran SF, Plo's SF, Clone Sergeant's ARC-170, Rex's ARC-170
+AgentOfChaos Ajunta Pall Axel Kennedy BBBcube314 buttnuggets Capt Black Därth Nema Fiberhead Gilberdere Japiim Left 4 Gaming Addiction Medwin Rapis Micropterus Salimoidous Mitch MrRevan Nimbulus OpticAlex Sandakin Airstepper Sieana Rayley SirCrazyPhil TheMisery Valarkale
+
+**GAS/Ahsoka** GAS Special e.g. GAS Ahsoka Tano (Snips)
+Ajunta Pall Capt Black Därth Nema Japiim Left 4 Gaming Addiction Medwin Rapis Micropterus Salimoidous Mitch MrRevan OpticAlex RevansApprentice Sandakin Airstepper Sieana Rayley SirCrazyPhil SithLordCryo SkyGuy501 Un Known Valerius Xerasius
+
+**GR CM** JMK GR e.g. JMK CAT Mace Padme R2-D2
+Ajunta Pall buttnuggets Capt Black Därth Nema Mitch MrRevan
+
+**GR CM** Padme e.g. Padme Shaak Ti, JKA GK R2-D2
+Axel Kennedy CronikdaHemphog Fiberhead Gilberdere Japiim Left 4 Gaming Addiction Medwin Rapis Micropterus Salimoidous OpticAlex Sieana Rayley SithLordCryo SkyGuy501 Valarkale Variable
+
+**Jedi CM** JKL e.g. JKL GMY HYoda GK Ezra
+Ajunta Pall Archer Capt Black CronikdaHemphog Dark Därth Nema Fiberhead jamesCCCC Japiim Jbob1011 Left 4 Gaming Addiction Mitch MrRevan Sieana Rayley Siegeking SirCrazyPhil SithLordCryo SkyGuy501 Variable
+
+**Jedi CM** JKR e.g. JKR GMY HYoda BS Jolee
+BobaKush Medwin Rapis Nimbulus OpticAlex Valarkale
+
+**Jedi CM** JMLS e.g. JMLS JKL HYoda Old Ben, Ezra
+IrvingBerlin
+
+**KAM** KAM Squad e.g. Shaak Ti, Rex Echo (501st), ARC Trooper, Fives
+Ajunta Pall Archer Dark Därth Nema Fruktoz Left 4 Gaming Addiction Mitch OpticAlex Sieana Rayley SithLordCryo Xerasius
+
+**LS CM** CLS e.g. CLS Han Chewbacca Chewpio C-3PO
+Ajunta Pall Anlair D3TH Archer BBBcube314 BobaKush Capt Black Dark Helmet IrvingBerlin Japiim Jbob1011 JoeMacFando lukeyworld Micropterus Salimoidous Mitch SirCrazyPhil SkyGuy501
+
+**LS CM** CLS-Alt e.g. CLS Han Chewbacca Chewpio Old Ben
+buttnuggets CronikdaHemphog Left 4 Gaming Addiction Sieana Rayley SithLordCryo
+
+**LS CM** Finn e.g. Finn RT RH Finn, RH Poe, Rey
+Axel Kennedy Fiberhead Gilberdere Nimbulus RevansApprentice
+
+**LS CM** GL Rey e.g. Rey Chewbacca GK RH Poe, RH Finn
+AgentOfChaos jamesCCCC Kliff Fuser Talyn Un Known Valerius
+
+**LS CM** JTR e.g. JTR BB-8 C-3PO R2-D2 Finn
+BiggWiggz
+
+**LS CM** ROLO e.g. ROLO Cpt Solo, Han Chewpio Lando
+DarthVectivus Därth Nema Medwin Rapis MrRevan Xerasius
+
+</pre><p><a href="#" onclick="CopyToClipboard('optimal-4-plan'); return false;">Copy Plan</a> | <a href="#" onclick="CopyToClipboard('optimal-4-missions'); return false;">Copy Missions</a></p></td><tr><td>4</td><td>3 Top</td><td>2 &#11088; -- 65 to the next</td><tr><td>4</td><td>2 Middle</td><td>3 &#11088;</td><tr><td>4</td><td>3 Bottom</td><td>3 &#11088;</td></tbody>
 </table>
 <br/>
-<br/><textarea id="discordkam" style="display:none" rows="8" cols="40">
-**Estimated 15 :star:**
+<br/><textarea id="discordoptimal" style="display:none" rows="8" cols="40">
+**Estimated 20 :star:**
 
 **phase 1: active** 1 Top, 1 Middle, 1 Bottom
-phase 1: **missions** 1 Top 5 -> 5m
-phase 1: **missions** 1 Middle 27 -> 27m
-phase 1: **missions** 1 Bottom 31 -> 31m
-phase 1: **deploy** 1 Top 80 -> 85m
-phase 1: **deploy** 1 Middle 82 -> 109m
-phase 1: **deploy** 1 Bottom 54 -> 85m
-phase 1: remaining GP = 34 toons, 44 ships
+phase 1: **missions** 1 Top 8 -> 8m
+phase 1: **missions** 1 Middle 36 -> 36m
+phase 1: **missions** 1 Bottom 39 -> 39m
+phase 1: **deploy** 1 Top 134 -> 142m
+phase 1: **deploy** 1 Middle 73 -> 109m
+phase 1: **deploy** 1 Bottom 81 -> 120m
+phase 1: remaining GP = 42 toons, 4 ships
 details: https://gorgatron1.github.io/brg/guild/guardians/tb.html%3Fc=1%2520Middle,%25201%2520Bottom&tb=ls&d=squad+name&player-summary=on
-**phase 1: 1 Top -> 2 :star:**
+**phase 1: 1 Top -> 3 :star:**
+**phase 1: 1 Middle HOLD AT ZERO :star:**
+**phase 1: 1 Bottom -> 2 :star:**
+
+**phase 2: active** 1 Middle, 2 Top, 2 Bottom
+phase 2: **missions** 1 Middle 37 -> 146m
+phase 2: **missions** 2 Top 14 -> 14m
+phase 2: **missions** 2 Bottom 39 -> 39m
+phase 2: **deploy** 1 Middle 111 -> 257m
+phase 2: **deploy** 2 Top 56 -> 70m
+phase 2: **deploy** 2 Bottom 82 -> 121m
+phase 2: remaining GP = 3 toons, 82 ships
+details: https://gorgatron1.github.io/brg/guild/guardians/tb.html%3Fc=1%2520Middle,%25202%2520Bottom&tb=ls&d=squad+name&player-summary=on
+**phase 2: 2 Top HOLD AT ZERO :star:**
+**phase 2: 1 Middle -> 3 :star:**
+**phase 2: 2 Bottom -> 1 :star:**
+
+**phase 3: active** 2 Top, 2 Middle, 3 Bottom
+phase 3: **missions** 2 Top 14 -> 84m
+phase 3: **missions** 2 Middle 64 -> 64m
+phase 3: **missions** 3 Bottom 23 -> 23m
+phase 3: **deploy** 2 Top 131 -> 215m
+phase 3: **deploy** 2 Middle 31 -> 95m
+phase 3: **deploy** 3 Bottom 87 -> 110m
+phase 3: remaining GP = 78 toons, 7 ships
+details: https://gorgatron1.github.io/brg/guild/guardians/tb.html%3Fc=2%2520Middle,%25203%2520Bottom&tb=ls&d=squad+name&player-summary=on
+**phase 3: 2 Top -> 3 :star:**
+**phase 3: 2 Middle HOLD AT ZERO :star:**
+**phase 3: 3 Bottom HOLD AT ZERO :star:**
+
+**phase 4: active** 2 Middle, 3 Top, 3 Bottom
+phase 4: **missions** 2 Middle 64 -> 159m
+phase 4: **missions** 3 Top 29 -> 29m
+phase 4: **missions** 3 Bottom 23 -> 133m
+phase 4: **deploy** 2 Middle 101 -> 260m
+phase 4: **deploy** 3 Top 123 -> 152m
+phase 4: **deploy** 3 Bottom 88 -> 221m
+phase 4: remaining GP = 7 toons, 15 ships
+details: https://gorgatron1.github.io/brg/guild/guardians/tb.html%3Fc=2%2520Middle,%25203%2520Bottom&tb=ls&d=squad+name&player-summary=on
+**phase 4: 3 Top -> 2 :star:**
+**phase 4: 2 Middle -> 3 :star:**
+**phase 4: 3 Bottom -> 3 :star:**
+
+</textarea>
+<button onclick="copyText('discordoptimal')">Copy For Discord</button></div><div class="column"><h2>Decreasing Estimated: 19 &#11088;</h2>
+<br/>
+<table style="margin: 10px">
+<thead>
+    <tr>
+    <th>Phase</th>
+    <th>Section</th>
+    <th>Action</th>
+    </tr>
+</thead>
+<tbody><tr class="newPhase"><td>1</td><td>&nbsp;</td><td><b>active</b> <a href="tb.html?c=1%20Top&tb=ls&d=squad+name&player-summary=on">1 Top</a> <a href="tb.html?c=1%20Middle,%201%20Bottom&tb=ls&d=squad+name&player-summary=on">1 Middle, 1 Bottom</a></td><tr><td>1</td><td>1 Top</td><td><b>missions</b> 8 -> 8m</td><tr><td>1</td><td>1 Middle</td><td><b>missions</b> 36 -> 36m</td><tr><td>1</td><td>1 Bottom</td><td><b>missions</b> 39 -> 39m</td><tr><td>1</td><td>1 Top</td><td><b>deploy</b> 134 -> 142m</td><tr><td>1</td><td>1 Middle</td><td><b>deploy</b> 73 -> 109m</td><tr><td>1</td><td>1 Bottom</td><td><b>deploy</b> 46 -> 85m</td><tr><td>1</td><td>&nbsp;</td><td><b>remaining GP:</b> 77 toons, 4 ships<pre id="decreasing-1-plan" style="display: none !important;">**phase 1: 1 Top -> 3 :star:**
+**phase 1: 1 Middle HOLD AT ZERO :star:**
+**phase 1: 1 Bottom HOLD AT ZERO :star:**</pre><pre id="decreasing-1-missions" style="display: none !important;">**Fleet CM** Negotiator e.g. Negotiator Anakin's Eta-2, Ahsoka's SF, Umbaran SF, Plo's SF, Clone Sergeant's ARC-170, Rex's ARC-170
+AgentOfChaos Ajunta Pall Axel Kennedy BBBcube314 buttnuggets Capt Black Därth Nema Fiberhead Gilberdere Japiim Left 4 Gaming Addiction Medwin Rapis Micropterus Salimoidous Mitch MrRevan Nimbulus OpticAlex Sandakin Airstepper Sieana Rayley SirCrazyPhil TheMisery Valarkale
+
+**Jedi CM** JKL e.g. JKL GMY HYoda Old Ben, Ezra
+Ajunta Pall Archer BBBcube314 Capt Black CronikdaHemphog Dark Dark Helmet DarthVectivus Därth Nema Fiberhead IrvingBerlin Japiim Jbob1011 JoeMacFando Left 4 Gaming Addiction MrRevan OpticAlex Sieana Rayley Siegeking SirCrazyPhil SithLordCryo SkyGuy501 Variable Xerasius
+
+**Jedi CM** JKR e.g. JKR GMY GAS BS Jolee
+Axel Kennedy BobaKush Medwin Rapis Micropterus Salimoidous Nimbulus Valarkale
+
+**Jedi CM** JMK Jedi e.g. JMK GAS GMY Aayla QGJ
+Ajunta Pall Capt Black Därth Nema Mitch MrRevan
+
+**Jedi CM** JMLS e.g. JMLS GAS Jolee BS JKR
+jamesCCCC Japiim Sieana Rayley SirCrazyPhil SithLordCryo
+
+**LS CM** CLS e.g. CLS Han Chewbacca Chewpio C-3PO
+Anlair D3TH Archer BBBcube314 BobaKush buttnuggets Dark Helmet IrvingBerlin Jbob1011 JoeMacFando lukeyworld Mitch SkyGuy501
+
+**LS CM** Finn e.g. Finn RT RH Finn, RH Poe, Rey
+Axel Kennedy Fiberhead Gilberdere Nimbulus RevansApprentice
+
+**LS CM** GAS e.g. GAS Rex Echo (501st), ARC Trooper, Fives
+Dark RevansApprentice Sandakin Airstepper Valerius
+
+**LS CM** GL Rey e.g. Rey Chewbacca GK RH Poe, RH Finn
+AgentOfChaos Ajunta Pall Capt Black CronikdaHemphog jamesCCCC Japiim Kliff Fuser Left 4 Gaming Addiction Micropterus Salimoidous Mitch MrRevan Sieana Rayley SirCrazyPhil SithLordCryo Talyn Un Known Valerius
+
+**LS CM** JMK GR e.g. JMK Shaak Ti, Mace Padme R2-D2
+buttnuggets
+
+**LS CM** JTR e.g. JTR BB-8 C-3PO R2-D2 Finn
+BiggWiggz Capt Black CronikdaHemphog jamesCCCC Japiim Medwin Rapis Micropterus Salimoidous Sieana Rayley SirCrazyPhil SithLordCryo
+
+**LS CM** Padme e.g. Padme Ahsoka Tano (Snips), JKA GK Shaak Ti
+Axel Kennedy Därth Nema OpticAlex Valarkale Variable
+
+**LS CM** ROLO e.g. ROLO Cpt Solo, Han Chewpio Lando
+DarthVectivus Därth Nema Fiberhead Gilberdere Medwin Rapis MrRevan Xerasius
+
+**LS CM** Shaak Ti e.g. Shaak Ti, Rex Echo (501st), ARC Trooper, Fives
+Ajunta Pall Archer Fruktoz Left 4 Gaming Addiction Xerasius
+
+</pre><p><a href="#" onclick="CopyToClipboard('decreasing-1-plan'); return false;">Copy Plan</a> | <a href="#" onclick="CopyToClipboard('decreasing-1-missions'); return false;">Copy Missions</a></p></td><tr><td>1</td><td>1 Top</td><td>3 &#11088;</td><tr><td>1</td><td>1 Middle</td><td><b>HOLD AT ZERO &#11088;</b></td><tr><td>1</td><td>1 Bottom</td><td><b>HOLD AT ZERO &#11088;</b></td><tr class="newPhase"><td>2</td><td>&nbsp;</td><td><b>active</b> <a href="tb.html?c=2%20Top&tb=ls&d=squad+name&player-summary=on">2 Top</a> <a href="tb.html?c=1%20Middle,%201%20Bottom&tb=ls&d=squad+name&player-summary=on">1 Middle, 1 Bottom</a></td><tr><td>2</td><td>1 Middle</td><td><b>missions</b> 36 -> 145m</td><tr><td>2</td><td>1 Bottom</td><td><b>missions</b> 39 -> 124m</td><tr><td>2</td><td>2 Top</td><td><b>missions</b> 14 -> 14m</td><tr><td>2</td><td>1 Middle</td><td><b>deploy</b> 112 -> 257m</td><tr><td>2</td><td>1 Bottom</td><td><b>deploy</b> 56 -> 180m</td><tr><td>2</td><td>2 Top</td><td><b>deploy</b> 120 -> 134m</td><tr><td>2</td><td>&nbsp;</td><td><b>remaining GP:</b> 20 toons, 12 ships<pre id="decreasing-2-plan" style="display: none !important;">**phase 2: 2 Top -> 2 :star:**
+**phase 2: 1 Middle -> 3 :star:**
+**phase 2: 1 Bottom -> 3 :star:**</pre><pre id="decreasing-2-missions" style="display: none !important;">**Fleet CM** Negotiator e.g. Negotiator Anakin's Eta-2, Ahsoka's SF, Umbaran SF, Plo's SF, Clone Sergeant's ARC-170, Rex's ARC-170
+AgentOfChaos Ajunta Pall Axel Kennedy BBBcube314 buttnuggets Capt Black Därth Nema Fiberhead Gilberdere Japiim Left 4 Gaming Addiction Medwin Rapis Micropterus Salimoidous Mitch MrRevan Nimbulus OpticAlex Sandakin Airstepper Sieana Rayley SirCrazyPhil TheMisery Valarkale
+
+**Jedi CM** JKL e.g. JKL GMY HYoda Old Ben, Ezra
+Ajunta Pall Archer BBBcube314 Capt Black CronikdaHemphog Dark Dark Helmet DarthVectivus Därth Nema Fiberhead IrvingBerlin Japiim Jbob1011 JoeMacFando Left 4 Gaming Addiction MrRevan OpticAlex Sieana Rayley Siegeking SirCrazyPhil SithLordCryo SkyGuy501 Variable Xerasius
+
+**Jedi CM** JKR e.g. JKR GMY GAS BS Jolee
+Axel Kennedy BobaKush Medwin Rapis Micropterus Salimoidous Nimbulus Valarkale
+
+**Jedi CM** JMK Jedi e.g. JMK GAS GMY Aayla QGJ
+Ajunta Pall Capt Black Därth Nema Mitch MrRevan
+
+**Jedi CM** JMLS e.g. JMLS GAS Jolee BS JKR
+jamesCCCC Japiim Sieana Rayley SirCrazyPhil SithLordCryo
+
+**LS CM** CLS e.g. CLS Han Chewbacca Chewpio C-3PO
+Anlair D3TH Archer BBBcube314 BobaKush buttnuggets Dark Helmet IrvingBerlin Jbob1011 JoeMacFando lukeyworld Mitch SkyGuy501
+
+**LS CM** Finn e.g. Finn RT RH Finn, RH Poe, Rey
+Axel Kennedy Fiberhead Gilberdere Nimbulus RevansApprentice
+
+**LS CM** GAS e.g. GAS Rex Echo (501st), ARC Trooper, Fives
+Dark RevansApprentice Sandakin Airstepper Valerius
+
+**LS CM** GL Rey e.g. Rey Chewbacca GK RH Poe, RH Finn
+AgentOfChaos Ajunta Pall Capt Black CronikdaHemphog jamesCCCC Japiim Kliff Fuser Left 4 Gaming Addiction Micropterus Salimoidous Mitch MrRevan Sieana Rayley SirCrazyPhil SithLordCryo Talyn Un Known Valerius
+
+**LS CM** JMK GR e.g. JMK Shaak Ti, Mace Padme R2-D2
+buttnuggets
+
+**LS CM** JTR e.g. JTR BB-8 C-3PO R2-D2 Finn
+BiggWiggz Capt Black CronikdaHemphog jamesCCCC Japiim Medwin Rapis Micropterus Salimoidous Sieana Rayley SirCrazyPhil SithLordCryo
+
+**LS CM** Padme e.g. Padme Ahsoka Tano (Snips), JKA GK Shaak Ti
+Axel Kennedy Därth Nema OpticAlex Valarkale Variable
+
+**LS CM** ROLO e.g. ROLO Cpt Solo, Han Chewpio Lando
+DarthVectivus Därth Nema Fiberhead Gilberdere Medwin Rapis MrRevan Xerasius
+
+**LS CM** Shaak Ti e.g. Shaak Ti, Rex Echo (501st), ARC Trooper, Fives
+Ajunta Pall Archer Fruktoz Left 4 Gaming Addiction Xerasius
+
+</pre><p><a href="#" onclick="CopyToClipboard('decreasing-2-plan'); return false;">Copy Plan</a> | <a href="#" onclick="CopyToClipboard('decreasing-2-missions'); return false;">Copy Missions</a></p></td><tr><td>2</td><td>2 Top</td><td>2 &#11088; -- 81 to the next</td><tr><td>2</td><td>1 Middle</td><td>3 &#11088;</td><tr><td>2</td><td>1 Bottom</td><td>3 &#11088;</td><tr class="newPhase"><td>3</td><td>&nbsp;</td><td><b>active</b> <a href="tb.html?c=3%20Top&tb=ls&d=squad+name&player-summary=on">3 Top</a> <a href="tb.html?c=2%20Middle,%202%20Bottom&tb=ls&d=squad+name&player-summary=on">2 Middle, 2 Bottom</a></td><tr><td>3</td><td>2 Middle</td><td><b>missions</b> 63 -> 63m</td><tr><td>3</td><td>2 Bottom</td><td><b>missions</b> 26 -> 26m</td><tr><td>3</td><td>3 Top</td><td><b>missions</b> 27 -> 27m</td><tr><td>3</td><td>2 Middle</td><td><b>deploy</b> 32 -> 95m</td><tr><td>3</td><td>2 Bottom</td><td><b>deploy</b> 95 -> 121m</td><tr><td>3</td><td>3 Top</td><td><b>deploy</b> 125 -> 152m</td><tr><td>3</td><td>&nbsp;</td><td><b>remaining GP:</b> 53 toons, 1 ships<pre id="decreasing-3-plan" style="display: none !important;">**phase 3: 3 Top -> 2 :star:**
+**phase 3: 2 Middle HOLD AT ZERO :star:**
+**phase 3: 2 Bottom -> 1 :star:**</pre><pre id="decreasing-3-missions" style="display: none !important;">**Fleet CM** Negotiator e.g. Negotiator Anakin's Eta-2, Ahsoka's SF, Umbaran SF, Plo's SF, Clone Sergeant's ARC-170, Rex's ARC-170
+AgentOfChaos Ajunta Pall Axel Kennedy BBBcube314 buttnuggets Capt Black Därth Nema Fiberhead Gilberdere Japiim Left 4 Gaming Addiction Medwin Rapis Micropterus Salimoidous Mitch MrRevan Nimbulus OpticAlex Sandakin Airstepper Sieana Rayley SirCrazyPhil TheMisery Valarkale
+
+**GAS/Ahsoka** GAS Special e.g. GAS Ahsoka Tano (Snips)
+Ajunta Pall Capt Black Därth Nema Japiim Left 4 Gaming Addiction Medwin Rapis Micropterus Salimoidous Mitch MrRevan OpticAlex RevansApprentice Sandakin Airstepper Sieana Rayley SirCrazyPhil SithLordCryo SkyGuy501 Un Known Valerius Xerasius
+
+**GR CM** JMK GR e.g. JMK CAT Fives Padme R2-D2
+Ajunta Pall buttnuggets Capt Black Därth Nema Mitch MrRevan
+
+**GR CM** Padme e.g. Padme Shaak Ti, JKA GK R2-D2
+Axel Kennedy CronikdaHemphog Fiberhead Gilberdere Japiim Medwin Rapis Micropterus Salimoidous Valarkale Variable
+
+**GR CM** Shaak Ti e.g. Shaak Ti, Rex Echo (501st), ARC Trooper, Fives
+Archer Dark Fruktoz Left 4 Gaming Addiction OpticAlex SithLordCryo Xerasius
+
+**Jedi CM** JKL e.g. JKL GMY HYoda Old Ben, Ezra
+Ajunta Pall Archer BBBcube314 Capt Black CronikdaHemphog Dark Därth Nema Fiberhead Japiim Jbob1011 Left 4 Gaming Addiction Mitch MrRevan OpticAlex Sieana Rayley Siegeking SirCrazyPhil SithLordCryo SkyGuy501 Variable
+
+**Jedi CM** JKR e.g. JKR GMY HYoda BS Jolee
+BobaKush Medwin Rapis Nimbulus Valarkale
+
+**Jedi CM** JMLS e.g. JMLS JKL HYoda Old Ben, Ezra
+IrvingBerlin jamesCCCC
+
+**LS CM** CLS e.g. CLS Han Chewbacca Chewpio C-3PO
+Ajunta Pall Anlair D3TH Archer BBBcube314 BobaKush Dark Helmet IrvingBerlin Japiim Jbob1011 JoeMacFando Left 4 Gaming Addiction lukeyworld Micropterus Salimoidous Mitch Sieana Rayley SithLordCryo SkyGuy501
+
+**LS CM** CLS-Alt e.g. CLS Han Chewbacca Chewpio Old Ben
+buttnuggets CronikdaHemphog
+
+**LS CM** Finn e.g. Finn RT RH Finn, RH Poe, Rey
+Axel Kennedy Fiberhead Gilberdere Nimbulus RevansApprentice
+
+**LS CM** GL Rey e.g. Rey Chewbacca GK RH Poe, RH Finn
+AgentOfChaos Capt Black jamesCCCC Kliff Fuser MrRevan SirCrazyPhil Talyn Un Known Valerius
+
+**LS CM** JTR e.g. JTR BB-8 C-3PO R2-D2 Finn
+BiggWiggz Medwin Rapis SirCrazyPhil
+
+**LS CM** ROLO e.g. ROLO Cpt Solo, Han Chewpio Lando
+DarthVectivus Därth Nema Fiberhead Gilberdere Medwin Rapis MrRevan Xerasius
+
+</pre><p><a href="#" onclick="CopyToClipboard('decreasing-3-plan'); return false;">Copy Plan</a> | <a href="#" onclick="CopyToClipboard('decreasing-3-missions'); return false;">Copy Missions</a></p></td><tr><td>3</td><td>3 Top</td><td>2 &#11088; -- 65 to the next</td><tr><td>3</td><td>2 Middle</td><td><b>HOLD AT ZERO &#11088;</b></td><tr><td>3</td><td>2 Bottom</td><td>1 &#11088; -- 96 to the next</td><tr class="newPhase"><td>4</td><td>&nbsp;</td><td><b>active</b> <a href="tb.html?c=4%20Top&tb=ls&d=squad+name&player-summary=on">4 Top</a> <a href="tb.html?c=2%20Middle,%203%20Bottom&tb=ls&d=squad+name&player-summary=on">2 Middle, 3 Bottom</a></td><tr><td>4</td><td>2 Middle</td><td><b>missions</b> 62 -> 157m</td><tr><td>4</td><td>3 Bottom</td><td><b>missions</b> 22 -> 22m</td><tr><td>4</td><td>4 Top</td><td><b>missions</b> 39 -> 39m</td><tr><td>4</td><td>2 Middle</td><td><b>deploy</b> 17 -> 174m</td><tr><td>4</td><td>3 Bottom</td><td><b>deploy</b> 144 -> 166m</td><tr><td>4</td><td>4 Top</td><td><b>deploy</b> 84 -> 123m</td><tr><td>4</td><td>&nbsp;</td><td><b>remaining GP:</b> 11 toons, 37 ships<pre id="decreasing-4-plan" style="display: none !important;">**phase 4: 4 Top -> 1 :star:**
+**phase 4: 2 Middle -> 2 :star:**
+**phase 4: 3 Bottom -> 2 :star:**</pre><pre id="decreasing-4-missions" style="display: none !important;">**Fleet CM** Negotiator e.g. Negotiator Anakin's Eta-2, Ahsoka's SF, Umbaran SF, Plo's SF, Clone Sergeant's ARC-170, Rex's ARC-170
+AgentOfChaos Ajunta Pall Axel Kennedy BBBcube314 buttnuggets Capt Black Därth Nema Fiberhead Gilberdere Japiim Left 4 Gaming Addiction Medwin Rapis Micropterus Salimoidous Mitch MrRevan Nimbulus OpticAlex Sandakin Airstepper Sieana Rayley SirCrazyPhil TheMisery Valarkale
+
+**GAS/Ahsoka** GAS Special e.g. GAS Ahsoka Tano (Snips)
+Ajunta Pall Capt Black Därth Nema Japiim Left 4 Gaming Addiction Medwin Rapis Micropterus Salimoidous Mitch MrRevan OpticAlex RevansApprentice Sandakin Airstepper Sieana Rayley SirCrazyPhil SithLordCryo SkyGuy501 Un Known Valerius Xerasius
+
+**GR CM** JMK GR e.g. JMK CAT Mace Padme R2-D2
+Ajunta Pall buttnuggets Capt Black Därth Nema Mitch MrRevan
+
+**GR CM** Padme e.g. Padme Shaak Ti, JKA GK R2-D2
+Axel Kennedy CronikdaHemphog Fiberhead Gilberdere Japiim Left 4 Gaming Addiction Medwin Rapis Micropterus Salimoidous OpticAlex Sieana Rayley SithLordCryo SkyGuy501 Valarkale Variable
+
+**Jedi CM** JKL e.g. JKL GMY HYoda GK Ezra
+Ajunta Pall Archer Capt Black CronikdaHemphog Dark Därth Nema Fiberhead jamesCCCC Japiim Jbob1011 Left 4 Gaming Addiction Mitch MrRevan Sieana Rayley Siegeking SirCrazyPhil SithLordCryo SkyGuy501 Variable
+
+**Jedi CM** JKR e.g. JKR GMY HYoda BS Jolee
+BobaKush Medwin Rapis Nimbulus OpticAlex Valarkale
+
+**Jedi CM** JMLS e.g. JMLS JKL HYoda Old Ben, Ezra
+IrvingBerlin
+
+**KAM** KAM Squad e.g. Shaak Ti, Rex Echo (501st), ARC Trooper, Fives
+Ajunta Pall Archer Dark Därth Nema Fruktoz Left 4 Gaming Addiction Mitch OpticAlex Sieana Rayley SithLordCryo Xerasius
+
+**LS CM** CLS e.g. CLS Han Chewbacca Chewpio C-3PO
+Ajunta Pall Anlair D3TH Archer BBBcube314 BobaKush Capt Black Dark Helmet IrvingBerlin Japiim Jbob1011 JoeMacFando lukeyworld Micropterus Salimoidous Mitch SirCrazyPhil SkyGuy501
+
+**LS CM** CLS-Alt e.g. CLS Han Chewbacca Chewpio Old Ben
+buttnuggets CronikdaHemphog Left 4 Gaming Addiction Sieana Rayley SithLordCryo
+
+**LS CM** Finn e.g. Finn RT RH Finn, RH Poe, Rey
+Axel Kennedy Fiberhead Gilberdere Nimbulus RevansApprentice
+
+**LS CM** GL Rey e.g. Rey Chewbacca GK RH Poe, RH Finn
+AgentOfChaos jamesCCCC Kliff Fuser Talyn Un Known Valerius
+
+**LS CM** JTR e.g. JTR BB-8 C-3PO R2-D2 Finn
+BiggWiggz
+
+**LS CM** ROLO e.g. ROLO Cpt Solo, Han Chewpio Lando
+DarthVectivus Därth Nema Medwin Rapis MrRevan Xerasius
+
+</pre><p><a href="#" onclick="CopyToClipboard('decreasing-4-plan'); return false;">Copy Plan</a> | <a href="#" onclick="CopyToClipboard('decreasing-4-missions'); return false;">Copy Missions</a></p></td><tr><td>4</td><td>4 Top</td><td>1 &#11088; -- 217 to the next</td><tr><td>4</td><td>2 Middle</td><td>2 &#11088; -- 86 to the next</td><tr><td>4</td><td>3 Bottom</td><td>2 &#11088; -- 55 to the next</td></tbody>
+</table>
+<br/>
+<br/><textarea id="discorddecreasing" style="display:none" rows="8" cols="40">
+**Estimated 19 :star:**
+
+**phase 1: active** 1 Top, 1 Middle, 1 Bottom
+phase 1: **missions** 1 Top 8 -> 8m
+phase 1: **missions** 1 Middle 36 -> 36m
+phase 1: **missions** 1 Bottom 39 -> 39m
+phase 1: **deploy** 1 Top 134 -> 142m
+phase 1: **deploy** 1 Middle 73 -> 109m
+phase 1: **deploy** 1 Bottom 46 -> 85m
+phase 1: remaining GP = 77 toons, 4 ships
+details: https://gorgatron1.github.io/brg/guild/guardians/tb.html%3Fc=1%2520Middle,%25201%2520Bottom&tb=ls&d=squad+name&player-summary=on
+**phase 1: 1 Top -> 3 :star:**
 **phase 1: 1 Middle HOLD AT ZERO :star:**
 **phase 1: 1 Bottom HOLD AT ZERO :star:**
 
 **phase 2: active** 1 Middle, 1 Bottom, 2 Top
-phase 2: **missions** 1 Middle 27 -> 136m
-phase 2: **missions** 1 Bottom 31 -> 116m
-phase 2: **missions** 2 Top 9 -> 9m
-phase 2: **deploy** 1 Middle 121 -> 257m
-phase 2: **deploy** 1 Bottom 4 -> 120m
-phase 2: **deploy** 2 Top 62 -> 71m
-phase 2: remaining GP = 38 toons, 57 ships
+phase 2: **missions** 1 Middle 36 -> 145m
+phase 2: **missions** 1 Bottom 39 -> 124m
+phase 2: **missions** 2 Top 14 -> 14m
+phase 2: **deploy** 1 Middle 112 -> 257m
+phase 2: **deploy** 1 Bottom 56 -> 180m
+phase 2: **deploy** 2 Top 120 -> 134m
+phase 2: remaining GP = 20 toons, 12 ships
 details: https://gorgatron1.github.io/brg/guild/guardians/tb.html%3Fc=1%2520Middle,%25201%2520Bottom&tb=ls&d=squad+name&player-summary=on
-**phase 2: 2 Top -> 1 :star:**
+**phase 2: 2 Top -> 2 :star:**
 **phase 2: 1 Middle -> 3 :star:**
-**phase 2: 1 Bottom -> 2 :star:**
+**phase 2: 1 Bottom -> 3 :star:**
 
 **phase 3: active** 2 Middle, 2 Bottom, 3 Top
-phase 3: **missions** 2 Middle 47 -> 47m
-phase 3: **missions** 2 Bottom 23 -> 23m
-phase 3: **missions** 3 Top 18 -> 18m
-phase 3: **deploy** 2 Middle 48 -> 95m
-phase 3: **deploy** 2 Bottom 98 -> 121m
-phase 3: **deploy** 3 Top 73 -> 91m
-phase 3: remaining GP = 10 toons, 41 ships
+phase 3: **missions** 2 Middle 63 -> 63m
+phase 3: **missions** 2 Bottom 26 -> 26m
+phase 3: **missions** 3 Top 27 -> 27m
+phase 3: **deploy** 2 Middle 32 -> 95m
+phase 3: **deploy** 2 Bottom 95 -> 121m
+phase 3: **deploy** 3 Top 125 -> 152m
+phase 3: remaining GP = 53 toons, 1 ships
 details: https://gorgatron1.github.io/brg/guild/guardians/tb.html%3Fc=2%2520Middle,%25202%2520Bottom&tb=ls&d=squad+name&player-summary=on
-**phase 3: 3 Top HOLD AT ZERO :star:**
+**phase 3: 3 Top -> 2 :star:**
 **phase 3: 2 Middle HOLD AT ZERO :star:**
 **phase 3: 2 Bottom -> 1 :star:**
 
-**phase 4: active** 2 Middle, 3 Top, 3 Bottom
-phase 4: **missions** 2 Middle 47 -> 142m
-phase 4: **missions** 3 Top 18 -> 109m
-phase 4: **missions** 3 Bottom 17 -> 17m
-phase 4: **deploy** 2 Middle 118 -> 260m
-phase 4: **deploy** 3 Top 108 -> 217m
-phase 4: **deploy** 3 Bottom 31 -> 48m
-phase 4: remaining GP = 0 toons, 1 ships
+**phase 4: active** 2 Middle, 3 Bottom, 4 Top
+phase 4: **missions** 2 Middle 62 -> 157m
+phase 4: **missions** 3 Bottom 22 -> 22m
+phase 4: **missions** 4 Top 39 -> 39m
+phase 4: **deploy** 2 Middle 17 -> 174m
+phase 4: **deploy** 3 Bottom 144 -> 166m
+phase 4: **deploy** 4 Top 84 -> 123m
+phase 4: remaining GP = 11 toons, 37 ships
 details: https://gorgatron1.github.io/brg/guild/guardians/tb.html%3Fc=2%2520Middle,%25203%2520Bottom&tb=ls&d=squad+name&player-summary=on
-**phase 4: 3 Top -> 3 :star:**
-**phase 4: 2 Middle -> 3 :star:**
-**phase 4: 3 Bottom HOLD AT ZERO :star:**
+**phase 4: 4 Top -> 1 :star:**
+**phase 4: 2 Middle -> 2 :star:**
+**phase 4: 3 Bottom -> 2 :star:**
 
 </textarea>
-<button onclick="copyText('discordkam')">Copy For Discord</button></div></div><br/>
-<font size="-2">Generated 2024-07-22 15:53:58 +0000</font>
+<button onclick="copyText('discorddecreasing')">Copy For Discord</button></div></div><br/>
+<font size="-2">Generated 2024-09-16 21:40:53 +0000</font>
 <script data-goatcounter="https://gorgatron.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
