@@ -52,7 +52,7 @@ document.getElementById(id).style.display = 'none';
 }
 .column {
   float: left;
-  width: 50%;
+  width: 33%;
 }
 .row:after {
   content: "";
@@ -70,7 +70,7 @@ function copyText(name) {
 }
 </script>
 There are several models of activity or you can come up with a <a href="tb.html?tb=ls&d=squad+name&player-summary=on">plan manually with some assistance</a>.
-<ul><li><b>Optimal</b> assumes that everybody deploys and you have reasonable success with the missions.  It is not necessarily a lower bound -- the missions are just estimates of how well you do, but it is an optimistic view.  You might score a star or two higher, especially if you are close on some sections.  You won't make it if participation is low.</li><li><b>Decreasing</b> is in between.  It assumes full participation and good performance on the early phases and tapers off on the later phases (this matches what I observe).</li></ul>
+<ul><li><b>Optimal</b> assumes that everybody deploys and you have reasonable success with the missions.  It is not necessarily a lower bound -- the missions are just estimates of how well you do, but it is an optimistic view.  You might score a star or two higher, especially if you are close on some sections.  You won't make it if participation is low.</li><li><b>Decreasing</b> is in between.  It assumes full participation and good performance on the early phases and tapers off on the later phases (this matches what I observe).</li><li><b>KAM Shards</b> is the same as <b>Decreasing</b> but it tries to force the TB to reach 3 Bottom to obtain KAM shards.</li></ul>
 Contact @gorgatron#3094 to tailor these assumptions.
 <br/>
 <img src="../../i/ls_geo_tb_labels.jpeg" width="500"/>
@@ -85,19 +85,19 @@ Contact @gorgatron#3094 to tailor these assumptions.
     <th>Action</th>
     </tr>
 </thead>
-<tbody><tr class="newPhase"><td>1</td><td>&nbsp;</td><td><b>active</b> <a href="tb.html?c=1%20Top&tb=ls&d=squad+name&player-summary=on">1 Top</a> <a href="tb.html?c=1%20Middle,%201%20Bottom&tb=ls&d=squad+name&player-summary=on">1 Middle, 1 Bottom</a></td><tr><td>1</td><td>1 Top</td><td><b>missions</b> 4 -> 4m</td><tr><td>1</td><td>1 Middle</td><td><b>missions</b> 15 -> 15m</td><tr><td>1</td><td>1 Bottom</td><td><b>missions</b> 22 -> 22m</td><tr><td>1</td><td>1 Top</td><td><b>deploy</b> 81 -> 85m</td><tr><td>1</td><td>1 Middle</td><td><b>deploy</b> 152 -> 167m</td><tr><td>1</td><td>1 Bottom</td><td><b>deploy</b> 4 -> 26m</td><tr><td>1</td><td>&nbsp;</td><td><b>remaining GP:</b> 0 toons, 31 ships<pre id="optimal-1-plan" style="display: none !important;">**phase 1: 1 Top -> 2 :star:**
+<tbody><tr class="newPhase"><td>1</td><td>&nbsp;</td><td><b>active</b> <a href="tb.html?c=1%20Top&tb=ls&d=squad+name&player-summary=on">1 Top</a> <a href="tb.html?c=1%20Middle,%201%20Bottom&tb=ls&d=squad+name&player-summary=on">1 Middle, 1 Bottom</a></td><tr><td>1</td><td>1 Top</td><td><b>missions</b> 5 -> 5m</td><tr><td>1</td><td>1 Middle</td><td><b>missions</b> 15 -> 15m</td><tr><td>1</td><td>1 Bottom</td><td><b>missions</b> 24 -> 24m</td><tr><td>1</td><td>1 Top</td><td><b>deploy</b> 80 -> 85m</td><tr><td>1</td><td>1 Middle</td><td><b>deploy</b> 152 -> 167m</td><tr><td>1</td><td>1 Bottom</td><td><b>deploy</b> 11 -> 35m</td><tr><td>1</td><td>&nbsp;</td><td><b>remaining GP:</b> 0 toons, 36 ships<pre id="optimal-1-plan" style="display: none !important;">**phase 1: 1 Top -> 2 :star:**
 **phase 1: 1 Middle -> 2 :star:**
 **phase 1: 1 Bottom HOLD AT ZERO :star:**</pre><pre id="optimal-1-missions" style="display: none !important;">**Fleet CM** Negotiator e.g. Negotiator Anakin's Eta-2, Ahsoka's SF, Umbaran SF, Plo's SF, Clone Sergeant's ARC-170, Rex's ARC-170
-DarthGutty GamingChips Lillyanna Mayonnaise Misfit Paras PorkinsRevenge R3van Subie Walan Lamor xXxDarthWOLFxXx
+Biscuit Tormentor Cbrn121 DarthGutty GamingChips Lillyanna Mayonnaise Misfit natebzta Paras PorkinsRevenge R3van Subie Walan Lamor xXxDarthWOLFxXx
 
 **Jedi CM** JKL e.g. JKL GMY HYoda Old Ben, Ezra
-DarthGutty Drederic GamingChips Jubal Earley Lillyanna Mayonnaise Misfit Obi1ablowme pears R3van Walan Lamor
+DarthGutty Drederic Erotavlas GamingChips Jubal Earley Lillyanna Mayonnaise Misfit Obi1ablowme pears R3van Walan Lamor
 
 **Jedi CM** JKR e.g. JKR GMY GAS BS Jolee
-Cbrn121 Erotavlas Killest the Illest
+Cbrn121 RexBlade
 
 **Jedi CM** JMLS e.g. JMLS GAS Jolee BS JKR
-GamingChips Mayonnaise Misfit R3van Walan Lamor
+GamingChips Jubal Earley Mayonnaise Misfit R3van Walan Lamor
 
 **LS CM** CLS e.g. CLS Han Chewbacca Chewpio C-3PO
 Aaron Shepard Coktus ColeMiner DarkJedi83 GamingChips Luthorno Mayonnaise natebzta Obi1ablowme Paras pears PolyPlayz R3van
@@ -106,16 +106,16 @@ Aaron Shepard Coktus ColeMiner DarkJedi83 GamingChips Luthorno Mayonnaise natebz
 Lillyanna
 
 **LS CM** GAS e.g. GAS Rex Echo (501st), ARC Trooper, Fives
-N8erade Shazaam
+Killest the Illest N8erade Shazaam
 
 **LS CM** GL Rey e.g. Rey Chewbacca GK RH Poe, RH Finn
-DarthGutty Descending Drederic Misfit Walan Lamor
+DarthGutty Descending Drederic Misfit RexBlade Walan Lamor
 
 **LS CM** JMK GR e.g. JMK CAT Fives JKA R2-D2
 R3van
 
 **LS CM** JTR e.g. JTR BB-8 C-3PO R2-D2 Finn
-Descending JEDIKNIGHTARMORER Jubal Earley Walan Lamor
+Descending JEDIKNIGHTARMORER Jubal Earley RexBlade Walan Lamor
 
 **LS CM** Padme e.g. Padme Ahsoka Tano (Snips), JKA GK C-3PO
 Erotavlas Starkiller1670
@@ -123,22 +123,22 @@ Erotavlas Starkiller1670
 **LS CM** ROLO e.g. ROLO Cpt Solo, Han Chewpio Lando
 DarthGutty Erotavlas Jubal Earley Lillyanna Misfit
 
-</pre><p><a href="#" onclick="CopyToClipboard('optimal-1-plan'); return false;">Copy Plan</a> | <a href="#" onclick="CopyToClipboard('optimal-1-missions'); return false;">Copy Missions</a></p></td><tr><td>1</td><td>1 Top</td><td>2 &#11088; -- 57 to the next</td><tr><td>1</td><td>1 Middle</td><td>2 &#11088; -- 90 to the next</td><tr><td>1</td><td>1 Bottom</td><td><b>HOLD AT ZERO &#11088;</b></td><tr class="newPhase"><td>2</td><td>&nbsp;</td><td><b>active</b> <a href="tb.html?c=2%20Top&tb=ls&d=squad+name&player-summary=on">2 Top</a> <a href="tb.html?c=2%20Middle,%201%20Bottom&tb=ls&d=squad+name&player-summary=on">1 Bottom, 2 Middle</a></td><tr><td>2</td><td>1 Bottom</td><td><b>missions</b> 28 -> 54m</td><tr><td>2</td><td>2 Top</td><td><b>missions</b> 7 -> 7m</td><tr><td>2</td><td>2 Middle</td><td><b>missions</b> 14 -> 14m</td><tr><td>2</td><td>1 Bottom</td><td><b>deploy</b> 126 -> 180m</td><tr><td>2</td><td>2 Top</td><td><b>deploy</b> 64 -> 71m</td><tr><td>2</td><td>2 Middle</td><td><b>deploy</b> 30 -> 44m</td><tr><td>2</td><td>&nbsp;</td><td><b>remaining GP:</b> 0 toons, 48 ships<pre id="optimal-2-plan" style="display: none !important;">**phase 2: 2 Top -> 1 :star:**
+</pre><p><a href="#" onclick="CopyToClipboard('optimal-1-plan'); return false;">Copy Plan</a> | <a href="#" onclick="CopyToClipboard('optimal-1-missions'); return false;">Copy Missions</a></p></td><tr><td>1</td><td>1 Top</td><td>2 &#11088; -- 57 to the next</td><tr><td>1</td><td>1 Middle</td><td>2 &#11088; -- 90 to the next</td><tr><td>1</td><td>1 Bottom</td><td><b>HOLD AT ZERO &#11088;</b></td><tr class="newPhase"><td>2</td><td>&nbsp;</td><td><b>active</b> <a href="tb.html?c=2%20Top&tb=ls&d=squad+name&player-summary=on">2 Top</a> <a href="tb.html?c=2%20Middle,%201%20Bottom&tb=ls&d=squad+name&player-summary=on">1 Bottom, 2 Middle</a></td><tr><td>2</td><td>1 Bottom</td><td><b>missions</b> 29 -> 64m</td><tr><td>2</td><td>2 Top</td><td><b>missions</b> 9 -> 9m</td><tr><td>2</td><td>2 Middle</td><td><b>missions</b> 16 -> 16m</td><tr><td>2</td><td>1 Bottom</td><td><b>deploy</b> 116 -> 180m</td><tr><td>2</td><td>2 Top</td><td><b>deploy</b> 62 -> 71m</td><tr><td>2</td><td>2 Middle</td><td><b>deploy</b> 47 -> 63m</td><tr><td>2</td><td>&nbsp;</td><td><b>remaining GP:</b> 0 toons, 54 ships<pre id="optimal-2-plan" style="display: none !important;">**phase 2: 2 Top -> 1 :star:**
 **phase 2: 2 Middle HOLD AT ZERO :star:**
 **phase 2: 1 Bottom -> 3 :star:**</pre><pre id="optimal-2-missions" style="display: none !important;">**Fleet CM** Negotiator e.g. Negotiator Anakin's Eta-2, Ahsoka's SF, Umbaran SF, Plo's SF, Clone Sergeant's ARC-170, Rex's ARC-170
-DarthGutty GamingChips Lillyanna Mayonnaise Misfit Paras PorkinsRevenge R3van Subie Walan Lamor xXxDarthWOLFxXx
+Biscuit Tormentor Cbrn121 DarthGutty GamingChips Lillyanna Mayonnaise Misfit natebzta Paras PorkinsRevenge R3van Subie Walan Lamor xXxDarthWOLFxXx
 
 **GAS/Ahsoka** GAS Special e.g. GAS Ahsoka Tano (Snips)
-DarthGutty Erotavlas GamingChips Killest the Illest Mayonnaise Misfit pears R3van Shazaam Subie Walan Lamor
+DarthGutty Erotavlas GamingChips Killest the Illest Mayonnaise Misfit pears R3van RexBlade Shazaam Subie Walan Lamor
 
 **GR CM** Padme e.g. Padme Ahsoka Tano (Snips), JKA GK C-3PO
 Erotavlas pears Starkiller1670
 
 **Jedi CM** JKL e.g. JKL GMY HYoda Old Ben, Ezra
-DarthGutty Drederic GamingChips Jubal Earley Lillyanna Mayonnaise Misfit Obi1ablowme R3van Walan Lamor
+DarthGutty Drederic Erotavlas GamingChips Jubal Earley Lillyanna Mayonnaise Misfit Obi1ablowme R3van Walan Lamor
 
-**Jedi CM** JKR e.g. JKR GMY HYoda BS Jolee
-Cbrn121 Erotavlas
+**Jedi CM** JKR e.g. JKR GMY GAS BS Jolee
+Cbrn121
 
 **LS CM** CLS e.g. CLS Han Chewbacca Chewpio C-3PO
 Aaron Shepard Coktus ColeMiner DarkJedi83 GamingChips Luthorno Mayonnaise natebzta Obi1ablowme Paras pears PolyPlayz R3van
@@ -150,13 +150,13 @@ Lillyanna
 N8erade
 
 **LS CM** GL Rey e.g. Rey Chewbacca GK RH Poe, RH Finn
-DarthGutty Descending Drederic Misfit Walan Lamor
+DarthGutty Descending Drederic Misfit RexBlade Walan Lamor
 
 **LS CM** JMK GR e.g. JMK CAT Fives JKA R2-D2
 R3van
 
 **LS CM** JTR e.g. JTR BB-8 C-3PO R2-D2 Finn
-Descending JEDIKNIGHTARMORER Walan Lamor
+Descending JEDIKNIGHTARMORER RexBlade Walan Lamor
 
 **LS CM** ROLO e.g. ROLO Cpt Solo, Han Chewpio Lando
 DarthGutty Erotavlas Jubal Earley Lillyanna Misfit
@@ -164,78 +164,72 @@ DarthGutty Erotavlas Jubal Earley Lillyanna Misfit
 **LS CM** Shaak Ti e.g. Shaak Ti, Rex Echo (501st), ARC Trooper, Fives
 Shazaam
 
-</pre><p><a href="#" onclick="CopyToClipboard('optimal-2-plan'); return false;">Copy Plan</a> | <a href="#" onclick="CopyToClipboard('optimal-2-missions'); return false;">Copy Missions</a></p></td><tr><td>2</td><td>2 Top</td><td>1 &#11088; -- 63 to the next</td><tr><td>2</td><td>2 Middle</td><td><b>HOLD AT ZERO &#11088;</b></td><tr><td>2</td><td>1 Bottom</td><td>3 &#11088;</td><tr class="newPhase"><td>3</td><td>&nbsp;</td><td><b>active</b> <a href="tb.html?c=3%20Top&tb=ls&d=squad+name&player-summary=on">3 Top</a> <a href="tb.html?c=2%20Middle,%202%20Bottom&tb=ls&d=squad+name&player-summary=on">2 Middle, 2 Bottom</a></td><tr><td>3</td><td>2 Middle</td><td><b>missions</b> 29 -> 73m</td><tr><td>3</td><td>2 Bottom</td><td><b>missions</b> 12 -> 12m</td><tr><td>3</td><td>3 Top</td><td><b>missions</b> 14 -> 14m</td><tr><td>3</td><td>2 Middle</td><td><b>deploy</b> 22 -> 95m</td><tr><td>3</td><td>2 Bottom</td><td><b>deploy</b> 108 -> 120m</td><tr><td>3</td><td>3 Top</td><td><b>deploy</b> 77 -> 91m</td><tr><td>3</td><td>&nbsp;</td><td><b>remaining GP:</b> 26 toons, 35 ships<pre id="optimal-3-plan" style="display: none !important;">**phase 3: 3 Top HOLD AT ZERO :star:**
+</pre><p><a href="#" onclick="CopyToClipboard('optimal-2-plan'); return false;">Copy Plan</a> | <a href="#" onclick="CopyToClipboard('optimal-2-missions'); return false;">Copy Missions</a></p></td><tr><td>2</td><td>2 Top</td><td>1 &#11088; -- 63 to the next</td><tr><td>2</td><td>2 Middle</td><td><b>HOLD AT ZERO &#11088;</b></td><tr><td>2</td><td>1 Bottom</td><td>3 &#11088;</td><tr class="newPhase"><td>3</td><td>&nbsp;</td><td><b>active</b> <a href="tb.html?c=3%20Top&tb=ls&d=squad+name&player-summary=on">3 Top</a> <a href="tb.html?c=2%20Middle,%202%20Bottom&tb=ls&d=squad+name&player-summary=on">2 Middle, 2 Bottom</a></td><tr><td>3</td><td>2 Middle</td><td><b>missions</b> 32 -> 95m</td><tr><td>3</td><td>2 Bottom</td><td><b>missions</b> 12 -> 12m</td><tr><td>3</td><td>3 Top</td><td><b>missions</b> 18 -> 18m</td><tr><td>3</td><td>2 Bottom</td><td><b>deploy</b> 108 -> 120m</td><tr><td>3</td><td>3 Top</td><td><b>deploy</b> 73 -> 91m</td><tr><td>3</td><td>&nbsp;</td><td><b>remaining GP:</b> 55 toons, 43 ships<pre id="optimal-3-plan" style="display: none !important;">**phase 3: 3 Top HOLD AT ZERO :star:**
 **phase 3: 2 Middle HOLD AT ZERO :star:**
 **phase 3: 2 Bottom HOLD AT ZERO :star:**</pre><pre id="optimal-3-missions" style="display: none !important;">**Fleet CM** Negotiator e.g. Negotiator Anakin's Eta-2, Ahsoka's SF, Umbaran SF, Plo's SF, Clone Sergeant's ARC-170, Rex's ARC-170
-DarthGutty GamingChips Lillyanna Mayonnaise Misfit Paras PorkinsRevenge R3van Subie Walan Lamor xXxDarthWOLFxXx
+Biscuit Tormentor Cbrn121 DarthGutty GamingChips Lillyanna Mayonnaise Misfit natebzta Paras PorkinsRevenge R3van Subie Walan Lamor xXxDarthWOLFxXx
 
 **GAS/Ahsoka** GAS Special e.g. GAS Ahsoka Tano (Snips)
-DarthGutty Erotavlas GamingChips Killest the Illest Mayonnaise Misfit pears R3van Shazaam Subie Walan Lamor
+DarthGutty Erotavlas GamingChips Killest the Illest Mayonnaise Misfit pears R3van RexBlade Shazaam Subie Walan Lamor
 
 **GR CM** JMK GR e.g. JMK CAT Fives JKA R2-D2
 R3van
 
-**GR CM** Padme e.g. Padme Fives JKA GK R2-D2
-DarthGutty Descending Erotavlas Paras pears Walan Lamor
+**GR CM** Padme e.g. Padme Ahsoka Tano (Snips), JKA GK R2-D2
+DarthGutty Descending Erotavlas pears RexBlade Walan Lamor
 
 **GR CM** Shaak Ti e.g. Shaak Ti, Rex Echo (501st), ARC Trooper, Fives
 N8erade Shazaam
 
 **Jedi CM** JKL e.g. JKL GMY HYoda GK Aayla
-DarthGutty Drederic GamingChips Jubal Earley Lillyanna Mayonnaise Misfit Obi1ablowme R3van Walan Lamor
+DarthGutty Drederic Erotavlas GamingChips Jubal Earley Lillyanna Mayonnaise Misfit Obi1ablowme R3van Walan Lamor
 
-**Jedi CM** JKR e.g. JKR GMY HYoda BS Jolee
-Cbrn121 Erotavlas
+**Jedi CM** JKR e.g. JKR GMY GAS BS Jolee
+Cbrn121
 
 **LS CM** CLS e.g. CLS Han Chewbacca Chewpio C-3PO
-Aaron Shepard Coktus ColeMiner DarkJedi83 Drederic GamingChips Luthorno Mayonnaise natebzta Obi1ablowme pears PolyPlayz R3van Walan Lamor
-
-**LS CM** CLS-Alt e.g. CLS Han Chewbacca Chewpio Old Ben
-Descending
+Aaron Shepard Coktus ColeMiner DarkJedi83 Descending Drederic GamingChips Luthorno Mayonnaise natebzta Obi1ablowme Paras pears PolyPlayz R3van Walan Lamor
 
 **LS CM** Finn e.g. Finn RT RH Finn, RH Poe, JTR
 Lillyanna
 
 **LS CM** JTR e.g. JTR BB-8 C-3PO R2-D2 Finn
-JEDIKNIGHTARMORER Misfit
+Misfit
 
 **LS CM** ROLO e.g. ROLO Cpt Solo, Han Chewpio Lando
 DarthGutty Erotavlas Jubal Earley Lillyanna Misfit
 
-</pre><p><a href="#" onclick="CopyToClipboard('optimal-3-plan'); return false;">Copy Plan</a> | <a href="#" onclick="CopyToClipboard('optimal-3-missions'); return false;">Copy Missions</a></p></td><tr><td>3</td><td>3 Top</td><td><b>HOLD AT ZERO &#11088;</b></td><tr><td>3</td><td>2 Middle</td><td><b>HOLD AT ZERO &#11088;</b></td><tr><td>3</td><td>2 Bottom</td><td><b>HOLD AT ZERO &#11088;</b></td><tr class="newPhase"><td>4</td><td>&nbsp;</td><td><b>active</b> <a href="tb.html?c=3%20Top&tb=ls&d=squad+name&player-summary=on">3 Top</a> <a href="tb.html?c=2%20Middle,%202%20Bottom&tb=ls&d=squad+name&player-summary=on">2 Middle, 2 Bottom</a></td><tr><td>4</td><td>2 Middle</td><td><b>missions</b> 29 -> 124m</td><tr><td>4</td><td>2 Bottom</td><td><b>missions</b> 1 -> 121m</td><tr><td>4</td><td>3 Top</td><td><b>missions</b> 14 -> 105m</td><tr><td>4</td><td>2 Middle</td><td><b>deploy</b> 136 -> 260m</td><tr><td>4</td><td>3 Top</td><td><b>deploy</b> 112 -> 217m</td><tr><td>4</td><td>&nbsp;</td><td><b>remaining GP:</b> 20 toons, 0 ships<pre id="optimal-4-plan" style="display: none !important;">**phase 4: 3 Top -> 3 :star:**
+</pre><p><a href="#" onclick="CopyToClipboard('optimal-3-plan'); return false;">Copy Plan</a> | <a href="#" onclick="CopyToClipboard('optimal-3-missions'); return false;">Copy Missions</a></p></td><tr><td>3</td><td>3 Top</td><td><b>HOLD AT ZERO &#11088;</b></td><tr><td>3</td><td>2 Middle</td><td><b>HOLD AT ZERO &#11088;</b></td><tr><td>3</td><td>2 Bottom</td><td><b>HOLD AT ZERO &#11088;</b></td><tr class="newPhase"><td>4</td><td>&nbsp;</td><td><b>active</b> <a href="tb.html?c=3%20Top&tb=ls&d=squad+name&player-summary=on">3 Top</a> <a href="tb.html?c=2%20Middle,%202%20Bottom&tb=ls&d=squad+name&player-summary=on">2 Middle, 2 Bottom</a></td><tr><td>4</td><td>2 Middle</td><td><b>missions</b> 32 -> 127m</td><tr><td>4</td><td>2 Bottom</td><td><b>missions</b> 1 -> 121m</td><tr><td>4</td><td>3 Top</td><td><b>missions</b> 18 -> 109m</td><tr><td>4</td><td>2 Middle</td><td><b>deploy</b> 133 -> 260m</td><tr><td>4</td><td>3 Top</td><td><b>deploy</b> 108 -> 217m</td><tr><td>4</td><td>&nbsp;</td><td><b>remaining GP:</b> 30 toons, 8 ships<pre id="optimal-4-plan" style="display: none !important;">**phase 4: 3 Top -> 3 :star:**
 **phase 4: 2 Middle -> 3 :star:**
 **phase 4: 2 Bottom -> 1 :star:**</pre><pre id="optimal-4-missions" style="display: none !important;">**Fleet CM** Negotiator e.g. Negotiator Anakin's Eta-2, Ahsoka's SF, Umbaran SF, Plo's SF, Clone Sergeant's ARC-170, Rex's ARC-170
-DarthGutty GamingChips Lillyanna Mayonnaise Misfit Paras PorkinsRevenge R3van Subie Walan Lamor xXxDarthWOLFxXx
+Biscuit Tormentor Cbrn121 DarthGutty GamingChips Lillyanna Mayonnaise Misfit natebzta Paras PorkinsRevenge R3van Subie Walan Lamor xXxDarthWOLFxXx
 
 **GAS/Ahsoka** GAS Special e.g. GAS Ahsoka Tano (Snips)
-DarthGutty Erotavlas GamingChips Killest the Illest Mayonnaise Misfit pears R3van Shazaam Subie Walan Lamor
+DarthGutty Erotavlas GamingChips Killest the Illest Mayonnaise Misfit pears R3van RexBlade Shazaam Subie Walan Lamor
 
 **GR CM** JMK GR e.g. JMK CAT Fives JKA R2-D2
 R3van
 
-**GR CM** Padme e.g. Padme Fives JKA GK R2-D2
-DarthGutty Descending Erotavlas Paras pears Walan Lamor
+**GR CM** Padme e.g. Padme Ahsoka Tano (Snips), JKA GK R2-D2
+DarthGutty Descending Erotavlas pears RexBlade Walan Lamor
 
 **GR CM** Shaak Ti e.g. Shaak Ti, Rex Echo (501st), ARC Trooper, Fives
 N8erade Shazaam
 
 **Jedi CM** JKL e.g. JKL GMY HYoda GK Aayla
-DarthGutty Drederic GamingChips Jubal Earley Lillyanna Mayonnaise Misfit Obi1ablowme R3van Walan Lamor
+DarthGutty Drederic Erotavlas GamingChips Jubal Earley Lillyanna Mayonnaise Misfit Obi1ablowme R3van Walan Lamor
 
-**Jedi CM** JKR e.g. JKR GMY HYoda BS Jolee
-Cbrn121 Erotavlas
+**Jedi CM** JKR e.g. JKR GMY GAS BS Jolee
+Cbrn121
 
 **LS CM** CLS e.g. CLS Han Chewbacca Chewpio C-3PO
-Aaron Shepard Coktus ColeMiner DarkJedi83 Drederic GamingChips Luthorno Mayonnaise natebzta Obi1ablowme pears PolyPlayz R3van Walan Lamor
-
-**LS CM** CLS-Alt e.g. CLS Han Chewbacca Chewpio Old Ben
-Descending
+Aaron Shepard Coktus ColeMiner DarkJedi83 Descending Drederic GamingChips Luthorno Mayonnaise natebzta Obi1ablowme Paras pears PolyPlayz R3van Walan Lamor
 
 **LS CM** Finn e.g. Finn RT RH Finn, RH Poe, JTR
 Lillyanna
 
 **LS CM** JTR e.g. JTR BB-8 C-3PO R2-D2 Finn
-JEDIKNIGHTARMORER Misfit
+Misfit
 
 **LS CM** ROLO e.g. ROLO Cpt Solo, Han Chewpio Lando
 DarthGutty Erotavlas Jubal Earley Lillyanna Misfit
@@ -247,51 +241,50 @@ DarthGutty Erotavlas Jubal Earley Lillyanna Misfit
 **Estimated 15 :star:**
 
 **phase 1: active** 1 Top, 1 Middle, 1 Bottom
-phase 1: **missions** 1 Top 4 -> 4m
+phase 1: **missions** 1 Top 5 -> 5m
 phase 1: **missions** 1 Middle 15 -> 15m
-phase 1: **missions** 1 Bottom 22 -> 22m
-phase 1: **deploy** 1 Top 81 -> 85m
+phase 1: **missions** 1 Bottom 24 -> 24m
+phase 1: **deploy** 1 Top 80 -> 85m
 phase 1: **deploy** 1 Middle 152 -> 167m
-phase 1: **deploy** 1 Bottom 4 -> 26m
-phase 1: remaining GP = 0 toons, 31 ships
+phase 1: **deploy** 1 Bottom 11 -> 35m
+phase 1: remaining GP = 0 toons, 36 ships
 details: https://gorgatron1.github.io/brg/guild/darkforce/tb.html%3Fc=1%2520Middle,%25201%2520Bottom&tb=ls&d=squad+name&player-summary=on
 **phase 1: 1 Top -> 2 :star:**
 **phase 1: 1 Middle -> 2 :star:**
 **phase 1: 1 Bottom HOLD AT ZERO :star:**
 
 **phase 2: active** 1 Bottom, 2 Top, 2 Middle
-phase 2: **missions** 1 Bottom 28 -> 54m
-phase 2: **missions** 2 Top 7 -> 7m
-phase 2: **missions** 2 Middle 14 -> 14m
-phase 2: **deploy** 1 Bottom 126 -> 180m
-phase 2: **deploy** 2 Top 64 -> 71m
-phase 2: **deploy** 2 Middle 30 -> 44m
-phase 2: remaining GP = 0 toons, 48 ships
+phase 2: **missions** 1 Bottom 29 -> 64m
+phase 2: **missions** 2 Top 9 -> 9m
+phase 2: **missions** 2 Middle 16 -> 16m
+phase 2: **deploy** 1 Bottom 116 -> 180m
+phase 2: **deploy** 2 Top 62 -> 71m
+phase 2: **deploy** 2 Middle 47 -> 63m
+phase 2: remaining GP = 0 toons, 54 ships
 details: https://gorgatron1.github.io/brg/guild/darkforce/tb.html%3Fc=2%2520Middle,%25201%2520Bottom&tb=ls&d=squad+name&player-summary=on
 **phase 2: 2 Top -> 1 :star:**
 **phase 2: 2 Middle HOLD AT ZERO :star:**
 **phase 2: 1 Bottom -> 3 :star:**
 
 **phase 3: active** 2 Middle, 2 Bottom, 3 Top
-phase 3: **missions** 2 Middle 29 -> 73m
+phase 3: **missions** 2 Middle 32 -> 95m
 phase 3: **missions** 2 Bottom 12 -> 12m
-phase 3: **missions** 3 Top 14 -> 14m
-phase 3: **deploy** 2 Middle 22 -> 95m
+phase 3: **missions** 3 Top 18 -> 18m
 phase 3: **deploy** 2 Bottom 108 -> 120m
-phase 3: **deploy** 3 Top 77 -> 91m
-phase 3: remaining GP = 26 toons, 35 ships
+phase 3: **deploy** 3 Top 73 -> 91m
+phase 3: remaining GP = 55 toons, 43 ships
 details: https://gorgatron1.github.io/brg/guild/darkforce/tb.html%3Fc=2%2520Middle,%25202%2520Bottom&tb=ls&d=squad+name&player-summary=on
 **phase 3: 3 Top HOLD AT ZERO :star:**
 **phase 3: 2 Middle HOLD AT ZERO :star:**
 **phase 3: 2 Bottom HOLD AT ZERO :star:**
 
 **phase 4: active** 2 Middle, 2 Bottom, 3 Top
-phase 4: **missions** 2 Middle 29 -> 124m
+phase 4: **missions** 2 Middle 32 -> 127m
 phase 4: **missions** 2 Bottom 1 -> 121m
-phase 4: **missions** 3 Top 14 -> 105m
-phase 4: **deploy** 2 Middle 136 -> 260m
-phase 4: **deploy** 3 Top 112 -> 217m
-phase 4: remaining GP = 20 toons, 0 ships
+phase 4: **missions** 3 Top 18 -> 109m
+phase 4: **deploy** 2 Middle 133 -> 260m
+phase 4: **deploy** 3 Top 108 -> 217m
+phase 4: remaining GP = 30 toons, 8 ships
 details: https://gorgatron1.github.io/brg/guild/darkforce/tb.html%3Fc=2%2520Middle,%25202%2520Bottom&tb=ls&d=squad+name&player-summary=on
 **phase 4: 3 Top -> 3 :star:**
 **phase 4: 2 Middle -> 3 :star:**
@@ -308,19 +301,19 @@ details: https://gorgatron1.github.io/brg/guild/darkforce/tb.html%3Fc=2%2520Midd
     <th>Action</th>
     </tr>
 </thead>
-<tbody><tr class="newPhase"><td>1</td><td>&nbsp;</td><td><b>active</b> <a href="tb.html?c=1%20Top&tb=ls&d=squad+name&player-summary=on">1 Top</a> <a href="tb.html?c=1%20Middle,%201%20Bottom&tb=ls&d=squad+name&player-summary=on">1 Middle, 1 Bottom</a></td><tr><td>1</td><td>1 Top</td><td><b>missions</b> 4 -> 4m</td><tr><td>1</td><td>1 Middle</td><td><b>missions</b> 15 -> 15m</td><tr><td>1</td><td>1 Bottom</td><td><b>missions</b> 22 -> 22m</td><tr><td>1</td><td>1 Top</td><td><b>deploy</b> 81 -> 85m</td><tr><td>1</td><td>1 Middle</td><td><b>deploy</b> 152 -> 167m</td><tr><td>1</td><td>1 Bottom</td><td><b>deploy</b> 4 -> 26m</td><tr><td>1</td><td>&nbsp;</td><td><b>remaining GP:</b> 0 toons, 31 ships<pre id="decreasing-1-plan" style="display: none !important;">**phase 1: 1 Top -> 2 :star:**
+<tbody><tr class="newPhase"><td>1</td><td>&nbsp;</td><td><b>active</b> <a href="tb.html?c=1%20Top&tb=ls&d=squad+name&player-summary=on">1 Top</a> <a href="tb.html?c=1%20Middle,%201%20Bottom&tb=ls&d=squad+name&player-summary=on">1 Middle, 1 Bottom</a></td><tr><td>1</td><td>1 Top</td><td><b>missions</b> 5 -> 5m</td><tr><td>1</td><td>1 Middle</td><td><b>missions</b> 15 -> 15m</td><tr><td>1</td><td>1 Bottom</td><td><b>missions</b> 24 -> 24m</td><tr><td>1</td><td>1 Top</td><td><b>deploy</b> 80 -> 85m</td><tr><td>1</td><td>1 Middle</td><td><b>deploy</b> 152 -> 167m</td><tr><td>1</td><td>1 Bottom</td><td><b>deploy</b> 11 -> 35m</td><tr><td>1</td><td>&nbsp;</td><td><b>remaining GP:</b> 0 toons, 36 ships<pre id="decreasing-1-plan" style="display: none !important;">**phase 1: 1 Top -> 2 :star:**
 **phase 1: 1 Middle -> 2 :star:**
 **phase 1: 1 Bottom HOLD AT ZERO :star:**</pre><pre id="decreasing-1-missions" style="display: none !important;">**Fleet CM** Negotiator e.g. Negotiator Anakin's Eta-2, Ahsoka's SF, Umbaran SF, Plo's SF, Clone Sergeant's ARC-170, Rex's ARC-170
-DarthGutty GamingChips Lillyanna Mayonnaise Misfit Paras PorkinsRevenge R3van Subie Walan Lamor xXxDarthWOLFxXx
+Biscuit Tormentor Cbrn121 DarthGutty GamingChips Lillyanna Mayonnaise Misfit natebzta Paras PorkinsRevenge R3van Subie Walan Lamor xXxDarthWOLFxXx
 
 **Jedi CM** JKL e.g. JKL GMY HYoda Old Ben, Ezra
-DarthGutty Drederic GamingChips Jubal Earley Lillyanna Mayonnaise Misfit Obi1ablowme pears R3van Walan Lamor
+DarthGutty Drederic Erotavlas GamingChips Jubal Earley Lillyanna Mayonnaise Misfit Obi1ablowme pears R3van Walan Lamor
 
 **Jedi CM** JKR e.g. JKR GMY GAS BS Jolee
-Cbrn121 Erotavlas Killest the Illest
+Cbrn121 RexBlade
 
 **Jedi CM** JMLS e.g. JMLS GAS Jolee BS JKR
-GamingChips Mayonnaise Misfit R3van Walan Lamor
+GamingChips Jubal Earley Mayonnaise Misfit R3van Walan Lamor
 
 **LS CM** CLS e.g. CLS Han Chewbacca Chewpio C-3PO
 Aaron Shepard Coktus ColeMiner DarkJedi83 GamingChips Luthorno Mayonnaise natebzta Obi1ablowme Paras pears PolyPlayz R3van
@@ -329,16 +322,16 @@ Aaron Shepard Coktus ColeMiner DarkJedi83 GamingChips Luthorno Mayonnaise natebz
 Lillyanna
 
 **LS CM** GAS e.g. GAS Rex Echo (501st), ARC Trooper, Fives
-N8erade Shazaam
+Killest the Illest N8erade Shazaam
 
 **LS CM** GL Rey e.g. Rey Chewbacca GK RH Poe, RH Finn
-DarthGutty Descending Drederic Misfit Walan Lamor
+DarthGutty Descending Drederic Misfit RexBlade Walan Lamor
 
 **LS CM** JMK GR e.g. JMK CAT Fives JKA R2-D2
 R3van
 
 **LS CM** JTR e.g. JTR BB-8 C-3PO R2-D2 Finn
-Descending JEDIKNIGHTARMORER Jubal Earley Walan Lamor
+Descending JEDIKNIGHTARMORER Jubal Earley RexBlade Walan Lamor
 
 **LS CM** Padme e.g. Padme Ahsoka Tano (Snips), JKA GK C-3PO
 Erotavlas Starkiller1670
@@ -346,22 +339,22 @@ Erotavlas Starkiller1670
 **LS CM** ROLO e.g. ROLO Cpt Solo, Han Chewpio Lando
 DarthGutty Erotavlas Jubal Earley Lillyanna Misfit
 
-</pre><p><a href="#" onclick="CopyToClipboard('decreasing-1-plan'); return false;">Copy Plan</a> | <a href="#" onclick="CopyToClipboard('decreasing-1-missions'); return false;">Copy Missions</a></p></td><tr><td>1</td><td>1 Top</td><td>2 &#11088; -- 57 to the next</td><tr><td>1</td><td>1 Middle</td><td>2 &#11088; -- 90 to the next</td><tr><td>1</td><td>1 Bottom</td><td><b>HOLD AT ZERO &#11088;</b></td><tr class="newPhase"><td>2</td><td>&nbsp;</td><td><b>active</b> <a href="tb.html?c=2%20Top&tb=ls&d=squad+name&player-summary=on">2 Top</a> <a href="tb.html?c=2%20Middle,%201%20Bottom&tb=ls&d=squad+name&player-summary=on">1 Bottom, 2 Middle</a></td><tr><td>2</td><td>1 Bottom</td><td><b>missions</b> 28 -> 54m</td><tr><td>2</td><td>2 Top</td><td><b>missions</b> 7 -> 7m</td><tr><td>2</td><td>2 Middle</td><td><b>missions</b> 14 -> 14m</td><tr><td>2</td><td>1 Bottom</td><td><b>deploy</b> 126 -> 180m</td><tr><td>2</td><td>2 Top</td><td><b>deploy</b> 63 -> 70m</td><tr><td>2</td><td>2 Middle</td><td><b>deploy</b> 23 -> 37m</td><tr><td>2</td><td>&nbsp;</td><td><b>remaining GP:</b> 0 toons, 44 ships<pre id="decreasing-2-plan" style="display: none !important;">**phase 2: 2 Top HOLD AT ZERO :star:**
+</pre><p><a href="#" onclick="CopyToClipboard('decreasing-1-plan'); return false;">Copy Plan</a> | <a href="#" onclick="CopyToClipboard('decreasing-1-missions'); return false;">Copy Missions</a></p></td><tr><td>1</td><td>1 Top</td><td>2 &#11088; -- 57 to the next</td><tr><td>1</td><td>1 Middle</td><td>2 &#11088; -- 90 to the next</td><tr><td>1</td><td>1 Bottom</td><td><b>HOLD AT ZERO &#11088;</b></td><tr class="newPhase"><td>2</td><td>&nbsp;</td><td><b>active</b> <a href="tb.html?c=2%20Top&tb=ls&d=squad+name&player-summary=on">2 Top</a> <a href="tb.html?c=2%20Middle,%201%20Bottom&tb=ls&d=squad+name&player-summary=on">1 Bottom, 2 Middle</a></td><tr><td>2</td><td>1 Bottom</td><td><b>missions</b> 29 -> 64m</td><tr><td>2</td><td>2 Top</td><td><b>missions</b> 9 -> 9m</td><tr><td>2</td><td>2 Middle</td><td><b>missions</b> 15 -> 15m</td><tr><td>2</td><td>1 Bottom</td><td><b>deploy</b> 116 -> 180m</td><tr><td>2</td><td>2 Top</td><td><b>deploy</b> 61 -> 70m</td><tr><td>2</td><td>2 Middle</td><td><b>deploy</b> 40 -> 55m</td><tr><td>2</td><td>&nbsp;</td><td><b>remaining GP:</b> 0 toons, 50 ships<pre id="decreasing-2-plan" style="display: none !important;">**phase 2: 2 Top HOLD AT ZERO :star:**
 **phase 2: 2 Middle HOLD AT ZERO :star:**
 **phase 2: 1 Bottom -> 3 :star:**</pre><pre id="decreasing-2-missions" style="display: none !important;">**Fleet CM** Negotiator e.g. Negotiator Anakin's Eta-2, Ahsoka's SF, Umbaran SF, Plo's SF, Clone Sergeant's ARC-170, Rex's ARC-170
-DarthGutty GamingChips Lillyanna Mayonnaise Misfit Paras PorkinsRevenge R3van Subie Walan Lamor xXxDarthWOLFxXx
+Biscuit Tormentor Cbrn121 DarthGutty GamingChips Lillyanna Mayonnaise Misfit natebzta Paras PorkinsRevenge R3van Subie Walan Lamor xXxDarthWOLFxXx
 
 **GAS/Ahsoka** GAS Special e.g. GAS Ahsoka Tano (Snips)
-DarthGutty Erotavlas GamingChips Killest the Illest Mayonnaise Misfit pears R3van Shazaam Subie Walan Lamor
+DarthGutty Erotavlas GamingChips Killest the Illest Mayonnaise Misfit pears R3van RexBlade Shazaam Subie Walan Lamor
 
 **GR CM** Padme e.g. Padme Ahsoka Tano (Snips), JKA GK C-3PO
 Erotavlas pears Starkiller1670
 
 **Jedi CM** JKL e.g. JKL GMY HYoda Old Ben, Ezra
-DarthGutty Drederic GamingChips Jubal Earley Lillyanna Mayonnaise Misfit Obi1ablowme R3van Walan Lamor
+DarthGutty Drederic Erotavlas GamingChips Jubal Earley Lillyanna Mayonnaise Misfit Obi1ablowme R3van Walan Lamor
 
-**Jedi CM** JKR e.g. JKR GMY HYoda BS Jolee
-Cbrn121 Erotavlas
+**Jedi CM** JKR e.g. JKR GMY GAS BS Jolee
+Cbrn121
 
 **LS CM** CLS e.g. CLS Han Chewbacca Chewpio C-3PO
 Aaron Shepard Coktus ColeMiner DarkJedi83 GamingChips Luthorno Mayonnaise natebzta Obi1ablowme Paras pears PolyPlayz R3van
@@ -373,13 +366,13 @@ Lillyanna
 N8erade
 
 **LS CM** GL Rey e.g. Rey Chewbacca GK RH Poe, RH Finn
-DarthGutty Descending Drederic Misfit Walan Lamor
+DarthGutty Descending Drederic Misfit RexBlade Walan Lamor
 
 **LS CM** JMK GR e.g. JMK CAT Fives JKA R2-D2
 R3van
 
 **LS CM** JTR e.g. JTR BB-8 C-3PO R2-D2 Finn
-Descending JEDIKNIGHTARMORER Walan Lamor
+Descending JEDIKNIGHTARMORER RexBlade Walan Lamor
 
 **LS CM** ROLO e.g. ROLO Cpt Solo, Han Chewpio Lando
 DarthGutty Erotavlas Jubal Earley Lillyanna Misfit
@@ -387,57 +380,271 @@ DarthGutty Erotavlas Jubal Earley Lillyanna Misfit
 **LS CM** Shaak Ti e.g. Shaak Ti, Rex Echo (501st), ARC Trooper, Fives
 Shazaam
 
-</pre><p><a href="#" onclick="CopyToClipboard('decreasing-2-plan'); return false;">Copy Plan</a> | <a href="#" onclick="CopyToClipboard('decreasing-2-missions'); return false;">Copy Missions</a></p></td><tr><td>2</td><td>2 Top</td><td><b>HOLD AT ZERO &#11088;</b></td><tr><td>2</td><td>2 Middle</td><td><b>HOLD AT ZERO &#11088;</b></td><tr><td>2</td><td>1 Bottom</td><td>3 &#11088;</td><tr class="newPhase"><td>3</td><td>&nbsp;</td><td><b>active</b> <a href="tb.html?c=2%20Top&tb=ls&d=squad+name&player-summary=on">2 Top</a> <a href="tb.html?c=2%20Middle,%202%20Bottom&tb=ls&d=squad+name&player-summary=on">2 Middle, 2 Bottom</a></td><tr><td>3</td><td>2 Top</td><td><b>missions</b> 7 -> 77m</td><tr><td>3</td><td>2 Middle</td><td><b>missions</b> 28 -> 65m</td><tr><td>3</td><td>2 Bottom</td><td><b>missions</b> 11 -> 11m</td><tr><td>3</td><td>2 Top</td><td><b>deploy</b> 57 -> 134m</td><tr><td>3</td><td>2 Middle</td><td><b>deploy</b> 30 -> 95m</td><tr><td>3</td><td>2 Bottom</td><td><b>deploy</b> 110 -> 121m</td><tr><td>3</td><td>&nbsp;</td><td><b>remaining GP:</b> 3 toons, 46 ships<pre id="decreasing-3-plan" style="display: none !important;">**phase 3: 2 Top -> 2 :star:**
+</pre><p><a href="#" onclick="CopyToClipboard('decreasing-2-plan'); return false;">Copy Plan</a> | <a href="#" onclick="CopyToClipboard('decreasing-2-missions'); return false;">Copy Missions</a></p></td><tr><td>2</td><td>2 Top</td><td><b>HOLD AT ZERO &#11088;</b></td><tr><td>2</td><td>2 Middle</td><td><b>HOLD AT ZERO &#11088;</b></td><tr><td>2</td><td>1 Bottom</td><td>3 &#11088;</td><tr class="newPhase"><td>3</td><td>&nbsp;</td><td><b>active</b> <a href="tb.html?c=2%20Top&tb=ls&d=squad+name&player-summary=on">2 Top</a> <a href="tb.html?c=2%20Middle,%202%20Bottom&tb=ls&d=squad+name&player-summary=on">2 Middle, 2 Bottom</a></td><tr><td>3</td><td>2 Top</td><td><b>missions</b> 9 -> 79m</td><tr><td>3</td><td>2 Middle</td><td><b>missions</b> 30 -> 85m</td><tr><td>3</td><td>2 Bottom</td><td><b>missions</b> 12 -> 12m</td><tr><td>3</td><td>2 Top</td><td><b>deploy</b> 55 -> 134m</td><tr><td>3</td><td>2 Middle</td><td><b>deploy</b> 10 -> 95m</td><tr><td>3</td><td>2 Bottom</td><td><b>deploy</b> 108 -> 120m</td><tr><td>3</td><td>&nbsp;</td><td><b>remaining GP:</b> 31 toons, 51 ships<pre id="decreasing-3-plan" style="display: none !important;">**phase 3: 2 Top -> 2 :star:**
 **phase 3: 2 Middle HOLD AT ZERO :star:**
-**phase 3: 2 Bottom -> 1 :star:**</pre><pre id="decreasing-3-missions" style="display: none !important;">**Fleet CM** Negotiator e.g. Negotiator Anakin's Eta-2, Ahsoka's SF, Umbaran SF, Plo's SF, Clone Sergeant's ARC-170, Rex's ARC-170
-DarthGutty GamingChips Lillyanna Mayonnaise Misfit Paras PorkinsRevenge R3van Subie Walan Lamor xXxDarthWOLFxXx
+**phase 3: 2 Bottom HOLD AT ZERO :star:**</pre><pre id="decreasing-3-missions" style="display: none !important;">**Fleet CM** Negotiator e.g. Negotiator Anakin's Eta-2, Ahsoka's SF, Umbaran SF, Plo's SF, Clone Sergeant's ARC-170, Rex's ARC-170
+Biscuit Tormentor Cbrn121 DarthGutty GamingChips Lillyanna Mayonnaise Misfit natebzta Paras PorkinsRevenge R3van Subie Walan Lamor xXxDarthWOLFxXx
 
 **GAS/Ahsoka** GAS Special e.g. GAS Ahsoka Tano (Snips)
-DarthGutty Erotavlas GamingChips Killest the Illest Mayonnaise Misfit pears R3van Shazaam Subie Walan Lamor
+DarthGutty Erotavlas GamingChips Killest the Illest Mayonnaise Misfit pears R3van RexBlade Shazaam Subie Walan Lamor
 
 **GR CM** JMK GR e.g. JMK CAT Fives JKA R2-D2
 R3van
 
-**GR CM** Padme e.g. Padme Fives JKA GK R2-D2
-DarthGutty Descending Erotavlas Paras pears Walan Lamor
+**GR CM** Padme e.g. Padme Ahsoka Tano (Snips), JKA GK R2-D2
+DarthGutty Descending Erotavlas pears RexBlade Walan Lamor
 
 **GR CM** Shaak Ti e.g. Shaak Ti, Rex Echo (501st), ARC Trooper, Fives
 N8erade Shazaam
 
 **Jedi CM** JKL e.g. JKL GMY HYoda GK Aayla
-DarthGutty Drederic GamingChips Jubal Earley Lillyanna Mayonnaise Misfit Obi1ablowme R3van Walan Lamor
+DarthGutty Drederic Erotavlas GamingChips Jubal Earley Lillyanna Mayonnaise Misfit Obi1ablowme R3van Walan Lamor
 
-**Jedi CM** JKR e.g. JKR GMY HYoda BS Jolee
-Cbrn121 Erotavlas
+**Jedi CM** JKR e.g. JKR GMY GAS BS Jolee
+Cbrn121
 
 **LS CM** CLS e.g. CLS Han Chewbacca Chewpio C-3PO
-Aaron Shepard Coktus ColeMiner DarkJedi83 Drederic GamingChips Luthorno Mayonnaise natebzta Obi1ablowme pears PolyPlayz R3van Walan Lamor
-
-**LS CM** CLS-Alt e.g. CLS Han Chewbacca Chewpio Old Ben
-Descending
+Aaron Shepard Coktus ColeMiner DarkJedi83 Descending Drederic GamingChips Luthorno Mayonnaise natebzta Obi1ablowme Paras pears PolyPlayz R3van Walan Lamor
 
 **LS CM** Finn e.g. Finn RT RH Finn, RH Poe, JTR
 Lillyanna
 
 **LS CM** JTR e.g. JTR BB-8 C-3PO R2-D2 Finn
-JEDIKNIGHTARMORER Misfit
+Misfit
 
 **LS CM** ROLO e.g. ROLO Cpt Solo, Han Chewpio Lando
 DarthGutty Erotavlas Jubal Earley Lillyanna Misfit
 
-</pre><p><a href="#" onclick="CopyToClipboard('decreasing-3-plan'); return false;">Copy Plan</a> | <a href="#" onclick="CopyToClipboard('decreasing-3-missions'); return false;">Copy Missions</a></p></td><tr><td>3</td><td>2 Top</td><td>2 &#11088; -- 81 to the next</td><tr><td>3</td><td>2 Middle</td><td><b>HOLD AT ZERO &#11088;</b></td><tr><td>3</td><td>2 Bottom</td><td>1 &#11088; -- 96 to the next</td><tr class="newPhase"><td>4</td><td>&nbsp;</td><td><b>active</b> <a href="tb.html?c=3%20Top&tb=ls&d=squad+name&player-summary=on">3 Top</a> <a href="tb.html?c=2%20Middle,%203%20Bottom&tb=ls&d=squad+name&player-summary=on">2 Middle, 3 Bottom</a></td><tr><td>4</td><td>2 Middle</td><td><b>missions</b> 30 -> 125m</td><tr><td>4</td><td>3 Top</td><td><b>missions</b> 13 -> 13m</td><tr><td>4</td><td>3 Bottom</td><td><b>missions</b> 9 -> 9m</td><tr><td>4</td><td>2 Middle</td><td><b>deploy</b> 135 -> 260m</td><tr><td>4</td><td>3 Top</td><td><b>deploy</b> 79 -> 92m</td><tr><td>4</td><td>3 Bottom</td><td><b>deploy</b> 2 -> 11m</td><tr><td>4</td><td>&nbsp;</td><td><b>remaining GP:</b> 0 toons, 19 ships<pre id="decreasing-4-plan" style="display: none !important;">**phase 4: 3 Top -> 1 :star:**
+</pre><p><a href="#" onclick="CopyToClipboard('decreasing-3-plan'); return false;">Copy Plan</a> | <a href="#" onclick="CopyToClipboard('decreasing-3-missions'); return false;">Copy Missions</a></p></td><tr><td>3</td><td>2 Top</td><td>2 &#11088; -- 81 to the next</td><tr><td>3</td><td>2 Middle</td><td><b>HOLD AT ZERO &#11088;</b></td><tr><td>3</td><td>2 Bottom</td><td><b>HOLD AT ZERO &#11088;</b></td><tr class="newPhase"><td>4</td><td>&nbsp;</td><td><b>active</b> <a href="tb.html?c=3%20Top&tb=ls&d=squad+name&player-summary=on">3 Top</a> <a href="tb.html?c=2%20Middle,%202%20Bottom&tb=ls&d=squad+name&player-summary=on">2 Middle, 2 Bottom</a></td><tr><td>4</td><td>2 Middle</td><td><b>missions</b> 30 -> 125m</td><tr><td>4</td><td>2 Bottom</td><td><b>missions</b> 1 -> 121m</td><tr><td>4</td><td>3 Top</td><td><b>missions</b> 17 -> 17m</td><tr><td>4</td><td>2 Middle</td><td><b>deploy</b> 135 -> 260m</td><tr><td>4</td><td>3 Top</td><td><b>deploy</b> 75 -> 92m</td><tr><td>4</td><td>&nbsp;</td><td><b>remaining GP:</b> 8 toons, 27 ships<pre id="decreasing-4-plan" style="display: none !important;">**phase 4: 3 Top -> 1 :star:**
 **phase 4: 2 Middle -> 3 :star:**
-**phase 4: 3 Bottom HOLD AT ZERO :star:**</pre><pre id="decreasing-4-missions" style="display: none !important;">**Fleet CM** Negotiator e.g. Negotiator Anakin's Eta-2, Ahsoka's SF, Umbaran SF, Plo's SF, Clone Sergeant's ARC-170, Rex's ARC-170
-DarthGutty GamingChips Lillyanna Mayonnaise Misfit Paras PorkinsRevenge R3van Subie Walan Lamor xXxDarthWOLFxXx
+**phase 4: 2 Bottom -> 1 :star:**</pre><pre id="decreasing-4-missions" style="display: none !important;">**Fleet CM** Negotiator e.g. Negotiator Anakin's Eta-2, Ahsoka's SF, Umbaran SF, Plo's SF, Clone Sergeant's ARC-170, Rex's ARC-170
+Biscuit Tormentor Cbrn121 DarthGutty GamingChips Lillyanna Mayonnaise Misfit natebzta Paras PorkinsRevenge R3van Subie Walan Lamor xXxDarthWOLFxXx
 
 **GAS/Ahsoka** GAS Special e.g. GAS Ahsoka Tano (Snips)
-DarthGutty Erotavlas GamingChips Killest the Illest Mayonnaise Misfit pears R3van Shazaam Subie Walan Lamor
+DarthGutty Erotavlas GamingChips Killest the Illest Mayonnaise Misfit pears R3van RexBlade Shazaam Subie Walan Lamor
+
+**GR CM** JMK GR e.g. JMK CAT Fives JKA R2-D2
+R3van
+
+**GR CM** Padme e.g. Padme Ahsoka Tano (Snips), JKA GK R2-D2
+DarthGutty Descending Erotavlas pears RexBlade Walan Lamor
+
+**GR CM** Shaak Ti e.g. Shaak Ti, Rex Echo (501st), ARC Trooper, Fives
+N8erade Shazaam
+
+**Jedi CM** JKL e.g. JKL GMY HYoda GK Aayla
+DarthGutty Drederic Erotavlas GamingChips Jubal Earley Lillyanna Mayonnaise Misfit Obi1ablowme R3van Walan Lamor
+
+**Jedi CM** JKR e.g. JKR GMY GAS BS Jolee
+Cbrn121
+
+**LS CM** CLS e.g. CLS Han Chewbacca Chewpio C-3PO
+Aaron Shepard Coktus ColeMiner DarkJedi83 Descending Drederic GamingChips Luthorno Mayonnaise natebzta Obi1ablowme Paras pears PolyPlayz R3van Walan Lamor
+
+**LS CM** Finn e.g. Finn RT RH Finn, RH Poe, JTR
+Lillyanna
+
+**LS CM** JTR e.g. JTR BB-8 C-3PO R2-D2 Finn
+Misfit
+
+**LS CM** ROLO e.g. ROLO Cpt Solo, Han Chewpio Lando
+DarthGutty Erotavlas Jubal Earley Lillyanna Misfit
+
+</pre><p><a href="#" onclick="CopyToClipboard('decreasing-4-plan'); return false;">Copy Plan</a> | <a href="#" onclick="CopyToClipboard('decreasing-4-missions'); return false;">Copy Missions</a></p></td><tr><td>4</td><td>3 Top</td><td>1 &#11088; -- 60 to the next</td><tr><td>4</td><td>2 Middle</td><td>3 &#11088;</td><tr><td>4</td><td>2 Bottom</td><td>1 &#11088; -- 96 to the next</td></tbody>
+</table>
+<br/>
+<br/><textarea id="discorddecreasing" style="display:none" rows="8" cols="40">
+**Estimated 14 :star:**
+
+**phase 1: active** 1 Top, 1 Middle, 1 Bottom
+phase 1: **missions** 1 Top 5 -> 5m
+phase 1: **missions** 1 Middle 15 -> 15m
+phase 1: **missions** 1 Bottom 24 -> 24m
+phase 1: **deploy** 1 Top 80 -> 85m
+phase 1: **deploy** 1 Middle 152 -> 167m
+phase 1: **deploy** 1 Bottom 11 -> 35m
+phase 1: remaining GP = 0 toons, 36 ships
+details: https://gorgatron1.github.io/brg/guild/darkforce/tb.html%3Fc=1%2520Middle,%25201%2520Bottom&tb=ls&d=squad+name&player-summary=on
+**phase 1: 1 Top -> 2 :star:**
+**phase 1: 1 Middle -> 2 :star:**
+**phase 1: 1 Bottom HOLD AT ZERO :star:**
+
+**phase 2: active** 1 Bottom, 2 Top, 2 Middle
+phase 2: **missions** 1 Bottom 29 -> 64m
+phase 2: **missions** 2 Top 9 -> 9m
+phase 2: **missions** 2 Middle 15 -> 15m
+phase 2: **deploy** 1 Bottom 116 -> 180m
+phase 2: **deploy** 2 Top 61 -> 70m
+phase 2: **deploy** 2 Middle 40 -> 55m
+phase 2: remaining GP = 0 toons, 50 ships
+details: https://gorgatron1.github.io/brg/guild/darkforce/tb.html%3Fc=2%2520Middle,%25201%2520Bottom&tb=ls&d=squad+name&player-summary=on
+**phase 2: 2 Top HOLD AT ZERO :star:**
+**phase 2: 2 Middle HOLD AT ZERO :star:**
+**phase 2: 1 Bottom -> 3 :star:**
+
+**phase 3: active** 2 Top, 2 Middle, 2 Bottom
+phase 3: **missions** 2 Top 9 -> 79m
+phase 3: **missions** 2 Middle 30 -> 85m
+phase 3: **missions** 2 Bottom 12 -> 12m
+phase 3: **deploy** 2 Top 55 -> 134m
+phase 3: **deploy** 2 Middle 10 -> 95m
+phase 3: **deploy** 2 Bottom 108 -> 120m
+phase 3: remaining GP = 31 toons, 51 ships
+details: https://gorgatron1.github.io/brg/guild/darkforce/tb.html%3Fc=2%2520Middle,%25202%2520Bottom&tb=ls&d=squad+name&player-summary=on
+**phase 3: 2 Top -> 2 :star:**
+**phase 3: 2 Middle HOLD AT ZERO :star:**
+**phase 3: 2 Bottom HOLD AT ZERO :star:**
+
+**phase 4: active** 2 Middle, 2 Bottom, 3 Top
+phase 4: **missions** 2 Middle 30 -> 125m
+phase 4: **missions** 2 Bottom 1 -> 121m
+phase 4: **missions** 3 Top 17 -> 17m
+phase 4: **deploy** 2 Middle 135 -> 260m
+phase 4: **deploy** 3 Top 75 -> 92m
+phase 4: remaining GP = 8 toons, 27 ships
+details: https://gorgatron1.github.io/brg/guild/darkforce/tb.html%3Fc=2%2520Middle,%25202%2520Bottom&tb=ls&d=squad+name&player-summary=on
+**phase 4: 3 Top -> 1 :star:**
+**phase 4: 2 Middle -> 3 :star:**
+**phase 4: 2 Bottom -> 1 :star:**
+
+</textarea>
+<button onclick="copyText('discorddecreasing')">Copy For Discord</button></div><div class="column"><h2>KAM Shards Estimated: 14 &#11088;</h2>
+<br/>
+<table style="margin: 10px">
+<thead>
+    <tr>
+    <th>Phase</th>
+    <th>Section</th>
+    <th>Action</th>
+    </tr>
+</thead>
+<tbody><tr class="newPhase"><td>1</td><td>&nbsp;</td><td><b>active</b> <a href="tb.html?c=1%20Top&tb=ls&d=squad+name&player-summary=on">1 Top</a> <a href="tb.html?c=1%20Middle,%201%20Bottom&tb=ls&d=squad+name&player-summary=on">1 Middle, 1 Bottom</a></td><tr><td>1</td><td>1 Top</td><td><b>missions</b> 5 -> 5m</td><tr><td>1</td><td>1 Middle</td><td><b>missions</b> 15 -> 15m</td><tr><td>1</td><td>1 Bottom</td><td><b>missions</b> 24 -> 24m</td><tr><td>1</td><td>1 Top</td><td><b>deploy</b> 37 -> 42m</td><tr><td>1</td><td>1 Middle</td><td><b>deploy</b> 152 -> 167m</td><tr><td>1</td><td>1 Bottom</td><td><b>deploy</b> 11 -> 35m</td><tr><td>1</td><td>&nbsp;</td><td><b>remaining GP:</b> 0 toons, 79 ships<pre id="kam-1-plan" style="display: none !important;">**phase 1: 1 Top HOLD AT ZERO :star:**
+**phase 1: 1 Middle -> 2 :star:**
+**phase 1: 1 Bottom HOLD AT ZERO :star:**</pre><pre id="kam-1-missions" style="display: none !important;">**Fleet CM** Negotiator e.g. Negotiator Anakin's Eta-2, Ahsoka's SF, Umbaran SF, Plo's SF, Clone Sergeant's ARC-170, Rex's ARC-170
+Biscuit Tormentor Cbrn121 DarthGutty GamingChips Lillyanna Mayonnaise Misfit natebzta Paras PorkinsRevenge R3van Subie Walan Lamor xXxDarthWOLFxXx
+
+**Jedi CM** JKL e.g. JKL GMY HYoda Old Ben, Ezra
+DarthGutty Drederic Erotavlas GamingChips Jubal Earley Lillyanna Mayonnaise Misfit Obi1ablowme pears R3van Walan Lamor
+
+**Jedi CM** JKR e.g. JKR GMY GAS BS Jolee
+Cbrn121 RexBlade
+
+**Jedi CM** JMLS e.g. JMLS GAS Jolee BS JKR
+GamingChips Jubal Earley Mayonnaise Misfit R3van Walan Lamor
+
+**LS CM** CLS e.g. CLS Han Chewbacca Chewpio C-3PO
+Aaron Shepard Coktus ColeMiner DarkJedi83 GamingChips Luthorno Mayonnaise natebzta Obi1ablowme Paras pears PolyPlayz R3van
+
+**LS CM** Finn e.g. Finn RT RH Finn, RH Poe, JTR
+Lillyanna
+
+**LS CM** GAS e.g. GAS Rex Echo (501st), ARC Trooper, Fives
+Killest the Illest N8erade Shazaam
+
+**LS CM** GL Rey e.g. Rey Chewbacca GK RH Poe, RH Finn
+DarthGutty Descending Drederic Misfit RexBlade Walan Lamor
+
+**LS CM** JMK GR e.g. JMK CAT Fives JKA R2-D2
+R3van
+
+**LS CM** JTR e.g. JTR BB-8 C-3PO R2-D2 Finn
+Descending JEDIKNIGHTARMORER Jubal Earley RexBlade Walan Lamor
+
+**LS CM** Padme e.g. Padme Ahsoka Tano (Snips), JKA GK C-3PO
+Erotavlas Starkiller1670
+
+**LS CM** ROLO e.g. ROLO Cpt Solo, Han Chewpio Lando
+DarthGutty Erotavlas Jubal Earley Lillyanna Misfit
+
+</pre><p><a href="#" onclick="CopyToClipboard('kam-1-plan'); return false;">Copy Plan</a> | <a href="#" onclick="CopyToClipboard('kam-1-missions'); return false;">Copy Missions</a></p></td><tr><td>1</td><td>1 Top</td><td><b>HOLD AT ZERO &#11088;</b></td><tr><td>1</td><td>1 Middle</td><td>2 &#11088; -- 90 to the next</td><tr><td>1</td><td>1 Bottom</td><td><b>HOLD AT ZERO &#11088;</b></td><tr class="newPhase"><td>2</td><td>&nbsp;</td><td><b>active</b> <a href="tb.html?c=1%20Top&tb=ls&d=squad+name&player-summary=on">1 Top</a> <a href="tb.html?c=2%20Middle,%201%20Bottom&tb=ls&d=squad+name&player-summary=on">1 Bottom, 2 Middle</a></td><tr><td>2</td><td>1 Top</td><td><b>missions</b> 5 -> 47m</td><tr><td>2</td><td>1 Bottom</td><td><b>missions</b> 29 -> 64m</td><tr><td>2</td><td>2 Middle</td><td><b>missions</b> 15 -> 15m</td><tr><td>2</td><td>1 Top</td><td><b>deploy</b> 95 -> 142m</td><tr><td>2</td><td>1 Bottom</td><td><b>deploy</b> 116 -> 180m</td><tr><td>2</td><td>2 Middle</td><td><b>deploy</b> 40 -> 55m</td><tr><td>2</td><td>&nbsp;</td><td><b>remaining GP:</b> 0 toons, 16 ships<pre id="kam-2-plan" style="display: none !important;">**phase 2: 1 Top -> 3 :star:**
+**phase 2: 2 Middle HOLD AT ZERO :star:**
+**phase 2: 1 Bottom -> 3 :star:**</pre><pre id="kam-2-missions" style="display: none !important;">**Fleet CM** Negotiator e.g. Negotiator Anakin's Eta-2, Ahsoka's SF, Umbaran SF, Plo's SF, Clone Sergeant's ARC-170, Rex's ARC-170
+Biscuit Tormentor Cbrn121 DarthGutty GamingChips Lillyanna Mayonnaise Misfit natebzta Paras PorkinsRevenge R3van Subie Walan Lamor xXxDarthWOLFxXx
+
+**GAS/Ahsoka** GAS Special e.g. GAS Ahsoka Tano (Snips)
+DarthGutty Erotavlas GamingChips Killest the Illest Mayonnaise Misfit pears R3van RexBlade Shazaam Subie Walan Lamor
+
+**GR CM** Padme e.g. Padme Ahsoka Tano (Snips), JKA GK C-3PO
+Erotavlas pears Starkiller1670
+
+**Jedi CM** JKL e.g. JKL GMY HYoda Old Ben, Ezra
+DarthGutty Drederic Erotavlas GamingChips Jubal Earley Lillyanna Mayonnaise Misfit Obi1ablowme R3van Walan Lamor
+
+**Jedi CM** JKR e.g. JKR GMY GAS BS Jolee
+Cbrn121
+
+**LS CM** CLS e.g. CLS Han Chewbacca Chewpio C-3PO
+Aaron Shepard Coktus ColeMiner DarkJedi83 GamingChips Luthorno Mayonnaise natebzta Obi1ablowme Paras pears PolyPlayz R3van
+
+**LS CM** Finn e.g. Finn RT RH Finn, RH Poe, JTR
+Lillyanna
+
+**LS CM** GAS e.g. GAS Rex Echo (501st), ARC Trooper, Fives
+N8erade
+
+**LS CM** GL Rey e.g. Rey Chewbacca GK RH Poe, RH Finn
+DarthGutty Descending Drederic Misfit RexBlade Walan Lamor
+
+**LS CM** JMK GR e.g. JMK CAT Fives JKA R2-D2
+R3van
+
+**LS CM** JTR e.g. JTR BB-8 C-3PO R2-D2 Finn
+Descending JEDIKNIGHTARMORER RexBlade Walan Lamor
+
+**LS CM** ROLO e.g. ROLO Cpt Solo, Han Chewpio Lando
+DarthGutty Erotavlas Jubal Earley Lillyanna Misfit
+
+**LS CM** Shaak Ti e.g. Shaak Ti, Rex Echo (501st), ARC Trooper, Fives
+Shazaam
+
+</pre><p><a href="#" onclick="CopyToClipboard('kam-2-plan'); return false;">Copy Plan</a> | <a href="#" onclick="CopyToClipboard('kam-2-missions'); return false;">Copy Missions</a></p></td><tr><td>2</td><td>1 Top</td><td>3 &#11088;</td><tr><td>2</td><td>2 Middle</td><td><b>HOLD AT ZERO &#11088;</b></td><tr><td>2</td><td>1 Bottom</td><td>3 &#11088;</td><tr class="newPhase"><td>3</td><td>&nbsp;</td><td><b>active</b> <a href="tb.html?c=2%20Top&tb=ls&d=squad+name&player-summary=on">2 Top</a> <a href="tb.html?c=2%20Middle,%202%20Bottom&tb=ls&d=squad+name&player-summary=on">2 Middle, 2 Bottom</a></td><tr><td>3</td><td>2 Top</td><td><b>missions</b> 9 -> 9m</td><tr><td>3</td><td>2 Middle</td><td><b>missions</b> 30 -> 85m</td><tr><td>3</td><td>2 Bottom</td><td><b>missions</b> 12 -> 12m</td><tr><td>3</td><td>2 Top</td><td><b>deploy</b> 61 -> 70m</td><tr><td>3</td><td>2 Middle</td><td><b>deploy</b> 10 -> 95m</td><tr><td>3</td><td>2 Bottom</td><td><b>deploy</b> 109 -> 121m</td><tr><td>3</td><td>&nbsp;</td><td><b>remaining GP:</b> 30 toons, 45 ships<pre id="kam-3-plan" style="display: none !important;">**phase 3: 2 Top HOLD AT ZERO :star:**
+**phase 3: 2 Middle HOLD AT ZERO :star:**
+**phase 3: 2 Bottom -> 1 :star:**</pre><pre id="kam-3-missions" style="display: none !important;">**Fleet CM** Negotiator e.g. Negotiator Anakin's Eta-2, Ahsoka's SF, Umbaran SF, Plo's SF, Clone Sergeant's ARC-170, Rex's ARC-170
+Biscuit Tormentor Cbrn121 DarthGutty GamingChips Lillyanna Mayonnaise Misfit natebzta Paras PorkinsRevenge R3van Subie Walan Lamor xXxDarthWOLFxXx
+
+**GAS/Ahsoka** GAS Special e.g. GAS Ahsoka Tano (Snips)
+DarthGutty Erotavlas GamingChips Killest the Illest Mayonnaise Misfit pears R3van RexBlade Shazaam Subie Walan Lamor
+
+**GR CM** JMK GR e.g. JMK CAT Fives JKA R2-D2
+R3van
+
+**GR CM** Padme e.g. Padme Ahsoka Tano (Snips), JKA GK R2-D2
+DarthGutty Descending Erotavlas pears RexBlade Walan Lamor
+
+**GR CM** Shaak Ti e.g. Shaak Ti, Rex Echo (501st), ARC Trooper, Fives
+N8erade Shazaam
+
+**Jedi CM** JKL e.g. JKL GMY HYoda GK Aayla
+DarthGutty Drederic Erotavlas GamingChips Jubal Earley Lillyanna Mayonnaise Misfit Obi1ablowme R3van Walan Lamor
+
+**Jedi CM** JKR e.g. JKR GMY GAS BS Jolee
+Cbrn121
+
+**LS CM** CLS e.g. CLS Han Chewbacca Chewpio C-3PO
+Aaron Shepard Coktus ColeMiner DarkJedi83 Descending Drederic GamingChips Luthorno Mayonnaise natebzta Obi1ablowme Paras pears PolyPlayz R3van Walan Lamor
+
+**LS CM** Finn e.g. Finn RT RH Finn, RH Poe, JTR
+Lillyanna
+
+**LS CM** JTR e.g. JTR BB-8 C-3PO R2-D2 Finn
+Misfit
+
+**LS CM** ROLO e.g. ROLO Cpt Solo, Han Chewpio Lando
+DarthGutty Erotavlas Jubal Earley Lillyanna Misfit
+
+</pre><p><a href="#" onclick="CopyToClipboard('kam-3-plan'); return false;">Copy Plan</a> | <a href="#" onclick="CopyToClipboard('kam-3-missions'); return false;">Copy Missions</a></p></td><tr><td>3</td><td>2 Top</td><td><b>HOLD AT ZERO &#11088;</b></td><tr><td>3</td><td>2 Middle</td><td><b>HOLD AT ZERO &#11088;</b></td><tr><td>3</td><td>2 Bottom</td><td>1 &#11088; -- 96 to the next</td><tr class="newPhase"><td>4</td><td>&nbsp;</td><td><b>active</b> <a href="tb.html?c=2%20Top&tb=ls&d=squad+name&player-summary=on">2 Top</a> <a href="tb.html?c=2%20Middle,%203%20Bottom&tb=ls&d=squad+name&player-summary=on">2 Middle, 3 Bottom</a></td><tr><td>4</td><td>2 Top</td><td><b>missions</b> 9 -> 79m</td><tr><td>4</td><td>2 Middle</td><td><b>missions</b> 32 -> 127m</td><tr><td>4</td><td>3 Bottom</td><td><b>missions</b> 9 -> 9m</td><tr><td>4</td><td>2 Top</td><td><b>deploy</b> 55 -> 134m</td><tr><td>4</td><td>2 Middle</td><td><b>deploy</b> 133 -> 260m</td><tr><td>4</td><td>3 Bottom</td><td><b>deploy</b> 10 -> 19m</td><tr><td>4</td><td>&nbsp;</td><td><b>remaining GP:</b> 0 toons, 47 ships<pre id="kam-4-plan" style="display: none !important;">**phase 4: 2 Top -> 2 :star:**
+**phase 4: 2 Middle -> 3 :star:**
+**phase 4: 3 Bottom HOLD AT ZERO :star:**</pre><pre id="kam-4-missions" style="display: none !important;">**Fleet CM** Negotiator e.g. Negotiator Anakin's Eta-2, Ahsoka's SF, Umbaran SF, Plo's SF, Clone Sergeant's ARC-170, Rex's ARC-170
+Biscuit Tormentor Cbrn121 DarthGutty GamingChips Lillyanna Mayonnaise Misfit natebzta Paras PorkinsRevenge R3van Subie Walan Lamor xXxDarthWOLFxXx
+
+**GAS/Ahsoka** GAS Special e.g. GAS Ahsoka Tano (Snips)
+DarthGutty Erotavlas GamingChips Killest the Illest Mayonnaise Misfit pears R3van RexBlade Shazaam Subie Walan Lamor
 
 **GR CM** JMK GR e.g. JMK CAT Mace JKA R2-D2
 R3van
 
-**GR CM** Padme e.g. Padme Ahsoka Tano (Snips), JKA GK Shaak Ti
-DarthGutty Descending Drederic Erotavlas GamingChips Lillyanna Mayonnaise Misfit Paras pears Walan Lamor
+**GR CM** Padme e.g. Padme Ahsoka Tano (Snips), JKA GK R2-D2
+DarthGutty Descending Drederic Erotavlas GamingChips Lillyanna Mayonnaise Misfit pears RexBlade Walan Lamor
 
 **GR CM** Shaak Ti e.g. Shaak Ti, Rex Echo (501st), ARC Trooper, Fives
 N8erade Shazaam
@@ -455,79 +662,76 @@ Misfit
 Mayonnaise R3van
 
 **LS CM** CLS e.g. CLS Han Chewbacca Chewpio C-3PO
-Aaron Shepard Coktus ColeMiner DarkJedi83 Drederic Luthorno natebzta Obi1ablowme pears PolyPlayz R3van Walan Lamor
+Aaron Shepard Coktus ColeMiner DarkJedi83 Descending Drederic Luthorno natebzta Obi1ablowme Paras pears PolyPlayz R3van Walan Lamor
 
 **LS CM** CLS-Alt e.g. CLS Han Chewbacca Chewpio Old Ben
-Descending GamingChips Mayonnaise
+GamingChips Mayonnaise
 
 **LS CM** Finn e.g. Finn RT RH Finn, RH Poe, JTR
 Lillyanna
 
-**LS CM** JTR e.g. JTR BB-8 C-3PO R2-D2 Finn
-JEDIKNIGHTARMORER
-
 **LS CM** ROLO e.g. ROLO Cpt Solo, Han Chewpio Lando
 DarthGutty Erotavlas Jubal Earley Misfit
 
-</pre><p><a href="#" onclick="CopyToClipboard('decreasing-4-plan'); return false;">Copy Plan</a> | <a href="#" onclick="CopyToClipboard('decreasing-4-missions'); return false;">Copy Missions</a></p></td><tr><td>4</td><td>3 Top</td><td>1 &#11088; -- 60 to the next</td><tr><td>4</td><td>2 Middle</td><td>3 &#11088;</td><tr><td>4</td><td>3 Bottom</td><td><b>HOLD AT ZERO &#11088;</b></td></tbody>
+</pre><p><a href="#" onclick="CopyToClipboard('kam-4-plan'); return false;">Copy Plan</a> | <a href="#" onclick="CopyToClipboard('kam-4-missions'); return false;">Copy Missions</a></p></td><tr><td>4</td><td>2 Top</td><td>2 &#11088; -- 81 to the next</td><tr><td>4</td><td>2 Middle</td><td>3 &#11088;</td><tr><td>4</td><td>3 Bottom</td><td><b>HOLD AT ZERO &#11088;</b></td></tbody>
 </table>
 <br/>
-<br/><textarea id="discorddecreasing" style="display:none" rows="8" cols="40">
+<br/><textarea id="discordkam" style="display:none" rows="8" cols="40">
 **Estimated 14 :star:**
 
 **phase 1: active** 1 Top, 1 Middle, 1 Bottom
-phase 1: **missions** 1 Top 4 -> 4m
+phase 1: **missions** 1 Top 5 -> 5m
 phase 1: **missions** 1 Middle 15 -> 15m
-phase 1: **missions** 1 Bottom 22 -> 22m
-phase 1: **deploy** 1 Top 81 -> 85m
+phase 1: **missions** 1 Bottom 24 -> 24m
+phase 1: **deploy** 1 Top 37 -> 42m
 phase 1: **deploy** 1 Middle 152 -> 167m
-phase 1: **deploy** 1 Bottom 4 -> 26m
-phase 1: remaining GP = 0 toons, 31 ships
+phase 1: **deploy** 1 Bottom 11 -> 35m
+phase 1: remaining GP = 0 toons, 79 ships
 details: https://gorgatron1.github.io/brg/guild/darkforce/tb.html%3Fc=1%2520Middle,%25201%2520Bottom&tb=ls&d=squad+name&player-summary=on
-**phase 1: 1 Top -> 2 :star:**
+**phase 1: 1 Top HOLD AT ZERO :star:**
 **phase 1: 1 Middle -> 2 :star:**
 **phase 1: 1 Bottom HOLD AT ZERO :star:**
 
-**phase 2: active** 1 Bottom, 2 Top, 2 Middle
-phase 2: **missions** 1 Bottom 28 -> 54m
-phase 2: **missions** 2 Top 7 -> 7m
-phase 2: **missions** 2 Middle 14 -> 14m
-phase 2: **deploy** 1 Bottom 126 -> 180m
-phase 2: **deploy** 2 Top 63 -> 70m
-phase 2: **deploy** 2 Middle 23 -> 37m
-phase 2: remaining GP = 0 toons, 44 ships
+**phase 2: active** 1 Top, 1 Bottom, 2 Middle
+phase 2: **missions** 1 Top 5 -> 47m
+phase 2: **missions** 1 Bottom 29 -> 64m
+phase 2: **missions** 2 Middle 15 -> 15m
+phase 2: **deploy** 1 Top 95 -> 142m
+phase 2: **deploy** 1 Bottom 116 -> 180m
+phase 2: **deploy** 2 Middle 40 -> 55m
+phase 2: remaining GP = 0 toons, 16 ships
 details: https://gorgatron1.github.io/brg/guild/darkforce/tb.html%3Fc=2%2520Middle,%25201%2520Bottom&tb=ls&d=squad+name&player-summary=on
-**phase 2: 2 Top HOLD AT ZERO :star:**
+**phase 2: 1 Top -> 3 :star:**
 **phase 2: 2 Middle HOLD AT ZERO :star:**
 **phase 2: 1 Bottom -> 3 :star:**
 
 **phase 3: active** 2 Top, 2 Middle, 2 Bottom
-phase 3: **missions** 2 Top 7 -> 77m
-phase 3: **missions** 2 Middle 28 -> 65m
-phase 3: **missions** 2 Bottom 11 -> 11m
-phase 3: **deploy** 2 Top 57 -> 134m
-phase 3: **deploy** 2 Middle 30 -> 95m
-phase 3: **deploy** 2 Bottom 110 -> 121m
-phase 3: remaining GP = 3 toons, 46 ships
+phase 3: **missions** 2 Top 9 -> 9m
+phase 3: **missions** 2 Middle 30 -> 85m
+phase 3: **missions** 2 Bottom 12 -> 12m
+phase 3: **deploy** 2 Top 61 -> 70m
+phase 3: **deploy** 2 Middle 10 -> 95m
+phase 3: **deploy** 2 Bottom 109 -> 121m
+phase 3: remaining GP = 30 toons, 45 ships
 details: https://gorgatron1.github.io/brg/guild/darkforce/tb.html%3Fc=2%2520Middle,%25202%2520Bottom&tb=ls&d=squad+name&player-summary=on
-**phase 3: 2 Top -> 2 :star:**
+**phase 3: 2 Top HOLD AT ZERO :star:**
 **phase 3: 2 Middle HOLD AT ZERO :star:**
 **phase 3: 2 Bottom -> 1 :star:**
 
-**phase 4: active** 2 Middle, 3 Top, 3 Bottom
-phase 4: **missions** 2 Middle 30 -> 125m
-phase 4: **missions** 3 Top 13 -> 13m
+**phase 4: active** 2 Top, 2 Middle, 3 Bottom
+phase 4: **missions** 2 Top 9 -> 79m
+phase 4: **missions** 2 Middle 32 -> 127m
 phase 4: **missions** 3 Bottom 9 -> 9m
-phase 4: **deploy** 2 Middle 135 -> 260m
-phase 4: **deploy** 3 Top 79 -> 92m
-phase 4: **deploy** 3 Bottom 2 -> 11m
-phase 4: remaining GP = 0 toons, 19 ships
+phase 4: **deploy** 2 Top 55 -> 134m
+phase 4: **deploy** 2 Middle 133 -> 260m
+phase 4: **deploy** 3 Bottom 10 -> 19m
+phase 4: remaining GP = 0 toons, 47 ships
 details: https://gorgatron1.github.io/brg/guild/darkforce/tb.html%3Fc=2%2520Middle,%25203%2520Bottom&tb=ls&d=squad+name&player-summary=on
-**phase 4: 3 Top -> 1 :star:**
+**phase 4: 2 Top -> 2 :star:**
 **phase 4: 2 Middle -> 3 :star:**
 **phase 4: 3 Bottom HOLD AT ZERO :star:**
 
 </textarea>
-<button onclick="copyText('discorddecreasing')">Copy For Discord</button></div></div><br/>
-<font size="-2">Generated 2024-09-16 21:39:06 +0000</font>
+<button onclick="copyText('discordkam')">Copy For Discord</button></div></div><br/>
+<font size="-2">Generated 2024-09-30 16:59:56 +0000</font>
 <script data-goatcounter="https://gorgatron.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
